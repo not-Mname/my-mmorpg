@@ -1,0 +1,15 @@
+
+2025-03-10 16:34:36,888 [1] [INFO ] [GameServer] £ºGame Server Init
+2025-03-10 16:34:37,001 [1] [WARN ] [GameServer] £ºStarting Listener...
+2025-03-10 16:34:37,003 [5] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-03-10 16:34:37,003 [6] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-03-10 16:34:37,004 [8] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-03-10 16:34:37,004 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-03-10 16:34:37,004 [7] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-03-10 16:34:37,004 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-03-10 16:34:37,004 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-03-10 16:34:37,005 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-03-10 16:34:37,113 [1] [WARN ] [GameServer] £ºNetService Started
+2025-03-10 16:35:00,877 [3] [WARN ] [GameServer] £ºClient[127.0.0.1:52186]] Connected
+2025-03-10 16:35:00,911 [3] [WARN ] [GameServer] £ºClient[] DataReceived Len:23
+2025-03-10 16:35:00,974 [5] [INFO ] [GameServer] £ºUserLoginRequest: User:admin  Pass:123456

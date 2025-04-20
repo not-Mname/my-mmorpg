@@ -1,0 +1,83 @@
+
+2025-03-09 17:55:33,597 [1] [INFO ] [GameServer] ：Game Server Init
+2025-03-09 17:55:33,640 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-03-09 17:55:33,642 [16] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 17:55:33,642 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 17:55:33,642 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 17:55:33,642 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 17:55:33,642 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 17:55:33,642 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 17:55:33,642 [20] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 17:55:33,642 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 17:55:33,754 [1] [WARN ] [GameServer] ：NetService Started
+2025-03-09 17:55:54,819 [5] [WARN ] [GameServer] ：Client[127.0.0.1:54382]] Connected
+2025-03-09 17:55:54,859 [5] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2025-03-09 17:55:54,919 [16] [INFO ] [GameServer] ：UserLoginRequest: User:admin  Pass:123456
+2025-03-09 17:56:37,160 [5] [WARN ] [GameServer] ：Client[] DataReceived Len:31
+2025-03-09 17:56:37,162 [7] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:电竞悍匪王富贵  Class:None
+2025-03-09 17:56:37,180 [7] [ERROR] [GameServer] ：Message handler exception:, 未将对象引用设置到对象的实例。, GameServer,    在 GameServer.Services.UserService.OnCreateCharacter(NetConnection`1 sender, UserCreateCharacterRequest request) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 95
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 105
+2025-03-09 17:56:40,390 [5] [WARN ] [GameServer] ：Client[] Disconnected
+2025-03-09 17:57:20,374 [5] [WARN ] [GameServer] ：Client[127.0.0.1:54462]] Connected
+2025-03-09 17:57:20,408 [5] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2025-03-09 17:57:20,408 [9] [INFO ] [GameServer] ：UserLoginRequest: User:admin  Pass:123456
+2025-03-09 17:57:39,827 [5] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2025-03-09 17:57:39,828 [10] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:电竞悍匪王富贵  Class:Warrior
+2025-03-09 17:57:39,829 [10] [ERROR] [GameServer] ：Message handler exception:, 未将对象引用设置到对象的实例。, GameServer,    在 GameServer.Services.UserService.OnCreateCharacter(NetConnection`1 sender, UserCreateCharacterRequest request) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 95
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 105
+2025-03-09 17:58:15,132 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-03-09 18:06:10,540 [1] [INFO ] [GameServer] ：Game Server Init
+2025-03-09 18:06:10,597 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-03-09 18:06:10,605 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:06:10,605 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:06:10,618 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:06:10,630 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:06:10,631 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:06:10,631 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:06:10,631 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:06:10,630 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:06:10,708 [1] [WARN ] [GameServer] ：NetService Started
+2025-03-09 18:06:29,484 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55012]] Connected
+2025-03-09 18:06:29,515 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2025-03-09 18:06:29,574 [6] [INFO ] [GameServer] ：UserLoginRequest: User:admin  Pass:123456
+2025-03-09 18:06:41,526 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:16
+2025-03-09 18:08:08,192 [6] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:测试  Class:None
+2025-03-09 18:10:47,319 [1] [INFO ] [GameServer] ：Game Server Init
+2025-03-09 18:10:47,373 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-03-09 18:10:47,375 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:10:47,375 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:10:47,375 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:10:47,375 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:10:47,375 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:10:47,375 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:10:47,375 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:10:47,375 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:10:47,488 [1] [WARN ] [GameServer] ：NetService Started
+2025-03-09 18:11:08,707 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55471]] Connected
+2025-03-09 18:11:08,741 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2025-03-09 18:11:08,802 [5] [INFO ] [GameServer] ：UserLoginRequest: User:admin  Pass:123456
+2025-03-09 18:11:18,642 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:16
+2025-03-09 18:11:18,643 [9] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:测试  Class:None
+2025-03-09 18:11:33,959 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2025-03-09 18:11:33,960 [10] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:测试  Class:Warrior
+2025-03-09 18:11:37,942 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2025-03-09 18:11:37,943 [11] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:测试  Class:Wizard
+2025-03-09 18:11:46,647 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2025-03-09 18:11:46,647 [7] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:测试  Class:Archer
+2025-03-09 18:12:19,857 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-03-09 18:16:09,096 [1] [INFO ] [GameServer] ：Game Server Init
+2025-03-09 18:16:09,133 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-03-09 18:16:09,135 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:16:09,135 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:16:09,135 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:16:09,135 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:16:09,135 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:16:09,135 [16] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:16:09,135 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:16:09,135 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-03-09 18:16:09,245 [1] [WARN ] [GameServer] ：NetService Started
+2025-03-09 18:16:43,978 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56038]] Connected
+2025-03-09 18:16:44,010 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2025-03-09 18:16:44,066 [5] [INFO ] [GameServer] ：UserLoginRequest: User:admin  Pass:123456
+2025-03-09 18:17:01,999 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:16
+2025-03-09 18:17:02,001 [16] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:test  Class:Warrior

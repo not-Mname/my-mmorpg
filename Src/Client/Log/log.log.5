@@ -1,0 +1,76 @@
+2025-04-20 16:19:46,200 [ 1] INFO  Unity: LoadingManager start
+2025-04-20 16:19:49,266 [ 1] INFO  Unity: DataManager > DataManager()
+2025-04-20 16:19:53,115 [ 1] INFO  Unity: UserLoginRequest::user :t psw:t
+2025-04-20 16:19:53,116 [ 1] INFO  Unity: ConnectToServer() Start 
+2025-04-20 16:19:53,119 [ 1] INFO  Unity: DoConnect
+2025-04-20 16:19:53,120 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2025-04-20 16:19:53,122 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2025-04-20 16:19:53,124 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2025-04-20 16:19:53,200 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2025-04-20 16:19:53,201 [ 1] INFO  Unity: 登录成功
+2025-04-20 16:19:53,202 [ 1] INFO  Unity: LoadLevel: CharSelect
+2025-04-20 16:19:53,446 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+
+2025-04-20 16:19:53,458 [ 1] INFO  Unity: LevelLoadCompleted:1
+2025-04-20 16:19:53,460 [ 1] INFO  Unity: index + 1:1, class:Warrior, i + 1 == (int)Class :True
+2025-04-20 16:19:53,460 [ 1] INFO  Unity: index + 1:2, class:Warrior, i + 1 == (int)Class :False
+2025-04-20 16:19:53,460 [ 1] INFO  Unity: index + 1:3, class:Warrior, i + 1 == (int)Class :False
+2025-04-20 16:19:53,461 [ 1] INFO  Unity: index + 1:1, class:Archer, i + 1 == (int)Class :False
+2025-04-20 16:19:53,462 [ 1] INFO  Unity: index + 1:2, class:Archer, i + 1 == (int)Class :False
+2025-04-20 16:19:53,462 [ 1] INFO  Unity: index + 1:3, class:Archer, i + 1 == (int)Class :True
+2025-04-20 16:19:53,983 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+UnityEngine.GameObject:SetActive(Boolean)
+UICharacterView:UpdateCharacter() (at Assets/Scripts/UI/UICharacterView.cs:29)
+UICharacterView:set_CurrentCharacter(Int32) (at Assets/Scripts/UI/UICharacterView.cs:20)
+UICharacterSelect:OnClickSelectChar(Int32) (at Assets/Scripts/UI/UICharacterSelect.cs:150)
+<InitCharacterSelect>c__AnonStorey0:<>m__0(Boolean) (at Assets/Scripts/UI/UICharacterSelect.cs:134)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2025-04-20 16:19:55,353 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2025-04-20 16:19:55,354 [ 1] INFO  Unity: 进入游戏：Success
+2025-04-20 16:19:55,359 [ 1] INFO  Unity: OnGuild
+2025-04-20 16:19:55,360 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2025-04-20 16:19:55,361 [ 1] INFO  Unity: AddCharacter:9:t Map:1 Entity:(9:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2025-04-20 16:19:55,362 [ 1] INFO  Unity: LoadLevel: MainCity
+2025-04-20 16:19:55,363 [ 1] WARN  Unity: AudioClip Sound/bgm-town not found
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+SoundManager:PlaySound(String) (at Assets/Scripts/Managers/SoundManager.cs:91)
+Services.MapService:EnterMap(Int32) (at Assets/Scripts/Services/MapService.cs:81)
+Services.MapService:OnMapCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:53)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2025-04-20 16:19:55,728 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+UnityEngine.Object:Instantiate(Object, Transform)
+GameObjectManager:CreateCharacteObject(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:65)
+<InitGameObjects>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/GameObjectManager.cs:48)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+GameObjectManager:OnStart() (at Assets/Scripts/GameObject/GameObjectManager.cs:18)
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:33)
+
+2025-04-20 16:19:55,756 [ 1] INFO  Unity: LevelLoadCompleted:1
+2025-04-20 16:19:55,803 [ 1] INFO  Unity: SetSendChannle: Local
+2025-04-20 16:19:57,703 [ 1] INFO  Unity: MapEntityUpdateRequest : ID:9 POS:SkillBridge.Message.NVector3 DIR:SkillBridge.Message.NVector3 SPEED:0 
+2025-04-20 16:19:57,805 [ 1] INFO  Unity: MapEntityUpdateRequest : ID:9 POS:SkillBridge.Message.NVector3 DIR:SkillBridge.Message.NVector3 SPEED:0 
+2025-04-20 16:19:57,885 [ 1] INFO  Unity: MapEntityUpdateRequest : ID:9 POS:SkillBridge.Message.NVector3 DIR:SkillBridge.Message.NVector3 SPEED:0 
+2025-04-20 16:19:57,989 [ 1] INFO  Unity: MapEntityUpdateRequest : ID:9 POS:SkillBridge.Message.NVector3 DIR:SkillBridge.Message.NVector3 SPEED:0 
+2025-04-20 16:19:58,107 [ 1] INFO  Unity: MapEntityUpdateRequest : ID:9 POS:SkillBridge.Message.NVector3 DIR:SkillBridge.Message.NVector3 SPEED:0 
+2025-04-20 16:19:59,042 [ 1] ERROR Unity: "SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+UnityEngine.AI.NavMeshAgent:SetDestination(Vector3)
+<BeginNav>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/PlayerInputController.cs:47)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+PlayerInputController:StartNav(Vector3) (at Assets/Scripts/GameObject/PlayerInputController.cs:42)
+NPCController:OnMouseDown() (at Assets/Scripts/GameObject/NPCController.cs:28)
+UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32)
+
+2025-04-20 16:22:06,262 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2025-04-20 16:22:06,262 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
+
+2025-04-20 16:22:06,262 [ 1] INFO  Unity: Character_1_t OnDestroy :ID:9 POS:(5000, 4000, 820) DIR:(58, -81, 0) SPD:0 

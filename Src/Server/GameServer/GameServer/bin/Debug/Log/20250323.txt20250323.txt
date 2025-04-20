@@ -1,0 +1,8 @@
+
+2025-03-23 18:06:10,772 [1] [INFO ] [GameServer] ：Game Server Init
+2025-03-23 18:06:10,821 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-03-23 18:06:10,913 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-03-23 18:06:10,914 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-03-23 18:06:10,915 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-03-23 18:06:10,915 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-03-23 18:06:10,916 [1] [WARN ] [GameServer] ：Starting Listener...

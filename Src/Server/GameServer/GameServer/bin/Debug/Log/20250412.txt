@@ -1,0 +1,1411 @@
+
+2025-04-12 14:44:16,785 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 14:44:17,009 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 14:44:17,545 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 14:44:17,547 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 14:44:17,547 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 14:44:17,547 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 14:44:17,550 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 14:44:17,553 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:44:17,553 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:44:17,553 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:44:17,553 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:44:17,553 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:44:17,553 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:44:17,553 [14] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:44:17,553 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:44:17,660 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 14:44:22,070 [3] [WARN ] [GameServer] ：Client[127.0.0.1:52548]] Connected
+2025-04-12 14:44:22,113 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 14:44:22,193 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 14:44:25,811 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 14:44:25,814 [11] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 14:44:25,882 [11] [INFO ] [GameServer] ：GetFriendInfo  friendCharacter: is Exist:True
+2025-04-12 14:44:25,882 [11] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>{0}:{1} GetFriendInfo:{2}:{3}}</format><args>{1, t, 2, w}</args></log4net.Error>
+2025-04-12 14:44:25,916 [11] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 14:44:25,923 [11] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 14:44:25,923 [11] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 14:45:17,841 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 14:45:17,843 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 14:45:17,843 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 14:45:17,843 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 14:45:17,844 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 14:45:17,844 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 14:45:17,844 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 14:45:17,844 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 14:45:17,844 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 14:45:17,846 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 14:45:17,846 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 14:45:17,846 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 14:45:17,846 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 14:45:17,846 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 14:45:17,847 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 14:45:17,847 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 14:45:51,402 [3] [WARN ] [GameServer] ：Client[127.0.0.1:52618]] Connected
+2025-04-12 14:45:51,443 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 14:45:51,444 [7] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 14:45:53,242 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 14:45:53,242 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 14:45:53,244 [9] [INFO ] [GameServer] ：GetFriendInfo  friendCharacter: is Exist:False
+2025-04-12 14:45:53,267 [9] [ERROR] [GameServer] ：Message handler exception:, 未将对象引用设置到对象的实例。, GameServer,    在 GameServer.Managers.FriendManager.GetFriendInfo(TCharacterFriend friend) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Managers\FriendManager.cs:行号 55
+   在 GameServer.Managers.FriendManager.InitFriends() 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Managers\FriendManager.cs:行号 69
+   在 GameServer.Managers.FriendManager..ctor(Character owner) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Managers\FriendManager.cs:行号 22
+   在 GameServer.Entities.Character..ctor(CharacterType type, TCharacter cha) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Entities\Character.cs:行号 54
+   在 GameServer.Managers.CharacterManager.AddCharacter(TCharacter cha) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Managers\CharacterManager.cs:行号 36
+   在 GameServer.Services.UserService.OnGameEnter(NetConnection`1 sender, UserGameEnterRequest request) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 159
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 106
+2025-04-12 14:59:44,422 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 14:59:44,542 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 14:59:44,668 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 14:59:44,669 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 14:59:44,670 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 14:59:44,670 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 14:59:44,671 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 14:59:44,672 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:59:44,672 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:59:44,672 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:59:44,673 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:59:44,673 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:59:44,673 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:59:44,673 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:59:44,675 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 14:59:44,777 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 14:59:50,415 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53262]] Connected
+2025-04-12 14:59:50,897 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 14:59:59,226 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53266]] Connected
+2025-04-12 14:59:59,261 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 14:59:59,594 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:00:02,131 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:00:02,133 [10] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:00:02,179 [10] [INFO ] [GameServer] ：GetFriendInfo  friendCharacter: is Exist:True
+2025-04-12 15:00:02,179 [10] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>{0}:{1} GetFriendInfo:{2}:{3}}</format><args>{1, t, 2, w}</args></log4net.Error>
+2025-04-12 15:00:02,199 [10] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:00:02,204 [10] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:00:02,204 [10] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:00:15,776 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53287]] Connected
+2025-04-12 15:00:15,806 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:00:15,806 [12] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:00:17,351 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:00:17,353 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:00:17,354 [7] [INFO ] [GameServer] ：GetFriendInfo  friendCharacter: is Exist:False
+2025-04-12 15:00:17,355 [7] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>{0}:{1} GetFriendInfo:{2}:{3}}</format><args>{2, w, 1, t}</args></log4net.Error>
+2025-04-12 15:00:17,356 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:00:17,357 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:00:17,357 [7] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:00:17,357 [7] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:00:17,357 [7] [INFO ] [GameServer] ：GetFriendInfo  friendCharacter: is Exist:False
+2025-04-12 15:00:17,357 [7] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>{0}:{1} GetFriendInfo:{2}:{3}}</format><args>{1, t, 2, w}</args></log4net.Error>
+2025-04-12 15:00:17,361 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:00:17,362 [7] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:00:17,362 [7] [INFO ] [GameServer] ：GetFriendInfo  friendCharacter: is Exist:False
+2025-04-12 15:00:17,362 [7] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>{0}:{1} GetFriendInfo:{2}:{3}}</format><args>{2, w, 1, t}</args></log4net.Error>
+2025-04-12 15:00:23,476 [3] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 15:00:23,477 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 15:00:23,477 [3] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:00:23,478 [3] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:00:23,478 [3] [INFO ] [GameServer] ：GetFriendInfo  friendCharacter: is Exist:True
+2025-04-12 15:00:23,478 [3] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>{0}:{1} GetFriendInfo:{2}:{3}}</format><args>{1, t, 2, w}</args></log4net.Error>
+2025-04-12 15:00:23,480 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:00:24,533 [3] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 15:00:24,534 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 15:00:24,534 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:00:44,964 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:00:44,979 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:00:44,979 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:00:44,979 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:00:44,979 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:00:44,989 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:00:44,989 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:00:44,989 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:00:44,989 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:00:44,989 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:00:44,989 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:00:44,989 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:00:45,003 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:00:45,003 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:00:45,003 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:00:45,009 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:00:57,684 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:00:57,799 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:00:57,949 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:00:57,949 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:00:57,949 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:00:57,949 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:00:57,949 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:00:57,975 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:00:57,975 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:00:57,975 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:00:57,975 [18] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:00:57,975 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:00:57,977 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:00:57,979 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:00:57,985 [16] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:00:58,069 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:01:07,468 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53397]] Connected
+2025-04-12 15:01:07,497 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:01:07,839 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:01:24,174 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:01:24,176 [5] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:01:27,699 [5] [INFO ] [GameServer] ：GetFriendInfo  friendCharacter: is Exist:True
+2025-04-12 15:02:06,589 [5] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>{0}:{1} GetFriendInfo:{2}:{3}}</format><args>{1, t, 2, w}</args></log4net.Error>
+2025-04-12 15:02:06,589 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:02:39,850 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:02:39,850 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:02:39,850 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:02:39,851 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:02:39,851 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:02:39,851 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:02:39,851 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:02:39,852 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:02:39,852 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:02:39,852 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:02:39,852 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:02:39,852 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:02:39,852 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:02:39,854 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:02:39,854 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:02:39,869 [5] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:02:39,874 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:02:39,875 [5] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:02:56,714 [11] [WARN ] [GameServer] ：Client[127.0.0.1:53490]] Connected
+2025-04-12 15:02:56,748 [11] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:02:57,305 [5] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:02:58,516 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:02:58,517 [5] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:03:58,813 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:03:58,928 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:03:59,055 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:03:59,057 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:03:59,057 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:03:59,057 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:03:59,058 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:03:59,060 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:03:59,060 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:03:59,060 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:03:59,061 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:03:59,061 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:03:59,061 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:03:59,062 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:03:59,062 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:03:59,166 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:04:06,799 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53550]] Connected
+2025-04-12 15:04:06,834 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:04:07,302 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:04:10,402 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:04:10,404 [8] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:04:10,472 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:04:10,476 [8] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:04:10,478 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:04:23,356 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53574]] Connected
+2025-04-12 15:04:23,392 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:04:23,392 [12] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:04:25,285 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:04:25,286 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:04:25,290 [9] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:04:25,290 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:04:25,291 [9] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:04:25,291 [9] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:04:25,294 [9] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:04:25,295 [9] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:04:59,343 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:04:59,345 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:04:59,345 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:04:59,345 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:04:59,345 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:04:59,346 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:04:59,346 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:04:59,346 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:04:59,346 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:04:59,347 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:04:59,347 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:04:59,347 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:04:59,347 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:04:59,347 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:04:59,347 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:04:59,349 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:06:46,068 [3] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 15:06:46,068 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 15:06:46,069 [3] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:06:46,069 [3] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:06:46,071 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:06:47,159 [3] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 15:06:47,160 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 15:06:47,160 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:06:55,834 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:06:55,956 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:06:56,092 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:06:56,094 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:06:56,094 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:06:56,094 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:06:56,096 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:06:56,098 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:06:56,098 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:06:56,098 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:06:56,098 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:06:56,099 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:06:56,099 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:06:56,099 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:06:56,099 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:06:56,212 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:06:58,680 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53693]] Connected
+2025-04-12 15:06:58,719 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:06:58,786 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:07:02,674 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:07:02,677 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:07:02,757 [9] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:07:02,763 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:07:02,764 [9] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:07:12,781 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53705]] Connected
+2025-04-12 15:07:12,818 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:07:12,818 [11] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:07:14,319 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:07:14,320 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:07:14,323 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:07:14,324 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:07:14,325 [7] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:07:14,325 [7] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:07:14,329 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:07:14,329 [7] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:07:24,948 [3] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 15:07:24,948 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 15:07:24,950 [3] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:07:24,950 [3] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:07:24,951 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:07:27,193 [17] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 15:07:27,194 [17] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 15:07:27,195 [17] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:07:49,604 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:07:49,697 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:07:49,803 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:07:49,804 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:07:49,804 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:07:49,804 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:07:49,805 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:07:49,808 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:07:49,808 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:07:49,808 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:07:49,808 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:07:49,808 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:07:49,809 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:07:49,809 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:07:49,809 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:07:49,920 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:07:51,840 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53747]] Connected
+2025-04-12 15:07:51,881 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:07:51,943 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:07:52,613 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:07:52,613 [11] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:07:53,000 [5] [ERROR] [GameServer] ：Message handler exception:, 内部连接致命错误。错误状态: 15，标记: 2, System.Data,    在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryCloseInternal(Boolean closeReader)
+   在 System.Data.SqlClient.SqlDataReader.Close()
+   在 System.Data.Common.DbDataReader.Dispose(Boolean disposing)
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.Finally()
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 64
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 106
+2025-04-12 15:07:53,001 [11] [ERROR] [GameServer] ：Message handler exception:, 阅读器关闭时尝试调用 CheckDataIsReady 无效。, System.Data,    在 System.Data.SqlClient.SqlDataReader.CheckDataIsReady(Int32 columnIndex, Boolean allowPartiallyReadColumn, Boolean permitAsync, String methodName)
+   在 System.Data.SqlClient.SqlDataReader.TryReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   在 System.Data.SqlClient.SqlDataReader.GetInt64(Int32 i)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 64
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 106
+2025-04-12 15:09:50,057 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:09:50,145 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:09:50,245 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:09:50,247 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:09:50,247 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:09:50,247 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:09:50,247 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:09:50,249 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:09:50,249 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:09:50,249 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:09:50,249 [18] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:09:50,249 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:09:50,249 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:09:50,249 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:09:50,249 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:09:50,364 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:09:58,408 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53871]] Connected
+2025-04-12 15:09:58,437 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:09:59,287 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:10:01,469 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53874]] Connected
+2025-04-12 15:10:01,495 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:10:01,496 [6] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:10:03,607 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:10:03,608 [10] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:10:03,672 [10] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:10:03,675 [10] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:10:03,675 [10] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:10:06,431 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:10:06,432 [18] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:10:06,443 [18] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:10:06,444 [18] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:10:06,445 [18] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:10:06,446 [18] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:10:06,449 [18] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:10:06,450 [18] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:10:17,016 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 15:10:17,020 [7] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 17  w
+2025-04-12 15:10:17,020 [7] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:10:50,549 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:10:50,553 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:10:50,554 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:10:50,554 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:10:50,554 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:10:50,554 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:10:50,554 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:10:50,555 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:10:50,555 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:10:50,555 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:10:50,556 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:10:50,556 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:10:50,556 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:10:50,557 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:10:50,557 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:10:50,557 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:12:33,871 [3] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 15:12:33,873 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 15:12:33,873 [3] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:12:33,874 [3] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:12:33,874 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:12:35,849 [3] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 15:12:35,854 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 15:12:35,854 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:13:50,353 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:13:50,448 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:13:50,558 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:13:50,559 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:13:50,559 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:13:50,559 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:13:50,561 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:13:50,563 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:13:50,563 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:13:50,563 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:13:50,563 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:13:50,563 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:13:50,563 [17] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:13:50,563 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:13:50,563 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:13:50,663 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:14:03,791 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54140]] Connected
+2025-04-12 15:14:03,826 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:14:04,119 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:14:11,528 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:14:11,534 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:14:11,790 [9] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:14:11,808 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:14:11,809 [9] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:14:13,976 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54154]] Connected
+2025-04-12 15:14:14,005 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:14:14,006 [13] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:14:15,423 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:14:15,423 [8] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:14:15,426 [8] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:14:15,428 [8] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:14:15,428 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:14:15,428 [8] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:14:15,430 [8] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:14:15,430 [8] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:14:20,927 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 15:14:20,931 [11] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:14:20,932 [11] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:14:20,949 [11] [ERROR] [GameServer] ：Message handler exception:, 未将对象引用设置到对象的实例。, GameServer,    在 GameServer.Services.TeamService.OnTeamInviteRequest(NetConnection`1 sender, TeamInviteRequest message) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\TeamService.cs:行号 75
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 106
+2025-04-12 15:14:50,825 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:14:50,826 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:14:50,826 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:14:50,827 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:14:50,827 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:14:50,827 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:14:50,827 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:14:50,827 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:14:50,827 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:14:50,827 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:14:50,829 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:14:50,829 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:14:50,829 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:14:50,829 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:14:50,829 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:14:50,830 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:15:03,289 [21] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 15:15:03,496 [21] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 15:15:03,497 [21] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:15:03,497 [21] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:15:03,498 [21] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:15:04,546 [20] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 15:15:04,547 [20] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 15:15:04,548 [20] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:16:09,508 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:16:09,608 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:16:09,708 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:16:09,712 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:16:09,712 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:16:09,712 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:16:09,712 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:16:09,712 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:09,712 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:09,712 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:09,712 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:09,712 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:09,712 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:09,712 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:09,712 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:09,818 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:16:20,687 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54275]] Connected
+2025-04-12 15:16:20,716 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:16:21,331 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:16:24,481 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:16:24,483 [11] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:16:24,545 [11] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:16:24,549 [11] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:16:24,549 [11] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:16:28,748 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54295]] Connected
+2025-04-12 15:16:28,777 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:16:28,777 [7] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:16:30,037 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:16:30,038 [8] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:16:30,041 [8] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:16:30,042 [8] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:16:30,042 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:16:30,043 [8] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:16:30,045 [8] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:16:30,046 [8] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:16:34,428 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 15:16:34,433 [10] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:16:34,433 [10] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:16:34,448 [10] [ERROR] [GameServer] ：Message handler exception:, 未将对象引用设置到对象的实例。, GameServer,    在 GameServer.Services.TeamService.OnTeamInviteRequest(NetConnection`1 sender, TeamInviteRequest message) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\TeamService.cs:行号 75
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 106
+2025-04-12 15:16:49,111 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:16:49,258 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:16:49,411 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:16:49,413 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:16:49,413 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:16:49,413 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:16:49,415 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:16:49,463 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:49,463 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:49,463 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:49,463 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:49,468 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:49,468 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:49,468 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:49,468 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:16:49,523 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:16:57,335 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54326]] Connected
+2025-04-12 15:16:57,363 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:16:57,750 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:17:01,362 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:17:01,365 [6] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:17:01,433 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:17:01,438 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:17:01,439 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:17:03,798 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54331]] Connected
+2025-04-12 15:17:03,828 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:17:03,828 [5] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:17:05,024 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:17:05,024 [6] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:17:13,278 [6] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:17:13,279 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:17:13,279 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:17:13,279 [6] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:17:13,283 [6] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:17:13,283 [6] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:17:23,997 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 15:17:27,860 [5] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:17:29,643 [5] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:18:31,134 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:18:31,238 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:18:31,352 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:18:31,352 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:18:31,352 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:18:31,352 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:18:31,358 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:18:31,358 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:18:31,358 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:18:31,358 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:18:31,358 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:18:31,358 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:18:31,358 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:18:31,358 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:18:31,358 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:18:31,465 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:18:41,454 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54414]] Connected
+2025-04-12 15:18:41,495 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:18:41,782 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:18:48,895 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54420]] Connected
+2025-04-12 15:18:48,924 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:18:48,925 [6] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:18:50,135 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:18:50,141 [10] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:18:50,402 [10] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:18:50,418 [10] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:18:50,418 [10] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:18:52,234 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:18:52,235 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:18:52,238 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:18:52,239 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:18:52,239 [7] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:18:52,240 [7] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:18:52,243 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:18:52,243 [7] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:18:55,854 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 15:18:55,858 [11] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:18:55,859 [11] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:18:55,861 [11] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:19:31,590 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:19:31,593 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:19:31,594 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:19:31,594 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:19:31,594 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:19:31,594 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:19:31,595 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:19:31,595 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:19:31,595 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:19:31,595 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:19:31,595 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:19:31,597 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:19:31,597 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:19:31,597 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:19:31,597 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:19:31,597 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:20:00,027 [3] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 15:20:00,028 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 15:20:00,030 [3] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:20:00,030 [3] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:20:00,032 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:20:02,347 [3] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 15:20:02,348 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 15:20:02,348 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:20:22,537 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54513]] Connected
+2025-04-12 15:20:22,702 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:20:22,705 [8] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:20:24,039 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:20:24,039 [13] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:20:24,040 [13] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:20:24,040 [13] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:20:24,040 [13] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:20:28,075 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54524]] Connected
+2025-04-12 15:20:28,110 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:20:28,111 [9] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:20:29,799 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:20:29,800 [5] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:20:29,800 [5] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:20:29,800 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:20:29,800 [5] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:20:29,801 [5] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:20:29,801 [5] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:20:29,801 [5] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:20:33,908 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 15:20:33,908 [6] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:20:33,909 [6] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:20:33,909 [6] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:20:46,842 [3] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 15:20:46,843 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 15:20:46,843 [3] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:20:46,843 [3] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:20:46,844 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:20:48,186 [20] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 15:20:48,187 [20] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 15:20:48,188 [20] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 15:23:59,614 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:23:59,718 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:23:59,828 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:23:59,828 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:23:59,828 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:23:59,828 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:23:59,828 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:23:59,868 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:23:59,868 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:23:59,868 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:23:59,868 [16] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:23:59,868 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:23:59,868 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:23:59,868 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:23:59,868 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:23:59,938 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:24:20,526 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54748]] Connected
+2025-04-12 15:24:20,554 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:24:20,960 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:24:35,006 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:24:35,008 [6] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:24:35,072 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:24:35,076 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:24:35,076 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:24:54,702 [13] [WARN ] [GameServer] ：Client[127.0.0.1:54773]] Connected
+2025-04-12 15:24:54,733 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:24:54,733 [5] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:24:56,003 [11] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:24:56,004 [5] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:24:56,008 [5] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:24:56,009 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:24:56,010 [5] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:24:56,010 [5] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:24:56,013 [5] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:24:56,013 [5] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:24:59,182 [11] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 15:25:15,553 [5] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:25:42,173 [5] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 15:25:42,173 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:25:42,173 [5] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:25:42,174 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:25:42,174 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:25:42,174 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:25:42,174 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:25:42,174 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:25:42,175 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:25:42,175 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:25:42,175 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:25:42,175 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:25:42,175 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:25:42,176 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:25:42,176 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:25:42,176 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:25:42,176 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:25:42,176 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:46:33,636 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:46:33,750 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:46:33,887 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:46:33,888 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:46:33,888 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:46:33,888 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:46:33,889 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:46:33,932 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:46:33,934 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:46:33,934 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:46:33,935 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:46:33,935 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:46:33,935 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:46:33,936 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:46:33,936 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:46:34,001 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:46:48,799 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55712]] Connected
+2025-04-12 15:46:48,829 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:46:49,152 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:46:57,830 [22] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:46:57,836 [6] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:46:58,101 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:46:58,115 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:46:58,116 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:47:04,175 [22] [WARN ] [GameServer] ：Client[127.0.0.1:55748]] Connected
+2025-04-12 15:47:04,204 [22] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:47:04,205 [5] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:47:05,421 [20] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:47:05,421 [5] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:47:05,425 [5] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:47:05,425 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:47:05,426 [5] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:47:05,426 [5] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:47:05,429 [5] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:47:05,429 [5] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:47:34,123 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:47:34,125 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:47:34,125 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:47:34,126 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:47:34,126 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:47:34,127 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:47:34,127 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:47:34,127 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:47:34,128 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:47:34,128 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:47:34,129 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:47:34,129 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:47:34,129 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:47:34,129 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:47:34,130 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:47:34,130 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 15:47:50,746 [20] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 15:47:50,750 [5] [INFO ] [GameServer] ：TeamInviteRequest from2 w to 1  t
+2025-04-12 15:47:50,751 [5] [INFO ] [GameServer] ：TeamInviteRequest from2 w to 1  t
+2025-04-12 15:47:50,752 [5] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:47:50,752 [5] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:56:25,340 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:56:25,450 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:56:25,569 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:56:25,570 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:56:25,570 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:56:25,570 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:56:25,571 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:56:25,579 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:56:25,579 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:56:25,580 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:56:25,611 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:56:25,611 [16] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:56:25,611 [17] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:56:25,611 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:56:25,611 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:56:25,680 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:56:44,693 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56258]] Connected
+2025-04-12 15:56:44,718 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:56:45,013 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:56:52,678 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56277]] Connected
+2025-04-12 15:56:52,704 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:56:52,704 [6] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:56:54,134 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:56:54,139 [5] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:56:54,417 [5] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:56:54,439 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:56:54,441 [5] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:56:55,625 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:56:55,626 [6] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:56:55,629 [6] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:56:55,629 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:56:55,630 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:56:55,631 [6] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:56:55,634 [6] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:56:55,634 [6] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:56:59,973 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 15:57:21,088 [8] [INFO ] [GameServer] ：TeamInviteRequest from2 w to 1  t
+2025-04-12 15:58:20,128 [8] [INFO ] [GameServer] ：TeamInviteRequest from2 w to 1  t
+2025-04-12 15:58:20,219 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 15:58:22,236 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 15:59:12,807 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 15:59:12,929 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 15:59:13,067 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 15:59:13,067 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 15:59:13,069 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 15:59:13,069 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 15:59:13,070 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 15:59:13,072 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:59:13,072 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:59:13,072 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:59:13,072 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:59:13,072 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:59:13,072 [18] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:59:13,073 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:59:13,073 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 15:59:13,178 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 15:59:23,877 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56404]] Connected
+2025-04-12 15:59:23,913 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:59:24,248 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 15:59:31,031 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:59:31,037 [8] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 15:59:31,288 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:59:31,304 [8] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 15:59:31,306 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:59:33,261 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56424]] Connected
+2025-04-12 15:59:33,296 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 15:59:33,296 [11] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 15:59:35,116 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 15:59:35,116 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 15:59:35,121 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:59:35,122 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 15:59:35,123 [7] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:59:35,123 [7] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:59:35,126 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 15:59:35,127 [7] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 15:59:42,475 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 15:59:42,480 [10] [INFO ] [GameServer] ：TeamInviteRequest from2 w to 1  t
+2025-04-12 15:59:42,480 [10] [INFO ] [GameServer] ：TeamInviteRequest from2 w to 1  t
+2025-04-12 15:59:42,481 [10] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 15:59:42,481 [10] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 15:59:44,529 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2025-04-12 15:59:44,557 [18] [ERROR] [GameServer] ：Message handler exception:, 未将对象引用设置到对象的实例。, GameServer,    在 GameServer.Services.TeamService.OnTeamInviteResponse(NetConnection`1 sender, TeamInviteResponse message) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\TeamService.cs:行号 31
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 106
+2025-04-12 16:00:13,362 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:00:13,365 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:00:13,365 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:00:13,365 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:00:13,365 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:00:13,366 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:00:13,366 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:00:13,366 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:00:13,367 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:00:13,367 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:00:13,367 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:00:13,367 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:00:13,367 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:00:13,367 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:00:13,369 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:00:13,369 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:00:29,297 [3] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 16:00:29,297 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 16:00:29,298 [3] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:00:29,298 [3] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:00:29,299 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:00:38,953 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 16:00:39,058 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 16:00:39,180 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 16:00:39,182 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 16:00:39,182 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 16:00:39,182 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 16:00:39,183 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 16:00:39,185 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:00:39,185 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:00:39,185 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:00:39,185 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:00:39,185 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:00:39,185 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:00:39,185 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:00:39,185 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:00:39,299 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 16:00:45,884 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56474]] Connected
+2025-04-12 16:00:45,928 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:00:46,011 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 16:00:49,525 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:00:49,527 [8] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 16:00:49,596 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:00:49,602 [8] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 16:00:49,602 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:00:51,912 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56485]] Connected
+2025-04-12 16:00:51,947 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:00:51,947 [10] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 16:00:53,399 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:00:53,399 [12] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 16:00:53,402 [12] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:00:53,403 [12] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 16:00:53,404 [12] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:00:53,404 [12] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:00:53,408 [12] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:00:53,408 [12] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:00:58,435 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:00:58,441 [11] [INFO ] [GameServer] ：TeamInviteRequest from2 w to 1  t
+2025-04-12 16:00:58,441 [11] [INFO ] [GameServer] ：TeamInviteRequest from2 w to 1  t
+2025-04-12 16:00:58,442 [11] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:00:58,442 [11] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:01:01,008 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2025-04-12 16:01:01,038 [9] [ERROR] [GameServer] ：Message handler exception:, 未将对象引用设置到对象的实例。, GameServer,    在 GameServer.Services.TeamService.OnTeamInviteResponse(NetConnection`1 sender, TeamInviteResponse message) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\TeamService.cs:行号 35
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 106
+2025-04-12 16:01:32,140 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 16:01:32,264 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 16:01:32,398 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 16:01:32,399 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 16:01:32,399 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 16:01:32,399 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 16:01:32,400 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 16:01:32,451 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:01:32,451 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:01:32,452 [14] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:01:32,476 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:01:32,476 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:01:32,476 [17] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:01:32,476 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:01:32,476 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:01:32,507 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 16:01:43,931 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56532]] Connected
+2025-04-12 16:01:43,959 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:01:44,414 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 16:01:51,653 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:01:51,657 [6] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 16:01:51,918 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:01:51,935 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 16:01:51,936 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:01:55,092 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56552]] Connected
+2025-04-12 16:01:55,130 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:01:55,131 [5] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 16:01:57,041 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:01:57,042 [6] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 16:01:57,047 [6] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:01:57,048 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 16:01:57,049 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:01:57,049 [6] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:01:57,052 [6] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:01:57,052 [6] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:02:16,369 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:02:31,627 [5] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:02:31,627 [5] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:02:31,627 [5] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:02:32,694 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:02:32,737 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:02:32,737 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:02:32,737 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:02:32,737 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:02:32,738 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:02:32,738 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:02:32,738 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:02:32,738 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:02:32,738 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:02:32,739 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:02:32,739 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:02:32,739 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:02:32,739 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:02:32,739 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:02:32,739 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:02:35,104 [18] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2025-04-12 16:04:12,488 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 16:04:12,588 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 16:04:12,706 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 16:04:12,706 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 16:04:12,706 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 16:04:12,708 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 16:04:12,708 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 16:04:12,712 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:04:12,712 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:04:12,712 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:04:12,712 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:04:12,712 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:04:12,712 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:04:12,712 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:04:12,712 [19] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:04:12,813 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 16:04:35,273 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56701]] Connected
+2025-04-12 16:04:35,314 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:04:35,574 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 16:04:39,847 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56711]] Connected
+2025-04-12 16:04:39,878 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:04:39,878 [11] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 16:04:40,078 [11] [ERROR] [GameServer] ：Message handler exception:System.InvalidOperationException: 内部连接致命错误。错误状态: 15，标记: 1
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior), 执行命令定义时出错。有关详细信息，请参阅内部异常。, EntityFramework,    在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 64
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 106
+2025-04-12 16:04:43,855 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:04:43,855 [10] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 16:04:45,651 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:04:45,651 [7] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 16:04:47,361 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:04:47,366 [13] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 16:04:47,632 [13] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:04:47,649 [13] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 16:04:47,650 [13] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:04:49,331 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:04:49,331 [19] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 16:04:49,335 [19] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:04:49,335 [19] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 16:04:49,336 [19] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:04:49,336 [19] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:04:49,338 [19] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:04:49,338 [19] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:04:52,586 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:04:52,590 [8] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:04:52,592 [8] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:04:52,592 [8] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:04:54,205 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:35
+2025-04-12 16:04:54,217 [9] [INFO ] [GameServer] ：TeamInviteResponse from2 w to 2  w result:Success
+2025-04-12 16:04:54,219 [9] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:04:54,219 [9] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:04:54,223 [9] [ERROR] [GameServer] ：Message handler exception:, 未将对象引用设置到对象的实例。, GameServer,    在 GameServer.Models.Team.PostProcess(NetMessageResponse message) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Models\Team.cs:行号 50
+   在 GameServer.Entities.Character.PostProcess(NetMessageResponse message) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Entities\Character.cs:行号 91
+   在 Network.NetSession.GetResponse() 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Network\NetSession.cs:行号 36
+   在 Network.NetConnection`1.SendResponse() 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Network\NetConnection.cs:行号 135
+   在 GameServer.Services.TeamService.OnTeamInviteResponse(NetConnection`1 sender, TeamInviteResponse message) 位置 D:\data\mmorpg\MyMmorpg\Src\Server\GameServer\GameServer\Services\TeamService.cs:行号 45
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 106
+2025-04-12 16:05:12,965 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:05:12,967 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:05:12,967 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:05:12,967 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:05:12,968 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:05:12,968 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:05:12,968 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:05:12,968 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:05:12,968 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:05:12,969 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:05:12,969 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:05:12,969 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:05:12,969 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:05:12,969 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:05:12,970 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:05:12,970 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:08:24,880 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 16:08:24,979 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 16:08:25,092 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 16:08:25,093 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 16:08:25,094 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 16:08:25,094 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 16:08:25,096 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 16:08:25,098 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:08:25,098 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:08:25,098 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:08:25,098 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:08:25,098 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:08:25,098 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:08:25,098 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:08:25,098 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:08:25,201 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 16:08:25,249 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56906]] Connected
+2025-04-12 16:08:26,548 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:08:35,476 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56910]] Connected
+2025-04-12 16:08:35,518 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:08:35,899 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 16:08:41,645 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56917]] Connected
+2025-04-12 16:08:41,675 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:08:41,675 [15] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 16:08:43,360 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:08:43,365 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 16:08:43,627 [9] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:08:43,644 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 16:08:43,646 [9] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:08:45,015 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:08:45,017 [10] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 16:08:45,022 [10] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:08:45,022 [10] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 16:08:45,023 [10] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:08:45,024 [10] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:08:45,027 [10] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:08:45,027 [10] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:08:48,568 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:08:48,572 [11] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:08:48,573 [11] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:08:48,573 [11] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:08:51,724 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:35
+2025-04-12 16:08:51,736 [6] [INFO ] [GameServer] ：TeamInviteResponse from2 w to 2  w result:Success
+2025-04-12 16:08:51,738 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:08:51,739 [6] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:08:51,746 [6] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:08:51,746 [6] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:09:12,035 [3] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 16:09:12,036 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 16:09:12,040 [3] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:09:12,040 [3] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:09:12,041 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:09:25,371 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:09:25,374 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:09:25,374 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:09:25,375 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:09:25,375 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:09:25,376 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:09:25,376 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:09:25,377 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:09:25,377 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:09:25,377 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:09:25,378 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:09:25,378 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:09:25,378 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:09:25,379 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:09:25,379 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:09:25,379 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:09:54,692 [21] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 16:09:54,693 [21] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 16:09:54,693 [21] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:10:52,287 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 16:10:52,389 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 16:10:52,510 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 16:10:52,511 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 16:10:52,511 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 16:10:52,512 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 16:10:52,512 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 16:10:52,515 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:10:52,515 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:10:52,515 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:10:52,515 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:10:52,516 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:10:52,516 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:10:52,516 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:10:52,516 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:10:52,624 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 16:10:55,226 [3] [WARN ] [GameServer] ：Client[127.0.0.1:57064]] Connected
+2025-04-12 16:10:55,267 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:10:55,340 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 16:10:57,982 [3] [WARN ] [GameServer] ：Client[127.0.0.1:57069]] Connected
+2025-04-12 16:10:58,011 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:10:58,011 [9] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 16:10:59,362 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:10:59,365 [8] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 16:10:59,432 [8] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:10:59,438 [8] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 16:10:59,438 [8] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:11:00,862 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:11:00,862 [6] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 16:11:00,866 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:11:00,867 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 16:11:00,867 [6] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:11:00,868 [6] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:11:00,869 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:11:00,869 [6] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:11:05,011 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:11:05,013 [11] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:11:05,013 [11] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:11:05,014 [11] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:11:05,014 [11] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:11:06,843 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:35
+2025-04-12 16:11:06,846 [12] [INFO ] [GameServer] ：TeamInviteResponse from2 w to 2  w result:Success
+2025-04-12 16:11:06,848 [12] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:11:06,848 [12] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:11:06,850 [12] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:11:06,850 [12] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:11:44,903 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:11:44,903 [7] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:11:44,903 [7] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:11:44,904 [7] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:11:52,733 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:11:52,736 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:11:52,736 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:11:52,738 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:11:52,738 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:11:52,739 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:11:52,739 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:11:52,740 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:11:52,740 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:11:52,740 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:11:52,741 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:11:52,741 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:11:52,741 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:11:52,743 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:11:52,743 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:11:52,743 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:11:57,149 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:11:57,150 [10] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:11:57,150 [10] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:12:01,216 [3] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 16:12:01,219 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 16:12:01,222 [3] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:12:01,223 [3] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:12:01,224 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:13:10,023 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 16:13:10,128 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 16:13:10,245 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 16:13:10,246 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 16:13:10,247 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 16:13:10,247 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 16:13:10,248 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 16:13:10,250 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:13:10,250 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:13:10,250 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:13:10,250 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:13:10,250 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:13:10,250 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:13:10,250 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:13:10,250 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:13:10,361 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 16:13:12,144 [3] [WARN ] [GameServer] ：Client[127.0.0.1:57172]] Connected
+2025-04-12 16:13:12,171 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:13:12,232 [5] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 16:13:16,383 [3] [WARN ] [GameServer] ：Client[127.0.0.1:57174]] Connected
+2025-04-12 16:13:16,420 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:13:16,420 [6] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 16:13:18,369 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:13:18,371 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 16:13:18,436 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:13:18,440 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 16:13:18,440 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:13:19,515 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:13:19,515 [10] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 16:13:19,519 [10] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:13:19,520 [10] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 16:13:19,520 [10] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:13:19,520 [10] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:13:19,521 [10] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:13:19,521 [10] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:13:38,975 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:13:38,978 [9] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:13:38,978 [9] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:13:38,979 [9] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:13:38,979 [9] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:13:42,923 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:35
+2025-04-12 16:13:42,928 [11] [INFO ] [GameServer] ：TeamInviteResponse from2 w to 2  w result:Success
+2025-04-12 16:13:42,928 [11] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:13:42,928 [11] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:13:42,931 [11] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:13:42,931 [11] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:14:10,519 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:14:10,519 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:14:10,520 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:14:10,521 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:14:10,521 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:14:10,521 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:14:51,811 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:14:51,811 [8] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:14:51,812 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:14:51,812 [8] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:15:20,826 [16] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 16:15:20,828 [16] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 16:15:20,831 [16] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:15:20,831 [16] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:15:20,832 [16] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:15:32,578 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 16:15:32,678 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 16:15:32,780 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 16:15:32,780 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 16:15:32,780 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 16:15:32,780 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 16:15:32,788 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 16:15:32,788 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:15:32,788 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:15:32,790 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:15:32,790 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:15:32,790 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:15:32,790 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:15:32,790 [18] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:15:32,790 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:15:32,900 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 16:15:42,600 [3] [WARN ] [GameServer] ：Client[127.0.0.1:57280]] Connected
+2025-04-12 16:15:42,641 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:15:42,714 [5] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 16:15:46,915 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:15:46,917 [18] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 16:15:46,979 [18] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:15:46,983 [18] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 16:15:46,983 [18] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:15:56,491 [3] [WARN ] [GameServer] ：Client[127.0.0.1:57299]] Connected
+2025-04-12 16:15:56,526 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:15:56,528 [9] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 16:15:58,066 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:15:58,066 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 16:15:58,069 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:15:58,070 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 16:15:58,070 [7] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:15:58,070 [7] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:15:58,071 [7] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:15:58,071 [7] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:16:05,336 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:16:05,338 [10] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:16:05,338 [10] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:16:05,339 [10] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:16:16,556 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:35
+2025-04-12 16:16:16,561 [6] [INFO ] [GameServer] ：TeamInviteResponse from2 w to 2  w result:Success
+2025-04-12 16:16:16,562 [6] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:16:16,562 [6] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:16:16,564 [6] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:16:16,564 [6] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:16:33,102 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:16:33,103 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:16:33,103 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:16:33,103 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:16:33,103 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:16:33,103 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:16:33,103 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:16:33,104 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:16:33,104 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:16:33,104 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:16:33,104 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:16:33,104 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:16:33,104 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:16:33,104 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:16:33,104 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:16:33,104 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:18:32,945 [3] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 16:18:32,945 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 16:18:32,946 [3] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:18:32,946 [3] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:18:32,946 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:19:30,444 [21] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 16:19:30,444 [21] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 16:19:30,444 [21] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:20:09,335 [1] [INFO ] [GameServer] ：Game Server Init
+2025-04-12 16:20:09,474 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-04-12 16:20:09,637 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇
+2025-04-12 16:20:09,638 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-04-12 16:20:09,639 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-04-12 16:20:09,639 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2025-04-12 16:20:09,641 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-04-12 16:20:09,644 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:20:09,644 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:20:09,644 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:20:09,644 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:20:09,645 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:20:09,645 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:20:09,646 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:20:09,646 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-04-12 16:20:09,754 [1] [WARN ] [GameServer] ：NetService Started
+2025-04-12 16:20:39,847 [3] [WARN ] [GameServer] ：Client[127.0.0.1:57547]] Connected
+2025-04-12 16:20:39,874 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:20:39,942 [5] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 16:20:44,287 [3] [WARN ] [GameServer] ：Client[127.0.0.1:57548]] Connected
+2025-04-12 16:20:44,329 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:20:44,329 [10] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 16:20:45,791 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:20:45,793 [8] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 16:20:45,866 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:20:45,871 [8] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 16:20:45,871 [8] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:20:47,848 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:20:47,848 [13] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 16:20:47,850 [13] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:20:47,850 [13] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 16:20:47,850 [13] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:20:47,852 [13] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:20:47,853 [13] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:20:47,853 [13] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:20:51,710 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:20:51,712 [12] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:20:51,713 [12] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:20:51,713 [12] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:20:53,461 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:35
+2025-04-12 16:20:53,465 [9] [INFO ] [GameServer] ：TeamInviteResponse from2 w to 2  w result:Success
+2025-04-12 16:20:53,468 [9] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:20:53,468 [9] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:20:53,471 [9] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:20:53,471 [9] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:21:09,968 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:21:09,969 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:21:09,969 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:21:09,969 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:21:09,969 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:21:09,969 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:21:09,970 [4] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:21:09,970 [4] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:0
+2025-04-12 16:21:09,970 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:21:09,970 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:21:09,970 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:21:09,970 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:21:09,970 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:21:09,970 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:21:09,970 [4] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point SkillBridge.Message.NVector3
+2025-04-12 16:21:09,970 [4] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:0
+2025-04-12 16:23:34,515 [3] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 16:23:34,515 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 16:23:34,516 [3] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:23:34,516 [3] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:23:34,516 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:25:41,195 [16] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 16:25:41,195 [16] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 16:25:41,195 [16] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:26:20,509 [20] [WARN ] [GameServer] ：Client[127.0.0.1:57837]] Connected
+2025-04-12 16:26:20,545 [20] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:26:20,545 [6] [INFO ] [GameServer] ：UserLoginRequest: User:t  Pass:t
+2025-04-12 16:26:23,768 [20] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:26:23,768 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:t  Class:1  MapID:1
+2025-04-12 16:26:23,768 [7] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:26:23,768 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-04-12 16:26:23,769 [7] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:26:32,716 [20] [WARN ] [GameServer] ：Client[127.0.0.1:57853]] Connected
+2025-04-12 16:26:32,750 [20] [WARN ] [GameServer] ：Client[] DataReceived Len:14
+2025-04-12 16:26:32,750 [5] [INFO ] [GameServer] ：UserLoginRequest: User:w  Pass:w
+2025-04-12 16:26:33,928 [20] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-04-12 16:26:33,928 [10] [INFO ] [GameServer] ：UserGameEnterRequest: Name:w  Class:2  MapID:1
+2025-04-12 16:26:33,929 [10] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:26:33,929 [10] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-04-12 16:26:33,929 [10] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:26:33,929 [10] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:26:33,929 [10] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:26:33,929 [10] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:26:38,280 [20] [WARN ] [GameServer] ：Client[] DataReceived Len:19
+2025-04-12 16:26:38,280 [8] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:26:38,281 [8] [INFO ] [GameServer] ：TeamInviteRequest from1 t to 2  w
+2025-04-12 16:26:38,281 [8] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:26:40,441 [20] [WARN ] [GameServer] ：Client[] DataReceived Len:35
+2025-04-12 16:26:40,441 [13] [INFO ] [GameServer] ：TeamInviteResponse from2 w to 2  w result:Success
+2025-04-12 16:26:40,441 [13] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:26:40,441 [13] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:26:40,442 [13] [INFO ] [GameServer] ：PostProcess > character : 2 w
+2025-04-12 16:26:40,442 [13] [INFO ] [GameServer] ：2:w PostProcess > FriendManager
+2025-04-12 16:27:04,344 [20] [INFO ] [GameServer] ：2:w OfflineNotify > 1:t
+2025-04-12 16:27:04,345 [20] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-04-12 16:27:04,345 [20] [INFO ] [GameServer] ：PostProcess > character : 1 t
+2025-04-12 16:27:04,345 [20] [INFO ] [GameServer] ：1:t PostProcess > FriendManager
+2025-04-12 16:27:04,345 [20] [WARN ] [GameServer] ：Client[] Disconnected
+2025-04-12 16:27:07,040 [27] [INFO ] [GameServer] ：1:t OfflineNotify > 2:w
+2025-04-12 16:27:07,041 [27] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-04-12 16:27:07,041 [27] [WARN ] [GameServer] ：Client[] Disconnected

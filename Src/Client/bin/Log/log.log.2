@@ -1,0 +1,53 @@
+2025-04-17 16:33:27,034 [ 1] INFO  Unity: LoadingManager start
+2025-04-17 16:33:30,044 [ 1] INFO  Unity: DataManager > DataManager()
+2025-04-17 16:33:32,579 [ 1] INFO  Unity: UserLoginRequest::user :w psw:w
+2025-04-17 16:33:32,580 [ 1] INFO  Unity: ConnectToServer() Start 
+2025-04-17 16:33:32,581 [ 1] INFO  Unity: DoConnect
+2025-04-17 16:33:32,582 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2025-04-17 16:33:32,583 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2025-04-17 16:33:32,586 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2025-04-17 16:33:45,371 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00000] in <filename unknown>:0 
+
+2025-04-17 16:33:45,375 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+
+2025-04-17 16:33:45,376 [ 1] INFO  Unity: DoConnect
+2025-04-17 16:33:45,376 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2025-04-17 16:33:45,376 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2025-04-17 16:33:47,417 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+
+2025-04-17 16:33:47,418 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+
+2025-04-17 16:33:47,419 [ 1] INFO  Unity: DoConnect
+2025-04-17 16:33:47,419 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2025-04-17 16:33:47,419 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2025-04-17 16:33:49,444 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+
+2025-04-17 16:33:49,444 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+
+2025-04-17 16:33:49,447 [ 1] INFO  Unity: DoConnect
+2025-04-17 16:33:49,447 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2025-04-17 16:33:49,447 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+
+2025-04-17 16:33:51,492 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+
+2025-04-17 16:33:51,492 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+
+2025-04-17 16:33:51,492 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2025-04-17 16:33:51,511 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2025-04-17 16:33:51,511 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+
