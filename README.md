@@ -8,7 +8,7 @@
 
 #### 游戏架构
 该游戏采用前后端分离架构，客户端基于Unity2018， 服务端基于.Net framework 3.5，数据库使用了SQL Server 2017，使用了Entity Framework用来对象关系映射，协议使用了Protobuf，日志使用了Log4net，Json解析运用了Newtonsoft.Json。
-该游戏采用定制框架，采用类MVC思想将业务逻辑分为多层。
+该游戏采用定制框架，将业务逻辑分为多层。
 Service层处理服务端与客户端之间网络收发，其中大部分Service都是一一对应的，如：FriendService客户端服务端都有，但是DBService是服务端独有的其就是对Entity Framework进行了简单的封装；
 Manager层用于管理游戏的各种实体或实现业务并负责控制Unity的大部分系统；
 Entities层用于存储游戏中一切实体的数据；
