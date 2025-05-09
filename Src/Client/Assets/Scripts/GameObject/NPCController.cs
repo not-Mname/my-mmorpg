@@ -83,6 +83,7 @@ public class NPCController : MonoBehaviour
     IEnumerator FaceToPlayer()
     {
         Vector3 faceTo = (User.Instance.CurrentCharacterObject.transform.position - this.transform.position).normalized;
+        faceTo.y = 0;
         while (Mathf.Abs(Vector3.Angle(faceTo, this.gameObject.transform.forward)) > 5)
         {
             this.gameObject.transform.forward = Vector3.Lerp(this.gameObject.transform.forward, faceTo, Time.deltaTime * 5f);

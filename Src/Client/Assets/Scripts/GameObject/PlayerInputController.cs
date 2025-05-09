@@ -85,7 +85,7 @@ public class PlayerInputController : MonoBehaviour
             return;
         }
         NavPathRenderer.Instance.SetPath(_agent.path, _agent.destination);
-        if(_agent.isStopped || _agent.remainingDistance < 0.3f)
+        if(_agent.isStopped || _agent.remainingDistance < 2f)
         {
             StopNav();
             return;

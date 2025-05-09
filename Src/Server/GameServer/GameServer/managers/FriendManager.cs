@@ -58,8 +58,6 @@ namespace GameServer.Managers
             return friendInfo;
         }
 
-        
-
         public void InitFriends()
         {
             Friends.Clear();
@@ -68,6 +66,7 @@ namespace GameServer.Managers
                 this.Friends.Add(GetFriendInfo(friend));
             }
         }
+
         public void AddFriend(Character friend)
         {
             TCharacterFriend info = new TCharacterFriend()
@@ -80,6 +79,7 @@ namespace GameServer.Managers
             this._owner.Data.Friends.Add(info);
             _friendChanged = true;
         }
+
         public NFriendInfo GetFriendInfo(int friendId)
         {
             foreach (var friend in Friends)
@@ -91,6 +91,7 @@ namespace GameServer.Managers
             }
             return null;
         }
+
         public bool RemoveFriendById(int Id)
         {
             var removed = this._owner.Data.Friends.FirstOrDefault(f => f.CharacterID == Id);
@@ -99,6 +100,7 @@ namespace GameServer.Managers
             _friendChanged = true;
             return true;
         }
+
         public bool RemoveFriendByFriendId(int friendId)
         {
             var removed = this._owner.Data.Friends.FirstOrDefault(f => f.FriendID == friendId);
@@ -107,6 +109,7 @@ namespace GameServer.Managers
             _friendChanged = true;
             return true;
         }
+
         public void UpdataFriendInfo(NCharacterInfo info, int status)
         {
             foreach (var friend in Friends)
@@ -120,6 +123,7 @@ namespace GameServer.Managers
             }
             _friendChanged = true;
         }
+
         public void OfflineNotify()
         {
             foreach (var friendInfo in Friends)
@@ -132,6 +136,7 @@ namespace GameServer.Managers
                 }
             }
         }
+
         public void PostProcess(NetMessageResponse message)
         {
             if (_friendChanged)

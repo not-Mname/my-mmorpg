@@ -74,7 +74,7 @@ public class UIGuild : UIWindow
     }
     public void OnClickKickout()
     {
-        if (SelectedItem != null)
+        if (SelectedItem == null)
         {
             MessageBox.Show("先选择成员再踢出");
             return;

@@ -360,6 +360,10 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf6ecfb8a426a5459cfce7855774ce2, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &129441004 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 129441003}
 --- !u!1 &150188109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,7 +1054,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1924902723}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1487,11 +1491,6 @@ MonoBehaviour:
 --- !u!1 &666065525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1387538310681154, guid: 7bf6ecfb8a426a5459cfce7855774ce2,
-    type: 2}
-  m_PrefabInternal: {fileID: 129441003}
---- !u!4 &666065526 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4755699621468088, guid: 7bf6ecfb8a426a5459cfce7855774ce2,
     type: 2}
   m_PrefabInternal: {fileID: 129441003}
 --- !u!1 &699224350
@@ -2507,7 +2506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000094689996, y: 0.000034104796}
+  m_AnchoredPosition: {x: -0.000094689996, y: -0.000050904953}
   m_SizeDelta: {x: 0.016113281, y: 5}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1234801807
@@ -3669,10 +3668,10 @@ RectTransform:
   m_Father: {fileID: 1979876725}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -436.58002, y: 91.12964}
-  m_SizeDelta: {x: 706.25, y: -309.1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 523.42, y: 91.12964}
+  m_SizeDelta: {x: 706.25, y: 770.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1664388913
 MonoBehaviour:
@@ -4479,7 +4478,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1562232263}
-  - {fileID: 666065526}
+  - {fileID: 129441004}
   - {fileID: 820294904}
   - {fileID: 895491263}
   - {fileID: 1557425866}

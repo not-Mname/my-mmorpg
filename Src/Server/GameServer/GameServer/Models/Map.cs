@@ -12,6 +12,7 @@ using Network;
 using GameServer.Managers;
 using GameServer.Entities;
 using GameServer.Services;
+using Common.Utils;
 
 namespace GameServer.Models
 {
@@ -113,6 +114,8 @@ namespace GameServer.Models
         {
             conn.Session.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
             conn.Session.Response.mapCharacterLeave.entityId = character.EntityId;
+            if (conn.Session.Character.Guild != null)
+                GuildManager.Instance.Guilds[conn.Session.Character.Guild.Id].timestamp = TimeUtil.timestamp;
             conn.SendResponse();
         }
 
@@ -129,6 +132,7 @@ namespace GameServer.Models
                     {
                         kv.Value.character.Ride = entitySync.Param;
                     }
+                    kv.Value.connection.SendResponse();
                 }
                 else
                 {

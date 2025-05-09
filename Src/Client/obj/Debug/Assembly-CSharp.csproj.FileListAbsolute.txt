@@ -362,5 +362,3 @@ D:\data\mmorpg\MyMmorpg\Src\Client\obj\Debug\Assembly-CSharp.dll
 D:\data\mmorpg\MyMmorpg\Src\Client\obj\Debug\Assembly-CSharp.pdb
 D:\data\mmorpg\MyMmorpg\Src\Client\Temp\bin\Debug\Common.pdb
 D:\data\mmorpg\MyMmorpg\Src\Client\Temp\bin\Debug\Protocol.pdb
-D:\data\mmorpg\MyMmorpg\Src\Client\Temp\bin\Debug\UnityEditor.UI.dll
-D:\data\mmorpg\MyMmorpg\Src\Client\Temp\bin\Debug\UnityEditor.UI.xml

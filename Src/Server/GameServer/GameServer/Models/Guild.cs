@@ -5,10 +5,7 @@ using GameServer.Services;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameServer.Models
 {
@@ -90,6 +87,7 @@ namespace GameServer.Models
             }
             return applies;
         }
+
         List<NGuildMemberInfo> GetMemberInfos()
         {
             List<NGuildMemberInfo> members = new List<NGuildMemberInfo>();
@@ -115,7 +113,7 @@ namespace GameServer.Models
                 else
                 {
                     memberInfo.Info = this.GetMemberInfo(member);
-                    memberInfo.Status = 1;
+                    memberInfo.Status = 0;
                 }
                 members.Add(memberInfo);
             }

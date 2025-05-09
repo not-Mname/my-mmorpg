@@ -165,15 +165,15 @@ namespace Services
         /// <summary>
         /// 发送管理信息
         /// </summary>
-        /// <param name="kickout"></param>
+        /// <param name="msg"></param>
         /// <param name="id"></param>
-        public void SendAdminCommand(GuildAdminCommand kickout, int id)
+        public void SendAdminCommand(GuildAdminCommand msg, int id)
         {
             Debug.Log("SendAdminCommand");
             var meg = new NetMessage();
             meg.Request = new NetMessageRequest();
             meg.Request.guildAdmin = new GuildAdminRequest();
-            meg.Request.guildAdmin.Command = kickout;
+            meg.Request.guildAdmin.Command = msg;
             meg.Request.guildAdmin.Tatget = id;
             NetClient.Instance.SendMessage(meg);
         }

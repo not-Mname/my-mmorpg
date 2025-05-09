@@ -9,6 +9,7 @@ using SkillBridge.Message;
 using GameServer.Entities;
 using GameServer.Managers;
 using GameServer.Models;
+using Common.Utils;
 
 
 namespace GameServer.Services
@@ -168,24 +169,31 @@ namespace GameServer.Services
             sender.SendResponse();
 
             MapManager.Instance[dbChar.MapID].CharacterEnter(sender, character);
+
+            if (sender.Session.Character.Info.Guild != null)
+            {
+                GuildManager.Instance.Guilds[sender.Session.Character.Guild.Id].timestamp = TimeUtil.timestamp;
+            }
         }
 
         void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest request)
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequest: {0}", sender.Session.Character.Info.Name);
-
             sender.Session.Response.gameLeave = new UserGameLeaveResponse();
-
             CharacterManager.Instance.RemoveCharacter(character.Id);
-           
+          
             CharacterLeave(character);
             sender.Session.Response.gameLeave.Errormsg = "None";
             sender.Session.Response.gameLeave.Result = Result.Success;
-            
             sender.SendResponse();
 
             MapManager.Instance[sender.Session.Character.Info.mapId].CharacterLeave(sender.Session.Character);
+
+            if(sender.Session.Character.Info.Guild != null)
+            {
+                GuildManager.Instance.Guilds[sender.Session.Character.Guild.Id].timestamp = TimeUtil.timestamp;
+            }
         }
 
         public void CharacterLeave(Character character)
@@ -194,7 +202,6 @@ namespace GameServer.Services
             CharacterManager.Instance.RemoveCharacter(character.Id);
             character.Clear();
             MapManager.Instance[character.Info.mapId].CharacterLeave(character);
-
         }
     }
 }

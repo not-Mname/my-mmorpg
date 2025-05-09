@@ -37,7 +37,7 @@ public class UIGuildPopCreate : UIWindow
             MessageBox.Show("请输入公会宣言！");
             return;
         }
-        if(InputNotice.text.Length < 30 || InputNotice.text.Length > 50)
+        if(InputNotice.text.Length < 3 || InputNotice.text.Length > 50)
         {
             MessageBox.Show("公会公告长度必须在3-50个字符之间！", "错误", MessageBoxType.Error);
             return;

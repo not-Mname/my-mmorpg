@@ -123,7 +123,7 @@ namespace GameServer.Entities
                 if (this.Info.Guild == null)
                 {
                     this.Info.Guild = this.Guild.GuildInfo(this);
-                    if (message.mapCharacterEnter != null)
+                    if (message.mapCharacterEnter != null && message.mapCharacterLeave != null)
                         GuildUpdateTs = this.Guild.timestamp;
                 }
                 if (GuildUpdateTs < this.Guild.timestamp && message.mapCharacterEnter == null)
