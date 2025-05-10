@@ -23,7 +23,7 @@ namespace Assets.Scripts.Models
         public Quest(NQuestInfo info)
         {
             this.info = info;
-            this.define = DataManager.Instance.Quests[info.QuestGuid];
+            this.define = DataManager.Instance.Quests[info.QuestId];
         }
     }
 }

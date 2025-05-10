@@ -63,10 +63,14 @@ namespace GameServer.Entities
 
 
             this.Info.Equips = this.Data.Equips;
+
             this.Info.Bag = new NBagInfo();
             this.Info.Bag.Items = this.Data.Bag.Items;
             this.Info.Bag.Unlocked = this.Data.Bag.Unlocked;
+
             this.Guild = GuildManager.Instance.GetGuild(this.Data.GuildId);
+            if (this.Guild != null)
+                this.Guild.timestamp = TimeUtil.timestamp;
 
             this.Chat = new Chat(this);
         }
@@ -98,6 +102,8 @@ namespace GameServer.Entities
         public void Clear()
         {
             this.friendManager.OfflineNotify();
+            if (this.Guild != null)
+                this.Guild.timestamp = TimeUtil.timestamp;
         }
 
         public void PostProcess(NetMessageResponse message)

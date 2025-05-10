@@ -1,9 +1,6 @@
 ﻿using Assets.Scripts.Models;
 using Managers;
 using Models;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -45,7 +42,8 @@ public class UIQuestInfo : MonoBehaviour
         else
             this.npc = quest.define.SubmitNPC;
 
-        this.NavButton.gameObject.SetActive(this.npc > 0);
+        if(this.NavButton != null)
+            this.NavButton.gameObject.SetActive(this.npc > 0);
     }
 
     public void OnClickAbandon()

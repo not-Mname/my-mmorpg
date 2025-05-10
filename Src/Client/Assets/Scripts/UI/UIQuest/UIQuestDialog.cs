@@ -1,8 +1,5 @@
 ﻿using Assets.Scripts.Models;
 using SkillBridge.Message;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UIQuestDialog : UIWindow
@@ -17,19 +14,19 @@ public class UIQuestDialog : UIWindow
     {
         this.quest = quest;
         this.UpdateQuest();
-        if(quest.info == null)
+        if (quest.info == null)
         {
             OpenQuests.gameObject.SetActive(true);
             SubmitQuest.gameObject.SetActive(false);
         }
         else
         {
-           if(quest.info.Status == QuestStatus.Completed)
+            if (quest.info.Status == QuestStatus.Completed)
             {
                 OpenQuests.gameObject.SetActive(false);
                 SubmitQuest.gameObject.SetActive(true);
             }
-           else
+            else
             {
                 OpenQuests.gameObject.SetActive(false);
                 SubmitQuest.gameObject.SetActive(false);
@@ -39,9 +36,9 @@ public class UIQuestDialog : UIWindow
 
     private void UpdateQuest()
     {
-        if(quest!= null)
+        if (quest != null)
         {
-            if(questInfo != null)
+            if (questInfo != null)
             {
                 questInfo.isDiolog = true;
                 questInfo.SetQuestInfo(quest);

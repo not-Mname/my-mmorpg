@@ -4,11 +4,8 @@ using GameServer.Entities;
 using GameServer.Services;
 using Network;
 using SkillBridge.Message;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameServer.Managers
 {
@@ -127,8 +124,8 @@ namespace GameServer.Managers
         {
             return new NQuestInfo()
             {
-                QuestId = quest.Id,
-                QuestGuid = quest.QuestID,
+                QuestId = quest.QuestID,
+                QuestGuid = quest.Id,
                 Status = (QuestStatus)quest.Status,
                 Targets = new int[]
                 {

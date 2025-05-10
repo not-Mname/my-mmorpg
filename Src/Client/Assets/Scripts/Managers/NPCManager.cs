@@ -59,7 +59,8 @@ namespace Managers
 
         private bool DoFunctionalInteractive(NPCDefine npc)
         {
-            eventMap[npc.Function](npc);
+            if (eventMap.ContainsKey(npc.Function) && eventMap[npc.Function] != null)
+                eventMap[npc.Function](npc);
             return true;
         }
 

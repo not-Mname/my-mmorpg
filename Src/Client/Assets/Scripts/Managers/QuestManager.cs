@@ -148,7 +148,6 @@ namespace Managers
 
         public bool OpenQuest(int npcId)
         {
-
             Dictionary<NPCQuestStatus, List<Quest>> status;
             if (npcQuests.TryGetValue(npcId, out status))
             {
@@ -234,6 +233,7 @@ namespace Managers
             Quest quest = RefreshQuestStatus(info);
             MessageBox.Show(quest.define.DialogAccept);
         }
+
         public void OnQuestSubmit(NQuestInfo info)
         {
             Quest quest = RefreshQuestStatus(info);

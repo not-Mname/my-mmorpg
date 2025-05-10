@@ -26,7 +26,6 @@ public class UIQuest : UIWindow
 
     private bool showAvaiableList = false;
 
-    
     void Start()
     {
         this.main.onItemSelected += OnItemSelected;
@@ -63,9 +62,13 @@ public class UIQuest : UIWindow
                 if (kv.Value.info == null)
                     continue;
             }
+            else if(kv.Value.info != null && kv.Value.info.Status == QuestStatus.Finished)
+            {
+                continue;
+            }
 
-            GameObject item = GameObject.Instantiate(uiQuestItem, 
-                kv.Value.define.Type == QuestType.Main ? main.transform : branch.transform);
+                GameObject item = GameObject.Instantiate(uiQuestItem,
+                    kv.Value.define.Type == QuestType.Main ? main.transform : branch.transform);
 
             UIQuestItem ui = item.GetComponent<UIQuestItem>();
             ui.SetQuestInfo(kv.Value);
