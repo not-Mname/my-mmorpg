@@ -119,7 +119,7 @@ namespace GameServer.Models
             conn.SendResponse();
         }
 
-        internal void updateEntity(NEntitySync entitySync)
+        internal void UpdateEntity(NEntitySync entitySync)
         {
             foreach (var kv in this.MapCharacters)
             {

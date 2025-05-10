@@ -42,7 +42,7 @@
     "Position": {
       "X": 1286,
       "Y": 2656,
-      "Z": 809
+      "Z": 795
     },
     "Direction": {
       "X": 100,
@@ -91,9 +91,9 @@
     "LinkTo": 0,
     "Descript": null,
     "Position": {
-      "X": 2697,
+      "X": 3135,
       "Y": 4098,
-      "Z": 9
+      "Z": -6
     },
     "Direction": {
       "X": 100,

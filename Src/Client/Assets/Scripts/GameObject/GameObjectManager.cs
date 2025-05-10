@@ -73,10 +73,10 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
     }
 
     public void InitGamObject(GameObject go, Character character)
-    {
+    {        
         go.transform.position = GameObjectTool.LogicToWorld(character.position);
         go.transform.forward = GameObjectTool.LogicToWorld(character.direction);
-        
+
         EntityController ec = go.GetComponent<EntityController>();
         if (ec != null)
         {
@@ -99,7 +99,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
             {
                 pic.enabled = false;
             }
-        }
+        }     
     }
 
     public RideController LoadRide(int rideId, Transform parent)

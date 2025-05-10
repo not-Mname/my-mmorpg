@@ -1,8 +1,4 @@
-﻿using Managers;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class UIWouldElement : MonoBehaviour
 {
@@ -23,7 +19,5 @@ public class UIWouldElement : MonoBehaviour
         }
         Transform cameraTransform = MainPlayerCamera.Instance.camera.transform;
         this.transform.forward = cameraTransform.forward;
-        /*this.transform.LookAt(cameraTransform.position, Vector3.up);
-        transform.Rotate(0, 180, 0);*/
     }
 }

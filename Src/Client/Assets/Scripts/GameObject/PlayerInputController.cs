@@ -35,10 +35,12 @@ public class PlayerInputController : MonoBehaviour
             _agent = this.GetComponent<NavMeshAgent>();
             _agent.stoppingDistance = 0.3f;
         }
+        _agent.enabled = false;
     }
 
     public void StartNav(Vector3 target)
     {
+        _agent.enabled = true;
         StartCoroutine(BeginNav(target));
     }
     IEnumerator BeginNav(Vector3 target)
@@ -47,9 +49,9 @@ public class PlayerInputController : MonoBehaviour
         _agent.SetDestination(target);
         yield return null;
         _autoNav = true;
-        if (state != SkillBridge.Message.CharacterState.Move)
+        if (state != CharacterState.Move)
         {
-            state = SkillBridge.Message.CharacterState.Move;
+            state = CharacterState.Move;
             this.character.MoveForward();
             this.SendEntityEvent(EntityEvent.MoveFwd);
             _agent.speed = this.character.speed / 100f;
@@ -60,24 +62,25 @@ public class PlayerInputController : MonoBehaviour
     {
         _autoNav = false;
         _agent.ResetPath();
-        if (state != SkillBridge.Message.CharacterState.Idle)
+        if (state != CharacterState.Idle)
         {
-            state = SkillBridge.Message.CharacterState.Idle;
+            state = CharacterState.Idle;
             this.rb.velocity = Vector3.zero;
             this.character.Stop();
             this.SendEntityEvent(EntityEvent.Idle);
         }
         NavPathRenderer.Instance.SetPath(null, Vector3.zero);
+        _agent.enabled = false;
     }
     public void NavMove()
     {
         if (_agent.pathPending) return;
-        if(_agent.pathStatus == NavMeshPathStatus.PathInvalid)
+        if (_agent.pathStatus == NavMeshPathStatus.PathInvalid)
         {
             StopNav();
             return;
         }
-        if(_agent.pathStatus != NavMeshPathStatus.PathComplete) return;
+        if (_agent.pathStatus != NavMeshPathStatus.PathComplete) return;
 
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f)
         {
@@ -85,7 +88,7 @@ public class PlayerInputController : MonoBehaviour
             return;
         }
         NavPathRenderer.Instance.SetPath(_agent.path, _agent.destination);
-        if(_agent.isStopped || _agent.remainingDistance < 2f)
+        if (_agent.isStopped || _agent.remainingDistance < 2f)
         {
             StopNav();
             return;
@@ -98,7 +101,7 @@ public class PlayerInputController : MonoBehaviour
 
         if (InputManager.Instance != null && InputManager.Instance.IsInputMode) return;
 
-        if(_autoNav) return;
+        if (_autoNav) return;
 
         float v = Input.GetAxis("Vertical");
         if (v > 0.01)
@@ -131,7 +134,7 @@ public class PlayerInputController : MonoBehaviour
                 this.SendEntityEvent(EntityEvent.Idle);
             }
         }
-
+        
         if (Input.GetButtonDown("Jump"))
         {
             this.SendEntityEvent(EntityEvent.Jump);
@@ -161,7 +164,7 @@ public class PlayerInputController : MonoBehaviour
     {
         if (character == null) return;
 
-        if(_autoNav)
+        if (_autoNav)
         {
             this.NavMove();
             return;
@@ -170,19 +173,17 @@ public class PlayerInputController : MonoBehaviour
         Vector3 offset = this.transform.position - lastPos;
         this.speed = (int)(offset.magnitude * 100f / Time.deltaTime);
         this.lastPos = this.rb.transform.position;
-
         if ((GameObjectTool.WorldToLogic(this.rb.transform.position) - this.character.position).magnitude > 50)
         {
             this.character.SetPosition(GameObjectTool.WorldToLogic(this.rb.transform.position));
             this.SendEntityEvent(EntityEvent.None);
         }
         this.transform.position = this.rb.transform.position;
-
         Vector3 dir = GameObjectTool.LogicToWorld(character.direction);
         Quaternion rot = new Quaternion();
         rot.SetFromToRotation(dir, this.transform.forward);
 
-        if(rot.eulerAngles.y > this.turnAngle && rot.eulerAngles.y < (360 - this.turnAngle))
+        if (rot.eulerAngles.y > this.turnAngle && rot.eulerAngles.y < (360 - this.turnAngle))
         {
             this.character.SetDirection(GameObjectTool.WorldToLogic(this.transform.forward));
             this.SendEntityEvent(EntityEvent.None);

@@ -42,7 +42,7 @@ namespace GameServer.Services
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("OnMapEntitySync : CharacterID {0} EntityID {1} Event {2} Entity {3}", character.Id, message.entitySync.Id, message.entitySync.Event, message.entitySync.Entity.String());
-            MapManager.Instance[character.Info.mapId].updateEntity(message.entitySync);
+            MapManager.Instance[character.Info.mapId].UpdateEntity(message.entitySync);
         }
 
         private void OnMapTeleport(NetConnection<NetSession> sender, MapTeleportRequest message)
