@@ -1,14 +1,19 @@
 trackSelection = true
 refreshSearchWindowsInPlayMode = false
-pickerAdvancedUI = false
 fetchPreview = true
-defaultFlags = 0
+defaultFlags = 264
 keepOpen = true
 queryFolder = "Assets"
 onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+	"last_search.9D791F98" = "Regenerate"
+	"OpenInspectorPreview.9D791F98" = "0"
+	"currentGroup.9D791F98" = null
+	"last_search.5A656512" = "ref=\"/Render\""
+	"OpenInspectorPreview.5A656512" = "0"
+	"currentGroup.5A656512" = null
 }
 providers = {
 	asset = {
@@ -56,10 +61,19 @@ providers = {
 		priority = 210
 		defaultAction = null
 	}
+	presets_provider = {
+		active = false
+		priority = -10
+		defaultAction = null
+	}
 }
 objectSelectors = {
 }
 recentSearches = [
+	"Regenerate P"
+	"Regenerate Project"
+	"Regenerate Project Files​​"
+	"General"
 ]
 searchItemFavorites = [
 ]

@@ -38,12 +38,12 @@ namespace GameServer.Services
                     message.Message.FromId = character.Id;
                     message.Message.FromName = character.Name;
                     target.Session.Response.Chat.Result = Result.Success;
-                    target.Session.Response.Chat.Privatemessages.Add(message.Message);
+                    target.Session.Response.Chat.privateMessages.Add(message.Message);
                     target.SendResponse();
                     if (sender.Session.Response.Chat == null)
                         sender.Session.Response.Chat = new ChatResponse();
                     sender.Session.Response.Chat.Result = Result.Success;
-                    sender.Session.Response.Chat.Privatemessages.Add(message.Message);
+                    sender.Session.Response.Chat.privateMessages.Add(message.Message);
                     sender.SendResponse();
                 }
             }

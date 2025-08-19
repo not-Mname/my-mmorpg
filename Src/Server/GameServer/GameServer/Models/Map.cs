@@ -132,10 +132,12 @@ namespace GameServer.Models
                     {
                         kv.Value.character.Ride = entitySync.Param;
                     }
+                    Log.InfoFormat("UpdateEntity1 {0}", kv.Value.character.Id);
                     kv.Value.connection.SendResponse();
                 }
                 else
                 {
+                    Log.InfoFormat("UpdateEntity2 {0}", kv.Value.character.Id);
                     MapService.Instance.SendEntityUpdate(kv.Value.connection, entitySync);
                 }
             }

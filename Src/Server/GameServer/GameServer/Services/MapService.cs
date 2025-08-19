@@ -24,6 +24,7 @@ namespace GameServer.Services
         public void Dispose()
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<MapEntitySyncRequest>(this.OnMapEntitySync);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<MapTeleportRequest>(this.OnMapTeleport);
         }
 
         public void Init()

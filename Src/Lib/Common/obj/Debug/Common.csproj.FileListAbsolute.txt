@@ -28,3 +28,17 @@ D:\data\mmorpg\MyMmorpg\Src\Lib\Common\obj\Debug\Common.csproj.CoreCompileInputs
 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\obj\Debug\Common.csproj.Up2Date
 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\obj\Debug\Common.dll
 D:\data\mmorpg\MyMmorpg\Src\Lib\Common\obj\Debug\Common.pdb
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Debug\Common.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Debug\Common.pdb
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Debug\log4net.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Debug\protobuf-net.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Debug\Protocol.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Debug\UnityEngine.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Debug\Protocol.pdb
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Debug\log4net.xml
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Debug\protobuf-net.xml
+D:\Develop\MyMmorpg\Src\Lib\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+D:\Develop\MyMmorpg\Src\Lib\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\Develop\MyMmorpg\Src\Lib\Common\obj\Debug\Common.csproj.Up2Date
+D:\Develop\MyMmorpg\Src\Lib\Common\obj\Debug\Common.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\obj\Debug\Common.pdb

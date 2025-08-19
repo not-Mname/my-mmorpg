@@ -1,11 +1,7 @@
-﻿using GameServer.Entities;
+﻿using Common;
+using GameServer.Entities;
 using GameServer.Managers;
 using SkillBridge.Message;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameServer.Models
 {
@@ -27,6 +23,7 @@ namespace GameServer.Models
 
         public void PostProcess(NetMessageResponse message)
         {
+            Log.InfoFormat("PostProcess: > Chat {0}", _owner.Info.Id);
             if (message.Chat == null)
             {
                 message.Chat = new ChatResponse();

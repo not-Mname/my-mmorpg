@@ -29,6 +29,7 @@ namespace GameServer.Entities
         public double GuildUpdateTs;
 
         public Chat Chat;
+        public double ChatUpdateTs;
         public Character(CharacterType type, TCharacter cha) :
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ), new Core.Vector3Int(100, 0, 0))
         {
@@ -108,12 +109,13 @@ namespace GameServer.Entities
 
         public void PostProcess(NetMessageResponse message)
         {
-            Common.Log.InfoFormat("PostProcess > character : {0} {1}",this.Id, this.Info.Name);
+            //Common.Log.InfoFormat("PostProcess > character : {0} {1}", this.Id, this.Info.Name);
             this.friendManager.PostProcess(message);
-            if(this.Team != null)
+            if (this.Team != null)
             {
-                if(TeamUpdateTs < TimeUtil.timestamp)
+                if (TeamUpdateTs < TimeUtil.timestamp)
                 {
+                    //Common.Log.InfoFormat("PostProcess > Team > TeamUpdateTs: {0} | TimeUtil.timestamp: {1}", TeamUpdateTs, TimeUtil.timestamp);
                     TeamUpdateTs = TimeUtil.timestamp;
                     this.Team.PostProcess(message);
                 }
@@ -134,12 +136,19 @@ namespace GameServer.Entities
                 }
                 if (GuildUpdateTs < this.Guild.timestamp && message.mapCharacterEnter == null)
                 {
+                    //Common.Log.InfoFormat("PostProcess > Guild > GuildUpdateTs: {0} | TimeUtil.timestamp: {1}", GuildUpdateTs, TimeUtil.timestamp);
                     GuildUpdateTs = this.Guild.timestamp;
                     this.Guild.PostProcess(this, message);
                 }
             }
 
-            Chat.PostProcess(message);
+            Common.Log.InfoFormat("PostProcess >Char {0} > Chat > ChatUpdateTs: {1} | ChatManager.Instance.timestamp: {2}", this.Id, ChatUpdateTs, ChatManager.Instance.timestamp);
+            Common.Log.InfoFormat("ChatUpdateTs < ChatManager.Instance.timestamp {0}", ChatUpdateTs < ChatManager.Instance.timestamp);
+            if (ChatUpdateTs < ChatManager.Instance.timestamp)
+            {
+                ChatUpdateTs = ChatManager.Instance.timestamp;
+                Chat.PostProcess(message);
+            }
         }
         public NCharacterInfo GetBsdicInfo()
         {

@@ -1,50 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\",
+  "WorkspaceRootPath": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|d:\\data\\mmorpg\\mymmorpg\\src\\server\\gameserver\\gameserver\\models\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\models\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\managers\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\managers\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\services\\questservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\services\\questservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\entities\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\entities\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\models\\guild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\models\\guild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\services\\friendservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\services\\friendservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\managers\\guildmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\managers\\guildmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\services\\userserevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|d:\\develop\\mymmorpg\\src\\server\\gameserver\\gameserver\\services\\userserevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\services\\userserevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\managers\\friendmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\managers\\friendmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\network\\netsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\network\\netsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\services\\questservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\services\\questservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\network\\netservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\network\\netservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\network\\netconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\network\\netconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\gameserver\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,181 +45,121 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 211,
-          "SelectedChildIndex": 20,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1a46fd64-28d5-0019-8eb3-17a02d419b53}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:283709:0:{1a46fd64-28d5-0019-8eb3-17a02d419b53}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d375ef0d-9946-4920-bae8-e432ebc42c55}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MapService.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\MapService.cs",
-              "RelativeDocumentMoniker": "GameServer\\Services\\MapService.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\MapService.cs",
-              "RelativeToolTip": "GameServer\\Services\\MapService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAqwCQAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UserSerevice.cs",
+              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\UserSerevice.cs",
+              "RelativeDocumentMoniker": "GameServer\\Services\\UserSerevice.cs",
+              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\UserSerevice.cs",
+              "RelativeToolTip": "GameServer\\Services\\UserSerevice.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T08:09:03.291Z"
+              "WhenOpened": "2025-08-10T13:47:08.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TeamService.cs",
+              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\TeamService.cs",
+              "RelativeDocumentMoniker": "GameServer\\Services\\TeamService.cs",
+              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\TeamService.cs",
+              "RelativeToolTip": "GameServer\\Services\\TeamService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T13:46:57.43Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "QuestManager.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\managers\\QuestManager.cs",
-              "RelativeDocumentMoniker": "GameServer\\managers\\QuestManager.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\managers\\QuestManager.cs",
-              "RelativeToolTip": "GameServer\\managers\\QuestManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
+              "Title": "QuestService.cs",
+              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\QuestService.cs",
+              "RelativeDocumentMoniker": "GameServer\\Services\\QuestService.cs",
+              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\QuestService.cs",
+              "RelativeToolTip": "GameServer\\Services\\QuestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T06:01:02.901Z"
+              "WhenOpened": "2025-08-10T13:46:48.636Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "QuestService.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\QuestService.cs",
-              "RelativeDocumentMoniker": "GameServer\\Services\\QuestService.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\QuestService.cs",
-              "RelativeToolTip": "GameServer\\Services\\QuestService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAIwBkAAAAMAAAAAAAAAA==",
+              "Title": "MapService.cs",
+              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\MapService.cs",
+              "RelativeDocumentMoniker": "GameServer\\Services\\MapService.cs",
+              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\MapService.cs",
+              "RelativeToolTip": "GameServer\\Services\\MapService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T05:09:22.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FriendService.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\FriendService.cs",
-              "RelativeDocumentMoniker": "GameServer\\Services\\FriendService.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\FriendService.cs",
-              "RelativeToolTip": "GameServer\\Services\\FriendService.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAA3wFUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T04:18:35.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Guild.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Models\\Guild.cs",
-              "RelativeDocumentMoniker": "GameServer\\Models\\Guild.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Models\\Guild.cs",
-              "RelativeToolTip": "GameServer\\Models\\Guild.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAUwIYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T04:16:12.582Z"
+              "WhenOpened": "2025-08-10T13:46:14.268Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Character.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Entities\\Character.cs",
-              "RelativeDocumentMoniker": "GameServer\\Entities\\Character.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Entities\\Character.cs",
-              "RelativeToolTip": "GameServer\\Entities\\Character.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAcwG0AAAAIAAAAAAAAAA==",
+              "Title": "ItemService.cs",
+              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\ItemService.cs",
+              "RelativeDocumentMoniker": "GameServer\\Services\\ItemService.cs",
+              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\ItemService.cs",
+              "RelativeToolTip": "GameServer\\Services\\ItemService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T12:35:21.584Z"
+              "WhenOpened": "2025-08-10T13:45:46.836Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "GuildManager.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\managers\\GuildManager.cs",
-              "RelativeDocumentMoniker": "GameServer\\managers\\GuildManager.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\managers\\GuildManager.cs",
-              "RelativeToolTip": "GameServer\\managers\\GuildManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
+              "Title": "NetConnection.cs",
+              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Network\\NetConnection.cs",
+              "RelativeDocumentMoniker": "GameServer\\Network\\NetConnection.cs",
+              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Network\\NetConnection.cs",
+              "RelativeToolTip": "GameServer\\Network\\NetConnection.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAQwF0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T12:16:04.423Z"
+              "WhenOpened": "2025-07-06T04:17:11.979Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UserSerevice.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\UserSerevice.cs",
-              "RelativeDocumentMoniker": "GameServer\\Services\\UserSerevice.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\UserSerevice.cs",
-              "RelativeToolTip": "GameServer\\Services\\UserSerevice.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAL0AAAAJAAAAAAAAAA==",
+              "Title": "DBService.cs",
+              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\DBService.cs",
+              "RelativeDocumentMoniker": "GameServer\\Services\\DBService.cs",
+              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\DBService.cs",
+              "RelativeToolTip": "GameServer\\Services\\DBService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvxAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T10:44:27.598Z"
+              "WhenOpened": "2025-06-07T10:59:41.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FriendManager.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\managers\\FriendManager.cs",
-              "RelativeDocumentMoniker": "GameServer\\managers\\FriendManager.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\managers\\FriendManager.cs",
-              "RelativeToolTip": "GameServer\\managers\\FriendManager.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAcwEEAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\ChatService.cs",
+              "RelativeDocumentMoniker": "GameServer\\Services\\ChatService.cs",
+              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Services\\ChatService.cs",
+              "RelativeToolTip": "GameServer\\Services\\ChatService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T10:44:27.62Z"
+              "WhenOpened": "2025-06-07T09:04:01.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NetSession.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Network\\NetSession.cs",
-              "RelativeDocumentMoniker": "GameServer\\Network\\NetSession.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Network\\NetSession.cs",
-              "RelativeToolTip": "GameServer\\Network\\NetSession.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAqwBEAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "NetService.cs",
+              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Network\\NetService.cs",
+              "RelativeDocumentMoniker": "GameServer\\Network\\NetService.cs",
+              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Network\\NetService.cs",
+              "RelativeToolTip": "GameServer\\Network\\NetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T10:46:41.898Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Map.cs",
-              "DocumentMoniker": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Models\\Map.cs",
-              "RelativeDocumentMoniker": "GameServer\\Models\\Map.cs",
-              "ToolTip": "D:\\data\\mmorpg\\MyMmorpg\\Src\\Server\\GameServer\\GameServer\\Models\\Map.cs",
-              "RelativeToolTip": "GameServer\\Models\\Map.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T10:40:50.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T09:24:26.344Z"
             }
           ]
         }

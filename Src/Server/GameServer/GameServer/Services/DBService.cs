@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Common;
 
 namespace GameServer.Services
@@ -20,6 +17,12 @@ namespace GameServer.Services
         public void Init()
         {
             entities = new ExtremeWorldEntities();
+            bool exist = false;
+            if (entities != null)
+            {
+                exist = entities.Database.Exists();
+            }
+            Log.WarningFormat("DB connection is {0}", exist);
         }
 
         public void Save(bool async = false)

@@ -16,6 +16,8 @@ namespace GameServer.Managers
         public Dictionary<int, List<ChatMessage>> Guild = new Dictionary<int, List<ChatMessage>>();
         public Dictionary<int, List<ChatMessage>> Team = new Dictionary<int, List<ChatMessage>>();
 
+        public double timestamp;
+
         public void Init()
         {
         }
@@ -43,6 +45,7 @@ namespace GameServer.Managers
                     this.AddSystemMessage(message);
                     break;
             }
+            timestamp = TimeUtil.timestamp;
         }
 
         private void AddSystemMessage(ChatMessage message)
