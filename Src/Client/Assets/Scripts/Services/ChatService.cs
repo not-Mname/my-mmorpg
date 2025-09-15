@@ -45,7 +45,7 @@ namespace Services
                 ChatManager.Instance.AddMessage(ChatChannel.Local, message.localMessages);
                 ChatManager.Instance.AddMessage(ChatChannel.World, message.worldMessages);
                 ChatManager.Instance.AddMessage(ChatChannel.System, message.systemMessages);
-                ChatManager.Instance.AddMessage(ChatChannel.Private, message.Privatemessages);
+                ChatManager.Instance.AddMessage(ChatChannel.Private, message.privateMessages);
                 ChatManager.Instance.AddMessage(ChatChannel.Guild, message.guildMessages);
                 ChatManager.Instance.AddMessage(ChatChannel.Team, message.teamMessages);
             }

@@ -5,38 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|d:\\develop\\mymmorpg\\src\\client\\assets\\scripts\\ui\\uilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|D:\\Develop\\MyMmorpg\\Src\\Client\\assets\\scripts\\gameobject\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameobject\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|D:\\Develop\\MyMmorpg\\Src\\Client\\assets\\scripts\\loadingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loadingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|D:\\Develop\\MyMmorpg\\Src\\Client\\assets\\scripts\\gameobject\\playerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameobject\\playerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|D:\\Develop\\MyMmorpg\\Src\\Client\\assets\\scripts\\gameobject\\entitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameobject\\entitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|D:\\Develop\\MyMmorpg\\Src\\Client\\assets\\scripts\\entities\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|D:\\Develop\\MyMmorpg\\Src\\Client\\assets\\scripts\\gameobject\\gameobjectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameobject\\gameobjectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|D:\\Develop\\MyMmorpg\\Src\\Client\\assets\\scripts\\gameobject\\mainplayercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameobject\\mainplayercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|D:\\Develop\\MyMmorpg\\Src\\Client\\assets\\scripts\\ui\\uiwouleelement\\uiwouldelement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12F44184-A422-5F27-22E6-507969043F15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uiwouleelement\\uiwouldelement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,36 +13,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 211,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoadingManager.cs",
-              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\LoadingManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LoadingManager.cs",
-              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\LoadingManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LoadingManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T13:54:39.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MapController.cs",
-              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\GameObject\\MapController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameObject\\MapController.cs",
-              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\GameObject\\MapController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameObject\\MapController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T13:54:11.081Z"
             },
             {
               "$type": "Document",
@@ -84,82 +28,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UILogin.cs",
               "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\UI\\UILogin.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\UILogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T12:12:53.555Z",
+              "WhenOpened": "2025-09-15T07:02:54.78Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UIWouldElement.cs",
-              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\UI\\UIWouleElement\\UIWouldElement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIWouleElement\\UIWouldElement.cs",
-              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\UI\\UIWouleElement\\UIWouldElement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\UIWouleElement\\UIWouldElement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:54:34.495Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainPlayerCamera.cs",
-              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\GameObject\\MainPlayerCamera.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameObject\\MainPlayerCamera.cs",
-              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\GameObject\\MainPlayerCamera.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameObject\\MainPlayerCamera.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:51:51.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Character.cs",
-              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\Entities\\Character.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Character.cs",
-              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\Entities\\Character.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Character.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAswEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:29:18.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerInputController.cs",
-              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\GameObject\\PlayerInputController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameObject\\PlayerInputController.cs",
-              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\GameObject\\PlayerInputController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameObject\\PlayerInputController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAABIwCoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:25:25.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EntityController.cs",
-              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\GameObject\\EntityController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameObject\\EntityController.cs",
-              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\GameObject\\EntityController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameObject\\EntityController.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAiwA4AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:22:53.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GameObjectManager.cs",
-              "DocumentMoniker": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\GameObject\\GameObjectManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameObject\\GameObjectManager.cs",
-              "ToolTip": "D:\\Develop\\MyMmorpg\\Src\\Client\\Assets\\Scripts\\GameObject\\GameObjectManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameObject\\GameObjectManager.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAuwFYAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:10:50.612Z"
             }
           ]
         }
