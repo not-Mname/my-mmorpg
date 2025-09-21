@@ -1,3 +1,0 @@
-
-2025-03-12 19:47:44,190 [1] [INFO ] [GameServer] £ºGame Server Init
-2025-03-12 19:47:44,257 [1] [WARN ] [GameServer] £ºStarting Listener...
