@@ -99,7 +99,7 @@ namespace Managers
 
         private object FormatFromPlayer(ChatMessage meg)
         {
-            if (meg.FromId == User.Instance.CurrentCharacter.Id)
+            if (meg.FromId == User.Instance.CurrentCharacterInfo.Id)
             {
                 return "<a name=\"\" class=\"player\">[你]</a>";
             }
@@ -134,7 +134,7 @@ namespace Managers
             }
             if (channel == LocalChannel.Guild)
             {
-                if (User.Instance.CurrentCharacter.Guild == null)
+                if (User.Instance.CurrentCharacterInfo.Guild == null)
                 {
                     this.AddSystemMessage("你还没有加入公会");
                     return false;

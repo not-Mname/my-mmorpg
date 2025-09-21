@@ -16,6 +16,7 @@ namespace GameServer.Services
 
         public void Init()
         {
+            Log.Info("DBService init...");
             entities = new ExtremeWorldEntities();
             bool exist = false;
             if (entities != null)

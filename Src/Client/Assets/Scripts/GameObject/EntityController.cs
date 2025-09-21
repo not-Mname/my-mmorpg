@@ -39,7 +39,7 @@ public class EntityController : MonoBehaviour, IEntityNotify
     {
         if (this.entity != null)
         {
-            EntityManager.Instance.RigisterEntityChangeNotify(entity.entityId, this);
+            EntityManager.Instance.RigisterEntityChangeNotify(entity.EntityId, this);
             UpdateTransform();
         }
 
@@ -57,15 +57,15 @@ public class EntityController : MonoBehaviour, IEntityNotify
 
     void OnDestroy()
     {
-        if (this.entity != null) Debug.LogFormat("{0} OnDestroy :ID:{1} POS:{2} DIR:{3} SPD:{4} ", this.name, entity.entityId, entity.position, entity.direction, entity.speed);
+        if (this.entity != null) Debug.LogFormat("{0} OnDestroy :ID:{1} POS:{2} DIR:{3} SPD:{4} ", this.name, entity.EntityId, entity.Position, entity.Direction, entity.Speed);
     }
 
     void UpdateTransform()
     {
         if (this.entity == null) return;
 
-        this.position = GameObjectTool.LogicToWorld(entity.position);
-        this.direction = GameObjectTool.LogicToWorld(entity.direction);
+        this.position = GameObjectTool.LogicToWorld(entity.Position);
+        this.direction = GameObjectTool.LogicToWorld(entity.Direction);
 
         this.rb.MovePosition(this.position);
         this.transform.forward = this.direction;

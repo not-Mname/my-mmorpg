@@ -1,21 +1,28 @@
-﻿using Managers;
+﻿using Common.Battle;
+using Const;
+using Managers;
 using Models;
-using System;
-using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Utilities;
 
 public class UIEquip : UIWindow
 {
     public Transform itemListRoot;
     public Text title;
     public Text money;
+    public TextMeshProUGUI HP;
+    public TextMeshProUGUI MP;
     public GameObject itemPrfab;
     public GameObject itemEquipPrfab;
     public UIEquipItem selectedItem;
+    public Scrollbar HPBar;
+    public Scrollbar MPBar;
 
     public List<Transform> slots;
+    public List<TextMeshProUGUI> Attributes;
 
     void Start()
     {
@@ -29,7 +36,7 @@ public class UIEquip : UIWindow
     }
 
     public void OnItemSelected(UIEquipItem item)
-    { 
+    {
         if (selectedItem != null)
         {
             selectedItem.Selected = false;
@@ -43,13 +50,15 @@ public class UIEquip : UIWindow
         this.InitAllEquipList();
         this.ClearAllEquipedList();
         this.InitAllEquipedList();
-        money.text = User.Instance.CurrentCharacter.Gold.ToString();
+        this.InitAttributes();
+        money.text = User.Instance.CurrentCharacterInfo.Gold.ToString();
     }
 
     public void DoEquip(Item item)
     {
         EquipManager.Instance.EquipItem(item);
     }
+
     public void UnEquip(Item item)
     {
         EquipManager.Instance.UnEquipItem(item);
@@ -72,7 +81,9 @@ public class UIEquip : UIWindow
         foreach (var slot in slots)
         {
             if (slot.childCount > 1)
+            {
                 Destroy(slot.GetChild(1).gameObject);
+            }
         }
     }
 
@@ -86,6 +97,29 @@ public class UIEquip : UIWindow
                 GameObject itemObj = Instantiate(itemEquipPrfab, itemListRoot);
                 UIEquipItem item = itemObj.GetComponent<UIEquipItem>();
                 item.SetEquipItem(kv.Value, kv.Key, this, false);
+            }
+        }
+    }
+
+    private void InitAttributes()
+    {
+        var chaAtt = User.Instance.CurrentCharacter;
+        var cha = User.Instance.CurrentCharacterInfo.Dynamic;
+
+        this.HP.text = string.Format("{0}/{1}", cha.Hp, chaAtt.Attributes.Final.Data[(int)AttributesType.MaxHp].ToString());
+        this.HP.text = string.Format("{0}/{1}", cha.Mp, chaAtt.Attributes.Final.Data[(int)AttributesType.MaxMp].ToString());
+        this.HPBar.size = cha.Hp / chaAtt.Attributes.Final.Data[(int)AttributesType.MaxHp];
+        this.MPBar.size = cha.Mp / chaAtt.Attributes.Final.Data[(int)AttributesType.MaxMp];
+
+        for (int i = (int)AttributesType.STR; i < (int)AttributesType.Max; i++)
+        {
+            if (i != (int)AttributesType.CRI)
+            {
+                Attributes[i - (int)AttributesType.STR].text = chaAtt.Attributes.Final.Data[i].ToString();
+            }
+            else
+            {
+                Attributes[i - (int)AttributesType.STR].text = (chaAtt.Attributes.Final.Data[i] * 100).ToString() + "%";
             }
         }
     }

@@ -23,6 +23,7 @@ namespace GameServer.Services
 
         public void Init()
         {
+            Log.Info("GuildService Init...");
             GuildManager.Instance.Init();
         }
 

@@ -1,11 +1,12 @@
 ﻿using Common.Data;
+using Const;
 using Models;
 using Services;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Utilities;
 
 public class UIShop : UIWindow
 {
@@ -41,13 +42,28 @@ public class UIShop : UIWindow
             }
         }
         yield return null;
+        EVENT.Subscribe<int>(EventId.on_money_change, OnMoneyChange);
     }
 
     public void SetShop(ShopDefine shop)
     {
         this.shop = shop;
         title.text = shop.Name;
-        money.text = User.Instance.CurrentCharacter.Gold.ToString();
+        money.text = User.Instance.CurrentCharacterInfo.Gold.ToString();
+    }
+
+
+///////////////////////////////////////回调////////////////////////////////////////////////////////
+
+    void OnMoneyChange(int gold)
+    {
+        this.money.text = gold.ToString();
+    }
+
+    public override void OnCloseClick()
+    {
+        base.OnCloseClick();
+        EVENT.Unsubscribe<int>(EventId.on_money_change, OnMoneyChange);
     }
 
     public void OnClickBuy()
@@ -63,12 +79,7 @@ public class UIShop : UIWindow
     void Start()
     {
         StartCoroutine(Init());
-        money.text = User.Instance.CurrentCharacter.Gold.ToString();
+        money.text = User.Instance.CurrentCharacterInfo.Gold.ToString();
     }
 
-
-    void Update()
-    {
-
-    }
 }

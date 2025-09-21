@@ -49,7 +49,7 @@ public class UIEquipItem : MonoBehaviour, IPointerClickHandler
         if(Level!= null) Level.text = item.define.Level.ToString();
         if(limitClass!= null) limitClass.text = item.define.LimitClass.ToString();
         if(limitCategory!= null) limitCategory.text = item.define.Category.ToString();
-        if(Icon != null) Icon.sprite = Resources.Load<Sprite>(item.define.Icon);
+        if(Icon != null) Icon.sprite = Resloader.Load<Sprite>(item.define.Icon);
     }
 
     

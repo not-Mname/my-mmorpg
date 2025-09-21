@@ -11,7 +11,7 @@ namespace GameServer.Services
     {
         public void Init()
         {
-
+            Log.Info("ItemService Init...");
         }
 
         public ItemService()

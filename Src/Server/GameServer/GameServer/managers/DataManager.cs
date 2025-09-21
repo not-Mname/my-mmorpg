@@ -29,11 +29,12 @@ namespace GameServer.Managers
         public DataManager()
         {
             this.DataPath = "Data/";
-            Log.Info("DataManager > DataManager()");
+            
         }
 
         internal void Load()
         {
+            Log.Info("DataManager Loading...");
             string json = File.ReadAllText(this.DataPath + "MapDefine.txt");
             this.Maps = JsonConvert.DeserializeObject<Dictionary<int, MapDefine>>(json);
 

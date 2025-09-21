@@ -58,9 +58,9 @@ namespace Managers
             //初始化可接受任务
             foreach (var kv in DataManager.Instance.Quests)
             {
-                if (kv.Value.LimitLevel > User.Instance.CurrentCharacter.Level)
+                if (kv.Value.LimitLevel > User.Instance.CurrentCharacterInfo.Level)
                     continue;
-                if (kv.Value.LimitClass != 0 && kv.Value.LimitClass != (int)User.Instance.CurrentCharacter.Class)
+                if (kv.Value.LimitClass != 0 && kv.Value.LimitClass != (int)User.Instance.CurrentCharacterInfo.Class)
                     continue;
                 if (allQuests.ContainsKey(kv.Key))
                     continue;

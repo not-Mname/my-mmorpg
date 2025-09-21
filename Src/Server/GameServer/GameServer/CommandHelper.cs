@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GameServer.Managers;
+using System;
 
 namespace GameServer
 {
@@ -14,15 +11,26 @@ namespace GameServer
             while (run)
             {
                 Console.Write(">");
-                string line = Console.ReadLine();
-                switch (line.ToLower().Trim())
+                try
                 {
-                    case "exit":
-                        run = false;
-                        break;
-                    default:
-                        Help();
-                        break;
+                    string line = Console.ReadLine().ToLower().Trim();
+                    string[] args = line.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                    switch (args[0])
+                    {
+                        case "exit":
+                            run = false;
+                            break;
+                        case "addExp":
+                            AddExp(int.Parse(args[1]), int.Parse(args[2]));
+                            break;
+                        default:
+                            Help();
+                            break;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.ToString());
                 }
             }
         }
@@ -30,10 +38,22 @@ namespace GameServer
         public static void Help()
         {
             Console.Write(@"
-Help:
-    exit    Exit Game Server
-    help    Show Help
-");
+        Help:
+            exit                                Exit Game Server
+            addExp <characterId> <exp>          Add exp to character
+            help                                Show Help
+        ");
+        }
+
+        public static void AddExp(int characterId, int exp)
+        {
+            var character = CharacterManager.Instance.GetCharacter(characterId);
+            if (character == null)
+            {
+                Console.WriteLine("Character {0} not found.", characterId);
+                return;
+            }
+            character.AddExp(exp);
         }
     }
 }

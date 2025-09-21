@@ -1,17 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Net;
-using System.Net.Sockets;
-using System.Configuration;
-
-using System.Threading;
-
+﻿using System.Threading;
 using Network;
 using GameServer.Services;
 using GameServer.Managers;
+using Common;
 
 namespace GameServer
 {
@@ -23,6 +14,7 @@ namespace GameServer
 
         public bool Init()
         {
+            Log.Info("GameServer Init...");
             int Port = Properties.Settings.Default.ServerPort;
             network = new NetService();
             network.Init(Port);

@@ -58,6 +58,7 @@ namespace GameServer.Services
 
         public void Init()
         {
+            Log.Info("ChatService Init...");
             ChatManager.Instance.Init();
         }
     }

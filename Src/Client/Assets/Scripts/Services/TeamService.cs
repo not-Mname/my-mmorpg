@@ -38,8 +38,8 @@ namespace Services
             var message = new NetMessage();
             message.Request = new NetMessageRequest();
             message.Request.teamInviteReq = new TeamInviteRequest();
-            message.Request.teamInviteReq.FromId = User.Instance.CurrentCharacter.Id;
-            message.Request.teamInviteReq.FromName = User.Instance.CurrentCharacter.Name;
+            message.Request.teamInviteReq.FromId = User.Instance.CurrentCharacterInfo.Id;
+            message.Request.teamInviteReq.FromName = User.Instance.CurrentCharacterInfo.Name;
             message.Request.teamInviteReq.ToId = friendId;
             message.Request.teamInviteReq.ToName = frienName;
             NetClient.Instance.SendMessage(message);
@@ -61,7 +61,7 @@ namespace Services
             var mes = new NetMessage();
             mes.Request = new NetMessageRequest();
             mes.Request.teamLeave = new TeamLeaveRequest();
-            mes.Request.teamLeave.characterId = User.Instance.CurrentCharacter.Id;
+            mes.Request.teamLeave.characterId = User.Instance.CurrentCharacterInfo.Id;
             mes.Request.teamLeave.TeamId = User.Instance.TeamInfo.Id;
             NetClient.Instance.SendMessage(mes);
         }

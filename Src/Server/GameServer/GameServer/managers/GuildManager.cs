@@ -60,6 +60,7 @@ namespace GameServer.Managers
 
         public void Init()
         {
+            Log.Info("GuildManager Init...");
             this.Guilds.Clear();
             foreach (var guild in DBService.Instance.Entities.Guilds)
             {

@@ -1,10 +1,6 @@
 ﻿using GameServer.Entities;
 using SkillBridge.Message;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameServer.Managers
 {
@@ -56,6 +52,16 @@ namespace GameServer.Managers
                 response.statusNotify.Status.Add(status);
             }
             this.statuses.Clear();
+        }
+
+        public void AddExpChange(int exp)
+        {
+            AddStatus(StatusType.Exp, 0, exp, StatusAction.Add);
+        }
+
+        public void AddLevelUp(int level)
+        {
+            AddStatus(StatusType.Exp, 0, level, StatusAction.Add);
         }
     }
 }

@@ -47,7 +47,7 @@ namespace GameServer.Managers
 
         public void Init()
         {
-            
+            Log.Info("TeamManager Init...");
         }
     }
 }

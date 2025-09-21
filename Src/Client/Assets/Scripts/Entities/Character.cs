@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Common.Battle;
+using Common.Data;
+using Managers;
 using SkillBridge.Message;
 using UnityEngine;
 
@@ -10,8 +10,8 @@ namespace Entities
     public class Character : Entity
     {
         public NCharacterInfo Info;
-
-        public Common.Data.CharacterDefine Define;
+        public Attributes Attributes;
+        public CharacterDefine Define;
 
         public int Id
         {
@@ -39,7 +39,7 @@ namespace Entities
             get
             {
                 if(!this.IsPlayer) return false;
-                return this.Info.Id == Models.User.Instance.CurrentCharacter.Id;
+                return this.Info.Id == Models.User.Instance.CurrentCharacterInfo.Id;
             }
         }
 
@@ -47,36 +47,39 @@ namespace Entities
         {
             this.Info = info;
             this.Define = DataManager.Instance.Characters[info.ConfigId];
+            this.Attributes = new Attributes();
+            var equips = EquipManager.Instance.GetEquipDefines();
+            this.Attributes.Init(this.Define, equips, Info.Level, this.Info.Dynamic);
         }
 
         public void MoveForward()
         {
             Debug.LogFormat("MoveForward");
-            this.speed = this.Define.Speed;
+            this.Speed = this.Define.Speed;
         }
 
         public void MoveBack()
         {
             Debug.LogFormat("MoveBack");
-            this.speed = -this.Define.Speed;
+            this.Speed = -this.Define.Speed;
         }
 
         public void Stop()
         {
             Debug.LogFormat("Stop");
-            this.speed = 0;
+            this.Speed = 0;
         }
 
         public void SetDirection(Vector3Int direction)
         {
             Debug.LogFormat("SetDirection:{0}", direction);
-            this.direction = direction;
+            this.Direction = direction;
         }
 
         public void SetPosition(Vector3Int position)
         {
             Debug.LogFormat("SetPosition:{0}", position);
-            this.position = position;
+            this.Position = position;
         }
     }
 }

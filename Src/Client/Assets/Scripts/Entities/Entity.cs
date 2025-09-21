@@ -9,58 +9,51 @@ namespace Entities
 {
     public class Entity
     {
-        public int entityId;
-
-
-        public Vector3Int position;
-        public Vector3Int direction;
-        public int speed;
-
-
-        private NEntity entityData;
+        public int EntityId;
+        public Vector3Int Position;
+        public Vector3Int Direction;
+        public int Speed;
+        private NEntity _entityData;
         public NEntity EntityData
         {
             get
             {
                 this.UpdateEntityData();
-                return entityData;
+                return _entityData;
             }
             set
             {
-                entityData = value;
+                _entityData = value;
                 this.SetEntityData(value);
             }
         }
-
-        
-
         public Entity(NEntity entity)
         {
-            this.entityId = entity.Id;
-            this.entityData = entity;
+            this.EntityId = entity.Id;
+            this._entityData = entity;
             this.SetEntityData(entity);
         }
 
         public virtual void OnUpdate(float delta)
         {
-            if (this.speed != 0)
+            if (this.Speed != 0)
             {
-                Vector3 dir = this.direction;
-                this.position += Vector3Int.RoundToInt(dir * speed * delta / 100f);
+                Vector3 dir = this.Direction;
+                this.Position += Vector3Int.RoundToInt(dir * Speed * delta / 100f);
             }
         }
 
         public void SetEntityData(NEntity entity)
         {
-            this.position = this.position.FromNVector3(entity.Position);
-            this.direction = this.direction.FromNVector3(entity.Direction);
-            this.speed = entity.Speed;
+            this.Position = this.Position.FromNVector3(entity.Position);
+            this.Direction = this.Direction.FromNVector3(entity.Direction);
+            this.Speed = entity.Speed;
         }
         private void UpdateEntityData()
         {
-            entityData.Position.FromVector3Int(this.position);
-            entityData.Direction.FromVector3Int(this.direction);
-            entityData.Speed = this.speed;
+            _entityData.Position.FromVector3Int(this.Position);
+            _entityData.Direction.FromVector3Int(this.Direction);
+            _entityData.Speed = this.Speed;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Common.Data;
+﻿using Common;
+using Common.Data;
 using Common.Utils;
 using GameServer.Core;
 using GameServer.Managers;
@@ -41,6 +42,7 @@ namespace GameServer.Entities
             this.Info.EntityId = this.entityId;
             this.Info.Name = cha.Name;
             this.Info.Level = 10;
+            this.Info.Exp = (int)cha.EXP;
             this.Info.ConfigId = cha.TID;
             this.Info.Class = (CharacterClass)cha.Class;
             this.Info.mapId = cha.MapID;
@@ -48,33 +50,86 @@ namespace GameServer.Entities
             this.Info.Gold = cha.Gold;
             this.Info.Ride = 0;
             if (Define == null)
+            {
                 this.Define = DataManager.Instance.Characters[this.Info.ConfigId];
-
+            }
 
             itemManager = new ItemManager(this);
             itemManager.GetItemInfos(Info.Items);
-
             statusManager = new StatusManager(this);
-
             questManager = new QuestManager(this);
             questManager.GetQuestInfos(this.Info.Quests);
-
             friendManager = new FriendManager(this);
             friendManager.GetFriendInfos(this.Info.Friends);
-
-
             this.Info.Equips = this.Data.Equips;
-
             this.Info.Bag = new NBagInfo();
             this.Info.Bag.Items = this.Data.Bag.Items;
             this.Info.Bag.Unlocked = this.Data.Bag.Unlocked;
-
             this.Guild = GuildManager.Instance.GetGuild(this.Data.GuildId);
             if (this.Guild != null)
+            {
                 this.Guild.timestamp = TimeUtil.timestamp;
-
+            }
             this.Chat = new Chat(this);
+
+            this.Info.Dynamic = new NAttributeDynamic();
+            this.Info.Dynamic.Hp = this.Data.HP;
+            this.Info.Dynamic.Mp = this.Data.MP;
+
+            
         }
+
+        public void AddExp(int exp)
+        {
+            this.Exp += exp;
+            this.CheckLevelUp();
+        }
+
+        //经验公式 EXP = POWER(LV,3) * 10 + LV * 40 + 50
+        private void CheckLevelUp()
+        {
+            long needExp = (long)Math.Pow(this.Level, 3) * 10 + this.Level * 40 + 50;
+            if (this.Exp > needExp)
+            {
+                this.LevelUp();
+            }
+        }
+
+        private void LevelUp()
+        {
+            this.Level++;
+            Log.InfoFormat("Character {0} Level Up to {1}", this.Info.Name, this.Level);
+            this.CheckLevelUp();
+        }
+
+        public int Exp
+        {
+            get
+            {
+                return (int)this.Data.EXP;
+            }
+            set
+            {
+                if (Exp == value) return;
+                this.statusManager.AddExpChange((int)(value - this.Data.EXP));
+                this.Data.EXP = value;
+            }
+        }
+
+        public int Level
+        {
+            get
+            {
+                return this.Data.Level;
+            }
+            set
+            {
+                if (Level == value) return;
+                this.statusManager.AddLevelUp((int)(value - this.Data.Level));
+                this.Data.Level = value;
+            }
+        }
+
         public long Gold
         {
             get
@@ -88,6 +143,7 @@ namespace GameServer.Entities
                 this.Data.Gold = value;
             }
         }
+
         public int Ride
         {
             get
@@ -100,6 +156,7 @@ namespace GameServer.Entities
                 this.Info.Ride = value;
             }
         }
+
         public void Clear()
         {
             this.friendManager.OfflineNotify();
@@ -150,6 +207,7 @@ namespace GameServer.Entities
                 Chat.PostProcess(message);
             }
         }
+
         public NCharacterInfo GetBsdicInfo()
         {
             return new NCharacterInfo()
@@ -160,6 +218,5 @@ namespace GameServer.Entities
                 Level = Info.Level,
             };
         }
-
     }
 }

@@ -38,7 +38,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
 
     void OnCharacterLeave(Character character)
     {
-        if (character != null) DestroyCharacterObject(character.entityId);
+        if (character != null) DestroyCharacterObject(character.EntityId);
     }
 
     IEnumerator InitGameObjects()
@@ -52,7 +52,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
 
     void CreateCharacteObject(Character character)
     {
-        if (!characters.ContainsKey(character.entityId) || characters[character.entityId] == null)
+        if (!characters.ContainsKey(character.EntityId) || characters[character.EntityId] == null)
         {
             UnityEngine.Object obj = Resloader.Load<UnityEngine.Object>(character.Define.Resource);
 
@@ -65,17 +65,17 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
             GameObject go = (GameObject)Instantiate(obj, this.transform);
             go.name = "Character_" + character.Id + "_" +character.Info.Name;
  
-            characters[character.entityId] = go;
+            characters[character.EntityId] = go;
 
             UIWouldElementManager.Instance.AddPlayerElement(go.transform, character);
         }
-        this.InitGamObject(characters[character.entityId], character);
+        this.InitGamObject(characters[character.EntityId], character);
     }
 
     public void InitGamObject(GameObject go, Character character)
     {        
-        go.transform.position = GameObjectTool.LogicToWorld(character.position);
-        go.transform.forward = GameObjectTool.LogicToWorld(character.direction);
+        go.transform.position = GameObjectTool.LogicToWorld(character.Position);
+        go.transform.forward = GameObjectTool.LogicToWorld(character.Direction);
 
         EntityController ec = go.GetComponent<EntityController>();
         if (ec != null)

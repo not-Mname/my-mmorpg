@@ -74,6 +74,7 @@ namespace GameServer.Services
 
         public void Init()
         {
+            Log.Info("TeamService Init...");
             TeamManager.Instance.Init();
         }
     }

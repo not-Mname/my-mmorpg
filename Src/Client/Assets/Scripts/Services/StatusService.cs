@@ -1,8 +1,10 @@
-﻿using Models;
+﻿using Const;
+using Models;
 using Network;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
+using Utilities;
 
 namespace Managers
 {
@@ -23,10 +25,11 @@ namespace Managers
 
         private void Notify(NStatus status)
         {
-            UnityEngine.Debug.LogFormat("StatusNotify: type:{0}, value:{1}, id:{2}, action:{3}", status.Type, status.Value, status.Id, status.Action);
+            LogHelper.LogFormat("StatusNotify: type:{0}, value:{1}, id:{2}, action:{3}", LogUser.StatusManager, status.Type, status.Value, status.Id, status.Action);
 
             if(status.Type == StatusType.Money)
             {
+                EVENT.Fire(EventId.on_money_change);
                 if(status.Action == StatusAction.Add)
                     User.Instance.AddGold(status.Value);
                 else if(status.Action == StatusAction.Delete)
@@ -42,9 +45,9 @@ namespace Managers
 
         private void OnStatusNotify(object sender, StatusNotify status)
         {
-            foreach(var s in status.Status)
+            foreach(var statu in status.Status)
             {
-                Notify(s);
+                Notify(statu);
             }
         }
 

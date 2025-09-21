@@ -35,8 +35,8 @@ public class UIMain : MonoSingleton<UIMain>
     }
     protected override void OnStart()
     {
-        avatarName.text = User.Instance.CurrentCharacter.Name;
-        avatarLevel.text = User.Instance.CurrentCharacter.Level.ToString();
+        avatarName.text = User.Instance.CurrentCharacterInfo.Name;
+        avatarLevel.text = User.Instance.CurrentCharacterInfo.Level.ToString();
     }
     public void ShowTeamUI(bool show)
     {

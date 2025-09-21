@@ -28,7 +28,7 @@ namespace Managers
 
         public void AddEntity(Entity entity)
         {
-            entities[entity.entityId] = entity;
+            entities[entity.EntityId] = entity;
         }
 
         public void RemoveEntity(NEntity entity)

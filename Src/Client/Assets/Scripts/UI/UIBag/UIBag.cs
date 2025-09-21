@@ -39,7 +39,7 @@ public class UIBag : UIWindow
             
             StartCoroutine(InitBags());
         }
-        money.text = User.Instance.CurrentCharacter.Gold.ToString();
+        money.text = User.Instance.CurrentCharacterInfo.Gold.ToString();
     }
 
     IEnumerator InitBags()

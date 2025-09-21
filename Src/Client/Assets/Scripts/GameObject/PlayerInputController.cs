@@ -54,7 +54,7 @@ public class PlayerInputController : MonoBehaviour
             state = CharacterState.Move;
             this.character.MoveForward();
             this.SendEntityEvent(EntityEvent.MoveFwd);
-            _agent.speed = this.character.speed / 100f;
+            _agent.speed = this.character.Speed / 100f;
         }
 
     }
@@ -112,7 +112,7 @@ public class PlayerInputController : MonoBehaviour
                 this.character.MoveForward();
                 this.SendEntityEvent(EntityEvent.MoveFwd);
             }
-            this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 9.81f) / 100f;
+            this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.Direction) * (this.character.Speed + 9.81f) / 100f;
         }
         else if (v < -0.01)
         {
@@ -122,7 +122,7 @@ public class PlayerInputController : MonoBehaviour
                 this.character.MoveBack();
                 this.SendEntityEvent(EntityEvent.MoveBack);
             }
-            this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 9.81f) / 100f;
+            this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.Direction) * (this.character.Speed + 9.81f) / 100f;
         }
         else
         {
@@ -144,13 +144,13 @@ public class PlayerInputController : MonoBehaviour
         if (h > 0.01 || h < -0.01)
         {
             this.transform.Rotate(0, h * rotateSpeed, 0);
-            Vector3 dir = GameObjectTool.LogicToWorld(character.direction);
+            Vector3 dir = GameObjectTool.LogicToWorld(character.Direction);
             Quaternion rot = new Quaternion();
             rot.SetFromToRotation(dir, this.transform.forward);
 
             if (rot.eulerAngles.y > turnAngle && rot.eulerAngles.y < (360 - this.turnAngle))
             {
-                character.direction = GameObjectTool.WorldToLogic(this.transform.forward);
+                character.Direction = GameObjectTool.WorldToLogic(this.transform.forward);
                 rb.transform.forward = this.transform.forward;
                 this.SendEntityEvent(EntityEvent.None);
             }
@@ -173,13 +173,13 @@ public class PlayerInputController : MonoBehaviour
         Vector3 offset = this.transform.position - lastPos;
         this.speed = (int)(offset.magnitude * 100f / Time.deltaTime);
         this.lastPos = this.rb.transform.position;
-        if ((GameObjectTool.WorldToLogic(this.rb.transform.position) - this.character.position).magnitude > 50)
+        if ((GameObjectTool.WorldToLogic(this.rb.transform.position) - this.character.Position).magnitude > 50)
         {
             this.character.SetPosition(GameObjectTool.WorldToLogic(this.rb.transform.position));
             this.SendEntityEvent(EntityEvent.None);
         }
         this.transform.position = this.rb.transform.position;
-        Vector3 dir = GameObjectTool.LogicToWorld(character.direction);
+        Vector3 dir = GameObjectTool.LogicToWorld(character.Direction);
         Quaternion rot = new Quaternion();
         rot.SetFromToRotation(dir, this.transform.forward);
 

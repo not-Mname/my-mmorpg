@@ -9,6 +9,7 @@ namespace Network
         static TcpSocketListener ServerListener;
         public bool Init(int port)
         {
+            Log.Info("NetService Init...");   
             ServerListener = new TcpSocketListener("127.0.0.1", GameServer.Properties.Settings.Default.ServerPort, 10);
             ServerListener.SocketConnected += OnSocketConnected;
             return true;

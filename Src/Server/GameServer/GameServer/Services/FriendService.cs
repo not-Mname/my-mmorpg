@@ -19,7 +19,7 @@ namespace GameServer.Services
         }
         public void Init()
         {
-            
+            Log.Info("FriendService Init...");
         }
         private void OnFriendRemove(NetConnection<NetSession> sender, FriendRemoveRequest message)
         {

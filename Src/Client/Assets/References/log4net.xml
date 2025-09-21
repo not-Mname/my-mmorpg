@@ -4357,7 +4357,7 @@
             </para>
             </remarks>
         </member>
-        <member name="F:log4net.Appender.MemoryAppender.m_eventsList">
+        <member name="F:log4net.Appender.MemoryAppender._eventsList">
             <summary>
             The list of events that have been appended.
             </summary>

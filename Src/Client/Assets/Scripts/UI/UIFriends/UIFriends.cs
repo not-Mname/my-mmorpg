@@ -60,7 +60,7 @@ public class UIFriends : UIWindow
         string friendName = "";
         if (!int.TryParse(input, out friendId))//TryParse意味着如果input可以转换成int，则返回true，并将结果赋值给friendId，否则返回false，friendId的值不变
             friendName = input;
-        if (friendId == User.Instance.CurrentCharacter.Id || friendName == User.Instance.CurrentCharacter.Name)
+        if (friendId == User.Instance.CurrentCharacterInfo.Id || friendName == User.Instance.CurrentCharacterInfo.Name)
         {
             tips = "开玩笑，不能添加自己为好友";
             return false;
@@ -99,7 +99,7 @@ public class UIFriends : UIWindow
         MessageBox.Show(string.Format("确定删除好友{0}吗？", SelectedItem.NameText.text), "删除好友",
             MessageBoxType.Confirm, "确定", "取消").OnYes = () =>
             {
-                FriendService.Instance.SendFriendRemoveRequest(User.Instance.CurrentCharacter.Id, SelectedItem.FriendInfo.friendInfo.Id);
+                FriendService.Instance.SendFriendRemoveRequest(User.Instance.CurrentCharacterInfo.Id, SelectedItem.FriendInfo.friendInfo.Id);
             };
     }
 

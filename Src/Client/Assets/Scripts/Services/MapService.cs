@@ -41,10 +41,10 @@ namespace Services
             Debug.LogFormat("OnMapCharacterEnter:Map:{0} Count:{1}", response.mapId, response.Characters.Count);
             foreach (var cha in response.Characters)
             {
-                if (User.Instance.CurrentCharacter == null ||
-                    (cha.Type == CharacterType.Player && (User.Instance.CurrentCharacter.EntityId == cha.EntityId)))
+                if (User.Instance.CurrentCharacterInfo == null ||
+                    (cha.Type == CharacterType.Player && (User.Instance.CurrentCharacterInfo.EntityId == cha.EntityId)))
                 {
-                    User.Instance.CurrentCharacter = cha;
+                    User.Instance.CurrentCharacterInfo = cha;
                 }
                 CharacterManager.Instance.AddCharacter(cha);
             }
@@ -59,14 +59,14 @@ namespace Services
         {
             Debug.LogFormat("OnMapCharacterLeave:Map:{0} CharacterId:{1}", User.Instance.CurrentMapData.ID, message.entityId);
 
-            if (message.entityId != User.Instance.CurrentCharacter.EntityId)
+            if (message.entityId != User.Instance.CurrentCharacterInfo.EntityId)
             {
                 CharacterManager.Instance.RemoveCharacter(message.entityId);
             }
             else
             {
                 CharacterManager.Instance.Clear();
-                User.Instance.CurrentCharacter = null;
+                User.Instance.CurrentCharacterInfo = null;
                 User.Instance.CurrentCharacterObject = null;
                 User.Instance.CurrentMapData = null;
             }

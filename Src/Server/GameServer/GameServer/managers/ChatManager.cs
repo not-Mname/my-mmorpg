@@ -20,6 +20,7 @@ namespace GameServer.Managers
 
         public void Init()
         {
+            Log.Info("ChatManager init...");
         }
 
         public void AddMessage(Character from, ChatMessage message)

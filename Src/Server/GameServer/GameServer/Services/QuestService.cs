@@ -33,7 +33,7 @@ namespace GameServer.Services
         }
         public void Init()
         {
-
+            Log.Info("QuestService Init...");
         }
 
 

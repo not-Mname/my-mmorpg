@@ -34,7 +34,7 @@ class UIRide : UIWindow
         {
             if(item.Value.define.Type == ItemType.Ride &&
                 item.Value.define.LimitClass == CharacterClass.None ||
-                item.Value.define.LimitClass == User.Instance.CurrentCharacter.Class)
+                item.Value.define.LimitClass == User.Instance.CurrentCharacterInfo.Class)
             {
                 if (EquipManager.Instance.Contains(item.Key))
                     continue;

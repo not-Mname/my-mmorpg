@@ -29,7 +29,7 @@ namespace GameServer.Services
 
         public void Init()
         {
-
+            Log.Info("UserService Init...");
         }
 
         void OnRegister(NetConnection<NetSession> sender, UserRegisterRequest request)
@@ -110,6 +110,8 @@ namespace GameServer.Services
                 MapPosY = 4000,
                 MapPosZ = 820,
                 Gold = 1000000,
+                HP = 1000,
+                MP = 1000,
                 Equips = new byte[28],
             };
 
