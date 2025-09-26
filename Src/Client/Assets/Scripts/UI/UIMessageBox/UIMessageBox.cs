@@ -16,6 +16,8 @@ public class UIMessageBox : MonoBehaviour {
 
     public UnityAction OnYes;
     public UnityAction OnNo;
+
+    public Animation anim;
     
     public void Init(string title, string message, MessageBoxType type = MessageBoxType.Information, string btnOK = "", string btnCancel = "")
     {
@@ -32,6 +34,7 @@ public class UIMessageBox : MonoBehaviour {
         this.buttonNo.onClick.AddListener(OnClickNo);
 
         this.buttonNo.gameObject.SetActive(type == MessageBoxType.Confirm);
+        this.anim.Play();
 
         if(type == MessageBoxType.Error)
             SoundManager.Instance.PlaySound(SoundDefine.SFX_Message_Error);
@@ -42,7 +45,7 @@ public class UIMessageBox : MonoBehaviour {
     void OnClickYes()
     {
         SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Confirm);
-        Destroy(this.gameObject);
+        this.HideSelf();
         if (this.OnYes != null)
             this.OnYes();
     }
@@ -50,8 +53,21 @@ public class UIMessageBox : MonoBehaviour {
     void OnClickNo()
     {
         SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Win_Close);
-        Destroy(this.gameObject);
+        this.HideSelf();
         if (this.OnNo != null)
             this.OnNo();
+    }
+
+    void HideSelf(bool needDestroy = true)
+    {
+        if (needDestroy)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
+        
     }
 }

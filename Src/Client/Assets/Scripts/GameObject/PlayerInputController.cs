@@ -16,7 +16,7 @@ public class PlayerInputController : MonoBehaviour
 
     SkillBridge.Message.CharacterState state;
 
-    public Character character;
+    public BattleUnit character;
 
     public float rotateSpeed = 2.0f;
 
@@ -43,6 +43,7 @@ public class PlayerInputController : MonoBehaviour
         _agent.enabled = true;
         StartCoroutine(BeginNav(target));
     }
+
     IEnumerator BeginNav(Vector3 target)
     {
 
@@ -58,6 +59,7 @@ public class PlayerInputController : MonoBehaviour
         }
 
     }
+
     public void StopNav()
     {
         _autoNav = false;
@@ -72,6 +74,7 @@ public class PlayerInputController : MonoBehaviour
         NavPathRenderer.Instance.SetPath(null, Vector3.zero);
         _agent.enabled = false;
     }
+
     public void NavMove()
     {
         if (_agent.pathPending) return;
@@ -94,6 +97,7 @@ public class PlayerInputController : MonoBehaviour
             return;
         }
     }
+
     void FixedUpdate()
     {
         if (character == null)

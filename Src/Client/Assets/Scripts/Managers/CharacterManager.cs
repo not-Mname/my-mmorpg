@@ -16,9 +16,9 @@ namespace Managers
 {
     class CharacterManager : Singleton<CharacterManager>, IDisposable
     {
-        public Dictionary<int, Character> Characters = new Dictionary<int, Character>();
-        public UnityAction<Character> OnCharacterEnter;
-        public UnityAction<Character> OnCharacterLeave;
+        public Dictionary<int, BattleUnit> Characters = new Dictionary<int, BattleUnit>();
+        public UnityAction<BattleUnit> OnCharacterEnter;
+        public UnityAction<BattleUnit> OnCharacterLeave;
 
         public CharacterManager()
         {
@@ -47,7 +47,7 @@ namespace Managers
         public void AddCharacter(SkillBridge.Message.NCharacterInfo cha)
         {
             LogHelper.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", LogUser.CharacterManager, cha.EntityId, cha.Name, cha.mapId, cha.Entity.String());
-            Character character = new Character(cha);
+            BattleUnit character = new BattleUnit(cha);
             this.Characters[cha.EntityId] = character;
             EntityManager.Instance.AddEntity(character);
             if (OnCharacterEnter != null)
@@ -75,9 +75,9 @@ namespace Managers
             this.Characters.Remove(entityId);
         }
 
-        public Character GetCharacter(int id)
+        public BattleUnit GetCharacter(int id)
         {
-            Character cha = null;
+            BattleUnit cha = null;
             this.Characters.TryGetValue(id, out cha);
             return cha;
         }

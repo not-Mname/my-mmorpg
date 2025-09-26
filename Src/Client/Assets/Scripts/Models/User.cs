@@ -23,7 +23,7 @@ namespace Models
             this.CurrentCharacterInfo.Gold += value;
         }
 
-        public Character CurrentCharacter { get; set; }
+        public BattleUnit CurrentCharacter { get; set; }
 
         public MapDefine CurrentMapData { get; set; }
 

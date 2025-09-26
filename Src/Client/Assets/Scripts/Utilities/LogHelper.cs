@@ -10,6 +10,7 @@ namespace Utilities
         UIEquip,
         StatusManager,
         CharacterManager,
+        DataManager,
     }
 
     public class LogHelper
@@ -83,6 +84,9 @@ namespace Utilities
         { 
             { LogUser.None, true },
             { LogUser.UIEquip, true },
+            { LogUser.StatusManager, true },
+            { LogUser.CharacterManager, true },
+            { LogUser.DataManager, false },
         };
     }
 }

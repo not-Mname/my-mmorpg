@@ -3,45 +3,39 @@ using System.Collections.Generic;
 
 public class EventManager : Singleton<EventManager>
 {
-    private Dictionary<string, Action<object[]>> _eventDictionary;
-
+    private Dictionary<string, Action<object[]>> _events;
 
     public void Init()
     {
+        _events = new Dictionary<string, Action<object[]>>();
     }
 
-    public void StartListening(string eventName, Action<object[]> listener)
+    public void Subscribe(string eventName, Action<object[]> listener)
     {
-        Action<object[]> thisEvent;
-
-        if (_eventDictionary.TryGetValue(eventName, out thisEvent))
+        if (_events.ContainsKey(eventName))
         {
-            thisEvent += listener;
-            _eventDictionary[eventName] = thisEvent;
+            // 如果已存在，替换掉旧的事件处理器
+            _events[eventName] = listener;
         }
         else
         {
-            thisEvent += listener;
-            _eventDictionary.Add(eventName, thisEvent);
+            _events.Add(eventName, listener);
         }
     }
 
-    public void StopListening(string eventName, Action<object[]> listener)
+    public void Unsubscribe(string eventName)
     {
-        Action<object[]> thisEvent;
-        if (_eventDictionary.TryGetValue(eventName, out thisEvent))
+        if (_events.ContainsKey(eventName))
         {
-            thisEvent -= listener;
-            _eventDictionary[eventName] = thisEvent;
+            _events.Remove(eventName);
         }
     }
 
     public void TriggerEvent(string eventName, params object[] parameters)
     {
-        Action<object[]> thisEvent;
-        if (_eventDictionary.TryGetValue(eventName, out thisEvent))
+        if (_events.TryGetValue(eventName, out var thisEvent))
         {
-            thisEvent.Invoke(parameters);
+            thisEvent?.Invoke(parameters);
         }
     }
 }
