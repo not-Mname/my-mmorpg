@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Battle;
 using Common.Battle;
 using Common.Data;
 using Managers;
@@ -10,8 +12,12 @@ namespace Entities
     public class BattleUnit : Entity
     {
         public NCharacterInfo Info;
+
         public Attributes Attributes;
+
         public CharacterDefine Define;
+
+        public SkillManager SkillManager;
 
         public int Id
         {
@@ -48,10 +54,16 @@ namespace Entities
             this.Info = info;
             this.Define = DataManager.Instance.Characters[info.ConfigId];
             this.Attributes = new Attributes();
-            var equips = EquipManager.Instance.GetEquipDefines();
-            this.Attributes.Init(this.Define, equips, Info.Level, this.Info.Dynamic);
+            this.Attributes.Init(this.Define, this.GetEquip(), Info.Level, this.Info.Dynamic);
+            this.SkillManager = new SkillManager(this);
         }
 
+        public virtual List<EquipDefine> GetEquip()
+        {
+            return null;
+        }
+
+        #region 同步
         public void MoveForward()
         {
             Debug.LogFormat("MoveForward");
@@ -81,5 +93,8 @@ namespace Entities
             Debug.LogFormat("SetPosition:{0}", position);
             this.Position = position;
         }
+        #endregion
+
+
     }
 }

@@ -57,7 +57,7 @@ public class UIShop : UIWindow
 
     void OnMoneyChange(int gold)
     {
-        this.money.text = gold.ToString();
+        this.money.text = User.Instance.CurrentCharacterInfo.Gold.ToString();
     }
 
     public override void OnCloseClick()

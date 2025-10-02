@@ -11,6 +11,7 @@ namespace Utilities
         StatusManager,
         CharacterManager,
         DataManager,
+        MapService,
     }
 
     public class LogHelper
@@ -80,6 +81,14 @@ namespace Utilities
             }
         }
 
+        public static void LogErrorFormat(string message, LogUser user = LogUser.None, params object[] args)
+        {
+            if (LogDic.TryGetValue(user, out bool isEnabled) && isEnabled)
+            {
+                Debug.LogErrorFormat(message, args);
+            }
+        }
+
         public static Dictionary<LogUser, bool> LogDic = new Dictionary<LogUser, bool>() 
         { 
             { LogUser.None, true },
@@ -87,6 +96,7 @@ namespace Utilities
             { LogUser.StatusManager, true },
             { LogUser.CharacterManager, true },
             { LogUser.DataManager, false },
+            { LogUser.MapService, false },
         };
     }
 }

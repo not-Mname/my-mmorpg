@@ -14,6 +14,7 @@ public class ItemSelectEvent : UnityEvent<ListView.ListViewItem>
 public class ListView : MonoBehaviour
 {
     public UnityAction<ListViewItem> onItemSelected;
+
     public class ListViewItem : MonoBehaviour, IPointerClickHandler
     {
         private bool Selected;
@@ -48,7 +49,13 @@ public class ListView : MonoBehaviour
     }
 
     List<ListViewItem> items;
+
     ListViewItem SelectedItem = null;
+
+    //GameObject itemPrefab;
+
+    //Transform parent;
+
     public ListViewItem selectedItem
     {
         get
@@ -66,6 +73,14 @@ public class ListView : MonoBehaviour
                 onItemSelected(SelectedItem);
         }
     }
+
+    //public void Init(GameObject prefab, Transform parent, UnityAction<ListViewItem> callback)
+    //{
+    //    this.itemPrefab = prefab;
+    //    this.onItemSelected = callback;
+    //    this.parent = parent;
+    //    this.items = new List<ListViewItem>();
+    //}
 
     public void AddItem(ListViewItem item)
     {

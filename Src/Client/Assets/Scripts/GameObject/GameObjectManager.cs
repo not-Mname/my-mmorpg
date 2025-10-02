@@ -90,7 +90,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
             if (character.IsCurrentPlayer)
             {
                 User.Instance.CurrentCharacterObject = pic;
-                MainPlayerCamera.Instance.player = go;
+                MainPlayerCamera.Instance.Player = go;
                 pic.character = character;
                 pic.enabled = true;
                 pic.entityController = ec;

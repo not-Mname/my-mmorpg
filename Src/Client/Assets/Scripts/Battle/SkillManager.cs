@@ -22,7 +22,21 @@ namespace Battle
 
         private void InitSkills()
         {
-            
+            this.Skills.Clear();
+            foreach (var skill in _owner.Info.Skills)
+            {
+                this.Skills.Add(new Skill(skill, this._owner));
+            }
+        }
+
+        public void AddSkill(Skill skill)
+        {
+            this.Skills.Add(skill);
+        }
+
+        public Skill GetSkill(int id)
+        {
+            return this.Skills.Find(s => s.Info.Id == id);
         }
     }
 }

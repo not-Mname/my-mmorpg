@@ -1,4 +1,7 @@
-﻿using SkillBridge.Message;
+﻿using Common.Data;
+using Managers;
+using SkillBridge.Message;
+using System.Collections.Generic;
 
 namespace Entities
 {
@@ -6,6 +9,11 @@ namespace Entities
     {
         public Character(NCharacterInfo info) : base(info)
         {
+        }
+
+        public override List<EquipDefine> GetEquip()
+        {
+            return EquipManager.Instance.GetEquipDefines();
         }
     }
 }

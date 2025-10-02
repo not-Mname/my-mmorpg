@@ -6,18 +6,13 @@ public class UIWouldElement : MonoBehaviour
 
     public float height = 2;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if(owner != null)
         {
             this.transform.position = (owner.position + Vector3.up * height);
         }
-        Transform cameraTransform = MainPlayerCamera.Instance.camera.transform;
+        Transform cameraTransform = MainPlayerCamera.Instance.Camera.transform;
         this.transform.forward = cameraTransform.forward;
     }
 }

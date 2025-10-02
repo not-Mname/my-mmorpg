@@ -10,7 +10,10 @@ namespace GameServer.Managers
     {
         public Result BuyItem(NetConnection<NetSession> sender, int shopId, int shopItemId)
         {
-            if (!DataManager.Instance.ShopItems[shopId].ContainsKey(shopItemId)) return Result.Failed;
+            if (!DataManager.Instance.ShopItems[shopId].ContainsKey(shopItemId))
+            {
+                return Result.Failed;
+            }
             ShopItemDefine item;
             if (DataManager.Instance.ShopItems[shopId].TryGetValue(shopItemId, out item))
             {
@@ -20,7 +23,7 @@ namespace GameServer.Managers
                 if(sender.Session.Character.Data.Gold >= item.Price)
                 {
                     sender.Session.Character.itemManager.AddItem(item.ItemID, item.Count);
-                    sender.Session.Character.Data.Gold -= item.Price;
+                    sender.Session.Character.Gold -= item.Price;
                     DBService.Instance.Save();
                     return Result.Success;
                 }               
