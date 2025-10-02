@@ -1,22 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Utilities;
 
 public class SceneManager : MonoSingleton<SceneManager>
 {
     UnityAction<float> onProgress = null;
-
-    // Use this for initialization
-    protected override void OnStart()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
+    public string CurrentScene;
+    private string _loadingScene;
 
     public void LoadScene(string name)
     {
@@ -26,6 +17,7 @@ public class SceneManager : MonoSingleton<SceneManager>
     IEnumerator LoadLevel(string name)
     {
         Debug.LogFormat("LoadLevel: {0}", name);
+        this._loadingScene = name;
         AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(name);
         async.allowSceneActivation = true;
         async.completed += LevelLoadCompleted;
@@ -41,6 +33,8 @@ public class SceneManager : MonoSingleton<SceneManager>
     {
         if (onProgress != null)
             onProgress(1f);
+        this.CurrentScene = this._loadingScene;
+        EVENT.Fire(Const.EventId.on_map_change, this.CurrentScene);
         Debug.Log("LevelLoadCompleted:" + obj.progress);
     }
 }

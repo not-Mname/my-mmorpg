@@ -180,9 +180,10 @@ namespace GameServer.Services
             sender.Session.Response.gameLeave = new UserGameLeaveResponse();
             CharacterManager.Instance.RemoveCharacter(character.Id);
           
-            CharacterLeave(character);
+            
             sender.Session.Response.gameLeave.Errormsg = "None";
             sender.Session.Response.gameLeave.Result = Result.Success;
+            CharacterLeave(character);
             sender.SendResponse();
 
             MapManager.Instance[sender.Session.Character.Info.mapId].CharacterLeave(sender.Session.Character);

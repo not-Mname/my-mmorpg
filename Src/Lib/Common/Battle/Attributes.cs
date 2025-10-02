@@ -146,6 +146,10 @@ namespace Common.Battle
 
         private void LoadEquipAttribute(AttributeData attr, List<EquipDefine> equips)
         {
+            if (equips == null)
+            {
+                return;
+            }
             attr.Reset();
             foreach (var equip in equips)
             {

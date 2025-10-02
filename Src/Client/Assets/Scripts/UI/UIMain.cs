@@ -33,11 +33,13 @@ public class UIMain : MonoSingleton<UIMain>
     {
         UIManager.Instance.Show<UIFriends>();
     }
+
     protected override void OnStart()
     {
         avatarName.text = User.Instance.CurrentCharacterInfo.Name;
         avatarLevel.text = User.Instance.CurrentCharacterInfo.Level.ToString();
     }
+
     public void ShowTeamUI(bool show)
     {
         TeamWindow.ShowTeam(show);

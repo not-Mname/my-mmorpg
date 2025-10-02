@@ -50,9 +50,8 @@ public class LoadingManager : MonoBehaviour {
         EventManager.Instance.Init();
 
         // Fake Loading Simulate
-        for (float i = 50; i < 100;)
+        for (float i = 1; i < 100; i += Random.Range(0.1f, 1.5f))
         {
-            i += Random.Range(0.1f, 1.5f);
             progressBar.value = i;
             yield return new WaitForEndOfFrame();
         }

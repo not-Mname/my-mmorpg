@@ -1,14 +1,13 @@
-using UnityEngine;
+using Common.Data;
+using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.Events;
-using System.Text;
-using System;
 using System.IO;
-
-using Common.Data;
-
-using Newtonsoft.Json;
+using System.Text;
+using UnityEngine;
+using UnityEngine.Events;
+using Utilities;
 
 public class DataManager : Singleton<DataManager>
 {
@@ -19,17 +18,18 @@ public class DataManager : Singleton<DataManager>
     public Dictionary<int, NPCDefine> NPCs = null;
     public Dictionary<int, Dictionary<int, SpawnPointDefine>> SpawnPoints = null;
     public Dictionary<int, Dictionary<int, SpawnRuleDefine>> SpawnRules = null;
-    public Dictionary<int,ItemDefine> Items = null;
-    public Dictionary<int,ShopDefine> Shops = null;
-    public Dictionary<int,Dictionary<int, ShopItemDefine>> ShopItems = null;
+    public Dictionary<int, ItemDefine> Items = null;
+    public Dictionary<int, ShopDefine> Shops = null;
+    public Dictionary<int, Dictionary<int, ShopItemDefine>> ShopItems = null;
     public Dictionary<int, EquipDefine> Equips = null;
     public Dictionary<int, QuestDefine> Quests = null;
     public Dictionary<int, RideDefine> Rides = null;
+    public Dictionary<int, Dictionary<int, SkillDefine>> Skills = null;
 
     public DataManager()
     {
         this.DataPath = "Data/";
-        Debug.LogFormat("DataManager > DataManager()");
+        LogHelper.Log("DataManager > DataManager()", LogUser.DataManager);
     }
 
     public void Load()
@@ -69,9 +69,12 @@ public class DataManager : Singleton<DataManager>
 
         json = File.ReadAllText(this.DataPath + "RideDefine.txt");
         this.Rides = JsonConvert.DeserializeObject<Dictionary<int, RideDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "SkillDefine.txt");
+        this.Skills = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SkillDefine>>>(json);
     }
 
-    
+
     public IEnumerator LoadData()
     {
         string json = File.ReadAllText(this.DataPath + "MapDefine.txt");
@@ -131,6 +134,11 @@ public class DataManager : Singleton<DataManager>
 
         json = File.ReadAllText(this.DataPath + "RideDefine.txt");
         this.Rides = JsonConvert.DeserializeObject<Dictionary<int, RideDefine>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "SkillDefine.txt");
+        this.Skills = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SkillDefine>>>(json);
 
         yield return null;
     }

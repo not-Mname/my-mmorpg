@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace GameServer.Entities
 {
-    class Entity
+    public class Entity
     {
         public int entityId
         {
             get { return this.entityData.Id; }
         }
-
 
         private Vector3Int position;
 
@@ -28,6 +27,7 @@ namespace GameServer.Entities
         }
 
         private Vector3Int direction;
+
         public Vector3Int Direction
         {
             get { return direction; }
@@ -39,6 +39,7 @@ namespace GameServer.Entities
         }
 
         private int speed;
+
         public int Speed
         {
             get { return speed; }
@@ -50,6 +51,7 @@ namespace GameServer.Entities
         }
 
         private NEntity entityData;
+
         public NEntity EntityData
         {
             get

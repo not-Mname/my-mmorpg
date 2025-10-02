@@ -12,7 +12,7 @@ public class UIWouldElementManager : MonoSingleton<UIWouldElementManager>
     public Dictionary<Transform, GameObject> elementPlayerNames = new Dictionary<Transform, GameObject>();
     public Dictionary<Transform, GameObject> elementStatus = new Dictionary<Transform, GameObject>();
 
-    public void AddPlayerElement(Transform owner, Character character)
+    public void AddPlayerElement(Transform owner, BattleUnit character)
     {
         GameObject go = Instantiate(uiNameBar, this.transform);
         go.GetComponent<UINameBar>().characterInfo = character;

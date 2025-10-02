@@ -29,11 +29,12 @@ namespace Managers
 
             if(status.Type == StatusType.Money)
             {
-                EVENT.Fire(EventId.on_money_change);
                 if(status.Action == StatusAction.Add)
                     User.Instance.AddGold(status.Value);
                 else if(status.Action == StatusAction.Delete)
                     User.Instance.AddGold(-status.Value);
+
+                EVENT.Fire(EventId.on_money_change, status.Value);
             }
 
             StatusNotifyHandler handler;

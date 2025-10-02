@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class UINameBar : MonoBehaviour
 {
     public Text Name;
-    public Character characterInfo;
+    public BattleUnit characterInfo;
 
     void Start()
     {

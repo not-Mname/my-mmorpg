@@ -57,13 +57,13 @@ public class UIShop : UIWindow
 
     void OnMoneyChange(int gold)
     {
-        this.money.text = gold.ToString();
+        this.money.text = User.Instance.CurrentCharacterInfo.Gold.ToString();
     }
 
     public override void OnCloseClick()
     {
         base.OnCloseClick();
-        EVENT.Unsubscribe<int>(EventId.on_money_change, OnMoneyChange);
+        EVENT.Unsubscribe(EventId.on_money_change);
     }
 
     public void OnClickBuy()

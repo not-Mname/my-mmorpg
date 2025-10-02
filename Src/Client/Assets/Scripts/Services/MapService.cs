@@ -8,22 +8,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using Utilities;
 
 namespace Services
 {
     internal class MapService : Singleton<MapService>, IDisposable
     {
         public int CurrentMapId;
-
-        public MapService()
-        {
-            MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
-            MessageDistributer.Instance.Subscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
-            MessageDistributer.Instance.Subscribe<MapEntitySyncResponse>(this.OnMapEntitySync);
-        }
-
         
-
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
@@ -33,6 +25,9 @@ namespace Services
 
         public void Init()
         {
+            MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
+            MessageDistributer.Instance.Subscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
+            MessageDistributer.Instance.Subscribe<MapEntitySyncResponse>(this.OnMapEntitySync);
 
         }
 
@@ -59,7 +54,7 @@ namespace Services
         {
             Debug.LogFormat("OnMapCharacterLeave:Map:{0} CharacterId:{1}", User.Instance.CurrentMapData.ID, message.entityId);
 
-            if (message.entityId != User.Instance.CurrentCharacterInfo.EntityId)
+            if (User.Instance.CurrentCharacterInfo != null && message.entityId != User.Instance.CurrentCharacterInfo.EntityId)
             {
                 CharacterManager.Instance.RemoveCharacter(message.entityId);
             }
@@ -83,7 +78,7 @@ namespace Services
                 SoundManager.Instance.PlaySound(map.Music);
             }
             else
-                Debug.LogErrorFormat("EnterMap: Map {0} not existed", mapId);
+                LogHelper.LogErrorFormat("EnterMap: Map {0} not existed", LogUser.MapService, mapId);
         }
 
         private void OnMapEntitySync(object sender, MapEntitySyncResponse message)
@@ -97,12 +92,12 @@ namespace Services
                 sb.AppendFormat("[{0}] event:{1} entity:{2}", entity.Id, entity.Event, entity.Entity.String());
                 sb.AppendLine();
             }
-            Debug.Log(sb.ToString());
+            LogHelper.Log(sb.ToString(), LogUser.MapService);
         }
 
         public void SendMapEntitySync(EntityEvent entityEvent, NEntity entityData, int param)
         {
-            Debug.LogFormat("MapEntityUpdateRequest : ID:{0} POS:{1} DIR:{2} SPEED:{3} ", entityData.Id, entityData.Position, entityData.Direction, entityData.Speed);
+            LogHelper.LogFormat("MapEntityUpdateRequest : ID:{0} POS:{1} DIR:{2} SPEED:{3} ", LogUser.MapService, entityData.Id, entityData.Position, entityData.Direction, entityData.Speed);
             NetMessage meg = new NetMessage();
             meg.Request = new NetMessageRequest();
             meg.Request.mapEntitySync = new MapEntitySyncRequest();

@@ -31,12 +31,12 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         CharacterManager.Instance.OnCharacterLeave -= OnCharacterLeave;
     }
 
-    void OnCharacterEnter(Character character)
+    void OnCharacterEnter(BattleUnit character)
     {
         if (character != null) CreateCharacteObject(character);
     }
 
-    void OnCharacterLeave(Character character)
+    void OnCharacterLeave(BattleUnit character)
     {
         if (character != null) DestroyCharacterObject(character.EntityId);
     }
@@ -50,7 +50,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         }
     }
 
-    void CreateCharacteObject(Character character)
+    void CreateCharacteObject(BattleUnit character)
     {
         if (!characters.ContainsKey(character.EntityId) || characters[character.EntityId] == null)
         {
@@ -72,7 +72,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         this.InitGamObject(characters[character.EntityId], character);
     }
 
-    public void InitGamObject(GameObject go, Character character)
+    public void InitGamObject(GameObject go, BattleUnit character)
     {        
         go.transform.position = GameObjectTool.LogicToWorld(character.Position);
         go.transform.forward = GameObjectTool.LogicToWorld(character.Direction);
@@ -90,7 +90,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
             if (character.IsCurrentPlayer)
             {
                 User.Instance.CurrentCharacterObject = pic;
-                MainPlayerCamera.Instance.player = go;
+                MainPlayerCamera.Instance.Player = go;
                 pic.character = character;
                 pic.enabled = true;
                 pic.entityController = ec;

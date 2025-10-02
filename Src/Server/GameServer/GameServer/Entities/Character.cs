@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace GameServer.Entities
 {
-    class Character : CharacterBase, IPostResponser
+    class Character : BattleUnit, IPostResponser
     {
 
         public TCharacter Data;
@@ -32,27 +32,17 @@ namespace GameServer.Entities
         public Chat Chat;
         public double ChatUpdateTs;
         public Character(CharacterType type, TCharacter cha) :
-            base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ), new Core.Vector3Int(100, 0, 0))
+            base(type, cha.ID, cha.Level, new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ), new Core.Vector3Int(100, 0, 0))
         {
             this.Data = cha;
             this.Id = cha.ID;
-            this.Info = new NCharacterInfo();
             this.Info.Id = cha.ID;
-            this.Info.Type = type;
-            this.Info.EntityId = this.entityId;
             this.Info.Name = cha.Name;
-            this.Info.Level = 10;
             this.Info.Exp = (int)cha.EXP;
-            this.Info.ConfigId = cha.TID;
             this.Info.Class = (CharacterClass)cha.Class;
             this.Info.mapId = cha.MapID;
-            this.Info.Entity = this.EntityData;
             this.Info.Gold = cha.Gold;
             this.Info.Ride = 0;
-            if (Define == null)
-            {
-                this.Define = DataManager.Instance.Characters[this.Info.ConfigId];
-            }
 
             itemManager = new ItemManager(this);
             itemManager.GetItemInfos(Info.Items);
@@ -74,9 +64,7 @@ namespace GameServer.Entities
 
             this.Info.Dynamic = new NAttributeDynamic();
             this.Info.Dynamic.Hp = this.Data.HP;
-            this.Info.Dynamic.Mp = this.Data.MP;
-
-            
+            this.Info.Dynamic.Mp = this.Data.MP;   
         }
 
         public void AddExp(int exp)
@@ -113,6 +101,7 @@ namespace GameServer.Entities
                 if (Exp == value) return;
                 this.statusManager.AddExpChange((int)(value - this.Data.EXP));
                 this.Data.EXP = value;
+                this.Info.Exp = value;
             }
         }
 
@@ -127,6 +116,7 @@ namespace GameServer.Entities
                 if (Level == value) return;
                 this.statusManager.AddLevelUp((int)(value - this.Data.Level));
                 this.Data.Level = value;
+                this.Info.Level = value;
             }
         }
 
@@ -141,6 +131,7 @@ namespace GameServer.Entities
                 if (Gold == value) return;
                 this.statusManager.AddGlodChange((int)value - (int)Gold);
                 this.Data.Gold = value;
+                this.Info.Gold = value;
             }
         }
 

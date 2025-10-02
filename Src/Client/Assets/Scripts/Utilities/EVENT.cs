@@ -15,7 +15,7 @@ namespace Utilities
             }
 
             Action<object[]> wrappedCallback = (args) => callback();
-            EventManager.Instance.Subscribe(eventName, callback, wrappedCallback);
+            EventManager.Instance.Subscribe(eventName, wrappedCallback);
         }
 
         public static void Subscribe(EventId eventName, Action callback)
@@ -27,7 +27,7 @@ namespace Utilities
 
             string eventNameString = eventName.ToString();
             Action<object[]> wrappedCallback = (args) => callback();
-            EventManager.Instance.Subscribe(eventNameString, callback, wrappedCallback);
+            EventManager.Instance.Subscribe(eventNameString, wrappedCallback);
         }
 
         public static void Subscribe<T>(string eventName, Action<T> callback)
@@ -38,7 +38,17 @@ namespace Utilities
             }
 
             Action<object[]> wrappedCallback = (args) => callback((T)args[0]);
-            EventManager.Instance.Subscribe(eventName, callback, wrappedCallback);
+            EventManager.Instance.Subscribe(eventName, wrappedCallback);
+        }
+
+        public static void Subscribe<T>(string eventName, Action<object[]> callback)
+        {
+            if (EventManager.Instance == null || eventName == null || callback == null)
+            {
+                return;
+            }
+
+            EventManager.Instance.Subscribe(eventName, callback);
         }
 
         public static void Subscribe<T>(EventId eventName, Action<T> callback)
@@ -50,49 +60,28 @@ namespace Utilities
 
             string eventNameString = eventName.ToString();
             Action<object[]> wrappedCallback = (args) => callback((T)args[0]);
-            EventManager.Instance.Subscribe(eventNameString, callback, wrappedCallback);
+            EventManager.Instance.Subscribe(eventNameString, wrappedCallback);
         }
 
-        public static void Unsubscribe(string eventName, Action callback)
+        public static void Unsubscribe(EventId eventName)
         {
-            if (EventManager.Instance == null || eventName == null || callback == null)
-            {
-                return;
-            }
-
-            EventManager.Instance.Unsubscribe(eventName, callback);
-        }
-
-        public static void Unsubscribe(EventId eventName, Action callback)
-        {
-            if (EventManager.Instance == null || callback == null)
+            if (EventManager.Instance == null)
             {
                 return;
             }
 
             string eventNameString = eventName.ToString();
-            EventManager.Instance.Unsubscribe(eventNameString, callback);
+            EventManager.Instance.Unsubscribe(eventNameString);
         }
 
-        public static void Unsubscribe<T>(string eventName, Action<T> callback)
+        public static void Unsubscribe(string eventName)
         {
-            if (EventManager.Instance == null || eventName == null || callback == null)
+            if (EventManager.Instance == null || eventName == null)
             {
                 return;
             }
 
-            EventManager.Instance.Unsubscribe(eventName, callback);
-        }
-
-        public static void Unsubscribe<T>(EventId eventName, Action<T> callback)
-        {
-            if (EventManager.Instance == null || callback == null)
-            {
-                return;
-            }
-
-            string eventNameString = eventName.ToString();
-            EventManager.Instance.Unsubscribe(eventNameString, callback);
+            EventManager.Instance.Unsubscribe(eventName);
         }
 
         public static void Fire(string eventName, params object[] args)
@@ -110,6 +99,7 @@ namespace Utilities
             {
                 return;
             }
+            LogHelper.LogShowJson(args);
             string eventNameString = eventName.ToString();
             EventManager.Instance.TriggerEvent(eventNameString, args);
         }

@@ -16,7 +16,7 @@ public class PlayerInputController : MonoBehaviour
 
     SkillBridge.Message.CharacterState state;
 
-    public Character character;
+    public BattleUnit character;
 
     public float rotateSpeed = 2.0f;
 

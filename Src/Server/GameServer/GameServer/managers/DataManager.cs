@@ -12,10 +12,10 @@ namespace GameServer.Managers
 {
     public class DataManager : Singleton<DataManager>
     {
-        internal string DataPath;
-        internal Dictionary<int, MapDefine> Maps = null;
-        internal Dictionary<int, CharacterDefine> Characters = null;
-        internal Dictionary<int, TeleporterDefine> Teleporters = null;
+        private string DataPath;
+        public Dictionary<int, MapDefine> Maps = null;
+        public Dictionary<int, CharacterDefine> Characters = null;
+        public Dictionary<int, TeleporterDefine> Teleporters = null;
         public Dictionary<int, Dictionary<int, SpawnPointDefine>> SpawnPoints = null;
         public Dictionary<int, Dictionary<int, SpawnRuleDefine>> SpawnRules = null;
         public Dictionary<int, NPCDefine> NPCs = null;
@@ -25,6 +25,7 @@ namespace GameServer.Managers
         public Dictionary<int, EquipDefine> Equips = null;
         public Dictionary<int, QuestDefine> quests = null;
         public Dictionary<int, RideDefine> Rides = null;
+        public Dictionary<int, Dictionary<int, SkillDefine>> Skills = null;
 
         public DataManager()
         {
@@ -70,6 +71,9 @@ namespace GameServer.Managers
 
             json = File.ReadAllText(this.DataPath + "RideDefine.txt");
             this.Rides = JsonConvert.DeserializeObject<Dictionary<int, RideDefine>>(json);
+
+            json = File.ReadAllText(this.DataPath + "SkillDefine.txt");
+            this.Skills = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SkillDefine>>>(json);
         }
     }
 }

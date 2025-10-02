@@ -1,22 +1,42 @@
-﻿using Models;
+﻿using Const;
+using Models;
 using UnityEngine;
+using Utilities;
 
 
 public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
 {
-    public Camera camera;
-    public Transform viewPoint;
+    public Camera Camera;
+    public Transform ViewPoint;
+    public GameObject Player;
 
-    public GameObject player;
+    void Start()
+    {
+        EVENT.Subscribe<string>(EventId.on_map_change, OnMapChange);
+    }
+
+    void OnMapChange(string mapName)
+    {
+        LogHelper.Log("MainPlayerCamera OnMapChange: " + mapName);
+        if(mapName == "Loading" || mapName == "CharSelect")
+        {
+            this.Camera.gameObject.SetActive(false);
+        }
+        else
+        {
+            this.Camera.gameObject.SetActive(true);
+        }
+            
+    }
 
     void LateUpdate()
     {
-        if (player == null && User.Instance.CurrentCharacterObject != null)
-            player = User.Instance.CurrentCharacterObject.gameObject;
-        if (player == null) return;
+        if (Player == null && User.Instance.CurrentCharacterObject != null)
+            Player = User.Instance.CurrentCharacterObject.gameObject;
+        if (Player == null) return;
 
-        this.transform.position = player.transform.position;
-        this.transform.rotation = player.transform.rotation;
+        this.transform.position = Player.transform.position;
+        this.transform.rotation = Player.transform.rotation;
     }
 }
 
