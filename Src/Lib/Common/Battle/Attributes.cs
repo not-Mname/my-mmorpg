@@ -59,18 +59,23 @@ namespace Common.Battle
             this._dynamic = dynamic;
             this.LoadInitAttribute(_inital, define);
             this.LoadGrowthAttribute(_growth, define);
-            this.LoadEquipAttribute(_equip, equips);
-            this._level = level;
-            this.InitBasicAttribute();
-            this.InitSecondaryAttribute();
-            this.InitFinalAttribute();
-
-            if (dynamic == null)
+            if (equips != null)
             {
-                dynamic = new NAttributeDynamic();
+                this.LoadEquipAttribute(_equip, equips);
+
+                this._level = level;
+                this.InitBasicAttribute();
+                this.InitBasicAttribute();
+                this.InitSecondaryAttribute();
+                this.InitFinalAttribute();
+
+                if (dynamic == null)
+                {
+                    dynamic = new NAttributeDynamic();
+                }
+                this.HP = dynamic.Hp;
+                this.MP = dynamic.Mp;
             }
-            this.HP = dynamic.Hp;
-            this.MP = dynamic.Mp;
         }
 
         public void InitFinalAttribute()

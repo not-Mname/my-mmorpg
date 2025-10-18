@@ -242,6 +242,8 @@ message NetMessageRequest{
 	GuildAdminRequest guildAdmin = 30;
 
 	ChatRequest chat = 31;
+
+	SkillCastRequest skillCast = 50;
 }
 
 message NetMessageResponse{
@@ -284,6 +286,8 @@ message NetMessageResponse{
 	GuildAdminResponse guildAdmin = 30;
 
 	ChatResponse chat = 31;
+
+	SkillCastResponse skillCast = 50;
 
 	StatusNotify statusNotify = 100;
 }
@@ -583,7 +587,9 @@ message TeamLeaveResponse
 	int32 characterId = 3;
 }
 
+/////////////////////////////
 //Guild System
+/////////////////////////////
 enum GUILD_TITLE
 {
 	NONE = 0;
@@ -717,7 +723,9 @@ message GuildAdminResponse
 	GuildAdminRequest command = 3;
 }
 
+/////////////////////////////
 //聊天
+/////////////////////////////
 enum CHAT_CHANNEL
 {//使用2的n次方来指定枚举值，方便使用位运算来画定综合频道，也是为了方便日后拓展
 	ALL = -1;
@@ -756,4 +764,36 @@ message ChatResponse
  	repeated ChatMessage privateMessages = 6;
 	repeated ChatMessage teamMessages = 7;
 	repeated ChatMessage guildMessages = 8;
+}
+
+/////////////////////////////
+//战斗
+/////////////////////////////
+
+enum SKILL_RESULT
+{
+	OK = 0;
+	OUT_OF_MP = 1;
+	COOL_DOWN = 2;
+	INVALID_TARGET = 3;
+}
+
+message NSkillCastInfo
+{
+	int32 skillId = 1;
+	int32 casterId = 2;
+	int32 targetId = 3;
+	NVector3 position = 4;
+}
+
+message SkillCastRequest
+{
+	NSkillCastInfo castInfo = 1;
+}
+
+message SkillCastResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+	NSkillCastInfo castInfo = 3;
 }

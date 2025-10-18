@@ -9,10 +9,10 @@ using System.Text;
 using UnityEngine;
 
 
-public class EntityController : MonoBehaviour, IEntityNotify
+public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 {
     public Animator anim;
-    public Rigidbody rb;
+    public CharacterController characterController;
     private AnimatorStateInfo currentBaseState;
 
     public Entity entity;
@@ -42,8 +42,6 @@ public class EntityController : MonoBehaviour, IEntityNotify
             EntityManager.Instance.RigisterEntityChangeNotify(entity.EntityId, this);
             UpdateTransform();
         }
-
-        if (!isPlayer) rb.useGravity = false;
     }
 
     void FixedUpdate()
@@ -67,7 +65,7 @@ public class EntityController : MonoBehaviour, IEntityNotify
         this.position = GameObjectTool.LogicToWorld(entity.Position);
         this.direction = GameObjectTool.LogicToWorld(entity.Direction);
 
-        this.rb.MovePosition(this.position);
+        this.characterController.Move(this.position);
         this.transform.forward = this.direction;
         this.lastPosition = this.position;
         this.lastRotation = this.rotation;
@@ -139,5 +137,22 @@ public class EntityController : MonoBehaviour, IEntityNotify
     public void SetRidePosition(Vector3 position)
     {
         this.anim.transform.position = position + (this.anim.transform.position - this.rideBone.position);
+    }
+
+    void OnMouseDown()
+    {
+        BattleUnit unit = this.entity as BattleUnit;
+        if (unit.IsCurrentPlayer) return;
+        BattleManager.Instance.CurrentTarget = unit;
+    }
+
+    public void PlayAnim(string animName)
+    {
+        this.anim.SetTrigger(animName);
+    }
+
+    public void SetStandby(bool standby)
+    {
+        this.anim.SetBool("Standby", standby);
     }
 }

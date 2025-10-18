@@ -4,9 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UI.MainUI;
 
 namespace Managers
 {
+    
     class TeamManager : Singleton<TeamManager>
     {
         public void Init(NGuildInfo guild)

@@ -19,6 +19,21 @@ namespace Entities
 
         public SkillManager SkillManager;
 
+        private bool _battleState;
+
+        public bool BattleState
+        {
+            get { return _battleState; }
+            set
+            {
+                if (_battleState != value)
+                {
+                    _battleState = value;
+                    this.SetStanby(value);
+                }
+            }
+        }
+
         public int Id
         {
             get { return this.Info.Id; }
@@ -63,6 +78,8 @@ namespace Entities
             return null;
         }
 
+        public Skill CastringSkill = null;
+
         #region 同步
         public void MoveForward()
         {
@@ -93,8 +110,35 @@ namespace Entities
             Debug.LogFormat("SetPosition:{0}", position);
             this.Position = position;
         }
+
+        public void CastSkill(int skillId, BattleUnit target, NVector3 position)
+        {
+            this.SetStanby(true);
+            var skill = this.SkillManager.GetSkill(skillId);
+            skill.BeginCast();
+        }
+
+        private void SetStanby(bool standby)
+        {
+            if(this.Controller != null)
+            {
+                this.Controller.SetStandby(standby);
+            }
+        }
+
+        public void PlayAnim(string animName)
+        {
+            if(this.Controller != null)
+            {
+                this.Controller.PlayAnim(animName);
+            }
+        }
+
+        public override void OnUpdate(float delta)
+        {
+            base.OnUpdate(delta);
+            this.SkillManager.OnUpdate(delta);
+        }
         #endregion
-
-
     }
 }

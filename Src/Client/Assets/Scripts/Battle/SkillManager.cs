@@ -38,5 +38,13 @@ namespace Battle
         {
             return this.Skills.Find(s => s.Info.Id == id);
         }
+
+        public void OnUpdate(float delta)
+        {
+            foreach (var skill in this.Skills)
+            {
+                skill.OnUpdate(delta);
+            }
+        }
     }
 }

@@ -42,14 +42,6 @@
         Stun = 1,        
     }
 
-    public enum SkillResult
-    {
-        OK = 0,
-        InvalidTarget = 1,
-        OutOfMp = 2,
-        CoolDown = 3,
-    }
-
     public enum SkillType
     {
         Normal = 0,

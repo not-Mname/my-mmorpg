@@ -41,16 +41,6 @@ namespace Utilities
             EventManager.Instance.Subscribe(eventName, wrappedCallback);
         }
 
-        public static void Subscribe<T>(string eventName, Action<object[]> callback)
-        {
-            if (EventManager.Instance == null || eventName == null || callback == null)
-            {
-                return;
-            }
-
-            EventManager.Instance.Subscribe(eventName, callback);
-        }
-
         public static void Subscribe<T>(EventId eventName, Action<T> callback)
         {
             if (EventManager.Instance == null || callback == null)

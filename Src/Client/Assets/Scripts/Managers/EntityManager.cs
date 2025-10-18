@@ -58,5 +58,12 @@ namespace Managers
                 notifiers[entity.Id].OnEntityChange(entity);
             }
         }
+
+        public Entity GetEntity(int casterId)
+        {
+            Entity TempEntity = null;
+            entities.TryGetValue(casterId, out TempEntity);
+            return TempEntity;
+        }
     }
 }

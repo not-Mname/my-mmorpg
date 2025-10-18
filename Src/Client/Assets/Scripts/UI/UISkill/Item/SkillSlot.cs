@@ -1,12 +1,13 @@
 ﻿using Battle;
-using Common.Battle;
 using Common.Data;
+using Managers;
 using Models;
 using SkillBridge.Message;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Utilities;
 
 namespace UISkill
 {
@@ -22,21 +23,29 @@ namespace UISkill
 
         private Skill _skill;
 
-        private float targetTime = 0;
-
-        // 每帧更新
-        void Update()
+        void Start()
         {
-            float remaining = targetTime - Time.time;
-            this.ImgMask.gameObject.SetActive(remaining > 0);
-            this.TMPTimeCD.gameObject.SetActive(remaining > 0);
-            if (remaining <= 0)
+            this.ImgMask.enabled = false;
+            this.TMPTimeCD.enabled = false;
+        }
+
+
+        void FixedUpdate()
+        {
+            if(this._skill.CD > 0)
             {
-                return;
+                if(!this.ImgMask.enabled) this.ImgMask.enabled = true;
+                if(!this.TMPTimeCD.enabled) this.TMPTimeCD.enabled = true;
+
+                int seconds = Mathf.FloorToInt(this._skill.CD);
+                this.TMPTimeCD.text = seconds.ToString();
+                this.ImgMask.fillAmount = this._skill.CD / this._skillDefine.CD;
             }
-            int seconds = Mathf.FloorToInt(remaining);
-            this.TMPTimeCD.text = seconds.ToString();
-            this.ImgMask.fillAmount = remaining / this._skillDefine.CD;
+            else
+            {
+                if (this.ImgMask.enabled) this.ImgMask.enabled = false;
+                if (this.TMPTimeCD.enabled) this.TMPTimeCD.enabled = false;
+            }          
         }
 
         public void SetData(NSkillInfo skill)
@@ -50,12 +59,12 @@ namespace UISkill
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            SkillResult result = this._skill.CanCast();
+            SkillResult result = this._skill.CanCast(BattleManager.Instance.CurrentTarget);
             switch (result)
             {
-                case SkillResult.OK:
-                    this._skill.Cast();
-                    targetTime = Time.time + this._skillDefine.CD;
+                case SkillResult.Ok:
+                    LogHelper.Log("Skill cast: " + this._skill.Define.Name);
+                    BattleManager.Instance.CastSkill(this._skill);
                     return;
                 case SkillResult.OutOfMp:
                     MessageBox.Show("MP不足");

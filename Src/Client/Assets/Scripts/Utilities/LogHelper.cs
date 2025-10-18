@@ -12,6 +12,8 @@ namespace Utilities
         CharacterManager,
         DataManager,
         MapService,
+        BattleManager,
+        BattleService,
     }
 
     public class LogHelper
@@ -92,11 +94,13 @@ namespace Utilities
         public static Dictionary<LogUser, bool> LogDic = new Dictionary<LogUser, bool>() 
         { 
             { LogUser.None, true },
-            { LogUser.UIEquip, true },
-            { LogUser.StatusManager, true },
-            { LogUser.CharacterManager, true },
+            { LogUser.UIEquip, false },
+            { LogUser.StatusManager, false },
+            { LogUser.CharacterManager, false },
             { LogUser.DataManager, false },
             { LogUser.MapService, false },
+            { LogUser.BattleManager, true },
+            { LogUser.BattleService, true },
         };
     }
 }

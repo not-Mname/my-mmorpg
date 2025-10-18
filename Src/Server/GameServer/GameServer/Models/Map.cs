@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SkillBridge.Message;
-
 using Common;
 using Common.Data;
-
 using Network;
 using GameServer.Managers;
 using GameServer.Entities;
@@ -18,7 +13,7 @@ namespace GameServer.Models
 {
     class Map
     {
-        internal class MapCharacter
+        public class MapCharacter
         {
             public NetConnection<NetSession> connection;
             public Character character;
@@ -34,7 +29,7 @@ namespace GameServer.Models
         {
             get { return this.Define.ID; }
         }
-        internal MapDefine Define;
+        public MapDefine Define;
 
         /// <summary>
         /// 角色字典<角色Id，角色信息>
@@ -43,14 +38,14 @@ namespace GameServer.Models
 
         SpawnManager spawnManager = new SpawnManager();
         public MonsterManager monsterManager = new MonsterManager();
-        internal Map(MapDefine define)
+        public Map(MapDefine define)
         {
             this.Define = define;
             this.spawnManager.Init(this);
             this.monsterManager.Init(this);
         }
 
-        internal void Update()
+        public void Update()
         {
             spawnManager.Update();
         }
@@ -59,7 +54,7 @@ namespace GameServer.Models
         /// 角色进入地图
         /// </summary>
         /// <param name="character"></param>
-        internal void CharacterEnter(NetConnection<NetSession> sender, Character character)
+        public void CharacterEnter(NetConnection<NetSession> sender, Character character)
         {
 
             Log.InfoFormat("CharacterEnter: Map:{0} characterId:{1}", this.Define.ID, character.Id);
@@ -83,7 +78,7 @@ namespace GameServer.Models
             sender.SendResponse();
         }
 
-        internal void CharacterLeave(Character character)
+        public void CharacterLeave(Character character)
         {
             Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1}", this.Define.ID, character.Id);
 
@@ -110,7 +105,7 @@ namespace GameServer.Models
             conn.SendResponse();
         }
 
-        internal void SendCharacterLeaveMap(NetConnection<NetSession> conn, NCharacterInfo character)
+        public void SendCharacterLeaveMap(NetConnection<NetSession> conn, NCharacterInfo character)
         {
             conn.Session.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
             conn.Session.Response.mapCharacterLeave.entityId = character.EntityId;
@@ -119,7 +114,7 @@ namespace GameServer.Models
             conn.SendResponse();
         }
 
-        internal void UpdateEntity(NEntitySync entitySync)
+        public void UpdateEntity(NEntitySync entitySync)
         {
             foreach (var kv in this.MapCharacters)
             {
@@ -143,12 +138,21 @@ namespace GameServer.Models
             }
         }
 
-        internal void MonsterEnter(Monster monster)
+        public void MonsterEnter(Monster monster)
         {
             Log.InfoFormat("MonsterEnter: Map:{0} monsterId:{1}", this.Define.ID, monster.entityId);
             foreach (var item in MapCharacters)
             {
                 this.AddCharacterEnterMap(item.Value.connection, monster.Info);
+            }
+        }
+
+        public void BroadcastBattleResponse(NetMessageResponse response)
+        {
+            foreach (var kv in MapCharacters)
+            {
+                kv.Value.connection.Session.Response.skillCast = response.skillCast;
+                kv.Value.connection.SendResponse();
             }
         }
     }

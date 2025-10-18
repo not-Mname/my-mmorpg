@@ -147,6 +147,7 @@ public class DataManager : Singleton<DataManager>
     public void SaveTeleporters()
     {
         string json = JsonConvert.SerializeObject(this.Teleporters, Formatting.Indented);
+        Debug.Log(json);
         File.WriteAllText(this.DataPath + "TeleporterDefine.txt", json);
     }
 

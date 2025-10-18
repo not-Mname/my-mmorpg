@@ -78,7 +78,7 @@ namespace Network
                     catch (System.Exception ex)
                     {
                         Log.ErrorFormat("Message handler exception:{0}, {1}, {2}, {3}", ex.InnerException, ex.Message, ex.Source, ex.StackTrace);
-                        UnityEngine.Debug.LogFormat("Message handler exception:{0}, {1}, {2}, {3}", ex.InnerException, ex.Message, ex.Source, ex.StackTrace);
+                        UnityEngine.Debug.LogErrorFormat("Message handler exception:{0}, {1}, {2}, {3}", ex.InnerException, ex.Message, ex.Source, ex.StackTrace);
 
                         if (ThrowException)
                             throw ex;

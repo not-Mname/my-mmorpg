@@ -38,7 +38,7 @@ public class MapTools
 
             EditorSceneManager.OpenScene(sceneFile, OpenSceneMode.Single);
 
-            TeleporterGameObject[] tg = GameObject.FindObjectsOfType<TeleporterGameObject>();
+            TeleporterGameObject[] tg = GameObject.FindObjectsByType<TeleporterGameObject>(FindObjectsSortMode.None);
             foreach (var t in tg)
             {
                 Debug.LogFormat("id : {0}", t.id);

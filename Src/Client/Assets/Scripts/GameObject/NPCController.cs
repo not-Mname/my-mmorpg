@@ -15,7 +15,7 @@ public class NPCController : MonoBehaviour
 
     public bool isInteractive = false;
 
-    SkinnedMeshRenderer renderer;
+    SkinnedMeshRenderer _renderer;
 
     Color originalColor;
 
@@ -49,13 +49,13 @@ public class NPCController : MonoBehaviour
     {
         if (highlight)
         {
-            if (renderer.sharedMaterial.color != Color.white)
-                renderer.material.color = Color.white;
+            if (_renderer.sharedMaterial.color != Color.white)
+                _renderer.material.color = Color.white;
         }
         else
         {
-            if (renderer.sharedMaterial.color != originalColor)
-                renderer.material.color = originalColor;
+            if (_renderer.sharedMaterial.color != originalColor)
+                _renderer.material.color = originalColor;
         }
     }
 
@@ -108,8 +108,8 @@ public class NPCController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         npcDefine = NPCManager.Instance.GetNPCDefine(npcId);
-        renderer = this.gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
-        originalColor = renderer.material.color;
+        _renderer = this.gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
+        originalColor = _renderer.material.color;
         NPCManager.Instance.UpdateNPCPosition(npcId, this.transform.position);
         this.StartCoroutine(Actions());
         RefreshNPCStatus();

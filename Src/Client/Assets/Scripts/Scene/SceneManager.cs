@@ -16,7 +16,6 @@ public class SceneManager : MonoSingleton<SceneManager>
 
     IEnumerator LoadLevel(string name)
     {
-        Debug.LogFormat("LoadLevel: {0}", name);
         this._loadingScene = name;
         AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(name);
         async.allowSceneActivation = true;
@@ -35,6 +34,5 @@ public class SceneManager : MonoSingleton<SceneManager>
             onProgress(1f);
         this.CurrentScene = this._loadingScene;
         EVENT.Fire(Const.EventId.on_map_change, this.CurrentScene);
-        Debug.Log("LevelLoadCompleted:" + obj.progress);
     }
 }
