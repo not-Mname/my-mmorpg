@@ -30,6 +30,7 @@ namespace GameServer.Models
             get { return this.Define.ID; }
         }
         public MapDefine Define;
+        public Battle.Battle Battle;
 
         /// <summary>
         /// 角色字典<角色Id，角色信息>
@@ -43,11 +44,13 @@ namespace GameServer.Models
             this.Define = define;
             this.spawnManager.Init(this);
             this.monsterManager.Init(this);
+            this.Battle = new Battle.Battle(this);
         }
 
         public void Update()
         {
             spawnManager.Update();
+            Battle.Update();
         }
 
         /// <summary>

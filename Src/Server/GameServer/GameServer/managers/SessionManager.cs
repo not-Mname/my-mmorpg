@@ -7,6 +7,7 @@ namespace GameServer.Managers
 {
     class SessionManager : Singleton<SessionManager>
     {
+        //<characterId, session>
         public Dictionary<int, NetConnection<NetSession>> sessions = new Dictionary<int, NetConnection<NetSession>>();
 
         public void AddSession(int characterId, NetConnection<NetSession> session)

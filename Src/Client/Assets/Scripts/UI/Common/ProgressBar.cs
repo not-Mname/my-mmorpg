@@ -10,8 +10,6 @@ namespace UI.Common
     {
         public Slider Progress;
         public TextMeshProUGUI ProgressText;
-        public delegate void OnValueChangedHander(bool isCrease, float value);
-        private OnValueChangedHander _onValueChanged;
 
         private float _maxValue;
         public float MaxValue
@@ -37,7 +35,6 @@ namespace UI.Common
             set
             {
                 value = Mathf.Clamp(value, 0, _maxValue);
-                this._onValueChanged?.Invoke(value > _currentValue, value);
                 _currentValue = value;
                 UpdateUI();
             }
@@ -46,7 +43,7 @@ namespace UI.Common
         private float _currentPercent;
         private float _target;
         private bool _isRunnig = false;
-        public void UpdateUI()
+        private void UpdateUI()
         {
             ProgressText.text = $"{_currentValue:0}/{_maxValue:0}";
             this._target = this._currentValue / this._maxValue;
@@ -78,11 +75,5 @@ namespace UI.Common
             Progress.value = this._currentPercent;
             this._isRunnig = false;
         }
-
-        public void AddListener(OnValueChangedHander onValueChanged)
-        {
-            this._onValueChanged += onValueChanged;
-        }
-
     }
 }

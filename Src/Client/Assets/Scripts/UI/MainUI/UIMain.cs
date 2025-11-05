@@ -10,8 +10,7 @@ namespace UI.MainUI
     public class UIMain : MonoSingleton<UIMain>, IDisposable
     {
         /////////////////////////////// UI组件 /////////////////////////
-        public Text AvatarName;
-        public Text AvatarLevel;
+        public UIAvatar Avatar;
         public UITeam TeamWindow;
         public UIBattleUnitInfo BattleUnitInfo;
 
@@ -20,8 +19,7 @@ namespace UI.MainUI
         /////////////////////////////// 公有函数 ///////////////////////
         protected override void OnStart()
         {
-            AvatarName.text = User.Instance.CurrentCharacterInfo.Name;
-            AvatarLevel.text = User.Instance.CurrentCharacterInfo.Level.ToString();
+            Avatar.Init();
             EVENT.Subscribe<BattleUnit>(Const.EventId.on_battle_target_change, OnTargetChange);
             MainPlayerCamera.Instance.ApplyCursorVisibility(false);
         }

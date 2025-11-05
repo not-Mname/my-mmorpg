@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 namespace Managers
 {
@@ -49,7 +50,7 @@ namespace Managers
             entities.TryGetValue(entity.Id, out TempEntity);
             if (TempEntity != null)
             {
-                UnityEngine.Debug.Log("Entity Sync: " + entity.Entity.Position);
+                Debug.Log("Entity Sync: " + entity.Entity.Position);
                 TempEntity.EntityData = entity.Entity;
             }
             if (notifiers.ContainsKey(entity.Id))

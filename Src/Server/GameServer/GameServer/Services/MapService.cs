@@ -63,7 +63,7 @@ namespace GameServer.Services
 
             TeleporterDefine linkTo = DataManager.Instance.Teleporters[td.LinkTo];
 
-            MapManager.Instance[character.Data.MapID].CharacterLeave(character);
+            MapManager.Instance[character.Info.mapId].CharacterLeave(character);
 
             character.Position = linkTo.Position;
             character.Direction = linkTo.Direction;

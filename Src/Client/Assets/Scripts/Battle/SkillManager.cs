@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utilities;
 
 namespace Battle
 {
@@ -25,8 +26,10 @@ namespace Battle
             this.Skills.Clear();
             foreach (var skill in _owner.Info.Skills)
             {
-                this.Skills.Add(new Skill(skill, this._owner));
+                Skill s = new Skill(skill, this._owner);
+                AddSkill(s);
             }
+            EVENT.Fire(Const.EventId.on_skill_updata);
         }
 
         public void AddSkill(Skill skill)
@@ -45,6 +48,23 @@ namespace Battle
             {
                 skill.OnUpdate(delta);
             }
+        }
+
+        public void UpdateSkills()
+        {
+            foreach (var skillInfo in this._owner.Info.Skills)
+            {
+                Skill skill = this.GetSkill(skillInfo.Id);
+                if (skill == null)
+                {
+                    this.AddSkill(skill);
+                }
+                else
+                {
+                    skill.Info = skillInfo;
+                }
+            }
+            EVENT.Fire(Const.EventId.on_skill_updata);
         }
     }
 }

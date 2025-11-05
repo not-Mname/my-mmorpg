@@ -31,7 +31,6 @@ public class UICharInfo : MonoBehaviour {
 
         for (int i = 0; i < img.Length; i++)
         {
-            Debug.LogFormat("index + 1:{0}, class:{1}, i + 1 == (int)Class :{2}", i + 1, Class, i + 1 == (int)Class);
             img[i].gameObject.SetActive(i + 1 == (int)Class);
         }
     }

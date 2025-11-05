@@ -5,7 +5,7 @@ using System.Net.Sockets;
 namespace Network
 {
     /// <summary>
-    /// Listens for socket connection on a given address and port.
+    /// 在指定的地址和端口上监听套接字连接。
     /// </summary>
     public class TcpSocketListener : IDisposable
     {
@@ -19,7 +19,7 @@ namespace Network
 
         #region Properties
         /// <summary>
-        /// Length of the connection backlog.
+        /// 连接等待队列的长度。
         /// </summary>
         public Int32 ConnectionBacklog
         {
@@ -29,14 +29,14 @@ namespace Network
                 lock (this)
                 {
                     if (IsRunning)
-                        throw new InvalidOperationException("Property cannot be changed while server running.");
+                        throw new InvalidOperationException("服务器运行时无法更改此属性。");
                     else
                         connectionBacklog = value;
                 }
             }
         }
         /// <summary>
-        /// The IPEndPoint to bind the listening socket to.
+        /// 要绑定监听套接字的 IPEndPoint。
         /// </summary>
         public IPEndPoint EndPoint
         {
@@ -46,14 +46,14 @@ namespace Network
                 lock (this)
                 {
                     if (IsRunning)
-                        throw new InvalidOperationException("Property cannot be changed while server running.");
+                        throw new InvalidOperationException("服务器运行时无法更改此属性。");
                     else
                         endPoint = value;
                 }
             }
         }
         /// <summary>
-        /// Is the class currently listening.
+        /// 该类当前是否正在监听。
         /// </summary>
         public Boolean IsRunning
         {
@@ -63,32 +63,33 @@ namespace Network
 
         #region Constructors
         /// <summary>
-        /// Listens for socket connection on a given address and port.
+        /// 在指定的地址和端口上监听套接字连接。
         /// </summary>
-        /// <param name="address">The address to listen on.</param>
-        /// <param name="port">The port to listen on.</param>
-        /// <param name="connectionBacklog">The connection backlog.</param>
+        /// <param name="address">要监听的地址。</param>
+        /// <param name="port">要监听的端口。</param>
+        /// <param name="connectionBacklog">连接等待队列的最大长度（即允许挂起的连接请求数量）。</param>
         public TcpSocketListener(String address, Int32 port, Int32 connectionBacklog)
             : this(IPAddress.Parse(address), port, connectionBacklog)
         { }
+
         /// <summary>
-        /// Listens for socket connection on a given address and port.
+        /// 在指定的地址和端口上监听套接字连接。
         /// </summary>
-        /// <param name="address">The address to listen on.</param>
-        /// <param name="port">The port to listen on.</param>
-        /// <param name="connectionBacklog">The connection backlog.</param>
+        /// <param name="address">要监听的地址（以 IPAddress 形式表示）。</param>
+        /// <param name="port">要监听的端口。</param>
+        /// <param name="connectionBacklog">连接等待队列的最大长度。</param>
         public TcpSocketListener(IPAddress address, Int32 port, Int32 connectionBacklog)
             : this(new IPEndPoint(address, port), connectionBacklog)
         { }
+
         /// <summary>
-        /// Listens for socket connection on a given address and port.
+        /// 在指定的终结点上监听套接字连接。
         /// </summary>
-        /// <param name="endPoint">The endpoint to listen on.</param>
-        /// <param name="connectionBacklog">The connection backlog.</param>
+        /// <param name="endPoint">要监听的终结点（包含 IP 地址和端口号）。</param>
+        /// <param name="connectionBacklog">连接等待队列的最大长度。</param>
         public TcpSocketListener(IPEndPoint endPoint, Int32 connectionBacklog)
         {
             this.endPoint = endPoint;
-
             args = new SocketAsyncEventArgs();
             args.Completed += OnSocketAccepted;
         }
@@ -96,7 +97,7 @@ namespace Network
 
         #region Public Methods
         /// <summary>
-        /// Start listening for socket connections.
+        /// 开始监听套接字连接。
         /// </summary>
         public void Start()
         {
@@ -110,13 +111,13 @@ namespace Network
                     BeginAccept(args);
                 }
                 else
-                    throw new InvalidOperationException("The Server is already running.");
+                    throw new InvalidOperationException("服务器已经在运行。");
             }
 
         }
 
         /// <summary>
-        /// Stop listening for socket connections.
+        /// 停止监听套接字连接。
         /// </summary>
         public void Stop()
         {
@@ -132,7 +133,7 @@ namespace Network
 
         #region Private Methods
         /// <summary>
-        /// Asynchronously listens for new connections.
+        /// 异步监听新连接。
         /// </summary>
         /// <param name="args"></param>
         private void BeginAccept(SocketAsyncEventArgs args)
@@ -142,16 +143,17 @@ namespace Network
             /*listenerSocket.InvokeAsyncMethod(new SocketAsyncMethod(listenerSocket.AcceptAsync)
                 , OnSocketAccepted, args);*/
         }
+
         /// <summary>
-        /// Invoked when an asynchrounous accept completes.
+        /// 当异步接受操作完成时调用。
         /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The SocketAsyncEventArgs for the operation.</param>
+        /// <param name="sender">发送者。</param>
+        /// <param name="e">该操作的 SocketAsyncEventArgs。</param>
         private void OnSocketAccepted(object sender, SocketAsyncEventArgs e)
         {
             SocketError error = e.SocketError;
             if (e.SocketError == SocketError.OperationAborted)
-                return; //Server was stopped
+                return; // 服务器已停止
 
             if (e.SocketError == SocketError.Success)
             {
@@ -168,13 +170,14 @@ namespace Network
 
         #region Events
         /// <summary>
-        /// Fired when a new connection is received.
+        /// 当收到新连接时触发。
         /// </summary>
         public event EventHandler<Socket> SocketConnected;
+
         /// <summary>
-        /// Fires the SocketConnected event.
+        /// 触发 SocketConnected 事件。
         /// </summary>
-        /// <param name="client">The new client socket.</param>
+        /// <param name="client">新的客户端套接字。</param>
         private void OnSocketConnected(Socket client)
         {
             if (SocketConnected != null)

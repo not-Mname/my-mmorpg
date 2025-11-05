@@ -75,6 +75,9 @@ namespace UISkill
                 case SkillResult.InvalidTarget:
                     MessageBox.Show("无效的目标");
                     return;
+                case SkillResult.OutOfRange:
+                    MessageBox.Show("目标不在攻击范围内");
+                    return;
             }
         }
     }

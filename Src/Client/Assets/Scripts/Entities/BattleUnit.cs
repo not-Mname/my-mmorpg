@@ -11,6 +11,7 @@ namespace Entities
 {
     public class BattleUnit : Entity
     {
+        #region 公共属性
         public NCharacterInfo Info;
 
         public Attributes Attributes;
@@ -19,6 +20,10 @@ namespace Entities
 
         public SkillManager SkillManager;
 
+        public Skill CastringSkill = null;
+        #endregion
+
+        #region getter setter
         private bool _battleState;
 
         public bool BattleState
@@ -59,10 +64,13 @@ namespace Entities
         {
             get
             {
-                if(!this.IsPlayer) return false;
+                if (!this.IsPlayer) return false;
                 return this.Info.Id == Models.User.Instance.CurrentCharacterInfo.Id;
             }
         }
+        #endregion
+
+        #region 公共函数
 
         public BattleUnit(NCharacterInfo info) : base(info.Entity)
         {
@@ -78,7 +86,16 @@ namespace Entities
             return null;
         }
 
-        public Skill CastringSkill = null;
+
+
+        public void UpdateInfo(NCharacterInfo cha)
+        {
+            this.SetEntityData(cha.Entity);
+            this.Info = cha;
+            this.Attributes.Init(this.Define, this.GetEquip(), Info.Level, this.Info.Dynamic);
+            this.SkillManager.UpdateSkills();
+        }
+#endregion
 
         #region 同步
         public void MoveForward()
@@ -120,7 +137,7 @@ namespace Entities
 
         private void SetStanby(bool standby)
         {
-            if(this.Controller != null)
+            if (this.Controller != null)
             {
                 this.Controller.SetStandby(standby);
             }
@@ -128,7 +145,7 @@ namespace Entities
 
         public void PlayAnim(string animName)
         {
-            if(this.Controller != null)
+            if (this.Controller != null)
             {
                 this.Controller.PlayAnim(animName);
             }
@@ -139,6 +156,8 @@ namespace Entities
             base.OnUpdate(delta);
             this.SkillManager.OnUpdate(delta);
         }
+
+
         #endregion
     }
 }

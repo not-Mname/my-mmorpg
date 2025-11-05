@@ -18,7 +18,6 @@ namespace Managers
             set
             {
                 this.SetTarget(value);
-
             }
         }
 

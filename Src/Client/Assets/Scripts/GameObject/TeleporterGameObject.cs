@@ -23,7 +23,7 @@ public class TeleporterGameObject : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.LogFormat("TeleporterGameObject : Character {0} Enter Teleporter {1}", other.name, this.id);
-        PlayerInputController playerInputController = other.GetComponent<PlayerInputController>();
+        PlayerController playerInputController = other.GetComponent<PlayerController>();
         if(playerInputController != null && playerInputController.isActiveAndEnabled)
         {
             TeleporterDefine td = DataManager.Instance.Teleporters[this.id];

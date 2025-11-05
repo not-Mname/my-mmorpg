@@ -16,17 +16,17 @@ namespace Common.Battle
 
         private int _level;
 
-        private NAttributeDynamic _dynamic;
+        public NAttributeDynamic Dynamic;// 动态属性,战斗中变化的属性
 
         public float HP
         {
             get
             {
-                return _dynamic.Hp;
+                return Dynamic.Hp;
             }
             set
             {
-                _dynamic.Hp = (int)Math.Max(MaxHp, value);
+                Dynamic.Hp = (int)Math.Max(MaxHp, value);
             }
         }
         public float MP { get; set; }
@@ -56,27 +56,29 @@ namespace Common.Battle
 
         public void Init(CharacterDefine define, List<EquipDefine> equips, int level, NAttributeDynamic dynamic)
         {
-            this._dynamic = dynamic;
+            this.Dynamic = dynamic;
             this.LoadInitAttribute(_inital, define);
             this.LoadGrowthAttribute(_growth, define);
-            if (equips != null)
+            this.LoadEquipAttribute(_equip, equips);
+            this._level = level;
+            this.InitBasicAttribute();
+            this.InitSecondaryAttribute();
+            this.InitFinalAttribute();
+
+            if (this.Dynamic == null)
             {
-                this.LoadEquipAttribute(_equip, equips);
-
-                this._level = level;
-                this.InitBasicAttribute();
-                this.InitBasicAttribute();
-                this.InitSecondaryAttribute();
-                this.InitFinalAttribute();
-
-                if (dynamic == null)
-                {
-                    dynamic = new NAttributeDynamic();
-                }
+                Dynamic = new NAttributeDynamic();
+                this.HP = this.MaxHp;
+                this.MP = this.MaxMp;
+            }
+            else
+            {
                 this.HP = dynamic.Hp;
                 this.MP = dynamic.Mp;
             }
+
         }
+
 
         public void InitFinalAttribute()
         {
@@ -151,11 +153,8 @@ namespace Common.Battle
 
         private void LoadEquipAttribute(AttributeData attr, List<EquipDefine> equips)
         {
-            if (equips == null)
-            {
-                return;
-            }
             attr.Reset();
+            if(equips == null) return;
             foreach (var equip in equips)
             {
                 attr.MaxMp += equip.MaxMP;

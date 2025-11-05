@@ -14,16 +14,18 @@ namespace Utilities
         MapService,
         BattleManager,
         BattleService,
+        InputManager,
+        EventManager,
     }
 
     public class LogHelper
     {
-        public static void LogShowJson(object message, LogUser user = LogUser.None)
+        public static void LogShowJson(object message, string leaveMessage = "", LogUser user = LogUser.None)
         {
             string json = JsonConvert.SerializeObject(message);
-            if (LogDic.TryGetValue(user, out bool isEnabled) && isEnabled)
+            if (LogDic.TryGetValue(user, out bool isEnabled) && isEnabled )
             {
-                Debug.Log(json);
+                Debug.LogFormat("LogShowJson : {0} json:{1}", leaveMessage, json);
             }
         }
 
@@ -101,6 +103,8 @@ namespace Utilities
             { LogUser.MapService, false },
             { LogUser.BattleManager, true },
             { LogUser.BattleService, true },
+            { LogUser.InputManager, true },
+            { LogUser.EventManager, true },
         };
     }
 }

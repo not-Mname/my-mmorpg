@@ -32,7 +32,7 @@ namespace GameServer.Entities
         public Chat Chat;
         public double ChatUpdateTs;
         public Character(CharacterType type, TCharacter cha) :
-            base(type, cha.ID, cha.Level, new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ), new Core.Vector3Int(100, 0, 0))
+            base(type, cha.Class, cha.Level, new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ), new Core.Vector3Int(100, 0, 0))
         {
             this.Data = cha;
             this.Id = cha.ID;
@@ -88,6 +88,12 @@ namespace GameServer.Entities
             this.Level++;
             Log.InfoFormat("Character {0} Level Up to {1}", this.Info.Name, this.Level);
             this.CheckLevelUp();
+        }
+
+        public override List<EquipDefine> GetEquips()
+        {
+
+            return base.GetEquips();
         }
 
         public int Exp

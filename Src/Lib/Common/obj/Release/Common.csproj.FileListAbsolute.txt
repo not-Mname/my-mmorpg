@@ -1,0 +1,14 @@
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Release\Common.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Release\Common.pdb
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Release\log4net.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Release\protobuf-net.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Release\Protocol.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Release\UnityEngine.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Release\Protocol.pdb
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Release\log4net.xml
+D:\Develop\MyMmorpg\Src\Lib\Common\bin\Release\protobuf-net.xml
+D:\Develop\MyMmorpg\Src\Lib\Common\obj\Release\Common.csproj.AssemblyReference.cache
+D:\Develop\MyMmorpg\Src\Lib\Common\obj\Release\Common.csproj.CoreCompileInputs.cache
+D:\Develop\MyMmorpg\Src\Lib\Common\obj\Release\Common.csproj.Up2Date
+D:\Develop\MyMmorpg\Src\Lib\Common\obj\Release\Common.dll
+D:\Develop\MyMmorpg\Src\Lib\Common\obj\Release\Common.pdb

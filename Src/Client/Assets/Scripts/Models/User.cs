@@ -23,13 +23,13 @@ namespace Models
             this.CurrentCharacterInfo.Gold += value;
         }
 
-        public BattleUnit CurrentCharacter { get; set; }
+        public Character CurrentCharacter { get; set; }
 
         public MapDefine CurrentMapData { get; set; }
 
         public NCharacterInfo CurrentCharacterInfo { get; set; }
 
-        public PlayerInputController CurrentCharacterObject { get; set; }
+        public PlayerController CurrentCharacterObject { get; set; }
 
         public NTeamInfo TeamInfo { get; set; }
 

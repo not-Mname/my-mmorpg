@@ -89,7 +89,7 @@ namespace Utilities
             {
                 return;
             }
-            LogHelper.LogShowJson(args);
+            //LogHelper.LogShowJson(args, $"Fire Event {eventName}");
             string eventNameString = eventName.ToString();
             EventManager.Instance.TriggerEvent(eventNameString, args);
         }

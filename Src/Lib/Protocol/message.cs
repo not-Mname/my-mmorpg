@@ -1819,6 +1819,8 @@ namespace SkillBridge.Message
         CoolDown = 2,
         [global::ProtoBuf.ProtoEnum(Name = @"INVALID_TARGET")]
         InvalidTarget = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"OUT_OF_RANGE")]
+        OutOfRange = 4,
     }
 
 }

@@ -3,6 +3,7 @@ using JetBrains.Annotations;
 using Managers;
 using SkillBridge.Message;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,11 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 
     public Entity entity;
 
-    public UnityEngine.Vector3 position;
-    public UnityEngine.Vector3 direction;
+    public Vector3 position;
+    public Vector3 direction;
     Quaternion rotation;
 
-    public UnityEngine.Vector3 lastPosition;
+    public Vector3 lastPosition;
     Quaternion lastRotation;
 
     public float speed;
@@ -36,6 +37,11 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 
     public Transform rideBone;
     void Start()
+    {
+        
+    }
+
+    public void Init()
     {
         if (this.entity != null)
         {
@@ -64,13 +70,30 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 
         this.position = GameObjectTool.LogicToWorld(entity.Position);
         this.direction = GameObjectTool.LogicToWorld(entity.Direction);
+        this.speed = GameObjectTool.LogicToWorld(entity.Speed);
 
-        this.characterController.Move(this.position);
+        Vector3 dir = this.position - transform.position;
+        if (dir.magnitude > 0.01f)
+        {
+            dir.Normalize();
+            this.characterController.Move(dir * speed * Time.fixedDeltaTime);
+        }
+
         this.transform.forward = this.direction;
         this.lastPosition = this.position;
         this.lastRotation = this.rotation;
 
     }
+
+    //IEnumerator Move()
+    //{
+    //    while (true)
+    //    {
+
+            
+    //        yield return new WaitForFixedUpdate();
+    //    }
+    //}
 
     public void OnEntityEvent(EntityEvent entityEvent, int param)
     {
@@ -110,9 +133,9 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 
     public void Ride(int rideId)
     {
-        if(currentRide == rideId) return;
+        if (currentRide == rideId) return;
         currentRide = rideId;
-        if(rideId > 0)
+        if (rideId > 0)
         {
             this.rideController = GameObjectManager.Instance.LoadRide(rideId, this.transform);
         }
@@ -122,7 +145,7 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
             this.rideController = null;
         }
 
-        if(this.rideController == null)
+        if (this.rideController == null)
         {
             this.anim.transform.localPosition = Vector3.zero;
             this.anim.SetLayerWeight(1, 0);//设置权重为0，使动画停止播放

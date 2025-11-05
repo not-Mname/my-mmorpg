@@ -1,16 +1,16 @@
-﻿using System;
+﻿using Common;
+using Entities;
+using Models;
+using Network;
+using SkillBridge.Message;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Common;
-using Network;
 using UnityEngine;
 using UnityEngine.Events;
-
-using Entities;
-using SkillBridge.Message;
+using UnityEngine.TextCore.Text;
 using Utilities;
-using Models;
 
 namespace Managers
 {
@@ -44,19 +44,14 @@ namespace Managers
             this.Characters.Clear();
         }
 
-        public void AddCharacter(SkillBridge.Message.NCharacterInfo cha)
+        public void AddCharacter(Entities.Character character)
         {
-            LogHelper.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", LogUser.CharacterManager, cha.EntityId, cha.Name, cha.mapId, cha.Entity.String());
-            BattleUnit character = new BattleUnit(cha);
-            this.Characters[cha.EntityId] = character;
+            LogHelper.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", LogUser.CharacterManager, character.EntityId, character.Name, character.Info.mapId, character.Info.Entity.String());
+            this.Characters[character.EntityId] = character;
             EntityManager.Instance.AddEntity(character);
             if (OnCharacterEnter != null)
             {
                 OnCharacterEnter(character);
-            }
-            if (cha.EntityId == User.Instance.CurrentCharacterInfo.EntityId)
-            {
-                User.Instance.CurrentCharacter = character;
             }
         }
 

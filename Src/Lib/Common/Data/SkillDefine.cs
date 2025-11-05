@@ -13,6 +13,7 @@ namespace Common.Data
         public string Name { get; set; }
         public SkillType Type { get; set; }
         public TargetType CastTarget { get; set; }
+        public float CastRange { get; set; }
         public string Resource { get; set; }
         public string Icon { get; set; }
         public string Description { get; set; }

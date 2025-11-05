@@ -1,4 +1,5 @@
 ﻿using Common.Data;
+using Entities;
 using Managers;
 using Models;
 using Network;
@@ -40,8 +41,19 @@ namespace Services
                     (cha.Type == CharacterType.Player && (User.Instance.CurrentCharacterInfo.EntityId == cha.EntityId)))
                 {
                     User.Instance.CurrentCharacterInfo = cha;
+                    if(User.Instance.CurrentCharacter == null)
+                    {
+                        User.Instance.CurrentCharacter = new Character(cha);
+                    }
+                    else
+                    {
+                        User.Instance.CurrentCharacter.UpdateInfo(cha);
+                    }
+                    CharacterManager.Instance.AddCharacter(User.Instance.CurrentCharacter);
+
+                    continue;
                 }
-                CharacterManager.Instance.AddCharacter(cha);
+                CharacterManager.Instance.AddCharacter(new Character(cha));
             }
             if (CurrentMapId != response.mapId)
             {
@@ -61,9 +73,9 @@ namespace Services
             else
             {
                 CharacterManager.Instance.Clear();
-                User.Instance.CurrentCharacterInfo = null;
-                User.Instance.CurrentCharacterObject = null;
-                User.Instance.CurrentMapData = null;
+                //User.Instance.CurrentCharacterInfo = null;
+                //User.Instance.CurrentCharacterObject = null;
+                //User.Instance.CurrentMapData = null;
             }
                 
         }

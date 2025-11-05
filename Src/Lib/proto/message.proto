@@ -776,6 +776,7 @@ enum SKILL_RESULT
 	OUT_OF_MP = 1;
 	COOL_DOWN = 2;
 	INVALID_TARGET = 3;
+	OUT_OF_RANGE = 4;
 }
 
 message NSkillCastInfo

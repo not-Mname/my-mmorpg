@@ -1,6 +1,7 @@
 ﻿// EventManager.cs
 using System;
 using System.Collections.Generic;
+using Utilities;
 
 public class EventManager : Singleton<EventManager>
 {
@@ -17,10 +18,12 @@ public class EventManager : Singleton<EventManager>
         {
             // 如果已存在，替换掉旧的事件处理器
             _events[eventName] = listener;
+            LogHelper.Log("EventManager: Event " + eventName + " has been replaced.", LogUser.EventManager);
         }
         else
         {
             _events.Add(eventName, listener);
+            LogHelper.Log("EventManager: Event " + eventName + " has been subscribed.", LogUser.EventManager);
         }
     }
 
@@ -29,6 +32,7 @@ public class EventManager : Singleton<EventManager>
         if (_events.ContainsKey(eventName))
         {
             _events.Remove(eventName);
+            LogHelper.Log("EventManager: Event " + eventName + " has been unsubscribed.", LogUser.EventManager);
         }
     }
 
@@ -37,6 +41,7 @@ public class EventManager : Singleton<EventManager>
         if (_events.TryGetValue(eventName, out var thisEvent))
         {
             thisEvent?.Invoke(parameters);
+            LogHelper.Log("EventManager: Event " + eventName + " has been triggered.", LogUser.EventManager);
         }
     }
 }

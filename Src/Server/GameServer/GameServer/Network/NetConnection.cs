@@ -1,35 +1,4 @@
-﻿// RayMix Libs - RayMix's .Net Libs
-// Copyright 2018 Ray@raymix.net.  All rights reserved.
-// https://www.raymix.net
-//
-// Redistribution and use in source and binary forms, with or without
-// modification, are permitted provided that the following conditions are
-// met:
-//
-//     * Redistributions of source code must retain the above copyright
-// notice, this list of conditions and the following disclaimer.
-//     * Redistributions in binary form must reproduce the above
-// copyright notice, this list of conditions and the following disclaimer
-// in the documentation and/or other materials provided with the
-// distribution.
-//     * Neither the name of RayMix.net. nor the names of its
-// contributors may be used to endorse or promote products derived from
-// this software without specific prior written permission.
-//
-// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-using Common;
-using GameServer.Network;
+﻿using GameServer.Network;
 using System;
 using System.Net;
 using System.Net.Sockets;
@@ -37,21 +6,21 @@ using System.Net.Sockets;
 namespace Network
 {
     /// <summary>
-    /// A connection to our server.
+    /// 与服务器的连接。
     /// </summary>
-    public class NetConnection<T>  where T : INetSession
+    public class NetConnection<T> where T : INetSession
     {
         /// <summary>
-        /// Represents a callback used to inform a listener that a ServerConnection has received data.
+        /// 表示一个回调，用于通知监听者 ServerConnection 已接收到数据。
         /// </summary>
-        /// <param name="sender">The sender of the callback.</param>
-        /// <param name="e">The DataEventArgs object containging the received data.</param>
+        /// <param name="sender">回调的发送者。</param>
+        /// <param name="e">包含接收到数据的 DataEventArgs 对象。</param>
         public delegate void DataReceivedCallback(NetConnection<T> sender, DataEventArgs e);
         /// <summary>
-        /// Represents a callback used to inform a listener that a ServerConnection has disconnected.
+        /// 表示一个回调，用于通知监听者 ServerConnection 已断开连接。
         /// </summary>
-        /// <param name="sender">The sender of the callback.</param>
-        /// <param name="e">The SocketAsyncEventArgs object used by the ServerConnection.</param>
+        /// <param name="sender">回调的发送者。</param>
+        /// <param name="e">ServerConnection 使用的 SocketAsyncEventArgs 对象。</param>
         public delegate void DisconnectedCallback(NetConnection<T> sender, SocketAsyncEventArgs e);
 
         #region Internal Classes
@@ -71,12 +40,12 @@ namespace Network
 
         #region Constructor
         /// <summary>
-        /// A connection to our server, always listening asynchronously.
+        /// 与服务器的连接，始终以异步方式监听。
         /// </summary>
-        /// <param name="socket">The Socket for the connection.</param>
-        /// <param name="args">The SocketAsyncEventArgs for asyncronous recieves.</param>
-        /// <param name="dataReceived">A callback invoked when data is recieved.</param>
-        /// <param name="disconnectedCallback">A callback invoked on disconnection.</param>
+        /// <param name="socket">连接所使用的 Socket。</param>
+        /// <param name="args">用于异步接收的 SocketAsyncEventArgs。</param>
+        /// <param name="dataReceived">当接收到数据时触发的回调。</param>
+        /// <param name="disconnectedCallback">断开连接时触发的回调。</param>
         public NetConnection(Socket socket, SocketAsyncEventArgs args, DataReceivedCallback dataReceived,
             DisconnectedCallback disconnectedCallback, T session)
         {
@@ -93,7 +62,7 @@ namespace Network
                 eventArgs.AcceptSocket = socket;
                 eventArgs.Completed += ReceivedCompleted;
                 eventArgs.UserToken = state;
-                eventArgs.SetBuffer(new byte[64 * 1024],0, 64 * 1024);
+                eventArgs.SetBuffer(new byte[64 * 1024], 0, 64 * 1024);
 
                 BeginReceive(eventArgs);
                 this.session = session;
@@ -103,7 +72,7 @@ namespace Network
 
         #region Public Methods
         /// <summary>
-        /// Disconnects the client.
+        /// 断开客户端连接。
         /// </summary>
         public void Disconnect()
         {
@@ -114,11 +83,11 @@ namespace Network
         }
 
         /// <summary>
-        /// Sends data to the client.
+        /// 向客户端发送数据。
         /// </summary>
-        /// <param name="data">The data to send.</param>
-        /// <param name="offset">The offset into the data.</param>
-        /// <param name="count">The ammount of data to send.</param>
+        /// <param name="data">要发送的数据。</param>
+        /// <param name="offset">数据中的偏移量。</param>
+        /// <param name="count">要发送的数据量。</param>
         public void SendData(Byte[] data, Int32 offset, Int32 count)
         {
             lock (this)
@@ -142,10 +111,10 @@ namespace Network
         {
             try
             {
-                // Retrieve the socket from the state object.
+                // 从状态对象中获取 socket。
                 Socket client = (Socket)ar.AsyncState;
 
-                // Complete sending the data to the remote device.
+                // 完成向远程设备发送数据。
                 int bytesSent = client.EndSend(ar);
             }
             catch (Exception e)
@@ -160,9 +129,9 @@ namespace Network
 
         #region Private Methods
         /// <summary>
-        /// Starts and asynchronous recieve.
+        /// 开始异步接收。
         /// </summary>
-        /// <param name="args">The SocketAsyncEventArgs to use.</param>
+        /// <param name="args">要使用的 SocketAsyncEventArgs。</param>
         private void BeginReceive(SocketAsyncEventArgs args)
         {
             lock (this)
@@ -179,20 +148,20 @@ namespace Network
         }
 
         /// <summary>
-        /// Called when an asynchronous receive has completed.
+        /// 当异步接收完成时调用。
         /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="args">The SocketAsyncEventArgs for the operation.</param>
+        /// <param name="sender">发送者。</param>
+        /// <param name="args">该操作的 SocketAsyncEventArgs。</param>
         private void ReceivedCompleted(Object sender, SocketAsyncEventArgs args)
         {
             if (args.BytesTransferred == 0)
             {
-                CloseConnection(args); //Graceful disconnect
+                CloseConnection(args); // 正常断开连接
                 return;
             }
             if (args.SocketError != SocketError.Success)
             {
-                CloseConnection(args); //NOT graceful disconnect
+                CloseConnection(args); // 非正常断开连接
                 return;
             }
 
@@ -206,9 +175,9 @@ namespace Network
         }
 
         /// <summary>
-        /// Closes the connection.
+        /// 关闭连接。
         /// </summary>
-        /// <param name="args">The SocketAsyncEventArgs for the connection.</param>
+        /// <param name="args">此连接的 SocketAsyncEventArgs。</param>
         private void CloseConnection(SocketAsyncEventArgs args)
         {
             State state = args.UserToken as State;
@@ -217,32 +186,32 @@ namespace Network
             {
                 socket.Shutdown(SocketShutdown.Both);
             }
-            catch { } // throws if client process has already closed
+            catch { } // 如果客户端进程已关闭则会抛出异常
             socket.Close();
             socket = null;
 
-            args.Completed -= ReceivedCompleted; //MUST Remember This!
+            args.Completed -= ReceivedCompleted; // 必须记住这一点！
             OnDisconnected(args, state.disconnectedCallback);
         }
         #endregion
 
         #region Events
         /// <summary>
-        /// Fires the DataReceivedCallback.
+        /// 触发 DataReceivedCallback。
         /// </summary>
-        /// <param name="data">The data which was received.</param>
-        /// <param name="remoteEndPoint">The address the data came from.</param>
-        /// <param name="callback">The callback.</param>
+        /// <param name="data">接收到的数据。</param>
+        /// <param name="remoteEndPoint">数据来源的地址。</param>
+        /// <param name="callback">回调函数。</param>
         private void OnDataReceived(Byte[] data, IPEndPoint remoteEndPoint, DataReceivedCallback callback)
         {
-            callback(this, new DataEventArgs() { RemoteEndPoint = remoteEndPoint, Data = data, Offset =0, Length = data.Length  });
+            callback(this, new DataEventArgs() { RemoteEndPoint = remoteEndPoint, Data = data, Offset = 0, Length = data.Length });
         }
 
         /// <summary>
-        /// Fires the DisconnectedCallback.
+        /// 触发 DisconnectedCallback。
         /// </summary>
-        /// <param name="args">The SocketAsyncEventArgs for this connection.</param>
-        /// <param name="callback">The callback.</param>
+        /// <param name="args">此连接的 SocketAsyncEventArgs。</param>
+        /// <param name="callback">回调函数。</param>
         private void OnDisconnected(SocketAsyncEventArgs args, DisconnectedCallback callback)
         {
             callback(this, args);

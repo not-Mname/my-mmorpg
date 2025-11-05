@@ -1,0 +1,9 @@
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Release\Protocol.dll
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Release\Protocol.pdb
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Release\protobuf-net.dll
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Release\protobuf-net.xml
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Release\Protocol.csproj.AssemblyReference.cache
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Release\Protocol.csproj.CoreCompileInputs.cache
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Release\Protocol.csproj.Up2Date
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Release\Protocol.dll
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Release\Protocol.pdb
