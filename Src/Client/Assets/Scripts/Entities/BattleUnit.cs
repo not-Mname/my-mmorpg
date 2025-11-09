@@ -163,6 +163,7 @@ namespace Entities
             LogHelper.LogFormat("DoDamage:{0}", LogUser.None, damageInfo);
             this.Attributes.HP -= damageInfo.Damage;
             this.PlayAnim("Hurt");
+            EVENT.Fire(Const.EventId.on_battle_target_updata);
         }
 
 

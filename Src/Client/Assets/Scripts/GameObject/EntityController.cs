@@ -1,12 +1,6 @@
 ﻿using Entities;
-using JetBrains.Annotations;
 using Managers;
 using SkillBridge.Message;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEngine;
 
 
@@ -84,16 +78,6 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
         this.lastRotation = this.rotation;
 
     }
-
-    //IEnumerator Move()
-    //{
-    //    while (true)
-    //    {
-
-            
-    //        yield return new WaitForFixedUpdate();
-    //    }
-    //}
 
     public void OnEntityEvent(EntityEvent entityEvent, int param)
     {

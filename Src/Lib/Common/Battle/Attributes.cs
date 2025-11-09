@@ -26,7 +26,7 @@ namespace Common.Battle
             }
             set
             {
-                Dynamic.Hp = (int)Math.Max(MaxHp, value);
+                Dynamic.Hp = (int)value;
             }
         }
         public float MP { get; set; }

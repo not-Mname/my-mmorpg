@@ -21,12 +21,12 @@ namespace Services
 
         public void Init()
         {
-            
+
         }
 
         public void SendSkillCast(int skillId, int casterId, int targetId, NVector3 currentPosition)
         {
-            if(currentPosition == null)
+            if (currentPosition == null)
             {
                 currentPosition = new NVector3();
             }
@@ -48,7 +48,7 @@ namespace Services
             if (response.Result == Result.Success)
             {
                 BattleUnit caster = EntityManager.Instance.GetEntity(response.castInfo.casterId) as BattleUnit;
-                if(caster != null)
+                if (caster != null)
                 {
                     BattleUnit target = EntityManager.Instance.GetEntity(response.castInfo.targetId) as BattleUnit;
                     caster.CastSkill(response.castInfo.skillId, target, response.castInfo.Position, response.nDamageInfo);

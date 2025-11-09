@@ -44,7 +44,7 @@ namespace Managers
             this.Characters.Clear();
         }
 
-        public void AddCharacter(Entities.Character character)
+        public void AddCharacter(BattleUnit character)
         {
             LogHelper.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", LogUser.CharacterManager, character.EntityId, character.Name, character.Info.mapId, character.Info.Entity.String());
             this.Characters[character.EntityId] = character;

@@ -104,6 +104,7 @@ public class PlayerController : MonoBehaviour
         if (enemy == null || enemy == MainPlayerCamera.Instance.Target)
         {
             MainPlayerCamera.Instance.Target = null;
+            BattleManager.Instance.CurrentTarget = null;
             return;
         }
 

@@ -3,6 +3,8 @@ using TMPro;
 using UI.Common;
 using UnityEngine;
 using UnityEngine.UI;
+using Utilities;
+using static UnityEngine.GraphicsBuffer;
 
 namespace UI.MainUI
 {
@@ -27,14 +29,22 @@ namespace UI.MainUI
             set
             {
                 _target = value;
-                this.UpdateUI();
+                this.Init();
             }
         }
 
         /////////////////////////////// 私有变量 ///////////////////////
 
         /////////////////////////////// 公有函数 ///////////////////////
-        public void UpdateUI()
+
+        private void UpdateUI()
+        {
+            this.HPBar.CurrentValue = this._target.Attributes.HP;
+            this.MPBar.CurrentValue = this._target.Attributes.MP;
+        }
+
+        /////////////////////////////// 私有函数 ///////////////////////
+        private void Init()
         {
             if (this._target != null)
             {
@@ -43,12 +53,14 @@ namespace UI.MainUI
                 this.MPBar.SetData(this._target.Attributes.MaxMp, this._target.Attributes.MP);
             }
         }
-
-        /////////////////////////////// 私有函数 ///////////////////////
-
-        private void Start()
+        private void OnEnable()
         {
+            EVENT.Subscribe(Const.EventId.on_battle_target_updata, this.UpdateUI);
+        }
 
+        private void OnDisable()
+        {
+            EVENT.Unsubscribe(Const.EventId.on_battle_target_updata);
         }
     }
 

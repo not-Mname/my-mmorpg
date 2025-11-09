@@ -80,6 +80,7 @@ namespace Battle
             this.IsCasting = true;
             this._castTime = 0;
             this._skillTime = 0;
+            this._hit = 0;
             this._cd = this.Define.CD;
             this._damageInfo = damageInfo;
             this.Owner.PlayAnim(this.Define.SkillAnim);

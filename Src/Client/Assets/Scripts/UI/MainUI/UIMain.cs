@@ -1,21 +1,15 @@
 ﻿using Entities;
 using Managers;
-using Models;
-using System;
-using UnityEngine.UI;
 using Utilities;
 
 namespace UI.MainUI
 {
-    public class UIMain : MonoSingleton<UIMain>, IDisposable
+    public class UIMain : MonoSingleton<UIMain>
     {
         /////////////////////////////// UI组件 /////////////////////////
         public UIAvatar Avatar;
         public UITeam TeamWindow;
         public UIBattleUnitInfo BattleUnitInfo;
-
-        
-
         /////////////////////////////// 公有函数 ///////////////////////
         protected override void OnStart()
         {
@@ -40,7 +34,7 @@ namespace UI.MainUI
             }
         }
 
-        public void Dispose()
+        private void OnDestroy()
         {
             EVENT.Unsubscribe(Const.EventId.on_battle_target_change);
         }

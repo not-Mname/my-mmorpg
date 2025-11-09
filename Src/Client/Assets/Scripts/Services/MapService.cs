@@ -16,7 +16,7 @@ namespace Services
     internal class MapService : Singleton<MapService>, IDisposable
     {
         public int CurrentMapId;
-        
+
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
@@ -41,16 +41,16 @@ namespace Services
                     (cha.Type == CharacterType.Player && (User.Instance.CurrentCharacterInfo.EntityId == cha.EntityId)))
                 {
                     User.Instance.CurrentCharacterInfo = cha;
-                    if(User.Instance.CurrentCharacter == null)
-                    {
+                    if (User.Instance.CurrentCharacter == null)
                         User.Instance.CurrentCharacter = new Character(cha);
-                    }
                     else
-                    {
                         User.Instance.CurrentCharacter.UpdateInfo(cha);
-                    }
                     CharacterManager.Instance.AddCharacter(User.Instance.CurrentCharacter);
-
+                    continue;
+                }
+                else if (cha.Type == CharacterType.Monster)
+                {
+                    CharacterManager.Instance.AddCharacter(new Monster(cha));
                     continue;
                 }
                 CharacterManager.Instance.AddCharacter(new Character(cha));
@@ -77,7 +77,7 @@ namespace Services
                 //User.Instance.CurrentCharacterObject = null;
                 //User.Instance.CurrentMapData = null;
             }
-                
+
         }
 
         private void EnterMap(int mapId)
@@ -98,7 +98,7 @@ namespace Services
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("MapEntityUpdateResponse : Entitis:{0}", message.entitySyncs.Count);
             sb.AppendLine();
-            foreach(var entity in message.entitySyncs)
+            foreach (var entity in message.entitySyncs)
             {
                 EntityManager.Instance.OnEntitySync(entity);
                 sb.AppendFormat("[{0}] event:{1} entity:{2}", entity.Id, entity.Event, entity.Entity.String());
