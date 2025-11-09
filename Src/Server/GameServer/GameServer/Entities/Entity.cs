@@ -1,10 +1,5 @@
 ﻿using GameServer.Core;
 using SkillBridge.Message;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameServer.Entities
 {
@@ -83,6 +78,11 @@ namespace GameServer.Entities
             this.Position = entity.Position;
             this.Direction = entity.Direction;
             this.speed = entity.Speed;
+        }
+
+        public virtual void Update()
+        {
+            
         }
     }
 }

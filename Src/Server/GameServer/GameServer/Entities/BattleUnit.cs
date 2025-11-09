@@ -1,6 +1,7 @@
 ﻿using Battle;
 using Common.Battle;
 using Common.Data;
+using GameServer.Battle;
 using GameServer.Core;
 using GameServer.Managers;
 using SkillBridge.Message;
@@ -9,11 +10,14 @@ using System.Collections.Generic;
 
 namespace GameServer.Entities
 {
-    public class BattleUnit : Entity
+    class BattleUnit : Entity
     {
 
         public int Id { get; set; }
         public string Name { get { return this.Info.Name; } }
+
+        public bool IsDeath = false;
+
         public NCharacterInfo Info;
         public CharacterDefine Define;
         public SkillManager SkillManager;
@@ -46,6 +50,28 @@ namespace GameServer.Entities
         {
             this.SkillManager = new SkillManager(this);
             this.Info.Skills.AddRange(this.SkillManager.Infos);
+        }
+
+        internal void CastSkill(BattleContext context, int skillId)
+        {
+            Skill skill = this.SkillManager.GetSkill(skillId);
+            context.Result = skill.Cast(context);
+        }
+
+
+        internal void DoDamage(NDamageInfo damage)
+        {
+            this.Attribute.HP -= damage.Damage;
+            if (this.Attribute.HP <= 0)
+            {
+                this.IsDeath = true;
+                damage.WillDead = true;
+            }
+        }
+
+        public override void Update()
+        {
+            this.SkillManager.Update();
         }
     }
 }

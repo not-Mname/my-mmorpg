@@ -231,11 +231,6 @@ public class PlayerController : MonoBehaviour
                 this.character.MoveForward();
                 this.SendEntityEvent(EntityEvent.MoveFwd);
             }
-            float distance = (this.transform.position - MainPlayerCamera.Instance.Target.transform.position).magnitude;
-            if (distance > 20f)
-            {
-                this.OnLockEnemy(null);
-            }
             this.transform.forward = forwardDir;
         }
         else

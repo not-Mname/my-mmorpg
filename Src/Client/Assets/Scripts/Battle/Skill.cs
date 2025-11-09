@@ -11,12 +11,22 @@ namespace Battle
     public class Skill
     {
         public NSkillInfo Info { get; set; }
+
         public BattleUnit Owner { get; set; }
+
         public SkillDefine Define { get; set; }
+
+        private NDamageInfo _damageInfo;
+        public NDamageInfo DamageInfo { get { return this._damageInfo; } }
+
         private float _cd;
-        public float CD { get { return _cd; }}// 技能剩余冷却时间
+        public float CD { get { return _cd; } }// 技能剩余冷却时间
+
         public bool IsCasting { get; set; }
-        public int CastTime { get; private set; }
+
+        private float _castTime;
+        private float _skillTime;
+        private int _hit;
 
         public Skill(NSkillInfo info, BattleUnit owner)
         {
@@ -36,7 +46,7 @@ namespace Battle
                 }
 
                 int distance = (int)Vector3Int.Distance(this.Owner.Position, target.Position);
-                if(distance > this.Define.CastRange)
+                if (distance > this.Define.CastRange)
                 {
                     return SkillResult.OutOfRange;
                 }
@@ -65,11 +75,13 @@ namespace Battle
 
         }
 
-        public void BeginCast()
+        public void BeginCast(NDamageInfo damageInfo)
         {
             this.IsCasting = true;
-            this.CastTime = 0;
+            this._castTime = 0;
+            this._skillTime = 0;
             this._cd = this.Define.CD;
+            this._damageInfo = damageInfo;
             this.Owner.PlayAnim(this.Define.SkillAnim);
         }
 
@@ -77,9 +89,24 @@ namespace Battle
         {
             if (this.IsCasting)
             {
+                this._skillTime += delta;
+                if (this._skillTime > 0.5 && this._hit == 0)
+                {
+                    this.DoHit();
+                }
             }
 
             this.UpdateCD(delta);
+        }
+
+        private void DoHit()
+        {
+            this._hit++;
+            if (this._damageInfo != null)
+            {
+                var cha = CharacterManager.Instance.GetCharacter(_damageInfo.entityId);
+                cha.DoDamage(this._damageInfo);
+            }
         }
 
         private void UpdateCD(float delta)

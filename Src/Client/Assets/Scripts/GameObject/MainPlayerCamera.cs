@@ -42,7 +42,7 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
         set
         {
 
-            _target = value? value : null;
+            _target = value ? value : null;
             _targetPoint = value ? value.transform : null;
         }
     }
@@ -58,7 +58,7 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
 
     public void Init()
     {
-        if(Follower == null) return;
+        if (Follower == null) return;
         this.FollowPoint = Follower.transform;
         this._cameraMainRotation = this.gameObject.transform;
         this._cameraMainRotation.forward = this.FollowPoint.forward;
@@ -68,7 +68,7 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
     {
         EVENT.Unsubscribe(EventId.on_map_change);
     }
-   
+
     void OnMapChange(string mapName)
     {
         LogHelper.Log("OnMapChange: " + mapName);
@@ -106,6 +106,11 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
             }
             else
             {
+                //float distance = (this.FollowPoint.position - this.Target.transform.position).magnitude;
+                //if (distance > 20f)
+                //{
+                //    EVENT.Fire(EventId.on_player_lock_target, null);
+                //}
                 //设置目标瞄准点（可加上高度偏移）
                 Vector3 targetAimPoint = _targetPoint.transform.position + Vector3.up * targetHeightOffset;
 

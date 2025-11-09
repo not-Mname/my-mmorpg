@@ -85,7 +85,7 @@ namespace GameServer.Models
         {
             Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1}", this.Define.ID, character.Id);
 
-            EntityManager.Instance.RemoveEntity(character.Data.MapID, character);
+            //EntityManager.Instance.RemoveEntity(character.Data.MapID, character);
 
             foreach (var kv in this.MapCharacters)
             {
@@ -130,12 +130,10 @@ namespace GameServer.Models
                     {
                         kv.Value.character.Ride = entitySync.Param;
                     }
-                    Log.InfoFormat("UpdateEntity1 {0}", kv.Value.character.Id);
                     kv.Value.connection.SendResponse();
                 }
                 else
                 {
-                    Log.InfoFormat("UpdateEntity2 {0}", kv.Value.character.Id);
                     MapService.Instance.SendEntityUpdate(kv.Value.connection, entitySync);
                 }
             }

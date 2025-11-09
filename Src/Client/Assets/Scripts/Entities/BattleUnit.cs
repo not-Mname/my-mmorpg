@@ -6,6 +6,7 @@ using Common.Data;
 using Managers;
 using SkillBridge.Message;
 using UnityEngine;
+using Utilities;
 
 namespace Entities
 {
@@ -100,25 +101,25 @@ namespace Entities
         #region 同步
         public void MoveForward()
         {
-            Debug.LogFormat("MoveForward");
+            //Debug.LogFormat("MoveForward");
             this.Speed = this.Define.Speed;
         }
 
         public void MoveBack()
         {
-            Debug.LogFormat("MoveBack");
+            //Debug.LogFormat("MoveBack");
             this.Speed = -this.Define.Speed;
         }
 
         public void Stop()
         {
-            Debug.LogFormat("Stop");
+            //Debug.LogFormat("Stop");
             this.Speed = 0;
         }
 
         public void SetDirection(Vector3Int direction)
         {
-            Debug.LogFormat("SetDirection:{0}", direction);
+            //Debug.LogFormat("SetDirection:{0}", direction);
             this.Direction = direction;
         }
 
@@ -128,11 +129,11 @@ namespace Entities
             this.Position = position;
         }
 
-        public void CastSkill(int skillId, BattleUnit target, NVector3 position)
+        public void CastSkill(int skillId, BattleUnit target, NVector3 position, NDamageInfo damageInfo)
         {
             this.SetStanby(true);
             var skill = this.SkillManager.GetSkill(skillId);
-            skill.BeginCast();
+            skill.BeginCast(damageInfo);
         }
 
         private void SetStanby(bool standby)
@@ -155,6 +156,13 @@ namespace Entities
         {
             base.OnUpdate(delta);
             this.SkillManager.OnUpdate(delta);
+        }
+
+        public void DoDamage(NDamageInfo damageInfo)
+        {
+            LogHelper.LogFormat("DoDamage:{0}", LogUser.None, damageInfo);
+            this.Attributes.HP -= damageInfo.Damage;
+            this.PlayAnim("Hurt");
         }
 
 

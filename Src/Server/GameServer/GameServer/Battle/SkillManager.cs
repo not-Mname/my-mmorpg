@@ -1,12 +1,13 @@
 ﻿using GameServer.Entities;
 using GameServer.Managers;
 using SkillBridge.Message;
+using System;
 using System.Collections.Generic;
 
 
 namespace Battle
 {
-    public class SkillManager
+    class SkillManager
     {
         private BattleUnit _owner;
         
@@ -52,6 +53,21 @@ namespace Battle
         public void AddSkill(Skill skill)
         {
             this.Skills.Add(skill);
+        }
+
+        public Skill GetSkill(int skillId)
+        {
+            Skill skill = this.Skills.Find(s => s.Info.Id == skillId);
+            return skill;
+        
+        }
+
+        public void Update()
+        {
+            foreach (var skill in this.Skills)
+            {
+                skill.Update();
+            }
         }
     }
 }

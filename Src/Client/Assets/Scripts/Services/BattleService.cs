@@ -51,7 +51,7 @@ namespace Services
                 if(caster != null)
                 {
                     BattleUnit target = EntityManager.Instance.GetEntity(response.castInfo.targetId) as BattleUnit;
-                    caster.CastSkill(response.castInfo.skillId, target, response.castInfo.Position);
+                    caster.CastSkill(response.castInfo.skillId, target, response.castInfo.Position, response.nDamageInfo);
                 }
             }
             else
