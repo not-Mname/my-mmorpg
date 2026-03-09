@@ -55,7 +55,7 @@
 ### 数据驱动设计
 - 所有游戏数据通过Excel配置，转换为JSON格式
 - 使用统一的数据定义类 (`CharacterDefine.cs`, `ItemDefine.cs`, `SkillDefine.cs`等)
-- 服务端通过 [DataManager](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Managers\DataManager.cs#L11-L160) 加载所有配置数据
+- 服务端通过 [DataManager] 加载所有配置数据
 
 ### 网络同步机制
 - 客户端通过 [NetClient]连接服务器
@@ -104,7 +104,8 @@
 - **内存占用**: 客户端约200-500MB，服务端约100-300MB
 - **CPU使用**: 平均占用率 < 30% (中等配置服务器)
 
-## 📄 许可证
-本项目仅供学习和研究使用。
+## 📄 注意
+ - 本项目仅供学习和研究使用，目前项目资源比较混乱，过段时间我会优化资源结构并加入打包和热更新功能。
+ - 本项目业务逻辑基本完成，战斗系统正在研究，预计4月完成。
 
 ---
