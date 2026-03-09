@@ -41,15 +41,12 @@
 项目采用清晰的分层架构设计：
 
 1. **Service层**: 处理网络通信，大部分服务在客户端和服务端都有对应实现
-   - [FriendService](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Services\FriendService.cs#L10-L117), [GuildService](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Services\GuildService.cs#L11-L186), [ChatService](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Services\ChatService.cs#L11-L54) 等
-   - [DBService](file://d:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Services\DBService.cs#L7-L35) (仅服务端): 封装Entity Framework数据库操作
 
 2. **Manager层**: 
-   - **客户端**: 管理游戏实体、控制Unity系统 ([CharacterManager](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Managers\CharacterManager.cs#L16-L78), [UIManager](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Managers\UIManager.cs#L9-L88), [QuestManager](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Managers\QuestManager.cs#L20-L241)等)
+   - **客户端**: 管理游戏实体、控制Unity系统 
    - **服务端**: 实现核心业务逻辑和实体管理
 
 3. **Entities层**: 存储游戏中所有实体的数据结构
-   - [Character](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Entities\Character.cs#L7-L17), [Monster](file://d:\Develop\MyMmorpg\Src\Lib\Protocol\message.cs#L1649-L1649), [BattleUnit](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Entities\BattleUnit.cs#L12-L170) 等继承自基础 [Entity](file://d:\Develop\MyMmorpg\Src\Lib\Protocol\message.cs#L253-L254) 类
 
 4. **Model层**: 存储被管理层管理的对象数据
 
@@ -61,9 +58,9 @@
 - 服务端通过 [DataManager](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Managers\DataManager.cs#L11-L160) 加载所有配置数据
 
 ### 网络同步机制
-- 客户端通过 [NetClient](file://d:\Develop\MyMmorpg\Src\Client\Assets\Scripts\Network\NetClient.cs#L13-L439) 连接服务器
+- 客户端通过 [NetClient]连接服务器
 - 服务端使用多线程处理网络请求
-- 消息通过 [MessageDispatch](file://d:\Develop\MyMmorpg\Src\Lib\Common\Network\MessageDispatch.cs#L6-L77) 和 [MessageDistributer](file://d:\Develop\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs#L21-L196) 进行路由分发
+- 消息通过 [MessageDispatch] 和 [MessageDistributer] 进行路由分发
 - 支持断线重连和连接状态管理
 
 ## 🚀 快速开始
@@ -81,8 +78,8 @@
 
 ### 配置文件
 - **服务器配置**: `GameServer/Properties/Settings.settings`
-  - [ServerIP](file://d:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Config.cs#L24-L24): 服务器IP地址 (默认: 127.0.0.1)
-  - [ServerPort](file://d:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Config.cs#L25-L25): 服务器端口 (默认: 8000)
+  - [ServerIP]: 服务器IP地址 (默认: 127.0.0.1)
+  - [ServerPort]: 服务器端口 (默认: 8000)
 
 ## 🎮 功能特性
 
@@ -107,16 +104,7 @@
 - **内存占用**: 客户端约200-500MB，服务端约100-300MB
 - **CPU使用**: 平均占用率 < 30% (中等配置服务器)
 
-## 🤝 贡献指南
-欢迎贡献代码！请遵循以下原则：
-1. 保持代码风格一致
-2. 添加必要的注释和文档
-3. 确保向后兼容性
-4. 编写单元测试（如适用）
-
 ## 📄 许可证
 本项目仅供学习和研究使用。
 
 ---
-
-*MyMMORPG - 打造属于你的奇幻世界*
