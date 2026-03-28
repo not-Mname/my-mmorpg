@@ -12,11 +12,16 @@ namespace Services
         public BattleService()
         {
             MessageDistributer.Instance.Subscribe<SkillCastResponse>(OnSkillCast);
+            MessageDistributer.Instance.Subscribe<SkillHitResponse>(OnSkillHit);
+
         }
+
+        
 
         public void Dispose()
         {
-
+            MessageDistributer.Instance.Unsubscribe<SkillCastResponse>(OnSkillCast);
+            MessageDistributer.Instance.Unsubscribe<SkillHitResponse>(OnSkillHit);
         }
 
         public void Init()
@@ -44,7 +49,7 @@ namespace Services
 
         public void OnSkillCast(object sender, SkillCastResponse response)
         {
-            LogHelper.LogFormat("OnSkillCast: skillId {0}, casterId {1}, targetId {2}, success {3}", LogUser.BattleService, response.castInfo.skillId, response.castInfo.casterId, response.castInfo.targetId, response.Result);
+            LogHelper.LogFormat("OnSkillCast: skillId {0}, casterId {1}, targetId {2}, position {3}", LogUser.BattleService, response.castInfo.skillId, response.castInfo.casterId, response.castInfo.targetId, response.castInfo.Position.String());
             if (response.Result == Result.Success)
             {
                 BattleUnit caster = EntityManager.Instance.GetEntity(response.castInfo.casterId) as BattleUnit;
@@ -57,6 +62,21 @@ namespace Services
             else
             {
                 ChatManager.Instance.AddSystemMessage(response.Errormsg);
+            }
+        }
+
+        private void OnSkillHit(object sender, SkillHitResponse message)
+        {
+            if(message.Result == Result.Success)
+            {
+                foreach(var hit in message.Hits)
+                {
+                    BattleUnit caster = EntityManager.Instance.GetEntity(hit.casterId) as BattleUnit;
+                    if(caster != null)
+                    {
+                        caster.DoSkillHit(hit.skillId, hit.hitId, hit.Damages);
+                    }
+                }
             }
         }
     }

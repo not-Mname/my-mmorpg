@@ -125,7 +125,7 @@ namespace Entities
 
         public void SetPosition(Vector3Int position)
         {
-            Debug.LogFormat("SetPosition:{0}", position);
+            //Debug.LogFormat("SetPosition:{0}", position);
             this.Position = position;
         }
 
@@ -160,10 +160,21 @@ namespace Entities
 
         public void DoDamage(NDamageInfo damageInfo)
         {
-            LogHelper.LogFormat("DoDamage:{0}", LogUser.None, damageInfo);
+            LogHelper.Log($"DoDamage:{damageInfo.Damage}", LogUser.Battle);
             this.Attributes.HP -= damageInfo.Damage;
             this.PlayAnim("Hurt");
             EVENT.Fire(Const.EventId.on_battle_target_updata);
+        }
+
+        internal void DoSkillHit(int skillId, int hitId, List<NDamageInfo> damages)
+        {
+            var skill = this.SkillManager.GetSkill(skillId);
+            skill.DoHit(hitId, damages);
+        }
+
+        internal int Distance(BattleUnit target)
+        {
+            return (int)Vector3Int.Distance(this.Position, target.Position);
         }
 
 

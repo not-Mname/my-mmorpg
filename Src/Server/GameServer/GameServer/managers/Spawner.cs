@@ -1,6 +1,7 @@
 ﻿using Common;
 using Common.Data;
 using GameServer.Models;
+using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,7 +49,7 @@ namespace GameServer.Managers
         void Spawn()
         {
             this._spawned = true;
-            Log.InfoFormat("Map[{0}] Spawn [Monster {1} Level {2}] at Point {3}", Map.ID, Define.ID, Define.SpawnLevel, _spawnPoint.Position);
+            Log.InfoFormat("Map[{0}] Spawn [Monster {1} Level {2}] at Point {3}", Map.ID, Define.ID, Define.SpawnLevel, _spawnPoint.Position.String());
             this.Map.monsterManager.Create(this.Define.SpawnMonID, this.Define.SpawnLevel, this._spawnPoint.Position, this._spawnPoint.Direction);
         }
 

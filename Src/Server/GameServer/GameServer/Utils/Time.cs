@@ -1,61 +1,39 @@
-﻿// RayMix Libs - RayMix's .Net Libs
-// Copyright 2018 Ray@raymix.net.  All rights reserved.
-// https://www.raymix.net
-//
-// Redistribution and use in source and binary forms, with or without
-// modification, are permitted provided that the following conditions are
-// met:
-//
-//     * Redistributions of source code must retain the above copyright
-// notice, this list of conditions and the following disclaimer.
-//     * Redistributions in binary form must reproduce the above
-// copyright notice, this list of conditions and the following disclaimer
-// in the documentation and/or other materials provided with the
-// distribution.
-//     * Neither the name of RayMix.net. nor the names of its
-// contributors may be used to endorse or promote products derived from
-// this software without specific prior written permission.
-//
-// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-
 using System;
 using System.Runtime.InteropServices;
+
+/// <summary>
+/// 高精度时间工具类，提供游戏时间相关功能
+/// </summary>
 class Time
 {
+    // 导入Windows高性能计数器API
     [DllImport("kernel32.dll")]
     static extern bool QueryPerformanceCounter([In, Out] ref long lpPerformanceCount);
     [DllImport("kernel32.dll")]
     static extern bool QueryPerformanceFrequency([In, Out] ref long lpFrequency);
 
+    /// <summary>
+    /// 静态构造函数，初始化启动时间戳
+    /// </summary>
     static Time()
     {
-        startupTicks = ticks;
+        startupTicks = ticks; // 记录程序启动时的时间戳
     }
 
     private static long _frameCount = 0;
 
     /// <summary>
-    /// The total number of frames that have passed (Read Only).
+    /// 获取已运行的帧数（只读）
     /// </summary>
     public static long frameCount { get { return _frameCount; } }
 
-    static long startupTicks = 0;
-
-    static long freq = 0;
+    static long startupTicks = 0; // 程序启动时的时间戳
+    static long freq = 0;         // 性能计数器频率
 
     /// <summary>
-    /// Tick count
+    /// 获取当前高精度时间计数（以100纳秒为单位）
+    /// 1. 优先使用高性能计数器
+    /// 2. 如果不可用则回退到系统时钟
     /// </summary>
     static public long ticks
     {
@@ -63,32 +41,37 @@ class Time
         {
             long f = freq;
 
+            // 首次调用时初始化频率
             if (f == 0)
             {
                 if (QueryPerformanceFrequency(ref f))
                 {
-                    freq = f;
+                    freq = f; // 记录成功获取的频率
                 }
                 else
                 {
-                    freq = -1;
+                    freq = -1; // 标记高性能计数器不可用
                 }
             }
+
+            // 高性能计数器不可用时回退到系统时钟
             if (f == -1)
             {
-                return Environment.TickCount * 10000;
+                return Environment.TickCount * 10000; // 转换为100纳秒单位
             }
+
+            // 使用高性能计数器获取当前时间
             long c = 0;
             QueryPerformanceCounter(ref c);
-            return (long)(((double)c) * 1000 * 10000 / ((double)f));
+            return (long)(((double)c) * 1000 * 10000 / ((double)f)); // 转换为100纳秒单位
         }
     }
 
-    private static long lastTick = 0;
-    private static float _deltaTime = 0;
+    private static long lastTick = 0;     // 上一帧的时间戳
+    private static float _deltaTime = 0;  // 上一帧耗时（秒）
 
     /// <summary>
-    /// The time in seconds it took to complete the last frame (Read Only).
+    /// 获取上一帧的耗时（秒，只读）
     /// </summary>
     public static float deltaTime
     {
@@ -99,10 +82,11 @@ class Time
     }
 
 
-    private static float _time = 0;
+    private static float _time = 0; // 游戏运行时间（秒）
+
     /// <summary>
-    ///  The time at the beginning of this frame (Read Only). This is the time in seconds
-    ///  since the start of the game.
+    /// 获取当前帧开始时的游戏时间（秒，只读）
+    /// 从游戏开始计时
     /// </summary> 
     public static float time
     {
@@ -114,29 +98,43 @@ class Time
 
 
     /// <summary>
-    /// The real time in seconds since the started (Read Only).
+    /// 获取从程序启动开始的真实时间（秒，只读）
     /// </summary>
+    /// <returns>从启动开始的秒数</returns>
     public static float realtimeSinceStartup
     {
         get
         {
             long _ticks = ticks;
-            return (_ticks - startupTicks) / 10000000f;
+            return (_ticks - startupTicks) / 10000000f; // 将100纳秒转换为秒
         }
     }
 
+    /// <summary>
+    /// 更新时间统计（每帧调用）
+    /// 1. 更新帧计数器
+    /// 2. 计算帧间隔时间
+    /// 3. 更新游戏运行时间
+    /// </summary>
     public static void Tick()
     {
-        long _ticks = ticks;
+        long _ticks = ticks; // 获取当前时间戳
 
-
+        // 更新帧计数器（处理溢出）
         _frameCount++;
         if (_frameCount == long.MaxValue)
             _frameCount = 0;
 
+        // 初始化上一帧时间（首帧）
         if (lastTick == 0) lastTick = _ticks;
+
+        // 计算帧间隔时间（秒）
         _deltaTime = (_ticks - lastTick) / 10000000f;
+
+        // 更新游戏运行时间（秒）
         _time = (_ticks - startupTicks) / 10000000f;
+
+        // 记录当前帧时间
         lastTick = _ticks;
     }
 }

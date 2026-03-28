@@ -11,12 +11,25 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
         {
             if (instance == null)
             {
+                // 尝试在场景中查找
                 instance = FindFirstObjectByType<T>();
+
+                // 如果场景中没有，则动态创建
+                if (instance == null)
+                {
+                    var go = new GameObject(typeof(T).Name);
+                    instance = go.AddComponent<T>();
+
+                    if (instance is MonoSingleton<T> singleton && singleton.global)
+                    {
+                        DontDestroyOnLoad(go);
+                    }
+                }
             }
             return instance;
         }
-
     }
+
 
     void Awake()
     {

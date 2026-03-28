@@ -4,15 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d5312fb67cf346d8bed3825252f1d401" Name="Diagram1" ZoomLevel="90">
+      <Diagram DiagramId="d5312fb67cf346d8bed3825252f1d401" Name="Diagram1" ZoomLevel="88">
         <EntityTypeShape EntityType="ExtremeWorldModel.TCharacter" Width="1.5" PointX="3.875" PointY="0.75" />
-        <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterBag" Width="1.5" PointX="8.5" PointY="0.5" />
+        <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterBag" Width="1.5" PointX="9" PointY="0.5" />
         <AssociationConnector Association="ExtremeWorldModel.TCharacterBagTCharacter" />
-        <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterFriend" Width="1.5" PointX="6.75" PointY="1.75" />
+        <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterFriend" Width="1.75" PointX="6.75" PointY="1.75" />
         <AssociationConnector Association="ExtremeWorldModel.TCharacterFriendTCharacter" />
-        <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterItem" Width="1.5" PointX="8.875" PointY="3.75" />
+        <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterItem" Width="1.625" PointX="9" PointY="3.75" />
         <AssociationConnector Association="ExtremeWorldModel.TCharacterItemTCharacter" />
-        <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterQuest" Width="1.5" PointX="7" PointY="4.75" />
+        <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterQuest" Width="1.625" PointX="7" PointY="4.75" />
         <AssociationConnector Association="ExtremeWorldModel.TCharacterQuestTCharacter" />
         <EntityTypeShape EntityType="ExtremeWorldModel.TPlayer" Width="1.5" PointX="0.75" PointY="0.875" />
         <AssociationConnector Association="ExtremeWorldModel.PlayerCharacter" />

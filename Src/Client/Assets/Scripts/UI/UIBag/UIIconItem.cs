@@ -10,7 +10,7 @@ public class UIIconItem : MonoBehaviour
     
     public void SetMainIcon(string iconName, string text)
     {
-        main.overrideSprite = Resources.Load<Sprite>(iconName);
+        main.overrideSprite = Resloader.Load<Sprite>(iconName);
         mainText.text = text;
     }
 

@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,19 +15,11 @@ namespace Utilities
         BattleService,
         InputManager,
         EventManager,
+        Battle,
     }
 
     public class LogHelper
     {
-        public static void LogShowJson(object message, string leaveMessage = "", LogUser user = LogUser.None)
-        {
-            string json = JsonConvert.SerializeObject(message);
-            if (LogDic.TryGetValue(user, out bool isEnabled) && isEnabled )
-            {
-                Debug.LogFormat("LogShowJson : {0} json:{1}", leaveMessage, json);
-            }
-        }
-
         public static void Log(object message, LogUser user = LogUser.None)
         {
             if (LogDic.TryGetValue(user, out bool isEnabled) && isEnabled)
@@ -105,6 +96,7 @@ namespace Utilities
             { LogUser.BattleService, true },
             { LogUser.InputManager, true },
             { LogUser.EventManager, true },
+            { LogUser.Battle, true },
         };
     }
 }

@@ -73,5 +73,15 @@ namespace GameServer.Entities
         {
             this.SkillManager.Update();
         }
+
+        public int Distance(BattleUnit target)
+        {
+            return (int)Vector3Int.Distance(this.Position, target.Position);
+        }
+
+        public int Distance(Vector3Int target)
+        {
+            return (int)Vector3Int.Distance(this.Position, target);
+        }
     }
 }

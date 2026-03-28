@@ -23,8 +23,8 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
     public float yMinLimit = -50;
     public float yMaxLimit = 72;
     public float zoomRate = 80;
-    public float x = 20;
-    public float y = 0;
+    public float yaw  = 20;//偏航角（左右看）
+    public float pitch  = 0;//俯仰角（上下看）
     public float targetHeightOffset = 3f;// 锁定时相机上抬的目标偏移量
     public float minPitch = -30f;   // 最多向下看 30 度（不能太低头）
     public float maxPitch = 60f;    // 最多向上看 60 度（不能太仰头）
@@ -101,7 +101,7 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
         {
             if (this._targetPoint == null)
             {
-                Quaternion rotation = Quaternion.Euler(y, x, 0f);
+                Quaternion rotation = Quaternion.Euler(pitch , yaw , 0f);
                 this._cameraMainRotation.rotation = rotation;
             }
             else
@@ -145,9 +145,9 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
     {
         if (!isCursorVisible)
         {
-            x += InputManager.Instance.MouseValueX * xSpeed * Time.deltaTime;
-            y -= InputManager.Instance.MouseValueY * ySpeed * Time.deltaTime;
-            y = Mathf.Clamp(y, yMinLimit, yMaxLimit);
+            yaw  += InputManager.Instance.MouseValueX * xSpeed * Time.deltaTime;
+            pitch  -= InputManager.Instance.MouseValueY * ySpeed * Time.deltaTime;
+            pitch  = Mathf.Clamp(pitch , yMinLimit, yMaxLimit);
         }
     }
 

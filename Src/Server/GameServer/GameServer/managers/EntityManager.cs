@@ -1,28 +1,29 @@
 ﻿using Common;
 using GameServer.Entities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameServer.Managers
 {
+
+    /// <summary>
+    /// 实体管理器，管理所有实体，包括玩家，怪物等。
+    /// 所有需要网络同步的实体都应该在这里注册。
+    /// </summary>
     internal class EntityManager : Singleton<EntityManager>
     {
-        int index = 0;
-        Dictionary<int, Entity> AllEntities = new Dictionary<int, Entity>();
-        Dictionary<int, List<Entity>> MapEntities = new Dictionary<int, List<Entity>>();
+        private int index = 1;
+        private Dictionary<int, Entity> _allEntities = new Dictionary<int, Entity>();
+        private Dictionary<int, List<Entity>> _mapEntities = new Dictionary<int, List<Entity>>();
 
         public void AddEntity(int mapId, Entity entity)
         {
             entity.EntityData.Id = this.index++;
-            AllEntities.Add(entity.entityId, entity);
+            _allEntities.Add(entity.entityId, entity);
             List<Entity> entities = null;
-            if (!MapEntities.TryGetValue(mapId, out entities))//out表示传引用
+            if (!_mapEntities.TryGetValue(mapId, out entities))
             {
                 entities = new List<Entity>();
-                MapEntities[mapId] = entities;
+                _mapEntities[mapId] = entities;
             }
 
             entities.Add(entity);
@@ -30,14 +31,14 @@ namespace GameServer.Managers
 
         public void RemoveEntity(int mapId, Entity entity)
         {
-            AllEntities.Remove(entity.entityId);
-            MapEntities[mapId].Remove(entity);
+            _allEntities.Remove(entity.entityId);
+            _mapEntities[mapId].Remove(entity);
         }
 
         public Entity GetEntity(int id)
         {
             Entity entity = null;
-            this.AllEntities.TryGetValue(id, out entity);
+            this._allEntities.TryGetValue(id, out entity);
             return entity;
         }
 

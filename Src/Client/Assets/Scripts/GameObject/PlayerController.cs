@@ -216,12 +216,12 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        var cameraDir = this.transform.position;
-        Debug.Log("position:" + this.transform.position);
+        //var cameraDir = this.transform.position;
+        //Debug.Log("position:" + this.transform.position);
         // 计算相对于摄像机方向的移动向量
         // 使用原始代码的输入映射 (v -> x, h -> z) 并将其旋转到摄像机Y轴方向
         Vector3 rawDir = new Vector3(h, 0f, v); // h → X（左右），v → Z（前后）
-        Vector3 forwardDir = Quaternion.Euler(0f, cameraDirY, 0f) * rawDir;
+        Vector3 forwardDir = Quaternion.Euler(0f, cameraDirY, 0f) * rawDir;//四元数乘向量，意味着按照四元数的旋转角度旋转向量
         forwardDir = forwardDir.normalized;
 
         if (v != 0 || h != 0)

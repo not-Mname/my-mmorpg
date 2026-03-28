@@ -32,7 +32,7 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
     public Transform rideBone;
     void Start()
     {
-        
+
     }
 
     public void Init()
@@ -40,7 +40,7 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
         if (this.entity != null)
         {
             EntityManager.Instance.RigisterEntityChangeNotify(entity.EntityId, this);
-            UpdateTransform();
+            SyncEntityTransform();
         }
     }
 
@@ -50,7 +50,10 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 
         this.entity.OnUpdate(Time.fixedDeltaTime);
 
-        if (!isPlayer) UpdateTransform();
+        if (!isPlayer)
+        {// 如果不是玩家，则直接同步位置
+            SyncEntityTransform();
+        }
     }
 
     void OnDestroy()
@@ -58,7 +61,7 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
         if (this.entity != null) Debug.LogFormat("{0} OnDestroy :ID:{1} POS:{2} DIR:{3} SPD:{4} ", this.name, entity.EntityId, entity.Position, entity.Direction, entity.Speed);
     }
 
-    void UpdateTransform()
+    void SyncEntityTransform()
     {
         if (this.entity == null) return;
 

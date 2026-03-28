@@ -39,7 +39,7 @@ namespace Battle
 
         public Skill GetSkill(int id)
         {
-            return this.Skills.Find(s => s.Info.Id == id);
+            return this.Skills.Find(s => s.Define.ID == id);
         }
 
         public void OnUpdate(float delta)

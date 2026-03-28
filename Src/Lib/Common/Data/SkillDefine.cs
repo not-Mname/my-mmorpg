@@ -34,5 +34,6 @@ namespace Common.Data
         public float APFator { get; set; }
 
         public string SkillAnim { get; set; }
+        public List<float> HitTimes { get; set; }
     }
 }

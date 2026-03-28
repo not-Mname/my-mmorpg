@@ -88,7 +88,7 @@ namespace Network
         /// <param name="data">要发送的数据。</param>
         /// <param name="offset">数据中的偏移量。</param>
         /// <param name="count">要发送的数据量。</param>
-        public void SendData(Byte[] data, Int32 offset, Int32 count)
+        private void SendData(Byte[] data, Int32 offset, Int32 count)
         {
             lock (this)
             {

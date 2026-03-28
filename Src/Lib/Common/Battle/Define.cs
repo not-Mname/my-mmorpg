@@ -32,8 +32,8 @@
     {
         None = 0,
         Target = 1,
-        Self = 1,
-        Position = 2,
+        Self = 2,
+        Position = 3,
     }
 
     public enum BuffEffect
