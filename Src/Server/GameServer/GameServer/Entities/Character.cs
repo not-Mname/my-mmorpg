@@ -163,13 +163,12 @@ namespace GameServer.Entities
 
         public void PostProcess(NetMessageResponse message)
         {
-            //Common.Log.InfoFormat("PostProcess > character : {0} {1}", this.Id, this.Info.Name);
             this.friendManager.PostProcess(message);
             if (this.Team != null)
             {
                 if (TeamUpdateTs < TimeUtil.timestamp)
                 {
-                    //Common.Log.InfoFormat("PostProcess > Team > TeamUpdateTs: {0} | TimeUtil.timestamp: {1}", TeamUpdateTs, TimeUtil.timestamp);
+                    Log.InfoFormat("PostProcess > Team > TeamUpdateTs: {0} | TimeUtil.timestamp: {1}", TeamUpdateTs, TimeUtil.timestamp);
                     TeamUpdateTs = TimeUtil.timestamp;
                     this.Team.PostProcess(message);
                 }
@@ -177,6 +176,7 @@ namespace GameServer.Entities
 
             if (this.statusManager.HasStatus)
             {
+                Log.InfoFormat("PostProcess > statusManager > TimeUtil.timestamp: {0}", TimeUtil.timestamp);
                 statusManager.PostProcess(message);
             }
 
@@ -186,20 +186,21 @@ namespace GameServer.Entities
                 {
                     this.Info.Guild = this.Guild.GuildInfo(this);
                     if (message.mapCharacterEnter != null && message.mapCharacterLeave != null)
+                    {
                         GuildUpdateTs = this.Guild.timestamp;
+                    }
                 }
                 if (GuildUpdateTs < this.Guild.timestamp && message.mapCharacterEnter == null)
                 {
-                    //Common.Log.InfoFormat("PostProcess > Guild > GuildUpdateTs: {0} | TimeUtil.timestamp: {1}", GuildUpdateTs, TimeUtil.timestamp);
+                    Log.InfoFormat("PostProcess > Guild > GuildUpdateTs: {0} | TimeUtil.timestamp: {1}", GuildUpdateTs, TimeUtil.timestamp);
                     GuildUpdateTs = this.Guild.timestamp;
                     this.Guild.PostProcess(this, message);
                 }
             }
 
-            Common.Log.InfoFormat("PostProcess >Char {0} > Chat > ChatUpdateTs: {1} | ChatManager.Instance.timestamp: {2}", this.Id, ChatUpdateTs, ChatManager.Instance.timestamp);
-            Common.Log.InfoFormat("ChatUpdateTs < ChatManager.Instance.timestamp {0}", ChatUpdateTs < ChatManager.Instance.timestamp);
             if (ChatUpdateTs < ChatManager.Instance.timestamp)
             {
+                Log.InfoFormat("PostProcess >Char {0} > Chat > ChatUpdateTs: {1} | ChatManager.Instance.timestamp: {2}", this.Id, ChatUpdateTs, ChatManager.Instance.timestamp);
                 ChatUpdateTs = ChatManager.Instance.timestamp;
                 Chat.PostProcess(message);
             }

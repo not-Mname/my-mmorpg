@@ -21,7 +21,11 @@ namespace GameServer.Entities
         public NCharacterInfo Info;
         public CharacterDefine Define;
         public SkillManager SkillManager;
+        public BuffManager BuffManager;
+        public EffectManager EffectManager;
         public Attributes Attribute;
+
+        #region 初始化
 
         public BattleUnit(CharacterType type, int configId, int level, Vector3Int pos, Vector3Int dir) :
            base(pos, dir)
@@ -35,15 +39,17 @@ namespace GameServer.Entities
             this.Info.EntityId = this.entityId; 
             this.Info.Name = this.Define.Name;
             this.InitSkills();
+            this.InitBuffs();
 
             this.Attribute = new Attributes();
             this.Attribute.Init(this.Define, this.GetEquips(), this.Info.Level, this.Info.Dynamic);
             this.Info.Dynamic = this.Attribute.Dynamic;
         }
 
-        public virtual List<EquipDefine> GetEquips()
+        private void InitBuffs()
         {
-            return null;
+            this.BuffManager = new BuffManager(this);
+            this.EffectManager = new EffectManager(this);
         }
 
         private void InitSkills()
@@ -51,6 +57,10 @@ namespace GameServer.Entities
             this.SkillManager = new SkillManager(this);
             this.Info.Skills.AddRange(this.SkillManager.Infos);
         }
+
+        #endregion
+
+        #region 战斗相关
 
         internal void CastSkill(BattleContext context, int skillId)
         {
@@ -68,10 +78,17 @@ namespace GameServer.Entities
                 damage.WillDead = true;
             }
         }
+        #endregion
+
+        public virtual List<EquipDefine> GetEquips()
+        {
+            return null;
+        }
 
         public override void Update()
         {
             this.SkillManager.Update();
+            this.BuffManager.Update();
         }
 
         public int Distance(BattleUnit target)
@@ -82,6 +99,11 @@ namespace GameServer.Entities
         public int Distance(Vector3Int target)
         {
             return (int)Vector3Int.Distance(this.Position, target);
+        }
+
+        internal void AddBuff(BattleContext context, BuffDefine buffDefine)
+        {
+            this.BuffManager.AddBuff(context, buffDefine);
         }
     }
 }

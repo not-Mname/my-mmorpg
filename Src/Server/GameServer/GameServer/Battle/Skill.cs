@@ -72,7 +72,99 @@ namespace Battle
         private float _castingTime = 0;
         private float _skillTime = 0;
         private BattleContext _context;
-        private NSkillHitInfo _hitInfo;
+        private List<Bullet> _bullets = new List<Bullet>();
+
+        private NSkillHitInfo GetHitInfo(bool isBullet = false)
+        {
+            NSkillHitInfo hitInfo = new NSkillHitInfo();
+            hitInfo.casterId = this._context.Caster.entityId;
+            hitInfo.skillId = this.Info.Id;
+            hitInfo.hitId = this._hit;
+            hitInfo.isBullet = isBullet;
+            return hitInfo;
+        }
+
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="info">技能网络信息</param>
+        /// <param name="owner">技能拥有者</param>
+        public Skill(NSkillInfo info, BattleUnit owner)
+        {
+            this.Info = info;
+            this.Owner = owner;
+            // 根据职业和技能ID从数据管理器获取技能配置
+            this.Define = DataManager.Instance.Skills[(int)this.Owner.Define.Class][info.Id];
+        }
+
+        /// <summary>
+        /// 战斗计算
+        /// 公式:
+        /// 物理伤害 = 物理攻击或技能原始伤害 * (1 - 物理防御 / (物理防御 + 100))
+        /// 魔法伤害 = 法术攻击或技能原始伤害 * (1 - 魔法防御 / (魔法防御+100))
+        /// 暴击伤害 = 固定两倍伤害
+        /// 注:伤害值最小值为1.当伤害值小于1的时候取1
+        /// 注:最终伤害值在最终取舍时随机浮动5%.即：最终伤害 = range（最终伤害值 * (1 - 5%)  最终伤害值 * (1 + 5%)） 
+        /// </summary>
+        /// <param name="caster">施法者</param>
+        /// <param name="target">目标</param>
+        /// <returns>伤害信息</returns>
+        private NDamageInfo CaculateDamage(BattleUnit caster, BattleUnit target)
+        {
+            // 计算物理攻击和法术攻击
+            float ad = caster.Attribute.AD + this.Define.AD * this.Define.ADFator;
+            float ap = caster.Attribute.AP + this.Define.AP * this.Define.APFator;
+
+            // 计算物理伤害和法术伤害
+            float ad_damage = ad * ((1 - target.Attribute.DEF) / (target.Attribute.DEF + 100));
+            float ap_damage = ap * ((1 - target.Attribute.MDEF) / (target.Attribute.MDEF + 100));
+
+            // 计算总伤害
+            float final_damage = ad_damage + ap_damage;
+
+            // 暴击判定
+            bool isCritical = IsCritical(caster.Attribute.CRI);
+            if (isCritical)
+            {
+                final_damage *= 2;
+            }
+
+            // 伤害浮动(±5%)
+            final_damage += final_damage * ((float)MathUtil.Random.NextDouble() * 0.1f - 0.05f);
+
+            // 确保最小伤害为1
+            return new NDamageInfo()
+            {
+                Damage = Math.Max(1, (int)final_damage),
+                entityId = target.entityId,
+                Critical = isCritical
+            };
+        }
+
+        /// <summary>
+        /// 判断是否暴击
+        /// </summary>
+        /// <param name="critical">暴击率(0-1之间的小数)</param>
+        /// <returns>是否暴击</returns>
+        private bool IsCritical(float critical)
+        {
+            return MathUtil.Random.NextDouble() < critical;
+        }
+
+        /// <summary>
+        /// 初始化技能状态，重置技能状态，初始化技能数据，添加buff
+        /// </summary>
+        /// <param name="context"></param>
+        private void Init(BattleContext context)
+        {
+            this._castingTime = 0;
+            this._skillTime = 0;
+            this._cd = this.Define.CD;
+            this._context = context;
+            this._hit = 0;
+            this._bullets.Clear();
+            this.AddBuff(TriggerType.SkillCast);
+        }
 
         #region Update
 
@@ -133,9 +225,31 @@ namespace Battle
                 }
                 else
                 {
-                    // 所有攻击次数已完成
+                    if (!this.Define.Bullet)
+                    {
+                        // 所有攻击次数已完成
+                        this.Status = SkillStatus.None;
+                        Log.InfoFormat("Skill [{0}] done", this.Define.Name);
+                    } 
+                }
+            }
+
+            if(this.Define.Bullet)
+            {
+                bool finish = true;
+                foreach(var bullet in this._bullets)
+                {
+                    bullet.Update();
+                    if (!bullet.Stoped)
+                    {
+                        finish = false;
+                    }
+                }
+
+                if(finish && this._hit >= this.Define.HitTimes.Count)
+                {
                     this.Status = SkillStatus.None;
-                    Log.InfoFormat("Skill [{0}] done", this.Define.Name);
+                    Log.InfoFormat("Bullet Skill [{0}] done", this.Define.Name);
                 }
             }
         }
@@ -214,7 +328,7 @@ namespace Battle
                 {
                     return SkillResult.InvalidTarget;
                 }
-                if (this.Owner.Distance(context.Position) > this.Define.CastRange)
+                if (this.Owner.Distance(context.CastInfo.Position) > this.Define.CastRange)
                 {
                     return SkillResult.OutOfRange;
                 }
@@ -239,14 +353,10 @@ namespace Battle
         {
             SkillResult result = CanCast(context);
 
-            this._castingTime = 0;
-            this._skillTime = 0;
-            this._cd = this.Define.CD;
-            this._context = context;
-            this._hit = 0;
-
             if (result == SkillResult.Ok)
             {
+                Init(context);
+
                 if (this.Instant)
                 {
                     this.DoHit();
@@ -267,34 +377,44 @@ namespace Battle
             return result;
         }
 
-        private void CastBullet()
+        /// <summary>
+        /// 施放子弹类型技能
+        /// </summary>
+        private void CastBullet(NSkillHitInfo hitInfo)
         {
+            _context.Battle.AddHitInfo(hitInfo);
             Log.InfoFormat("skill [{1}] cast bullet", this.Define.Name, this.Define.BulletResource);
+            Bullet bullet = new Bullet(this, this._context.Target, hitInfo);
+            this._bullets.Add(bullet);
         }
         #endregion
 
         #region Hit
         private void DoHit()
         {
-            this.InitHitInfo();
+            NSkillHitInfo hitInfo = GetHitInfo();
             Log.InfoFormat("Skill [{0}] hit {1}", this.Define.Name, _hit);
             this._hit++;
 
             if (this.Define.Bullet)
             {
-                this.CastBullet();
+                this.CastBullet(hitInfo);
                 return;
             }
 
+            DoHit(hitInfo);
+        }
+
+        public void DoHit(NSkillHitInfo hitInfo)
+        {
+            _context.Battle.AddHitInfo(hitInfo);
             if (this.Define.AOERange > 0)
             {
-                this.HitRange();
-                return;
+                this.HitRange(hitInfo);
             }
-
-            if (this.Define.CastTarget == TargetType.Target)
+            else if (this.Define.CastTarget == TargetType.Target)
             {
-                this.HitTarget(this._context.Target);
+                this.HitTarget(this._context.Target, hitInfo);
             }
         }
 
@@ -302,7 +422,7 @@ namespace Battle
         /// 对单个目标造成伤害
         /// </summary>
         /// <param name="target">目标单位</param>
-        private void HitTarget(BattleUnit target)
+        private void HitTarget(BattleUnit target, NSkillHitInfo hitInfo)
         {
             // 目标验证检查
             if (this.Define.CastTarget == TargetType.Self && target != _context.Caster)
@@ -318,9 +438,12 @@ namespace Battle
             NDamageInfo damage = this.CaculateDamage(this._context.Caster, target);
             Log.InfoFormat("Skill [{0}] damage {1} hit target {2} hit caster{3}", this.Define.Name, damage.Damage, target.Define.Name, _context.Caster.Define.Name);
             target.DoDamage(damage);
-            this._hitInfo.Damages.Add(damage);
+            hitInfo.Damages.Add(damage);
+
+            this.AddBuff(TriggerType.SkillHit);
         }
-        private void HitRange()
+
+        private void HitRange(NSkillHitInfo hitInfo)
         {
             Vector3Int pos;
             if (this.Define.CastTarget == TargetType.Target)
@@ -336,96 +459,40 @@ namespace Battle
                 pos = this._context.Caster.Position;
             }
 
-            List<BattleUnit> units = this._context.Battle.FindUnitsInRange(pos, this.Define.AOERange);
+            List<BattleUnit> units = this._context.Battle.FindMapUnitsInRange(pos, this.Define.AOERange);
             foreach (var unit in units)
             {
-                this.HitTarget(unit);
+                this.HitTarget(unit, hitInfo);
             }
         }
 
-        /// <summary>
-        /// 施放子弹类型技能
-        /// </summary>
-
-
-        private void InitHitInfo()
-        {
-            this._hitInfo = new NSkillHitInfo();
-            _hitInfo.casterId = this._context.Caster.entityId;
-            _hitInfo.skillId = this.Info.Id;
-            _hitInfo.hitId = this._hit;
-            _context.Battle.AddHitInfo(_hitInfo);
-        }
         #endregion
 
-        /// <summary>
-        /// 构造函数
-        /// </summary>
-        /// <param name="info">技能网络信息</param>
-        /// <param name="owner">技能拥有者</param>
-        public Skill(NSkillInfo info, BattleUnit owner)
+        void AddBuff(TriggerType type)
         {
-            this.Info = info;
-            this.Owner = owner;
-            // 根据职业和技能ID从数据管理器获取技能配置
-            this.Define = DataManager.Instance.Skills[(int)this.Owner.Define.Class][info.Id];
-        }
-
-
-        /// <summary>
-        /// 战斗计算
-        /// 公式:
-        /// 物理伤害 = 物理攻击或技能原始伤害 * (1 - 物理防御 / (物理防御 + 100))
-        /// 魔法伤害 = 法术攻击或技能原始伤害 * (1 - 魔法防御 / (魔法防御+100))
-        /// 暴击伤害 = 固定两倍伤害
-        /// 注:伤害值最小值为1.当伤害值小于1的时候取1
-        /// 注:最终伤害值在最终取舍时随机浮动5%.即：最终伤害 = range（最终伤害值 * (1 - 5%)  最终伤害值 * (1 + 5%)） 
-        /// </summary>
-        /// <param name="caster">施法者</param>
-        /// <param name="target">目标</param>
-        /// <returns>伤害信息</returns>
-        private NDamageInfo CaculateDamage(BattleUnit caster, BattleUnit target)
-        {
-            // 计算物理攻击和法术攻击
-            float ad = caster.Attribute.AD + this.Define.AD * this.Define.ADFator;
-            float ap = caster.Attribute.AP + this.Define.AP * this.Define.APFator;
-
-            // 计算物理伤害和法术伤害
-            float ad_damage = ad * ((1 - target.Attribute.DEF) / (target.Attribute.DEF + 100));
-            float ap_damage = ap * ((1 - target.Attribute.MDEF) / (target.Attribute.MDEF + 100));
-
-            // 计算总伤害
-            float final_damage = ad_damage + ap_damage;
-            
-            // 暴击判定
-            bool isCritical = IsCritical(caster.Attribute.CRI);
-            if (isCritical)
+            if(this.Define.Buff == null || this.Define.Buff.Count == 0)
             {
-                final_damage *= 2;
+                return;
             }
-            
-            // 伤害浮动(±5%)
-            final_damage += final_damage * ((float)MathUtil.Random.NextDouble() * 0.1f - 0.05f);
-            
-            // 确保最小伤害为1
-            return new NDamageInfo() { 
-                Damage = Math.Max(1, (int)final_damage), 
-                entityId = target.entityId, 
-                Critical = isCritical 
-            };
+
+            foreach(var buff in this.Define.Buff)
+            {
+                var buffDefine = DataManager.Instance.Buffs[buff];
+
+                if(buffDefine.Trigger != type)
+                {// 触发类型不匹配，跳过
+                    continue;
+                }
+
+                if(buffDefine.Target == TargetType.Self)
+                {
+                    this.Owner.AddBuff(this._context,buffDefine);
+                }
+                else if(buffDefine.Target == TargetType.Target)
+                {
+                    this._context.Target.AddBuff(this._context,buffDefine);
+                }
+            }
         }
-
-        /// <summary>
-        /// 判断是否暴击
-        /// </summary>
-        /// <param name="critical">暴击率(0-1之间的小数)</param>
-        /// <returns>是否暴击</returns>
-        private bool IsCritical(float critical)
-        {
-            return MathUtil.Random.NextDouble() < critical;
-        }
-
-
-
     }
 }

@@ -33,8 +33,8 @@ namespace GameServer
                             ShowMonsterInfo(mapId, monsterId);
                             break;
                         case "show_player_info":
-                            int? playerId = args.Length > 1 ? (int?)int.Parse(args[1]) : null;
-                            int? pMapId = args.Length > 1 ? (int?)int.Parse(args[0]) : null;
+                            int? pMapId = args.Length > 1 ? (int?)int.Parse(args[1]) : null;
+                            int? playerId = args.Length > 1 ? (int?)int.Parse(args[2]) : null;
                             ShowPlayerInfo(pMapId, playerId);
                             break;
                         default:

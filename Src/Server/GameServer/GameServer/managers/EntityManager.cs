@@ -1,5 +1,7 @@
 ﻿using Common;
+using GameServer.Core;
 using GameServer.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace GameServer.Managers
@@ -45,6 +47,32 @@ namespace GameServer.Managers
         public BattleUnit GetUnit(int id)
         {
             return this.GetEntity(id) as BattleUnit;
+        }
+
+        public List<T> FindMapEntitiesInRange<T>(int id, Predicate<Entity> match) where T : BattleUnit
+        {
+            if(match == null)
+            {
+                return null;
+            }
+            List<T> result = new List<T>();
+            foreach (var entity in this._mapEntities[id])
+            {
+                if (entity is T && match(entity))
+                {
+                    result.Add(entity as T);
+                }
+            }
+            return result;
+        }
+
+        public List<T> FindMapEntitiesInRange<T>(int id, Vector3Int pos, int aoeRange) where T : BattleUnit
+        {
+            return FindMapEntitiesInRange<T>(id, (Entity entity) =>
+            {
+                var unit = entity as BattleUnit;
+                return unit.Distance(pos) < aoeRange;
+            });
         }
     }
 }
