@@ -1,112 +1,173 @@
-# MyMMORPG - 3D卡通风格MMORPG游戏引擎
 
-**MyMMORPG** 是一款基于Unity和.NET Framework开发的3D卡通风格大型多人在线角色扮演游戏(MMORPG)引擎。项目采用前后端分离架构，支持法师、战士、弓箭手三种职业，包含主城、野外、副本、竞技场等丰富场景，以角色养成、PVE副本配合、PVP对战为核心玩法。
 
-## 🏗️ 技术架构
+# MMORPG 游戏客户端
 
-### 前端 (Unity客户端)
-- **游戏引擎**: Unity 2018.4
-- **编程语言**: C#
-- **网络通信**: 自定义TCP协议 + Protobuf序列化
-- **UI框架**: Unity UGUI + TextMeshPro
-- **依赖管理**: Unity Package Manager
-- **关键组件**:
-  - AI Navigation (寻路系统)
-  - AssetBundle (资源管理)
-  - Physics & Particles (物理和粒子效果)
-  - Video & Audio (多媒体支持)
+这是一个基于 Unity 引擎开发的 MMORPG（大型多人在线角色扮演游戏）客户端项目。项目包含了完整的游戏角色系统、战斗系统、UI 界面、网络通信等核心模块。
 
-### 后端 (游戏服务器)
-- **运行环境**: .NET Framework 3.5
-- **编程语言**: C#
-- **数据库**: SQL Server 2017
-- **ORM框架**: Entity Framework 6.2.0
-- **网络库**: 自定义异步TCP服务器
-- **日志系统**: Log4net
-- **序列化**: Protobuf-net
-- **JSON处理**: Newtonsoft.Json
+## 项目结构
 
-### 网络通信协议
-- **协议格式**: Google Protocol Buffers (Protobuf)
-- **传输层**: TCP Socket
-- **消息分发**: 基于消息ID的路由分发机制
-- **心跳机制**: 客户端定期发送Ping包维持连接
-- **包结构**: 4字节头部(长度) + Protobuf序列化数据
+### 角色模型 (`Art/Models/Characters/`)
 
-## 📁 项目结构
+- **战士 (Warrior)** - 近战物理攻击职业
+- **法师 (Wizard)** - 远程魔法攻击职业  
+- **弓箭手 (Archer)** - 远程物理攻击职业
 
-## 🧩 核心系统设计
+每个职业都包含完整的动画模型：
+- 待机 (Idle)
+- 移动 (Move_Forward/Back/Left/Right)
+- 攻击 (AtkA/AtkB)
+- 技能 (SkillA/SkillB/SkillC)
+- 受伤 (Hurt)
+- 死亡 (Death)
 
-### 分层架构
-项目采用清晰的分层架构设计：
+### 怪物模型 (`Art/Models/Monsters/`)
 
-1. **Service层**: 处理网络通信，大部分服务在客户端和服务端都有对应实现
+- M1001 - 骷髅怪
+- M1002 M1003 M1004 M1005 - 各类怪物
+- R001 - 坐骑模型
 
-2. **Manager层**: 
-   - **客户端**: 管理游戏实体、控制Unity系统 
-   - **服务端**: 实现核心业务逻辑和实体管理
+### NPC 模型 (`Art/Models/NPCs/`)
 
-3. **Entities层**: 存储游戏中所有实体的数据结构
+- **DeliveryNPC** - 快递NPC
+- **TaskNPC** - 任务NPC
+- **Treasure_poter** - 宝藏商人
+- **Treasure_kingskull** - 宝箱怪
+- **Treasure_redmob** - 红色怪物
 
-4. **Model层**: 存储被管理层管理的对象数据
+### 地图场景 (`Src/Client/Assets/Levels/`)
 
-5. **GameObject层** (仅客户端): 定义实体控制器和Unity特定工具
+- **MainCity** - 主城场景
+- **Map01/Map02/Map03** - 野外地图
+- **CharSelect** - 角色选择场景
+- **Loading** - 加载场景
 
-### 数据驱动设计
-- 所有游戏数据通过Excel配置，转换为JSON格式
-- 使用统一的数据定义类 (`CharacterDefine.cs`, `ItemDefine.cs`, `SkillDefine.cs`等)
-- 服务端通过 [DataManager] 加载所有配置数据
+### 核心脚本 (`Src/Client/Assets/Scripts/`)
 
-### 网络同步机制
-- 客户端通过 [NetClient]连接服务器
-- 服务端使用多线程处理网络请求
-- 消息通过 [MessageDispatch] 和 [MessageDistributer] 进行路由分发
-- 支持断线重连和连接状态管理
+#### 战斗系统 (`Battle/`)
 
-## 🚀 快速开始
+- `Skill.cs` - 技能类，管理技能的冷却、释放、命中判定
+- `SkillManager.cs` - 技能管理器
 
-### 环境要求
-- **客户端**: Unity 2018.4 或更高版本
-- **服务端**: .NET Framework 3.5, SQL Server 2017
-- **开发工具**: Visual Studio 2019+
+#### 实体系统 (`Entities/`)
 
-### 构建步骤
-1. **初始化数据库**: 配置SQL Server并导入数据库结构
-2. **生成协议**: 运行 `Tools/genproto.cmd` 生成Protobuf协议文件
-3. **启动服务器**: 编译并运行 `Src/Server/GameServer/GameServer.sln`
-4. **启动客户端**: 在Unity中打开 `Src/Client` 项目并运行
+- `Entity.cs` - 实体基类
+- `BattleUnit.cs` - 战斗单位，角色和怪物的基类
+- `Character.cs` - 玩家角色
+- `Monster.cs` - 怪物
 
-### 配置文件
-- **服务器配置**: `GameServer/Properties/Settings.settings`
-  - [ServerIP]: 服务器IP地址 (默认: 127.0.0.1)
-  - [ServerPort]: 服务器端口 (默认: 8000)
+#### 游戏对象控制 (`GameObject/`)
 
-## 🎮 功能特性
+- `PlayerController.cs` - 玩家控制器，处理移动、跳跃、导航
+- `EntityController.cs` - 实体动画控制器
+- `MainPlayerCamera.cs` - 主玩家摄像机跟随
+- `NPCController.cs` - NPC 交互控制器
+- `GameObjectManager.cs` - 游戏物体管理器
 
-### 核心玩法
-- **角色系统**: 三种职业(法师、战士、弓箭手)，完整的属性和装备系统
-- **战斗系统**: 实时战斗，技能释放，Buff/Debuff机制
-- **社交系统**: 好友、公会、组队、聊天
-- **任务系统**: 主线任务、支线任务、日常任务
-- **经济系统**: 商店、背包、物品交易
-- **场景系统**: 主城、野外、副本、竞技场
+#### 系统管理器 (`Managers/`)
 
-### 技术特性
-- **高性能网络**: 异步非阻塞I/O，支持大量并发连接
-- **数据持久化**: Entity Framework + SQL Server，确保数据一致性
-- **跨平台协议**: Protobuf保证前后端数据格式统一
-- **模块化设计**: 高内聚低耦合，易于扩展和维护
-- **资源管理**: AssetBundle动态加载，减少内存占用
+- `CharacterManager.cs` - 角色管理
+- `BagManager.cs` - 背包管理
+- `EquipManager.cs` - 装备管理
+- `ItemManager.cs` - 物品管理
+- `QuestManager.cs` - 任务管理
+- `ShopManager.cs` - 商店管理
+- `ChatManager.cs` - 聊天管理
+- `FriendManager.cs` - 好友管理
+- `GuildManager.cs` - 公会管理
+- `TeamManager.cs` - 队伍管理
+- `SoundManager.cs` - 声音管理
+- `UIManager.cs` - UI 管理
 
-## 📊 性能指标
-- **网络延迟**: < 100ms (局域网环境)
-- **并发用户**: 支持数百人同时在线
-- **内存占用**: 客户端约200-500MB，服务端约100-300MB
-- **CPU使用**: 平均占用率 < 30% (中等配置服务器)
+#### 网络通信 (`Network/`)
 
-## 📄 注意
- - 本项目仅供学习和研究使用。
- - 目前项目资源比较混乱，过段时间我会优化资源结构并加入打包和热更新功能。
- - 本项目业务逻辑基本完成，战斗系统正在研究，预计4月完成。
+- `NetClient.cs` - 网络客户端，负责与服务器通信
 
----
+#### 业务服务 (`Services/`)
+
+- `UserService.cs` - 用户服务（登录、注册、创建角色）
+- `MapService.cs` - 地图服务
+- `BattleService.cs` - 战斗服务
+- `ChatService.cs` - 聊天服务
+- `ItemService.cs` - 物品服务
+- `QuestService.cs` - 任务服务
+- `GuildService.cs` - 公会服务
+- `TeamService.cs` - 队伍服务
+- `FriendService.cs` - 好友服务
+
+#### UI 系统 (`UI/`)
+
+- **UILogin.cs** - 登录界面
+- **UICharacterSelect.cs** - 角色选择界面
+- **UIMain.cs** - 主界面
+- **UIBag/** - 背包界面
+- **UIEquip/** - 装备界面
+- **UIFriends/** - 好友界面
+- **UIGuild/** - 公会界面
+- **UIChat/** - 聊天界面
+
+## 技术栈
+
+- **引擎**: Unity
+- **语言**: C#
+- **动画系统**: Mecanim Animation
+- **网络协议**: Protobuf
+- **JSON 库**: JsonDotNet (Newtonsoft.Json)
+- **动画插件**: DOTween
+
+## 功能特性
+
+### 角色系统
+- 3种职业选择（战士、法师、弓箭手）
+- 角色创建与选择
+- 装备系统
+- 背包系统
+
+### 战斗系统
+- 技能释放与冷却
+- 技能命中判定
+- 伤害计算
+
+### 社交系统
+- 聊天频道（世界、队伍、私聊）
+- 好友系统
+- 公会系统
+- 组队系统
+
+### 任务系统
+- 任务对话
+- 任务奖励
+
+### 物品系统
+- 商店购买
+- 物品使用
+- 装备穿戴
+
+## 使用说明
+
+1. 使用 Unity 打开 `Src/Client/` 目录
+2. 确保已安装 Unity 2017+ 版本
+3. 导入项目后配置服务器地址
+4. 构建并运行客户端
+
+## 目录说明
+
+```
+Src/Client/
+├── Assets/
+│   ├── Art/          # 美术资源（模型、贴图、UI）
+│   ├── Editor/       # 编辑器工具脚本
+│   ├── FX/           # 特效资源
+│   ├── Levels/       # 场景文件
+│   ├── Models/       # 3D模型
+│   ├── Plugins/      # 第三方插件
+│   ├── References/   # 引用库（Protocol.dll等）
+│   ├── Resources/    # 运行时资源
+│   └── Scripts/      # 源代码
+└── ...
+```
+
+## 注意事项
+
+- 本项目为客户端部分，需要配合服务器端使用
+- 网络配置需要在 `NetClient` 中修改服务器地址
+- 资源文件较大，部分文件未在代码中显示
