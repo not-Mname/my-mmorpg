@@ -73,9 +73,9 @@ namespace Battle
         {//todo 这里先只写一种情况，后续再扩展
             if (this._buffDefine.DEFRatio != 0)
             {
-                this._owner.Attribute.Buff.DEF -= this._owner.Attribute.Basic.DEF * this._buffDefine.DEFRatio;
+                this._owner.Attributes.Buff.DEF -= this._owner.Attributes.Basic.DEF * this._buffDefine.DEFRatio;
             }
-            this._owner.Attribute.InitFinalAttribute();
+            this._owner.Attributes.InitFinalAttribute();
         }
 
         private void DoBuffDamage()
@@ -93,17 +93,18 @@ namespace Battle
                 Action = BuffAction.Hit,
                 Damage = damage,
             };
+            this._context.Battle.AddBuffAction(buff);
         }
 
         private NDamageInfo CaculateDamage(BattleUnit caster)
         {
             // 计算物理攻击和法术攻击
-            float ad = _buffDefine.AD + caster.Attribute.AD * this._buffDefine.ADFator;
-            float ap = _buffDefine.AP + caster.Attribute.AP * this._buffDefine.APFator;
+            float ad = _buffDefine.AD + caster.Attributes.AD * this._buffDefine.ADFator;
+            float ap = _buffDefine.AP + caster.Attributes.AP * this._buffDefine.APFator;
 
             // 计算物理伤害和法术伤害
-            float ad_damage = ad * ((1 - _owner.Attribute.DEF) / (_owner.Attribute.DEF + 100));
-            float ap_damage = ap * ((1 - _owner.Attribute.MDEF) / (_owner.Attribute.MDEF + 100));
+            float ad_damage = ad * ((1 - _owner.Attributes.DEF) / (_owner.Attributes.DEF + 100));
+            float ap_damage = ap * ((1 - _owner.Attributes.MDEF) / (_owner.Attributes.MDEF + 100));
 
             // 计算总伤害
             float final_damage = ad_damage + ap_damage;
@@ -139,10 +140,10 @@ namespace Battle
         {
             if (this._buffDefine.DEFRatio != 0)
             {
-                this._owner.Attribute.Buff.DEF += this._owner.Attribute.Basic.DEF * this._buffDefine.DEFRatio;    
+                this._owner.Attributes.Buff.DEF += this._owner.Attributes.Basic.DEF * this._buffDefine.DEFRatio;    
             }
 
-            this._owner.Attribute.InitFinalAttribute();
+            this._owner.Attributes.InitFinalAttribute();
         }
     }
 }

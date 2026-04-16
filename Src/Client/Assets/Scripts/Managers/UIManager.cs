@@ -20,21 +20,21 @@ namespace Managers
 
         public UIManager()
         {
-            this.uiResources.Add(typeof(UIBag),new UIElement() { resources = "UI/UIBag", cache = false });
-            this.uiResources.Add(typeof(UIShop), new UIElement() { resources = "UI/UIShop", cache = false });
-            this.uiResources.Add(typeof(UIEquip), new UIElement() { resources = "UI/UICharEquip", cache = false });
-            this.uiResources.Add(typeof(UIQuest), new UIElement() { resources = "UI/UIQuestSystem", cache = false });
-            this.uiResources.Add(typeof(UIQuestDialog), new UIElement() { resources = "UI/UIQuestDialog", cache = false });
-            this.uiResources.Add(typeof(UIFriends), new UIElement() { resources = "UI/UIFriends", cache = false });
-            this.uiResources.Add(typeof(UIGuild), new UIElement() { resources = "UI/Guild/UIGuild", cache = false });
-            this.uiResources.Add(typeof(UIGuildList), new UIElement() { resources = "UI/Guild/UIGuildList", cache = false });
-            this.uiResources.Add(typeof(UIGuildPopNoGuild), new UIElement() { resources = "UI/Guild/UIGuildPopNoGuild", cache = false });
-            this.uiResources.Add(typeof(UIGuildPopCreate), new UIElement() { resources = "UI/Guild/UIGuildPopCreate", cache = false });
-            this.uiResources.Add(typeof(UIGuildApplyList), new UIElement() { resources = "UI/Guild/UIGuildApplyList", cache = false });
-            this.uiResources.Add(typeof(UISetting), new UIElement() { resources = "UI/UISetting", cache = false });
-            this.uiResources.Add(typeof(UIPopChatMenu), new UIElement() { resources = "UI/UIPopChatMenu", cache = false });
-            this.uiResources.Add(typeof(UIRide), new UIElement() { resources = "UI/UIRide", cache = false });
-            this.uiResources.Add(typeof(UISystemConfig), new UIElement() { resources = "UI/UISystemConfig", cache = false });
+            this.uiResources.Add(typeof(UIBag),new UIElement() { resources = "Prefab/UI/UIBag", cache = false });
+            this.uiResources.Add(typeof(UIShop), new UIElement() { resources = "Prefab/UI/UIShop", cache = false });
+            this.uiResources.Add(typeof(UIEquip), new UIElement() { resources = "Prefab/UI/UICharEquip", cache = false });
+            this.uiResources.Add(typeof(UIQuest), new UIElement() { resources = "Prefab/UI/UIQuestSystem", cache = false });
+            this.uiResources.Add(typeof(UIQuestDialog), new UIElement() { resources = "Prefab/UI/UIQuestDialog", cache = false });
+            this.uiResources.Add(typeof(UIFriends), new UIElement() { resources = "Prefab/UI/UIFriends", cache = false });
+            this.uiResources.Add(typeof(UIGuild), new UIElement() { resources = "Prefab/UI/Guild/UIGuild", cache = false });
+            this.uiResources.Add(typeof(UIGuildList), new UIElement() { resources = "Prefab/UI/Guild/UIGuildList", cache = false });
+            this.uiResources.Add(typeof(UIGuildPopNoGuild), new UIElement() { resources = "Prefab/UI/Guild/UIGuildPopNoGuild", cache = false });
+            this.uiResources.Add(typeof(UIGuildPopCreate), new UIElement() { resources = "Prefab/UI/Guild/UIGuildPopCreate", cache = false });
+            this.uiResources.Add(typeof(UIGuildApplyList), new UIElement() { resources = "Prefab/UI/Guild/UIGuildApplyList", cache = false });
+            this.uiResources.Add(typeof(UISetting), new UIElement() { resources = "Prefab/UI/UISetting", cache = false });
+            this.uiResources.Add(typeof(UIPopChatMenu), new UIElement() { resources = "Prefab/UI/UIPopChatMenu", cache = false });
+            this.uiResources.Add(typeof(UIRide), new UIElement() { resources = "Prefab/UI/UIRide", cache = false });
+            this.uiResources.Add(typeof(UISystemConfig), new UIElement() { resources = "Prefab/UI/UISystemConfig", cache = false });
         
         }
 

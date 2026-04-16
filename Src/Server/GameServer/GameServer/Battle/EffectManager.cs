@@ -1,7 +1,6 @@
 ﻿using Common;
 using Common.Battle;
 using GameServer.Entities;
-using System;
 using System.Collections.Generic;
 
 namespace Battle

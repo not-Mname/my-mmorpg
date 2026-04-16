@@ -9,7 +9,7 @@ public class InputBox
     {
         if(_cacheObject == null)
         {
-            _cacheObject = Resloader.Load<Object>("UI/UIInputBox");
+            _cacheObject = Resloader.Load<Object>("Prefab/UI/UIInputBox");
         }
 
         GameObject go = (GameObject)GameObject.Instantiate(_cacheObject);

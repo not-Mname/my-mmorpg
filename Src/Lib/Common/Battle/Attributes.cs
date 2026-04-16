@@ -10,8 +10,8 @@ namespace Common.Battle
         private AttributeData _inital = new AttributeData();
         private AttributeData _growth = new AttributeData();
         private AttributeData _equip = new AttributeData();
-        private AttributeData _basic = new AttributeData();// 基本属性,角色初始属性+装备属性+成长属性
-        private AttributeData _buff = new AttributeData();
+        public AttributeData Basic = new AttributeData();// 基本属性,角色初始属性+装备属性+成长属性
+        public AttributeData Buff = new AttributeData();
         public AttributeData Final = new AttributeData();// 最终属性,基本属性+Buff
 
         private int _level;
@@ -84,7 +84,7 @@ namespace Common.Battle
         {
             for (int i = (int)AttributesType.MaxHp; i < (int)AttributesType.Max; ++i)
             {
-                this.Final.Data[i] = this._basic.Data[i] + _buff.Data[i];
+                this.Final.Data[i] = this.Basic.Data[i] + Buff.Data[i];
             }
         }
 
@@ -92,13 +92,13 @@ namespace Common.Battle
         {
             for (int i = (int)AttributesType.MaxHp; i < (int)AttributesType.Max; ++i)
             {
-                _basic.Data[i] = _inital.Data[i];
+                Basic.Data[i] = _inital.Data[i];
             }
 
             for (int i = (int)AttributesType.STR; i < (int)AttributesType.Max; ++i)
             {
-                this._basic.Data[i] = _basic.Data[i] + _growth.Data[i] * (this._level - 1);// 一级成长属性
-                this._basic.Data[i] += _equip.Data[i];// 装备一级属性加在计算成长属性之前
+                this.Basic.Data[i] = Basic.Data[i] + _growth.Data[i] * (this._level - 1);// 一级成长属性
+                this.Basic.Data[i] += _equip.Data[i];// 装备一级属性加在计算成长属性之前
             }
         }
 
@@ -116,16 +116,16 @@ namespace Common.Battle
         public void InitSecondaryAttribute()
         {
             // 二级属性加成（包括装备）
-            this._basic.MaxHp = this._basic.STR * 10 + this._inital.MaxHp + this._equip.MaxHp;
-            this._basic.MaxMp = this._basic.INT * 10 + this._inital.MaxMp + this._equip.MaxMp;
+            this.Basic.MaxHp = this.Basic.STR * 10 + this._inital.MaxHp + this._equip.MaxHp;
+            this.Basic.MaxMp = this.Basic.INT * 10 + this._inital.MaxMp + this._equip.MaxMp;
 
-            this._basic.AD = this._basic.STR * 5 + this._inital.AD + this._equip.AD;
-            this._basic.AP = this._basic.INT * 5 + this._inital.AP + this._equip.AP;
-            this._basic.DEF = this._basic.STR * 2 + this._basic.DEX * 1 + this._inital.DEF + this._equip.DEF;
-            this._basic.MDEF = this._basic.INT * 2 + this._basic.DEX * 1 + this._inital.MDEF + this._equip.MDEF;
+            this.Basic.AD = this.Basic.STR * 5 + this._inital.AD + this._equip.AD;
+            this.Basic.AP = this.Basic.INT * 5 + this._inital.AP + this._equip.AP;
+            this.Basic.DEF = this.Basic.STR * 2 + this.Basic.DEX * 1 + this._inital.DEF + this._equip.DEF;
+            this.Basic.MDEF = this.Basic.INT * 2 + this.Basic.DEX * 1 + this._inital.MDEF + this._equip.MDEF;
 
-            this._basic.SPD = this._basic.DEX * 0.2f + this._inital.SPD + this._equip.SPD;
-            this._basic.CRI = this._basic.DEX * 0.0002f + this._inital.CRI + this._equip.CRI;
+            this.Basic.SPD = this.Basic.DEX * 0.2f + this._inital.SPD + this._equip.SPD;
+            this.Basic.CRI = this.Basic.DEX * 0.0002f + this._inital.CRI + this._equip.CRI;
         }
 
         private void LoadInitAttribute(AttributeData attr, CharacterDefine define)

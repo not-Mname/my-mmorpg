@@ -17,7 +17,7 @@ namespace Common.Data
 
         //基本属性
         public int Speed { get; set; }
-
+        public float Height { get; set; }
         //生命
         public float MaxHP {  get; set; }
         //法力

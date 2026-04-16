@@ -11,7 +11,7 @@ namespace UI.MainUI
         public UITeam TeamWindow;
         public UIBattleUnitInfo BattleUnitInfo;
         /////////////////////////////// 公有函数 ///////////////////////
-        protected override void OnStart()
+        protected override void OnAwake()
         {
             Avatar.Init();
             // 订阅战斗目标变化事件，当目标改变时调用OnTargetChange方法

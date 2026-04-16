@@ -68,6 +68,9 @@ namespace Battle
             }
         }
 
+        /// <summary>
+        /// 技能释放次数
+        /// </summary>
         private int _hit = 0;
         private float _castingTime = 0;
         private float _skillTime = 0;
@@ -112,18 +115,18 @@ namespace Battle
         private NDamageInfo CaculateDamage(BattleUnit caster, BattleUnit target)
         {
             // 计算物理攻击和法术攻击
-            float ad = caster.Attribute.AD + this.Define.AD * this.Define.ADFator;
-            float ap = caster.Attribute.AP + this.Define.AP * this.Define.APFator;
+            float ad = caster.Attributes.AD + this.Define.AD * this.Define.ADFator;
+            float ap = caster.Attributes.AP + this.Define.AP * this.Define.APFator;
 
             // 计算物理伤害和法术伤害
-            float ad_damage = ad * ((1 - target.Attribute.DEF) / (target.Attribute.DEF + 100));
-            float ap_damage = ap * ((1 - target.Attribute.MDEF) / (target.Attribute.MDEF + 100));
+            float ad_damage = ad * ((1 - target.Attributes.DEF) / (target.Attributes.DEF + 100));
+            float ap_damage = ap * ((1 - target.Attributes.MDEF) / (target.Attributes.MDEF + 100));
 
             // 计算总伤害
             float final_damage = ad_damage + ap_damage;
 
             // 暴击判定
-            bool isCritical = IsCritical(caster.Attribute.CRI);
+            bool isCritical = IsCritical(caster.Attributes.CRI);
             if (isCritical)
             {
                 final_damage *= 2;
@@ -163,7 +166,7 @@ namespace Battle
             this._context = context;
             this._hit = 0;
             this._bullets.Clear();
-            this.AddBuff(TriggerType.SkillCast);
+            this.AddBuff(TriggerType.SkillCast, _context.Target);
         }
 
         #region Update
@@ -335,7 +338,7 @@ namespace Battle
             }
 
             // MP不足检查
-            if (this.Owner.Attribute.MP < this.Define.MPCost)
+            if (this.Owner.Attributes.MP < this.Define.MPCost)
             {
                 return SkillResult.OutOfMp;
             }
@@ -383,13 +386,16 @@ namespace Battle
         private void CastBullet(NSkillHitInfo hitInfo)
         {
             _context.Battle.AddHitInfo(hitInfo);
-            Log.InfoFormat("skill [{1}] cast bullet", this.Define.Name, this.Define.BulletResource);
+            Log.Info($"skill [{this.Define.Name}] cast bullet");
             Bullet bullet = new Bullet(this, this._context.Target, hitInfo);
             this._bullets.Add(bullet);
         }
         #endregion
 
         #region Hit
+        /// <summary>
+        /// 这里主要为了把飞行物和别的技能分开处理，子弹技能在子弹类中处理命中逻辑
+        /// </summary>
         private void DoHit()
         {
             NSkillHitInfo hitInfo = GetHitInfo();
@@ -405,6 +411,10 @@ namespace Battle
             DoHit(hitInfo);
         }
 
+        /// <summary>
+        /// 对目标造成伤害，并触发技能命中事件
+        /// </summary>
+        /// <param name="hitInfo"></param>
         public void DoHit(NSkillHitInfo hitInfo)
         {
             _context.Battle.AddHitInfo(hitInfo);
@@ -440,7 +450,7 @@ namespace Battle
             target.DoDamage(damage);
             hitInfo.Damages.Add(damage);
 
-            this.AddBuff(TriggerType.SkillHit);
+            this.AddBuff(TriggerType.SkillHit, _context.Target);
         }
 
         private void HitRange(NSkillHitInfo hitInfo)
@@ -468,9 +478,9 @@ namespace Battle
 
         #endregion
 
-        void AddBuff(TriggerType type)
+        void AddBuff(TriggerType type, BattleUnit target)
         {
-            if(this.Define.Buff == null || this.Define.Buff.Count == 0)
+            if(this.Define.Buff == null || this.Define.Buff.Count == 0 || target == null)
             {
                 return;
             }
@@ -490,7 +500,7 @@ namespace Battle
                 }
                 else if(buffDefine.Target == TargetType.Target)
                 {
-                    this._context.Target.AddBuff(this._context,buffDefine);
+                    target.AddBuff(this._context,buffDefine);
                 }
             }
         }

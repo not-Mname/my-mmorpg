@@ -10,7 +10,7 @@ namespace Entities
         public Vector3Int Direction;
         public int Speed;
         private NEntity _entityData;
-        public IEntityController Controller;
+        public IEntityController Controller { get; set; }
 
         public NEntity EntityData
         {
@@ -47,7 +47,7 @@ namespace Entities
             this.Direction = this.Direction.FromNVector3(entity.Direction);
             this.Speed = entity.Speed;
         }
-        private void UpdateEntityData()
+        protected void UpdateEntityData()
         {
             _entityData.Position.FromVector3Int(this.Position);
             _entityData.Direction.FromVector3Int(this.Direction);

@@ -3,6 +3,7 @@ using Common.Data;
 using Managers;
 using Models;
 using SkillBridge.Message;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -30,7 +31,7 @@ namespace UISkill
         }
 
 
-        void FixedUpdate()
+        void Update()
         {
             if(this._skill.CD > 0)
             {
@@ -59,11 +60,27 @@ namespace UISkill
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            if(this._skillDefine.CastTarget == Common.Battle.TargetType.Position)
+            {
+                TargetSelector.ShowSelector(User.Instance.CurrentCharacter.Position, this._skillDefine.CastRange, this._skillDefine.AOERange, this.OnPositionSelected);
+                return;
+            }
+            CastSkill();
+        }
+
+        private void OnPositionSelected(Vector3 position)
+        {
+            BattleManager.Instance.CurrentPosition = GameObjectTool.WorldToLogicN(position);
+            CastSkill();
+        }
+
+        private void CastSkill()
+        {
             SkillResult result = this._skill.CanCast(BattleManager.Instance.CurrentTarget);
             switch (result)
             {
                 case SkillResult.Ok:
-                    LogHelper.Log("Skill cast: " + this._skill.Define.Name);
+                    LogHelper.Log("Skill cast: " + this._skill.Define.Name, LogUser.Battle);
                     BattleManager.Instance.CastSkill(this._skill);
                     return;
                 case SkillResult.OutOfMp:
@@ -79,6 +96,8 @@ namespace UISkill
                     MessageBox.Show("目标不在攻击范围内");
                     return;
             }
+
+            return;
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Common.Data
         public string Name { get; set; }
         public SkillType Type { get; set; }
         public TargetType CastTarget { get; set; }
-        public float CastRange { get; set; }
+        public int CastRange { get; set; }
         public string Resource { get; set; }
         public string Icon { get; set; }
         public string Description { get; set; }
@@ -32,8 +32,11 @@ namespace Common.Data
         public float AP { get; set; }
         public float ADFator { get; set; }
         public float APFator { get; set; }
-
         public string SkillAnim { get; set; }
         public List<float> HitTimes { get; set; }
+        public string AOEEffect { get; set; }
+        public string HitEffect { get; set; }
+
+
     }
 }

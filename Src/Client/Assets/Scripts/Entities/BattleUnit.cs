@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using Battle;
+﻿using Battle;
 using Common.Battle;
 using Common.Data;
+using Effect;
 using Managers;
 using SkillBridge.Message;
+using System;
+using System.Collections.Generic;
+using UI;
 using UnityEngine;
 using Utilities;
+using static UnityEngine.GraphicsBuffer;
 
 namespace Entities
 {
@@ -21,7 +24,15 @@ namespace Entities
 
         public SkillManager SkillManager;
 
+        public BuffManager BuffManager;
+
+        public EffectManager EffectManager;
+
         public Skill CastringSkill = null;
+
+        public Action<Buff> OnBuffAdd;
+
+        public Action<Buff> OnBuffRemove;
         #endregion
 
         #region getter setter
@@ -80,14 +91,14 @@ namespace Entities
             this.Attributes = new Attributes();
             this.Attributes.Init(this.Define, this.GetEquip(), Info.Level, this.Info.Dynamic);
             this.SkillManager = new SkillManager(this);
+            this.BuffManager = new BuffManager(this);
+            this.EffectManager = new EffectManager(this);
         }
 
         public virtual List<EquipDefine> GetEquip()
         {
             return null;
         }
-
-
 
         public void UpdateInfo(NCharacterInfo cha)
         {
@@ -96,9 +107,14 @@ namespace Entities
             this.Attributes.Init(this.Define, this.GetEquip(), Info.Level, this.Info.Dynamic);
             this.SkillManager.UpdateSkills();
         }
-#endregion
 
-        #region 同步
+        internal int Distance(BattleUnit target)
+        {
+            return (int)Vector3Int.Distance(this.Position, target.Position);
+        }
+        #endregion
+
+        #region 状态同步
         public void MoveForward()
         {
             //Debug.LogFormat("MoveForward");
@@ -129,11 +145,11 @@ namespace Entities
             this.Position = position;
         }
 
-        public void CastSkill(int skillId, BattleUnit target, NVector3 position, NDamageInfo damageInfo)
+        public void CastSkill(int skillId, BattleUnit target, NVector3 position)
         {
             this.SetStanby(true);
             var skill = this.SkillManager.GetSkill(skillId);
-            skill.BeginCast(damageInfo);
+            skill.BeginCast(target, position);
         }
 
         private void SetStanby(bool standby)
@@ -151,32 +167,135 @@ namespace Entities
                 this.Controller.PlayAnim(animName);
             }
         }
+        #endregion
 
+        #region 战斗逻辑
         public override void OnUpdate(float delta)
         {
             base.OnUpdate(delta);
             this.SkillManager.OnUpdate(delta);
+            this.BuffManager.OnUpdate(delta);
+
         }
 
-        public void DoDamage(NDamageInfo damageInfo)
+        public void DoDamage(NDamageInfo damageInfo, bool playHurt = true)
         {
-            LogHelper.Log($"DoDamage:{damageInfo.Damage}", LogUser.Battle);
+            LogHelper.Log($"DoDamage: [name : {this.Name}] [critical : {damageInfo.Critical}] [damage : {damageInfo.Damage}]", LogUser.Battle);
             this.Attributes.HP -= damageInfo.Damage;
-            this.PlayAnim("Hurt");
+            if (playHurt) { this.PlayAnim("Hurt"); }
+            if (this.Controller != null) { UIWouldElementManager.Instance.AddPopupText(PopupType.Damage, this.Controller.GetTransform().position + this.GetPopupOffset(), -damageInfo.Damage, damageInfo.Critical ); }
+            
             EVENT.Fire(Const.EventId.on_battle_target_updata);
         }
 
-        internal void DoSkillHit(int skillId, int hitId, List<NDamageInfo> damages)
+        internal void DoSkillHit(NSkillHitInfo hit)
         {
-            var skill = this.SkillManager.GetSkill(skillId);
-            skill.DoHit(hitId, damages);
+            var skill = this.SkillManager.GetSkill(hit.skillId);
+            skill.DoHit(hit);
         }
 
-        internal int Distance(BattleUnit target)
+        internal void DoBuffAction(NBuffInfo buff)
         {
-            return (int)Vector3Int.Distance(this.Position, target.Position);
+            LogHelper.Log($"DoBuffAction: [name : {this.Name}] [buffId : {buff.buffId}] [action : {buff.Action}]", LogUser.Battle);
+            switch (buff.Action)
+            {
+                case BuffAction.Add:
+                    this.AddBuff(buff.buffId, buff.buffType, buff.casterId);
+                    break;
+                case BuffAction.Remove:
+                    this.RemoveBuff(buff.buffId);
+                    break;
+                case BuffAction.Hit:
+                    this.DoDamage(buff.Damage, false);
+                    break;
+            }
         }
 
+        public void RemoveBuff(int buffId)
+        {
+            var buff = this.BuffManager.RemoveBuff(buffId);
+            if (buff != null)
+            {
+                OnBuffRemove?.Invoke(buff);
+            }
+        }
+
+        private void AddBuff(int buffId, int buffType, int casterId)
+        {
+            var buff = this.BuffManager.AddBuff(buffId, buffType, casterId);
+            OnBuffAdd?.Invoke(buff);
+        }
+
+        internal void AddBuffEffect(BuffEffect effect)
+        {
+            this.EffectManager.AddBuffEffect(effect);
+        }
+
+        internal void RemoveBuffEffect(BuffEffect effect)
+        {
+            this.EffectManager.RemoveBuffEffect(effect);
+        }
+
+        /// <summary>
+        /// 面向目标位置
+        /// </summary>
+        /// <param name="position"></param>
+        internal void FaceTo(Vector3Int position)
+        {
+            this.SetDirection(GameObjectTool.WorldToLogic(GameObjectTool.LogicToWorld(position - this.Position)));
+            this.UpdateEntityData();
+            if(this.Controller != null)
+            {
+                this.Controller.UpdateDirection();
+            }
+        }
+
+        /// <summary>
+        /// 对一个目标播放特效
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="name"></param>
+        /// <param name="target"></param>
+        /// <param name="duration"></param>
+        internal void PlayEffect(EffectType type, string name, BattleUnit target, float duration = 0)
+        {
+                if (string.IsNullOrEmpty(name))
+                {
+                    return;
+                }
+            if(this.Controller != null)
+            {
+                this.Controller.PlayEffect(type, name, target, duration);
+            }
+        }
+
+        /// <summary>
+        /// 在一个位置播放特效
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="name"></param>
+        /// <param name="targetPosition"></param>
+        internal void PlayEffect(EffectType type, string name, NVector3 targetPosition)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return;
+            }
+            if (this.Controller != null)
+            {
+                this.Controller.PlayEffect(type, name, targetPosition, 0);
+            }
+        }
+
+        internal Vector3 GetHitOffset()
+        {
+            return new Vector3(0, this.Define.Height * 0.8f, 0);
+        }
+
+        internal Vector3 GetPopupOffset()
+        {
+            return new Vector3(0, this.Define.Height, 0);
+        }
 
         #endregion
     }

@@ -5,6 +5,8 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 {
     private static GameObject _singletonRoot = null;
     public bool global = true;
+    public bool IsSence = true;
+    private bool _isInit = false;
     private static T _instance;
     private static bool ApplicationIsQuitting = false;
 
@@ -15,7 +17,8 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
             if (_instance == null)
             {
                 // 尝试在场景中查找
-                _instance = FindFirstObjectByType<T>(FindObjectsInactive.Include);
+                string name = typeof(T).Name;
+                _instance = GameObject.Find(name) as T;
                 InitParent();
                 // 如果场景中没有，则动态创建
                 if (_instance == null)
@@ -52,7 +55,8 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 
     void Awake()
     {
-        
+        string name = typeof(T).Name;
+        _instance = GameObject.Find(name) as T;
         if (_instance != null && _instance != gameObject.GetComponent<T>())
         {
             Destroy(gameObject);
@@ -76,5 +80,10 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
     {
         ApplicationIsQuitting = true;
     }
-    
+
+    protected virtual void OnDestroy()
+    {
+        string name = typeof(T).Name;
+        Debug.Log($"{name} Destroyed");
+    }
 }

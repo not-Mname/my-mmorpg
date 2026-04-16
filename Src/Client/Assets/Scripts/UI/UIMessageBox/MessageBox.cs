@@ -8,7 +8,7 @@ class MessageBox
     {
         if(cacheObject==null)
         {
-            cacheObject = Resloader.Load<Object>("UI/UIMessageBox");
+            cacheObject = Resloader.Load<Object>("Prefab/UI/UIMessageBox");
         }
 
         GameObject go = (GameObject)GameObject.Instantiate(cacheObject);

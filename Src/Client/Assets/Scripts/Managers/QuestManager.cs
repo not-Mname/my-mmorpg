@@ -165,6 +165,7 @@ namespace Managers
         {
             if (quest.info == null || quest.info.Status == QuestStatus.Completed)
             {
+                //接受任务或提交任务
                 UIQuestDialog dlg = UIManager.Instance.Show<UIQuestDialog>();
                 dlg.gameObject.SetActive(true);
                 dlg.SetQuest(quest);
@@ -173,6 +174,7 @@ namespace Managers
             }
             else if (quest.info != null || quest.info.Status == QuestStatus.Completed)
             {
+                //未完成的任务
                 if (!string.IsNullOrEmpty(quest.define.DialogIncomplete))
                     MessageBox.Show(quest.define.DialogIncomplete);
             }
@@ -186,10 +188,12 @@ namespace Managers
             {
                 if (dlg.quest.info == null)
                 {
+                    //接受任务
                     QuestService.Instance.SendQuestAccept(dlg.quest);
                 }
                 else if(dlg.quest.info.Status == QuestStatus.Completed)
                 {
+                    //提交任务
                     QuestService.Instance.SendQuestSubmit(dlg.quest);
                 } 
             }

@@ -13,20 +13,32 @@ namespace Services
         {
             MessageDistributer.Instance.Subscribe<SkillCastResponse>(OnSkillCast);
             MessageDistributer.Instance.Subscribe<SkillHitResponse>(OnSkillHit);
-
+            MessageDistributer.Instance.Subscribe<BuffResponse>(OnBuff);
         }
 
-        
+
 
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<SkillCastResponse>(OnSkillCast);
             MessageDistributer.Instance.Unsubscribe<SkillHitResponse>(OnSkillHit);
+            MessageDistributer.Instance.Unsubscribe<BuffResponse>(OnBuff);
         }
 
         public void Init()
         {
 
+        }
+        private void OnBuff(object sender, BuffResponse message)
+        {
+            foreach (var buff in message.Buffs)
+            {
+                BattleUnit unit = EntityManager.Instance.GetEntity(buff.ownerId) as BattleUnit;
+                if (unit != null)
+                {
+                    unit.DoBuffAction(buff);
+                }
+            }
         }
 
         public void SendSkillCast(int skillId, int casterId, int targetId, NVector3 currentPosition)
@@ -56,12 +68,12 @@ namespace Services
                 if (caster != null)
                 {
                     BattleUnit target = EntityManager.Instance.GetEntity(response.castInfo.targetId) as BattleUnit;
-                    caster.CastSkill(response.castInfo.skillId, target, response.castInfo.Position, response.nDamageInfo);
+                    caster.CastSkill(response.castInfo.skillId, target, response.castInfo.Position);
                 }
             }
             else
             {
-                ChatManager.Instance.AddSystemMessage(response.Errormsg);
+                LogHelper.Log($"OnSkillCast: skill cast failed : {response.Errormsg}");
             }
         }
 
@@ -74,7 +86,7 @@ namespace Services
                     BattleUnit caster = EntityManager.Instance.GetEntity(hit.casterId) as BattleUnit;
                     if(caster != null)
                     {
-                        caster.DoSkillHit(hit.skillId, hit.hitId, hit.Damages);
+                        caster.DoSkillHit(hit);
                     }
                 }
             }

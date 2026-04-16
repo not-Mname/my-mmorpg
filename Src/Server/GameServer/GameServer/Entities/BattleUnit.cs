@@ -23,7 +23,7 @@ namespace GameServer.Entities
         public SkillManager SkillManager;
         public BuffManager BuffManager;
         public EffectManager EffectManager;
-        public Attributes Attribute;
+        public Attributes Attributes;
 
         #region 初始化
 
@@ -41,9 +41,9 @@ namespace GameServer.Entities
             this.InitSkills();
             this.InitBuffs();
 
-            this.Attribute = new Attributes();
-            this.Attribute.Init(this.Define, this.GetEquips(), this.Info.Level, this.Info.Dynamic);
-            this.Info.Dynamic = this.Attribute.Dynamic;
+            this.Attributes = new Attributes();
+            this.Attributes.Init(this.Define, this.GetEquips(), this.Info.Level, this.Info.Dynamic);
+            this.Info.Dynamic = this.Attributes.Dynamic;
         }
 
         private void InitBuffs()
@@ -71,8 +71,8 @@ namespace GameServer.Entities
 
         internal void DoDamage(NDamageInfo damage)
         {
-            this.Attribute.HP -= damage.Damage;
-            if (this.Attribute.HP <= 0)
+            this.Attributes.HP -= damage.Damage;
+            if (this.Attributes.HP <= 0)
             {
                 this.IsDeath = true;
                 damage.WillDead = true;

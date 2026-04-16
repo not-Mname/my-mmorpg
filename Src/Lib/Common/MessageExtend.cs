@@ -50,6 +50,10 @@ namespace SkillBridge.Message
             return new Vector3Int(nVector.X, nVector.Y, nVector.Z);
         }
 
+        public static Vector3Int ToVector3Int(this NVector3 self)
+        {
+            return new Vector3Int(self.X, self.Y, self.Z);
+        }
 
         public static NVector3 FromVector3Int(this NVector3 self, Vector3Int nVector)
         {

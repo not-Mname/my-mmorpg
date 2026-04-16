@@ -39,7 +39,16 @@
     public enum BuffEffect
     {
         None = 0,
-        Stun = 1,        
+        Stun = 1,   //眩晕
+        Invincible = 2, //无敌
+    }
+
+    public enum TriggerType
+    {
+        None = 0,
+        SkillCast = 1,//技能释放
+        SkillHit = 2,//技能命中
+        
     }
 
     public enum SkillType

@@ -1,13 +1,11 @@
 ﻿using SkillBridge.Message;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UICharInfo : MonoBehaviour {
 
-    private SkillBridge.Message.NCharacterInfo _info;
-    public SkillBridge.Message.NCharacterInfo Info
+    private NCharacterInfo _info;
+    public NCharacterInfo Info
     {
         get { return _info; }
         set

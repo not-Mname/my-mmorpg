@@ -479,6 +479,9 @@ namespace SkillBridge.Message
         [global::ProtoBuf.ProtoMember(51)]
         public SkillHitResponse skillHits { get; set; }
 
+        [global::ProtoBuf.ProtoMember(52)]
+        public BuffResponse buffRes { get; set; }
+
         [global::ProtoBuf.ProtoMember(100)]
         public StatusNotify statusNotify { get; set; }
 
@@ -1633,9 +1636,6 @@ namespace SkillBridge.Message
         [global::ProtoBuf.ProtoMember(3)]
         public NSkillCastInfo castInfo { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
-        public NDamageInfo nDamageInfo { get; set; }
-
     }
 
     [global::ProtoBuf.ProtoContract()]
@@ -1673,8 +1673,57 @@ namespace SkillBridge.Message
         [global::ProtoBuf.ProtoMember(3)]
         public int hitId { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4, Name = @"damages")]
+        [global::ProtoBuf.ProtoMember(4)]
+        public bool isBullet { get; set; }
+
+        [global::ProtoBuf.ProtoMember(5, Name = @"damages")]
         public global::System.Collections.Generic.List<NDamageInfo> Damages { get; } = new global::System.Collections.Generic.List<NDamageInfo>();
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class NBuffInfo : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1)]
+        public int buffId { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2)]
+        public int buffType { get; set; }
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"action")]
+        public BuffAction Action { get; set; }
+
+        [global::ProtoBuf.ProtoMember(4)]
+        public int casterId { get; set; }
+
+        [global::ProtoBuf.ProtoMember(5)]
+        public int ownerId { get; set; }
+
+        [global::ProtoBuf.ProtoMember(6, Name = @"damage")]
+        public NDamageInfo Damage { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class BuffResponse : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"result")]
+        public Result Result { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"errormsg")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Errormsg { get; set; } = "";
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"buffs")]
+        public global::System.Collections.Generic.List<NBuffInfo> Buffs { get; } = new global::System.Collections.Generic.List<NBuffInfo>();
 
     }
 
@@ -1901,6 +1950,19 @@ namespace SkillBridge.Message
         Casting = 1,
         [global::ProtoBuf.ProtoEnum(Name = @"RUNNING")]
         Running = 2,
+    }
+
+    [global::ProtoBuf.ProtoContract(Name = @"BUFF_ACTION")]
+    public enum BuffAction
+    {
+        [global::ProtoBuf.ProtoEnum(Name = @"NONE")]
+        None = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"ADD")]
+        Add = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"REMOVE")]
+        Remove = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"HIT")]
+        Hit = 3,
     }
 
 }

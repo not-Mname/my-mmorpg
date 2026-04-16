@@ -1,33 +1,26 @@
 ﻿using Entities;
-using System.Collections;
-using System.Collections.Generic;
+using Models;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UINameBar : MonoBehaviour
 {
-    public Text Name;
-    public BattleUnit characterInfo;
+    public TextMeshProUGUI Name;
+    private BattleUnit _characterInfo;
+    public UIBuffIcons BuffIcons;
 
-    void Start()
+    public void Init(BattleUnit characterInfo)
     {
-        
-    }
-
-
-    void Update()
-    {
-        if (characterInfo != null) UpdateInfo();
-        
-        
+        _characterInfo = characterInfo;
+        UpdateInfo();
+        BuffIcons.Init(_characterInfo);
     }
 
     void UpdateInfo()
     {
-        if (characterInfo == null) return;
-        string name = string.Format("{0} Lv.[{1}]", characterInfo.Name, characterInfo.Info.Level);
-        if(Name.text!= name)
-            Name.text = name;
-        
+        string name = string.Format("{0} Lv.[{1}]", _characterInfo.Name, _characterInfo.Info.Level);
+        if (Name.text != name)
+        { Name.text = name; }
+
     }
 }
