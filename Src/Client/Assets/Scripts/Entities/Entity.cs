@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using SkillBridge.Message;
+﻿using SkillBridge.Message;
+using UnityEngine;
+using Utilities;
 
 namespace Entities
 {
@@ -46,6 +47,8 @@ namespace Entities
             this.Position = this.Position.FromNVector3(entity.Position);
             this.Direction = this.Direction.FromNVector3(entity.Direction);
             this.Speed = entity.Speed;
+            //LogHelper.Log($"SetEntityData : POS:{this.Position} DIR:{this.Direction} SPD:{this.Speed} ID:{this.EntityId}");
+
         }
         protected void UpdateEntityData()
         {

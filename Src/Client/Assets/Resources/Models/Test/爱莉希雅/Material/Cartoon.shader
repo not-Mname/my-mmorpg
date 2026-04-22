@@ -102,7 +102,7 @@ Shader "CartoonRender/Improved"
                 float shadow = SHADOW_ATTENUATION(i);
                 float lightIntensity = smoothstep(0, _ToonThreshold, NdotL * shadow);
                 
-                // 漫反射项：使用加法而不是乘法，避免颜色变暗
+                // 漫反射项
                 float4 diffuse = lightIntensity * _LightColor0 * _DiffuseAmount;
 
                 // 高光计算

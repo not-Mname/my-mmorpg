@@ -123,6 +123,15 @@ namespace GameServer.Core
         /// </summary>
         public int sqrMagnitude => x * x + y * y + z * z;
 
+        public Vector3Int normalizedOnNet
+        {
+            get
+            {
+                var num = magnitude;
+                return new Vector3Int((int)(x * 100 / num), (int)(y * 100 / num), (int)(z * 100/ num));
+            }
+        }
+
         /// <summary>
         ///   <para>Shorthand for writing Vector3Int (0, 0, 0).</para>
         /// </summary>
@@ -307,6 +316,11 @@ namespace GameServer.Core
         public static bool operator !=(Vector3Int lhs, Vector3Int rhs)
         {
             return !(lhs == rhs);
+        }
+
+        public static implicit operator Vector3(Vector3Int v)
+        {
+            return new Vector3((int)v.x, (int)v.y, (int)v.z);
         }
 
         /// <summary>

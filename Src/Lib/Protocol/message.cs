@@ -1584,6 +1584,9 @@ namespace SkillBridge.Message
         [global::ProtoBuf.ProtoMember(4, Name = @"position")]
         public NVector3 Position { get; set; }
 
+        [global::ProtoBuf.ProtoMember(5, Name = @"result")]
+        public SkillResult Result { get; set; }
+
     }
 
     [global::ProtoBuf.ProtoContract()]
@@ -1634,7 +1637,7 @@ namespace SkillBridge.Message
         public string Errormsg { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(3)]
-        public NSkillCastInfo castInfo { get; set; }
+        public global::System.Collections.Generic.List<NSkillCastInfo> castInfos { get; } = new global::System.Collections.Generic.List<NSkillCastInfo>();
 
     }
 

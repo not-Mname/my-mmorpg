@@ -61,15 +61,19 @@ namespace Services
 
         public void OnSkillCast(object sender, SkillCastResponse response)
         {
-            LogHelper.LogFormat("OnSkillCast: skillId {0}, casterId {1}, targetId {2}, position {3}", LogUser.BattleService, response.castInfo.skillId, response.castInfo.casterId, response.castInfo.targetId, response.castInfo.Position.String());
             if (response.Result == Result.Success)
             {
-                BattleUnit caster = EntityManager.Instance.GetEntity(response.castInfo.casterId) as BattleUnit;
-                if (caster != null)
+                foreach (var castInfo in response.castInfos)
                 {
-                    BattleUnit target = EntityManager.Instance.GetEntity(response.castInfo.targetId) as BattleUnit;
-                    caster.CastSkill(response.castInfo.skillId, target, response.castInfo.Position);
+                    LogHelper.LogFormat("OnSkillCast: skillId {0}, casterId {1}, targetId {2}, position {3}", LogUser.BattleService,castInfo.skillId, castInfo.casterId, castInfo.targetId, castInfo.Position.String());
+                    BattleUnit caster = EntityManager.Instance.GetEntity(castInfo.casterId) as BattleUnit;
+                    if (caster != null)
+                    {
+                        BattleUnit target = EntityManager.Instance.GetEntity(castInfo.targetId) as BattleUnit;
+                        caster.CastSkill(castInfo.skillId, target, castInfo.Position);
+                    }
                 }
+                
             }
             else
             {

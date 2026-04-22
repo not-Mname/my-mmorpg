@@ -15,6 +15,10 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
     [Header("Lazy Follow Settings")]
     public float baseDistance = 4f;       // 理想距离
     public float pullStrength = 0.3f;     // 回拉强度
+    // 弹簧阻尼参数，用于实现更自然的延迟跟随（弹簧-阻尼系统）
+    public float springStrength = 20f;    // 弹簧系数（k），距离越远回拉越强
+    public float damping = 6f;            // 阻尼系数（b），防止震荡
+    private Vector3 cameraVelocity = Vector3.zero; // 摄像机速度，用于积分位置
 
     private Transform _cameraTransform;
     public bool isCursorVisible = false; // 初始隐藏
@@ -134,6 +138,7 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
                 //{
                 //    EVENT.Fire(EventId.on_player_lock_target, null);
                 //}
+
                 //设置目标瞄准点（可加上高度偏移）
                 Vector3 targetAimPoint = _targetPoint.transform.position + Vector3.up * targetHeightOffset;
 
@@ -149,10 +154,10 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
                 if (horizontalDir.sqrMagnitude < 0.01f || distanceToTarget < 0.1f)
                     return;
 
-                //左右旋转
+                //转化为四元数
                 Quaternion yawRotation = Quaternion.LookRotation(horizontalDir, Vector3.up);
 
-                //使用 atan2 计算摄像机指向目标向量与水平地面之间的夹角
+                //使用 atan2（x, y）（计算从x轴到（x，y）的角度） 计算摄像机指向目标向量与水平地面之间的夹角
                 float pitchAngle = Mathf.Atan2(dir.y, new Vector2(dir.x, dir.z).magnitude) * Mathf.Rad2Deg;
                 pitchAngle = Mathf.Clamp(pitchAngle, minPitch, maxPitch);
 

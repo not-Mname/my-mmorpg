@@ -73,7 +73,7 @@ class Time
     /// <summary>
     /// 获取上一帧的耗时（秒，只读）
     /// </summary>
-    public static float deltaTime
+    public static float DeltaTime
     {
         get
         {

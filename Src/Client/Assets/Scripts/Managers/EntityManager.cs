@@ -50,7 +50,7 @@ namespace Managers
             entities.TryGetValue(entity.Id, out TempEntity);
             if (TempEntity != null)
             {
-                Debug.Log("Entity Sync: " + entity.Entity.Position);
+                //Debug.Log("Entity Sync: " + entity.Entity.Position);
                 TempEntity.EntityData = entity.Entity;
             }
             if (notifiers.ContainsKey(entity.Id))

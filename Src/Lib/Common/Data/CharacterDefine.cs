@@ -46,5 +46,7 @@ namespace Common.Data
         public float SPD { get; set; }
         //暴击率
         public float CRI { get; set; }
+        //ai类型
+        public string AI { get; set; }
     }
 }

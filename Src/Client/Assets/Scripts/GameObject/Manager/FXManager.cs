@@ -47,6 +47,10 @@ internal class FXManager : MonoSingleton<FXManager>
             effect.Init(type, transform, target, position, duration);
             effect.gameObject.SetActive(true);
         }
+        else
+        {
+            Debug.LogError($"特效 {name} 不存在");
+        }
     }
 }
 

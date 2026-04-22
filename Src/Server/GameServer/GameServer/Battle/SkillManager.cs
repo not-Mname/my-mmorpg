@@ -1,4 +1,5 @@
-﻿using GameServer.Entities;
+﻿using Common.Battle;
+using GameServer.Entities;
 using GameServer.Managers;
 using SkillBridge.Message;
 using System;
@@ -14,6 +15,8 @@ namespace Battle
         public List<Skill> Skills { get; private set; }
         public List<NSkillInfo> Infos { get; private set; }
 
+        public Skill NormalSkill { get; private set; }
+
         public SkillManager(BattleUnit owner)
         {
             this._owner = owner;
@@ -26,6 +29,7 @@ namespace Battle
         {
             this.Skills.Clear();
             this.Infos.Clear();
+            this.NormalSkill = null;
 
             if (!DataManager.Instance.Skills.ContainsKey(this._owner.Define.TID))
             {
@@ -46,6 +50,10 @@ namespace Battle
                 }
                 this.Infos.Add(info);
                 Skill skill = new Skill(info, this._owner);
+                if (define.Value.Type == SkillType.Normal)
+                {
+                    this.NormalSkill = skill;
+                }
                 this.AddSkill(skill);
             }
         }

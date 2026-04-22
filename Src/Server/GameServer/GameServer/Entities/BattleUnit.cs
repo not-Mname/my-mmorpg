@@ -24,6 +24,8 @@ namespace GameServer.Entities
         public BuffManager BuffManager;
         public EffectManager EffectManager;
         public Attributes Attributes;
+        public BattleState BattleState;
+        public CharacterState CharacterState;
 
         #region 初始化
 
@@ -62,21 +64,62 @@ namespace GameServer.Entities
 
         #region 战斗相关
 
+        /// <summary>
+        /// 释放技能
+        /// </summary>
+        /// <param name="context">战斗上下文</param>
+        /// <param name="skillId">技能id</param>
         internal void CastSkill(BattleContext context, int skillId)
         {
             Skill skill = this.SkillManager.GetSkill(skillId);
             context.Result = skill.Cast(context);
+            if (context.Result == SkillResult.Ok)
+            {
+                this.BattleState = BattleState.InBattle;
+            }
+
+            if(context.CastInfo == null)
+            {
+                if(context.Result == SkillResult.Ok)
+                {
+                    context.CastInfo = new NSkillCastInfo()
+                    {
+                        casterId = this.entityId,
+                        targetId = context.Target.entityId,
+                        skillId = skill.Define.ID,
+                        Position = new NVector3(),
+                        Result = context.Result,
+                    };
+                    context.Battle.AddCastInfo(context.CastInfo);
+                }
+                
+            }
+            else
+            {
+                context.CastInfo.Result = context.Result;
+                context.Battle.AddCastInfo(context.CastInfo);
+            }
         }
 
-
-        internal void DoDamage(NDamageInfo damage)
+        /// <summary>
+        /// 受到伤害
+        /// </summary>
+        /// <param name="damage"></param>
+        internal void DoDamage(NDamageInfo damage, BattleUnit source)
         {
+            this.BattleState = BattleState.InBattle;
             this.Attributes.HP -= damage.Damage;
             if (this.Attributes.HP <= 0)
             {
                 this.IsDeath = true;
                 damage.WillDead = true;
             }
+            this.OnDamage(damage, source);
+        }
+
+        protected virtual void OnDamage(NDamageInfo damage, BattleUnit source)
+        {
+            
         }
         #endregion
 

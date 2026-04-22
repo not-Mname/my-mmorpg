@@ -97,7 +97,7 @@ namespace Battle
             this.Info = info;
             this.Owner = owner;
             // 根据职业和技能ID从数据管理器获取技能配置
-            this.Define = DataManager.Instance.Skills[(int)this.Owner.Define.Class][info.Id];
+            this.Define = DataManager.Instance.Skills[this.Owner.Define.TID][info.Id];
         }
 
         /// <summary>
@@ -195,7 +195,7 @@ namespace Battle
         /// </summary>
         private void UpdateSkill()
         {
-            this._skillTime += Time.deltaTime;
+            this._skillTime += Time.DeltaTime;
 
             if (this.Define.Duration > 0)
             {
@@ -265,7 +265,7 @@ namespace Battle
             if (this._castingTime < this.Define.CastTime)
             {
                 // 吟唱时间未结束，继续累加
-                _castingTime += Time.deltaTime;
+                _castingTime += Time.DeltaTime;
             }
             else
             {
@@ -284,7 +284,7 @@ namespace Battle
             if (this.CD > 0)
             {
                 // 冷却时间递减
-                this._cd -= Time.deltaTime;
+                this._cd -= Time.DeltaTime;
             }
             else if (this.CD < 0)
             {
@@ -447,7 +447,7 @@ namespace Battle
             // 计算伤害并应用
             NDamageInfo damage = this.CaculateDamage(this._context.Caster, target);
             Log.InfoFormat("Skill [{0}] damage {1} hit target {2} hit caster{3}", this.Define.Name, damage.Damage, target.Define.Name, _context.Caster.Define.Name);
-            target.DoDamage(damage);
+            target.DoDamage(damage, this._context.Caster);
             hitInfo.Damages.Add(damage);
 
             this.AddBuff(TriggerType.SkillHit, _context.Target);

@@ -3,6 +3,7 @@ using Entities;
 using Managers;
 using SkillBridge.Message;
 using UnityEngine;
+using Utilities;
 
 
 public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
@@ -38,11 +39,15 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
     {
         if (this.entity == null) { return; }
 
-        // 如果是玩家，也要同步逻辑状态
-        this.entity.OnUpdate(Time.deltaTime);
-
-        if (!isPlayer)
-        {// 如果不是玩家，则直接同步位置
+        // 只有玩家角色需要客户端预测更新
+        // AI角色完全由服务器同步，不需要客户端预测
+        if (isPlayer)
+        {
+            this.entity.OnUpdate(Time.deltaTime);
+        }
+        else
+        {
+            // 对于AI角色，直接同步位置
             SyncEntityTransform();
         }
     }
@@ -96,7 +101,7 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 
     public void OnEntityChange(NEntitySync entity)
     {
-        Debug.LogFormat("{0} OnEntityChange :ID:{1} POS:{2} DIR:{3} SPD:{4} ", this.name, entity.Id, entity.Entity.Position, entity.Entity.Direction, entity.Entity.Speed);
+        //Debug.LogFormat("{0} OnEntityChange :ID:{1} POS:{2} DIR:{3} SPD:{4} ", this.name, entity.Id, entity.Entity.Position, entity.Entity.Direction, entity.Entity.Speed);
     }
     #endregion
 
@@ -111,7 +116,6 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
     {
         this.anim.SetBool("Standby", standby);
     }
-
 
     public void UpdateDirection()
     {
@@ -173,13 +177,30 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
         this.direction = GameObjectTool.LogicToWorld(entity.Direction);
         this.speed = GameObjectTool.LogicToWorld(entity.Speed);
 
-        Vector3 dir = this.position - transform.position;
-        if (dir.magnitude > 0.01f)
-        {
-            dir.Normalize();
-            this.characterController.Move(dir * speed * Time.deltaTime);
-        }
 
+        Vector3 dir = this.position - transform.position;
+        float distance = dir.magnitude;
+        if (distance > 0.01f)
+        {
+
+            // 对于AI角色，如果距离较大，直接设置位置
+            if (distance > 5f)
+            {
+
+                // 距离较大，直接设置位置（避免累积误差）
+                this.transform.position = this.position;
+                LogHelper.Log($"[{this.gameObject.name}] 瞬移");
+                //LogHelper.Log($"[{this.gameObject.name}] SyncEntityTransform : Direct set position POS:{this.position} Distance:{distance}");
+            }
+            else
+            {
+                // 小距离调整，使用Move
+                dir.Normalize();
+                this.characterController.Move(dir * speed * Time.deltaTime);
+                LogHelper.Log($"[{this.gameObject.name}] 移动");
+                //LogHelper.Log($"[{this.gameObject.name}] SyncEntityTransform : POS:{this.position} DIR:{this.direction} SPD:{this.speed} Move: [dir] - {dir} [speed] - {speed} [res] - {dir * speed * Time.deltaTime} Distance:{distance}");
+            }
+        }
         this.transform.forward = this.direction;
         this.lastPosition = this.position;
         this.lastRotation = this.rotation;
@@ -216,6 +237,4 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
     {
         this.anim.transform.position = position + (this.anim.transform.position - this.rideBone.position);
     }
-
-
 }

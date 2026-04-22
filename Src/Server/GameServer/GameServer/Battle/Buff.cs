@@ -34,7 +34,7 @@ namespace Battle
             {
                 return;
             }
-            _time += Time.deltaTime;
+            _time += Time.DeltaTime;
 
             if(this._buffDefine.Interval > 0)
             {//如果有间隔时间
@@ -82,7 +82,7 @@ namespace Battle
         {
             this._hit++;
             NDamageInfo damage = CaculateDamage(this._context.Caster);
-            this._owner.DoDamage(damage);
+            this._owner.DoDamage(damage, this._context.Caster);
 
             NBuffInfo buff = new NBuffInfo()
             {

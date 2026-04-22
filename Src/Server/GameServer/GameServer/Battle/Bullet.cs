@@ -52,7 +52,7 @@ namespace Battle
         /// </summary>
         private void UpdateTime()
         {
-            _flyTime += Time.deltaTime;
+            _flyTime += Time.DeltaTime;
             if(_flyTime > _duration)
             {
                 _hitInfo.isBullet = true;

@@ -53,7 +53,16 @@
 
     public enum SkillType
     {
-        Normal = 0,
-        Skill = 1,
+        All = -1,
+        Normal = 1,
+        Skill = 2,
+        Passive = 4,
+    }
+
+    public enum BattleState
+    {
+        None = 0,
+        Idle = 1,
+        InBattle = 2,
     }
 }

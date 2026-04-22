@@ -40,7 +40,7 @@ namespace Battle
         {
             this.Info = info;
             this.Owner = owner;
-            this.Define = DataManager.Instance.Skills[(int)this.Owner.Define.Class][info.Id];
+            this.Define = DataManager.Instance.Skills[(int)this.Owner.Define.TID][info.Id];
             this._cd = 0;
         }
 
@@ -265,8 +265,6 @@ namespace Battle
             }
             this.Hit++;
         }
-
-
 
         internal void DoHit(NSkillHitInfo hit)
         {            

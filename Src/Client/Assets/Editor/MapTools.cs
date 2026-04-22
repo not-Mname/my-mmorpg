@@ -82,7 +82,7 @@ public class MapTools
 
         foreach (var map in DataManager.Instance.Maps)
         {
-            string sceneFile = "Assets/Levels/";
+            string sceneFile = "Assets/Resources/Levels/";
             sceneFile += map.Value.Resource + ".unity";
 
             if (!System.IO.File.Exists(sceneFile))
@@ -109,7 +109,7 @@ public class MapTools
             }
         }
         DataManager.Instance.SaveSpawnPoints();
-        EditorSceneManager.OpenScene("Assets/Levels/" + name + ".unity", OpenSceneMode.Single);
+        EditorSceneManager.OpenScene("Assets/Resources/Levels/" + name + ".unity", OpenSceneMode.Single);
         EditorUtility.DisplayDialog("提示", "导出成功", "确定");
     }
 
