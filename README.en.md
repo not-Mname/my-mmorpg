@@ -1,171 +1,112 @@
-# MMORPG Game Client
+# MMORPG Game Project
 
-This is an MMORPG (Massively Multiplayer Online Role-Playing Game) client project developed using the Unity engine. The project includes core modules such as a complete character system, combat system, UI interface, and network communication.
+A client-side MMORPG (Massively Multiplayer Online Role-Playing Game) project developed using the Unity engine.
 
-## Project Structure
+## Project Overview
 
-### Character Models (`Art/Models/Characters/`)
-
-- **Warrior** - Melee physical damage class
-- **Wizard** - Ranged magical damage class
-- **Archer** - Ranged physical damage class
-
-Each class includes a full set of animation models:
-- Idle
-- Move_Forward/Back/Left/Right
-- AtkA/AtkB (Attack)
-- SkillA/SkillB/SkillC (Skills)
-- Hurt
-- Death
-
-### Monster Models (`Art/Models/Monsters/`)
-
-- M1001 - Skeleton Monster
-- M1002, M1003, M1004, M1005 - Various monsters
-- R001 - Mount model
-
-### NPC Models (`Art/Models/NPCs/`)
-
-- **DeliveryNPC** - Delivery NPC
-- **TaskNPC** - Quest NPC
-- **Treasure_poter** - Treasure Merchant
-- **Treasure_kingskull** - Treasure Chest Monster
-- **Treasure_redmob** - Red Monster
-
-### Map Scenes (`Src/Client/Assets/Levels/`)
-
-- **MainCity** - Main city scene
-- **Map01/Map02/Map03** - Outdoor maps
-- **CharSelect** - Character selection scene
-- **Loading** - Loading screen
-
-### Core Scripts (`Src/Client/Assets/Scripts/`)
-
-#### Combat System (`Battle/`)
-
-- `Skill.cs` - Skill class managing cooldown, casting, and hit detection
-- `SkillManager.cs` - Skill manager
-
-#### Entity System (`Entities/`)
-
-- `Entity.cs` - Base entity class
-- `BattleUnit.cs` - Battle unit base class (for characters and monsters)
-- `Character.cs` - Player character
-- `Monster.cs` - Monster
-
-#### GameObject Control (`GameObject/`)
-
-- `PlayerController.cs` - Player controller handling movement, jumping, and navigation
-- `EntityController.cs` - Entity animation controller
-- `MainPlayerCamera.cs` - Main player camera follower
-- `NPCController.cs` - NPC interaction controller
-- `GameObjectManager.cs` - Game object manager
-
-#### System Managers (`Managers/`)
-
-- `CharacterManager.cs` - Character management
-- `BagManager.cs` - Inventory management
-- `EquipManager.cs` - Equipment management
-- `ItemManager.cs` - Item management
-- `QuestManager.cs` - Quest management
-- `ShopManager.cs` - Shop management
-- `ChatManager.cs` - Chat management
-- `FriendManager.cs` - Friend management
-- `GuildManager.cs` - Guild management
-- `TeamManager.cs` - Team management
-- `SoundManager.cs` - Sound management
-- `UIManager.cs` - UI management
-
-#### Network Communication (`Network/`)
-
-- `NetClient.cs` - Network client responsible for server communication
-
-#### Business Services (`Services/`)
-
-- `UserService.cs` - User service (login, registration, character creation)
-- `MapService.cs` - Map service
-- `BattleService.cs` - Combat service
-- `ChatService.cs` - Chat service
-- `ItemService.cs` - Item service
-- `QuestService.cs` - Quest service
-- `GuildService.cs` - Guild service
-- `TeamService.cs` - Team service
-- `FriendService.cs` - Friend service
-
-#### UI System (`UI/`)
-
-- **UILogin.cs** - Login interface
-- **UICharacterSelect.cs** - Character selection interface
-- **UIMain.cs** - Main interface
-- **UIBag/** - Inventory interface
-- **UIEquip/** - Equipment interface
-- **UIFriends/** - Friends interface
-- **UIGuild/** - Guild interface
-- **UIChat/** - Chat interface
+This project is a complete MMORPG client featuring rich game content:
+- Multiple character classes (Warrior, Mage, Archer)
+- Comprehensive character animation system
+- NPC interaction system
+- Quest system
+- Inventory system
+- Social chat system
+- Multiplayer dungeons and maps
 
 ## Technology Stack
 
 - **Engine**: Unity
-- **Language**: C#
-- **Animation System**: Mecanim Animation
-- **Network Protocol**: Protobuf
-- **JSON Library**: JsonDotNet (Newtonsoft.Json)
+- **Animation System**: FBX model animations
+- **UI Framework**: Unity UI (UGUI)
 - **Animation Plugin**: DOTween
+- **Serialization**: JsonDotNet (Newtonsoft.Json)
+- **Network Protocol**: Protobuf
+- **Logging**: log4net
 
-## Features
+## Project Structure
 
-### Character System
-- 3 class options (Warrior, Wizard, Archer)
-- Character creation and selection
-- Equipment system
+```
+Art/
+├── Models/
+│   ├── Characters/     # Character models
+│   │   ├── Archer/     # Archer
+│   │   ├── Warrior/    # Warrior
+│   │   └── Wizard/     # Wizard
+│   ├── Monsters/       # Monster models
+│   └── NPCs/           # NPC models
+│
+UI/
+└── UI/                 # UI resources
+    ├── Common/         # Common UI components
+    ├── Fonts/          # Font files
+    ├── Icons/          # Icon resources
+    └── Login/          # Login interface
+
+Src/Client/Assets/
+├── Editor/             # Unity editor extensions
+├── Plugins/            # Third-party plugins
+│   └── DOTween/        # Animation plugin
+├── References/         # Reference libraries
+└── Resources/          # Game resources
+    ├── FX/             # Effect resources
+    └── Levels/         # Game scenes
+```
+
+## Character Classes
+
+### Warrior
+- Melee physical damage class
+- Skills: Basic Attack A/B, Skill A/B/C, Idle, Death
+
+### Archer
+- Ranged physical damage class
+- Skills: Basic Attack A/B, Jump, Move, Death
+
+### Wizard
+- Ranged magical damage class
+- Skills: Basic Attack A/B, Magic Skill, Death
+
+## NPC System
+
+- **DeliveryNPC**: Delivery/Teleport NPC
+- **TaskNPC**: Quest-giving NPC
+- **TreasureNPC**: Treasure-related NPC
+
+## Game Scenes
+
+- **MainCity**: Main city scene
+- **Map01/Map02/Map03**: Game level maps
+- **CharSelect**: Character selection interface
+- **Loading**: Loading screen
+
+## UI Features
+
+- Login/Registration interface
+- Chat system (World channel, Party channel)
 - Inventory system
-
-### Combat System
-- Skill casting and cooldown management
-- Skill hit detection
-- Damage calculation
-
-### Social System
-- Chat channels (World, Team, Private)
 - Friend system
-- Guild system
-- Team system
+- Mini-map
+- HP/MP/XP display
 
-### Quest System
-- Quest dialogue
-- Quest rewards
+## Installation Instructions
 
-### Item System
-- Store purchases
-- Item usage
-- Equipment equipping
+1. Install Unity Editor (recommended version: 2017+)
+2. Clone the project to your local machine
+3. Open the `Src/Client` directory in Unity
+4. Wait for asset import to complete
+5. Build and run the project
 
-## Usage Instructions
+## Development Notes
 
-1. Open the `Src/Client/` directory in Unity
-2. Ensure Unity 2017+ is installed
-3. After importing the project, configure the server address
-4. Build and run the client
+The project uses `MapTools.cs` to provide the following editor tools:
+- Export Teleporters
+- Export Spawn Points
+- Generate NavData
 
-## Directory Structure
+## License
 
-```
-Src/Client/
-├── Assets/
-│   ├── Art/          # Art assets (models, textures, UI)
-│   ├── Editor/       # Editor utility scripts
-│   ├── FX/           # Effect resources
-│   ├── Levels/       # Scene files
-│   ├── Models/       # 3D models
-│   ├── Plugins/      # Third-party plugins
-│   ├── References/   # Reference libraries (Protocol.dll, etc.)
-│   ├── Resources/    # Runtime assets
-│   └── Scripts/      # Source code
-└── ...
-```
+This project is intended solely for learning and communication purposes.
 
-## Notes
+---
 
-- This project contains only the client side and requires a corresponding server to function
-- Server address configuration must be updated in `NetClient`
-- Resource files are large; some files are not explicitly referenced in the code
+*This project is under active development...*
