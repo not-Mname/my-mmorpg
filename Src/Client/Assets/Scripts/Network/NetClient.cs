@@ -539,7 +539,7 @@ namespace Network
             catch (Exception e)
             {
                 // 捕获发送过程中的异常
-                Debug.Log("ProcessSend exception:" + e.ToString() + "\n");
+                Debug.LogError("ProcessSend exception:" + e.ToString() + "\n");
                 this.CloseConnection(NET_ERROR_SEND_EXCEPTION);
                 return false;
             }

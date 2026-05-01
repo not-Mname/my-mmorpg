@@ -26,7 +26,7 @@ public class UIGuildMemberItem : ListView.ListViewItem
         if(LevelText!= null) LevelText.text = info.Info.Level.ToString();
         if(ClassText!= null) ClassText.text = info.Info.Class.ToString();
         if(StatusText!= null) StatusText.text = info.Status == 1? "在线" : "离线";
-        if(JoinTimeText!= null) JoinTimeText.text = TimeUtil.GetTime(info.joinTime).ToShortDateString();
+        if(JoinTimeText!= null) JoinTimeText.text = TimeUtil.GetTime(info.JoinTime).ToShortDateString();
         if(TitleText!= null) TitleText.text = info.Title.ToString();
     }
 

@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+package SkillBridge.Message;
+
+option csharp_namespace = "SkillBridge.Message";
+option cc_enable_arenas = true;
+
+import "base.proto";
+
+message NUserInfo {
+	int32 id = 1;
+	NPlayerInfo player = 2;
+}
+
+message NPlayerInfo {
+	int32 id = 1;
+	repeated NCharacterInfo characters = 2;
+}
+
+message UserLoginRequest {
+	string user = 1;
+	string passward = 2;
+}
+
+message UserLoginResponse {
+	Result result = 1;
+	string errormsg = 2;
+	NUserInfo userinfo = 3;
+}
+
+
+message UserRegisterRequest
+{
+	string user = 1;
+	string passward = 2;
+}
+
+message UserRegisterResponse {
+	Result result = 1;
+	string errormsg = 2;
+}
+
+message UserCreateCharacterRequest
+{
+	string name = 1;
+	CharacterClass class = 2;
+}
+
+message UserCreateCharacterResponse {
+	Result result = 1;
+	string errormsg = 2;
+	repeated NCharacterInfo characters = 3;
+}
+
+message UserGameEnterRequest
+{
+	int32 characterIdx = 1;
+}
+
+message UserGameEnterResponse {
+	Result result = 1;
+	string errormsg = 2;
+	NCharacterInfo character = 3;
+}
+
+message UserGameLeaveRequest
+{
+}
+
+message UserGameLeaveResponse {
+	Result result = 1;
+	string errormsg = 2;
+}

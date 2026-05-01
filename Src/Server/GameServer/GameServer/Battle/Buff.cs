@@ -1,7 +1,7 @@
 ﻿using Common.Battle;
 using Common.Data;
 using Common.Utils;
-using GameServer.Battle;
+using GameServer.GBattle;
 using GameServer.Entities;
 using SkillBridge.Message;
 using System;
@@ -60,10 +60,10 @@ namespace Battle
             }
             NBuffInfo buff = new NBuffInfo()
             {
-                buffId = this.BuffId,
-                buffType = this._buffDefine.ID,
-                casterId = this._context.Caster.entityId,
-                ownerId = this._owner.entityId,
+                BuffId = this.BuffId,
+                BuffType = this._buffDefine.ID,
+                CasterId = this._context.Caster.entityId,
+                OwnerId = this._owner.entityId,
                 Action = BuffAction.Remove,
             };
             this._context.Battle.AddBuffAction(buff);
@@ -86,10 +86,10 @@ namespace Battle
 
             NBuffInfo buff = new NBuffInfo()
             {
-                buffId = this.BuffId,
-                buffType = this._buffDefine.ID,
-                casterId = this._context.Caster.entityId,
-                ownerId = this._owner.entityId,
+                BuffId = this.BuffId,
+                BuffType = this._buffDefine.ID,
+                CasterId = this._context.Caster.entityId,
+                OwnerId = this._owner.entityId,
                 Action = BuffAction.Hit,
                 Damage = damage,
             };
@@ -113,7 +113,7 @@ namespace Battle
             return new NDamageInfo()
             {
                 Damage = Math.Max(1, (int)final_damage),
-                entityId = _owner.entityId,
+                EntityId = _owner.entityId,
             };
         }
 
@@ -127,10 +127,10 @@ namespace Battle
             AddAttribute();
             NBuffInfo buff = new NBuffInfo()
             {
-                buffId = this.BuffId,
-                buffType = this._buffDefine.ID,
-                casterId = this._context.Caster.entityId,
-                ownerId = this._owner.entityId,
+                BuffId = this.BuffId,
+                BuffType = this._buffDefine.ID,
+                CasterId = this._context.Caster.entityId,
+                OwnerId = this._owner.entityId,
                 Action = BuffAction.Add,
             };
             this._context.Battle.AddBuffAction(buff);

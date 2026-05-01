@@ -58,7 +58,7 @@ namespace UI.MainUI
 
         public void OnClickFriend()
         {
-            UIManager.Instance.Show<UIFriends>();
+            UIManager.Instance.Show<UIFriend>();
         }
 
         public void ShowTeamUI(bool show)

@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package SkillBridge.Message;
+
+option csharp_namespace = "SkillBridge.Message";
+option cc_enable_arenas = true;
+
+import "base.proto";
+
+message ArenaChallengeRequest{
+	NArenaInfo info = 1;
+}
+
+message ArenaChallengeResponse{
+	Result result = 1;
+	string errormsg = 2;
+	NArenaInfo arena_info = 3;
+}
+
+message ArenaBeginResponse{
+	Result result = 1;
+	string errormsg = 2;
+	NArenaInfo arena_info = 3;
+}
+
+message ArenaEndResponse{
+	Result result = 1;
+	string errormsg = 2;
+	NArenaInfo arena_info = 3;
+}

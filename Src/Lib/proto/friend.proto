@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package SkillBridge.Message;
+
+option csharp_namespace = "SkillBridge.Message";
+option cc_enable_arenas = true;
+
+import "base.proto";
+
+message FriendAddRequest
+{
+	int32 from_id = 1;
+	string from_name = 2;
+	int32 to_id = 3;
+	string to_name = 4;
+}
+
+message FriendAddResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	FriendAddRequest request = 3;
+}
+
+message FriendListRequest
+{
+
+}
+
+message FriendListResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	repeated NFriendInfo friends = 3;
+}
+
+message FriendRemoveRequest
+{
+	int32 id = 1;
+	int32 friendId = 2;
+}
+
+message FriendRemoveResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	int32 id = 3;
+}

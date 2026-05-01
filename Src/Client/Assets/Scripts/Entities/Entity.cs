@@ -6,12 +6,13 @@ namespace Entities
 {
     public class Entity
     {
+        public bool Ready = true;
         public int EntityId;
         public Vector3Int Position;
         public Vector3Int Direction;
         public int Speed;
-        private NEntity _entityData;
         public IEntityController Controller { get; set; }
+        private NEntity _entityData;
 
         public NEntity EntityData
         {

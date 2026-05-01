@@ -21,7 +21,7 @@ public class UIQuestDialog : UIWindow
         }
         else
         {
-            if (quest.info.Status == QuestStatus.Completed)
+            if (quest.info.Status == QuestStatus.QuestCompleted)
             {
                 OpenQuests.gameObject.SetActive(false);
                 SubmitQuest.gameObject.SetActive(true);

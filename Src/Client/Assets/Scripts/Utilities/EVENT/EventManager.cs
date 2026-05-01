@@ -1,6 +1,8 @@
 // EventManager.cs
+using GameInterFace;
 using System;
 using System.Collections.Generic;
+using UnityEngine.Scripting;
 using Utilities;
 
 /// <summary>
@@ -8,7 +10,8 @@ using Utilities;
 /// 提供基于字符串键的事件订阅、取消订阅和触发功能
 /// 注意：每个事件名只能有一个处理器（后订阅的会覆盖前订阅）
 /// </summary>
-public class EventManager : Singleton<EventManager>
+[Preserve]
+public class EventManager : Singleton<EventManager>, IInitializable
 {
     /// <summary>
     /// 事件字典，存储事件名对应的处理器

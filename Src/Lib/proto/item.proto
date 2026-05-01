@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package SkillBridge.Message;
+
+option csharp_namespace = "SkillBridge.Message";
+option cc_enable_arenas = true;
+
+import "base.proto";
+
+message ItemBuyRequest
+{
+	int32 shopId = 1;
+	int32 shopItemId = 2;
+}
+
+message ItemBuyResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+}
+
+// Bag Protocol
+message BagSaveRequest
+{
+	NBagInfo bag = 1;
+}
+
+message BagSaveResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+}
+
+message ItemEquipResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+}
+message ItemEquipRequest
+{
+	int32 itemId = 1;
+	int32 slot = 2;
+	bool isEquip = 3;
+}

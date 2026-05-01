@@ -2,10 +2,10 @@ using Common;
 using Common.Battle;
 using Common.Data;
 using Common.Utils;
-using GameServer.Battle;
+using GameServer.GBattle;
 using GameServer.Core;
 using GameServer.Entities;
-using GameServer.Managers;
+using GameServer.Managers.Data;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
@@ -80,10 +80,10 @@ namespace Battle
         private NSkillHitInfo GetHitInfo(bool isBullet = false)
         {
             NSkillHitInfo hitInfo = new NSkillHitInfo();
-            hitInfo.casterId = this._context.Caster.entityId;
-            hitInfo.skillId = this.Info.Id;
-            hitInfo.hitId = this._hit;
-            hitInfo.isBullet = isBullet;
+            hitInfo.CasterId = this._context.Caster.entityId;
+            hitInfo.SkillId = this.Info.Id;
+            hitInfo.HitId = this._hit;
+            hitInfo.IsBullet = isBullet;
             return hitInfo;
         }
 
@@ -139,7 +139,7 @@ namespace Battle
             return new NDamageInfo()
             {
                 Damage = Math.Max(1, (int)final_damage),
-                entityId = target.entityId,
+                EntityId = target.entityId,
                 Critical = isCritical
             };
         }
@@ -305,7 +305,7 @@ namespace Battle
             // 技能正在施放中
             if (this.Status != SkillStatus.None)
             {
-                return SkillResult.Casting;
+                return SkillResult.SkillCasting;
             }
 
             // 检查目标类型为单体目标的情况

@@ -16,22 +16,21 @@ json-excel\json-excel json Tables\ Data\
 @copy Data\BuffDefine.txt ..\Client\Data\
 @copy Data\GameConfig.txt ..\Client\Data\
 
-
-@copy Data\CharacterDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\MapDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\LevelUpDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\SpawnRuleDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\NPCDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\ItemDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\ShopDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\QuestDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\EquipDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\ShopItemDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\SpawnPointDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\RideDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\SkillDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\BuffDefine.txt ..\Server\GameServer\GameServer\bin\Debug\Data
-@copy Data\GameConfig.txt ..\Server\GameServer\GameServer\bin\Debug\Data
+@copy Data\CharacterDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\MapDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\LevelUpDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\SpawnRuleDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\NPCDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\ItemDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\ShopDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\QuestDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\EquipDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\ShopItemDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\SpawnPointDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\RideDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\SkillDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\BuffDefine.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
+@copy Data\GameConfig.txt ..\Server\GameServer\GameServer\bin\Debug\net10.0\Data
 
 
 

@@ -1,5 +1,5 @@
 ﻿using Common.Data;
-using GameServer.Battle;
+using GameServer.GBattle;
 using GameServer.Entities;
 using System;
 using System.Collections.Generic;

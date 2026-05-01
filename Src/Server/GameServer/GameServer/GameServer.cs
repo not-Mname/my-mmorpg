@@ -1,8 +1,10 @@
-﻿using System.Threading;
+﻿using Common;
+using GameInterFace;
+using GameServer.Managers.Data;
+using GameServer.Managers.Entities;
+using GameServer.Services.Data;
 using Network;
-using GameServer.Services;
-using GameServer.Managers;
-using Common;
+using System.Reflection;
 
 namespace GameServer
 {
@@ -12,27 +14,63 @@ namespace GameServer
         bool running = false;
         NetService network;
 
-        public bool Init()
+        public bool Init(int port, string ip, string connectStr)
         {
             Log.Info("GameServer Init...");
-            int Port = Properties.Settings.Default.ServerPort;
-            network = new NetService();
-            network.Init(Port);
-            DBService.Instance.Init();
-            UserService.Instance.Init();
+            DBService.Instance.Init(connectStr);
             DataManager.Instance.Load();
-            MapService.Instance.Init();            
-            ItemService.Instance.Init();
-            BagService.Instance.Init();
-            QuestService.Instance.Init();
-            FriendService.Instance.Init();
-            TeamService.Instance.Init();
-            GuildService.Instance.Init();
-            ChatService.Instance.Init();
-            BattleSerevice.Instance.Init();
+            ServiceInit(() =>
+            {
+                network = new NetService();
+                network.Init(port, ip);
+            },
+            (object instance) =>
+            {
+                Log.Info($"{instance.GetType().Name} Initialized");
+            }
+            );
             thread = new Thread(new ThreadStart(this.Update));
-
             return true;
+        }
+
+        public void ServiceInit(Action OnFinished = null, Action<object> OnInited = null)
+        {
+            var types = Assembly.GetExecutingAssembly()
+        .GetTypes()
+        .Where(t =>
+            t.IsClass &&
+            !t.IsAbstract &&
+            typeof(IInitializable).IsAssignableFrom(t) // 非泛型接口判断
+        )
+        .ToList();
+            foreach (var type in types)
+            {
+                // 递归查找 Instance 属性，包括父类
+                PropertyInfo instanceProperty = null;
+                var currentType = type;
+                // 向上查找直到找到 Instance 属性或到达 Object 类为止
+                while (currentType != null && instanceProperty == null)
+                {
+                    instanceProperty = currentType.GetProperty("Instance", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+                    currentType = currentType.BaseType;
+                }
+
+                if (instanceProperty != null)
+                {
+
+                    var instance = instanceProperty.GetValue(null);
+                    if (instance is IInitializable initializable) // 直接转换为接口
+                    {
+                        initializable.Init(); // 直接调用方法
+                        OnInited?.Invoke(instance);
+                    }
+                }
+                else
+                {
+                    Log.Error($"No Instance property found for {type.Name}");
+                }
+            }
+            OnFinished?.Invoke();
         }
 
         public void Start()

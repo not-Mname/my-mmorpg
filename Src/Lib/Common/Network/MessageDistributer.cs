@@ -78,7 +78,6 @@ namespace Network
                     catch (System.Exception ex)
                     {
                         Log.ErrorFormat("Message handler exception:{0}, {1}, {2}, {3}", ex.InnerException, ex.Message, ex.Source, ex.StackTrace);
-                        UnityEngine.Debug.LogErrorFormat("Message handler exception:{0}, {1}, {2}, {3}", ex.InnerException, ex.Message, ex.Source, ex.StackTrace);
 
                         if (ThrowException)
                             throw ex;
@@ -144,6 +143,7 @@ namespace Network
             }
         }
 
+
         /// <summary>
         /// 停止消息处理器
         /// [多线程模式]
@@ -185,8 +185,9 @@ namespace Network
                         MessageDispatch<T>.Instance.Dispatch(package.sender, package.message.Response);
                 }
             }
-            catch
+            catch (Exception e)
             {
+                Log.ErrorFormat("MessageDistribute thread exception:{0}, {1}, {2}, {3}", e.InnerException, e.Message, e.Source, e.StackTrace);
             }
             finally
             {

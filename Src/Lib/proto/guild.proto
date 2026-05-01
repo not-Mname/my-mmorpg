@@ -1,0 +1,78 @@
+syntax = "proto3";
+
+package SkillBridge.Message;
+
+option csharp_namespace = "SkillBridge.Message";
+option cc_enable_arenas = true;
+
+import "base.proto";
+
+message GuildCreateRequest
+{
+	string guild_name = 1;
+	string guild_notice = 2;
+}
+
+message GuildCreateResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	NGuildInfo guildInfo = 3;
+}
+
+message GuildJoinRequest
+{
+	NGuildApplyInfo apply = 1;
+}
+
+message GuildJoinResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	NGuildApplyInfo apply = 3;
+}
+
+message GuildListRequest
+{
+}
+
+message GuildListResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	repeated NGuildInfo guilds = 3;
+}
+
+message GuildRequest
+{
+}
+
+message GuildResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	NGuildInfo guildInfo = 3;
+}
+
+message GuildLeaveRequest
+{
+}
+
+message GuildLeaveResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+}
+
+message GuildAdminRequest
+{
+	GuildAdminCommand command = 1;
+	int32 tatget = 2;
+}
+
+message GuildAdminResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	GuildAdminRequest command = 3;
+}

@@ -48,5 +48,7 @@ namespace Common.Data
         public float CRI { get; set; }
         //ai类型
         public string AI { get; set; }
+        //寻路类型
+        public string Pathfinding { get; set; }
     }
 }

@@ -28,7 +28,7 @@ public class MapTools
 
         foreach (var map in DataManager.Instance.Maps)
         {
-            string sceneFile = "Assets/Levels/" + map.Value.Resource + ".unity";
+            string sceneFile = "Assets/Resources/Levels/" + map.Value.Resource + ".unity";
 
             if (!System.IO.File.Exists(sceneFile))
             {
@@ -60,7 +60,7 @@ public class MapTools
             }
         }
         DataManager.Instance.SaveTeleporters();
-        EditorSceneManager.OpenScene("Assets/Levels/" + sceneName + ".unity", OpenSceneMode.Single);
+        EditorSceneManager.OpenScene("Assets/Resources/Levels/" + sceneName + ".unity", OpenSceneMode.Single);
         EditorUtility.DisplayDialog("提示", "导出成功", "确定");
     }
 

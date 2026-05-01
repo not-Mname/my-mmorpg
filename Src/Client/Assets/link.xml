@@ -1,0 +1,6 @@
+<linker>
+  <assembly fullname="log4net" preserve="all" />
+  <assembly fullname="Newtonsoft.Json" preserve="all" />
+  <assembly fullname="System.Core" preserve="all" />
+  <assembly fullname="System.Xml" preserve="all" />
+</linker>

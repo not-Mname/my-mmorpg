@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package SkillBridge.Message;
+
+option csharp_namespace = "SkillBridge.Message";
+option cc_enable_arenas = true;
+
+import "base.proto";
+
+message SkillCastRequest
+{
+	NSkillCastInfo castInfo = 1;
+}
+
+message SkillCastResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	repeated NSkillCastInfo castInfos = 3;
+}
+
+message SkillHitResponse {
+	Result result = 1;
+	string errormsg = 2;
+	repeated NSkillHitInfo hits = 3;
+}
+
+message BuffResponse {
+	Result result = 1;
+	string errormsg = 2;
+	repeated NBuffInfo buffs = 3;
+}

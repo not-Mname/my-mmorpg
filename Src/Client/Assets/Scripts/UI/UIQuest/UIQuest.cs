@@ -62,7 +62,7 @@ public class UIQuest : UIWindow
                 if (kv.Value.info == null)
                     continue;
             }
-            else if(kv.Value.info != null && kv.Value.info.Status == QuestStatus.Finished)
+            else if(kv.Value.info != null && kv.Value.info.Status == QuestStatus.QuestFinished)
             {
                 continue;
             }

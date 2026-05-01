@@ -55,7 +55,7 @@ namespace Battle
             _flyTime += Time.DeltaTime;
             if(_flyTime > _duration)
             {
-                _hitInfo.isBullet = true;
+                _hitInfo.IsBullet = true;
                 this._skill.DoHit(_hitInfo);
                 Stoped = true;
             }

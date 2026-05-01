@@ -1,6 +1,7 @@
 ﻿using GameServer.Entities;
-using GameServer.Managers;
-using GameServer.Models;
+using GameServer.Managers.Data;
+using GameServer.Managers.Entities;
+using GameServer.Models.Logic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,16 +60,16 @@ namespace GameServer
             }
             else if (mapId != null && playerId == null)
             {
-                res = res.Where(c => c.Info.mapId == mapId).ToList();
+                res = res.Where(c => c.Info.MapId == mapId).ToList();
             }
             else if (mapId != null && playerId != null)
             { 
-                res = res.Where(c => c.Info.mapId == mapId && c.Id == playerId).ToList();
+                res = res.Where(c => c.Info.MapId == mapId && c.Id == playerId).ToList();
             }
 
             foreach(var cha in res)
             {
-                Console.WriteLine("Name: {0}, entityId: {1}, level: {2}, exp: {3}, gold: {4}, x: {5}, y: {6}, z: {7}, direction: {8}, mapId: {9}", cha.Name, cha.entityId, cha.Level, cha.Exp, cha.Gold, cha.Position.x, cha.Position.y, cha.Position.z, cha.Direction, cha.Info.mapId);
+                Console.WriteLine("Name: {0}, entityId: {1}, level: {2}, exp: {3}, gold: {4}, x: {5}, y: {6}, z: {7}, direction: {8}, mapId: {9}", cha.Name, cha.entityId, cha.Level, cha.Exp, cha.Gold, cha.Position.x, cha.Position.y, cha.Position.z, cha.Direction, cha.Info.MapId);
             }
         }
 

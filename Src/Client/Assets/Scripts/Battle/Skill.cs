@@ -7,6 +7,7 @@ using Managers;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using Utilities;
@@ -268,10 +269,10 @@ namespace Battle
 
         internal void DoHit(NSkillHitInfo hit)
         {            
-            if(hit.isBullet || !this.Define.Bullet)
+            if(hit.IsBullet || !this.Define.Bullet)
             {
                 // 子弹命中 或者 非子弹技能 直接处理伤害 因为子弹技能要先释放子弹
-                DoHit(hit.hitId, hit.Damages);
+                DoHit(hit.HitId, hit.Damages.ToList());
             }
         }
 
@@ -300,7 +301,7 @@ namespace Battle
         {
             foreach (var damage in damages)
             {
-                var unit = EntityManager.Instance.GetEntity(damage.entityId) as BattleUnit;
+                var unit = EntityManager.Instance.GetEntity(damage.EntityId) as BattleUnit;
                 if (unit == null)
                 {
                     continue;

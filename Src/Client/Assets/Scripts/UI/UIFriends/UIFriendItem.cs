@@ -20,12 +20,12 @@ public class UIFriendItem : ListView.ListViewItem
         OriginImage.overrideSprite = selected ? SelectedBG : null;
     }
 
-    public void SetFriendInfo(NFriendInfo friendInfo)
+    public void SetFriendInfo(NFriendInfo FriendInfo)
 	{
-		this.FriendInfo = friendInfo;
-		if(this.NameText != null)this.NameText.text = friendInfo.friendInfo.Name;
-		if(this.LevelText != null) this.LevelText.text = "Lv." + friendInfo.friendInfo.Level.ToString();
-		if(this.ClassText != null) this.ClassText.text = friendInfo.friendInfo.Class.ToString();
-		if(this.StatusText != null) this.StatusText.text = friendInfo.Status == 1 ? "在线" : "离线";
+		this.FriendInfo = FriendInfo;
+		if(this.NameText != null)this.NameText.text = FriendInfo.FriendInfo.Name;
+		if(this.LevelText != null) this.LevelText.text = "Lv." + FriendInfo.FriendInfo.Level.ToString();
+		if(this.ClassText != null) this.ClassText.text = FriendInfo.FriendInfo.Class.ToString();
+		if(this.StatusText != null) this.StatusText.text = FriendInfo.Status == 1 ? "在线" : "离线";
 	}
 }

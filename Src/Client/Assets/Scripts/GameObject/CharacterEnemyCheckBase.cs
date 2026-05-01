@@ -76,12 +76,18 @@ public class CharacterEnemyCheckBase : MonoBehaviour
         Count = Physics.OverlapSphereNonAlloc(CentralPoint.position, Radius, Buffer, DetectionLayerMask);
     }
 
+    /// <summary>
+    /// 计算最近的碰撞体及其距离
+    /// </summary>
+    /// <returns>返回符合条件的碰撞体和距离</returns>
     public (Collider, float) CaculateMinDistanceCollider()
     {
         Collider minCollider = null;
         float minDistance = float.MaxValue;
         for (int i = 0; i < Count; i++)
         {
+            if (Buffer[i].transform == transform) { continue; }
+
             float distance = Vector3.Distance(CentralPoint.position, Buffer[i].transform.position);
             if (distance < minDistance)
             {

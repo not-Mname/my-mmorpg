@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package SkillBridge.Message;
+
+option csharp_namespace = "SkillBridge.Message";
+option cc_enable_arenas = true;
+
+import "base.proto";
+
+message QuestListRequest
+{
+	QuestListType listType = 1;
+}
+
+message QuestListResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	repeated NQuestInfo quests = 3;
+}
+
+message QuestAcceptRequest
+{
+	int32 quest_id = 1;
+}
+
+message QuestAcceptResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	NQuestInfo quest = 3;
+}
+
+message QuestSubmitRequest
+{
+	int32 quest_id = 1;
+}
+
+message QuestSubmitResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+	NQuestInfo quest = 3;
+}
+
+message QuestAbandonRequest
+{
+	int32 quest_id = 1;
+}
+
+message QuestAbandonResponse
+{
+	Result result = 1;
+	string errormsg = 2;
+}

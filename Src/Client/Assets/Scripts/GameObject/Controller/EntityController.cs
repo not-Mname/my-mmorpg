@@ -155,6 +155,13 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
     }
     #endregion
 
+    public void UpdateTransform()
+    {
+        this.position = GameObjectTool.LogicToWorld(entity.Position);
+        this.transform.position = this.position;
+        this.lastPosition = this.position;
+        UpdateDirection();
+    }
 
     public void Init()
     {
@@ -182,29 +189,23 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
         float distance = dir.magnitude;
         if (distance > 0.01f)
         {
-
-            // 对于AI角色，如果距离较大，直接设置位置
-            if (distance > 5f)
+            // speed 接近 0 时无法通过 Move 消除误差，直接 snap
+            if (speed < 0.01f || distance > 5f)
             {
-
-                // 距离较大，直接设置位置（避免累积误差）
                 this.transform.position = this.position;
-                LogHelper.Log($"[{this.gameObject.name}] 瞬移");
-                //LogHelper.Log($"[{this.gameObject.name}] SyncEntityTransform : Direct set position POS:{this.position} Distance:{distance}");
+                if (distance > 5f)
+                    LogHelper.Log($"[{this.gameObject.name}] 瞬移");
             }
             else
             {
-                // 小距离调整，使用Move
                 dir.Normalize();
                 this.characterController.Move(dir * speed * Time.deltaTime);
-                LogHelper.Log($"[{this.gameObject.name}] 移动");
-                //LogHelper.Log($"[{this.gameObject.name}] SyncEntityTransform : POS:{this.position} DIR:{this.direction} SPD:{this.speed} Move: [dir] - {dir} [speed] - {speed} [res] - {dir * speed * Time.deltaTime} Distance:{distance}");
+                LogHelper.Log($"[{this.gameObject.name}] 移动 dir : {dir }speed : {speed} distance : {dir * speed * Time.deltaTime}");
             }
         }
         this.transform.forward = this.direction;
         this.lastPosition = this.position;
         this.lastRotation = this.rotation;
-
     }
 
     public void Ride(int rideId)

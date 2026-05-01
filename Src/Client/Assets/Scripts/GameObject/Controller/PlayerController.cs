@@ -99,6 +99,7 @@ public class PlayerController : MonoBehaviour
         UpdateInput();
         Move();
     }
+
     private void OnLockEnemy(GameObject enemy)
     {
         if (enemy == null || enemy == MainPlayerCamera.Instance.Target)
@@ -111,6 +112,18 @@ public class PlayerController : MonoBehaviour
         EntityController enemyController = enemy.GetComponent<EntityController>();
         BattleManager.Instance.CurrentTarget = enemyController ? enemyController.entity as BattleUnit : null;
         MainPlayerCamera.Instance.Target = enemy;
+    }
+
+    public void OnLeaveMap()
+    {
+        this.characterController.enabled = false;
+    }
+
+    public void OnEnterMap()
+    {
+        this.entityController.UpdateTransform();
+        this.lastPos = this.transform.position;
+        this.characterController.enabled = true;
     }
     #endregion
 
@@ -181,7 +194,7 @@ public class PlayerController : MonoBehaviour
     {
         JumpHeight = 1.5f;
         Gravity = -9.81f;
-        Speed = 5;
+        Speed = 3;
         RunSpeed = 10;
         turnAngle = 15f;
         if (_agent == null)
@@ -201,7 +214,7 @@ public class PlayerController : MonoBehaviour
 
     private bool CheckCanMove()
     {
-        if (character == null || _autoNav || !InputManager.Instance || InputManager.Instance.IsInputMode)
+        if (character == null || _autoNav || !InputManager.Instance || InputManager.Instance.IsInputMode || !character.Ready)
         {
             return false;
         }

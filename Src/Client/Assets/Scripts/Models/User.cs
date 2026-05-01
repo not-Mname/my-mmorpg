@@ -1,6 +1,7 @@
 ﻿using Common.Data;
 using Entities;
 using SkillBridge.Message;
+using System;
 
 namespace Models
 {
@@ -11,16 +12,6 @@ namespace Models
         public NUserInfo Info
         {
             get { return userInfo; }
-        }
-
-        public void SetupUserInfo(NUserInfo info)
-        {
-            this.userInfo = info;
-        }
-
-        internal void AddGold(int value)
-        {
-            this.CurrentCharacterInfo.Gold += value;
         }
 
         public Character CurrentCharacter { get; set; }
@@ -36,7 +27,7 @@ namespace Models
         public int CurrentRide = 0;
         public void Ride(int id)
         {
-            if(id == 0)
+            if (id == 0)
             {
                 this.CurrentRide = 0;
                 CurrentCharacterObject.SendEntityEvent(EntityEvent.Ride, 0);
@@ -48,5 +39,18 @@ namespace Models
             }
         }
 
+        internal void Init()
+        {
+        }
+
+        public void SetupUserInfo(NUserInfo info)
+        {
+            this.userInfo = info;
+        }
+
+        internal void AddGold(int value)
+        {
+            this.CurrentCharacterInfo.Gold += value;
+        }
     }
 }

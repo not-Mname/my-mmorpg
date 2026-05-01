@@ -1,13 +1,15 @@
 ﻿using GameServer.Core;
+using GameServer.Models.Logic;
 using SkillBridge.Message;
 
 namespace GameServer.Entities
 {
-    public class Entity
+    class Entity
     {
         public int entityId
         {
             get { return this.entityData.Id; }
+            private set { this.entityData.Id = value; }
         }
 
         private Vector3Int position;
@@ -46,6 +48,7 @@ namespace GameServer.Entities
         }
 
         private NEntity entityData;
+        public bool ready = true;
 
         public NEntity EntityData
         {
@@ -68,13 +71,18 @@ namespace GameServer.Entities
             this.SetEntityData(this.entityData);
         }
 
+        public Map Map;
+
         public Entity(NEntity entity)
         {
-            this.entityData = entity;
+            SetEntityData(entity);
         }
 
         public void SetEntityData(NEntity entity)
         {
+            if(!ready){ return; }
+            this.entityId = entity.Id;
+            this.entityData = entity;
             this.Position = entity.Position;
             this.Direction = entity.Direction;
             this.speed = entity.Speed;
@@ -83,6 +91,17 @@ namespace GameServer.Entities
         public virtual void Update()
         {
             
+        }
+
+
+        internal virtual void OnEnterMap(Map map)
+        {
+            this.Map = map;
+        }
+
+        internal virtual void OnLeaveMap(Map map)
+        {
+            this.Map = null;
         }
     }
 }

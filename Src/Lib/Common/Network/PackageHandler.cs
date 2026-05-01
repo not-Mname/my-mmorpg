@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Common;
+using Google.Protobuf;
+using System;
 using System.IO;
 
 namespace Network
@@ -37,9 +39,10 @@ namespace Network
         /// <param name="data"></param>
         /// <param name="offset"></param>
         /// <param name="count"></param>
-        public void ReceiveData(byte[] data,int offset,int count)
+        public void ReceiveData(byte[] data, int offset, int count)
         {
-            if(stream.Position + count > stream.Capacity)
+            //Log.WarningFormat("Client DataReceived Len:{1}", count);
+            if (stream.Position + count > stream.Capacity)
             {
                 throw new Exception("PackageHandler write buffer overflow");
             }
@@ -47,7 +50,7 @@ namespace Network
 
             ParsePackage();
         }
-        
+
         /// <summary>
         /// 打包消息
         /// </summary>
@@ -56,14 +59,22 @@ namespace Network
         public static byte[] PackMessage(SkillBridge.Message.NetMessage message)
         {
             byte[] package = null;
+            byte[] body = message.ToByteArray();
+
             //序列化消息
-            using (MemoryStream ms = new MemoryStream())//using MemoryStream 保证可以释放资源
-            {
-                ProtoBuf.Serializer.Serialize(ms, message);//将消息序列化到内存流中
-                package = new byte[ms.Length + 4];//分配一个新的字节数组，长度为消息长度+4，4字节为消息长度
-                Buffer.BlockCopy(BitConverter.GetBytes(ms.Length), 0, package, 0, 4);//将消息长度写入字节数组的前4个字节
-                Buffer.BlockCopy(ms.GetBuffer(), 0, package, 4, (int)ms.Length);//将序列化后的消息写入字节数组的后面
-            }
+            using MemoryStream ms = new MemoryStream(body.Length + 4);
+            using BinaryWriter writer = new BinaryWriter(ms);
+            writer.Write(body.Length);
+            writer.Write(message.ToByteArray());
+            writer.Flush();
+            package = ms.ToArray();
+
+            //ProtoBuf.Serializer.Serialize(ms, message);//将消息序列化到内存流中
+            //ms.Write(message.ToByteArray(), 0, (int)ms.Length);//将序列化后的消息写入内存流中
+            //package = new byte[ms.Length + 4];//分配一个新的字节数组，长度为消息长度+4，4字节为消息长度
+            //Buffer.BlockCopy(BitConverter.GetBytes(ms.Length), 0, package, 0, 4);//将消息长度写入字节数组的前4个字节
+            //Buffer.BlockCopy(ms.GetBuffer(), 0, package, 4, (int)ms.Length);//将序列化后的消息写入字节数组的后面
+
             return package;
         }
 
@@ -74,12 +85,13 @@ namespace Network
         /// <param name="offset"></param>
         /// <param name="length"></param>
         /// <returns></returns>
-        public static SkillBridge.Message.NetMessage UnpackMessage(byte[] packet,int offset,int length)
+        public static SkillBridge.Message.NetMessage UnpackMessage(byte[] packet, int offset, int length)
         {
             SkillBridge.Message.NetMessage message = null;
             using (MemoryStream ms = new MemoryStream(packet, offset, length))
             {
-                message = ProtoBuf.Serializer.Deserialize<SkillBridge.Message.NetMessage>(ms);
+                message = SkillBridge.Message.NetMessage.Parser.ParseFrom(ms);
+                //message = ProtoBuf.Serializer.Deserialize<SkillBridge.Message.NetMessage>(ms);
             }
             return message;
         }

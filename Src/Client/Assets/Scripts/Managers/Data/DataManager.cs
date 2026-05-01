@@ -1,0 +1,169 @@
+using Common.Data;
+using Newtonsoft.Json;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
+using Utilities;
+
+public class DataManager : Singleton<DataManager>
+{
+    public string DataPath;
+    public Dictionary<int, MapDefine> Maps = null;
+    public Dictionary<int, CharacterDefine> Characters = null;
+    public Dictionary<int, TeleporterDefine> Teleporters = null;
+    public Dictionary<int, NPCDefine> NPCs = null;
+    public Dictionary<int, Dictionary<int, SpawnPointDefine>> SpawnPoints = null;
+    public Dictionary<int, Dictionary<int, SpawnRuleDefine>> SpawnRules = null;
+    public Dictionary<int, ItemDefine> Items = null;
+    public Dictionary<int, ShopDefine> Shops = null;
+    public Dictionary<int, Dictionary<int, ShopItemDefine>> ShopItems = null;
+    public Dictionary<int, EquipDefine> Equips = null;
+    public Dictionary<int, QuestDefine> Quests = null;
+    public Dictionary<int, RideDefine> Rides = null;
+    public Dictionary<int, Dictionary<int, SkillDefine>> Skills = null;
+    public Dictionary<int, BuffDefine> Buffs = null;
+
+
+    public DataManager()
+    {
+        this.DataPath = "Data/";
+        LogHelper.Log("DataManager > DataManager()", LogUser.DataManager);
+    }
+
+    public void Load()
+    {
+        string json = File.ReadAllText(this.DataPath + "MapDefine.txt");
+        this.Maps = JsonConvert.DeserializeObject<Dictionary<int, MapDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "CharacterDefine.txt");
+        this.Characters = JsonConvert.DeserializeObject<Dictionary<int, CharacterDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "TeleporterDefine.txt");
+        this.Teleporters = JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
+        this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>>(json);
+
+        json = File.ReadAllText(this.DataPath + "NPCDefine.txt");
+        this.NPCs = JsonConvert.DeserializeObject<Dictionary<int, NPCDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "ItemDefine.txt");
+        this.Items = JsonConvert.DeserializeObject<Dictionary<int, ItemDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "ShopDefine.txt");
+        this.Shops = JsonConvert.DeserializeObject<Dictionary<int, ShopDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "ShopItemDefine.txt");
+        this.ShopItems = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, ShopItemDefine>>>(json);
+
+        json = File.ReadAllText(this.DataPath + "EquipDefine.txt");
+        this.Equips = JsonConvert.DeserializeObject<Dictionary<int, EquipDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "QuestDefine.txt");
+        this.Quests = JsonConvert.DeserializeObject<Dictionary<int, QuestDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "SpawnRuleDefine.txt");
+        this.SpawnRules = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnRuleDefine>>>(json);
+
+        json = File.ReadAllText(this.DataPath + "RideDefine.txt");
+        this.Rides = JsonConvert.DeserializeObject<Dictionary<int, RideDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "SkillDefine.txt");
+        this.Skills = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SkillDefine>>>(json);
+
+        json = File.ReadAllText(this.DataPath + "BuffDefine.txt");
+        this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
+    }
+
+
+    public IEnumerator LoadData()
+    {
+        string json = File.ReadAllText(this.DataPath + "MapDefine.txt");
+        this.Maps = JsonConvert.DeserializeObject<Dictionary<int, MapDefine>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "CharacterDefine.txt");
+        this.Characters = JsonConvert.DeserializeObject<Dictionary<int, CharacterDefine>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "TeleporterDefine.txt");
+        this.Teleporters = JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
+        this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "NPCDefine.txt");
+        this.NPCs = JsonConvert.DeserializeObject<Dictionary<int, NPCDefine>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "ItemDefine.txt");
+        this.Items = JsonConvert.DeserializeObject<Dictionary<int, ItemDefine>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "ShopDefine.txt");
+        this.Shops = JsonConvert.DeserializeObject<Dictionary<int, ShopDefine>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "ShopItemDefine.txt");
+        this.ShopItems = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, ShopItemDefine>>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "EquipDefine.txt");
+        this.Equips = JsonConvert.DeserializeObject<Dictionary<int, EquipDefine>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "QuestDefine.txt");
+        this.Quests = JsonConvert.DeserializeObject<Dictionary<int, QuestDefine>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "SpawnRuleDefine.txt");
+        this.SpawnRules = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnRuleDefine>>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "RideDefine.txt");
+        this.Rides = JsonConvert.DeserializeObject<Dictionary<int, RideDefine>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "SkillDefine.txt");
+        this.Skills = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SkillDefine>>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "BuffDefine.txt");
+        this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
+
+        yield return null;
+
+    }
+
+#if UNITY_EDITOR
+    public void SaveTeleporters()
+    {
+        string json = JsonConvert.SerializeObject(this.Teleporters, Formatting.Indented);
+        Debug.Log(json);
+        File.WriteAllText(this.DataPath + "TeleporterDefine.txt", json);
+    }
+
+    public void SaveSpawnPoints()
+    {
+        string json = JsonConvert.SerializeObject(this.SpawnPoints, Formatting.Indented);
+        File.WriteAllText(this.DataPath + "SpawnPointDefine.txt", json);
+    }
+
+#endif
+}

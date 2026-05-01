@@ -5,6 +5,12 @@ using System.Text;
 
 namespace Common.Data
 {
+    public enum MapType
+    {
+        Normal,
+        Arena
+    }
+
     public class MapDefine
     {
         public int ID { get; set; }
@@ -12,5 +18,6 @@ namespace Common.Data
         public string Resource { get; set; }
         public string Music { get; set; }
         public string MiniMap { get; set; }
+        public MapType Type { get; set; }
     }
 }

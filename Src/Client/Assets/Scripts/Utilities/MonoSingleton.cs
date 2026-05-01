@@ -83,7 +83,7 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 
     protected virtual void OnDestroy()
     {
-        string name = typeof(T).Name;
-        Debug.Log($"{name} Destroyed");
+        //string name = typeof(T).Name;
+        //Debug.Log($"{name} Destroyed");
     }
 }

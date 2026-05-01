@@ -190,20 +190,20 @@ namespace Entities
 
         internal void DoSkillHit(NSkillHitInfo hit)
         {
-            var skill = this.SkillManager.GetSkill(hit.skillId);
+            var skill = this.SkillManager.GetSkill(hit.SkillId);
             skill.DoHit(hit);
         }
 
         internal void DoBuffAction(NBuffInfo buff)
         {
-            LogHelper.Log($"DoBuffAction: [name : {this.Name}] [buffId : {buff.buffId}] [action : {buff.Action}]", LogUser.Battle);
+            LogHelper.Log($"DoBuffAction: [name : {this.Name}] [BuffId : {buff.BuffId}] [action : {buff.Action}]", LogUser.Battle);
             switch (buff.Action)
             {
                 case BuffAction.Add:
-                    this.AddBuff(buff.buffId, buff.buffType, buff.casterId);
+                    this.AddBuff(buff.BuffId, buff.BuffType, buff.CasterId);
                     break;
                 case BuffAction.Remove:
-                    this.RemoveBuff(buff.buffId);
+                    this.RemoveBuff(buff.BuffId);
                     break;
                 case BuffAction.Hit:
                     this.DoDamage(buff.Damage, false);
@@ -211,18 +211,18 @@ namespace Entities
             }
         }
 
-        public void RemoveBuff(int buffId)
+        public void RemoveBuff(int BuffId)
         {
-            var buff = this.BuffManager.RemoveBuff(buffId);
+            var buff = this.BuffManager.RemoveBuff(BuffId);
             if (buff != null)
             {
                 OnBuffRemove?.Invoke(buff);
             }
         }
 
-        private void AddBuff(int buffId, int buffType, int casterId)
+        private void AddBuff(int BuffId, int buffType, int casterId)
         {
-            var buff = this.BuffManager.AddBuff(buffId, buffType, casterId);
+            var buff = this.BuffManager.AddBuff(BuffId, buffType, casterId);
             OnBuffAdd?.Invoke(buff);
         }
 

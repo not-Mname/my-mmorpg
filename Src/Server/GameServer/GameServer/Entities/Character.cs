@@ -1,16 +1,15 @@
 ﻿using Common;
 using Common.Data;
 using Common.Utils;
-using GameServer.Core;
-using GameServer.Managers;
-using GameServer.Models;
+using GameServer.Models.Data;
 using GameServer.Network;
+using Google.Protobuf;
 using SkillBridge.Message;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using GameServer.Models.Logic;
+using GameServer.Managers.Social;
+using GameServer.Managers.Quest;
+using GameServer.Managers.Items;
+using GameServer.Managers.Entities;
 
 namespace GameServer.Entities
 {
@@ -22,7 +21,7 @@ namespace GameServer.Entities
         public ItemManager itemManager;
         public StatusManager statusManager;
         public QuestManager questManager;
-        public FriendManager friendManager;
+        public FriendManager FriendManager;
         public Team Team;
         public double TeamUpdateTs;
 
@@ -40,20 +39,22 @@ namespace GameServer.Entities
             this.Info.Name = cha.Name;
             this.Info.Exp = (int)cha.EXP;
             this.Info.Class = (CharacterClass)cha.Class;
-            this.Info.mapId = cha.MapID;
+            this.Info.MapId = cha.MapID;
             this.Info.Gold = cha.Gold;
             this.Info.Ride = 0;
 
+            this.Map = MapManager.Instance[this.Data.MapID];
+
             itemManager = new ItemManager(this);
-            itemManager.GetItemInfos(Info.Items);
+            itemManager.GetItemInfos(Info.Items.ToList());
             statusManager = new StatusManager(this);
             questManager = new QuestManager(this);
-            questManager.GetQuestInfos(this.Info.Quests);
-            friendManager = new FriendManager(this);
-            friendManager.GetFriendInfos(this.Info.Friends);
-            this.Info.Equips = this.Data.Equips;
+            questManager.GetQuestInfos(this.Info.Quests.ToList());
+            FriendManager = new FriendManager(this);
+            FriendManager.GetFriendInfos(this.Info.Friends.ToList());
+            this.Info.Equips = ByteString.CopyFrom(this.Data.Equips);
             this.Info.Bag = new NBagInfo();
-            this.Info.Bag.Items = this.Data.Bag.Items;
+            this.Info.Bag.Items = ByteString.CopyFrom(this.Data.Bag.Items);
             this.Info.Bag.Unlocked = this.Data.Bag.Unlocked;
             this.Guild = GuildManager.Instance.GetGuild(this.Data.GuildId);
             if (this.Guild != null)
@@ -64,7 +65,7 @@ namespace GameServer.Entities
 
             this.Info.Dynamic = new NAttributeDynamic();
             this.Info.Dynamic.Hp = this.Data.HP;
-            this.Info.Dynamic.Mp = this.Data.MP;   
+            this.Info.Dynamic.Mp = this.Data.MP;
         }
 
         public void AddExp(int exp)
@@ -156,14 +157,14 @@ namespace GameServer.Entities
 
         public void Clear()
         {
-            this.friendManager.OfflineNotify();
+            this.FriendManager.OfflineNotify();
             if (this.Guild != null)
                 this.Guild.timestamp = TimeUtil.timestamp;
         }
 
         public void PostProcess(NetMessageResponse message)
         {
-            this.friendManager.PostProcess(message);
+            this.FriendManager.PostProcess(message);
             if (this.Team != null)
             {
                 if (TeamUpdateTs < TimeUtil.timestamp)
@@ -185,12 +186,12 @@ namespace GameServer.Entities
                 if (this.Info.Guild == null)
                 {
                     this.Info.Guild = this.Guild.GuildInfo(this);
-                    if (message.mapCharacterEnter != null && message.mapCharacterLeave != null)
+                    if (message.MapCharacterEnter != null && message.MapCharacterLeave != null)
                     {
                         GuildUpdateTs = this.Guild.timestamp;
                     }
                 }
-                if (GuildUpdateTs < this.Guild.timestamp && message.mapCharacterEnter == null)
+                if (GuildUpdateTs < this.Guild.timestamp && message.MapCharacterEnter == null)
                 {
                     Log.InfoFormat("PostProcess > Guild > GuildUpdateTs: {0} | TimeUtil.timestamp: {1}", GuildUpdateTs, TimeUtil.timestamp);
                     GuildUpdateTs = this.Guild.timestamp;
@@ -215,6 +216,20 @@ namespace GameServer.Entities
                 Class = Info.Class,
                 Level = Info.Level,
             };
+        }
+
+        internal override void OnEnterMap(Map map)
+        {
+            base.OnEnterMap(map);
+            this.Info.MapId = map.ID;
+
+        }
+
+        internal override void OnLeaveMap(Map map)
+        {
+            base.OnLeaveMap(map);
+            this.Info.MapId = -1;
+
         }
     }
 }

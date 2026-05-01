@@ -1,9 +1,9 @@
 ﻿using Battle;
 using Common.Battle;
 using Common.Data;
-using GameServer.Battle;
+using GameServer.GBattle;
 using GameServer.Core;
-using GameServer.Managers;
+using GameServer.Managers.Data;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
@@ -84,9 +84,9 @@ namespace GameServer.Entities
                 {
                     context.CastInfo = new NSkillCastInfo()
                     {
-                        casterId = this.entityId,
-                        targetId = context.Target.entityId,
-                        skillId = skill.Define.ID,
+                        CasterId = this.entityId,
+                        TargetId = context.Target.entityId,
+                        SkillId = skill.Define.ID,
                         Position = new NVector3(),
                         Result = context.Result,
                     };

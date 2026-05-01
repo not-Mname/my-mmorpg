@@ -35,7 +35,7 @@ public class PlayerEnemyCheck : CharacterEnemyCheckBase
         if (DetectionLayerMask == -1)// 如果没有设置LayerMask，则使用默认的'Enemy'层
         {
             Debug.LogWarning($"{gameObject.name}: LayerMask not set, using default 'Enemy' layer");
-            DetectionLayerMask = LayerMask.GetMask("Enemy");
+            DetectionLayerMask = LayerMask.GetMask("Enemy", "Player");
         }
     }
 
@@ -77,6 +77,7 @@ public class PlayerEnemyCheck : CharacterEnemyCheckBase
 
         for (int i = 0; i < Count; i++)
         {
+            if(Buffer[i].transform == transform) { continue; }
             Vector3 dir = (Buffer[i].transform.position - transform.position).normalized;
             float angle = Vector3.Angle(dir, CentralPoint.forward);
             if (angle < minAngle)

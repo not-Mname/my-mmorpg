@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using GameServer;
-using GameServer.Entities;
+﻿using GameServer.Entities;
+using GameServer.Models.Data;
 using GameServer.Network;
-using GameServer.Services;
+using GameServer.Services.Entities;
+using GameServer.Services.SEntity;
 using SkillBridge.Message;
 
 namespace Network

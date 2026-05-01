@@ -7,9 +7,11 @@ namespace MMO
 {
     public class SceneManager : MonoSingleton<SceneManager>
     {
-        UnityAction<float> onProgress = null;
+        public UnityAction OnSenceLoadDone = null;
         public string CurrentScene;
         private string _loadingScene;
+        public UnityAction<float> OnProgress = null;
+
 
         public void LoadScene(string name)
         {
@@ -24,16 +26,17 @@ namespace MMO
             async.completed += LevelLoadCompleted;
             while (!async.isDone)
             {
-                if (onProgress != null)
-                    onProgress(async.progress);
+                if (OnProgress != null)
+                    OnProgress?.Invoke(async.progress);
                 yield return null;
             }
+            OnSenceLoadDone?.Invoke();
         }
 
         private void LevelLoadCompleted(AsyncOperation obj)
         {
-            if (onProgress != null)
-                onProgress(1f);
+            if (OnProgress != null)
+                OnProgress(1f);
             this.CurrentScene = this._loadingScene;
             EVENT.Fire(Const.EventId.on_map_change, this.CurrentScene);
         }

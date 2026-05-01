@@ -10,6 +10,7 @@ namespace Common
         public static void Init(string name)
         {
             log = LogManager.GetLogger(name);
+
         }
 
         public static void Info(object message)

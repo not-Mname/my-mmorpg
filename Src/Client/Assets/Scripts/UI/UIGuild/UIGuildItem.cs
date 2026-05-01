@@ -22,8 +22,8 @@ public class UIGuildItem : ListView.ListViewItem
         Info = guild;
         IDText.text = guild.Id.ToString();
         NameText.text = guild.GuildName;
-        MemberNumberText.text = guild.memberCount.ToString();
-        LeaderText.text = guild.leaderName;
+        MemberNumberText.text = guild.MemberCount.ToString();
+        LeaderText.text = guild.LeaderName;
     }
 
     public override void OnSelected(bool selected)

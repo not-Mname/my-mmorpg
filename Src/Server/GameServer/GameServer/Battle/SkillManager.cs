@@ -1,6 +1,6 @@
 ﻿using Common.Battle;
 using GameServer.Entities;
-using GameServer.Managers;
+using GameServer.Managers.Data;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
