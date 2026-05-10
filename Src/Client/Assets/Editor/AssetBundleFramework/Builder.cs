@@ -180,7 +180,7 @@ namespace AssetBundleFramework
             .Replace("\\", "/");
 
         public static string HotUpdateScriptPath = Path
-            .GetFullPath(Path.Combine(Application.dataPath, "AssetBundle/HotUpdate/"))
+            .GetFullPath(Path.Combine(Application.dataPath, "Scripts/HotUpdate/"))
             .Replace("\\", "/");
 
         /// <summary>
@@ -271,10 +271,21 @@ namespace AssetBundleFramework
         /// Unity编辑器菜单项：构建Windows平台AssetBundle
         /// 提供一键式构建功能，简化开发者操作流程
         /// </summary>
-        [MenuItem("ResourceTools/ResourceBuild/Build")]
+        [MenuItem("MMORPG/ResourceTools/ResourceBuild/Build")]
         public static void BuildWindows()
         {
-            Build();
+            try
+            {
+                Build();
+            }catch(Exception e)
+            {
+                Debug.LogError(e);
+            }
+            finally
+            {
+
+            }
+           
         }
 
         #endregion
@@ -420,6 +431,14 @@ namespace AssetBundleFramework
                 string sourceFile = Path.GetFullPath(Path.Combine(HotUpdateDllPath, file)).Replace("\\", "/");
                 IOUtils.CreateDirectoryOfFile(destFile);
                 File.Copy(sourceFile, destFile);
+
+                string pdbName = file.Replace(".dll", ".pdb");
+                string sourcePdb = Path.GetFullPath(Path.Combine(HotUpdateDllPath, pdbName)).Replace("\\", "/");
+                if (File.Exists(sourcePdb))
+                {
+                    string destPdb = Path.GetFullPath(Path.Combine(destPath, pdbName)).Replace("\\", "/") + ".bytes";
+                    File.Copy(sourcePdb, destPdb);
+                }
             }
         }
 
@@ -675,7 +694,7 @@ namespace AssetBundleFramework
             //获取进度条显示范围
             float min = generateBuildInfoProgress.x; //最小进度值
             float max = generateBuildInfoProgress.y; //最大进度值
-
+             
             //显示初始进度条
             EditorUtility.DisplayProgressBar($"{nameof(GenerateManifest)}", "生成资源描述信息", min);
 

@@ -61,6 +61,11 @@ namespace GameServer.Entities
             this._pathfinding?.StopMove();
         }
 
+        internal void ClearTarget(BattleUnit target)
+        {
+            this._ai.ClearTarget(target);
+        }
+
         /// <summary>
         /// 查找可以释放的技能，支持多种技能类型组合，用位运算来判断技能类型是否匹配
         /// </summary>

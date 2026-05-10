@@ -6,8 +6,8 @@
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "MainCity",
-    "MiniMap": "buluzheng",
-    "Music": "bgm-town"
+    "MiniMap": "buluzheng.png",
+    "Music": "bgm-town.mp3"
   },
   "2": {
     "ID": 2,
@@ -16,8 +16,8 @@
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map01",
-    "MiniMap": "luorisenlin",
-    "Music": "bgm-map01"
+    "MiniMap": "luorisenlin.png",
+    "Music": "bgm-map01.mp3"
   },
   "3": {
     "ID": 3,
@@ -26,8 +26,8 @@
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map02",
-    "MiniMap": "luorisenlin",
-    "Music": "bgm-map02"
+    "MiniMap": "luorisenlin.png",
+    "Music": "bgm-map02.mp3"
   },
   "4": {
     "ID": 4,
@@ -36,7 +36,15 @@
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map03",
-    "MiniMap": "luoriyuhui",
-    "Music": "bgm-map02"
+    "MiniMap": "luoriyuhui.png",
+    "Music": "bgm-map02.mp3"
+  },
+  "5": {
+    "ID": 5,
+    "Name": "竞技场",
+    "Type": "Arena",
+    "SubType": "Arena",
+    "Resource": "Arena",
+    "Music": "bgm-town.mp3"
   }
 }

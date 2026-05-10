@@ -11,7 +11,7 @@
     "Price": 200,
     "SellPrice": 100,
     "StackLimit": 99,
-    "Icon": "UI/Items/hongp",
+    "Icon": "Assets/AssetBundle/UI/Items/hongp",
     "Function": "RecoverHP",
     "Param": 500
   },
@@ -27,7 +27,7 @@
     "Price": 200,
     "SellPrice": 100,
     "StackLimit": 99,
-    "Icon": "UI/Items/lanp",
+    "Icon": "Assets/AssetBundle/UI/Items/lanp",
     "Function": "RecoverMP",
     "Param": 500
   },
@@ -43,7 +43,7 @@
     "Price": 200,
     "SellPrice": 100,
     "StackLimit": 99,
-    "Icon": "UI/Items/mbao",
+    "Icon": "Assets/AssetBundle/UI/Items/mbao",
     "Function": "AddBuff",
     "Param": 1
   },
@@ -59,7 +59,7 @@
     "Price": 200,
     "SellPrice": 100,
     "StackLimit": 99,
-    "Icon": "UI/Items/haixiant",
+    "Icon": "Assets/AssetBundle/UI/Items/haixiant",
     "Function": "AddBuff",
     "Param": 2
   },
@@ -74,7 +74,7 @@
     "UseCD": 0.0,
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/jinengsh",
+    "Icon": "Assets/AssetBundle/UI/Items/jinengsh",
     "Function": "AddExp"
   },
   "6": {
@@ -87,7 +87,7 @@
     "UseCD": 0.0,
     "SellPrice": 5,
     "StackLimit": 99,
-    "Icon": "UI/Items/huizhang"
+    "Icon": "Assets/AssetBundle/UI/Items/huizhang"
   },
   "7": {
     "ID": 7,
@@ -100,7 +100,7 @@
     "UseCD": 0.0,
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/xiaoqiandai",
+    "Icon": "Assets/AssetBundle/UI/Items/xiaoqiandai",
     "Function": "AddMoney",
     "Param": 1000
   },
@@ -115,7 +115,7 @@
     "UseCD": 0.0,
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/daqiandai",
+    "Icon": "Assets/AssetBundle/UI/Items/daqiandai",
     "Function": "AddMoney",
     "Param": 10000
   },
@@ -130,7 +130,7 @@
     "UseCD": 0.0,
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/baoxiang",
+    "Icon": "Assets/AssetBundle/UI/Items/baoxiang",
     "Function": "AddItem"
   },
   "10": {
@@ -144,7 +144,7 @@
     "UseCD": 0.0,
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/jinengshu",
+    "Icon": "Assets/AssetBundle/UI/Items/jinengshu",
     "Function": "AddSkillPoint",
     "Param": 1
   },
@@ -158,7 +158,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1001"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1002": {
     "ID": 1002,
@@ -170,7 +170,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1002"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1003": {
     "ID": 1003,
@@ -182,7 +182,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1003"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1004": {
     "ID": 1004,
@@ -194,7 +194,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1004"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1005": {
     "ID": 1005,
@@ -206,7 +206,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1005"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1006": {
     "ID": 1006,
@@ -218,7 +218,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1006"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1007": {
     "ID": 1007,
@@ -230,7 +230,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1007"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2001": {
     "ID": 2001,
@@ -242,7 +242,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2001"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2002": {
     "ID": 2002,
@@ -254,7 +254,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2002"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2003": {
     "ID": 2003,
@@ -266,7 +266,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2003"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2004": {
     "ID": 2004,
@@ -278,7 +278,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2004"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2005": {
     "ID": 2005,
@@ -290,7 +290,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2005"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2006": {
     "ID": 2006,
@@ -302,7 +302,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2006"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2007": {
     "ID": 2007,
@@ -314,7 +314,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2007"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3001": {
     "ID": 3001,
@@ -326,7 +326,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3001"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3002": {
     "ID": 3002,
@@ -338,7 +338,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3002"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3003": {
     "ID": 3003,
@@ -350,7 +350,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3003"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3004": {
     "ID": 3004,
@@ -362,7 +362,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3004"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3005": {
     "ID": 3005,
@@ -374,7 +374,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3005"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3006": {
     "ID": 3006,
@@ -386,7 +386,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3006"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3007": {
     "ID": 3007,
@@ -398,7 +398,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3007"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1011": {
     "ID": 1011,
@@ -410,7 +410,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1011"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1012": {
     "ID": 1012,
@@ -422,7 +422,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1012"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1013": {
     "ID": 1013,
@@ -434,7 +434,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1013"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1014": {
     "ID": 1014,
@@ -446,7 +446,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1014"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1015": {
     "ID": 1015,
@@ -458,7 +458,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1015"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1016": {
     "ID": 1016,
@@ -470,7 +470,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1016"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "1017": {
     "ID": 1017,
@@ -482,7 +482,7 @@
     "LimitClass": "WARRIOR",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip1017"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2011": {
     "ID": 2011,
@@ -494,7 +494,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2011"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2012": {
     "ID": 2012,
@@ -506,7 +506,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2012"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2013": {
     "ID": 2013,
@@ -518,7 +518,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2013"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2014": {
     "ID": 2014,
@@ -530,7 +530,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2014"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2015": {
     "ID": 2015,
@@ -542,7 +542,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2015"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2016": {
     "ID": 2016,
@@ -554,7 +554,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2016"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "2017": {
     "ID": 2017,
@@ -566,7 +566,7 @@
     "LimitClass": "WIZARD",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip2017"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3011": {
     "ID": 3011,
@@ -578,7 +578,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3011"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3012": {
     "ID": 3012,
@@ -590,7 +590,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3012"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3013": {
     "ID": 3013,
@@ -602,7 +602,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3013"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3014": {
     "ID": 3014,
@@ -614,7 +614,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3014"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3015": {
     "ID": 3015,
@@ -626,7 +626,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3015"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3016": {
     "ID": 3016,
@@ -638,7 +638,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3016"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "3017": {
     "ID": 3017,
@@ -650,7 +650,7 @@
     "LimitClass": "ARCHER",
     "SellPrice": 5,
     "StackLimit": 1,
-    "Icon": "UI/Items/equip3017"
+    "Icon": "Assets/AssetBundle/UI/Items/equip"
   },
   "8001": {
     "ID": 8001,
@@ -662,7 +662,7 @@
     "Price": 1000,
     "SellPrice": 500,
     "StackLimit": 1,
-    "Icon": "UI/Items/ride8001"
+    "Icon": "Assets/AssetBundle/UI/Items/ride"
   },
   "8002": {
     "ID": 8002,
@@ -674,7 +674,7 @@
     "Price": 1000,
     "SellPrice": 500,
     "StackLimit": 1,
-    "Icon": "UI/Items/ride8002"
+    "Icon": "Assets/AssetBundle/UI/Items/ride"
   },
   "8003": {
     "ID": 8003,
@@ -686,6 +686,6 @@
     "Price": 1000,
     "SellPrice": 500,
     "StackLimit": 1,
-    "Icon": "UI/Items/ride8003"
+    "Icon": "Assets/AssetBundle/UI/Items/ride"
   }
 }

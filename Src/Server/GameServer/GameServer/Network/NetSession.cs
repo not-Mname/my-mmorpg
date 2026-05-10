@@ -2,7 +2,6 @@
 using GameServer.Models.Data;
 using GameServer.Network;
 using GameServer.Services.Entities;
-using GameServer.Services.SEntity;
 using SkillBridge.Message;
 
 namespace Network

@@ -648,7 +648,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1699870586}
-        m_TargetAssemblyTypeName: UICharacterSelect, Assembly-CSharp
+        m_TargetAssemblyTypeName:
         m_MethodName: OnSelectCreatedCharacter
         m_Mode: 3
         m_Arguments:
@@ -745,7 +745,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1699870586}
-        m_TargetAssemblyTypeName: UICharacterSelect, Assembly-CSharp
+        m_TargetAssemblyTypeName:
         m_MethodName: OnSelectCreatedCharacter
         m_Mode: 3
         m_Arguments:
@@ -888,6 +888,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 0e1a4c822899f94408e78aeb63f616ea, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a149e0294082bb948a9b133df36a6ebd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2264,6 +2268,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: def21edb286cffc45a98c9cf4578f185, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0f6f66c25b3e5cf4bae999569d09d9c4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3367,6 +3375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: c9d8afea1d6f5614485dd29f43645b28, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d480eb8963a02ee408a401519d362fd8, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3606,7 +3618,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1699870586}
-        m_TargetAssemblyTypeName: UICharacterSelect, Assembly-CSharp
+        m_TargetAssemblyTypeName:
         m_MethodName: OnSelectCreatedCharacter
         m_Mode: 3
         m_Arguments:

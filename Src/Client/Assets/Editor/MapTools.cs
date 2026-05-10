@@ -10,7 +10,7 @@ using UnityEngine.AI;
 
 public class MapTools
 {
-    [MenuItem("Map Tools/Export Teleporters")]//意思是按钮在菜单栏中显示为“Map Tools/Export Teleporters”
+    [MenuItem("MMORPG/MapTools/ExportTeleporters")]//意思是按钮在菜单栏中显示为“Map Tools/Export Teleporters”
     public static void ExportTeleporters()
     {
         DataManager.Instance.Load();
@@ -61,10 +61,10 @@ public class MapTools
         }
         DataManager.Instance.SaveTeleporters();
         EditorSceneManager.OpenScene("Assets/Resources/Levels/" + sceneName + ".unity", OpenSceneMode.Single);
-        EditorUtility.DisplayDialog("提示", "导出成功", "确定");
+        Debug.Log("导出传送点成功");
     }
 
-    [MenuItem("Map Tools/Export Spawn Points")]
+    [MenuItem("MMORPG/MapTools/ExportSpawnPoints")]
     public static void ExportSpawnPoints()
     {
         DataManager.Instance.Load();
@@ -110,10 +110,10 @@ public class MapTools
         }
         DataManager.Instance.SaveSpawnPoints();
         EditorSceneManager.OpenScene("Assets/Resources/Levels/" + name + ".unity", OpenSceneMode.Single);
-        EditorUtility.DisplayDialog("提示", "导出成功", "确定");
+        Debug.Log("导出刷怪点成功");
     }
 
-    [MenuItem("Map Tools/Generate NavData")]
+    [MenuItem("MMORPG/MapTools/GenerateNavData")]
     public static void GenerateNavData()
     {
         Material red = new Material(Shader.Find("Particles/Alpha Blended"));

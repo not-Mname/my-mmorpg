@@ -3,4 +3,29 @@
   <assembly fullname="Newtonsoft.Json" preserve="all" />
   <assembly fullname="System.Core" preserve="all" />
   <assembly fullname="System.Xml" preserve="all" />
+
+  <assembly fullname="UnityEngine.CoreModule" preserve="all">
+    <type fullname="UnityEngine.Vector3Int" preserve="all" />
+    <type fullname="UnityEngine.Vector3" preserve="all" />
+    <type fullname="UnityEngine.Vector2" preserve="all" />
+    <type fullname="UnityEngine.Vector2Int" preserve="all" />
+    <type fullname="UnityEngine.Color" preserve="all" />
+    <type fullname="UnityEngine.Quaternion" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+  </assembly>
+
+  <assembly fullname="UnityEngine.UI" preserve="all">
+    <type fullname="UnityEngine.UI.*" preserve="all" />
+  </assembly>
+
+  <assembly fullname="UnityEngine.TextRenderingModule" preserve="all">
+    <type fullname="TMPro.*" preserve="all" />
+  </assembly>
+
+  <assembly fullname="DG.Tweening" preserve="all">
+    <type fullname="DG.Tweening.*" preserve="all" />
+  </assembly>
 </linker>

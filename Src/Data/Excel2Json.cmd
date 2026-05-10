@@ -1,5 +1,21 @@
 json-excel\json-excel json Tables\ Data\
 
+@copy Data\CharacterDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\MapDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\LevelUpDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\SpawnRuleDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\NPCDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\ItemDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\ShopDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\QuestDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\EquipDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\ShopItemDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\SpawnPointDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\RideDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\SkillDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\BuffDefine.txt ..\Client\Assets\AssetBundle\Data\
+@copy Data\GameConfig.txt ..\Client\Assets\AssetBundle\Data\
+
 @copy Data\CharacterDefine.txt ..\Client\Data\
 @copy Data\MapDefine.txt ..\Client\Data\
 @copy Data\LevelUpDefine.txt ..\Client\Data\
@@ -34,4 +50,3 @@ json-excel\json-excel json Tables\ Data\
 
 
 
-pause
