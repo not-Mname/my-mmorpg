@@ -10,7 +10,7 @@ class MessageBox
     {
         if (_cacheRes == null)
         {
-            _cacheRes = Resloader.Instance.LoadAssetSync("Assets/AssetBundle/Prefab/UI/UIMessageBox");
+            _cacheRes = Resloader.Instance.LoadAssetSync("Assets/AssetBundle/Prefab/UI/UIMessageBox.prefab");
         }
 
         GameObject go = _cacheRes.Instantiate(true);

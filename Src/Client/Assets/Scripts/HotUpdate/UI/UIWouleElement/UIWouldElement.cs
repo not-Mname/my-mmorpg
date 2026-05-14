@@ -15,7 +15,7 @@ public class UIWouldElement : MonoBehaviour
 
     void Update()
     {
-        if(owner != null)
+        if(owner != null && MainPlayerCamera.Instance != null)
         {
             this.transform.position = (owner.position + Vector3.up * (controllerHeight + height));
             Transform cameraTransform = MainPlayerCamera.Instance.transform;

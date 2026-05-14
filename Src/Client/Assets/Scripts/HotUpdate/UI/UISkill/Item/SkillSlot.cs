@@ -34,6 +34,7 @@ namespace UISkill
 
         void Update()
         {
+            if(this._skill == null) { return; }
             if(this._skill.CD > 0)
             {
                 if(!this.ImgMask.enabled) this.ImgMask.enabled = true;

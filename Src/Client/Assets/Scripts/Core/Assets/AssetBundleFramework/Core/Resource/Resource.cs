@@ -23,7 +23,7 @@ namespace AssetBundleFramework
             // 查找资源所在的 Bundle 路径
             if (!ResourceManager.Instance.ResourceBundleDict.TryGetValue(url, out string bundleUrl))
             {
-                throw new Exception($"{nameof(Resource)}.{nameof(Load)}() {bundleUrl} is null");
+                throw new Exception($"{nameof(Resource)}.{nameof(Load)}() {url} is null");
             }
             // 加载 Bundle
             Bundle = BundleManager.Instance.Load(bundleUrl);
@@ -59,6 +59,15 @@ namespace AssetBundleFramework
             
             // 刷新异步资源（当同步资源的依赖包含异步时，需要立即返回）
             FreshAsyncAsset();
+
+            // 检测是否为场景 Bundle，场景必须通过 LoadScene 系列 API 加载
+            if (Bundle.isStreamedSceneAssetBundle)
+            {
+                throw new InvalidOperationException(
+                    $"资源 [{url}] 是一个场景文件，请使用 SceneResource / LoadScene API 加载，不要使用 LoadAsset。" +
+                    $"示例: ResourceManager.Instance.LoadScene(\"{url}\")");
+            }
+
             // 从 Bundle 中加载资源
             Asset = Bundle.LoadAsset(url, typeof(Object));
             done = true;

@@ -17,6 +17,12 @@ namespace AssetBundleFramework
         /// </summary>
         private AssetBundleCreateRequest _assetBundleCreateRequest;
 
+        /// <summary>
+        /// Bundle 异步加载进度 0-1
+        /// 供上层资源加载器计算总体进度使用
+        /// </summary>
+        internal float progress => _assetBundleCreateRequest?.progress ?? 0f;
+
 
         /// <summary>
         /// 更新异步加载状态

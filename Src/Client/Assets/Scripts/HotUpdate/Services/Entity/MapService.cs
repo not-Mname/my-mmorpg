@@ -1,4 +1,5 @@
-﻿using Common.Data;
+﻿using Asset;
+using Common.Data;
 using Entities;
 using GameInterFace;
 using Managers;
@@ -16,7 +17,7 @@ namespace Services
     internal class MapService : Singleton<MapService>, IDisposable, IInitializable
     {
         public int CurrentMapId;
-
+        public bool MapSystemInitDone = false;
         private bool _isLoadingDone = true;
 
         public void Dispose()
@@ -116,6 +117,11 @@ namespace Services
                 this._isLoadingDone = false;
                 SceneManager.Instance.LoadScene(map.Resource);
                 SoundManager.Instance.PlayMusic(map.Music);
+                if (!MapSystemInitDone)
+                {
+                    Resloader.Instance.LoadAssetSync("Assets/AssetBundle/Prefab/Level/MapSystem.prefab").Instantiate();
+                    MapSystemInitDone = true;
+                }
             }
             else
                 LogHelper.LogErrorFormat("EnterMap: Map {0} not existed", LogUser.MapService, mapId);

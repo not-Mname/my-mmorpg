@@ -46,7 +46,7 @@ namespace Managers
             this._miniMapCollider = collider;
             if (collider != null)
             {
-                miniMap.UpdateMap();
+                miniMap?.UpdateMap();
             }
         }
     }

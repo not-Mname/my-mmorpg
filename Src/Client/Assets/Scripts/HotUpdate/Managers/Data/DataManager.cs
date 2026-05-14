@@ -12,6 +12,7 @@ using Utilities;
 
 public class DataManager : Singleton<DataManager>
 {
+    public static bool Editor;
     public string DataPath;
     public Dictionary<int, MapDefine> Maps = null;
     public Dictionary<int, CharacterDefine> Characters = null;
@@ -28,14 +29,16 @@ public class DataManager : Singleton<DataManager>
     public Dictionary<int, Dictionary<int, SkillDefine>> Skills = null;
     public Dictionary<int, BuffDefine> Buffs = null;
 
-
     public DataManager()
     {
-#if UNITY_EDITOR
-        this.DataPath = "Data/";
-#else
-        this.DataPath = $"Assets/AssetBundle/Data/";
-#endif
+        if (Editor)
+        {
+            this.DataPath = "Data/";
+        }
+        else
+        {
+            this.DataPath = $"Assets/AssetBundle/Data/";
+        }
         LogHelper.Log("DataManager > DataManager()", LogUser.DataManager);
     }
 
@@ -135,6 +138,7 @@ public class DataManager : Singleton<DataManager>
 
     public void Load()
     {
+        this.DataPath = "Data/";
         string json = File.ReadAllText(this.DataPath + "MapDefine.txt");
         this.Maps = JsonConvert.DeserializeObject<Dictionary<int, MapDefine>>(json);
 
@@ -178,7 +182,6 @@ public class DataManager : Singleton<DataManager>
         this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
     }
 
-#if UNITY_EDITOR
     public IEnumerator LoadDataEditor(UI.Common.ProgressBar progressBar, TextMeshProUGUI progressText)
     {
         float step = 100f / 14f;
@@ -272,6 +275,7 @@ public class DataManager : Singleton<DataManager>
 
         progressBar.UpdateProgress();
     }
+
     public void SaveTeleporters()
     {
         string json = JsonConvert.SerializeObject(this.Teleporters, Formatting.Indented);
@@ -285,5 +289,4 @@ public class DataManager : Singleton<DataManager>
         File.WriteAllText(this.DataPath + "SpawnPointDefine.txt", json);
     }
 
-#endif
 }

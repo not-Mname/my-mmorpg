@@ -26,7 +26,7 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
                 // 如果场景中没有
                 if (_instance == null)
                 {
-                    Debug.LogError($"Singleton {typeof(T)} 未找到对象");
+                    //Debug.LogError($"Singleton {typeof(T)} 未找到对象");
                 }
             }
             return _instance;

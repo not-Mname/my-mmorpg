@@ -282,7 +282,7 @@ public class PlayerController : MonoBehaviour
     {
         v = InputManager.Instance.KeyValueVertical;
         h = InputManager.Instance.KeyValueHorizontal;
-        cameraDirY = MainPlayerCamera.Instance.transform.eulerAngles.y;
+        cameraDirY =  MainPlayerCamera.Instance == null ? 0 : MainPlayerCamera.Instance.transform.eulerAngles.y;
         if (InputManager.Instance.KeyValueLockEnemy)
         {
             Checker.Check();

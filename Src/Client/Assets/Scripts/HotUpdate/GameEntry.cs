@@ -30,7 +30,7 @@ namespace HotUpdate
         /// LoadingManager 转交控制权后的统一入口
         /// 此方法由 Core 通过反射调用
         /// </summary>
-        public static IEnumerator Run(LoadingManager loading)
+        public static IEnumerator Run(LoadingManager loading, bool editor)
         {
             Debug.Log("GameEntry Run");
             _progressBar = loading.progressBar;
@@ -41,7 +41,7 @@ namespace HotUpdate
 
             SoundManager.Instance.PlayMusic(SoundDefine.Music_Login);
 
-            yield return LoadAllConfig();
+            yield return LoadAllConfig(editor);
 
             yield return InitAllServices(loading);
 
@@ -65,14 +65,14 @@ namespace HotUpdate
             res.Instantiate();
         }
 
-        private static IEnumerator LoadAllConfig()
+        private static IEnumerator LoadAllConfig(bool editor)
         {
             Debug.Log("LoadAllConfig Run");
-#if UNITY_EDITOR
-            yield return DataManager.Instance.LoadDataEditor(_progressBar, _progressText);
-#else
-            yield return DataManager.Instance.Load(_progressBar, _progressText);
-#endif
+            DataManager.Editor = editor;
+            if (editor)
+            { yield return DataManager.Instance.LoadDataEditor(_progressBar, _progressText); }
+            else
+            { yield return DataManager.Instance.Load(_progressBar, _progressText); }
         }
 
         private static IEnumerator InitAllServices(LoadingManager loading)

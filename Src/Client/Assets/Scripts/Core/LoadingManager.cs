@@ -54,7 +54,7 @@ public class LoadingManager : MonoBehaviour
             {
                 var method = type.GetMethod("Run", BindingFlags.Static | BindingFlags.Public);
                 if (method != null)
-                { StartCoroutine((IEnumerator)method.Invoke(null, new object[] { this })); }
+                { StartCoroutine((IEnumerator)method.Invoke(null, new object[] { this , Editor})); }
             }
         }
         else
@@ -136,7 +136,7 @@ public class LoadingManager : MonoBehaviour
         progressBar.UpdateProgress();
         progressText.text = "下载完成!";
         HybirdCLRManager.Instance.Initialize();
-        StartCoroutine(HybirdCLRManager.Instance.InvokeStaticMethod<IEnumerator>("HotUpdate", "GameEntry", "Run", this));
+        StartCoroutine(HybirdCLRManager.Instance.InvokeStaticMethod<IEnumerator>("HotUpdate", "GameEntry", "Run", this, this.Editor));
     }
 
     public void ShowLogin()

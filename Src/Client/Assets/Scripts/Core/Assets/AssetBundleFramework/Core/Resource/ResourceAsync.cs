@@ -48,27 +48,31 @@ namespace AssetBundleFramework
 
         /// <summary>
         /// 从 Bundle 中实际加载资源对象
-        /// 处理流式场景和普通资源的加载逻辑
         /// </summary>
-        /// <exception cref="Exception">当 Bundle 为空时抛出异常</exception>
+        /// <exception cref="InvalidOperationException">当 Bundle 是场景类型时抛出，引导调用方使用 LoadScene API</exception>
         internal override void LoadAsset()
         {
             if (Bundle == null)
             {
-                throw new Exception($"{nameof(ResourceAsync)}.{nameof(LoadAsset)}() {nameof(Bundle)} not null");
+                throw new Exception($"{nameof(ResourceAsync)}.{nameof(LoadAsset)}() {nameof(Bundle)} 为空");
             }
 
-            // 非流式场景从异步请求中获取资源
-            if (!Bundle.isStreamedSceneAssetBundle)
+            // 检测是否为场景 Bundle，场景必须通过 LoadScene 系列 API 加载
+            if (Bundle.isStreamedSceneAssetBundle)
             {
-                if (_assetBundleRequest != null)
-                {
-                    Asset = _assetBundleRequest.asset;
-                }
-                else
-                {
-                    Asset = Bundle.LoadAsset(url, typeof(Object));
-                }
+                throw new InvalidOperationException(
+                    $"资源 [{url}] 是一个场景文件，请使用 SceneResource / LoadScene API 加载，不要使用 LoadAsset。" +
+                    $"示例: ResourceManager.Instance.LoadScene(\"{url}\", LoadSceneMode.Single, async: true)");
+            }
+
+            // 从异步请求中获取资源
+            if (_assetBundleRequest != null)
+            {
+                Asset = _assetBundleRequest.asset;
+            }
+            else
+            {
+                Asset = Bundle.LoadAsset(url, typeof(Object));
             }
 
             done = true;
@@ -208,7 +212,14 @@ namespace AssetBundleFramework
         {
             if (Bundle == null)
             {
-                throw new Exception($"{nameof(ResourceAsync)}.{nameof(LoadAssetAsync)}() {nameof(Bundle)} not null");
+                throw new Exception($"{nameof(ResourceAsync)}.{nameof(LoadAssetAsync)}() {nameof(Bundle)} 为空");
+            }
+
+            // 场景 Bundle 不能通过 LoadAssetAsync 加载，必须在更早阶段被拦截
+            if (Bundle.isStreamedSceneAssetBundle)
+            {
+                throw new InvalidOperationException(
+                    $"资源 [{url}] 是场景文件，不能通过 LoadAssetAsync 加载。请使用 LoadScene API");
             }
 
             _assetBundleRequest = Bundle.LoadAssetAsync(url, typeof(Object));

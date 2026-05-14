@@ -1,4 +1,5 @@
 ﻿using Managers;
+using Services;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,10 @@ public class MapController : MonoBehaviour
 
     IEnumerator OnStart()
     {
-        yield return null;
+        if (!MapService.Instance.MapSystemInitDone)
+        {
+            yield return null;
+        }
         MiniMapManager.Instance.UpdateMiniMap(miniMapBoundingBox);
     }
 

@@ -28,7 +28,7 @@ public class MapTools
 
         foreach (var map in DataManager.Instance.Maps)
         {
-            string sceneFile = "Assets/Resources/Levels/" + map.Value.Resource + ".unity";
+            string sceneFile = $"Assets/AssetBundle/Levels/{map.Value.Resource}/{map.Value.Resource}.unity";
 
             if (!System.IO.File.Exists(sceneFile))
             {
@@ -60,7 +60,7 @@ public class MapTools
             }
         }
         DataManager.Instance.SaveTeleporters();
-        EditorSceneManager.OpenScene("Assets/Resources/Levels/" + sceneName + ".unity", OpenSceneMode.Single);
+        EditorSceneManager.OpenScene($"Assets/AssetBundle/Levels/{sceneName}/{sceneName}.unity", OpenSceneMode.Single);
         Debug.Log("导出传送点成功");
     }
 
@@ -82,9 +82,8 @@ public class MapTools
 
         foreach (var map in DataManager.Instance.Maps)
         {
-            string sceneFile = "Assets/Resources/Levels/";
-            sceneFile += map.Value.Resource + ".unity";
-
+            string sceneFile = sceneFile = $"Assets/AssetBundle/Levels/{map.Value.Resource}/{map.Value.Resource}.unity";
+            
             if (!System.IO.File.Exists(sceneFile))
             {
                 Debug.LogWarningFormat("场景文件不存在：{0}", sceneFile);
@@ -109,7 +108,7 @@ public class MapTools
             }
         }
         DataManager.Instance.SaveSpawnPoints();
-        EditorSceneManager.OpenScene("Assets/Resources/Levels/" + name + ".unity", OpenSceneMode.Single);
+        EditorSceneManager.OpenScene($"Assets/AssetBundle/Levels/{name}/{name}.unity", OpenSceneMode.Single);
         Debug.Log("导出刷怪点成功");
     }
 

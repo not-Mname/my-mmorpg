@@ -2,8 +2,8 @@
 using HotUpdate;
 using System;
 using System.IO;
-using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Asset
 {
@@ -72,6 +72,69 @@ namespace Asset
         public ResourceAwaiter LoadAssetWithAwaiter(string path)
         {
             return _resourceManager.LoadWithAwaiter(path);
+        }
+        #endregion
+
+        #region 场景加载
+        /// <summary>
+        /// 同步加载场景
+        /// 从 AssetBundle 中同步加载场景并切换/叠加
+        /// 注意：同步加载会阻塞主线程，大场景建议使用异步方法
+        /// </summary>
+        /// <param name="path">场景的资源路径，如 "assets/assetbundle/levels/maincity.unity"</param>
+        /// <param name="mode">场景加载模式：Single 替换所有场景，Additive 叠加到当前场景</param>
+        /// <returns>场景资源对象，可用于后续卸载场景</returns>
+        public IResource LoadSceneSync(string path, LoadSceneMode mode = LoadSceneMode.Single)
+        {
+            return _resourceManager.LoadScene(path, mode);
+        }
+
+        /// <summary>
+        /// 异步加载场景，协程专用
+        /// 返回的 SceneResource（实际为 SceneResourceAsync）继承自 CustomYieldInstruction，可在协程中 yield return
+        /// </summary>
+        /// <param name="path">场景的资源路径</param>
+        /// <param name="mode">场景加载模式</param>
+        /// <returns>场景资源对象，可 yield return 等待加载完成</returns>
+        public IResource LoadSceneAsync(string path, LoadSceneMode mode = LoadSceneMode.Single)
+        {
+            return _resourceManager.LoadScene(path, mode, async: true);
+        }
+
+        /// <summary>
+        /// 异步加载场景，回调方式
+        /// 加载完成后自动触发回调，不阻塞主线程，适合做加载进度界面
+        /// </summary>
+        /// <param name="path">场景的资源路径</param>
+        /// <param name="mode">场景加载模式</param>
+        /// <param name="callback">加载完成回调，参数为已加载完成的场景资源</param>
+        public void LoadSceneWithCallback(string path, LoadSceneMode mode, Action<IResource> callback)
+        {
+            _resourceManager.LoadSceneWithCallback(path, mode, callback);
+        }
+
+        /// <summary>
+        /// 异步加载场景，async/await 方式
+        /// 返回 ResourceAwaiter，支持使用 await 关键字等待场景加载完成
+        /// await 返回 IResource 类型，可强转为 SceneResource 使用
+        /// </summary>
+        /// <param name="path">场景的资源路径</param>
+        /// <param name="mode">场景加载模式</param>
+        /// <returns>可被 await 的异步等待对象</returns>
+        public ResourceAwaiter LoadSceneWithAwaiter(string path, LoadSceneMode mode = LoadSceneMode.Single)
+        {
+            return _resourceManager.LoadSceneWithAwaiter(path, mode);
+        }
+
+        /// <summary>
+        /// 卸载场景
+        /// 自动卸载场景并释放对应的 AssetBundle 资源
+        /// 引用计数归零后延迟到 LateUpdate 统一执行卸载
+        /// </summary>
+        /// <param name="resource">由加载方法返回的场景资源对象</param>
+        public void UnloadScene(IResource resource)
+        {
+            _resourceManager.UnloadScene(resource as AResource);
         }
         #endregion
 

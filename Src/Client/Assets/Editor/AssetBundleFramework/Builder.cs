@@ -160,7 +160,7 @@ namespace AssetBundleFramework
         /// </summary>
         public readonly static BuildAssetBundleOptions buildAssetBundleOptions =
             BuildAssetBundleOptions.ChunkBasedCompression | // 使用LZ4压缩算法，提供良好的压缩比和解压速度
-            BuildAssetBundleOptions.DeterministicAssetBundle | // 确保相同内容产生相同的Bundle，便于增量更新
+            //BuildAssetBundleOptions.DeterministicAssetBundle | // 确保相同内容产生相同的Bundle，便于增量更新
             BuildAssetBundleOptions.StrictMode | // 严格模式，遇到警告即视为错误
             BuildAssetBundleOptions.DisableLoadAssetByFileName | // 禁用通过文件名直接加载资源，必须通过Bundle加载
             BuildAssetBundleOptions.DisableLoadAssetByFileNameWithExtension; // 禁用带扩展名的文件名加载
@@ -1037,6 +1037,10 @@ namespace AssetBundleFramework
                     string extension = Path.GetExtension(tempAssetUrl).ToLower();
                     if (string.IsNullOrEmpty(extension) || extension == ".cs" || extension == ".dll")
                         continue; //跳过无扩展名、脚本和程序集文件
+
+                    //检查是否在全局排除列表中（如光照数据、导航网格等编辑器资源）
+                    if (buildSetting.IsExcluded(tempAssetUrl))
+                        continue;
 
                     //添加有效的依赖资源
                     dependencyList.Add(tempAssetUrl);

@@ -17,7 +17,7 @@
     "PKMode": false,
     "Resource": "Map01",
     "MiniMap": "luorisenlin.png",
-    "Music": "bgm-map01.mp3"
+    "Music": "bgm-map01.wav"
   },
   "3": {
     "ID": 3,
@@ -27,7 +27,7 @@
     "PKMode": false,
     "Resource": "Map02",
     "MiniMap": "luorisenlin.png",
-    "Music": "bgm-map02.mp3"
+    "Music": "bgm-map02.wav"
   },
   "4": {
     "ID": 4,
@@ -37,7 +37,7 @@
     "PKMode": false,
     "Resource": "Map03",
     "MiniMap": "luoriyuhui.png",
-    "Music": "bgm-map02.mp3"
+    "Music": "bgm-map03.wav"
   },
   "5": {
     "ID": 5,

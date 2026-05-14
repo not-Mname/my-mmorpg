@@ -42,6 +42,51 @@ namespace AssetBundleFramework
         public string BuildRoot { get; set; }
 
         /// <summary>
+        /// 需要排除的资源后缀，用竖线(|)分隔
+        /// 例如 ".lighting|.exr" 表示排除所有 .lighting 和 .exr 文件
+        /// 用于过滤编辑器自动生成、运行时不需要的资源
+        /// </summary>
+        [DisplayName("排除后缀列表")]
+        [XmlAttribute("ExcludeExtensions")]
+        public string ExcludeExtensions { get; set; }
+
+        /// <summary>
+        /// 需要排除的Unity资源类型名称，用竖线(|)分隔
+        /// 例如 "LightingDataAsset|NavMeshData" 表示排除所有该类型的Asset
+        /// 排除的资源不会被打包进任何AssetBundle
+        /// </summary>
+        [DisplayName("排除资源类型列表")]
+        [XmlAttribute("ExcludeAssetTypes")]
+        public string ExcludeAssetTypes { get; set; }
+
+        /// <summary>
+        /// 解析后的排除后缀列表（运行时生成，不参与XML序列化）
+        /// </summary>
+        [XmlIgnore]
+        public List<string> ExcludeExtensionList { get; set; } = new();
+
+        /// <summary>
+        /// 解析后的排除资源类型列表（运行时生成，不参与XML序列化）
+        /// </summary>
+        [XmlIgnore]
+        public List<string> ExcludeAssetTypeList { get; set; } = new();
+
+        /// <summary>
+        /// 需要排除的目录名称或路径，用竖线(|)分隔
+        /// 不含"/"时按目录名匹配（任意层级）；含"/"时按路径前缀匹配
+        /// 例如 "ignore|Assets/Extra/ignore" 表示排除所有 ignore 目录和指定路径下的资源
+        /// </summary>
+        [DisplayName("排除目录名称列表")]
+        [XmlAttribute("ExcludeDirNames")]
+        public string ExcludeDirNames { get; set; }
+
+        /// <summary>
+        /// 解析后的排除目录名称列表（运行时生成，不参与XML序列化）
+        /// </summary>
+        [XmlIgnore]
+        public List<string> ExcludeDirNameList { get; set; } = new();
+
+        /// <summary>
         /// 构建项列表
         /// 定义具体的资源打包规则，包括路径、类型、后缀等详细配置
         /// 每个BuildItem代表一组相关的打包配置
@@ -116,6 +161,50 @@ namespace AssetBundleFramework
 
                 // 将构建项添加到字典中，以资源路径为键
                 ItemDic.Add(item.AssetPath, item);
+            }
+
+            // 解析排除后缀列表
+            if (!string.IsNullOrEmpty(ExcludeExtensions))
+            {
+                string[] extensions = ExcludeExtensions.Split("|");
+                for (int j = 0; j < extensions.Length; j++)
+                {
+                    string ext = extensions[j].Trim().ToLowerInvariant();
+                    if (!string.IsNullOrEmpty(ext))
+                    {
+                        if (!ext.StartsWith("."))
+                            ext = "." + ext;
+                        ExcludeExtensionList.Add(ext);
+                    }
+                }
+            }
+
+            // 解析排除资源类型列表
+            if (!string.IsNullOrEmpty(ExcludeAssetTypes))
+            {
+                string[] types = ExcludeAssetTypes.Split("|");
+                for (int j = 0; j < types.Length; j++)
+                {
+                    string typeName = types[j].Trim();
+                    if (!string.IsNullOrEmpty(typeName))
+                    {
+                        ExcludeAssetTypeList.Add(typeName);
+                    }
+                }
+            }
+
+            // 解析排除目录名称列表
+            if (!string.IsNullOrEmpty(ExcludeDirNames))
+            {
+                string[] dirs = ExcludeDirNames.Split("|");
+                for (int j = 0; j < dirs.Length; j++)
+                {
+                    string dirName = dirs[j].Trim().ToLowerInvariant();
+                    if (!string.IsNullOrEmpty(dirName))
+                    {
+                        ExcludeDirNameList.Add(dirName);
+                    }
+                }
             }
         }
 
@@ -224,6 +313,59 @@ namespace AssetBundleFramework
                 if (file.StartsWith(ignorePath, StringComparison.InvariantCulture))
                 {
                     return true;
+                }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// 检查资源是否在全局排除列表中
+        /// 支持三层过滤：文件后缀、Unity资源类型、目录名称
+        /// 排除的资源不会参与AssetBundle打包及其依赖分析
+        /// </summary>
+        /// <param name="assetUrl">资源完整路径</param>
+        /// <returns>true表示该资源需要被排除</returns>
+        public bool IsExcluded(string assetUrl)
+        {
+            // 检查后缀排除
+            if (ExcludeExtensionList.Count > 0)
+            {
+                string extension = Path.GetExtension(assetUrl).ToLowerInvariant();
+                if (ExcludeExtensionList.Contains(extension))
+                    return true;
+            }
+
+            // 检查资源类型排除
+            if (ExcludeAssetTypeList.Count > 0)
+            {
+                Type assetType = AssetDatabase.GetMainAssetTypeAtPath(assetUrl);
+                if (assetType != null && ExcludeAssetTypeList.Contains(assetType.Name))
+                    return true;
+            }
+
+            // 检查目录排除
+            // 含"/"按路径前缀匹配，不含"/"按目录名匹配任意层级
+            if (ExcludeDirNameList.Count > 0)
+            {
+                string dirPath = Path.GetDirectoryName(assetUrl).Replace("\\", "/").ToLowerInvariant();
+                for (int i = 0; i < ExcludeDirNameList.Count; i++)
+                {
+                    string excludeDir = ExcludeDirNameList[i];
+                    if (excludeDir.Contains("/"))
+                    {
+                        if (dirPath.StartsWith(excludeDir))
+                            return true;
+                    }
+                    else
+                    {
+                        string[] segments = dirPath.Split('/');
+                        for (int j = 0; j < segments.Length; j++)
+                        {
+                            if (segments[j] == excludeDir)
+                                return true;
+                        }
+                    }
                 }
             }
 
