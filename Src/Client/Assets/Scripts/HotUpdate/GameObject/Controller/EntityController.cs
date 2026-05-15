@@ -26,7 +26,7 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
     /// <summary>
     /// 位置平滑收敛系数，值越大追赶越快。建议范围 10~20。
     /// </summary>
-    public float smoothFactor = 15f;
+    public float smoothFactor = 20f;
     public float jumpPower = 3.0f;
 
     public bool isPlayer = false;
@@ -182,26 +182,23 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
         this.speed = GameObjectTool.LogicToWorld(entity.Speed);
 
 
-        Vector3 dir = this.position - transform.position;
-        float distance = dir.magnitude;
-        if (distance > 0.01f)
+        Vector3 diff = this.position - transform.position;
+        float distance = diff.magnitude;
+        if (distance > 5f)
         {
-            // speed 接近 0 时无法通过 Move 消除误差，直接 snap
-            if (speed < 0.01f || distance > 5f)
-            {
-                this.transform.position = this.position;
-                if (distance > 5f)
-                    Debug.LogWarning($"[{this.gameObject.name}] 瞬移 distance:{distance}");
-            }
-            else
-            {
-                // 指数衰减平滑：每帧消除固定比例的剩余距离，保证一定收敛到目标位置
-                float t = 1.0f - Mathf.Exp(-smoothFactor * Time.deltaTime);
-                Vector3 newPos = Vector3.Lerp(transform.position, this.position, t);
-                Vector3 moveDelta = newPos - transform.position;
-                this.characterController.Move(moveDelta);
-            }
+            // 偏差过大直接瞬移
+            this.transform.position = this.position;
+            Debug.LogWarning($"[{this.gameObject.name}] 瞬移 distance:{distance}");
         }
+        else if (distance > 0.01f)
+        {
+            // 指数衰减平滑：每帧消除固定比例的剩余距离，保证一定收敛到目标位置
+            float t = 1.0f - Mathf.Exp(-smoothFactor * Time.deltaTime);
+            Vector3 newPos = Vector3.Lerp(transform.position, this.position, t);
+            Vector3 moveDelta = newPos - transform.position;
+            this.characterController.Move(moveDelta);
+        }
+
         this.transform.forward = this.direction;
         this.lastPosition = this.position;
         this.lastRotation = this.rotation;
