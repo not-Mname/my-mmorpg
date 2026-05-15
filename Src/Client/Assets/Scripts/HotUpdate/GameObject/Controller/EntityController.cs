@@ -23,6 +23,10 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 
     public float speed;
     public float animSpeed = 1.5f;
+    /// <summary>
+    /// 位置平滑收敛系数，值越大追赶越快。建议范围 10~20。
+    /// </summary>
+    public float smoothFactor = 15f;
     public float jumpPower = 3.0f;
 
     public bool isPlayer = false;
@@ -191,8 +195,11 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
             }
             else
             {
-                dir.Normalize();
-                this.characterController.Move(dir * speed * Time.deltaTime);
+                // 指数衰减平滑：每帧消除固定比例的剩余距离，保证一定收敛到目标位置
+                float t = 1.0f - Mathf.Exp(-smoothFactor * Time.deltaTime);
+                Vector3 newPos = Vector3.Lerp(transform.position, this.position, t);
+                Vector3 moveDelta = newPos - transform.position;
+                this.characterController.Move(moveDelta);
             }
         }
         this.transform.forward = this.direction;
