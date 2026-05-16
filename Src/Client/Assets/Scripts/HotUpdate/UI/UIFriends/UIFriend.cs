@@ -102,7 +102,7 @@ public class UIFriend : UIWindow
         MessageBox.Show(string.Format("确定挑战{0}吗？", SelectedItem.FriendInfo.FriendInfo.Name), "竞技场挑战",
             MessageBoxType.Confirm, "确定", "取消").OnYes = () =>
             {
-                ArenaService.Instance.SendArenaChallengeRequest(SelectedItem.FriendInfo.FriendInfo.Id, SelectedItem.FriendInfo.FriendInfo.Name);
+                ArenaService.Instance.SendArenaChallengeRequest(SelectedItem.FriendInfo.FriendInfo.EntityId, SelectedItem.FriendInfo.FriendInfo.Name);
             };
 
     }

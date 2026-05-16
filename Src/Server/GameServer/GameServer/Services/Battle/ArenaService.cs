@@ -13,27 +13,27 @@ namespace GameServer.Services.Battle
     {
         public void Dispose()
         {
-            MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<ArenaChallengeResponse>(OnArenaChallengeRequest);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<ArenaChallengeRequest>(OnArenaChallengeRequest);
             MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<ArenaChallengeResponse>(OnArenaChallengeResponse);
 
         }
 
         public void Init()
         {
-            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ArenaChallengeResponse>(OnArenaChallengeRequest);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ArenaChallengeRequest>(OnArenaChallengeRequest);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ArenaChallengeResponse>(OnArenaChallengeResponse);
             ArenaManager.Instance.Init();
         }
 
-        private void OnArenaChallengeRequest(NetConnection<NetSession> sender, ArenaChallengeResponse request)
+        private void OnArenaChallengeRequest(NetConnection<NetSession> sender, ArenaChallengeRequest request)
         {
             Character character = sender.Session.Character;
-            Log.Info($"ArenaChallengeRequest: RedId {request.ArenaInfo.Red.EntityId}, RedName {request.ArenaInfo.Red.Name}, BlueId {request.ArenaInfo.Blue.EntityId}, BlueName {request.ArenaInfo.Blue.Name}");
+            Log.Info($"ArenaChallengeRequest: RedId {request.Info.Red.EntityId}, RedName {request.Info.Red.Name}, BlueId {request.Info.Blue.EntityId}, BlueName {request.Info.Blue.Name}");
 
             NetConnection<NetSession> blue = null;
-            if (request.ArenaInfo.Blue.EntityId > 0)
+            if (request.Info.Blue.EntityId > 0)
             {
-                blue = SessionManager.Instance.GetSession(request.ArenaInfo.Blue.EntityId);
+                blue = SessionManager.Instance.GetSession(request.Info.Blue.EntityId);
             }
             if (blue == null)
             {
@@ -45,7 +45,7 @@ namespace GameServer.Services.Battle
                 return;
             }
 
-            blue.Session.Response.ArenaChallengeRes = request;
+            blue.Session.Response.ArenaChallengeReq = request;
             blue.SendResponse();
         }
 
@@ -65,7 +65,6 @@ namespace GameServer.Services.Battle
                 requester.Session.Response.ArenaChallengeRes.Result = Result.Failed;
                 requester.SendResponse();
             }
-
 
             var arena = ArenaManager.Instance.NewArena(response.ArenaInfo ,requester, sender);
             this.SendArenaBegin(arena);

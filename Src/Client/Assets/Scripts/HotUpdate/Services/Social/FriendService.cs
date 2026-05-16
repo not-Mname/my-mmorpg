@@ -114,10 +114,5 @@ namespace Services
         {
             
         }
-
-        internal void SendGuildCreate(string text1, string text2)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -47,16 +47,18 @@ namespace GameServer.Entities
             this.Map = MapManager.Instance[this.Data.MapID];
 
             itemManager = new ItemManager(this);
-            itemManager.GetItemInfos(Info.Items.ToList());
+            itemManager.GetItemInfos(Info.Items);
             statusManager = new StatusManager(this);
             questManager = new QuestManager(this);
-            questManager.GetQuestInfos(this.Info.Quests.ToList());
+            questManager.GetQuestInfos(this.Info.Quests);
             FriendManager = new FriendManager(this);
-            FriendManager.GetFriendInfos(this.Info.Friends.ToList());
+            FriendManager.GetFriendInfos(this.Info.Friends);
             this.Info.Equips = ByteString.CopyFrom(this.Data.Equips);
-            this.Info.Bag = new NBagInfo();
-            this.Info.Bag.Items = ByteString.CopyFrom(this.Data.Bag.Items);
-            this.Info.Bag.Unlocked = this.Data.Bag.Unlocked;
+            this.Info.Bag = new NBagInfo()
+            {
+                Items = ByteString.CopyFrom(this.Data.Bag.Items),
+                Unlocked = this.Data.Bag.Unlocked
+            };
             this.Guild = GuildManager.Instance.GetGuild(this.Data.GuildId);
             if (this.Guild != null)
             {
@@ -64,9 +66,12 @@ namespace GameServer.Entities
             }
             this.Chat = new Chat(this);
 
-            this.Info.Dynamic = new NAttributeDynamic();
-            this.Info.Dynamic.Hp = this.Data.HP;
-            this.Info.Dynamic.Mp = this.Data.MP;
+            this.Info.Dynamic = new NAttributeDynamic()
+            {
+                Hp = this.Data.HP,
+                Mp = this.Data.MP
+            };
+
         }
 
         public void AddExp(int exp)
@@ -217,7 +222,7 @@ namespace GameServer.Entities
             }
         }
 
-        public NCharacterInfo GetBsdicInfo()
+        public NCharacterInfo GetBasicInfo()
         {
             return new NCharacterInfo()
             {
@@ -225,6 +230,7 @@ namespace GameServer.Entities
                 Name = Info.Name,
                 Class = Info.Class,
                 Level = Info.Level,
+                EntityId = Info.EntityId,
             };
         }
 

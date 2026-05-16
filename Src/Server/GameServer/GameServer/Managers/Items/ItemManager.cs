@@ -101,7 +101,7 @@ namespace GameServer.Managers.Items
             return true;
         }
 
-        public void GetItemInfos(List<NItemInfo> list)
+        public void GetItemInfos( ICollection<NItemInfo> list)
         {
             foreach (var item in items)
             {

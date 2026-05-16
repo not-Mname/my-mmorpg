@@ -943,7 +943,7 @@ MonoBehaviour:
   UIRoot: {fileID: 1693389451}
   progressBar: {fileID: 8750184868882827926}
   progressText: {fileID: 670522393}
-  Editor: 0
+  Editor: 1
 --- !u!1001 &7948435718757594936
 PrefabInstance:
   m_ObjectHideFlags: 0

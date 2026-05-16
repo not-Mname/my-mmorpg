@@ -24,24 +24,23 @@ namespace GameServer.Services.Social
         {
             Log.Info("FriendService Init...");
         }
+
         private void OnFriendRemove(NetConnection<NetSession> sender, FriendRemoveRequest message)
         {
             Character cha = sender.Session.Character;
             Log.InfoFormat("OnFriendRemove: character {0} remove Friend {1}", cha.Id, message.FriendId);
-            sender.Session.Response.FriendRemove = new FriendRemoveResponse();
-            sender.Session.Response.FriendRemove.Result = Result.Success;
+            sender.Session.Response.FriendRemove = new FriendRemoveResponse() { Result = Result.Success };
 
             if (cha.FriendManager.RemoveFriendById(message.FriendId))
             {
                 sender.Session.Response.FriendRemove.Result = Result.Success;
                 var Friend = SessionManager.Instance.GetSession(message.FriendId);
                 if (Friend != null)
-                {//在线
+                {//在线，既要删除数据库中的好友关系，也要删除内存中的好友关系
                     Friend.Session.Character.FriendManager.RemoveFriendById(cha.Id);
-                    Friend.Session.Character.FriendManager.RemoveFriendById(message.FriendId);
                 }
                 else
-                {//不在线
+                {//不在线，只需要删除数据库中的好友关系，内存中的好友关系会在玩家上线时加载
                     RemoveFriend(cha.Id, message.FriendId);
                 }
             }

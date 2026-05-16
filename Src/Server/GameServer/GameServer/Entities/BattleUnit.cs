@@ -12,7 +12,9 @@ namespace GameServer.Entities
 {
     class BattleUnit : Entity
     {
-
+        /// <summary>
+        /// 数据库id
+        /// </summary>
         public int Id { get; set; }
         public string Name { get { return this.Info.Name; } }
 

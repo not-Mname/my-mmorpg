@@ -40,7 +40,7 @@ namespace GameServer.Services.Entities
 
             sender.Session.Response.UserRegister = new UserRegisterResponse();
 
-            TUser existingUser = DBService.Instance.Entities.Users.Where(u => u.Username == request.User).FirstOrDefault();
+            TUser? existingUser = DBService.Instance.Entities.Users.Where(u => u.Username == request.User).FirstOrDefault();
             if (existingUser != null)
             {
                 sender.Session.Response.UserRegister.Result = Result.Failed;
@@ -66,7 +66,7 @@ namespace GameServer.Services.Entities
 
             sender.Session.Response.UserLogin = new UserLoginResponse();
 
-            TUser user = DBService.Instance.Entities.Users.Include(u => u.Player).ThenInclude(p => p.Characters).Where(u => u.Username == request.User && u.Password == request.Passward).FirstOrDefault();
+            TUser? user = DBService.Instance.Entities.Users.Include(u => u.Player).ThenInclude(p => p.Characters).Where(u => u.Username == request.User && u.Password == request.Passward).FirstOrDefault();
 
             if (user == null)
             {
@@ -95,11 +95,8 @@ namespace GameServer.Services.Entities
                     info.ConfigId = @char.ID;
                     sender.Session.Response.UserLogin.Userinfo.Player.Characters.Add(info);
                 }
+                sender.Session.User = user;
             }
-
-            sender.Session.User = user;
-
-
             sender.SendResponse();
         }
 
@@ -157,7 +154,7 @@ namespace GameServer.Services.Entities
         {
             sender.Session.Response.GameEnter = new UserGameEnterResponse();
 
-            TCharacter dbChar = DBService.Instance.Entities.Characters
+            TCharacter? dbChar = DBService.Instance.Entities.Characters
             .Include(c => c.Player)
             .Include(c => c.Bag)
             .Include(c => c.Items)
@@ -175,7 +172,7 @@ namespace GameServer.Services.Entities
 
             Log.InfoFormat("UserGameEnterRequest: Name:{0}  Class:{1}  MapId:{2}", dbChar.Name, dbChar.Class, dbChar.MapID);
             Character character = CharacterManager.Instance.AddCharacter(dbChar);
-            SessionManager.Instance.AddSession(character.Id, sender);
+            SessionManager.Instance.AddSession(character.entityId, sender);
             sender.Session.Response.GameEnter.Errormsg = "None";
             sender.Session.Response.GameEnter.Result = Result.Success;
 

@@ -54,7 +54,7 @@ namespace GameServer.Models.Logic
                 message.TeamInfo.Result = Result.Success;
                 foreach (var member in this.Members)
                 {
-                    message.TeamInfo.Team.Members.Add(member.GetBsdicInfo());
+                    message.TeamInfo.Team.Members.Add(member.GetBasicInfo());
                 }
             }
         }

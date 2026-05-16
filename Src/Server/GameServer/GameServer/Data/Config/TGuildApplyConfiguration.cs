@@ -16,7 +16,6 @@ namespace GameServer.Data.Config
             builder.Property(ga => ga.Level).HasColumnType("int").IsRequired();
             builder.Property(ga => ga.Result).HasColumnType("int").IsRequired();
             builder.Property(ga => ga.ApplyTime).HasColumnType("datetime").IsRequired();
-            builder.Property(ga => ga.GuildId).HasColumnType("int").IsRequired();
             builder.Property(ga => ga.TGuildId).HasColumnType("int").IsRequired();
             builder.Property(ga => ga.Class).HasColumnType("int").IsRequired();
 

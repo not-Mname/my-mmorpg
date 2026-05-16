@@ -24,7 +24,7 @@ namespace GameServer.Managers.Social
             _owner = owner;
             InitFriends();
         }
-        public void GetFriendInfos(List<NFriendInfo> friends)
+        public void GetFriendInfos(ICollection<NFriendInfo> friends)
         {
             foreach (var friend in Friends)
             {
@@ -39,19 +39,16 @@ namespace GameServer.Managers.Social
             FriendInfo.Id = friend.Id;
             //Log.InfoFormat("GetFriendInfo  friendCharacter:{0} is Exist:{1}", FriendInfo.FriendInfo.Name, friendCharacter == null);
             if (friendCharacter == null)
-            {
+            {//不在线从库里拿数据
                 FriendInfo.FriendInfo.Id = friend.FriendID;
                 FriendInfo.FriendInfo.Name = friend.FriendName;
                 FriendInfo.FriendInfo.Class = (CharacterClass)friend.Class;
                 FriendInfo.FriendInfo.Level = friend.Level;
-                FriendInfo.Status = 0;//没查到说明不在线
+                FriendInfo.Status = 0;
             }
             else
-            {
-                FriendInfo.FriendInfo = friendCharacter.GetBsdicInfo();
-                FriendInfo.FriendInfo.Name = friendCharacter.Data.Name;
-                FriendInfo.FriendInfo.Class = (CharacterClass)friendCharacter.Data.Class;
-                FriendInfo.FriendInfo.Level = friendCharacter.Data.Level;
+            {//在线从内存拿数据
+                FriendInfo.FriendInfo = friendCharacter.GetBasicInfo();
                 friendCharacter.FriendManager.UpdataFriendInfo(this._owner.Info, 1);
                 FriendInfo.Status = 1;
             }
@@ -120,12 +117,12 @@ namespace GameServer.Managers.Social
             var dbChar = DBService.Instance.Entities.Characters
                 .Include(c => c.Friends)
                 .First(c => c.ID == this._owner.Id);
-            var removed = dbChar.Friends.FirstOrDefault(f => f.CharacterID == Id);
+            var removed = dbChar.Friends.FirstOrDefault(f => f.FriendID == Id);
             if (removed != null) dbChar.Friends.Remove(removed);
-            var snapshot = this._owner.Data.Friends.FirstOrDefault(f => f.CharacterID == Id);
+            var snapshot = this._owner.Data.Friends.FirstOrDefault(f => f.FriendID == Id);
             if (snapshot != null) this._owner.Data.Friends.Remove(snapshot);
             _friendChanged = true;
-            return true;
+            return removed != null;
         }
 
         public bool RemoveFriendByFriendId(int friendId)

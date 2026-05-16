@@ -17,11 +17,10 @@ namespace GameServer.Data.Config
             builder.Property(gm => gm.Level).HasColumnType("int").IsRequired();
             builder.Property(gm => gm.JoinTime).HasColumnType("datetime").IsRequired();
             builder.Property(gm => gm.LastTime).HasColumnType("datetime").IsRequired();
-            builder.Property(gm => gm.GuildId).HasColumnType("int").IsRequired();
             builder.Property(gm => gm.TGuildId).HasColumnType("int").IsRequired();
             builder.Property(gm => gm.Title).HasColumnType("int").IsRequired();
 
-            builder.HasOne<TGuild>()
+            builder.HasOne(gm => gm.TGuild)
                 .WithMany(g => g.Members)
                 .HasForeignKey(gm => gm.TGuildId)
                 .OnDelete(DeleteBehavior.NoAction);

@@ -11,7 +11,6 @@ namespace GameServer.Models.Data
         public int Level { get; set; }
         public DateTime JoinTime { get; set; }
         public DateTime LastTime { get; set; }
-        public int GuildId { get; set; }
         public int TGuildId { get; set; }
         public int Title { get; set; }
     

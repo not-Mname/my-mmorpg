@@ -173,7 +173,7 @@ namespace GameServer.Managers.Quest
         /// 获取角色所有任务的信息列表
         /// </summary>
         /// <param name="quests">用于存储任务信息的列表</param>
-        public void GetQuestInfos(List<NQuestInfo> quests)
+        public void GetQuestInfos(ICollection<NQuestInfo> quests)
         {
             // 遍历角色所有任务并转换为网络协议格式
             foreach (var quest in owner.Data.Quests)

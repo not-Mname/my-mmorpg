@@ -10,7 +10,6 @@ namespace GameServer.Models.Data
         public int Level { get; set; }
         public int Result { get; set; }
         public DateTime ApplyTime { get; set; }
-        public int GuildId { get; set; }
         public int TGuildId { get; set; }
         public int Class { get; set; }
     

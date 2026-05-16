@@ -38,7 +38,6 @@ namespace GameServer.Models.Logic
             var dbApply = new TGuildApply()
             {
                 CharacterId = apply.CharacterId,
-                GuildId = this.Id,
                 Name = apply.Name,
                 Class = apply.Class,
                 Level = apply.Level,
@@ -49,7 +48,7 @@ namespace GameServer.Models.Logic
             this.Data.Applies.Add(new TGuildApply()
             {
                 CharacterId = apply.CharacterId,
-                GuildId = this.Id,
+                TGuildId = this.Id,
                 Name = apply.Name,
                 Class = apply.Class,
                 Level = apply.Level,
@@ -96,7 +95,7 @@ namespace GameServer.Models.Logic
                 var applyInfo = new NGuildApplyInfo()
                 {
                     CharacterId = apply.CharacterId,
-                    GuildId = apply.GuildId,
+                    GuildId = apply.TGuildId,
                     Name = apply.Name,
                     Class = apply.Class,
                     Level = apply.Level,
@@ -123,7 +122,7 @@ namespace GameServer.Models.Logic
                 var character = CharacterManager.Instance.GetCharacter(member.CharacterId);
                 if (character != null)
                 {
-                    memberInfo.Info = character.GetBsdicInfo();
+                    memberInfo.Info = character.GetBasicInfo();
                     memberInfo.Status = 1;
                 }
                 else
