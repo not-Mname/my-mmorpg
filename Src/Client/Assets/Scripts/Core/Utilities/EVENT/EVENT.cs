@@ -1,5 +1,6 @@
 using Const;
 using System;
+using System.Collections.Generic;
 
 namespace Utilities
 {
@@ -9,6 +10,10 @@ namespace Utilities
     /// </summary>
     public class EVENT
     {
+        /// <summary>
+        /// 多播订阅时，记录原始回调到包装回调的映射，用于取消订阅时查找
+        /// </summary>
+        private static Dictionary<Delegate, Action<object[]>> _multicastWrappers = new Dictionary<Delegate, Action<object[]>>();
         /// <summary>
         /// 订阅无参数事件（使用字符串事件名）
         /// </summary>
@@ -118,6 +123,83 @@ namespace Utilities
             EventManager.Instance.Subscribe(eventNameString, wrappedCallback);
         }
 
+        // ===== 多播模式 Subscribe 重载 =====
+
+        /// <summary>
+        /// 订阅无参数事件
+        /// </summary>
+        public static void Subscribe(string eventName, Action callback, EventMode mode)
+        {
+            if (EventManager.Instance == null || eventName == null || callback == null) return;
+
+            Action<object[]> wrappedCallback = (args) => callback();
+            if (mode == EventMode.Multicast) _multicastWrappers[callback] = wrappedCallback;
+            EventManager.Instance.Subscribe(eventName, wrappedCallback, mode);
+        }
+
+        /// <summary>
+        /// 订阅无参数事件
+        /// </summary>
+        public static void Subscribe(EventId eventName, Action callback, EventMode mode)
+        {
+            if (EventManager.Instance == null || callback == null) return;
+
+            string eventNameString = eventName.ToString();
+            Action<object[]> wrappedCallback = (args) => callback();
+            if (mode == EventMode.Multicast) _multicastWrappers[callback] = wrappedCallback;
+            EventManager.Instance.Subscribe(eventNameString, wrappedCallback, mode);
+        }
+
+        /// <summary>
+        /// 订阅单参数事件
+        /// </summary>
+        public static void Subscribe<T>(string eventName, Action<T> callback, EventMode mode)
+        {
+            if (EventManager.Instance == null || eventName == null || callback == null) return;
+
+            Action<object[]> wrappedCallback = (args) => callback((T)args[0]);
+            if (mode == EventMode.Multicast) _multicastWrappers[callback] = wrappedCallback;
+            EventManager.Instance.Subscribe(eventName, wrappedCallback, mode);
+        }
+
+        /// <summary>
+        /// 订阅单参数事件
+        /// </summary>
+        public static void Subscribe<T>(EventId eventName, Action<T> callback, EventMode mode)
+        {
+            if (EventManager.Instance == null || callback == null) return;
+
+            string eventNameString = eventName.ToString();
+            Action<object[]> wrappedCallback = (args) => callback((T)args[0]);
+            if (mode == EventMode.Multicast) _multicastWrappers[callback] = wrappedCallback;
+            EventManager.Instance.Subscribe(eventNameString, wrappedCallback, mode);
+        }
+
+        /// <summary>
+        /// 订阅双参数事件
+        /// </summary>
+        public static void Subscribe<T1, T2>(string eventName, Action<T1, T2> callback, EventMode mode)
+        {
+            if (EventManager.Instance == null || eventName == null || callback == null) return;
+
+            Action<object[]> wrappedCallback = (args) => callback((T1)args[0], (T2)args[1]);
+            if (mode == EventMode.Multicast) _multicastWrappers[callback] = wrappedCallback;
+            EventManager.Instance.Subscribe(eventName, wrappedCallback, mode);
+        }
+
+        /// <summary>
+        /// 订阅双参数事件
+        /// </summary>
+        public static void Subscribe<T1, T2>(EventId eventName, Action<T1, T2> callback, EventMode mode)
+        {
+            if (EventManager.Instance == null || callback == null) return;
+
+            string eventNameString = eventName.ToString();
+            Action<object[]> wrappedCallback = (args) => callback((T1)args[0], (T2)args[1]);
+            if (mode == EventMode.Multicast) _multicastWrappers[callback] = wrappedCallback;
+            EventManager.Instance.Subscribe(eventNameString, wrappedCallback, mode);
+        }
+
         /// <summary>
         /// 取消订阅事件（使用EventId枚举）
         /// </summary>
@@ -147,6 +229,110 @@ namespace Utilities
             EventManager.Instance.Unsubscribe(eventName);
         }
 
+        // ===== 多播模式 Unsubscribe 重载 =====
+
+        /// <summary>
+        /// 取消订阅无参数事件
+        /// </summary>
+        public static void Unsubscribe(string eventName, Action callback, EventMode mode)
+        {
+            if (EventManager.Instance == null || eventName == null) return;
+            if (mode == EventMode.Multicast && _multicastWrappers.TryGetValue(callback, out var wrapped))
+            {
+                EventManager.Instance.Unsubscribe(eventName, wrapped, mode);
+                _multicastWrappers.Remove(callback);
+            }
+            else
+            {
+                EventManager.Instance.Unsubscribe(eventName, null, mode);
+            }
+        }
+
+        /// <summary>
+        /// 取消订阅无参数事件
+        /// </summary>
+        public static void Unsubscribe(EventId eventName, Action callback, EventMode mode)
+        {
+            if (EventManager.Instance == null) return;
+            if (mode == EventMode.Multicast && _multicastWrappers.TryGetValue(callback, out var wrapped))
+            {
+                EventManager.Instance.Unsubscribe(eventName.ToString(), wrapped, mode);
+                _multicastWrappers.Remove(callback);
+            }
+            else
+            {
+                EventManager.Instance.Unsubscribe(eventName.ToString(), null, mode);
+            }
+        }
+
+        /// <summary>
+        /// 取消订阅单参数事件
+        /// </summary>
+        public static void Unsubscribe<T>(string eventName, Action<T> callback, EventMode mode)
+        {
+            if (EventManager.Instance == null || eventName == null) return;
+            if (mode == EventMode.Multicast && _multicastWrappers.TryGetValue(callback, out var wrapped))
+            {
+                EventManager.Instance.Unsubscribe(eventName, wrapped, mode);
+                _multicastWrappers.Remove(callback);
+            }
+            else
+            {
+                EventManager.Instance.Unsubscribe(eventName, null, mode);
+            }
+        }
+
+        /// <summary>
+        /// 取消订阅单参数事件
+        /// </summary>
+        public static void Unsubscribe<T>(EventId eventName, Action<T> callback, EventMode mode)
+        {
+            if (EventManager.Instance == null) return;
+            if (mode == EventMode.Multicast && _multicastWrappers.TryGetValue(callback, out var wrapped))
+            {
+                EventManager.Instance.Unsubscribe(eventName.ToString(), wrapped, mode);
+                _multicastWrappers.Remove(callback);
+            }
+            else
+            {
+                EventManager.Instance.Unsubscribe(eventName.ToString(), null, mode);
+            }
+        }
+
+        /// <summary>
+        /// 取消订阅双参数事件
+        /// </summary>
+        public static void Unsubscribe<T1, T2>(string eventName, Action<T1, T2> callback, EventMode mode)
+        {
+            if (EventManager.Instance == null || eventName == null) return;
+            if (mode == EventMode.Multicast && _multicastWrappers.TryGetValue(callback, out var wrapped))
+            {
+                EventManager.Instance.Unsubscribe(eventName, wrapped, mode);
+                _multicastWrappers.Remove(callback);
+            }
+            else
+            {
+                EventManager.Instance.Unsubscribe(eventName, null, mode);
+            }
+        }
+
+        /// <summary>
+        /// 取消订阅双参数事件
+        /// </summary>
+        public static void Unsubscribe<T1, T2>(EventId eventName, Action<T1, T2> callback, EventMode mode)
+        {
+            if (EventManager.Instance == null) return;
+            if (mode == EventMode.Multicast && _multicastWrappers.TryGetValue(callback, out var wrapped))
+            {
+                EventManager.Instance.Unsubscribe(eventName.ToString(), wrapped, mode);
+                _multicastWrappers.Remove(callback);
+            }
+            else
+            {
+                EventManager.Instance.Unsubscribe(eventName.ToString(), null, mode);
+            }
+        }
+
         /// <summary>
         /// 触发事件（使用字符串事件名）
         /// </summary>
@@ -174,6 +360,26 @@ namespace Utilities
             }
             string eventNameString = eventName.ToString();
             EventManager.Instance.TriggerEvent(eventNameString, args);
+        }
+
+        // ===== 多播模式 Fire 重载 =====
+
+        /// <summary>
+        /// 触发指定模式的事件
+        /// </summary>
+        public static void Fire(string eventName, EventMode mode, params object[] args)
+        {
+            if (EventManager.Instance == null || eventName == null) return;
+            EventManager.Instance.TriggerEvent(eventName, mode, args);
+        }
+
+        /// <summary>
+        /// 触发指定模式的事件
+        /// </summary>
+        public static void Fire(EventId eventName, EventMode mode, params object[] args)
+        {
+            if (EventManager.Instance == null) return;
+            EventManager.Instance.TriggerEvent(eventName.ToString(), mode, args);
         }
     }
 }

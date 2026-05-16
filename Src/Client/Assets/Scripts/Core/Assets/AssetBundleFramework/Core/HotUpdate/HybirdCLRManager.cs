@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using CommonUtility;
+using HybridCLR;
 using UnityEngine;
 
 namespace HotUpdate
@@ -39,6 +40,9 @@ namespace HotUpdate
             if (_editor) { return; }
             Debug.Log("开始初始化 HybridCLR 热更新...");
 
+            // 先加载 AOT 补充元数据，再加载热更 DLL
+            LoadAOTMetadata();
+
             // 检查 DLL 文件是否存在
             if (!Directory.Exists(_hotUpdateDllPath))
             {
@@ -49,7 +53,7 @@ namespace HotUpdate
             try
             {
                 DirectoryInfo info = new DirectoryInfo(_hotUpdateDllPath);
-                foreach (FileInfo file in info.GetFiles("*.dll.bytes", SearchOption.AllDirectories))
+                foreach (FileInfo file in info.GetFiles("*.dll.bytes", SearchOption.TopDirectoryOnly))
                 {
                     string assemblyName = Path.GetFileNameWithoutExtension(file.Name);
                     if (AssemblyExistsInAppDomain(assemblyName))
@@ -82,6 +86,29 @@ namespace HotUpdate
             catch (Exception ex)
             {
                 Debug.LogError($"加载热更新 DLL 失败：{ex.Message}\n{ex.StackTrace}");
+            }
+        }
+
+        /// <summary>
+        /// 加载 AOT 补充元数据，让解释器能找到 AOT 二进制中的泛型方法
+        /// </summary>
+        private void LoadAOTMetadata()
+        {
+            string metadataPath = Path.Combine(_hotUpdateDllPath, "Metadata");
+            if (!Directory.Exists(metadataPath))
+            {
+                Debug.LogWarning($"未找到 AOT 元数据目录：{metadataPath}，跳过加载");
+                return;
+            }
+
+            foreach (var file in new DirectoryInfo(metadataPath).GetFiles("*.dll.bytes"))
+            {
+                byte[] bytes = File.ReadAllBytes(file.FullName);
+                LoadImageErrorCode err = RuntimeApi.LoadMetadataForAOTAssembly(bytes, HomologousImageMode.SuperSet);
+                if (err != LoadImageErrorCode.OK)
+                    Debug.LogError($"加载 AOT 元数据失败：{file.Name}，错误码：{err}");
+                else
+                    Debug.Log($"成功加载 AOT 元数据：{file.Name}");
             }
         }
 

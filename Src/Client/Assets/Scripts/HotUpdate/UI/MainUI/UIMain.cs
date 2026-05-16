@@ -39,7 +39,7 @@ namespace UI.MainUI
             }
         }
 
-        private void OnDestroy()
+        protected override void OnDestroy()
         {
             // 在对象销毁时取消订阅战斗目标变化事件，避免内存泄漏
             EVENT.Unsubscribe(Const.EventId.on_battle_target_change);

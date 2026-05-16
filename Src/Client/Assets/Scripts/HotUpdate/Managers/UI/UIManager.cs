@@ -22,40 +22,36 @@ namespace Managers
 
         public UIManager()
         {
-            this.uiResources.Add(typeof(UIBag),new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIBag", cache = false });
-            this.uiResources.Add(typeof(UIShop), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIShop", cache = false });
-            this.uiResources.Add(typeof(UIEquip), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UICharEquip", cache = false });
-            this.uiResources.Add(typeof(UIQuest), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIQuestSystem", cache = false });
-            this.uiResources.Add(typeof(UIQuestDialog), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIQuestDialog", cache = false });
-            this.uiResources.Add(typeof(UIFriend), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIFriend/UIFriend", cache = false });
-            this.uiResources.Add(typeof(UIGuild), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/Guild/UIGuild", cache = false });
-            this.uiResources.Add(typeof(UIGuildList), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/Guild/UIGuildList", cache = false });
-            this.uiResources.Add(typeof(UIGuildPopNoGuild), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/Guild/UIGuildPopNoGuild", cache = false });
-            this.uiResources.Add(typeof(UIGuildPopCreate), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/Guild/UIGuildPopCreate", cache = false });
-            this.uiResources.Add(typeof(UIGuildApplyList), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/Guild/UIGuildApplyList", cache = false });
-            this.uiResources.Add(typeof(UISetting), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UISetting", cache = false });
-            this.uiResources.Add(typeof(UIPopChatMenu), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIPopChatMenu", cache = false });
-            this.uiResources.Add(typeof(UIRide), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIRide", cache = false });
-            this.uiResources.Add(typeof(UISystemConfig), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UISystemConfig", cache = false });
-        
-        }
-
-        ~UIManager()
-        {
+            this.uiResources.Add(typeof(UIBag), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIBag.prefab", cache = false });
+            this.uiResources.Add(typeof(UIShop), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIShop.prefab", cache = false });
+            this.uiResources.Add(typeof(UIEquip), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UICharEquip.prefab", cache = false });
+            this.uiResources.Add(typeof(UIQuest), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIQuestSystem.prefab", cache = false });
+            this.uiResources.Add(typeof(UIQuestDialog), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIQuestDialog.prefab", cache = false });
+            this.uiResources.Add(typeof(UIFriend), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIFriend/UIFriend.prefab", cache = false });
+            this.uiResources.Add(typeof(UIGuild), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/Guild/UIGuild.prefab", cache = false });
+            this.uiResources.Add(typeof(UIGuildList), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/Guild/UIGuildList.prefab", cache = false });
+            this.uiResources.Add(typeof(UIGuildPopNoGuild), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/Guild/UIGuildPopNoGuild.prefab", cache = false });
+            this.uiResources.Add(typeof(UIGuildPopCreate), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/Guild/UIGuildPopCreate.prefab", cache = false });
+            this.uiResources.Add(typeof(UIGuildApplyList), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/Guild/UIGuildApplyList.prefab", cache = false });
+            this.uiResources.Add(typeof(UISetting), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UISetting.prefab", cache = false });
+            this.uiResources.Add(typeof(UIPopChatMenu), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIPopChatMenu.prefab", cache = false });
+            this.uiResources.Add(typeof(UIRide), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UIRide.prefab", cache = false });
+            this.uiResources.Add(typeof(UISystemConfig), new UIElement() { resources = "Assets/AssetBundle/Prefab/UI/UISystemConfig.prefab", cache = false });
 
         }
 
-        public  T Show<T>()
+        public T Show<T>()
         {
             SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Win_Open);
             Type type = typeof(T);//通过反射获取类型
             if (uiResources.ContainsKey(type))
             {
                 UIElement uiElement = uiResources[type];
-                if(uiElement.instance == null)
-                {   IResource res =  Resloader.Instance.LoadAssetSync(uiElement.resources);
+                if (uiElement.instance == null)
+                {
+                    IResource res = Resloader.Instance.LoadAssetSync(uiElement.resources);
                     GameObject perfad = res.Instantiate(UIMain.Instance.transform, false, true);
-                    if (perfad == null) {return default(T);}
+                    if (perfad == null) { return default(T); }
                     uiElement.instance = perfad;
                     return uiElement.instance.GetComponent<T>();
                 }

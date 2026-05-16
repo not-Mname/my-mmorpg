@@ -34,8 +34,9 @@ namespace MMO
             // 构建模式下，先用 Resloader 加载场景 AB 包
             if (!_editor)
             {
-                if(CurrentSceneResource != null)
+                if (CurrentSceneResource != null)
                 {// 卸载上一个场景
+                    EVENT.Fire(Const.EventId.on_map_unloaded, EventMode.Multicast, this.CurrentScene);
                     Resloader.Instance.UnloadScene(CurrentSceneResource);
                     CurrentSceneResource = null;
                 }
@@ -44,7 +45,7 @@ namespace MMO
                 CurrentSceneResource = sceneResource;
                 yield return sceneResource;
             }
-            
+
             // 编辑器用全路径，构建模式 AB 已加载后按名查找 
             string loadPath = _editor
                 ? $"Assets/AssetBundle/Levels/{name}/{name}.unity"
@@ -59,7 +60,7 @@ namespace MMO
             }
             else
             {
-                 async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(loadPath);
+                async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(loadPath);
 
             }
 
@@ -78,7 +79,7 @@ namespace MMO
         {
             OnProgress?.Invoke(1f);
             this.CurrentScene = this._loadingScene;
-            EVENT.Fire(Const.EventId.on_map_change, this.CurrentScene);
+            EVENT.Fire(Const.EventId.on_map_loaded, EventMode.Multicast, this.CurrentScene);
         }
     }
 }

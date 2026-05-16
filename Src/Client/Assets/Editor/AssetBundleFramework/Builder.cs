@@ -179,6 +179,11 @@ namespace AssetBundleFramework
             .GetFullPath(Path.Combine(Application.dataPath, "../HybridCLRData/HotUpdateDlls/StandaloneWindows64"))
             .Replace("\\", "/");
 
+        public static string StrippedAOTDllPath = Path
+            .GetFullPath(Path.Combine(Application.dataPath,
+                "../HybridCLRData/AssembliesPostIl2CppStrip/StandaloneWindows64"))
+            .Replace("\\", "/");
+
         public static string HotUpdateScriptPath = Path
             .GetFullPath(Path.Combine(Application.dataPath, "Scripts/HotUpdate/"))
             .Replace("\\", "/");
@@ -440,6 +445,33 @@ namespace AssetBundleFramework
                     File.Copy(sourcePdb, destPdb);
                 }
             }
+
+            // 复制 AOT 补充元数据
+            CopyStrippedAOTMetadata(destPath);
+        }
+
+        /// <summary>
+        /// 复制 AOT 补充元数据 DLL 到热更目录，供运行时加载
+        /// </summary>
+        private static void CopyStrippedAOTMetadata(string destPath)
+        {
+            string metadataDir = $"{destPath}Metadata/";
+            if (!Directory.Exists(StrippedAOTDllPath))
+            {
+                Debug.LogWarning($"AOT 元数据目录不存在：{StrippedAOTDllPath}，跳过复制");
+                return;
+            }
+
+            Directory.CreateDirectory(metadataDir);
+            DirectoryInfo folder = new(StrippedAOTDllPath);
+            FileInfo[] files = folder.GetFiles("*.dll", SearchOption.AllDirectories);
+            foreach (var file in files)
+            {
+                string destFile = Path.GetFullPath(Path.Combine(metadataDir, file.Name)).Replace("\\", "/") + ".bytes";
+                File.Copy(file.FullName, destFile, true);
+            }
+
+            Debug.Log($"已复制 {files.Length} 个 AOT 元数据 DLL 到 {metadataDir}");
         }
 
         private static void BuildVersionFile()
@@ -457,7 +489,7 @@ namespace AssetBundleFramework
                 string path = file.FullName;
                 string abName = path.Substring(path.IndexOf("AssetBundle"));
                 string suffix = path.Substring(path.LastIndexOf('.') + 1);
-                string md5 = MD5Manager.Instance.GetABPackEncryptVersion(path);
+                string md5 = MD5Utility.GetABPackEncryptVersion(path);
                 string size = Mathf.Ceil(file.Length / 1024.0f).ToString();
                 sb.AppendLine(ABUtil.GetABPackVersionStr(abName, md5, size));
             }

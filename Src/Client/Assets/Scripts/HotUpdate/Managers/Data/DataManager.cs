@@ -2,11 +2,11 @@ using Asset;
 using AssetBundleFramework;
 using Common.Data;
 using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using TMPro;
 using UnityEngine;
 using Utilities;
 
@@ -29,6 +29,11 @@ public class DataManager : Singleton<DataManager>
     public Dictionary<int, Dictionary<int, SkillDefine>> Skills = null;
     public Dictionary<int, BuffDefine> Buffs = null;
 
+    /// <summary>
+    /// 配置注册列表，由 GameEntry 遍历使用
+    /// </summary>
+    public List<(string name, string fileName, Action<string> setter)> Configs { get; private set; }
+
     public DataManager()
     {
         if (Editor)
@@ -39,102 +44,46 @@ public class DataManager : Singleton<DataManager>
         {
             this.DataPath = $"Assets/AssetBundle/Data/";
         }
+
+        this.Configs = new()
+        {
+            ("MapDefine",       "MapDefine.txt",       json => this.Maps          =     JsonConvert.DeserializeObject<Dictionary<int, MapDefine>>(json)),
+            ("CharacterDefine", "CharacterDefine.txt", json => this.Characters    =     JsonConvert.DeserializeObject<Dictionary<int, CharacterDefine>>(json)),
+            ("TeleporterDefine","TeleporterDefine.txt",json => this.Teleporters   =     JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json)),
+            ("NPCDefine",       "NPCDefine.txt",       json => this.NPCs          =     JsonConvert.DeserializeObject<Dictionary<int, NPCDefine>>(json)),
+            ("SpawnPointDefine","SpawnPointDefine.txt",json => this.SpawnPoints   =     JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>>(json)),
+            ("SpawnRuleDefine", "SpawnRuleDefine.txt", json => this.SpawnRules    =     JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnRuleDefine>>>(json)),
+            ("ItemDefine",      "ItemDefine.txt",      json => this.Items         =     JsonConvert.DeserializeObject<Dictionary<int, ItemDefine>>(json)),
+            ("ShopDefine",      "ShopDefine.txt",      json => this.Shops         =     JsonConvert.DeserializeObject<Dictionary<int, ShopDefine>>(json)),
+            ("ShopItemDefine",  "ShopItemDefine.txt",  json => this.ShopItems     =     JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, ShopItemDefine>>>(json)),
+            ("EquipDefine",     "EquipDefine.txt",     json => this.Equips        =     JsonConvert.DeserializeObject<Dictionary<int, EquipDefine>>(json)),
+            ("QuestDefine",     "QuestDefine.txt",     json => this.Quests        =     JsonConvert.DeserializeObject<Dictionary<int, QuestDefine>>(json)),
+            ("RideDefine",      "RideDefine.txt",      json => this.Rides         =     JsonConvert.DeserializeObject<Dictionary<int, RideDefine>>(json)),
+            ("SkillDefine",     "SkillDefine.txt",     json => this.Skills        =     JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SkillDefine>>>(json)),
+            ("BuffDefine",      "BuffDefine.txt",      json => this.Buffs         =     JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json)),
+        };
+
         LogHelper.Log("DataManager > DataManager()", LogUser.DataManager);
     }
 
-    public IEnumerator Load(UI.Common.ProgressBar progressBar, TextMeshProUGUI progressText)
+    /// <summary>
+    /// 从 AssetBundle 同步加载单个配置文件，返回 json 字符串（真机模式）
+    /// </summary>
+    public string LoadJsonFromBundle(string fileName)
     {
-        float step = 100f / 14f;
-        progressText.text = "加载配置数据...";
-        progressBar.SetData(100, 0, 1);
-        var wait = new WaitForSeconds(0.1f);
-
-        IResource res = Resloader.Instance.LoadAssetSync(this.DataPath + "MapDefine.txt");
-        string json = res.GetAsset<TextAsset>().text;
-        this.Maps = JsonConvert.DeserializeObject<Dictionary<int, MapDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "CharacterDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.Characters = JsonConvert.DeserializeObject<Dictionary<int, CharacterDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "TeleporterDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.Teleporters = JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "NPCDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.NPCs = JsonConvert.DeserializeObject<Dictionary<int, NPCDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "SpawnPointDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "SpawnRuleDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.SpawnRules = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnRuleDefine>>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "ItemDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.Items = JsonConvert.DeserializeObject<Dictionary<int, ItemDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "ShopDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.Shops = JsonConvert.DeserializeObject<Dictionary<int, ShopDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "ShopItemDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.ShopItems = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, ShopItemDefine>>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "EquipDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.Equips = JsonConvert.DeserializeObject<Dictionary<int, EquipDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "QuestDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.Quests = JsonConvert.DeserializeObject<Dictionary<int, QuestDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "RideDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.Rides = JsonConvert.DeserializeObject<Dictionary<int, RideDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "SkillDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.Skills = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SkillDefine>>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        res = Resloader.Instance.LoadAssetSync(this.DataPath + "BuffDefine.txt");
-        json = res.GetAsset<TextAsset>().text;
-        this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressBar.UpdateProgress();
+        IResource res = Resloader.Instance.LoadAssetSync(this.DataPath + fileName);
+        return res.GetAsset<TextAsset>().text;
     }
+
+    /// <summary>
+    /// 从文件系统读取单个配置文件，返回 json 字符串（编辑器模式）
+    /// </summary>
+    public string LoadJsonFromFile(string fileName)
+    {
+        return File.ReadAllText(this.DataPath + fileName);
+    }
+
+#if UNITY_EDITOR
 
     public void Load()
     {
@@ -182,100 +131,6 @@ public class DataManager : Singleton<DataManager>
         this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
     }
 
-    public IEnumerator LoadDataEditor(UI.Common.ProgressBar progressBar, TextMeshProUGUI progressText)
-    {
-        float step = 100f / 14f;
-        progressBar.SetData(100, 0, 5);
-
-        var wait = new WaitForSeconds(0.1f);
-
-        progressText.text = "加载 MapDefine...";
-        string json = File.ReadAllText(this.DataPath + "MapDefine.txt");
-        this.Maps = JsonConvert.DeserializeObject<Dictionary<int, MapDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 CharacterDefine...";
-        json = File.ReadAllText(this.DataPath + "CharacterDefine.txt");
-        this.Characters = JsonConvert.DeserializeObject<Dictionary<int, CharacterDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 TeleporterDefine...";
-        json = File.ReadAllText(this.DataPath + "TeleporterDefine.txt");
-        this.Teleporters = JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 SpawnPointDefine...";
-        json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
-        this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 NPCDefine...";
-        json = File.ReadAllText(this.DataPath + "NPCDefine.txt");
-        this.NPCs = JsonConvert.DeserializeObject<Dictionary<int, NPCDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 ItemDefine...";
-        json = File.ReadAllText(this.DataPath + "ItemDefine.txt");
-        this.Items = JsonConvert.DeserializeObject<Dictionary<int, ItemDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 ShopDefine...";
-        json = File.ReadAllText(this.DataPath + "ShopDefine.txt");
-        this.Shops = JsonConvert.DeserializeObject<Dictionary<int, ShopDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 ShopItemDefine...";
-        json = File.ReadAllText(this.DataPath + "ShopItemDefine.txt");
-        this.ShopItems = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, ShopItemDefine>>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 EquipDefine...";
-        json = File.ReadAllText(this.DataPath + "EquipDefine.txt");
-        this.Equips = JsonConvert.DeserializeObject<Dictionary<int, EquipDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 QuestDefine...";
-        json = File.ReadAllText(this.DataPath + "QuestDefine.txt");
-        this.Quests = JsonConvert.DeserializeObject<Dictionary<int, QuestDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 SpawnRuleDefine...";
-        json = File.ReadAllText(this.DataPath + "SpawnRuleDefine.txt");
-        this.SpawnRules = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnRuleDefine>>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 RideDefine...";
-        json = File.ReadAllText(this.DataPath + "RideDefine.txt");
-        this.Rides = JsonConvert.DeserializeObject<Dictionary<int, RideDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 SkillDefine...";
-        json = File.ReadAllText(this.DataPath + "SkillDefine.txt");
-        this.Skills = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SkillDefine>>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressText.text = "加载 BuffDefine...";
-        json = File.ReadAllText(this.DataPath + "BuffDefine.txt");
-        this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
-        progressBar.CurrentValue += step;
-        yield return wait;
-
-        progressBar.UpdateProgress();
-    }
-
     public void SaveTeleporters()
     {
         string json = JsonConvert.SerializeObject(this.Teleporters, Formatting.Indented);
@@ -288,5 +143,5 @@ public class DataManager : Singleton<DataManager>
         string json = JsonConvert.SerializeObject(this.SpawnPoints, Formatting.Indented);
         File.WriteAllText(this.DataPath + "SpawnPointDefine.txt", json);
     }
-
+#endif
 }

@@ -24,6 +24,7 @@ public class LoadingManager : MonoBehaviour
     {
         HybirdCLRManager.Instance._editor = Editor;
         Resloader.Instance._editor = Editor;
+        progressBar.gameObject.SetActive(false);
         LogInit();
     }
 
@@ -113,6 +114,7 @@ public class LoadingManager : MonoBehaviour
     /// </summary>
     public void OnStartDownload(float size)
     {
+        progressBar.gameObject.SetActive(true);
         progressText.text = "开始下载...";
         // 没有文件需要下载时，跳过进度条初始化，避免 maxValue=0 导致除零
         if (size <= 0) return;
@@ -135,6 +137,7 @@ public class LoadingManager : MonoBehaviour
     {
         progressBar.UpdateProgress();
         progressText.text = "下载完成!";
+        progressBar.gameObject.SetActive(false);
         HybirdCLRManager.Instance.Initialize();
         StartCoroutine(HybirdCLRManager.Instance.InvokeStaticMethod<IEnumerator>("HotUpdate", "GameEntry", "Run", this, this.Editor));
     }

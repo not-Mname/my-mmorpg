@@ -51,7 +51,7 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 
     void OnDestroy()
     {
-        if (this.entity != null) Debug.LogFormat("{0} OnDestroy :ID:{1} POS:{2} DIR:{3} SPD:{4} ", this.name, entity.EntityId, entity.Position, entity.Direction, entity.Speed);
+        if (this.entity != null){ Debug.LogFormat("{0} OnDestroy :ID:{1} POS:{2} DIR:{3} SPD:{4} ", this.name, entity.EntityId, entity.Position, entity.Direction, entity.Speed); }
     }
 
     void OnMouseDown()
@@ -197,6 +197,7 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
             Vector3 newPos = Vector3.Lerp(transform.position, this.position, t);
             Vector3 moveDelta = newPos - transform.position;
             this.characterController.Move(moveDelta);
+            //Debug.Log($"[{this.gameObject.name}] 平滑移动 distance:{distance} moveDelta:{moveDelta}");
         }
 
         this.transform.forward = this.direction;

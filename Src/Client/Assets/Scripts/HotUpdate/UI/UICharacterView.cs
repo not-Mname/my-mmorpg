@@ -1,12 +1,16 @@
-﻿using System.Collections;
+﻿using Const;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utilities;
 
 public class UICharacterView : MonoBehaviour
 {
-	public GameObject[] characters; 
+	public GameObject[] characters;
+	public Camera Camera;
 
-	private int currentCharacter = 0;
+    private int currentCharacter = 0;
 
 	public int CurrentCharacter
 	{
@@ -25,18 +29,20 @@ public class UICharacterView : MonoBehaviour
 	{
 		for(int i = 1; i < characters.Length; i++)
 		{
-			//Debug.Log(i + "" + currentCharacter + ""+ (i == currentCharacter));
 			characters[i].gameObject.SetActive(i == currentCharacter);
 		}
 	}
+    private void OnMapChange(string mapName)
+    {
+		if(mapName == "CharSelect")
+        {
+            this.Camera.targetTexture = null;
+        }
+        EVENT.Unsubscribe<string>(EventId.on_map_unloaded, this.OnMapChange, EventMode.Multicast);
+    }
 
-	void Start()
+    void Start()
 	{
-
-	}
-
-	void Update()
-	{
-
-	}
+		EVENT.Subscribe<string>(EventId.on_map_unloaded, this.OnMapChange, EventMode.Multicast);
+    }
 }

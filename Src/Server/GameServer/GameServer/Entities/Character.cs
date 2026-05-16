@@ -10,6 +10,7 @@ using GameServer.Managers.Social;
 using GameServer.Managers.Quest;
 using GameServer.Managers.Items;
 using GameServer.Managers.Entities;
+using GameServer.Services.Data;
 
 namespace GameServer.Entities
 {
@@ -107,6 +108,9 @@ namespace GameServer.Entities
             {
                 if (Exp == value) return;
                 this.statusManager.AddExpChange((int)(value - this.Data.EXP));
+                using var scope = DBService.Instance.BeginScope();
+                var dbChar = DBService.Instance.Entities.Characters.Find(this.Id);
+                if (dbChar != null) dbChar.EXP = value;
                 this.Data.EXP = value;
                 this.Info.Exp = value;
             }
@@ -122,6 +126,9 @@ namespace GameServer.Entities
             {
                 if (Level == value) return;
                 this.statusManager.AddLevelUp((int)(value - this.Data.Level));
+                using var scope = DBService.Instance.BeginScope();
+                var dbChar = DBService.Instance.Entities.Characters.Find(this.Id);
+                if (dbChar != null) dbChar.Level = value;
                 this.Data.Level = value;
                 this.Info.Level = value;
             }
@@ -137,6 +144,9 @@ namespace GameServer.Entities
             {
                 if (Gold == value) return;
                 this.statusManager.AddGlodChange((int)value - (int)Gold);
+                using var scope = DBService.Instance.BeginScope();
+                var dbChar = DBService.Instance.Entities.Characters.Find(this.Id);
+                if (dbChar != null) dbChar.Gold = value;
                 this.Data.Gold = value;
                 this.Info.Gold = value;
             }

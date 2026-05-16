@@ -70,12 +70,12 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
     }
     void OnEnable()
     {
-        EVENT.Subscribe<string>(EventId.on_map_change, OnMapChange);
+        EVENT.Subscribe<string>(EventId.on_map_loaded, OnMapChange, EventMode.Multicast);
     }
 
     private void OnDisable()
     {
-        EVENT.Unsubscribe(EventId.on_map_change);
+        EVENT.Unsubscribe<string>(EventId.on_map_loaded, OnMapChange, EventMode.Multicast);
     }
     void LateUpdate()
     {

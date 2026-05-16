@@ -14,7 +14,7 @@ class SoundDefine
 
     public const string SFX_UI_Click = "UI/sfx_click1.mp3";
     public const string SFX_UI_Confirm = "UI/sfx_accept1.mp3";
-    public const string SFX_UI_Win_Open = "UI/UI_win_show.mp3";
-    public const string SFX_UI_Win_Close = "UI/UI_win_close.mp3";
+    public const string SFX_UI_Win_Open = "UI/ui_win_show.mp3";
+    public const string SFX_UI_Win_Close = "UI/ui_win_close.mp3";
 }
 

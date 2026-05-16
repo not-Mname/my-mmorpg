@@ -163,7 +163,7 @@ namespace HotUpdate
 
                 string sVersionData = webRequest.downloadHandler.text;
                 Debug.Log("成功获取到版本相关数据 >>>> \n" + sVersionData);
-                CheckNeedDownloadABPack(sVersionData);
+                StartCoroutine(CheckNeedDownloadABPack(sVersionData));
             }
         }
 
@@ -171,7 +171,7 @@ namespace HotUpdate
         /// 检测需要下载
         /// </summary>
         /// <param name="sServerVersionData"></param>
-        void CheckNeedDownloadABPack(string sServerVersionData)
+        private IEnumerator CheckNeedDownloadABPack(string sServerVersionData)
         {
             OnComparePackVersion?.Invoke();
             Dictionary<string, ABVersionItem> items = ConvertToAllABPackDesc(sServerVersionData);
@@ -180,6 +180,7 @@ namespace HotUpdate
             {
                 string localVersion = File.ReadAllText(_sVersionLocalFilePath);
                 _clientVersionInfo = ConvertToAllABPackDesc(localVersion);
+                int i = 0;
                 foreach (var item in items)
                 {
                     if (!_clientVersionInfo.ContainsKey(item.Key)) //如果本地没有该包
@@ -192,7 +193,12 @@ namespace HotUpdate
                         _allNeedDownloadABPack.Enqueue(item.Value);
                         _downloadTotalSize += item.Value.Size;
                     }
-                }
+                    if(++i > 10)
+                    {
+                        i = 0;
+                        yield return null;
+                    }
+                                    }
             }
             else //如果本地没有版本信息，说明是第一次下载
             {

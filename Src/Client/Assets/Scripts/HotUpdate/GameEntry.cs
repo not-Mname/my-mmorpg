@@ -1,5 +1,6 @@
 ﻿using Asset;
 using AssetBundleFramework;
+using Assets.Scripts.HotUpdate.Dispose;
 using GameInterFace;
 using Managers;
 using Services;
@@ -35,7 +36,7 @@ namespace HotUpdate
             Debug.Log("GameEntry Run");
             _progressBar = loading.progressBar;
             _progressText = loading.progressText;
-            Debug.Log($"_progressBar = {_progressBar == null} _progressText = {_progressText == null}");
+            _progressBar.gameObject.SetActive(false);
 
             yield return LoadAllSystem();
 
@@ -43,7 +44,7 @@ namespace HotUpdate
 
             yield return LoadAllConfig(editor);
 
-            yield return InitAllServices(loading);
+            yield return InitAllServices();
 
             _progressText.text = "加载完成!";
             yield return new WaitForSeconds(0.5f);
@@ -68,15 +69,36 @@ namespace HotUpdate
         private static IEnumerator LoadAllConfig(bool editor)
         {
             Debug.Log("LoadAllConfig Run");
+            using ProgressBarDipose _ = new(_progressBar);
+
             DataManager.Editor = editor;
-            if (editor)
-            { yield return DataManager.Instance.LoadDataEditor(_progressBar, _progressText); }
-            else
-            { yield return DataManager.Instance.Load(_progressBar, _progressText); }
+            var configs = DataManager.Instance.Configs;
+
+            _progressText.text = "加载配置数据...";
+            _progressBar.SetData(100, 0, 1);
+            var wait = new WaitForSeconds(0.1f);
+            float step = 100f / configs.Count;
+
+            for (int i = 0; i < configs.Count; i++)
+            {
+                var (name, fileName, setter) = configs[i];
+                _progressText.text = $"加载 {name}...";
+
+                string json = editor
+                    ? DataManager.Instance.LoadJsonFromFile(fileName)
+                    : DataManager.Instance.LoadJsonFromBundle(fileName);
+
+                setter(json);
+                _progressBar.CurrentValue += step;
+                yield return wait;
+            }
+            _progressBar.UpdateProgress();
         }
 
-        private static IEnumerator InitAllServices(LoadingManager loading)
+        private static IEnumerator InitAllServices()
         {
+            using ProgressBarDipose _ = new (_progressBar);
+
             Debug.Log("InitAllServices Run");
             _progressText.text = "正在初始化系统...";
             _progressBar.SetData(100, 0, _initializables.Count);
