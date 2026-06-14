@@ -40,7 +40,7 @@ namespace GameServer.Entities
             this.Info.Level = level;
             this.Info.ConfigId = configId;
             this.Info.Entity = this.EntityData;
-            this.Info.EntityId = this.entityId; 
+            this.Info.EntityId = this.EntityId; 
             this.Info.Name = this.Define.Name;
             this.InitSkills();
             this.InitBuffs();
@@ -86,8 +86,8 @@ namespace GameServer.Entities
                 {
                     context.CastInfo = new NSkillCastInfo()
                     {
-                        CasterId = this.entityId,
-                        TargetId = context.Target.entityId,
+                        CasterId = this.EntityId,
+                        TargetId = context.Target.EntityId,
                         SkillId = skill.Define.ID,
                         Position = new NVector3(),
                         Result = context.Result,

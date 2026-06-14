@@ -1,5 +1,4 @@
 ﻿using Asset;
-using GameInterFace;
 using HotUpdate;
 using System;
 using System.Collections;
@@ -7,10 +6,10 @@ using System.Linq;
 using System.Reflection;
 using TMPro;
 using UnityEngine;
-using Utilities;
 
 public class LoadingManager : MonoBehaviour
 {
+    
     public GameObject UITips;
     public GameObject UILoading;
     public Transform UIRoot;

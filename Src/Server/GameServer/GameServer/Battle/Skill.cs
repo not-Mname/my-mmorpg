@@ -80,7 +80,7 @@ namespace Battle
         private NSkillHitInfo GetHitInfo(bool isBullet = false)
         {
             NSkillHitInfo hitInfo = new NSkillHitInfo();
-            hitInfo.CasterId = this._context.Caster.entityId;
+            hitInfo.CasterId = this._context.Caster.EntityId;
             hitInfo.SkillId = this.Info.Id;
             hitInfo.HitId = this._hit;
             hitInfo.IsBullet = isBullet;
@@ -139,7 +139,7 @@ namespace Battle
             return new NDamageInfo()
             {
                 Damage = Math.Max(1, (int)final_damage),
-                EntityId = target.entityId,
+                EntityId = target.EntityId,
                 Critical = isCritical
             };
         }

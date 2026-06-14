@@ -5,7 +5,6 @@ package SkillBridge.Message;
 option csharp_namespace = "SkillBridge.Message";
 option cc_enable_arenas = true;
 
-import "base.proto";
 import "user.proto";
 import "map.proto";
 import "item.proto";
@@ -73,6 +72,7 @@ message NetMessageRequest{
 	SkillCastRequest skillCast = 50;
 	ArenaChallengeRequest arenaChallengeReq = 60;
 	ArenaChallengeResponse arenaChallengeRes = 61;
+	ArenaReadyRequest arenaReadyReq = 62;
 }
 
 message NetMessageResponse{
@@ -124,6 +124,9 @@ message NetMessageResponse{
 	ArenaChallengeResponse arenaChallengeRes = 61;
 	ArenaBeginResponse arenaBeginRes = 62;
 	ArenaEndResponse arenaEndRes = 63;
+	ArenaReadyResponse arenaReadyRes = 64;
+	ArenaRoundStartResponse arenaRoundStartRes = 65;
+	ArenaRoundEndResponse arenaRoundEndRes = 66;
 
 	StatusNotify statusNotify = 100;
 }

@@ -77,7 +77,7 @@ namespace Network
                     }
                     catch (System.Exception ex)
                     {
-                        Log.ErrorFormat("Message handler exception:{0}, {1}, {2}, {3}", ex.InnerException, ex.Message, ex.Source, ex.StackTrace);
+                        Log.Error($"Message handler exception: {ex} \n {ex.InnerException}, {ex.Message}, {ex.Source}, {ex.StackTrace}");
 
                         if (ThrowException)
                             throw ex;

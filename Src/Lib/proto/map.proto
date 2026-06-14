@@ -5,7 +5,7 @@ package SkillBridge.Message;
 option csharp_namespace = "SkillBridge.Message";
 option cc_enable_arenas = true;
 
-import "base.proto";
+import "user.proto";
 
 message MapCharacterEnterRequest
 {

@@ -4,32 +4,31 @@ using Models;
 using Network;
 using SkillBridge.Message;
 using System;
-using UnityEngine.Scripting;
 
 namespace Services
 {
-    [Preserve]
     class ArenaService : Singleton<ArenaService>, IDisposable, IInitializable
     {
-        public ArenaService()
-        {
-            MessageDistributer.Instance.Subscribe<ArenaChallengeRequest>(this.OnArenaChallengeRequest);
-            MessageDistributer.Instance.Subscribe<ArenaChallengeResponse>(this.OnArenaChallengeResponse);
-            MessageDistributer.Instance.Subscribe<ArenaBeginResponse>(this.OnArenaBeginResponse);
-            MessageDistributer.Instance.Subscribe<ArenaEndResponse>(this.OnArenaEndResponse);
-        }
-
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<ArenaChallengeRequest>(this.OnArenaChallengeRequest);
             MessageDistributer.Instance.Unsubscribe<ArenaChallengeResponse>(this.OnArenaChallengeResponse);
             MessageDistributer.Instance.Unsubscribe<ArenaBeginResponse>(this.OnArenaBeginResponse);
             MessageDistributer.Instance.Unsubscribe<ArenaEndResponse>(this.OnArenaEndResponse);
+            MessageDistributer.Instance.Unsubscribe<ArenaReadyResponse>(this.OnArenaReadyResponse);
+            MessageDistributer.Instance.Unsubscribe<ArenaRoundEndResponse>(this.OnArenaRoundEndResponse);
+            MessageDistributer.Instance.Unsubscribe<ArenaRoundStartResponse>(this.OnArenaRoundStartResponse);
         }
 
         public void Init()
         {
-
+            MessageDistributer.Instance.Subscribe<ArenaChallengeRequest>(this.OnArenaChallengeRequest);
+            MessageDistributer.Instance.Subscribe<ArenaChallengeResponse>(this.OnArenaChallengeResponse);
+            MessageDistributer.Instance.Subscribe<ArenaBeginResponse>(this.OnArenaBeginResponse);
+            MessageDistributer.Instance.Subscribe<ArenaEndResponse>(this.OnArenaEndResponse);
+            MessageDistributer.Instance.Subscribe<ArenaReadyResponse>(this.OnArenaReadyResponse);
+            MessageDistributer.Instance.Subscribe<ArenaRoundEndResponse>(this.OnArenaRoundEndResponse);
+            MessageDistributer.Instance.Subscribe<ArenaRoundStartResponse>(this.OnArenaRoundStartResponse);
         }
 
         /// <summary>
@@ -77,7 +76,17 @@ namespace Services
             };
             NetClient.Instance.SendMessage(message);
         }
-
+        internal void SendArenaReadyRequest(int arenaId)
+        {
+            var message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.ArenaReadyReq = new ArenaReadyRequest()
+            {
+                ArenaId = arenaId,
+                EntityId = User.Instance.CurrentCharacterInfo.EntityId,
+            };
+            NetClient.Instance.SendMessage(message);
+        }
         /// <summary>
         /// 竞技场结束
         /// </summary>
@@ -112,6 +121,7 @@ namespace Services
                 MessageBox.Show(message.Errormsg, "对方拒绝挑战");
             }
         }
+
         /// <summary>
         /// 蓝方回应红方的竞技场挑战请求，可以选择接受或者拒绝。
         /// </summary>
@@ -122,14 +132,30 @@ namespace Services
             var confirm = MessageBox.Show($"{message.Info.Red.Name}向你发起竞技场挑战请求",
                 "竞技场挑战请求", MessageBoxType.Confirm, "接受", "拒绝"
                 );
-            confirm.OnYes += () => {
-                this.SendArenaChallengeResponse(true, message) ;
+            confirm.OnYes += () =>
+            {
+                this.SendArenaChallengeResponse(true, message);
             };
-            confirm.OnNo += () => {
+            confirm.OnNo += () =>
+            {
                 this.SendArenaChallengeResponse(false, message);
             };
         }
 
+        private void OnArenaRoundStartResponse(object sender, ArenaRoundStartResponse message)
+        {
+            ArenaManager.Instance.OnRoundStart(message.Round, message.ArenaInfo);
+        }
+
+        private void OnArenaRoundEndResponse(object sender, ArenaRoundEndResponse message)
+        {
+            ArenaManager.Instance.OnRoundEnd(message.Round, message.ArenaInfo);
+        }
+
+        private void OnArenaReadyResponse(object sender, ArenaReadyResponse message)
+        {
+            ArenaManager.Instance.OnReady(message.Round, message.ArenaInfo);
+        }
 
     }
 }

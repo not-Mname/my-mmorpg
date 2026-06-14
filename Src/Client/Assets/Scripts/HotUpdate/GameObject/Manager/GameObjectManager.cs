@@ -2,14 +2,18 @@
 using AssetBundleFramework;
 using Entities;
 using Managers;
+using MMO;
 using Models;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Utilities;
 
 public class GameObjectManager : MonoSingleton<GameObjectManager>
 {
-    Dictionary<int, GameObject> characters = new Dictionary<int, GameObject>();
+    private Dictionary<int, GameObject> _characters = new Dictionary<int, GameObject>();
+    public Queue<GameObject> ReadyObjects = new();
 
     protected override void OnAwake()
     {
@@ -51,13 +55,13 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
 
     void CreateCharacteObject(BattleUnit character)
     {
-        if (!characters.ContainsKey(character.EntityId) || characters[character.EntityId] == null)
+        if (!_characters.ContainsKey(character.EntityId) || _characters[character.EntityId] == null)
         {
             StartCoroutine(CreateCharacterRoutine(character));
         }
         else
         {
-            this.InitGamObject(characters[character.EntityId], character);
+            this.InitGamObject(_characters[character.EntityId], character);
         }
 
 
@@ -77,7 +81,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         GameObject go = res.Instantiate(this.transform, true, true);
         go.SetActive(false);
         go.name = "Character_" + character.Id + "_" + character.Info.Name;
-        characters[character.EntityId] = go;
+        _characters[character.EntityId] = go;
 
         // 设置父物体
         //go.transform.SetParent(this.transform, true);
@@ -112,9 +116,18 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         }
         go.transform.position = GameObjectTool.LogicToWorld(character.Position);
         go.transform.forward = GameObjectTool.LogicToWorld(character.Direction);
-        go.SetActive(true);
+        if (!SceneManager.Instance.IsLoading)
+        {
+            go.SetActive(true);
+        }
+        else
+        {
+            go.SetActive(false);
+            ReadyObjects.Enqueue(go);
+        }
+
         ec.enabled = true;
-       if(pic) { pic.enabled = true; }
+        if (pic) { pic.enabled = true; }
         go.transform.SetParent(this.transform, true);
     }
 
@@ -134,10 +147,10 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
 
     public void DestroyCharacterObject(int characterId)
     {
-        if (characters.ContainsKey(characterId) && characters[characterId] != null)
+        if (_characters.ContainsKey(characterId) && _characters[characterId] != null)
         {
-            Destroy(characters[characterId]);
-            characters.Remove(characterId);
+            Destroy(_characters[characterId]);
+            _characters.Remove(characterId);
         }
     }
 }

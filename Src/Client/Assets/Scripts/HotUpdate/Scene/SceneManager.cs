@@ -13,8 +13,9 @@ namespace MMO
         public UnityAction OnSenceLoadDone = null;
         public string CurrentScene;
         public IResource CurrentSceneResource;
-        private string _loadingScene;
         public UnityAction<float> OnProgress = null;
+        public bool IsLoading = false;
+        private string _loadingScene;
         private bool _editor;
 
         private void Start()
@@ -30,7 +31,7 @@ namespace MMO
         IEnumerator LoadLevel(string name)
         {
             this._loadingScene = name;
-
+            IsLoading = true;
             // 构建模式下，先用 Resloader 加载场景 AB 包
             if (!_editor)
             {
@@ -80,6 +81,15 @@ namespace MMO
             OnProgress?.Invoke(1f);
             this.CurrentScene = this._loadingScene;
             EVENT.Fire(Const.EventId.on_map_loaded, EventMode.Multicast, this.CurrentScene);
+            IsLoading = false;
+            while (GameObjectManager.Instance.ReadyObjects.Count > 0)
+            {
+                var go = GameObjectManager.Instance.ReadyObjects.Dequeue();
+                if (go != null)
+                {
+                    go.SetActive(true);
+                }
+            }
         }
     }
 }

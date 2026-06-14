@@ -24,7 +24,11 @@ namespace SkillBridge.Message {
     static ChatReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgpjaGF0LnByb3RvEhNTa2lsbEJyaWRnZS5NZXNzYWdlGgpiYXNlLnByb3Rv",
+            "CgpjaGF0LnByb3RvEhNTa2lsbEJyaWRnZS5NZXNzYWdlGgxjb21tb24ucHJv",
+            "dG8irwEKC0NoYXRNZXNzYWdlEjEKB2NoYW5uZWwYASABKA4yIC5Ta2lsbEJy",
+            "aWRnZS5NZXNzYWdlLkNoYXRDaGFubmVsEgoKAmlkGAIgASgFEg8KB2Zyb21f",
+            "aWQYAyABKAUSEQoJZnJvbV9uYW1lGAQgASgJEg0KBXRvX2lkGAUgASgFEg8K",
+            "B3RvX25hbWUYBiABKAkSDwoHbWVzc2FnZRgHIAEoCRIMCgR0aW1lGAggASgB",
             "IkAKC0NoYXRSZXF1ZXN0EjEKB21lc3NhZ2UYASABKAsyIC5Ta2lsbEJyaWRn",
             "ZS5NZXNzYWdlLkNoYXRNZXNzYWdlIqUDCgxDaGF0UmVzcG9uc2USKwoGcmVz",
             "dWx0GAEgASgOMhsuU2tpbGxCcmlkZ2UuTWVzc2FnZS5SZXN1bHQSEAoIZXJy",
@@ -35,11 +39,14 @@ namespace SkillBridge.Message {
             "YWdlEjkKD3ByaXZhdGVNZXNzYWdlcxgGIAMoCzIgLlNraWxsQnJpZGdlLk1l",
             "c3NhZ2UuQ2hhdE1lc3NhZ2USNgoMdGVhbU1lc3NhZ2VzGAcgAygLMiAuU2tp",
             "bGxCcmlkZ2UuTWVzc2FnZS5DaGF0TWVzc2FnZRI3Cg1ndWlsZE1lc3NhZ2Vz",
-            "GAggAygLMiAuU2tpbGxCcmlkZ2UuTWVzc2FnZS5DaGF0TWVzc2FnZUIZ+AEB",
-            "qgITU2tpbGxCcmlkZ2UuTWVzc2FnZWIGcHJvdG8z"));
+            "GAggAygLMiAuU2tpbGxCcmlkZ2UuTWVzc2FnZS5DaGF0TWVzc2FnZSpnCgtD",
+            "aGF0Q2hhbm5lbBIUChBDSEFUX0NIQU5ORUxfQUxMEAASCQoFTE9DQUwQARIJ",
+            "CgVXT1JMRBACEgoKBlNZU1RFTRAEEgsKB1BSSVZBVEUQCBIICgRURUFNEBAS",
+            "CQoFR1VJTEQQIEIZ+AEBqgITU2tpbGxCcmlkZ2UuTWVzc2FnZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::SkillBridge.Message.BaseReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::FileDescriptor[] { global::SkillBridge.Message.CommonReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::SkillBridge.Message.ChatChannel), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.ChatMessage), global::SkillBridge.Message.ChatMessage.Parser, new[]{ "Channel", "Id", "FromId", "FromName", "ToId", "ToName", "Message", "Time" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.ChatRequest), global::SkillBridge.Message.ChatRequest.Parser, new[]{ "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.ChatResponse), global::SkillBridge.Message.ChatResponse.Parser, new[]{ "Result", "Errormsg", "LocalMessages", "WorldMessages", "SystemMessages", "PrivateMessages", "TeamMessages", "GuildMessages" }, null, null, null, null)
           }));
@@ -47,7 +54,477 @@ namespace SkillBridge.Message {
     #endregion
 
   }
+  #region Enums
+  public enum ChatChannel {
+    [pbr::OriginalName("CHAT_CHANNEL_ALL")] All = 0,
+    [pbr::OriginalName("LOCAL")] Local = 1,
+    [pbr::OriginalName("WORLD")] World = 2,
+    [pbr::OriginalName("SYSTEM")] System = 4,
+    [pbr::OriginalName("PRIVATE")] Private = 8,
+    [pbr::OriginalName("TEAM")] Team = 16,
+    [pbr::OriginalName("GUILD")] Guild = 32,
+  }
+
+  #endregion
+
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ChatMessage : pb::IMessage<ChatMessage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ChatMessage> _parser = new pb::MessageParser<ChatMessage>(() => new ChatMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ChatMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::SkillBridge.Message.ChatReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ChatMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ChatMessage(ChatMessage other) : this() {
+      channel_ = other.channel_;
+      id_ = other.id_;
+      fromId_ = other.fromId_;
+      fromName_ = other.fromName_;
+      toId_ = other.toId_;
+      toName_ = other.toName_;
+      message_ = other.message_;
+      time_ = other.time_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ChatMessage Clone() {
+      return new ChatMessage(this);
+    }
+
+    /// <summary>Field number for the "channel" field.</summary>
+    public const int ChannelFieldNumber = 1;
+    private global::SkillBridge.Message.ChatChannel channel_ = global::SkillBridge.Message.ChatChannel.All;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::SkillBridge.Message.ChatChannel Channel {
+      get { return channel_; }
+      set {
+        channel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 2;
+    private int id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "from_id" field.</summary>
+    public const int FromIdFieldNumber = 3;
+    private int fromId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int FromId {
+      get { return fromId_; }
+      set {
+        fromId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "from_name" field.</summary>
+    public const int FromNameFieldNumber = 4;
+    private string fromName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string FromName {
+      get { return fromName_; }
+      set {
+        fromName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "to_id" field.</summary>
+    public const int ToIdFieldNumber = 5;
+    private int toId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ToId {
+      get { return toId_; }
+      set {
+        toId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "to_name" field.</summary>
+    public const int ToNameFieldNumber = 6;
+    private string toName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ToName {
+      get { return toName_; }
+      set {
+        toName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "message" field.</summary>
+    public const int MessageFieldNumber = 7;
+    private string message_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Message {
+      get { return message_; }
+      set {
+        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "time" field.</summary>
+    public const int TimeFieldNumber = 8;
+    private double time_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Time {
+      get { return time_; }
+      set {
+        time_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ChatMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ChatMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Channel != other.Channel) return false;
+      if (Id != other.Id) return false;
+      if (FromId != other.FromId) return false;
+      if (FromName != other.FromName) return false;
+      if (ToId != other.ToId) return false;
+      if (ToName != other.ToName) return false;
+      if (Message != other.Message) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Time, other.Time)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Channel != global::SkillBridge.Message.ChatChannel.All) hash ^= Channel.GetHashCode();
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (FromId != 0) hash ^= FromId.GetHashCode();
+      if (FromName.Length != 0) hash ^= FromName.GetHashCode();
+      if (ToId != 0) hash ^= ToId.GetHashCode();
+      if (ToName.Length != 0) hash ^= ToName.GetHashCode();
+      if (Message.Length != 0) hash ^= Message.GetHashCode();
+      if (Time != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Time);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Channel != global::SkillBridge.Message.ChatChannel.All) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Channel);
+      }
+      if (Id != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Id);
+      }
+      if (FromId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(FromId);
+      }
+      if (FromName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(FromName);
+      }
+      if (ToId != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(ToId);
+      }
+      if (ToName.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(ToName);
+      }
+      if (Message.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Message);
+      }
+      if (Time != 0D) {
+        output.WriteRawTag(65);
+        output.WriteDouble(Time);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Channel != global::SkillBridge.Message.ChatChannel.All) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Channel);
+      }
+      if (Id != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Id);
+      }
+      if (FromId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(FromId);
+      }
+      if (FromName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(FromName);
+      }
+      if (ToId != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(ToId);
+      }
+      if (ToName.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(ToName);
+      }
+      if (Message.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Message);
+      }
+      if (Time != 0D) {
+        output.WriteRawTag(65);
+        output.WriteDouble(Time);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Channel != global::SkillBridge.Message.ChatChannel.All) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Channel);
+      }
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      }
+      if (FromId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FromId);
+      }
+      if (FromName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FromName);
+      }
+      if (ToId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ToId);
+      }
+      if (ToName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ToName);
+      }
+      if (Message.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
+      }
+      if (Time != 0D) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ChatMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Channel != global::SkillBridge.Message.ChatChannel.All) {
+        Channel = other.Channel;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      if (other.FromId != 0) {
+        FromId = other.FromId;
+      }
+      if (other.FromName.Length != 0) {
+        FromName = other.FromName;
+      }
+      if (other.ToId != 0) {
+        ToId = other.ToId;
+      }
+      if (other.ToName.Length != 0) {
+        ToName = other.ToName;
+      }
+      if (other.Message.Length != 0) {
+        Message = other.Message;
+      }
+      if (other.Time != 0D) {
+        Time = other.Time;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Channel = (global::SkillBridge.Message.ChatChannel) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            FromId = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            FromName = input.ReadString();
+            break;
+          }
+          case 40: {
+            ToId = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            ToName = input.ReadString();
+            break;
+          }
+          case 58: {
+            Message = input.ReadString();
+            break;
+          }
+          case 65: {
+            Time = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Channel = (global::SkillBridge.Message.ChatChannel) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            FromId = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            FromName = input.ReadString();
+            break;
+          }
+          case 40: {
+            ToId = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            ToName = input.ReadString();
+            break;
+          }
+          case 58: {
+            Message = input.ReadString();
+            break;
+          }
+          case 65: {
+            Time = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ChatRequest : pb::IMessage<ChatRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -63,7 +540,7 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SkillBridge.Message.ChatReflection.Descriptor.MessageTypes[0]; }
+      get { return global::SkillBridge.Message.ChatReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -270,7 +747,7 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SkillBridge.Message.ChatReflection.Descriptor.MessageTypes[1]; }
+      get { return global::SkillBridge.Message.ChatReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

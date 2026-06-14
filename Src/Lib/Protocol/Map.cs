@@ -24,7 +24,7 @@ namespace SkillBridge.Message {
     static MapReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgltYXAucHJvdG8SE1NraWxsQnJpZGdlLk1lc3NhZ2UaCmJhc2UucHJvdG8i",
+            "CgltYXAucHJvdG8SE1NraWxsQnJpZGdlLk1lc3NhZ2UaCnVzZXIucHJvdG8i",
             "KQoYTWFwQ2hhcmFjdGVyRW50ZXJSZXF1ZXN0Eg0KBW1hcElkGAEgASgFImMK",
             "GU1hcENoYXJhY3RlckVudGVyUmVzcG9uc2USDQoFbWFwSWQYASABKAUSNwoK",
             "Y2hhcmFjdGVycxgCIAMoCzIjLlNraWxsQnJpZGdlLk1lc3NhZ2UuTkNoYXJh",
@@ -36,7 +36,7 @@ namespace SkillBridge.Message {
             "b3J0UmVxdWVzdBIUCgx0ZWxlcG9ydGVySWQYASABKAVCGfgBAaoCE1NraWxs",
             "QnJpZGdlLk1lc3NhZ2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::SkillBridge.Message.BaseReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::SkillBridge.Message.UserReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.MapCharacterEnterRequest), global::SkillBridge.Message.MapCharacterEnterRequest.Parser, new[]{ "MapId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.MapCharacterEnterResponse), global::SkillBridge.Message.MapCharacterEnterResponse.Parser, new[]{ "MapId", "Characters" }, null, null, null, null),

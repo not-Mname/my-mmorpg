@@ -24,22 +24,23 @@ namespace SkillBridge.Message {
     static FriendReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgxmcmllbmQucHJvdG8SE1NraWxsQnJpZGdlLk1lc3NhZ2UaCmJhc2UucHJv",
-            "dG8iVgoQRnJpZW5kQWRkUmVxdWVzdBIPCgdmcm9tX2lkGAEgASgFEhEKCWZy",
-            "b21fbmFtZRgCIAEoCRINCgV0b19pZBgDIAEoBRIPCgd0b19uYW1lGAQgASgJ",
-            "IooBChFGcmllbmRBZGRSZXNwb25zZRIrCgZyZXN1bHQYASABKA4yGy5Ta2ls",
-            "bEJyaWRnZS5NZXNzYWdlLlJlc3VsdBIQCghlcnJvcm1zZxgCIAEoCRI2Cgdy",
-            "ZXF1ZXN0GAMgASgLMiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5GcmllbmRBZGRS",
-            "ZXF1ZXN0IhMKEUZyaWVuZExpc3RSZXF1ZXN0IoYBChJGcmllbmRMaXN0UmVz",
-            "cG9uc2USKwoGcmVzdWx0GAEgASgOMhsuU2tpbGxCcmlkZ2UuTWVzc2FnZS5S",
-            "ZXN1bHQSEAoIZXJyb3Jtc2cYAiABKAkSMQoHZnJpZW5kcxgDIAMoCzIgLlNr",
-            "aWxsQnJpZGdlLk1lc3NhZ2UuTkZyaWVuZEluZm8iMwoTRnJpZW5kUmVtb3Zl",
-            "UmVxdWVzdBIKCgJpZBgBIAEoBRIQCghmcmllbmRJZBgCIAEoBSJhChRGcmll",
-            "bmRSZW1vdmVSZXNwb25zZRIrCgZyZXN1bHQYASABKA4yGy5Ta2lsbEJyaWRn",
-            "ZS5NZXNzYWdlLlJlc3VsdBIQCghlcnJvcm1zZxgCIAEoCRIKCgJpZBgDIAEo",
-            "BUIZ+AEBqgITU2tpbGxCcmlkZ2UuTWVzc2FnZWIGcHJvdG8z"));
+            "CgxmcmllbmQucHJvdG8SE1NraWxsQnJpZGdlLk1lc3NhZ2UaDGNvbW1vbi5w",
+            "cm90bxoKdXNlci5wcm90byJWChBGcmllbmRBZGRSZXF1ZXN0Eg8KB2Zyb21f",
+            "aWQYASABKAUSEQoJZnJvbV9uYW1lGAIgASgJEg0KBXRvX2lkGAMgASgFEg8K",
+            "B3RvX25hbWUYBCABKAkiigEKEUZyaWVuZEFkZFJlc3BvbnNlEisKBnJlc3Vs",
+            "dBgBIAEoDjIbLlNraWxsQnJpZGdlLk1lc3NhZ2UuUmVzdWx0EhAKCGVycm9y",
+            "bXNnGAIgASgJEjYKB3JlcXVlc3QYAyABKAsyJS5Ta2lsbEJyaWRnZS5NZXNz",
+            "YWdlLkZyaWVuZEFkZFJlcXVlc3QiEwoRRnJpZW5kTGlzdFJlcXVlc3QihgEK",
+            "EkZyaWVuZExpc3RSZXNwb25zZRIrCgZyZXN1bHQYASABKA4yGy5Ta2lsbEJy",
+            "aWRnZS5NZXNzYWdlLlJlc3VsdBIQCghlcnJvcm1zZxgCIAEoCRIxCgdmcmll",
+            "bmRzGAMgAygLMiAuU2tpbGxCcmlkZ2UuTWVzc2FnZS5ORnJpZW5kSW5mbyIz",
+            "ChNGcmllbmRSZW1vdmVSZXF1ZXN0EgoKAmlkGAEgASgFEhAKCGZyaWVuZElk",
+            "GAIgASgFImEKFEZyaWVuZFJlbW92ZVJlc3BvbnNlEisKBnJlc3VsdBgBIAEo",
+            "DjIbLlNraWxsQnJpZGdlLk1lc3NhZ2UuUmVzdWx0EhAKCGVycm9ybXNnGAIg",
+            "ASgJEgoKAmlkGAMgASgFQhn4AQGqAhNTa2lsbEJyaWRnZS5NZXNzYWdlYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::SkillBridge.Message.BaseReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::SkillBridge.Message.CommonReflection.Descriptor, global::SkillBridge.Message.UserReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.FriendAddRequest), global::SkillBridge.Message.FriendAddRequest.Parser, new[]{ "FromId", "FromName", "ToId", "ToName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.FriendAddResponse), global::SkillBridge.Message.FriendAddResponse.Parser, new[]{ "Result", "Errormsg", "Request" }, null, null, null, null),

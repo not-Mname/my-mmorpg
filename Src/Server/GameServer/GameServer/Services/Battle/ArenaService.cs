@@ -15,6 +15,7 @@ namespace GameServer.Services.Battle
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<ArenaChallengeRequest>(OnArenaChallengeRequest);
             MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<ArenaChallengeResponse>(OnArenaChallengeResponse);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<ArenaReadyRequest>(OnArenaReadyRequest);
 
         }
 
@@ -22,7 +23,14 @@ namespace GameServer.Services.Battle
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ArenaChallengeRequest>(OnArenaChallengeRequest);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ArenaChallengeResponse>(OnArenaChallengeResponse);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ArenaReadyRequest>(OnArenaReadyRequest);
             ArenaManager.Instance.Init();
+        }
+
+        private void OnArenaReadyRequest(NetConnection<NetSession> sender, ArenaReadyRequest message)
+        {
+            var arena = ArenaManager.Instance.GetArena(message.ArenaId);
+            arena?.EntityReady(message.EntityId);
         }
 
         private void OnArenaChallengeRequest(NetConnection<NetSession> sender, ArenaChallengeRequest request)
@@ -30,7 +38,7 @@ namespace GameServer.Services.Battle
             Character character = sender.Session.Character;
             Log.Info($"ArenaChallengeRequest: RedId {request.Info.Red.EntityId}, RedName {request.Info.Red.Name}, BlueId {request.Info.Blue.EntityId}, BlueName {request.Info.Blue.Name}");
 
-            NetConnection<NetSession> blue = null;
+            NetConnection<NetSession>? blue = null;
             if (request.Info.Blue.EntityId > 0)
             {
                 blue = SessionManager.Instance.GetSession(request.Info.Blue.EntityId);
@@ -79,6 +87,45 @@ namespace GameServer.Services.Battle
             };
             arena.Red.Session.Response.ArenaBeginRes = arenaBegin;
             arena.Blue.Session.Response.ArenaBeginRes = arenaBegin;
+            arena.Red.SendResponse();
+            arena.Blue.SendResponse();
+        }
+
+        internal void SendArenaReady(Arena arena)
+        {
+            var arenaReady = new ArenaReadyResponse()
+            {
+                ArenaInfo = arena.ArenaInfo,
+                Round = arena.Round,
+            };
+            arena.Red.Session.Response.ArenaReadyRes = arenaReady;
+            arena.Blue.Session.Response.ArenaReadyRes = arenaReady;
+            arena.Red.SendResponse();
+            arena.Blue.SendResponse();
+        }
+
+        internal void SendArenaRoundStart(Arena arena)
+        {
+            var roundStart = new ArenaRoundStartResponse()
+            {
+                ArenaInfo = arena.ArenaInfo,
+                Round = arena.Round,
+            };
+            arena.Red.Session.Response.ArenaRoundStartRes = roundStart;
+            arena.Blue.Session.Response.ArenaRoundStartRes = roundStart;
+            arena.Red.SendResponse();
+            arena.Blue.SendResponse();
+        }
+
+        internal void SendArenaRoundEnd(Arena arena)
+        {
+            var roundEnd = new ArenaRoundEndResponse()
+            {
+                ArenaInfo = arena.ArenaInfo,
+                Round = arena.Round,
+            };
+            arena.Red.Session.Response.ArenaRoundEndRes = roundEnd;
+            arena.Blue.Session.Response.ArenaRoundEndRes = roundEnd;
             arena.Red.SendResponse();
             arena.Blue.SendResponse();
         }

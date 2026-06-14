@@ -31,10 +31,19 @@ namespace GameServer.GBattle
         /// </summary>
         List<BattleUnit> _deathPool = new List<BattleUnit>();
 
+        /// <summary>
+        /// 本帧产生的技能命中信息列表，供广播使用
+        /// </summary>
         List<NSkillHitInfo> _hits = new List<NSkillHitInfo>();
 
+        /// <summary>
+        /// 本帧产生的技能释放信息列表，供广播使用
+        /// </summary>
         List<NSkillCastInfo> _casts = new List<NSkillCastInfo>();
 
+        /// <summary>
+        /// 本帧产生的Buff信息列表，供广播使用
+        /// </summary>
         List<NBuffInfo> _buffActions = new List<NBuffInfo>();
 
         /// <summary>
@@ -59,7 +68,7 @@ namespace GameServer.GBattle
             if (message.CastInfo != null)
             {
                 // 验证释放者是否为当前角色（防止伪发包）
-                if (character.entityId != message.CastInfo.CasterId)
+                if (character.EntityId != message.CastInfo.CasterId)
                 {
                     return;
                 }
@@ -72,7 +81,7 @@ namespace GameServer.GBattle
         /// <summary>
         /// 战斗更新（每帧调用）
         /// 1. 处理待释放的技能
-        /// 2. 更新所有战斗单位状态
+        /// 2. 更新所有战斗单位状态 包括 技能的更新 buff的更新
         /// </summary>
         public void Update()
         {
@@ -135,7 +144,7 @@ namespace GameServer.GBattle
         /// <param name="unit">要加入战斗的单位</param>
         public void JoinBattle(BattleUnit unit)
         {
-            this._allUnits[unit.entityId] = unit;
+            this._allUnits[unit.EntityId] = unit;
         }
 
         /// <summary>
@@ -144,7 +153,7 @@ namespace GameServer.GBattle
         /// <param name="unit">要离开战斗的单位</param>
         public void LeaveBattle(BattleUnit unit)
         {
-            this._allUnits.Remove(unit.entityId);
+            this._allUnits.Remove(unit.EntityId);
         }
 
         /// <summary>
@@ -166,7 +175,6 @@ namespace GameServer.GBattle
                     this._deathPool.Add(unit);
                 }
             }
-
             // 将死亡单位移出战斗
             foreach (var unit in this._deathPool)
             {
@@ -199,7 +207,7 @@ namespace GameServer.GBattle
             }
 
             // 执行技能
-            context.Caster.CastSkill(context, cast.SkillId);
+            context.Caster?.CastSkill(context, cast.SkillId);
         }
 
         internal List<BattleUnit> FindUnitsInRange(Vector3Int pos, int aoeRange)

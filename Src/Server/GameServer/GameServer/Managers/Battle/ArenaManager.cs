@@ -12,7 +12,9 @@ namespace GameServer.Managers.MBattle
         public const int ArenaMaxInstance = 100;
 
         Queue<int> InstanceIndexes = new();
-        Dictionary<int, Arena> Arenas = new();
+        List<Arena> Arenas = new(ArenaMaxInstance);
+
+        
 
         internal void Init()
         {
@@ -21,7 +23,17 @@ namespace GameServer.Managers.MBattle
                 InstanceIndexes.Enqueue(i);
             }
         }
-
+        public void Update()
+        {
+            foreach(var arena in Arenas)
+            {
+                arena?.Update();
+            }
+        }
+        internal Arena? GetArena(int arenaId)
+        {
+            return Arenas?.ElementAt(arenaId);
+        }
         internal Arena NewArena(NArenaInfo arenaInfo, NetConnection<NetSession> red, NetConnection<NetSession> blue)
         {
             int instance = InstanceIndexes.Dequeue();

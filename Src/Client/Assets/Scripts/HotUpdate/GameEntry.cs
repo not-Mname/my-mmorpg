@@ -17,6 +17,7 @@ namespace HotUpdate
         private static TextMeshProUGUI _progressText;
         private static List<IInitializable> _initializables = new() {
             EventManager.Instance,
+            BattleService.Instance,
             MapService.Instance,
             ShopManager.Instance,
             StatusService.Instance,

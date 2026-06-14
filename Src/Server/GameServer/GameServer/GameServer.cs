@@ -2,6 +2,7 @@
 using GameInterFace;
 using GameServer.Managers.Data;
 using GameServer.Managers.Entities;
+using GameServer.Managers.MBattle;
 using GameServer.Services.Data;
 using Network;
 using System.Reflection;
@@ -93,10 +94,12 @@ namespace GameServer
             while (running)
             {
                 var mapManager = MapManager.Instance;
+                var arenaManager = ArenaManager.Instance;
                 Time.Tick();
                 Thread.Sleep(100);//一秒10帧
                 //Console.WriteLine("{0} {1} {2} {3} {4}", Time.deltaTime, Time.frameCount, Time.ticks, Time.time, Time.realtimeSinceStartup);
                 mapManager.Update();
+                arenaManager.Update();
             }
         }
     }

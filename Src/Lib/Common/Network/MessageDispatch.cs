@@ -43,7 +43,9 @@ namespace Network
             if (message.ArenaChallengeReq != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.ArenaChallengeReq); }
             if (message.ArenaChallengeRes != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.ArenaChallengeRes); }
             if (message.ArenaEndRes != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.ArenaEndRes); }
-
+            if (message.ArenaRoundEndRes != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.ArenaRoundEndRes); }
+            if (message.ArenaRoundStartRes != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.ArenaRoundStartRes); }
+            if (message.ArenaReadyRes != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.ArenaReadyRes); }
         }
 
 
@@ -81,6 +83,7 @@ namespace Network
             if (message.SkillCast != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.SkillCast); }
             if (message.ArenaChallengeReq != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.ArenaChallengeReq); }
             if (message.ArenaChallengeRes != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.ArenaChallengeRes); }
+            if (message.ArenaReadyReq != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.ArenaReadyReq); }
         }
     }
 }

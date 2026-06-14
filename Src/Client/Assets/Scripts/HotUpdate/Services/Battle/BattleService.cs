@@ -1,4 +1,5 @@
 ﻿using Entities;
+using GameInterFace;
 using Managers;
 using Network;
 using SkillBridge.Message;
@@ -7,17 +8,8 @@ using Utilities;
 
 namespace Services
 {
-    class BattleService : Singleton<BattleService>, IDisposable
+    class BattleService : Singleton<BattleService>, IDisposable, IInitializable
     {
-        public BattleService()
-        {
-            MessageDistributer.Instance.Subscribe<SkillCastResponse>(OnSkillCast);
-            MessageDistributer.Instance.Subscribe<SkillHitResponse>(OnSkillHit);
-            MessageDistributer.Instance.Subscribe<BuffResponse>(OnBuff);
-        }
-
-
-
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<SkillCastResponse>(OnSkillCast);
@@ -27,7 +19,9 @@ namespace Services
 
         public void Init()
         {
-
+            MessageDistributer.Instance.Subscribe<SkillCastResponse>(OnSkillCast);
+            MessageDistributer.Instance.Subscribe<SkillHitResponse>(OnSkillHit);
+            MessageDistributer.Instance.Subscribe<BuffResponse>(OnBuff);
         }
         private void OnBuff(object sender, BuffResponse message)
         {

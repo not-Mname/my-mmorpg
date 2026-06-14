@@ -5,8 +5,145 @@ package SkillBridge.Message;
 option csharp_namespace = "SkillBridge.Message";
 option cc_enable_arenas = true;
 
-import "base.proto";
+import "common.proto";
+import "item.proto";
+import "battle.proto";
+import "quest.proto";
 
+enum CharacterType
+{
+	Player = 0;
+	NPC = 1;
+	Monster = 2;
+}
+
+enum CharacterClass
+{
+	NONE = 0;
+	WARRIOR = 1;
+	WIZARD = 2;
+	ARCHER = 3;
+}
+
+enum CharacterState
+{
+	CHARACTER_STATE_IDLE = 0;
+	CHARACTER_STATE_MOVE = 1;
+}
+
+enum EntityEvent
+{
+	ENTITY_EVENT_NONE = 0;
+	ENTITY_EVENT_IDLE = 1;
+	MOVE_FWD = 2;
+	MOVE_BACK = 3;
+	JUMP = 4;
+	RIDE = 5;
+}
+message NEntity {
+	int32 id = 1;
+	NVector3 position = 2;
+	NVector3 direction = 3;
+	int32 speed = 4;
+}
+
+message NEntitySync {
+	int32 id = 1;
+	EntityEvent event = 2;
+	NEntity entity = 3;
+	int32 param = 4;
+}
+
+message NAttributeDynamic {
+	int32 hp = 1;
+	int32 mp = 2;
+}
+
+message NFriendInfo
+{
+	int32 id = 1;
+	NCharacterInfo friendInfo = 2;
+	int32 status = 3;
+}
+
+enum GuildTitle
+{
+	GUILD_TITLE_NONE = 0;
+	PRESIDENT = 1;
+	VICE_PRESIDENT = 2;
+}
+
+enum ApplyResult
+{
+	APPLY_RESULT_NONE = 0;
+	ACCEPT = 1;
+	REJECT = 2;
+}
+
+enum GuildAdminCommand
+{
+	KICKOUT = 0;
+	PROMOTE = 1;
+	DEPOST = 2;
+	TRANSFER = 3;
+}
+
+message NGuildMemberInfo
+{
+	int32 id = 1;
+	int32 characterId = 2;
+	GuildTitle title = 3;
+	NCharacterInfo info = 4;
+	int64 joinTime = 5;
+	int64 lastTime = 6;
+	int32 status = 7;
+}
+
+message NGuildApplyInfo
+{
+	int32 guild_id = 1;
+	int32 characterId = 2;
+	string name = 3;
+	int32 class = 4;
+	int32 level = 5;
+	ApplyResult result = 6;
+}
+
+message NGuildInfo
+{
+	int32 id = 1;
+	string guild_name = 2;
+	int32 leaderId = 3;
+	string leaderName = 4;
+	string notice = 5;
+	int32 memberCount = 6;
+	repeated NGuildMemberInfo members = 7;
+	repeated NGuildApplyInfo applies = 8;
+	int64 createTime = 9;
+}
+
+message NCharacterInfo {
+	int32 id = 1;
+	int32 config_id = 2;
+	int32 entity_id = 3;
+	string name = 4;
+	CharacterType type = 5;
+	CharacterClass class = 6;
+	int32 level = 7;
+	int32 exp = 8;
+	NAttributeDynamic dynamic = 9;
+	int32 mapId = 10;
+	NEntity entity = 11;
+	int64 gold = 12;
+	repeated NItemInfo items = 13;
+	NBagInfo bag = 14;
+	bytes Equips = 15;
+	repeated NQuestInfo quests = 16;
+	repeated NFriendInfo friends = 17;
+	NGuildInfo guild = 18;
+	int32 ride = 19;
+	repeated NSkillInfo skills = 20;
+}
 message NUserInfo {
 	int32 id = 1;
 	NPlayerInfo player = 2;

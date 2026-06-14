@@ -30,6 +30,7 @@ public class UIWouldElementManager : MonoSingleton<UIWouldElementManager>
         IResource popupText = Resloader.Instance.LoadAssetSync(_popupText);
         var go = popupText.Instantiate(transform, Quaternion.identity, true);
         go.name = "PopupText";
+        go.transform.position = position;
         go.GetComponent<UIPopupText>().Init(type, damage, isCritical, User.Instance.CurrentCharacterObject.transform);
     }
 

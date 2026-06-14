@@ -24,118 +24,124 @@ namespace SkillBridge.Message {
     static MessageReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg1tZXNzYWdlLnByb3RvEhNTa2lsbEJyaWRnZS5NZXNzYWdlGgpiYXNlLnBy",
-            "b3RvGgp1c2VyLnByb3RvGgltYXAucHJvdG8aCml0ZW0ucHJvdG8aC3F1ZXN0",
-            "LnByb3RvGgxmcmllbmQucHJvdG8aCnRlYW0ucHJvdG8aC2d1aWxkLnByb3Rv",
-            "GgpjaGF0LnByb3RvGgxiYXR0bGUucHJvdG8aC2FyZW5hLnByb3RvIoABCgpO",
-            "ZXRNZXNzYWdlEjcKB1JlcXVlc3QYASABKAsyJi5Ta2lsbEJyaWRnZS5NZXNz",
-            "YWdlLk5ldE1lc3NhZ2VSZXF1ZXN0EjkKCFJlc3BvbnNlGAIgASgLMicuU2tp",
-            "bGxCcmlkZ2UuTWVzc2FnZS5OZXRNZXNzYWdlUmVzcG9uc2Ui8g8KEU5ldE1l",
-            "c3NhZ2VSZXF1ZXN0Ej4KDHVzZXJSZWdpc3RlchgBIAEoCzIoLlNraWxsQnJp",
-            "ZGdlLk1lc3NhZ2UuVXNlclJlZ2lzdGVyUmVxdWVzdBI4Cgl1c2VyTG9naW4Y",
-            "AiABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlVzZXJMb2dpblJlcXVlc3QS",
-            "QwoKY3JlYXRlQ2hhchgDIAEoCzIvLlNraWxsQnJpZGdlLk1lc3NhZ2UuVXNl",
-            "ckNyZWF0ZUNoYXJhY3RlclJlcXVlc3QSPAoJZ2FtZUVudGVyGAQgASgLMiku",
-            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5Vc2VyR2FtZUVudGVyUmVxdWVzdBI8Cgln",
-            "YW1lTGVhdmUYBSABKAsyKS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlVzZXJHYW1l",
-            "TGVhdmVSZXF1ZXN0EkgKEW1hcENoYXJhY3RlckVudGVyGAYgASgLMi0uU2tp",
-            "bGxCcmlkZ2UuTWVzc2FnZS5NYXBDaGFyYWN0ZXJFbnRlclJlcXVlc3QSQAoN",
-            "bWFwRW50aXR5U3luYxgIIAEoCzIpLlNraWxsQnJpZGdlLk1lc3NhZ2UuTWFw",
-            "RW50aXR5U3luY1JlcXVlc3QSPAoLbWFwVGVsZXBvcnQYCSABKAsyJy5Ta2ls",
-            "bEJyaWRnZS5NZXNzYWdlLk1hcFRlbGVwb3J0UmVxdWVzdBI0CgdpdGVtQnV5",
-            "GAogASgLMiMuU2tpbGxCcmlkZ2UuTWVzc2FnZS5JdGVtQnV5UmVxdWVzdBI4",
-            "CglpdGVtRXF1aXAYCyABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkl0ZW1F",
-            "cXVpcFJlcXVlc3QSOAoJcXVlc3RMaXN0GAwgASgLMiUuU2tpbGxCcmlkZ2Uu",
-            "TWVzc2FnZS5RdWVzdExpc3RSZXF1ZXN0EjwKC3F1ZXN0QWNjZXB0GA0gASgL",
-            "MicuU2tpbGxCcmlkZ2UuTWVzc2FnZS5RdWVzdEFjY2VwdFJlcXVlc3QSNAoH",
-            "YmFnU2F2ZRgOIAEoCzIjLlNraWxsQnJpZGdlLk1lc3NhZ2UuQmFnU2F2ZVJl",
-            "cXVlc3QSPAoLcXVlc3RTdWJtaXQYDyABKAsyJy5Ta2lsbEJyaWRnZS5NZXNz",
-            "YWdlLlF1ZXN0U3VibWl0UmVxdWVzdBI7CgxmcmllbmRBZGRSZXEYECABKAsy",
-            "JS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkZyaWVuZEFkZFJlcXVlc3QSPAoMZnJp",
-            "ZW5kQWRkUmVzGBEgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5GcmllbmRB",
-            "ZGRSZXNwb25zZRI6CgpmcmllbmRMaXN0GBIgASgLMiYuU2tpbGxCcmlkZ2Uu",
-            "TWVzc2FnZS5GcmllbmRMaXN0UmVxdWVzdBI+CgxmcmllbmRSZW1vdmUYEyAB",
-            "KAsyKC5Ta2lsbEJyaWRnZS5NZXNzYWdlLkZyaWVuZFJlbW92ZVJlcXVlc3QS",
-            "PQoNdGVhbUludml0ZVJlcRgUIAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2Uu",
-            "VGVhbUludml0ZVJlcXVlc3QSPgoNdGVhbUludml0ZVJlcxgVIAEoCzInLlNr",
-            "aWxsQnJpZGdlLk1lc3NhZ2UuVGVhbUludml0ZVJlc3BvbnNlEjYKCHRlYW1J",
-            "bmZvGBYgASgLMiQuU2tpbGxCcmlkZ2UuTWVzc2FnZS5UZWFtSW5mb1JlcXVl",
-            "c3QSOAoJdGVhbUxlYXZlGBcgASgLMiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5U",
-            "ZWFtTGVhdmVSZXF1ZXN0EjwKC2d1aWxkQ3JlYXRlGBggASgLMicuU2tpbGxC",
-            "cmlkZ2UuTWVzc2FnZS5HdWlsZENyZWF0ZVJlcXVlc3QSOwoMZ3VpbGRKb2lu",
-            "UmVxGBkgASgLMiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5HdWlsZEpvaW5SZXF1",
-            "ZXN0EjwKDGd1aWxkSm9pblJlcxgaIAEoCzImLlNraWxsQnJpZGdlLk1lc3Nh",
-            "Z2UuR3VpbGRKb2luUmVzcG9uc2USMAoFZ3VpbGQYGyABKAsyIS5Ta2lsbEJy",
-            "aWRnZS5NZXNzYWdlLkd1aWxkUmVxdWVzdBI6CgpndWlsZExlYXZlGBwgASgL",
-            "MiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5HdWlsZExlYXZlUmVxdWVzdBI4Cgln",
-            "dWlsZExpc3QYHSABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1aWxkTGlz",
-            "dFJlcXVlc3QSOgoKZ3VpbGRBZG1pbhgeIAEoCzImLlNraWxsQnJpZGdlLk1l",
-            "c3NhZ2UuR3VpbGRBZG1pblJlcXVlc3QSLgoEY2hhdBgfIAEoCzIgLlNraWxs",
-            "QnJpZGdlLk1lc3NhZ2UuQ2hhdFJlcXVlc3QSOAoJc2tpbGxDYXN0GDIgASgL",
-            "MiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5Ta2lsbENhc3RSZXF1ZXN0EkUKEWFy",
-            "ZW5hQ2hhbGxlbmdlUmVxGDwgASgLMiouU2tpbGxCcmlkZ2UuTWVzc2FnZS5B",
-            "cmVuYUNoYWxsZW5nZVJlcXVlc3QSRgoRYXJlbmFDaGFsbGVuZ2VSZXMYPSAB",
-            "KAsyKy5Ta2lsbEJyaWRnZS5NZXNzYWdlLkFyZW5hQ2hhbGxlbmdlUmVzcG9u",
-            "c2UiuhIKEk5ldE1lc3NhZ2VSZXNwb25zZRI/Cgx1c2VyUmVnaXN0ZXIYASAB",
-            "KAsyKS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlVzZXJSZWdpc3RlclJlc3BvbnNl",
-            "EjkKCXVzZXJMb2dpbhgCIAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2UuVXNl",
-            "ckxvZ2luUmVzcG9uc2USRAoKY3JlYXRlQ2hhchgDIAEoCzIwLlNraWxsQnJp",
-            "ZGdlLk1lc3NhZ2UuVXNlckNyZWF0ZUNoYXJhY3RlclJlc3BvbnNlEj0KCWdh",
-            "bWVFbnRlchgEIAEoCzIqLlNraWxsQnJpZGdlLk1lc3NhZ2UuVXNlckdhbWVF",
-            "bnRlclJlc3BvbnNlEj0KCWdhbWVMZWF2ZRgFIAEoCzIqLlNraWxsQnJpZGdl",
-            "Lk1lc3NhZ2UuVXNlckdhbWVMZWF2ZVJlc3BvbnNlEkkKEW1hcENoYXJhY3Rl",
-            "ckVudGVyGAYgASgLMi4uU2tpbGxCcmlkZ2UuTWVzc2FnZS5NYXBDaGFyYWN0",
-            "ZXJFbnRlclJlc3BvbnNlEkkKEW1hcENoYXJhY3RlckxlYXZlGAcgASgLMi4u",
-            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5NYXBDaGFyYWN0ZXJMZWF2ZVJlc3BvbnNl",
-            "EkEKDW1hcEVudGl0eVN5bmMYCCABKAsyKi5Ta2lsbEJyaWRnZS5NZXNzYWdl",
-            "Lk1hcEVudGl0eVN5bmNSZXNwb25zZRI1CgdpdGVtQnV5GAogASgLMiQuU2tp",
-            "bGxCcmlkZ2UuTWVzc2FnZS5JdGVtQnV5UmVzcG9uc2USOQoJaXRlbUVxdWlw",
-            "GAsgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5JdGVtRXF1aXBSZXNwb25z",
-            "ZRI5CglxdWVzdExpc3QYDCABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLlF1",
-            "ZXN0TGlzdFJlc3BvbnNlEj0KC3F1ZXN0QWNjZXB0GA0gASgLMiguU2tpbGxC",
-            "cmlkZ2UuTWVzc2FnZS5RdWVzdEFjY2VwdFJlc3BvbnNlEjQKB2JhZ1NhdmUY",
-            "DiABKAsyIy5Ta2lsbEJyaWRnZS5NZXNzYWdlLkJhZ1NhdmVSZXF1ZXN0Ej0K",
-            "C3F1ZXN0U3VibWl0GA8gASgLMiguU2tpbGxCcmlkZ2UuTWVzc2FnZS5RdWVz",
-            "dFN1Ym1pdFJlc3BvbnNlEjsKDGZyaWVuZEFkZFJlcRgQIAEoCzIlLlNraWxs",
-            "QnJpZGdlLk1lc3NhZ2UuRnJpZW5kQWRkUmVxdWVzdBI8CgxmcmllbmRBZGRS",
-            "ZXMYESABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLkZyaWVuZEFkZFJlc3Bv",
-            "bnNlEjsKCmZyaWVuZExpc3QYEiABKAsyJy5Ta2lsbEJyaWRnZS5NZXNzYWdl",
-            "LkZyaWVuZExpc3RSZXNwb25zZRI/CgxmcmllbmRSZW1vdmUYEyABKAsyKS5T",
-            "a2lsbEJyaWRnZS5NZXNzYWdlLkZyaWVuZFJlbW92ZVJlc3BvbnNlEj0KDXRl",
-            "YW1JbnZpdGVSZXEYFCABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLlRlYW1J",
-            "bnZpdGVSZXF1ZXN0Ej4KDXRlYW1JbnZpdGVSZXMYFSABKAsyJy5Ta2lsbEJy",
-            "aWRnZS5NZXNzYWdlLlRlYW1JbnZpdGVSZXNwb25zZRI3Cgh0ZWFtSW5mbxgW",
-            "IAEoCzIlLlNraWxsQnJpZGdlLk1lc3NhZ2UuVGVhbUluZm9SZXNwb25zZRI5",
-            "Cgl0ZWFtTGVhdmUYFyABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLlRlYW1M",
-            "ZWF2ZVJlc3BvbnNlEj0KC2d1aWxkQ3JlYXRlGBggASgLMiguU2tpbGxCcmlk",
-            "Z2UuTWVzc2FnZS5HdWlsZENyZWF0ZVJlc3BvbnNlEjsKDGd1aWxkSm9pblJl",
-            "cRgZIAEoCzIlLlNraWxsQnJpZGdlLk1lc3NhZ2UuR3VpbGRKb2luUmVxdWVz",
-            "dBI8CgxndWlsZEpvaW5SZXMYGiABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdl",
-            "Lkd1aWxkSm9pblJlc3BvbnNlEjEKBWd1aWxkGBsgASgLMiIuU2tpbGxCcmlk",
-            "Z2UuTWVzc2FnZS5HdWlsZFJlc3BvbnNlEjsKCmd1aWxkTGVhdmUYHCABKAsy",
-            "Jy5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1aWxkTGVhdmVSZXNwb25zZRI5Cgln",
-            "dWlsZExpc3QYHSABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1aWxkTGlz",
-            "dFJlc3BvbnNlEjsKCmd1aWxkQWRtaW4YHiABKAsyJy5Ta2lsbEJyaWRnZS5N",
-            "ZXNzYWdlLkd1aWxkQWRtaW5SZXNwb25zZRIvCgRjaGF0GB8gASgLMiEuU2tp",
-            "bGxCcmlkZ2UuTWVzc2FnZS5DaGF0UmVzcG9uc2USOQoJc2tpbGxDYXN0GDIg",
-            "ASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5Ta2lsbENhc3RSZXNwb25zZRI4",
-            "Cglza2lsbEhpdHMYMyABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlNraWxs",
-            "SGl0UmVzcG9uc2USMgoHYnVmZlJlcxg0IAEoCzIhLlNraWxsQnJpZGdlLk1l",
-            "c3NhZ2UuQnVmZlJlc3BvbnNlEkUKEWFyZW5hQ2hhbGxlbmdlUmVxGDwgASgL",
-            "MiouU2tpbGxCcmlkZ2UuTWVzc2FnZS5BcmVuYUNoYWxsZW5nZVJlcXVlc3QS",
-            "RgoRYXJlbmFDaGFsbGVuZ2VSZXMYPSABKAsyKy5Ta2lsbEJyaWRnZS5NZXNz",
-            "YWdlLkFyZW5hQ2hhbGxlbmdlUmVzcG9uc2USPgoNYXJlbmFCZWdpblJlcxg+",
-            "IAEoCzInLlNraWxsQnJpZGdlLk1lc3NhZ2UuQXJlbmFCZWdpblJlc3BvbnNl",
-            "EjoKC2FyZW5hRW5kUmVzGD8gASgLMiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5B",
-            "cmVuYUVuZFJlc3BvbnNlEjcKDHN0YXR1c05vdGlmeRhkIAEoCzIhLlNraWxs",
-            "QnJpZGdlLk1lc3NhZ2UuU3RhdHVzTm90aWZ5Qhn4AQGqAhNTa2lsbEJyaWRn",
-            "ZS5NZXNzYWdlYgZwcm90bzM="));
+            "Cg1tZXNzYWdlLnByb3RvEhNTa2lsbEJyaWRnZS5NZXNzYWdlGgp1c2VyLnBy",
+            "b3RvGgltYXAucHJvdG8aCml0ZW0ucHJvdG8aC3F1ZXN0LnByb3RvGgxmcmll",
+            "bmQucHJvdG8aCnRlYW0ucHJvdG8aC2d1aWxkLnByb3RvGgpjaGF0LnByb3Rv",
+            "GgxiYXR0bGUucHJvdG8aC2FyZW5hLnByb3RvIoABCgpOZXRNZXNzYWdlEjcK",
+            "B1JlcXVlc3QYASABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLk5ldE1lc3Nh",
+            "Z2VSZXF1ZXN0EjkKCFJlc3BvbnNlGAIgASgLMicuU2tpbGxCcmlkZ2UuTWVz",
+            "c2FnZS5OZXRNZXNzYWdlUmVzcG9uc2UisRAKEU5ldE1lc3NhZ2VSZXF1ZXN0",
+            "Ej4KDHVzZXJSZWdpc3RlchgBIAEoCzIoLlNraWxsQnJpZGdlLk1lc3NhZ2Uu",
+            "VXNlclJlZ2lzdGVyUmVxdWVzdBI4Cgl1c2VyTG9naW4YAiABKAsyJS5Ta2ls",
+            "bEJyaWRnZS5NZXNzYWdlLlVzZXJMb2dpblJlcXVlc3QSQwoKY3JlYXRlQ2hh",
+            "chgDIAEoCzIvLlNraWxsQnJpZGdlLk1lc3NhZ2UuVXNlckNyZWF0ZUNoYXJh",
+            "Y3RlclJlcXVlc3QSPAoJZ2FtZUVudGVyGAQgASgLMikuU2tpbGxCcmlkZ2Uu",
+            "TWVzc2FnZS5Vc2VyR2FtZUVudGVyUmVxdWVzdBI8CglnYW1lTGVhdmUYBSAB",
+            "KAsyKS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlVzZXJHYW1lTGVhdmVSZXF1ZXN0",
+            "EkgKEW1hcENoYXJhY3RlckVudGVyGAYgASgLMi0uU2tpbGxCcmlkZ2UuTWVz",
+            "c2FnZS5NYXBDaGFyYWN0ZXJFbnRlclJlcXVlc3QSQAoNbWFwRW50aXR5U3lu",
+            "YxgIIAEoCzIpLlNraWxsQnJpZGdlLk1lc3NhZ2UuTWFwRW50aXR5U3luY1Jl",
+            "cXVlc3QSPAoLbWFwVGVsZXBvcnQYCSABKAsyJy5Ta2lsbEJyaWRnZS5NZXNz",
+            "YWdlLk1hcFRlbGVwb3J0UmVxdWVzdBI0CgdpdGVtQnV5GAogASgLMiMuU2tp",
+            "bGxCcmlkZ2UuTWVzc2FnZS5JdGVtQnV5UmVxdWVzdBI4CglpdGVtRXF1aXAY",
+            "CyABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkl0ZW1FcXVpcFJlcXVlc3QS",
+            "OAoJcXVlc3RMaXN0GAwgASgLMiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5RdWVz",
+            "dExpc3RSZXF1ZXN0EjwKC3F1ZXN0QWNjZXB0GA0gASgLMicuU2tpbGxCcmlk",
+            "Z2UuTWVzc2FnZS5RdWVzdEFjY2VwdFJlcXVlc3QSNAoHYmFnU2F2ZRgOIAEo",
+            "CzIjLlNraWxsQnJpZGdlLk1lc3NhZ2UuQmFnU2F2ZVJlcXVlc3QSPAoLcXVl",
+            "c3RTdWJtaXQYDyABKAsyJy5Ta2lsbEJyaWRnZS5NZXNzYWdlLlF1ZXN0U3Vi",
+            "bWl0UmVxdWVzdBI7CgxmcmllbmRBZGRSZXEYECABKAsyJS5Ta2lsbEJyaWRn",
+            "ZS5NZXNzYWdlLkZyaWVuZEFkZFJlcXVlc3QSPAoMZnJpZW5kQWRkUmVzGBEg",
+            "ASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5GcmllbmRBZGRSZXNwb25zZRI6",
+            "CgpmcmllbmRMaXN0GBIgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5Gcmll",
+            "bmRMaXN0UmVxdWVzdBI+CgxmcmllbmRSZW1vdmUYEyABKAsyKC5Ta2lsbEJy",
+            "aWRnZS5NZXNzYWdlLkZyaWVuZFJlbW92ZVJlcXVlc3QSPQoNdGVhbUludml0",
+            "ZVJlcRgUIAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2UuVGVhbUludml0ZVJl",
+            "cXVlc3QSPgoNdGVhbUludml0ZVJlcxgVIAEoCzInLlNraWxsQnJpZGdlLk1l",
+            "c3NhZ2UuVGVhbUludml0ZVJlc3BvbnNlEjYKCHRlYW1JbmZvGBYgASgLMiQu",
+            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5UZWFtSW5mb1JlcXVlc3QSOAoJdGVhbUxl",
+            "YXZlGBcgASgLMiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5UZWFtTGVhdmVSZXF1",
+            "ZXN0EjwKC2d1aWxkQ3JlYXRlGBggASgLMicuU2tpbGxCcmlkZ2UuTWVzc2Fn",
+            "ZS5HdWlsZENyZWF0ZVJlcXVlc3QSOwoMZ3VpbGRKb2luUmVxGBkgASgLMiUu",
+            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5HdWlsZEpvaW5SZXF1ZXN0EjwKDGd1aWxk",
+            "Sm9pblJlcxgaIAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2UuR3VpbGRKb2lu",
+            "UmVzcG9uc2USMAoFZ3VpbGQYGyABKAsyIS5Ta2lsbEJyaWRnZS5NZXNzYWdl",
+            "Lkd1aWxkUmVxdWVzdBI6CgpndWlsZExlYXZlGBwgASgLMiYuU2tpbGxCcmlk",
+            "Z2UuTWVzc2FnZS5HdWlsZExlYXZlUmVxdWVzdBI4CglndWlsZExpc3QYHSAB",
+            "KAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1aWxkTGlzdFJlcXVlc3QSOgoK",
+            "Z3VpbGRBZG1pbhgeIAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2UuR3VpbGRB",
+            "ZG1pblJlcXVlc3QSLgoEY2hhdBgfIAEoCzIgLlNraWxsQnJpZGdlLk1lc3Nh",
+            "Z2UuQ2hhdFJlcXVlc3QSOAoJc2tpbGxDYXN0GDIgASgLMiUuU2tpbGxCcmlk",
+            "Z2UuTWVzc2FnZS5Ta2lsbENhc3RSZXF1ZXN0EkUKEWFyZW5hQ2hhbGxlbmdl",
+            "UmVxGDwgASgLMiouU2tpbGxCcmlkZ2UuTWVzc2FnZS5BcmVuYUNoYWxsZW5n",
+            "ZVJlcXVlc3QSRgoRYXJlbmFDaGFsbGVuZ2VSZXMYPSABKAsyKy5Ta2lsbEJy",
+            "aWRnZS5NZXNzYWdlLkFyZW5hQ2hhbGxlbmdlUmVzcG9uc2USPQoNYXJlbmFS",
+            "ZWFkeVJlcRg+IAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2UuQXJlbmFSZWFk",
+            "eVJlcXVlc3QiihQKEk5ldE1lc3NhZ2VSZXNwb25zZRI/Cgx1c2VyUmVnaXN0",
+            "ZXIYASABKAsyKS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlVzZXJSZWdpc3RlclJl",
+            "c3BvbnNlEjkKCXVzZXJMb2dpbhgCIAEoCzImLlNraWxsQnJpZGdlLk1lc3Nh",
+            "Z2UuVXNlckxvZ2luUmVzcG9uc2USRAoKY3JlYXRlQ2hhchgDIAEoCzIwLlNr",
+            "aWxsQnJpZGdlLk1lc3NhZ2UuVXNlckNyZWF0ZUNoYXJhY3RlclJlc3BvbnNl",
+            "Ej0KCWdhbWVFbnRlchgEIAEoCzIqLlNraWxsQnJpZGdlLk1lc3NhZ2UuVXNl",
+            "ckdhbWVFbnRlclJlc3BvbnNlEj0KCWdhbWVMZWF2ZRgFIAEoCzIqLlNraWxs",
+            "QnJpZGdlLk1lc3NhZ2UuVXNlckdhbWVMZWF2ZVJlc3BvbnNlEkkKEW1hcENo",
+            "YXJhY3RlckVudGVyGAYgASgLMi4uU2tpbGxCcmlkZ2UuTWVzc2FnZS5NYXBD",
+            "aGFyYWN0ZXJFbnRlclJlc3BvbnNlEkkKEW1hcENoYXJhY3RlckxlYXZlGAcg",
+            "ASgLMi4uU2tpbGxCcmlkZ2UuTWVzc2FnZS5NYXBDaGFyYWN0ZXJMZWF2ZVJl",
+            "c3BvbnNlEkEKDW1hcEVudGl0eVN5bmMYCCABKAsyKi5Ta2lsbEJyaWRnZS5N",
+            "ZXNzYWdlLk1hcEVudGl0eVN5bmNSZXNwb25zZRI1CgdpdGVtQnV5GAogASgL",
+            "MiQuU2tpbGxCcmlkZ2UuTWVzc2FnZS5JdGVtQnV5UmVzcG9uc2USOQoJaXRl",
+            "bUVxdWlwGAsgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5JdGVtRXF1aXBS",
+            "ZXNwb25zZRI5CglxdWVzdExpc3QYDCABKAsyJi5Ta2lsbEJyaWRnZS5NZXNz",
+            "YWdlLlF1ZXN0TGlzdFJlc3BvbnNlEj0KC3F1ZXN0QWNjZXB0GA0gASgLMigu",
+            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5RdWVzdEFjY2VwdFJlc3BvbnNlEjQKB2Jh",
+            "Z1NhdmUYDiABKAsyIy5Ta2lsbEJyaWRnZS5NZXNzYWdlLkJhZ1NhdmVSZXF1",
+            "ZXN0Ej0KC3F1ZXN0U3VibWl0GA8gASgLMiguU2tpbGxCcmlkZ2UuTWVzc2Fn",
+            "ZS5RdWVzdFN1Ym1pdFJlc3BvbnNlEjsKDGZyaWVuZEFkZFJlcRgQIAEoCzIl",
+            "LlNraWxsQnJpZGdlLk1lc3NhZ2UuRnJpZW5kQWRkUmVxdWVzdBI8Cgxmcmll",
+            "bmRBZGRSZXMYESABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLkZyaWVuZEFk",
+            "ZFJlc3BvbnNlEjsKCmZyaWVuZExpc3QYEiABKAsyJy5Ta2lsbEJyaWRnZS5N",
+            "ZXNzYWdlLkZyaWVuZExpc3RSZXNwb25zZRI/CgxmcmllbmRSZW1vdmUYEyAB",
+            "KAsyKS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkZyaWVuZFJlbW92ZVJlc3BvbnNl",
+            "Ej0KDXRlYW1JbnZpdGVSZXEYFCABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdl",
+            "LlRlYW1JbnZpdGVSZXF1ZXN0Ej4KDXRlYW1JbnZpdGVSZXMYFSABKAsyJy5T",
+            "a2lsbEJyaWRnZS5NZXNzYWdlLlRlYW1JbnZpdGVSZXNwb25zZRI3Cgh0ZWFt",
+            "SW5mbxgWIAEoCzIlLlNraWxsQnJpZGdlLk1lc3NhZ2UuVGVhbUluZm9SZXNw",
+            "b25zZRI5Cgl0ZWFtTGVhdmUYFyABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdl",
+            "LlRlYW1MZWF2ZVJlc3BvbnNlEj0KC2d1aWxkQ3JlYXRlGBggASgLMiguU2tp",
+            "bGxCcmlkZ2UuTWVzc2FnZS5HdWlsZENyZWF0ZVJlc3BvbnNlEjsKDGd1aWxk",
+            "Sm9pblJlcRgZIAEoCzIlLlNraWxsQnJpZGdlLk1lc3NhZ2UuR3VpbGRKb2lu",
+            "UmVxdWVzdBI8CgxndWlsZEpvaW5SZXMYGiABKAsyJi5Ta2lsbEJyaWRnZS5N",
+            "ZXNzYWdlLkd1aWxkSm9pblJlc3BvbnNlEjEKBWd1aWxkGBsgASgLMiIuU2tp",
+            "bGxCcmlkZ2UuTWVzc2FnZS5HdWlsZFJlc3BvbnNlEjsKCmd1aWxkTGVhdmUY",
+            "HCABKAsyJy5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1aWxkTGVhdmVSZXNwb25z",
+            "ZRI5CglndWlsZExpc3QYHSABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1",
+            "aWxkTGlzdFJlc3BvbnNlEjsKCmd1aWxkQWRtaW4YHiABKAsyJy5Ta2lsbEJy",
+            "aWRnZS5NZXNzYWdlLkd1aWxkQWRtaW5SZXNwb25zZRIvCgRjaGF0GB8gASgL",
+            "MiEuU2tpbGxCcmlkZ2UuTWVzc2FnZS5DaGF0UmVzcG9uc2USOQoJc2tpbGxD",
+            "YXN0GDIgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5Ta2lsbENhc3RSZXNw",
+            "b25zZRI4Cglza2lsbEhpdHMYMyABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdl",
+            "LlNraWxsSGl0UmVzcG9uc2USMgoHYnVmZlJlcxg0IAEoCzIhLlNraWxsQnJp",
+            "ZGdlLk1lc3NhZ2UuQnVmZlJlc3BvbnNlEkUKEWFyZW5hQ2hhbGxlbmdlUmVx",
+            "GDwgASgLMiouU2tpbGxCcmlkZ2UuTWVzc2FnZS5BcmVuYUNoYWxsZW5nZVJl",
+            "cXVlc3QSRgoRYXJlbmFDaGFsbGVuZ2VSZXMYPSABKAsyKy5Ta2lsbEJyaWRn",
+            "ZS5NZXNzYWdlLkFyZW5hQ2hhbGxlbmdlUmVzcG9uc2USPgoNYXJlbmFCZWdp",
+            "blJlcxg+IAEoCzInLlNraWxsQnJpZGdlLk1lc3NhZ2UuQXJlbmFCZWdpblJl",
+            "c3BvbnNlEjoKC2FyZW5hRW5kUmVzGD8gASgLMiUuU2tpbGxCcmlkZ2UuTWVz",
+            "c2FnZS5BcmVuYUVuZFJlc3BvbnNlEj4KDWFyZW5hUmVhZHlSZXMYQCABKAsy",
+            "Jy5Ta2lsbEJyaWRnZS5NZXNzYWdlLkFyZW5hUmVhZHlSZXNwb25zZRJIChJh",
+            "cmVuYVJvdW5kU3RhcnRSZXMYQSABKAsyLC5Ta2lsbEJyaWRnZS5NZXNzYWdl",
+            "LkFyZW5hUm91bmRTdGFydFJlc3BvbnNlEkQKEGFyZW5hUm91bmRFbmRSZXMY",
+            "QiABKAsyKi5Ta2lsbEJyaWRnZS5NZXNzYWdlLkFyZW5hUm91bmRFbmRSZXNw",
+            "b25zZRI3CgxzdGF0dXNOb3RpZnkYZCABKAsyIS5Ta2lsbEJyaWRnZS5NZXNz",
+            "YWdlLlN0YXR1c05vdGlmeUIZ+AEBqgITU2tpbGxCcmlkZ2UuTWVzc2FnZWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::SkillBridge.Message.BaseReflection.Descriptor, global::SkillBridge.Message.UserReflection.Descriptor, global::SkillBridge.Message.MapReflection.Descriptor, global::SkillBridge.Message.ItemReflection.Descriptor, global::SkillBridge.Message.QuestReflection.Descriptor, global::SkillBridge.Message.FriendReflection.Descriptor, global::SkillBridge.Message.TeamReflection.Descriptor, global::SkillBridge.Message.GuildReflection.Descriptor, global::SkillBridge.Message.ChatReflection.Descriptor, global::SkillBridge.Message.BattleReflection.Descriptor, global::SkillBridge.Message.ArenaReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::SkillBridge.Message.UserReflection.Descriptor, global::SkillBridge.Message.MapReflection.Descriptor, global::SkillBridge.Message.ItemReflection.Descriptor, global::SkillBridge.Message.QuestReflection.Descriptor, global::SkillBridge.Message.FriendReflection.Descriptor, global::SkillBridge.Message.TeamReflection.Descriptor, global::SkillBridge.Message.GuildReflection.Descriptor, global::SkillBridge.Message.ChatReflection.Descriptor, global::SkillBridge.Message.BattleReflection.Descriptor, global::SkillBridge.Message.ArenaReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessage), global::SkillBridge.Message.NetMessage.Parser, new[]{ "Request", "Response" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessageRequest), global::SkillBridge.Message.NetMessageRequest.Parser, new[]{ "UserRegister", "UserLogin", "CreateChar", "GameEnter", "GameLeave", "MapCharacterEnter", "MapEntitySync", "MapTeleport", "ItemBuy", "ItemEquip", "QuestList", "QuestAccept", "BagSave", "QuestSubmit", "FriendAddReq", "FriendAddRes", "FriendList", "FriendRemove", "TeamInviteReq", "TeamInviteRes", "TeamInfo", "TeamLeave", "GuildCreate", "GuildJoinReq", "GuildJoinRes", "Guild", "GuildLeave", "GuildList", "GuildAdmin", "Chat", "SkillCast", "ArenaChallengeReq", "ArenaChallengeRes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessageResponse), global::SkillBridge.Message.NetMessageResponse.Parser, new[]{ "UserRegister", "UserLogin", "CreateChar", "GameEnter", "GameLeave", "MapCharacterEnter", "MapCharacterLeave", "MapEntitySync", "ItemBuy", "ItemEquip", "QuestList", "QuestAccept", "BagSave", "QuestSubmit", "FriendAddReq", "FriendAddRes", "FriendList", "FriendRemove", "TeamInviteReq", "TeamInviteRes", "TeamInfo", "TeamLeave", "GuildCreate", "GuildJoinReq", "GuildJoinRes", "Guild", "GuildLeave", "GuildList", "GuildAdmin", "Chat", "SkillCast", "SkillHits", "BuffRes", "ArenaChallengeReq", "ArenaChallengeRes", "ArenaBeginRes", "ArenaEndRes", "StatusNotify" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessageRequest), global::SkillBridge.Message.NetMessageRequest.Parser, new[]{ "UserRegister", "UserLogin", "CreateChar", "GameEnter", "GameLeave", "MapCharacterEnter", "MapEntitySync", "MapTeleport", "ItemBuy", "ItemEquip", "QuestList", "QuestAccept", "BagSave", "QuestSubmit", "FriendAddReq", "FriendAddRes", "FriendList", "FriendRemove", "TeamInviteReq", "TeamInviteRes", "TeamInfo", "TeamLeave", "GuildCreate", "GuildJoinReq", "GuildJoinRes", "Guild", "GuildLeave", "GuildList", "GuildAdmin", "Chat", "SkillCast", "ArenaChallengeReq", "ArenaChallengeRes", "ArenaReadyReq" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessageResponse), global::SkillBridge.Message.NetMessageResponse.Parser, new[]{ "UserRegister", "UserLogin", "CreateChar", "GameEnter", "GameLeave", "MapCharacterEnter", "MapCharacterLeave", "MapEntitySync", "ItemBuy", "ItemEquip", "QuestList", "QuestAccept", "BagSave", "QuestSubmit", "FriendAddReq", "FriendAddRes", "FriendList", "FriendRemove", "TeamInviteReq", "TeamInviteRes", "TeamInfo", "TeamLeave", "GuildCreate", "GuildJoinReq", "GuildJoinRes", "Guild", "GuildLeave", "GuildList", "GuildAdmin", "Chat", "SkillCast", "SkillHits", "BuffRes", "ArenaChallengeReq", "ArenaChallengeRes", "ArenaBeginRes", "ArenaEndRes", "ArenaReadyRes", "ArenaRoundStartRes", "ArenaRoundEndRes", "StatusNotify" }, null, null, null, null)
           }));
     }
     #endregion
@@ -463,6 +469,7 @@ namespace SkillBridge.Message {
       skillCast_ = other.skillCast_ != null ? other.skillCast_.Clone() : null;
       arenaChallengeReq_ = other.arenaChallengeReq_ != null ? other.arenaChallengeReq_.Clone() : null;
       arenaChallengeRes_ = other.arenaChallengeRes_ != null ? other.arenaChallengeRes_.Clone() : null;
+      arenaReadyReq_ = other.arenaReadyReq_ != null ? other.arenaReadyReq_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -871,6 +878,18 @@ namespace SkillBridge.Message {
       }
     }
 
+    /// <summary>Field number for the "arenaReadyReq" field.</summary>
+    public const int ArenaReadyReqFieldNumber = 62;
+    private global::SkillBridge.Message.ArenaReadyRequest arenaReadyReq_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::SkillBridge.Message.ArenaReadyRequest ArenaReadyReq {
+      get { return arenaReadyReq_; }
+      set {
+        arenaReadyReq_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -919,6 +938,7 @@ namespace SkillBridge.Message {
       if (!object.Equals(SkillCast, other.SkillCast)) return false;
       if (!object.Equals(ArenaChallengeReq, other.ArenaChallengeReq)) return false;
       if (!object.Equals(ArenaChallengeRes, other.ArenaChallengeRes)) return false;
+      if (!object.Equals(ArenaReadyReq, other.ArenaReadyReq)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -959,6 +979,7 @@ namespace SkillBridge.Message {
       if (skillCast_ != null) hash ^= SkillCast.GetHashCode();
       if (arenaChallengeReq_ != null) hash ^= ArenaChallengeReq.GetHashCode();
       if (arenaChallengeRes_ != null) hash ^= ArenaChallengeRes.GetHashCode();
+      if (arenaReadyReq_ != null) hash ^= ArenaReadyReq.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1109,6 +1130,10 @@ namespace SkillBridge.Message {
         output.WriteRawTag(234, 3);
         output.WriteMessage(ArenaChallengeRes);
       }
+      if (arenaReadyReq_ != null) {
+        output.WriteRawTag(242, 3);
+        output.WriteMessage(ArenaReadyReq);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1251,6 +1276,10 @@ namespace SkillBridge.Message {
         output.WriteRawTag(234, 3);
         output.WriteMessage(ArenaChallengeRes);
       }
+      if (arenaReadyReq_ != null) {
+        output.WriteRawTag(242, 3);
+        output.WriteMessage(ArenaReadyReq);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1359,6 +1388,9 @@ namespace SkillBridge.Message {
       }
       if (arenaChallengeRes_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaChallengeRes);
+      }
+      if (arenaReadyReq_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaReadyReq);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1569,6 +1601,12 @@ namespace SkillBridge.Message {
           ArenaChallengeRes = new global::SkillBridge.Message.ArenaChallengeResponse();
         }
         ArenaChallengeRes.MergeFrom(other.ArenaChallengeRes);
+      }
+      if (other.arenaReadyReq_ != null) {
+        if (arenaReadyReq_ == null) {
+          ArenaReadyReq = new global::SkillBridge.Message.ArenaReadyRequest();
+        }
+        ArenaReadyReq.MergeFrom(other.ArenaReadyReq);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1818,6 +1856,13 @@ namespace SkillBridge.Message {
               ArenaChallengeRes = new global::SkillBridge.Message.ArenaChallengeResponse();
             }
             input.ReadMessage(ArenaChallengeRes);
+            break;
+          }
+          case 498: {
+            if (arenaReadyReq_ == null) {
+              ArenaReadyReq = new global::SkillBridge.Message.ArenaReadyRequest();
+            }
+            input.ReadMessage(ArenaReadyReq);
             break;
           }
         }
@@ -2070,6 +2115,13 @@ namespace SkillBridge.Message {
             input.ReadMessage(ArenaChallengeRes);
             break;
           }
+          case 498: {
+            if (arenaReadyReq_ == null) {
+              ArenaReadyReq = new global::SkillBridge.Message.ArenaReadyRequest();
+            }
+            input.ReadMessage(ArenaReadyReq);
+            break;
+          }
         }
       }
     }
@@ -2149,6 +2201,9 @@ namespace SkillBridge.Message {
       arenaChallengeRes_ = other.arenaChallengeRes_ != null ? other.arenaChallengeRes_.Clone() : null;
       arenaBeginRes_ = other.arenaBeginRes_ != null ? other.arenaBeginRes_.Clone() : null;
       arenaEndRes_ = other.arenaEndRes_ != null ? other.arenaEndRes_.Clone() : null;
+      arenaReadyRes_ = other.arenaReadyRes_ != null ? other.arenaReadyRes_.Clone() : null;
+      arenaRoundStartRes_ = other.arenaRoundStartRes_ != null ? other.arenaRoundStartRes_.Clone() : null;
+      arenaRoundEndRes_ = other.arenaRoundEndRes_ != null ? other.arenaRoundEndRes_.Clone() : null;
       statusNotify_ = other.statusNotify_ != null ? other.statusNotify_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -2603,6 +2658,42 @@ namespace SkillBridge.Message {
       }
     }
 
+    /// <summary>Field number for the "arenaReadyRes" field.</summary>
+    public const int ArenaReadyResFieldNumber = 64;
+    private global::SkillBridge.Message.ArenaReadyResponse arenaReadyRes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::SkillBridge.Message.ArenaReadyResponse ArenaReadyRes {
+      get { return arenaReadyRes_; }
+      set {
+        arenaReadyRes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "arenaRoundStartRes" field.</summary>
+    public const int ArenaRoundStartResFieldNumber = 65;
+    private global::SkillBridge.Message.ArenaRoundStartResponse arenaRoundStartRes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::SkillBridge.Message.ArenaRoundStartResponse ArenaRoundStartRes {
+      get { return arenaRoundStartRes_; }
+      set {
+        arenaRoundStartRes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "arenaRoundEndRes" field.</summary>
+    public const int ArenaRoundEndResFieldNumber = 66;
+    private global::SkillBridge.Message.ArenaRoundEndResponse arenaRoundEndRes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::SkillBridge.Message.ArenaRoundEndResponse ArenaRoundEndRes {
+      get { return arenaRoundEndRes_; }
+      set {
+        arenaRoundEndRes_ = value;
+      }
+    }
+
     /// <summary>Field number for the "statusNotify" field.</summary>
     public const int StatusNotifyFieldNumber = 100;
     private global::SkillBridge.Message.StatusNotify statusNotify_;
@@ -2667,6 +2758,9 @@ namespace SkillBridge.Message {
       if (!object.Equals(ArenaChallengeRes, other.ArenaChallengeRes)) return false;
       if (!object.Equals(ArenaBeginRes, other.ArenaBeginRes)) return false;
       if (!object.Equals(ArenaEndRes, other.ArenaEndRes)) return false;
+      if (!object.Equals(ArenaReadyRes, other.ArenaReadyRes)) return false;
+      if (!object.Equals(ArenaRoundStartRes, other.ArenaRoundStartRes)) return false;
+      if (!object.Equals(ArenaRoundEndRes, other.ArenaRoundEndRes)) return false;
       if (!object.Equals(StatusNotify, other.StatusNotify)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2712,6 +2806,9 @@ namespace SkillBridge.Message {
       if (arenaChallengeRes_ != null) hash ^= ArenaChallengeRes.GetHashCode();
       if (arenaBeginRes_ != null) hash ^= ArenaBeginRes.GetHashCode();
       if (arenaEndRes_ != null) hash ^= ArenaEndRes.GetHashCode();
+      if (arenaReadyRes_ != null) hash ^= ArenaReadyRes.GetHashCode();
+      if (arenaRoundStartRes_ != null) hash ^= ArenaRoundStartRes.GetHashCode();
+      if (arenaRoundEndRes_ != null) hash ^= ArenaRoundEndRes.GetHashCode();
       if (statusNotify_ != null) hash ^= StatusNotify.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2879,6 +2976,18 @@ namespace SkillBridge.Message {
         output.WriteRawTag(250, 3);
         output.WriteMessage(ArenaEndRes);
       }
+      if (arenaReadyRes_ != null) {
+        output.WriteRawTag(130, 4);
+        output.WriteMessage(ArenaReadyRes);
+      }
+      if (arenaRoundStartRes_ != null) {
+        output.WriteRawTag(138, 4);
+        output.WriteMessage(ArenaRoundStartRes);
+      }
+      if (arenaRoundEndRes_ != null) {
+        output.WriteRawTag(146, 4);
+        output.WriteMessage(ArenaRoundEndRes);
+      }
       if (statusNotify_ != null) {
         output.WriteRawTag(162, 6);
         output.WriteMessage(StatusNotify);
@@ -3041,6 +3150,18 @@ namespace SkillBridge.Message {
         output.WriteRawTag(250, 3);
         output.WriteMessage(ArenaEndRes);
       }
+      if (arenaReadyRes_ != null) {
+        output.WriteRawTag(130, 4);
+        output.WriteMessage(ArenaReadyRes);
+      }
+      if (arenaRoundStartRes_ != null) {
+        output.WriteRawTag(138, 4);
+        output.WriteMessage(ArenaRoundStartRes);
+      }
+      if (arenaRoundEndRes_ != null) {
+        output.WriteRawTag(146, 4);
+        output.WriteMessage(ArenaRoundEndRes);
+      }
       if (statusNotify_ != null) {
         output.WriteRawTag(162, 6);
         output.WriteMessage(StatusNotify);
@@ -3165,6 +3286,15 @@ namespace SkillBridge.Message {
       }
       if (arenaEndRes_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaEndRes);
+      }
+      if (arenaReadyRes_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaReadyRes);
+      }
+      if (arenaRoundStartRes_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaRoundStartRes);
+      }
+      if (arenaRoundEndRes_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaRoundEndRes);
       }
       if (statusNotify_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(StatusNotify);
@@ -3402,6 +3532,24 @@ namespace SkillBridge.Message {
           ArenaEndRes = new global::SkillBridge.Message.ArenaEndResponse();
         }
         ArenaEndRes.MergeFrom(other.ArenaEndRes);
+      }
+      if (other.arenaReadyRes_ != null) {
+        if (arenaReadyRes_ == null) {
+          ArenaReadyRes = new global::SkillBridge.Message.ArenaReadyResponse();
+        }
+        ArenaReadyRes.MergeFrom(other.ArenaReadyRes);
+      }
+      if (other.arenaRoundStartRes_ != null) {
+        if (arenaRoundStartRes_ == null) {
+          ArenaRoundStartRes = new global::SkillBridge.Message.ArenaRoundStartResponse();
+        }
+        ArenaRoundStartRes.MergeFrom(other.ArenaRoundStartRes);
+      }
+      if (other.arenaRoundEndRes_ != null) {
+        if (arenaRoundEndRes_ == null) {
+          ArenaRoundEndRes = new global::SkillBridge.Message.ArenaRoundEndResponse();
+        }
+        ArenaRoundEndRes.MergeFrom(other.ArenaRoundEndRes);
       }
       if (other.statusNotify_ != null) {
         if (statusNotify_ == null) {
@@ -3687,6 +3835,27 @@ namespace SkillBridge.Message {
             input.ReadMessage(ArenaEndRes);
             break;
           }
+          case 514: {
+            if (arenaReadyRes_ == null) {
+              ArenaReadyRes = new global::SkillBridge.Message.ArenaReadyResponse();
+            }
+            input.ReadMessage(ArenaReadyRes);
+            break;
+          }
+          case 522: {
+            if (arenaRoundStartRes_ == null) {
+              ArenaRoundStartRes = new global::SkillBridge.Message.ArenaRoundStartResponse();
+            }
+            input.ReadMessage(ArenaRoundStartRes);
+            break;
+          }
+          case 530: {
+            if (arenaRoundEndRes_ == null) {
+              ArenaRoundEndRes = new global::SkillBridge.Message.ArenaRoundEndResponse();
+            }
+            input.ReadMessage(ArenaRoundEndRes);
+            break;
+          }
           case 802: {
             if (statusNotify_ == null) {
               StatusNotify = new global::SkillBridge.Message.StatusNotify();
@@ -3970,6 +4139,27 @@ namespace SkillBridge.Message {
               ArenaEndRes = new global::SkillBridge.Message.ArenaEndResponse();
             }
             input.ReadMessage(ArenaEndRes);
+            break;
+          }
+          case 514: {
+            if (arenaReadyRes_ == null) {
+              ArenaReadyRes = new global::SkillBridge.Message.ArenaReadyResponse();
+            }
+            input.ReadMessage(ArenaReadyRes);
+            break;
+          }
+          case 522: {
+            if (arenaRoundStartRes_ == null) {
+              ArenaRoundStartRes = new global::SkillBridge.Message.ArenaRoundStartResponse();
+            }
+            input.ReadMessage(ArenaRoundStartRes);
+            break;
+          }
+          case 530: {
+            if (arenaRoundEndRes_ == null) {
+              ArenaRoundEndRes = new global::SkillBridge.Message.ArenaRoundEndResponse();
+            }
+            input.ReadMessage(ArenaRoundEndRes);
             break;
           }
           case 802: {

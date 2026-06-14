@@ -62,8 +62,8 @@ namespace Battle
             {
                 BuffId = this.BuffId,
                 BuffType = this._buffDefine.ID,
-                CasterId = this._context.Caster.entityId,
-                OwnerId = this._owner.entityId,
+                CasterId = this._context.Caster.EntityId,
+                OwnerId = this._owner.EntityId,
                 Action = BuffAction.Remove,
             };
             this._context.Battle.AddBuffAction(buff);
@@ -88,8 +88,8 @@ namespace Battle
             {
                 BuffId = this.BuffId,
                 BuffType = this._buffDefine.ID,
-                CasterId = this._context.Caster.entityId,
-                OwnerId = this._owner.entityId,
+                CasterId = this._context.Caster.EntityId,
+                OwnerId = this._owner.EntityId,
                 Action = BuffAction.Hit,
                 Damage = damage,
             };
@@ -113,7 +113,7 @@ namespace Battle
             return new NDamageInfo()
             {
                 Damage = Math.Max(1, (int)final_damage),
-                EntityId = _owner.entityId,
+                EntityId = _owner.EntityId,
             };
         }
 
@@ -129,8 +129,8 @@ namespace Battle
             {
                 BuffId = this.BuffId,
                 BuffType = this._buffDefine.ID,
-                CasterId = this._context.Caster.entityId,
-                OwnerId = this._owner.entityId,
+                CasterId = this._context.Caster.EntityId,
+                OwnerId = this._owner.EntityId,
                 Action = BuffAction.Add,
             };
             this._context.Battle.AddBuffAction(buff);

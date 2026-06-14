@@ -54,7 +54,7 @@ namespace GameServer.Pathfinding
                 {
                     Event = EntityEvent.MoveFwd,
                     Entity = this._owner.EntityData,
-                    Id = this._owner.entityId,
+                    Id = this._owner.EntityId,
                 };
                 this._owner.Map.UpdateEntity(sync);
             }
@@ -80,7 +80,7 @@ namespace GameServer.Pathfinding
             {
                 Event = EntityEvent.Idle,
                 Entity = this._owner.EntityData,
-                Id = this._owner.entityId,
+                Id = this._owner.EntityId,
             };
             this._owner.Map.UpdateEntity(sync);
         }

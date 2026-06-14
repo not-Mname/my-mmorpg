@@ -172,7 +172,7 @@ namespace GameServer.Services.Entities
 
             Log.InfoFormat("UserGameEnterRequest: Name:{0}  Class:{1}  MapId:{2}", dbChar.Name, dbChar.Class, dbChar.MapID);
             Character character = CharacterManager.Instance.AddCharacter(dbChar);
-            SessionManager.Instance.AddSession(character.entityId, sender);
+            SessionManager.Instance.AddSession(character.EntityId, sender);
             sender.Session.Response.GameEnter.Errormsg = "None";
             sender.Session.Response.GameEnter.Result = Result.Success;
 

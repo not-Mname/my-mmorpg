@@ -5,7 +5,71 @@ package SkillBridge.Message;
 option csharp_namespace = "SkillBridge.Message";
 option cc_enable_arenas = true;
 
-import "base.proto";
+import "common.proto";
+
+enum SkillResult
+{
+	OK = 0;
+	OUT_OF_MP = 1;
+	COOL_DOWN = 2;
+	INVALID_TARGET = 3;
+	OUT_OF_RANGE = 4;
+	SKILL_CASTING = 5;
+}
+
+enum SkillStatus
+{
+	SKILL_STATUS_NONE = 0;
+	CASTING = 1;
+	RUNNING = 2;
+}
+
+enum BuffAction
+{
+	BUFF_ACTION_NONE = 0;
+	BUFF_ACTION_ADD = 1;
+	BUFF_ACTION_REMOVE = 2;
+	BUFF_ACTION_HIT = 3;
+}
+
+message NDamageInfo {
+	int32 entityId = 1;
+	int32 damage = 2;
+	bool critical = 3;
+	bool will_dead = 4;
+}
+
+message NBuffInfo {
+	int32 buffId = 1;
+	int32 buffType = 2;
+	BuffAction action = 3;
+	int32 casterId = 4;
+	int32 ownerId = 5;
+	NDamageInfo damage = 6;
+}
+
+message NSkillCastInfo
+{
+	int32 skillId = 1;
+	int32 casterId = 2;
+	int32 targetId = 3;
+	NVector3 position = 4;
+	SkillResult result = 5;
+}
+
+message NSkillHitInfo {
+	int32 skillId = 1;
+	int32 casterId = 2;
+	int32 hitId = 3;
+	bool isBullet = 4;
+	repeated NDamageInfo damages = 5;
+}
+message NSkillInfo
+{
+	int32 id = 1;
+	int32 level = 2;
+}
+
 
 message SkillCastRequest
 {

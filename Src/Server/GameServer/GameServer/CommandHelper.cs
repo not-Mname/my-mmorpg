@@ -69,7 +69,7 @@ namespace GameServer
 
             foreach(var cha in res)
             {
-                Console.WriteLine("Name: {0}, entityId: {1}, level: {2}, exp: {3}, gold: {4}, x: {5}, y: {6}, z: {7}, direction: {8}, mapId: {9}", cha.Name, cha.entityId, cha.Level, cha.Exp, cha.Gold, cha.Position.x, cha.Position.y, cha.Position.z, cha.Direction, cha.Info.MapId);
+                Console.WriteLine("Name: {0}, entityId: {1}, level: {2}, exp: {3}, gold: {4}, x: {5}, y: {6}, z: {7}, direction: {8}, mapId: {9}", cha.Name, cha.EntityId, cha.Level, cha.Exp, cha.Gold, cha.Position.x, cha.Position.y, cha.Position.z, cha.Direction, cha.Info.MapId);
             }
         }
 
@@ -117,7 +117,7 @@ namespace GameServer
 
             foreach(var monster in monsters)// 显示怪物信息
             {
-                Console.WriteLine("Name: {0}, entityId: {1}", monster.Name, monster.entityId);
+                Console.WriteLine("Name: {0}, entityId: {1}", monster.Name, monster.EntityId);
             }
         }
 

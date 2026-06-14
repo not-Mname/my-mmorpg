@@ -5,7 +5,15 @@ package SkillBridge.Message;
 option csharp_namespace = "SkillBridge.Message";
 option cc_enable_arenas = true;
 
-import "base.proto";
+import "common.proto";
+import "user.proto";
+
+message NTeamInfo
+{
+	int32 id = 1;
+	int32 leader = 2;
+	repeated NCharacterInfo members = 3;
+}
 
 message TeamInviteRequest
 {

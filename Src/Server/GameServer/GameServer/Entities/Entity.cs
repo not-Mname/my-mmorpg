@@ -6,7 +6,7 @@ namespace GameServer.Entities
 {
     class Entity
     {
-        public int entityId
+        public int EntityId
         {
             get { return this.entityData.Id; }
             private set { this.entityData.Id = value; }
@@ -81,7 +81,7 @@ namespace GameServer.Entities
         public void SetEntityData(NEntity entity)
         {
             if(!ready){ return; }
-            this.entityId = entity.Id;
+            this.EntityId = entity.Id;
             this.entityData = entity;
             this.Position = entity.Position;
             this.Direction = entity.Direction;

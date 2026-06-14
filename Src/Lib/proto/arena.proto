@@ -5,7 +5,35 @@ package SkillBridge.Message;
 option csharp_namespace = "SkillBridge.Message";
 option cc_enable_arenas = true;
 
-import "base.proto";
+import "common.proto";
+
+enum ArenaStatus 
+{
+	ARENA_STATUS_NONE = 0;
+	ARENA_STATUS_WAIT = 1;//等待开始
+	ARENA_STATUS_GAME = 2;//战斗中
+	ARENA_STATUS_RESULT = 3;//结算
+}
+
+enum ArenaRoundStatus {
+	ARENA_ROUND_STATUS_NONE = 0;
+	ARENA_ROUND_STATUS_READY = 1;//等待开始
+	ARENA_ROUND_STATUS_FIGHT = 2;//战斗中
+	ARENA_ROUND_STATUS_RESULT = 3;//结算
+}
+
+message ArenaPlayer{
+	int32 entity_id = 1;
+	string name = 2;
+	int32 score = 3;
+	int32 rank = 4;
+}
+
+message NArenaInfo {
+	int32 arena_id = 1;
+	ArenaPlayer red = 2;
+	ArenaPlayer blue = 3;
+}
 
 message ArenaChallengeRequest{
 	NArenaInfo info = 1;
@@ -27,4 +55,24 @@ message ArenaEndResponse{
 	Result result = 1;
 	string errormsg = 2;
 	NArenaInfo arena_info = 3;
+}
+
+message ArenaReadyRequest {
+	int32 arenaId = 1;
+	int32 entityId = 2;
+}
+
+message ArenaReadyResponse {
+	int32 round = 1;
+	NArenaInfo arenaInfo = 2;
+}
+
+message ArenaRoundStartResponse {
+	int32 round = 1;
+	NArenaInfo arenaInfo = 2;
+}
+
+message ArenaRoundEndResponse {
+	int32 round = 1;
+	NArenaInfo arenaInfo = 2;
 }

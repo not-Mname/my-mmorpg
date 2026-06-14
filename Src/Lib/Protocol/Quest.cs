@@ -24,27 +24,34 @@ namespace SkillBridge.Message {
     static QuestReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgtxdWVzdC5wcm90bxITU2tpbGxCcmlkZ2UuTWVzc2FnZRoKYmFzZS5wcm90",
-            "byJIChBRdWVzdExpc3RSZXF1ZXN0EjQKCGxpc3RUeXBlGAEgASgOMiIuU2tp",
-            "bGxCcmlkZ2UuTWVzc2FnZS5RdWVzdExpc3RUeXBlIoMBChFRdWVzdExpc3RS",
-            "ZXNwb25zZRIrCgZyZXN1bHQYASABKA4yGy5Ta2lsbEJyaWRnZS5NZXNzYWdl",
-            "LlJlc3VsdBIQCghlcnJvcm1zZxgCIAEoCRIvCgZxdWVzdHMYAyADKAsyHy5T",
-            "a2lsbEJyaWRnZS5NZXNzYWdlLk5RdWVzdEluZm8iJgoSUXVlc3RBY2NlcHRS",
-            "ZXF1ZXN0EhAKCHF1ZXN0X2lkGAEgASgFIoQBChNRdWVzdEFjY2VwdFJlc3Bv",
-            "bnNlEisKBnJlc3VsdBgBIAEoDjIbLlNraWxsQnJpZGdlLk1lc3NhZ2UuUmVz",
-            "dWx0EhAKCGVycm9ybXNnGAIgASgJEi4KBXF1ZXN0GAMgASgLMh8uU2tpbGxC",
-            "cmlkZ2UuTWVzc2FnZS5OUXVlc3RJbmZvIiYKElF1ZXN0U3VibWl0UmVxdWVz",
-            "dBIQCghxdWVzdF9pZBgBIAEoBSKEAQoTUXVlc3RTdWJtaXRSZXNwb25zZRIr",
-            "CgZyZXN1bHQYASABKA4yGy5Ta2lsbEJyaWRnZS5NZXNzYWdlLlJlc3VsdBIQ",
-            "CghlcnJvcm1zZxgCIAEoCRIuCgVxdWVzdBgDIAEoCzIfLlNraWxsQnJpZGdl",
-            "Lk1lc3NhZ2UuTlF1ZXN0SW5mbyInChNRdWVzdEFiYW5kb25SZXF1ZXN0EhAK",
-            "CHF1ZXN0X2lkGAEgASgFIlUKFFF1ZXN0QWJhbmRvblJlc3BvbnNlEisKBnJl",
-            "c3VsdBgBIAEoDjIbLlNraWxsQnJpZGdlLk1lc3NhZ2UuUmVzdWx0EhAKCGVy",
-            "cm9ybXNnGAIgASgJQhn4AQGqAhNTa2lsbEJyaWRnZS5NZXNzYWdlYgZwcm90",
-            "bzM="));
+            "CgtxdWVzdC5wcm90bxITU2tpbGxCcmlkZ2UuTWVzc2FnZRoMY29tbW9uLnBy",
+            "b3RvInUKCk5RdWVzdEluZm8SEAoIcXVlc3RfaWQYASABKAUSEgoKcXVlc3Rf",
+            "Z3VpZBgCIAEoBRIwCgZzdGF0dXMYAyABKA4yIC5Ta2lsbEJyaWRnZS5NZXNz",
+            "YWdlLlF1ZXN0U3RhdHVzEg8KB3RhcmdldHMYBCADKAUiSAoQUXVlc3RMaXN0",
+            "UmVxdWVzdBI0CghsaXN0VHlwZRgBIAEoDjIiLlNraWxsQnJpZGdlLk1lc3Nh",
+            "Z2UuUXVlc3RMaXN0VHlwZSKDAQoRUXVlc3RMaXN0UmVzcG9uc2USKwoGcmVz",
+            "dWx0GAEgASgOMhsuU2tpbGxCcmlkZ2UuTWVzc2FnZS5SZXN1bHQSEAoIZXJy",
+            "b3Jtc2cYAiABKAkSLwoGcXVlc3RzGAMgAygLMh8uU2tpbGxCcmlkZ2UuTWVz",
+            "c2FnZS5OUXVlc3RJbmZvIiYKElF1ZXN0QWNjZXB0UmVxdWVzdBIQCghxdWVz",
+            "dF9pZBgBIAEoBSKEAQoTUXVlc3RBY2NlcHRSZXNwb25zZRIrCgZyZXN1bHQY",
+            "ASABKA4yGy5Ta2lsbEJyaWRnZS5NZXNzYWdlLlJlc3VsdBIQCghlcnJvcm1z",
+            "ZxgCIAEoCRIuCgVxdWVzdBgDIAEoCzIfLlNraWxsQnJpZGdlLk1lc3NhZ2Uu",
+            "TlF1ZXN0SW5mbyImChJRdWVzdFN1Ym1pdFJlcXVlc3QSEAoIcXVlc3RfaWQY",
+            "ASABKAUihAEKE1F1ZXN0U3VibWl0UmVzcG9uc2USKwoGcmVzdWx0GAEgASgO",
+            "MhsuU2tpbGxCcmlkZ2UuTWVzc2FnZS5SZXN1bHQSEAoIZXJyb3Jtc2cYAiAB",
+            "KAkSLgoFcXVlc3QYAyABKAsyHy5Ta2lsbEJyaWRnZS5NZXNzYWdlLk5RdWVz",
+            "dEluZm8iJwoTUXVlc3RBYmFuZG9uUmVxdWVzdBIQCghxdWVzdF9pZBgBIAEo",
+            "BSJVChRRdWVzdEFiYW5kb25SZXNwb25zZRIrCgZyZXN1bHQYASABKA4yGy5T",
+            "a2lsbEJyaWRnZS5NZXNzYWdlLlJlc3VsdBIQCghlcnJvcm1zZxgCIAEoCSpf",
+            "CgtRdWVzdFN0YXR1cxIVChFRVUVTVF9JTl9QUk9HUkVTUxAAEhMKD1FVRVNU",
+            "X0NPTVBMRVRFRBABEhIKDlFVRVNUX0ZJTklTSEVEEAISEAoMUVVFU1RfRkFJ",
+            "TEVEEAMqWAoNUXVlc3RMaXN0VHlwZRISCg5RVUVTVF9MSVNUX0FMTBAAEhoK",
+            "FlFVRVNUX0lOX1BST0dSRVNTX1RZUEUQARIXChNRVUVTVF9GSU5JU0hFRF9U",
+            "WVBFEAJCGfgBAaoCE1NraWxsQnJpZGdlLk1lc3NhZ2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::SkillBridge.Message.BaseReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::FileDescriptor[] { global::SkillBridge.Message.CommonReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::SkillBridge.Message.QuestStatus), typeof(global::SkillBridge.Message.QuestListType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NQuestInfo), global::SkillBridge.Message.NQuestInfo.Parser, new[]{ "QuestId", "QuestGuid", "Status", "Targets" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.QuestListRequest), global::SkillBridge.Message.QuestListRequest.Parser, new[]{ "ListType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.QuestListResponse), global::SkillBridge.Message.QuestListResponse.Parser, new[]{ "Result", "Errormsg", "Quests" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.QuestAcceptRequest), global::SkillBridge.Message.QuestAcceptRequest.Parser, new[]{ "QuestId" }, null, null, null, null),
@@ -58,7 +65,323 @@ namespace SkillBridge.Message {
     #endregion
 
   }
+  #region Enums
+  public enum QuestStatus {
+    [pbr::OriginalName("QUEST_IN_PROGRESS")] QuestInProgress = 0,
+    [pbr::OriginalName("QUEST_COMPLETED")] QuestCompleted = 1,
+    [pbr::OriginalName("QUEST_FINISHED")] QuestFinished = 2,
+    [pbr::OriginalName("QUEST_FAILED")] QuestFailed = 3,
+  }
+
+  public enum QuestListType {
+    [pbr::OriginalName("QUEST_LIST_ALL")] QuestListAll = 0,
+    [pbr::OriginalName("QUEST_IN_PROGRESS_TYPE")] QuestInProgressType = 1,
+    [pbr::OriginalName("QUEST_FINISHED_TYPE")] QuestFinishedType = 2,
+  }
+
+  #endregion
+
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class NQuestInfo : pb::IMessage<NQuestInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<NQuestInfo> _parser = new pb::MessageParser<NQuestInfo>(() => new NQuestInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<NQuestInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NQuestInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NQuestInfo(NQuestInfo other) : this() {
+      questId_ = other.questId_;
+      questGuid_ = other.questGuid_;
+      status_ = other.status_;
+      targets_ = other.targets_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public NQuestInfo Clone() {
+      return new NQuestInfo(this);
+    }
+
+    /// <summary>Field number for the "quest_id" field.</summary>
+    public const int QuestIdFieldNumber = 1;
+    private int questId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int QuestId {
+      get { return questId_; }
+      set {
+        questId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "quest_guid" field.</summary>
+    public const int QuestGuidFieldNumber = 2;
+    private int questGuid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int QuestGuid {
+      get { return questGuid_; }
+      set {
+        questGuid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 3;
+    private global::SkillBridge.Message.QuestStatus status_ = global::SkillBridge.Message.QuestStatus.QuestInProgress;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::SkillBridge.Message.QuestStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "targets" field.</summary>
+    public const int TargetsFieldNumber = 4;
+    private static readonly pb::FieldCodec<int> _repeated_targets_codec
+        = pb::FieldCodec.ForInt32(34);
+    private readonly pbc::RepeatedField<int> targets_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> Targets {
+      get { return targets_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as NQuestInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(NQuestInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (QuestId != other.QuestId) return false;
+      if (QuestGuid != other.QuestGuid) return false;
+      if (Status != other.Status) return false;
+      if(!targets_.Equals(other.targets_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (QuestId != 0) hash ^= QuestId.GetHashCode();
+      if (QuestGuid != 0) hash ^= QuestGuid.GetHashCode();
+      if (Status != global::SkillBridge.Message.QuestStatus.QuestInProgress) hash ^= Status.GetHashCode();
+      hash ^= targets_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (QuestId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(QuestId);
+      }
+      if (QuestGuid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(QuestGuid);
+      }
+      if (Status != global::SkillBridge.Message.QuestStatus.QuestInProgress) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Status);
+      }
+      targets_.WriteTo(output, _repeated_targets_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (QuestId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(QuestId);
+      }
+      if (QuestGuid != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(QuestGuid);
+      }
+      if (Status != global::SkillBridge.Message.QuestStatus.QuestInProgress) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Status);
+      }
+      targets_.WriteTo(ref output, _repeated_targets_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (QuestId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(QuestId);
+      }
+      if (QuestGuid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(QuestGuid);
+      }
+      if (Status != global::SkillBridge.Message.QuestStatus.QuestInProgress) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
+      }
+      size += targets_.CalculateSize(_repeated_targets_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(NQuestInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.QuestId != 0) {
+        QuestId = other.QuestId;
+      }
+      if (other.QuestGuid != 0) {
+        QuestGuid = other.QuestGuid;
+      }
+      if (other.Status != global::SkillBridge.Message.QuestStatus.QuestInProgress) {
+        Status = other.Status;
+      }
+      targets_.Add(other.targets_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            QuestId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            QuestGuid = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            Status = (global::SkillBridge.Message.QuestStatus) input.ReadEnum();
+            break;
+          }
+          case 34:
+          case 32: {
+            targets_.AddEntriesFrom(input, _repeated_targets_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            QuestId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            QuestGuid = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            Status = (global::SkillBridge.Message.QuestStatus) input.ReadEnum();
+            break;
+          }
+          case 34:
+          case 32: {
+            targets_.AddEntriesFrom(ref input, _repeated_targets_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuestListRequest : pb::IMessage<QuestListRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -74,7 +397,7 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[0]; }
+      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -272,7 +595,7 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[1]; }
+      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -533,7 +856,7 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[2]; }
+      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -731,7 +1054,7 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[3]; }
+      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1012,7 +1335,7 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[4]; }
+      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1210,7 +1533,7 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[5]; }
+      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1491,7 +1814,7 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[6]; }
+      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1689,7 +2012,7 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[7]; }
+      get { return global::SkillBridge.Message.QuestReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

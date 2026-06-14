@@ -44,7 +44,7 @@ namespace GameServer.Managers.Entities
             try
             {
                 entity.EntityData.Id = Interlocked.Increment(ref index);
-                _allEntities.Add(entity.entityId, entity);
+                _allEntities.Add(entity.EntityId, entity);
                 AddMapEntity(mapId, instanceId, entity);
             }
             finally
@@ -70,7 +70,7 @@ namespace GameServer.Managers.Entities
             try
             {
 
-                _allEntities.Remove(entity.entityId);
+                _allEntities.Remove(entity.EntityId);
                 RemoveMapEntity( mapId, instanceId, entity);
                 
             }

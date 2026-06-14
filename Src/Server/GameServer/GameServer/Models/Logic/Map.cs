@@ -162,7 +162,7 @@ namespace GameServer.Models.Logic
         {
             foreach (var kv in this.MapCharacters)
             {
-                if (kv.Value.character.entityId == entitySync.Entity.Id)
+                if (kv.Value.character.EntityId == entitySync.Entity.Id)
                 {
                     kv.Value.character.Position = entitySync.Entity.Position;
                     kv.Value.character.Speed = entitySync.Entity.Speed;
@@ -185,7 +185,7 @@ namespace GameServer.Models.Logic
         /// </summary>
         public void MonsterEnter(Monster monster)
         {
-            Log.InfoFormat("MonsterEnter: Map:{0} monsterId:{1}", this.Define.ID, monster.entityId);
+            Log.InfoFormat("MonsterEnter: Map:{0} monsterId:{1}", this.Define.ID, monster.EntityId);
             monster.OnEnterMap(this);
             foreach (var item in MapCharacters)
             {

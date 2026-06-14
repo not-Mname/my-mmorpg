@@ -10,7 +10,7 @@ public class UIBuffIcons : MonoBehaviour
 {
     private BattleUnit _owner;
     private Dictionary<int, UIBuffItem> _buffIcons = new ();
-    private string _buffIconPrefabPath = "Prefab/UI/UISkill/Item/UIBuffItem.prefab";
+    private string _buffIconPrefabPath = "Assets/AssetBundle/Prefab/UI/UISkill/Item/UIBuffItem.prefab";
 
     private void OnDestroy()
     {

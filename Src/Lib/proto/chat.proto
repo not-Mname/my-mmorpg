@@ -5,7 +5,29 @@ package SkillBridge.Message;
 option csharp_namespace = "SkillBridge.Message";
 option cc_enable_arenas = true;
 
-import "base.proto";
+import "common.proto";
+
+enum ChatChannel
+{
+	CHAT_CHANNEL_ALL = 0;
+	LOCAL = 1;
+	WORLD = 2;
+	SYSTEM = 4;
+	PRIVATE = 8;
+	TEAM = 16;
+	GUILD = 32;
+}
+message ChatMessage
+{
+	ChatChannel channel = 1;
+	int32 id = 2;
+	int32 from_id = 3;
+	string from_name = 4;
+	int32 to_id = 5;
+	string to_name = 6;
+	string message = 7;
+	double time = 8;
+}
 
 message ChatRequest
 {
