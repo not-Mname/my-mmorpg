@@ -42,7 +42,7 @@ namespace GameServer.Managers.Quest
         /// <param name="sender">网络连接会话</param>
         /// <param name="questId">任务ID</param>
         /// <returns>操作结果：成功或失败</returns>
-        public Result AcceptQuest(NetConnection<NetSession> sender, int questId)
+        public Result AcceptQuest(QuestAcceptResponse response, NetConnection<NetSession> sender, int questId)
         {
             QuestDefine quest;
             // 检查任务是否存在
@@ -67,7 +67,7 @@ namespace GameServer.Managers.Quest
                 }
 
                 // 设置响应数据
-                sender.Session.Response.QuestAccept.Quest = this.GetQuestInfo(dbQuest);
+                response.Quest = this.GetQuestInfo(dbQuest);
 
                 // 将任务添加到角色数据中并保存
                 dbChar.Quests.Add(dbQuest);
@@ -80,7 +80,7 @@ namespace GameServer.Managers.Quest
             }
             else
             {
-                sender.Session.Response.QuestAccept.Errormsg = "任务不存在";
+                response.Errormsg = "任务不存在";
                 return Result.Failed;
             }
 
@@ -92,7 +92,7 @@ namespace GameServer.Managers.Quest
         /// <param name="sender">网络连接会话</param>
         /// <param name="questId">任务ID</param>
         /// <returns>操作结果：成功或失败</returns>
-        public Result SubmitQuest(NetConnection<NetSession> sender, int questId)
+        public Result SubmitQuest(QuestSubmitResponse response, NetConnection<NetSession> sender, int questId)
         {
             QuestDefine quest;
             // 检查任务是否存在
@@ -106,7 +106,7 @@ namespace GameServer.Managers.Quest
                     // 检查任务状态是否为已完成
                     if (dbQuest.Status != (int)QuestStatus.QuestCompleted)
                     {
-                        sender.Session.Response.QuestSubmit.Errormsg = "任务未完成";
+                        response.Errormsg = "任务未完成";
                         return Result.Failed;
                     }
                     else
@@ -121,7 +121,7 @@ namespace GameServer.Managers.Quest
                             if (freshQuest != null) freshQuest.Status = (int)QuestStatus.QuestFinished;
                             dbQuest.Status = (int)QuestStatus.QuestFinished;
                         }
-                        sender.Session.Response.QuestSubmit.Quest = this.GetQuestInfo(dbQuest);
+                        response.Quest = this.GetQuestInfo(dbQuest);
 
                         // 发放任务奖励
 
@@ -156,13 +156,13 @@ namespace GameServer.Managers.Quest
                 }
                 else
                 {
-                    sender.Session.Response.QuestSubmit.Errormsg = "任务不存在[1001]";
+                    response.Errormsg = "任务不存在[1001]";
                     return Result.Failed;
                 }
             }
             else
             {
-                sender.Session.Response.QuestSubmit.Errormsg = "任务不存在[1002]";
+                response.Errormsg = "任务不存在[1002]";
                 return Result.Failed;
             }
 

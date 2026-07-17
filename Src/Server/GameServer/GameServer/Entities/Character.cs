@@ -177,7 +177,7 @@ namespace GameServer.Entities
                 this.Guild.timestamp = TimeUtil.timestamp;
         }
 
-        public void PostProcess(NetMessageResponse message)
+        public void PostProcess(NetMessage message)
         {
             this.FriendManager.PostProcess(message);
             if (this.Team != null)
@@ -201,12 +201,12 @@ namespace GameServer.Entities
                 if (this.Info.Guild == null)
                 {
                     this.Info.Guild = this.Guild.GuildInfo(this);
-                    if (message.MapCharacterEnter != null && message.MapCharacterLeave != null)
+                    if (message.HasResponse(NetMessageResponse.PayloadOneofCase.MapCharacterEnter) && message.HasResponse(NetMessageResponse.PayloadOneofCase.MapCharacterLeave))
                     {
                         GuildUpdateTs = this.Guild.timestamp;
                     }
                 }
-                if (GuildUpdateTs < this.Guild.timestamp && message.MapCharacterEnter == null)
+                if (GuildUpdateTs < this.Guild.timestamp && !message.HasResponse(NetMessageResponse.PayloadOneofCase.MapCharacterEnter))
                 {
                     Log.InfoFormat("PostProcess > Guild > GuildUpdateTs: {0} | TimeUtil.timestamp: {1}", GuildUpdateTs, TimeUtil.timestamp);
                     GuildUpdateTs = this.Guild.timestamp;

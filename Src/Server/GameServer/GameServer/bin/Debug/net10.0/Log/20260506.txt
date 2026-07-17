@@ -1,0 +1,541 @@
+
+2026-05-06 15:43:42,384 [2] [INFO ] [GameServer] ：Config Loading...
+2026-05-06 15:43:42,437 [2] [INFO ] [GameServer] ：Config Loaded
+2026-05-06 15:43:42,437 [2] [INFO ] [GameServer] ：Game Server Init
+2026-05-06 15:43:42,438 [2] [INFO ] [GameServer] ：GameServer Init...
+2026-05-06 15:43:42,471 [2] [INFO ] [GameServer] ：DBService init...
+2026-05-06 15:43:48,479 [2] [WARN ] [GameServer] ：DB connection is True
+2026-05-06 15:43:48,485 [2] [INFO ] [GameServer] ：DataManager Loading...
+2026-05-06 15:43:48,575 [2] [INFO ] [GameServer] ：ChatService Init...
+2026-05-06 15:43:48,576 [2] [INFO ] [GameServer] ：ChatManager init...
+2026-05-06 15:43:48,577 [2] [INFO ] [GameServer] ：ChatService Initialized
+2026-05-06 15:43:48,577 [2] [INFO ] [GameServer] ：FriendService Init...
+2026-05-06 15:43:48,578 [2] [INFO ] [GameServer] ：FriendService Initialized
+2026-05-06 15:43:48,578 [2] [INFO ] [GameServer] ：GuildService Init...
+2026-05-06 15:43:48,579 [2] [INFO ] [GameServer] ：GuildManager Init...
+2026-05-06 15:43:48,776 [2] [INFO ] [GameServer] ：GuildService Initialized
+2026-05-06 15:43:48,777 [2] [INFO ] [GameServer] ：TeamService Init...
+2026-05-06 15:43:48,778 [2] [INFO ] [GameServer] ：TeamManager Init...
+2026-05-06 15:43:48,778 [2] [INFO ] [GameServer] ：TeamService Initialized
+2026-05-06 15:43:48,778 [2] [INFO ] [GameServer] ：QuestService Init...
+2026-05-06 15:43:48,779 [2] [INFO ] [GameServer] ：QuestService Initialized
+2026-05-06 15:43:48,779 [2] [INFO ] [GameServer] ：BagService Init...
+2026-05-06 15:43:48,779 [2] [INFO ] [GameServer] ：BagService Initialized
+2026-05-06 15:43:48,780 [2] [INFO ] [GameServer] ：ItemService Init...
+2026-05-06 15:43:48,780 [2] [INFO ] [GameServer] ：ItemService Initialized
+2026-05-06 15:43:48,781 [2] [INFO ] [GameServer] ：UserService Init...
+2026-05-06 15:43:48,781 [2] [INFO ] [GameServer] ：UserService Initialized
+2026-05-06 15:43:48,782 [2] [INFO ] [GameServer] ：MapService Init...
+2026-05-06 15:43:48,782 [2] [INFO ] [GameServer] ：MapManage Init...
+2026-05-06 15:43:48,783 [2] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇, Instance:1
+2026-05-06 15:43:48,784 [2] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林, Instance:1
+2026-05-06 15:43:48,784 [2] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林, Instance:1
+2026-05-06 15:43:48,785 [2] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖, Instance:1
+2026-05-06 15:43:48,785 [2] [INFO ] [GameServer] ：MapService Initialized
+2026-05-06 15:43:48,786 [2] [INFO ] [GameServer] ：ArenaService Initialized
+2026-05-06 15:43:48,786 [2] [INFO ] [GameServer] ：BattleSerevice Init...
+2026-05-06 15:43:48,787 [2] [INFO ] [GameServer] ：BattleSerevice Initialized
+2026-05-06 15:43:48,791 [2] [INFO ] [GameServer] ：NetService Init...
+2026-05-06 15:43:48,792 [2] [WARN ] [GameServer] ：Starting Listener...
+2026-05-06 15:43:48,797 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 15:43:48,797 [14] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 15:43:48,797 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 15:43:48,797 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 15:43:48,797 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 15:43:48,797 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 15:43:48,797 [16] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 15:43:48,797 [17] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 15:43:48,904 [2] [WARN ] [GameServer] ：NetService Started
+2026-05-06 15:43:59,027 [13] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-06 15:43:59,039 [13] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:2
+2026-05-06 15:43:59,040 [13] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-06 15:43:59,040 [13] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:3
+2026-05-06 15:43:59,041 [13] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-06 15:43:59,041 [13] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:4
+2026-05-06 15:43:59,041 [13] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-06 15:43:59,042 [13] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:5
+2026-05-06 15:43:59,042 [13] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-06 15:43:59,042 [13] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:6
+2026-05-06 15:43:59,042 [13] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-06 15:43:59,043 [13] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:7
+2026-05-06 15:43:59,043 [13] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-06 15:43:59,043 [13] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:8
+2026-05-06 15:43:59,044 [13] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-06 15:43:59,044 [13] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:9
+2026-05-06 15:53:11,169 [43] [WARN ] [GameServer] ：Client[127.0.0.1:63342]] Connected
+2026-05-06 15:55:21,062 [44] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 15:55:38,588 [44] [WARN ] [GameServer] ：Client[127.0.0.1:61081]] Connected
+2026-05-06 15:55:38,628 [10] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 15:55:48,091 [14] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 15:55:48,105 [14] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 15:56:16,695 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 15:56:16,697 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 15:57:51,183 [11] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 15:57:51,184 [11] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 15:58:46,991 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 15:58:46,992 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 15:59:58,997 [15] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 15:59:58,998 [15] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:01:43,911 [16] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:01:43,913 [16] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:01:53,690 [17] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:01:53,691 [17] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:02:04,697 [18] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:02:04,699 [18] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 16:03:01,122 [48] [WARN ] [GameServer] ：Client[127.0.0.1:55516]] Connected
+2026-05-06 16:03:01,136 [10] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 16:03:03,022 [14] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:03:03,023 [14] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:07:53,340 [33] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:07:53,340 [33] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 16:15:25,642 [62] [WARN ] [GameServer] ：Client[127.0.0.1:52945]] Connected
+2026-05-06 16:15:25,657 [9] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 16:15:32,633 [11] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:15:32,634 [11] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:16:51,328 [66] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:16:51,329 [66] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 16:24:40,301 [97] [WARN ] [GameServer] ：Client[127.0.0.1:50252]] Connected
+2026-05-06 16:24:40,312 [7] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 16:24:42,731 [15] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:24:42,732 [15] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:25:01,720 [97] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:25:01,721 [97] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 16:25:38,818 [99] [WARN ] [GameServer] ：Client[127.0.0.1:61699]] Connected
+2026-05-06 16:25:38,843 [16] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 16:25:42,951 [17] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:25:42,952 [17] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:26:26,381 [102] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:26:26,382 [102] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 16:28:42,153 [110] [WARN ] [GameServer] ：Client[127.0.0.1:60727]] Connected
+2026-05-06 16:28:42,171 [10] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 16:28:50,383 [14] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:28:50,384 [14] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:30:03,772 [116] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:30:03,773 [116] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 16:31:17,359 [121] [WARN ] [GameServer] ：Client[127.0.0.1:65314]] Connected
+2026-05-06 16:31:17,367 [9] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 16:31:20,088 [11] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:31:20,095 [11] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:32:53,838 [126] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:32:53,838 [126] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 16:40:10,331 [155] [WARN ] [GameServer] ：Client[127.0.0.1:51013]] Connected
+2026-05-06 16:40:56,591 [2] [INFO ] [GameServer] ：Config Loading...
+2026-05-06 16:40:56,620 [2] [INFO ] [GameServer] ：Config Loaded
+2026-05-06 16:40:56,620 [2] [INFO ] [GameServer] ：Game Server Init
+2026-05-06 16:40:56,621 [2] [INFO ] [GameServer] ：GameServer Init...
+2026-05-06 16:40:56,625 [2] [INFO ] [GameServer] ：DBService init...
+2026-05-06 16:41:02,458 [2] [WARN ] [GameServer] ：DB connection is True
+2026-05-06 16:41:02,464 [2] [INFO ] [GameServer] ：DataManager Loading...
+2026-05-06 16:41:02,562 [2] [INFO ] [GameServer] ：ChatService Init...
+2026-05-06 16:41:02,563 [2] [INFO ] [GameServer] ：ChatManager init...
+2026-05-06 16:41:02,564 [2] [INFO ] [GameServer] ：ChatService Initialized
+2026-05-06 16:41:02,565 [2] [INFO ] [GameServer] ：FriendService Init...
+2026-05-06 16:41:02,565 [2] [INFO ] [GameServer] ：FriendService Initialized
+2026-05-06 16:41:02,566 [2] [INFO ] [GameServer] ：GuildService Init...
+2026-05-06 16:41:02,567 [2] [INFO ] [GameServer] ：GuildManager Init...
+2026-05-06 16:41:02,784 [2] [INFO ] [GameServer] ：GuildService Initialized
+2026-05-06 16:41:02,785 [2] [INFO ] [GameServer] ：TeamService Init...
+2026-05-06 16:41:02,785 [2] [INFO ] [GameServer] ：TeamManager Init...
+2026-05-06 16:41:02,785 [2] [INFO ] [GameServer] ：TeamService Initialized
+2026-05-06 16:41:02,786 [2] [INFO ] [GameServer] ：QuestService Init...
+2026-05-06 16:41:02,786 [2] [INFO ] [GameServer] ：QuestService Initialized
+2026-05-06 16:41:02,786 [2] [INFO ] [GameServer] ：BagService Init...
+2026-05-06 16:41:02,786 [2] [INFO ] [GameServer] ：BagService Initialized
+2026-05-06 16:41:02,787 [2] [INFO ] [GameServer] ：ItemService Init...
+2026-05-06 16:41:02,787 [2] [INFO ] [GameServer] ：ItemService Initialized
+2026-05-06 16:41:02,787 [2] [INFO ] [GameServer] ：UserService Init...
+2026-05-06 16:41:02,788 [2] [INFO ] [GameServer] ：UserService Initialized
+2026-05-06 16:41:02,788 [2] [INFO ] [GameServer] ：MapService Init...
+2026-05-06 16:41:02,789 [2] [INFO ] [GameServer] ：MapManage Init...
+2026-05-06 16:41:02,789 [2] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇, Instance:1
+2026-05-06 16:41:02,790 [2] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林, Instance:1
+2026-05-06 16:41:02,791 [2] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林, Instance:1
+2026-05-06 16:41:02,791 [2] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖, Instance:1
+2026-05-06 16:41:02,791 [2] [INFO ] [GameServer] ：MapService Initialized
+2026-05-06 16:41:02,792 [2] [INFO ] [GameServer] ：ArenaService Initialized
+2026-05-06 16:41:02,792 [2] [INFO ] [GameServer] ：BattleSerevice Init...
+2026-05-06 16:41:02,793 [2] [INFO ] [GameServer] ：BattleSerevice Initialized
+2026-05-06 16:41:02,796 [2] [INFO ] [GameServer] ：NetService Init...
+2026-05-06 16:41:02,798 [2] [WARN ] [GameServer] ：Starting Listener...
+2026-05-06 16:41:02,804 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 16:41:02,804 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 16:41:02,804 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 16:41:02,804 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 16:41:02,805 [14] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 16:41:02,805 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 16:41:02,805 [16] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 16:41:02,805 [17] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-05-06 16:41:02,908 [2] [WARN ] [GameServer] ：NetService Started
+2026-05-06 16:41:13,092 [12] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-06 16:41:13,109 [12] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:2
+2026-05-06 16:41:13,110 [12] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-06 16:41:13,110 [12] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:3
+2026-05-06 16:41:13,111 [12] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-06 16:41:13,112 [12] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:4
+2026-05-06 16:41:13,112 [12] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-06 16:41:13,112 [12] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:5
+2026-05-06 16:41:13,113 [12] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-06 16:41:13,113 [12] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:6
+2026-05-06 16:41:13,113 [12] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-06 16:41:13,114 [12] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:7
+2026-05-06 16:41:13,114 [12] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-06 16:41:13,114 [12] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:8
+2026-05-06 16:41:13,115 [12] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-06 16:41:13,115 [12] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:9
+2026-05-06 16:41:19,493 [18] [WARN ] [GameServer] ：Client[127.0.0.1:50249]] Connected
+2026-05-06 16:41:19,520 [9] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 16:41:22,434 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:41:22,447 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:41:28,295 [18] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:41:28,297 [18] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 16:41:44,187 [18] [WARN ] [GameServer] ：Client[127.0.0.1:60803]] Connected
+2026-05-06 16:41:44,199 [10] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 16:42:12,587 [13] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:42:12,588 [13] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:43:50,149 [21] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:43:50,150 [21] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 16:51:58,170 [51] [WARN ] [GameServer] ：Client[127.0.0.1:65063]] Connected
+2026-05-06 16:52:26,453 [53] [WARN ] [GameServer] ：Client[127.0.0.1:56430]] Connected
+2026-05-06 16:52:26,473 [14] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 16:52:29,595 [15] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:52:29,599 [15] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:52:33,825 [53] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:52:33,825 [53] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 16:52:55,213 [55] [WARN ] [GameServer] ：Client[127.0.0.1:62223]] Connected
+2026-05-06 16:52:55,234 [16] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 16:52:56,769 [17] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 16:52:56,770 [17] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 16:53:29,425 [58] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 16:53:29,426 [58] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 17:00:02,435 [82] [WARN ] [GameServer] ：Client[127.0.0.1:65129]] Connected
+2026-05-06 17:00:02,452 [9] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 17:00:09,835 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 17:00:09,836 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 17:00:38,092 [82] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 17:00:38,092 [82] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 17:04:03,998 [94] [WARN ] [GameServer] ：Client[127.0.0.1:55324]] Connected
+2026-05-06 17:04:04,011 [10] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 17:04:06,097 [13] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 17:04:06,099 [13] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 17:04:18,177 [94] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 17:04:18,177 [94] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 18:23:14,138 [109] [WARN ] [GameServer] ：Client[127.0.0.1:62239]] Connected
+2026-05-06 18:23:41,035 [109] [WARN ] [GameServer] ：Client[127.0.0.1:59057]] Connected
+2026-05-06 18:23:41,055 [14] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 18:23:48,525 [15] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 18:23:48,526 [15] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 18:23:55,336 [109] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 18:23:55,337 [109] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 18:25:09,246 [19] [WARN ] [GameServer] ：Client[127.0.0.1:62162]] Connected
+2026-05-06 18:25:09,258 [16] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 18:25:10,897 [17] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 18:25:10,897 [17] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 18:25:42,396 [19] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 18:25:42,396 [19] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 18:36:28,886 [126] [WARN ] [GameServer] ：Client[127.0.0.1:63675]] Connected
+2026-05-06 18:36:28,895 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 18:36:36,182 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 18:36:36,184 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 18:37:18,953 [129] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 18:37:18,955 [129] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 18:39:55,787 [121] [WARN ] [GameServer] ：Client[127.0.0.1:50569]] Connected
+2026-05-06 18:39:55,807 [7] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 18:39:57,879 [10] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 18:39:57,881 [10] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 18:40:06,183 [119] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 18:40:06,185 [119] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 18:41:55,813 [112] [WARN ] [GameServer] ：Client[127.0.0.1:63517]] Connected
+2026-05-06 18:41:55,825 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 18:41:57,902 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 18:41:57,904 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 18:44:29,465 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 18:44:29,466 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 18:44:51,100 [20] [WARN ] [GameServer] ：Client[127.0.0.1:63352]] Connected
+2026-05-06 18:44:51,112 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 18:44:52,915 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 18:44:52,915 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 18:45:11,857 [20] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 18:45:11,858 [20] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 18:45:33,499 [20] [WARN ] [GameServer] ：Client[127.0.0.1:54781]] Connected
+2026-05-06 18:45:33,521 [7] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 18:45:35,503 [10] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 18:45:35,504 [10] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 18:45:42,313 [20] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 18:45:42,313 [20] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:03:43,635 [87] [WARN ] [GameServer] ：Client[127.0.0.1:56947]] Connected
+2026-05-06 19:03:43,646 [16] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:03:50,389 [17] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:03:50,390 [17] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:04:02,277 [16] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 19:04:02,278 [16] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:04:02,279 [16] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 19:05:41,278 [81] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 19:05:41,279 [81] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:06:21,789 [79] [WARN ] [GameServer] ：Client[127.0.0.1:58459]] Connected
+2026-05-06 19:06:21,803 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:06:23,486 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:06:23,488 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:07:09,742 [16] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 19:07:09,743 [16] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:07:09,743 [16] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 19:07:45,916 [76] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 19:07:45,916 [76] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:08:36,745 [74] [WARN ] [GameServer] ：Client[127.0.0.1:65503]] Connected
+2026-05-06 19:08:36,758 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:08:38,502 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:08:38,503 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:09:20,138 [15] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 19:09:20,143 [15] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:09:20,144 [15] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 19:09:23,751 [74] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 19:09:23,751 [74] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:16:47,594 [56] [WARN ] [GameServer] ：Client[127.0.0.1:56505]] Connected
+2026-05-06 19:16:47,607 [16] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:16:54,271 [17] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:16:54,272 [17] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:17:01,865 [10] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 19:17:01,865 [10] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:17:01,866 [10] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 19:17:18,269 [56] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 19:17:18,270 [56] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:22:04,026 [71] [WARN ] [GameServer] ：Client[127.0.0.1:63783]] Connected
+2026-05-06 19:22:04,038 [13] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:22:05,601 [14] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:22:05,601 [14] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:22:15,755 [17] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 19:22:15,756 [17] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:22:15,756 [17] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 19:22:30,253 [71] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 19:22:30,254 [71] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:23:43,901 [78] [WARN ] [GameServer] ：Client[127.0.0.1:64878]] Connected
+2026-05-06 19:23:43,913 [9] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:23:45,709 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:23:45,710 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:23:53,042 [16] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 19:23:53,042 [16] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:23:53,043 [16] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 19:23:57,260 [78] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 19:23:57,260 [78] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:25:31,151 [85] [WARN ] [GameServer] ：Client[127.0.0.1:59625]] Connected
+2026-05-06 19:25:31,163 [15] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:25:33,794 [16] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:25:33,796 [16] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:26:13,886 [86] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:26:13,887 [86] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:26:58,538 [87] [WARN ] [GameServer] ：Client[127.0.0.1:54685]] Connected
+2026-05-06 19:26:58,551 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:26:59,877 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:26:59,877 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:27:10,858 [10] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 19:27:10,859 [10] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:27:10,859 [10] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 19:28:03,849 [89] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 19:28:03,849 [89] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:30:02,550 [96] [WARN ] [GameServer] ：Client[127.0.0.1:52567]] Connected
+2026-05-06 19:30:02,563 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:234
+2026-05-06 19:30:15,439 [9] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:234
+2026-05-06 19:30:22,991 [7] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:30:25,960 [10] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:30:25,961 [10] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:30:36,401 [97] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:30:36,402 [97] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:33:51,291 [85] [WARN ] [GameServer] ：Client[127.0.0.1:64301]] Connected
+2026-05-06 19:33:51,306 [13] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:33:53,391 [14] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:33:53,391 [14] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:34:23,353 [82] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:34:23,353 [82] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 19:34:51,288 [80] [WARN ] [GameServer] ：Client[127.0.0.1:53649]] Connected
+2026-05-06 19:34:51,301 [15] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 19:34:52,862 [16] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 19:34:52,863 [16] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 19:35:06,420 [13] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 19:35:06,420 [13] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 19:35:06,421 [13] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 19:35:10,692 [80] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 19:35:10,693 [80] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:03:26,702 [149] [WARN ] [GameServer] ：Client[127.0.0.1:52932]] Connected
+2026-05-06 20:03:58,128 [152] [WARN ] [GameServer] ：Client[127.0.0.1:57505]] Connected
+2026-05-06 20:03:58,158 [15] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:04:10,396 [16] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:04:10,399 [16] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:04:19,436 [13] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:04:19,437 [13] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:04:19,438 [13] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:05:03,904 [154] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:05:03,905 [154] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:05:22,690 [154] [WARN ] [GameServer] ：Client[127.0.0.1:64329]] Connected
+2026-05-06 20:05:22,706 [15] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:05:24,176 [16] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:05:24,179 [16] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:05:31,221 [13] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:05:31,221 [13] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:05:31,222 [13] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:05:33,629 [154] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:05:33,630 [154] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:06:05,604 [155] [WARN ] [GameServer] ：Client[127.0.0.1:57426]] Connected
+2026-05-06 20:06:05,615 [14] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:06:07,349 [15] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:06:07,350 [15] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:06:15,836 [155] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:06:15,837 [155] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:07:02,571 [158] [WARN ] [GameServer] ：Client[127.0.0.1:60380]] Connected
+2026-05-06 20:07:02,586 [16] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:07:04,610 [17] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:07:04,611 [17] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:07:06,717 [158] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:07:06,717 [158] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:08:52,556 [164] [WARN ] [GameServer] ：Client[127.0.0.1:65340]] Connected
+2026-05-06 20:08:52,568 [9] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:08:54,258 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:08:54,259 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:09:01,484 [13] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:09:01,485 [13] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:09:01,485 [13] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:09:07,794 [164] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:09:07,794 [164] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:16:33,705 [142] [WARN ] [GameServer] ：Client[127.0.0.1:52589]] Connected
+2026-05-06 20:16:53,628 [142] [WARN ] [GameServer] ：Client[127.0.0.1:49889]] Connected
+2026-05-06 20:16:53,646 [14] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:17:01,833 [15] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:17:01,835 [15] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:17:10,725 [14] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:17:10,726 [14] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:17:10,726 [14] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:17:13,755 [142] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:17:13,756 [142] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:22:54,400 [50] [WARN ] [GameServer] ：Client[127.0.0.1:55594]] Connected
+2026-05-06 20:22:54,416 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:22:55,957 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:22:55,960 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:23:03,634 [16] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:23:03,635 [16] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:23:03,635 [16] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:23:13,430 [50] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:23:13,431 [50] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:23:46,548 [50] [WARN ] [GameServer] ：Client[127.0.0.1:49682]] Connected
+2026-05-06 20:23:46,565 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:23:49,710 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:23:49,711 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:24:00,105 [17] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:24:00,106 [17] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:24:00,106 [17] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:30:51,476 [26] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:30:51,477 [26] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:31:05,435 [26] [WARN ] [GameServer] ：Client[127.0.0.1:58745]] Connected
+2026-05-06 20:31:05,455 [14] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:31:12,779 [15] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:31:12,780 [15] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:31:19,931 [9] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:31:19,931 [9] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:31:19,933 [9] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:31:23,554 [26] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:31:23,555 [26] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:33:18,713 [33] [WARN ] [GameServer] ：Client[127.0.0.1:57159]] Connected
+2026-05-06 20:33:18,729 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:33:20,658 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:33:20,659 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:33:34,177 [10] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:33:34,179 [10] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:33:34,180 [10] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:33:37,516 [34] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:33:37,517 [34] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:35:32,755 [28] [WARN ] [GameServer] ：Client[127.0.0.1:50340]] Connected
+2026-05-06 20:35:32,769 [16] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:35:34,912 [17] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:35:34,914 [17] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:36:31,644 [9] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:36:31,645 [9] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:36:31,646 [9] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:38:11,163 [126] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:38:11,164 [126] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:39:41,368 [122] [WARN ] [GameServer] ：Client[127.0.0.1:55448]] Connected
+2026-05-06 20:39:41,386 [10] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:39:43,109 [13] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:39:43,110 [13] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:39:58,691 [9] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:39:58,691 [9] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:39:58,693 [9] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:40:04,224 [122] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:40:04,225 [122] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:40:19,114 [122] [WARN ] [GameServer] ：Client[127.0.0.1:57660]] Connected
+2026-05-06 20:40:19,130 [10] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:40:20,222 [13] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:40:20,223 [13] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:40:27,387 [15] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:40:27,387 [15] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:40:27,388 [15] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:40:29,454 [122] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:40:29,455 [122] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:40:45,166 [122] [WARN ] [GameServer] ：Client[127.0.0.1:51970]] Connected
+2026-05-06 20:40:45,187 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:40:46,509 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:40:46,510 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:40:57,254 [17] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:40:57,254 [17] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:40:57,255 [17] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:41:31,864 [119] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:41:31,865 [119] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:43:36,290 [51] [WARN ] [GameServer] ：Client[127.0.0.1:55984]] Connected
+2026-05-06 20:43:36,311 [15] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:43:38,322 [16] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:43:38,323 [16] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:43:51,247 [10] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:43:51,248 [10] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:43:51,248 [10] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:45:54,394 [37] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:45:54,394 [37] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:47:18,581 [38] [WARN ] [GameServer] ：Client[127.0.0.1:62753]] Connected
+2026-05-06 20:47:18,596 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:47:20,739 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:47:20,740 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:48:02,465 [13] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:48:02,466 [13] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:48:02,467 [13] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:49:28,954 [107] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:49:28,955 [107] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:50:39,536 [101] [WARN ] [GameServer] ：Client[127.0.0.1:60827]] Connected
+2026-05-06 20:50:39,558 [13] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:50:41,778 [14] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:50:41,781 [14] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:50:55,930 [10] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:50:55,931 [10] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:50:55,933 [10] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:51:05,225 [101] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:51:05,227 [101] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:55:02,713 [42] [WARN ] [GameServer] ：Client[127.0.0.1:53045]] Connected
+2026-05-06 20:55:02,732 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:55:04,086 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:55:04,087 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:55:11,273 [15] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:55:11,273 [15] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:55:11,273 [15] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:55:13,530 [41] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:55:13,530 [41] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 20:55:26,514 [41] [WARN ] [GameServer] ：Client[127.0.0.1:54732]] Connected
+2026-05-06 20:55:26,531 [9] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 20:55:28,125 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 20:55:28,126 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 20:56:07,486 [13] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 20:56:07,487 [13] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 20:56:07,487 [13] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 20:57:45,060 [36] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 20:57:45,060 [36] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 21:00:14,109 [114] [WARN ] [GameServer] ：Client[127.0.0.1:60023]] Connected
+2026-05-06 21:00:14,126 [17] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 21:00:15,790 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 21:00:15,790 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 21:00:23,023 [17] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 21:00:23,023 [17] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 21:00:23,024 [17] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 21:00:50,779 [114] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 21:00:50,780 [114] [WARN ] [GameServer] ：Client[] Disconnected
+2026-05-06 21:02:27,005 [119] [WARN ] [GameServer] ：Client[127.0.0.1:53728]] Connected
+2026-05-06 21:02:27,018 [9] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-05-06 21:02:28,317 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-06 21:02:28,318 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-05-06 21:02:35,203 [15] [INFO ] [GameServer] ：OnMapTeleport : CharacterID 1 MapId 1
+2026-05-06 21:02:35,204 [15] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-05-06 21:02:35,204 [15] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2026-05-06 21:02:38,436 [119] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2026-05-06 21:02:38,436 [119] [WARN ] [GameServer] ：Client[] Disconnected

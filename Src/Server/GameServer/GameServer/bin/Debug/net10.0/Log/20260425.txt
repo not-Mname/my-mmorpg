@@ -1,0 +1,772 @@
+
+2026-04-25 11:29:37,774 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-04-25 11:29:37,820 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-04-25 11:29:37,820 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-04-25 11:29:37,821 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-04-25 11:29:37,825 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-04-25 11:29:37,838 [2] [INFO ] [GameServer] £∫DBService init...
+2026-04-25 11:29:43,582 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-04-25 11:29:43,586 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-04-25 11:29:43,588 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-04-25 11:29:43,810 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-04-25 11:29:43,811 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-04-25 11:29:43,812 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú
+2026-04-25 11:29:43,813 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2026-04-25 11:29:43,813 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷
+2026-04-25 11:29:43,813 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ
+2026-04-25 11:29:43,843 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-04-25 11:29:43,844 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-04-25 11:29:43,845 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-04-25 11:29:43,845 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-04-25 11:29:43,846 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-04-25 11:29:43,846 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-04-25 11:29:43,847 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-04-25 11:29:43,847 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-04-25 11:29:44,463 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-04-25 11:29:44,463 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-04-25 11:29:44,464 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-04-25 11:29:44,465 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-04-25 11:29:44,473 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:29:44,473 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:29:44,473 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:29:44,473 [13] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:29:44,473 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:29:44,473 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:29:44,473 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:29:44,473 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:29:44,578 [2] [WARN ] [GameServer] £∫NetService Started
+2026-04-25 11:29:54,792 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:29:54,798 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:1
+2026-04-25 11:29:54,798 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:29:54,799 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-04-25 11:29:54,799 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:29:54,799 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-04-25 11:29:54,800 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:29:54,800 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-04-25 11:29:54,800 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:29:54,801 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:5
+2026-04-25 11:29:54,801 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:29:54,801 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-04-25 11:29:54,801 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:29:54,801 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-04-25 11:29:54,802 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:29:54,802 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-04-25 11:30:23,731 [3] [WARN ] [GameServer] £∫Client[127.0.0.1:64817]] Connected
+2026-04-25 11:30:23,755 [9] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-04-25 11:30:23,946 [9] [ERROR] [GameServer] £∫Message handler exception:, Object reference not set to an instance of an object., GameServer,    at GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) in D:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserService.cs:line 77
+   at Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) in D:\Develop\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:line 76
+2026-04-25 11:34:49,158 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-04-25 11:34:49,201 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-04-25 11:34:49,201 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-04-25 11:34:49,202 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-04-25 11:34:49,207 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-04-25 11:34:49,236 [2] [INFO ] [GameServer] £∫DBService init...
+2026-04-25 11:34:50,617 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-04-25 11:34:50,625 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-04-25 11:34:50,629 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-04-25 11:34:50,721 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-04-25 11:34:50,722 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-04-25 11:34:50,723 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú
+2026-04-25 11:34:50,724 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2026-04-25 11:34:50,724 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷
+2026-04-25 11:34:50,724 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ
+2026-04-25 11:34:50,725 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-04-25 11:34:50,725 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-04-25 11:34:50,726 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-04-25 11:34:50,726 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-04-25 11:34:50,727 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-04-25 11:34:50,727 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-04-25 11:34:50,728 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-04-25 11:34:50,728 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-04-25 11:34:50,953 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-04-25 11:34:50,954 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-04-25 11:34:50,955 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-04-25 11:34:50,955 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-04-25 11:34:50,961 [11] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:34:50,961 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:34:50,961 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:34:50,961 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:34:50,961 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:34:50,961 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:34:50,962 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:34:50,962 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:34:51,062 [2] [WARN ] [GameServer] £∫NetService Started
+2026-04-25 11:35:01,251 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:35:01,269 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:1
+2026-04-25 11:35:01,269 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:35:01,270 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-04-25 11:35:01,270 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:35:01,271 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-04-25 11:35:01,271 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:35:01,272 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-04-25 11:35:01,272 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:35:01,272 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:5
+2026-04-25 11:35:01,273 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:35:01,273 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-04-25 11:35:01,274 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:35:01,274 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-04-25 11:35:01,274 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:35:01,274 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-04-25 11:35:06,321 [18] [WARN ] [GameServer] £∫Client[127.0.0.1:52585]] Connected
+2026-04-25 11:35:06,349 [11] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-04-25 11:35:06,596 [11] [ERROR] [GameServer] £∫Message handler exception:, Object reference not set to an instance of an object., GameServer,    at GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) in D:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserService.cs:line 77
+   at Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) in D:\Develop\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:line 76
+2026-04-25 11:35:49,825 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-04-25 11:35:49,941 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-04-25 11:35:49,942 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-04-25 11:35:49,943 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-04-25 11:35:49,950 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-04-25 11:35:49,998 [2] [INFO ] [GameServer] £∫DBService init...
+2026-04-25 11:35:51,680 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-04-25 11:35:51,713 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-04-25 11:35:51,726 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-04-25 11:35:51,944 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-04-25 11:35:51,945 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-04-25 11:35:51,948 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú
+2026-04-25 11:35:51,951 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2026-04-25 11:35:51,952 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷
+2026-04-25 11:35:51,952 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ
+2026-04-25 11:35:51,954 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-04-25 11:35:51,954 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-04-25 11:35:51,955 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-04-25 11:35:51,956 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-04-25 11:35:51,957 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-04-25 11:35:51,958 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-04-25 11:35:51,959 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-04-25 11:35:51,960 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-04-25 11:35:52,405 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-04-25 11:35:52,407 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-04-25 11:35:52,408 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-04-25 11:35:52,409 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-04-25 11:35:52,429 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:35:52,429 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:35:52,429 [8] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:35:52,429 [11] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:35:52,429 [12] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:35:52,430 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:35:52,459 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:35:52,464 [18] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:35:52,532 [2] [WARN ] [GameServer] £∫NetService Started
+2026-04-25 11:36:00,161 [19] [WARN ] [GameServer] £∫Client[127.0.0.1:53819]] Connected
+2026-04-25 11:36:17,381 [14] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:37:19,871 [14] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:1
+2026-04-25 11:37:22,971 [14] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:37:23,873 [14] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-04-25 11:37:23,880 [14] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:37:23,888 [14] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-04-25 11:37:23,889 [8] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-04-25 11:37:23,889 [14] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:37:25,875 [14] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-04-25 11:37:25,884 [14] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:37:25,886 [14] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:5
+2026-04-25 11:37:25,887 [14] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:37:25,888 [14] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-04-25 11:37:25,889 [14] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:37:26,869 [14] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-04-25 11:37:26,877 [14] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:37:26,879 [14] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-04-25 11:41:20,204 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-04-25 11:41:20,229 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-04-25 11:41:20,229 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-04-25 11:41:20,230 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-04-25 11:41:20,231 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-04-25 11:41:20,238 [2] [INFO ] [GameServer] £∫DBService init...
+2026-04-25 11:41:21,380 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-04-25 11:41:21,388 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-04-25 11:41:21,392 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-04-25 11:41:21,485 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-04-25 11:41:21,486 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-04-25 11:41:21,488 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú
+2026-04-25 11:41:21,489 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2026-04-25 11:41:21,489 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷
+2026-04-25 11:41:21,489 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ
+2026-04-25 11:41:21,489 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-04-25 11:41:21,490 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-04-25 11:41:21,490 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-04-25 11:41:21,491 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-04-25 11:41:21,491 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-04-25 11:41:21,492 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-04-25 11:41:21,493 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-04-25 11:41:21,493 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-04-25 11:41:21,676 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-04-25 11:41:21,677 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-04-25 11:41:21,678 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-04-25 11:41:21,678 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-04-25 11:41:21,687 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:41:21,687 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:41:21,687 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:41:21,687 [13] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:41:21,687 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:41:21,687 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:41:21,687 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:41:21,688 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:41:21,795 [2] [WARN ] [GameServer] £∫NetService Started
+2026-04-25 11:41:31,996 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:41:32,009 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:1
+2026-04-25 11:41:32,010 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:41:32,010 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-04-25 11:41:32,011 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:41:32,011 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-04-25 11:41:32,011 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:41:32,011 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-04-25 11:41:32,012 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:41:32,012 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:5
+2026-04-25 11:41:32,012 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:41:32,013 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-04-25 11:41:32,013 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:41:32,013 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-04-25 11:41:32,013 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:41:32,014 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-04-25 11:41:43,589 [19] [WARN ] [GameServer] £∫Client[127.0.0.1:50340]] Connected
+2026-04-25 11:41:43,622 [10] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-04-25 11:41:43,818 [10] [ERROR] [GameServer] £∫Message handler exception:, Object reference not set to an instance of an object., GameServer,    at GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) in D:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserService.cs:line 78
+   at Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) in D:\Develop\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:line 76
+2026-04-25 11:42:02,061 [19] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-04-25 11:50:26,584 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-04-25 11:50:26,616 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-04-25 11:50:26,617 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-04-25 11:50:26,618 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-04-25 11:50:26,619 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-04-25 11:50:26,627 [2] [INFO ] [GameServer] £∫DBService init...
+2026-04-25 11:50:32,327 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-04-25 11:50:32,331 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-04-25 11:50:32,334 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-04-25 11:50:32,413 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-04-25 11:50:32,414 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-04-25 11:50:32,416 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú
+2026-04-25 11:50:32,417 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2026-04-25 11:50:32,418 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷
+2026-04-25 11:50:32,418 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ
+2026-04-25 11:50:32,419 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-04-25 11:50:32,420 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-04-25 11:50:32,420 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-04-25 11:50:32,421 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-04-25 11:50:32,422 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-04-25 11:50:32,423 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-04-25 11:50:32,423 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-04-25 11:50:32,424 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-04-25 11:50:32,623 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-04-25 11:50:32,624 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-04-25 11:50:32,625 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-04-25 11:50:32,625 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-04-25 11:50:32,632 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:50:32,632 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:50:32,632 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:50:32,632 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:50:32,632 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:50:32,632 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:50:32,632 [13] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:50:32,632 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:50:32,735 [2] [WARN ] [GameServer] £∫NetService Started
+2026-04-25 11:50:42,865 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:50:42,885 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:1
+2026-04-25 11:50:42,886 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:50:42,887 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-04-25 11:50:42,887 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:50:42,888 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-04-25 11:50:42,888 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:50:42,889 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-04-25 11:50:42,890 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:50:42,890 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:5
+2026-04-25 11:50:42,890 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:50:42,891 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-04-25 11:50:42,891 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:50:42,892 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-04-25 11:50:42,892 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:50:42,893 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-04-25 11:50:47,671 [18] [WARN ] [GameServer] £∫Client[127.0.0.1:55979]] Connected
+2026-04-25 11:50:47,699 [10] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-04-25 11:50:50,306 [9] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-04-25 11:50:50,337 [9] [ERROR] [GameServer] £∫Message handler exception:, Object reference not set to an instance of an object., GameServer,    at GameServer.Entities.Character..ctor(CharacterType type, TCharacter cha) in D:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Entities\Character.cs:line 52
+   at GameServer.Managers.CharacterManager.AddCharacter(TCharacter cha) in D:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Managers\CharacterManager.cs:line 32
+   at GameServer.Services.UserService.OnGameEnter(NetConnection`1 sender, UserGameEnterRequest request) in D:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserService.cs:line 163
+   at Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) in D:\Develop\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:line 76
+2026-04-25 11:51:18,844 [19] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-04-25 11:51:31,641 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-04-25 11:51:31,728 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-04-25 11:51:31,729 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-04-25 11:51:31,730 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-04-25 11:51:31,740 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-04-25 11:51:31,801 [2] [INFO ] [GameServer] £∫DBService init...
+2026-04-25 11:51:34,291 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-04-25 11:51:34,329 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-04-25 11:51:34,343 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-04-25 11:51:34,553 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-04-25 11:51:34,554 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-04-25 11:51:34,558 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú
+2026-04-25 11:51:34,560 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2026-04-25 11:51:34,560 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷
+2026-04-25 11:51:34,561 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ
+2026-04-25 11:51:34,562 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-04-25 11:51:34,563 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-04-25 11:51:34,564 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-04-25 11:51:34,565 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-04-25 11:51:34,566 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-04-25 11:51:34,567 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-04-25 11:51:34,569 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-04-25 11:51:34,570 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-04-25 11:51:35,072 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-04-25 11:51:35,074 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-04-25 11:51:35,075 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-04-25 11:51:35,076 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-04-25 11:51:35,101 [8] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:51:35,101 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:51:35,101 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:51:35,101 [11] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:51:35,102 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:51:35,107 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:51:35,112 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:51:35,144 [18] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 11:51:35,216 [2] [WARN ] [GameServer] £∫NetService Started
+2026-04-25 11:51:44,528 [19] [WARN ] [GameServer] £∫Client[127.0.0.1:50846]] Connected
+2026-04-25 11:51:53,993 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:51:57,891 [8] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-04-25 11:51:57,906 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:1
+2026-04-25 11:51:57,907 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:51:57,907 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-04-25 11:51:57,908 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:51:57,908 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-04-25 11:51:57,908 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:51:57,909 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-04-25 11:51:57,910 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 11:51:57,910 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:5
+2026-04-25 11:51:57,911 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 11:51:57,911 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-04-25 11:51:57,912 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 11:51:57,912 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-04-25 11:51:57,913 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 11:51:57,913 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-04-25 11:52:00,737 [10] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-04-25 12:15:45,089 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-04-25 12:15:45,114 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-04-25 12:15:45,114 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-04-25 12:15:45,115 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-04-25 12:15:45,116 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-04-25 12:15:45,123 [2] [INFO ] [GameServer] £∫DBService init...
+2026-04-25 12:15:50,800 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-04-25 12:15:50,804 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-04-25 12:15:50,807 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-04-25 12:15:50,932 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-04-25 12:15:50,933 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-04-25 12:15:50,935 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú
+2026-04-25 12:15:50,936 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2026-04-25 12:15:50,936 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷
+2026-04-25 12:15:50,936 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ
+2026-04-25 12:15:50,937 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-04-25 12:15:50,938 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-04-25 12:15:50,938 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-04-25 12:15:50,939 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-04-25 12:15:50,939 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-04-25 12:15:50,940 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-04-25 12:15:50,941 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-04-25 12:15:50,942 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-04-25 12:15:51,171 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-04-25 12:15:51,172 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-04-25 12:15:51,172 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-04-25 12:15:51,173 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-04-25 12:15:51,182 [11] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:15:51,183 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:15:51,183 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:15:51,182 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:15:51,182 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:15:51,183 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:15:51,183 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:15:51,183 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:15:51,282 [2] [WARN ] [GameServer] £∫NetService Started
+2026-04-25 12:16:01,493 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 12:16:01,505 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:1
+2026-04-25 12:16:01,506 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 12:16:01,506 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-04-25 12:16:01,507 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 12:16:01,507 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-04-25 12:16:01,507 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 12:16:01,508 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-04-25 12:16:01,508 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 12:16:01,508 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:5
+2026-04-25 12:16:01,509 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 12:16:01,509 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-04-25 12:16:01,510 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 12:16:01,510 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-04-25 12:16:01,510 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 12:16:01,511 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-04-25 12:16:16,171 [3] [WARN ] [GameServer] £∫Client[127.0.0.1:55424]] Connected
+2026-04-25 12:16:16,195 [11] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-04-25 12:16:18,367 [7] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-04-25 12:16:18,396 [7] [ERROR] [GameServer] £∫Message handler exception:, Object reference not set to an instance of an object., GameServer,    at GameServer.Entities.Character..ctor(CharacterType type, TCharacter cha) in D:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Entities\Character.cs:line 52
+   at GameServer.Managers.CharacterManager.AddCharacter(TCharacter cha) in D:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Managers\CharacterManager.cs:line 32
+   at GameServer.Services.UserService.OnGameEnter(NetConnection`1 sender, UserGameEnterRequest request) in D:\Develop\MyMmorpg\Src\Server\GameServer\GameServer\Services\UserService.cs:line 168
+   at Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) in D:\Develop\MyMmorpg\Src\Lib\Common\Network\MessageDistributer.cs:line 76
+2026-04-25 12:16:21,838 [3] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-04-25 12:23:26,834 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-04-25 12:23:26,869 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-04-25 12:23:26,869 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-04-25 12:23:26,870 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-04-25 12:23:26,871 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-04-25 12:23:26,878 [2] [INFO ] [GameServer] £∫DBService init...
+2026-04-25 12:23:28,032 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-04-25 12:23:28,036 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-04-25 12:23:28,040 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-04-25 12:23:28,129 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-04-25 12:23:28,130 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-04-25 12:23:28,131 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú
+2026-04-25 12:23:28,132 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2026-04-25 12:23:28,132 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷
+2026-04-25 12:23:28,132 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ
+2026-04-25 12:23:28,134 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-04-25 12:23:28,134 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-04-25 12:23:28,135 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-04-25 12:23:28,135 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-04-25 12:23:28,136 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-04-25 12:23:28,136 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-04-25 12:23:28,137 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-04-25 12:23:28,137 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-04-25 12:23:28,310 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-04-25 12:23:28,311 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-04-25 12:23:28,311 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-04-25 12:23:28,312 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-04-25 12:23:28,321 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:23:28,321 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:23:28,321 [11] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:23:28,321 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:23:28,321 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:23:28,321 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:23:28,321 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:23:28,321 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 12:23:28,422 [2] [WARN ] [GameServer] £∫NetService Started
+2026-04-25 12:23:38,641 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 12:23:38,654 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:1
+2026-04-25 12:23:38,655 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 12:23:38,655 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-04-25 12:23:38,656 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 12:23:38,656 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-04-25 12:23:38,656 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 12:23:38,657 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-04-25 12:23:38,657 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 12:23:38,658 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:5
+2026-04-25 12:23:38,658 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 12:23:38,658 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-04-25 12:23:38,659 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 12:23:38,659 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-04-25 12:23:38,660 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 12:23:38,660 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-04-25 12:23:53,746 [19] [WARN ] [GameServer] £∫Client[127.0.0.1:55868]] Connected
+2026-04-25 12:23:53,769 [7] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-04-25 12:23:55,639 [10] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-04-25 12:23:55,649 [10] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-04-25 12:24:00,135 [16] [INFO ] [GameServer] £∫SendSkillCast: skillId 103, casterId 9, targetId 0, position { }
+2026-04-25 12:24:00,201 [16] [INFO ] [GameServer] £∫SendSkillCast: skillId 103, casterId 9, targetId 0, position (0,0,0)
+2026-04-25 12:24:00,251 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] cast result Ok status Running
+2026-04-25 12:24:00,253 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 0
+2026-04-25 12:24:00,373 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 1
+2026-04-25 12:24:00,481 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 2
+2026-04-25 12:24:00,589 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 3
+2026-04-25 12:24:00,698 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 4
+2026-04-25 12:24:00,805 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 5
+2026-04-25 12:24:00,914 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 6
+2026-04-25 12:24:01,022 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 7
+2026-04-25 12:24:01,129 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 8
+2026-04-25 12:24:01,237 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 9
+2026-04-25 12:24:01,346 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 10
+2026-04-25 12:24:01,453 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 11
+2026-04-25 12:24:01,562 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 12
+2026-04-25 12:24:01,671 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 13
+2026-04-25 12:24:01,780 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 14
+2026-04-25 12:24:01,888 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 15
+2026-04-25 12:24:01,997 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 16
+2026-04-25 12:24:02,104 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 17
+2026-04-25 12:24:02,211 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 18
+2026-04-25 12:24:02,319 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 19
+2026-04-25 12:24:02,429 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 20
+2026-04-25 12:24:02,536 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 21
+2026-04-25 12:24:02,645 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 22
+2026-04-25 12:24:02,754 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 23
+2026-04-25 12:24:02,862 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 24
+2026-04-25 12:24:02,969 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 25
+2026-04-25 12:24:03,076 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 26
+2026-04-25 12:24:03,185 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 27
+2026-04-25 12:24:03,295 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 28
+2026-04-25 12:24:03,404 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 29
+2026-04-25 12:24:03,511 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 30
+2026-04-25 12:24:03,620 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 31
+2026-04-25 12:24:03,727 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] hit 32
+2026-04-25 12:24:03,729 [13] [INFO ] [GameServer] £∫Skill [–˝∑Á’∂] done
+2026-04-25 12:24:14,768 [15] [INFO ] [GameServer] £∫OnMapTeleport : CharacterID 1 MapId 1
+2026-04-25 12:24:14,769 [15] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-04-25 12:24:14,771 [15] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2026-04-25 12:24:21,421 [15] [INFO ] [GameServer] £∫SendSkillCast: skillId 101, casterId 9, targetId 3, position { }
+2026-04-25 12:24:21,422 [15] [INFO ] [GameServer] £∫SendSkillCast: skillId 101, casterId 9, targetId 3, position (0,0,0)
+2026-04-25 12:24:21,449 [13] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] cast result Ok status Running
+2026-04-25 12:24:21,663 [13] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] hit 0
+2026-04-25 12:24:21,665 [13] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] damage 1 hit target –°∂Òƒß hit caster’Ω ø
+2026-04-25 12:24:21,666 [13] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] done
+2026-04-25 12:24:21,668 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-04-25 12:24:21,771 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-04-25 12:24:22,095 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-04-25 12:24:22,096 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:24:22,203 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-04-25 12:24:22,311 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-04-25 12:24:22,312 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:24:22,421 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-04-25 12:24:22,853 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:23,174 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:23,388 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:23,713 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:24,039 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:24,256 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:24,583 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:24,800 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:25,124 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:25,339 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:25,554 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:25,768 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:25,987 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:26,094 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:26,311 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:26,638 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:26,853 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-04-25 12:24:26,960 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.Idle
+2026-04-25 12:24:27,179 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-04-25 12:24:27,180 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:24:27,286 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-04-25 12:24:27,719 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-04-25 12:24:28,150 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:28,258 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.Idle
+2026-04-25 12:24:28,369 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-04-25 12:24:28,370 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:24:28,370 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:28,478 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-04-25 12:24:28,587 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:28,694 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:29,344 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.Idle
+2026-04-25 12:24:29,885 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-04-25 12:24:30,211 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-04-25 12:24:30,211 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:24:30,320 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-04-25 12:24:32,907 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-04-25 12:24:33,231 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-04-25 12:24:33,231 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:24:33,340 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-04-25 12:24:33,771 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-04-25 12:24:34,420 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-04-25 12:24:34,420 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:24:34,529 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-04-25 12:24:35,613 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:35,829 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:35,939 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:36,046 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:36,155 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:36,264 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:36,373 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:36,481 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:36,699 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:36,915 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:37,128 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:37,237 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:37,345 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:37,455 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:37,563 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:37,671 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:37,888 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:37,995 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:38,104 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:38,319 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:38,427 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:38,535 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:38,641 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:38,749 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:38,858 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:38,966 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:39,076 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:39,185 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:39,293 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:39,403 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:39,512 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:39,619 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:39,726 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:39,834 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:39,942 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:40,159 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:40,376 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:40,593 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:40,701 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:40,809 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:40,916 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:41,024 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:41,347 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:41,563 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:41,668 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:41,774 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:41,881 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:41,990 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:42,099 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:42,209 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:42,319 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:42,426 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:42,534 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:42,643 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:42,752 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:42,967 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:43,074 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:43,181 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:43,398 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:43,613 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:43,829 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:43,937 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:44,044 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:44,153 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:44,261 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:44,369 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:44,479 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:44,587 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:44,696 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:44,805 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:44,914 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:45,021 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:45,237 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:45,455 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:45,564 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:45,673 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:45,781 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:45,999 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:46,213 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:46,321 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:46,430 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:46,542 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:46,650 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:46,867 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:46,974 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:47,083 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:47,191 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:47,298 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:47,621 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:47,729 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:47,948 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:48,055 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:48,274 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:48,489 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:48,705 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:48,813 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:49,030 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:49,140 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:49,248 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:49,354 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:49,463 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:49,570 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:49,678 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:49,788 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:50,004 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:50,219 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:50,325 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:50,436 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:50,544 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:50,653 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:50,764 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:50,870 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:50,977 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:51,084 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:51,192 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:51,299 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:51,621 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:51,837 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:52,054 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:52,162 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:52,270 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:52,378 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:52,485 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:52,595 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:52,704 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:52,920 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:53,137 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:53,462 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:53,572 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:53,788 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:54,005 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:54,114 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:54,221 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:54,547 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:54,656 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.MoveFwd
+2026-04-25 12:24:57,027 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-04-25 12:24:57,135 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-04-25 12:24:57,242 [13] [INFO ] [GameServer] £∫[MoveTo]-> EntityEvent.Idle
+2026-04-25 12:24:57,461 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-04-25 12:24:57,462 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:24:57,567 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-04-25 12:24:57,676 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-04-25 12:24:57,677 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:24:57,784 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-04-25 12:24:59,694 [19] [INFO ] [GameServer] £∫CharacterLeave: Map:2 characterId:1
+2026-04-25 12:24:59,694 [19] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-04-25 12:25:00,145 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-04-25 12:25:00,469 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-04-25 12:25:00,469 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:25:00,574 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-04-25 12:25:03,067 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-04-25 12:25:03,175 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-04-25 12:25:03,500 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-04-25 12:25:03,501 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:25:03,610 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-04-25 12:25:03,717 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-04-25 12:25:03,718 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:25:03,825 [13] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-04-25 12:25:06,200 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-04-25 12:25:06,525 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-04-25 12:25:06,526 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-04-25 12:25:06,633 [13] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-04-25 19:15:12,450 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-04-25 19:15:12,534 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-04-25 19:15:12,534 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-04-25 19:15:12,535 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-04-25 19:15:12,546 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-04-25 19:15:12,585 [2] [INFO ] [GameServer] £∫DBService init...
+2026-04-25 19:15:19,928 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-04-25 19:15:19,937 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-04-25 19:15:19,945 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-04-25 19:15:20,136 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-04-25 19:15:20,137 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-04-25 19:15:20,141 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú
+2026-04-25 19:15:20,143 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2026-04-25 19:15:20,144 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷
+2026-04-25 19:15:20,144 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ
+2026-04-25 19:15:20,146 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-04-25 19:15:20,146 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-04-25 19:15:20,147 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-04-25 19:15:20,148 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-04-25 19:15:20,149 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-04-25 19:15:20,150 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-04-25 19:15:20,152 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-04-25 19:15:20,152 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-04-25 19:15:20,600 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-04-25 19:15:20,602 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-04-25 19:15:20,603 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-04-25 19:15:20,604 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-04-25 19:15:20,620 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 19:15:20,620 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 19:15:20,620 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 19:15:20,620 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 19:15:20,620 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 19:15:20,620 [13] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 19:15:20,620 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 19:15:20,621 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-04-25 19:15:20,720 [2] [WARN ] [GameServer] £∫NetService Started
+2026-04-25 19:15:30,890 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 19:15:30,909 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:1
+2026-04-25 19:15:30,910 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 19:15:30,910 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-04-25 19:15:30,911 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 19:15:30,911 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-04-25 19:15:30,912 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 19:15:30,913 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-04-25 19:15:30,913 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-04-25 19:15:30,914 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:5
+2026-04-25 19:15:30,914 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-04-25 19:15:30,915 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-04-25 19:15:30,915 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-04-25 19:15:30,916 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-04-25 19:15:30,916 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-04-25 19:15:30,916 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-04-25 19:15:40,868 [19] [WARN ] [GameServer] £∫Client[127.0.0.1:59107]] Connected
+2026-04-25 19:15:40,906 [10] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-04-25 19:15:43,821 [7] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-04-25 19:15:43,831 [7] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-04-25 19:16:36,571 [3] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-04-25 19:16:36,572 [3] [WARN ] [GameServer] £∫Client[] Disconnected

@@ -163,12 +163,13 @@ namespace GameServer.Models.Logic
             }
         }
 
-        public void PostProcess(Character from, NetMessageResponse message)
+        public void PostProcess(Character from, NetMessage message)
         {
             SyncOnlineMembers();
-            message.Guild = new GuildResponse();
-            message.Guild.Result = Result.Success;
-            message.Guild.GuildInfo = this.GuildInfo(from);
+            var guildRes = new GuildResponse();
+            guildRes.Result = Result.Success;
+            guildRes.GuildInfo = this.GuildInfo(from);
+            message.Responses.Add(new NetMessageResponse { Guild = guildRes });
         }
 
         public bool JoinAppove(NGuildApplyInfo apply)

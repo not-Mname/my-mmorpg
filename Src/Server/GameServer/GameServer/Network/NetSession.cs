@@ -3,6 +3,7 @@ using GameServer.Models.Data;
 using GameServer.Network;
 using GameServer.Services.Entities;
 using SkillBridge.Message;
+using System;
 
 namespace Network
 {
@@ -23,11 +24,11 @@ namespace Network
 
         public byte[] GetResponse()
         {
-            if(response != null)
+            if (response != null && response.Responses.Count > 0)
             {
-                if(PostResponser != null)
+                if (PostResponser != null)
                 {
-                    this.PostResponser.PostProcess(response.Response);
+                    this.PostResponser.PostProcess(response);
                 }
                 byte[] bytes = PackageHandler.PackMessage(response);
                 response = null;
@@ -38,17 +39,26 @@ namespace Network
 
         NetMessage response;
 
-        public NetMessageResponse Response
+        public void AddResponse(NetMessageResponse item)
         {
-            get
+            if (item == null)
             {
-                if(response == null)
-                    response = new NetMessage();
-                if(response.Response == null)
-                    response.Response = new NetMessageResponse();
-                return response.Response;
+                throw new ArgumentNullException(nameof(item));
             }
-        }
 
+            if (item.PayloadCase == NetMessageResponse.PayloadOneofCase.None)
+            {
+                throw new ArgumentException(
+                    "Response envelope has no payload",
+                    nameof(item));
+            }
+
+            if (response == null)
+            {
+                response = new NetMessage();
+            }
+
+            response.Responses.Add(item);
+        }
     }
 }

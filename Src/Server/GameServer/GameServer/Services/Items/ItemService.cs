@@ -28,8 +28,7 @@ namespace GameServer.Services.Items
             Character cha = sender.Session.Character;
             Log.InfoFormat("ItemEquipRequest: Character {0}: Slot {1} Item {2} Equip{3}", cha.Id, message.Slot, message.ItemId, message.IsEquip);
             var result = EquipManager.Instance.EquipItem(sender, message.Slot, message.ItemId, message.IsEquip);
-            sender.Session.Response.ItemEquip = new ItemEquipResponse();
-            sender.Session.Response.ItemEquip.Result = result;
+            sender.Session.AddResponse(new NetMessageResponse { ItemEquip = new ItemEquipResponse() { Result = result } });
             sender.SendResponse();
         }
 
@@ -38,8 +37,7 @@ namespace GameServer.Services.Items
             Character cha = sender.Session.Character;
             Log.InfoFormat("ItemBuyRequest: Character {0} Shop {1} ShopItem {2}", cha.Id, message.ShopId, message.ShopItemId);
             var result = ShopManager.Instance.BuyItem(sender, message.ShopId, message.ShopItemId);
-            sender.Session.Response.ItemBuy = new ItemBuyResponse();
-            sender.Session.Response.ItemBuy.Result = result;
+            sender.Session.AddResponse(new NetMessageResponse { ItemBuy = new ItemBuyResponse() { Result = result } });
             sender.SendResponse();
         }
     }

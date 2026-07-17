@@ -45,15 +45,15 @@ namespace GameServer.Services.Battle
             }
             if (blue == null)
             {
-                sender.Session.Response.ArenaChallengeRes = new ArenaChallengeResponse()
+                sender.Session.AddResponse(new NetMessageResponse { ArenaChallengeRes = new ArenaChallengeResponse()
                 {
                     Result = Result.Failed,
                     Errormsg = "玩家不在线"
-                };
+                } });
                 return;
             }
 
-            blue.Session.Response.ArenaChallengeReq = request;
+            blue.Session.AddResponse(new NetMessageResponse { ArenaChallengeReq = request });
             blue.SendResponse();
         }
 
@@ -63,14 +63,13 @@ namespace GameServer.Services.Battle
             NetConnection<NetSession> requester = SessionManager.Instance.GetSession(response.ArenaInfo.Red.EntityId);
             if (requester == null)
             {
-                sender.Session.Response.ArenaChallengeRes = new ArenaChallengeResponse() { Errormsg = "玩家不在线", Result = Result.Failed };
+                sender.Session.AddResponse(new NetMessageResponse { ArenaChallengeRes = new ArenaChallengeResponse() { Errormsg = "玩家不在线", Result = Result.Failed } });
                 sender.SendResponse();
                 return;
             }
             if (response.Result == Result.Failed)
             {
-                requester.Session.Response.ArenaChallengeRes = response;
-                requester.Session.Response.ArenaChallengeRes.Result = Result.Failed;
+                requester.Session.AddResponse(new NetMessageResponse { ArenaChallengeRes = new ArenaChallengeResponse() { Result = Result.Failed } });
                 requester.SendResponse();
             }
 
@@ -85,8 +84,8 @@ namespace GameServer.Services.Battle
                 Result = Result.Failed,
                 Errormsg = "玩家不在线"
             };
-            arena.Red.Session.Response.ArenaBeginRes = arenaBegin;
-            arena.Blue.Session.Response.ArenaBeginRes = arenaBegin;
+            arena.Red.Session.AddResponse(new NetMessageResponse { ArenaBeginRes = arenaBegin });
+            arena.Blue.Session.AddResponse(new NetMessageResponse { ArenaBeginRes = arenaBegin });
             arena.Red.SendResponse();
             arena.Blue.SendResponse();
         }
@@ -98,8 +97,8 @@ namespace GameServer.Services.Battle
                 ArenaInfo = arena.ArenaInfo,
                 Round = arena.Round,
             };
-            arena.Red.Session.Response.ArenaReadyRes = arenaReady;
-            arena.Blue.Session.Response.ArenaReadyRes = arenaReady;
+            arena.Red.Session.AddResponse(new NetMessageResponse { ArenaReadyRes = arenaReady });
+            arena.Blue.Session.AddResponse(new NetMessageResponse { ArenaReadyRes = arenaReady });
             arena.Red.SendResponse();
             arena.Blue.SendResponse();
         }
@@ -111,8 +110,8 @@ namespace GameServer.Services.Battle
                 ArenaInfo = arena.ArenaInfo,
                 Round = arena.Round,
             };
-            arena.Red.Session.Response.ArenaRoundStartRes = roundStart;
-            arena.Blue.Session.Response.ArenaRoundStartRes = roundStart;
+            arena.Red.Session.AddResponse(new NetMessageResponse { ArenaRoundStartRes = roundStart });
+            arena.Blue.Session.AddResponse(new NetMessageResponse { ArenaRoundStartRes = roundStart });
             arena.Red.SendResponse();
             arena.Blue.SendResponse();
         }
@@ -124,8 +123,8 @@ namespace GameServer.Services.Battle
                 ArenaInfo = arena.ArenaInfo,
                 Round = arena.Round,
             };
-            arena.Red.Session.Response.ArenaRoundEndRes = roundEnd;
-            arena.Blue.Session.Response.ArenaRoundEndRes = roundEnd;
+            arena.Red.Session.AddResponse(new NetMessageResponse { ArenaRoundEndRes = roundEnd });
+            arena.Blue.Session.AddResponse(new NetMessageResponse { ArenaRoundEndRes = roundEnd });
             arena.Red.SendResponse();
             arena.Blue.SendResponse();
         }

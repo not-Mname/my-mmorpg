@@ -1,0 +1,846 @@
+
+2026-05-08 13:34:43,212 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-05-08 13:34:43,265 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-05-08 13:34:43,266 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-05-08 13:34:43,267 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-05-08 13:34:43,300 [2] [INFO ] [GameServer] £∫DBService init...
+2026-05-08 13:34:49,360 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-05-08 13:34:49,367 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-05-08 13:34:49,460 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-05-08 13:34:49,461 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-05-08 13:34:49,462 [2] [INFO ] [GameServer] £∫ChatService Initialized
+2026-05-08 13:34:49,463 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-05-08 13:34:49,463 [2] [INFO ] [GameServer] £∫FriendService Initialized
+2026-05-08 13:34:49,464 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-05-08 13:34:49,465 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-05-08 13:34:49,663 [2] [INFO ] [GameServer] £∫GuildService Initialized
+2026-05-08 13:34:49,664 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-05-08 13:34:49,665 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-05-08 13:34:49,665 [2] [INFO ] [GameServer] £∫TeamService Initialized
+2026-05-08 13:34:49,666 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-05-08 13:34:49,666 [2] [INFO ] [GameServer] £∫QuestService Initialized
+2026-05-08 13:34:49,666 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-05-08 13:34:49,666 [2] [INFO ] [GameServer] £∫BagService Initialized
+2026-05-08 13:34:49,667 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-05-08 13:34:49,667 [2] [INFO ] [GameServer] £∫ItemService Initialized
+2026-05-08 13:34:49,668 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-05-08 13:34:49,668 [2] [INFO ] [GameServer] £∫UserService Initialized
+2026-05-08 13:34:49,669 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-05-08 13:34:49,670 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-05-08 13:34:49,670 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú, Instance:1
+2026-05-08 13:34:49,671 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷, Instance:1
+2026-05-08 13:34:49,672 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷, Instance:1
+2026-05-08 13:34:49,672 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ, Instance:1
+2026-05-08 13:34:49,673 [2] [INFO ] [GameServer] £∫MapService Initialized
+2026-05-08 13:34:49,673 [2] [INFO ] [GameServer] £∫ArenaService Initialized
+2026-05-08 13:34:49,674 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-05-08 13:34:49,675 [2] [INFO ] [GameServer] £∫BattleSerevice Initialized
+2026-05-08 13:34:49,679 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-05-08 13:34:49,680 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-05-08 13:34:49,685 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:34:49,685 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:34:49,685 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:34:49,685 [13] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:34:49,685 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:34:49,686 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:34:49,686 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:34:49,686 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:34:49,798 [2] [WARN ] [GameServer] £∫NetService Started
+2026-05-08 13:34:59,950 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-08 13:34:59,964 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-05-08 13:34:59,965 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-08 13:34:59,966 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-05-08 13:34:59,966 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-08 13:34:59,967 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-05-08 13:34:59,967 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-08 13:34:59,968 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:5
+2026-05-08 13:34:59,968 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-08 13:34:59,968 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-05-08 13:34:59,969 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-08 13:34:59,970 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-05-08 13:34:59,970 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-08 13:34:59,971 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-05-08 13:34:59,971 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-08 13:34:59,971 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:9
+2026-05-08 13:35:24,173 [3] [WARN ] [GameServer] £∫Client[127.0.0.1:61968]] Connected
+2026-05-08 13:35:24,199 [10] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 13:35:26,638 [9] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 13:35:26,648 [9] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 13:35:34,332 [13] [INFO ] [GameServer] £∫OnMapTeleport : CharacterID 1 MapId 1
+2026-05-08 13:35:34,333 [13] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 13:35:34,336 [13] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2026-05-08 13:35:46,491 [3] [INFO ] [GameServer] £∫CharacterLeave: Map:2 characterId:1
+2026-05-08 13:35:46,492 [3] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 13:36:49,980 [20] [WARN ] [GameServer] £∫Client[127.0.0.1:55627]] Connected
+2026-05-08 13:36:50,002 [15] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 13:36:51,893 [16] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 13:36:51,894 [16] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 13:36:59,037 [10] [INFO ] [GameServer] £∫OnMapTeleport : CharacterID 1 MapId 1
+2026-05-08 13:36:59,039 [10] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 13:36:59,040 [10] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2026-05-08 13:37:07,135 [16] [INFO ] [GameServer] £∫SendSkillCast: skillId 101, casterId 11, targetId 4, position { }
+2026-05-08 13:37:07,231 [16] [INFO ] [GameServer] £∫SendSkillCast: skillId 101, casterId 11, targetId 4, position (0,0,0)
+2026-05-08 13:37:07,270 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] cast result Ok status Running
+2026-05-08 13:37:07,605 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] hit 0
+2026-05-08 13:37:07,609 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] damage 1 hit target –°∂Òƒß hit caster’Ω ø
+2026-05-08 13:37:07,611 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:07,729 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] done
+2026-05-08 13:37:07,730 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:08,055 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:08,056 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:08,163 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:08,272 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:37:08,272 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:08,382 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:37:11,095 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:11,419 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:11,420 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:11,527 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:15,218 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:15,324 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:15,649 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:15,650 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:15,758 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:15,866 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:37:15,867 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:15,974 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:37:18,465 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:18,790 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:18,790 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:18,897 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:22,912 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:23,020 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:23,343 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:23,344 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:23,451 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:23,558 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:37:23,558 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:23,666 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:37:26,939 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:27,267 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:27,267 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:27,375 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:29,001 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:29,651 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:37:29,651 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:29,759 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:37:29,978 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:30,301 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:30,302 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:30,409 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:32,963 [22] [INFO ] [GameServer] £∫CharacterLeave: Map:2 characterId:1
+2026-05-08 13:37:32,963 [22] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 13:37:33,013 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:33,333 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:33,333 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:33,436 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:35,049 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:35,696 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:37:35,697 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:35,803 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:37:36,019 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:36,342 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:36,342 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:36,450 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:39,039 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:39,358 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:39,358 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:39,461 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:41,095 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:41,742 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:37:41,742 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:41,850 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:37:42,064 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:42,388 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:42,388 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:42,496 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:45,098 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:45,422 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:45,422 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:45,530 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:47,153 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:47,804 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:37:47,804 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:47,912 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:37:48,129 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:48,455 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:48,455 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:48,561 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:51,156 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:51,481 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:51,481 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:51,592 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:53,214 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:53,863 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:37:53,863 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:53,973 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:37:54,189 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:54,518 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:54,518 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:54,626 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:57,228 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:57,553 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:37:57,553 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:37:57,662 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:37:59,293 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:37:59,940 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:37:59,941 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:00,049 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:38:00,267 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:00,592 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:00,592 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:00,700 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:03,306 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:03,629 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:03,630 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:03,737 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:05,356 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:05,999 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:38:06,000 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:06,108 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:38:06,325 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:06,648 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:06,649 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:06,757 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:09,365 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:09,687 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:09,688 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:09,795 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:11,421 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:12,074 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:38:12,075 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:12,181 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:38:12,398 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:12,722 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:12,723 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:12,830 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:15,426 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:15,754 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:15,755 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:15,862 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:17,486 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:18,132 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:38:18,133 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:18,240 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:38:18,459 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:18,783 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:18,784 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:18,891 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:21,484 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:21,807 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:21,808 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:21,914 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:23,548 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:24,194 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:38:24,195 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:24,302 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:38:24,516 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:24,838 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:24,839 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:24,946 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:27,546 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:27,873 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:27,873 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:27,981 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:29,601 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:30,252 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:38:30,252 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:30,361 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:38:30,579 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:30,903 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:30,904 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:31,013 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:33,623 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:33,950 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:33,950 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:34,058 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:35,683 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:36,331 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:38:36,331 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:36,440 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:38:36,656 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:36,981 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:36,982 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:37,090 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:39,697 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:40,022 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:40,023 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:40,130 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:41,756 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:42,405 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:38:42,405 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:42,512 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:38:42,729 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:43,055 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:43,055 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:43,163 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:45,769 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:46,093 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:46,094 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:46,200 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:47,822 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:48,470 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:38:48,470 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:48,579 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:38:48,795 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:49,119 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:49,119 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:49,227 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:51,831 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:52,154 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:52,155 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:52,262 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:53,874 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:54,507 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:38:54,508 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:54,613 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:38:54,934 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:55,252 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:55,252 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:55,359 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:58,002 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:38:58,319 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:38:58,319 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:38:58,424 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:38:59,908 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:39:00,544 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:39:00,544 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:39:00,650 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:39:01,073 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:39:01,392 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:39:01,392 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:39:01,497 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:39:04,152 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:39:04,468 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:39:04,468 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:39:04,574 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:46:56,846 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-05-08 13:46:56,874 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-05-08 13:46:56,875 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-05-08 13:46:56,875 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-05-08 13:46:56,880 [2] [INFO ] [GameServer] £∫DBService init...
+2026-05-08 13:47:02,613 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-05-08 13:47:02,617 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-05-08 13:47:02,739 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-05-08 13:47:02,741 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-05-08 13:47:02,741 [2] [INFO ] [GameServer] £∫ChatService Initialized
+2026-05-08 13:47:02,742 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-05-08 13:47:02,742 [2] [INFO ] [GameServer] £∫FriendService Initialized
+2026-05-08 13:47:02,743 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-05-08 13:47:02,744 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-05-08 13:47:02,991 [2] [INFO ] [GameServer] £∫GuildService Initialized
+2026-05-08 13:47:02,992 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-05-08 13:47:02,993 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-05-08 13:47:02,994 [2] [INFO ] [GameServer] £∫TeamService Initialized
+2026-05-08 13:47:02,994 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-05-08 13:47:02,995 [2] [INFO ] [GameServer] £∫QuestService Initialized
+2026-05-08 13:47:02,995 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-05-08 13:47:02,996 [2] [INFO ] [GameServer] £∫BagService Initialized
+2026-05-08 13:47:02,997 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-05-08 13:47:02,997 [2] [INFO ] [GameServer] £∫ItemService Initialized
+2026-05-08 13:47:02,998 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-05-08 13:47:02,998 [2] [INFO ] [GameServer] £∫UserService Initialized
+2026-05-08 13:47:02,999 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-05-08 13:47:03,000 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-05-08 13:47:03,001 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú, Instance:1
+2026-05-08 13:47:03,003 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷, Instance:1
+2026-05-08 13:47:03,003 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷, Instance:1
+2026-05-08 13:47:03,004 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ, Instance:1
+2026-05-08 13:47:03,005 [2] [INFO ] [GameServer] £∫MapService Initialized
+2026-05-08 13:47:03,006 [2] [INFO ] [GameServer] £∫ArenaService Initialized
+2026-05-08 13:47:03,006 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-05-08 13:47:03,007 [2] [INFO ] [GameServer] £∫BattleSerevice Initialized
+2026-05-08 13:47:03,009 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-05-08 13:47:03,012 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-05-08 13:47:03,019 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:47:03,019 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:47:03,019 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:47:03,019 [13] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:47:03,019 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:47:03,019 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:47:03,019 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:47:03,020 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 13:47:03,124 [2] [WARN ] [GameServer] £∫NetService Started
+2026-05-08 13:47:13,258 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-08 13:47:13,274 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-05-08 13:47:13,274 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-08 13:47:13,275 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-05-08 13:47:13,275 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-08 13:47:13,275 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-05-08 13:47:13,276 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-08 13:47:13,276 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:5
+2026-05-08 13:47:13,276 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-08 13:47:13,277 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-05-08 13:47:13,277 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-08 13:47:13,277 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-05-08 13:47:13,277 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-08 13:47:13,278 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-05-08 13:47:13,278 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-08 13:47:13,278 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:9
+2026-05-08 13:54:53,656 [37] [WARN ] [GameServer] £∫Client[127.0.0.1:61481]] Connected
+2026-05-08 13:55:16,426 [37] [WARN ] [GameServer] £∫Client[127.0.0.1:49401]] Connected
+2026-05-08 13:55:16,511 [9] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 13:55:22,424 [15] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 13:55:22,446 [15] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 13:55:30,766 [14] [INFO ] [GameServer] £∫OnMapTeleport : CharacterID 1 MapId 1
+2026-05-08 13:55:30,776 [14] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 13:55:30,779 [14] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2026-05-08 13:55:35,513 [14] [INFO ] [GameServer] £∫SendSkillCast: skillId 101, casterId 10, targetId 4, position { }
+2026-05-08 13:55:35,613 [14] [INFO ] [GameServer] £∫SendSkillCast: skillId 101, casterId 10, targetId 4, position (0,0,0)
+2026-05-08 13:55:35,632 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] cast result Ok status Running
+2026-05-08 13:55:35,969 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] hit 0
+2026-05-08 13:55:35,973 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] damage 1 hit target –°∂Òƒß hit caster’Ω ø
+2026-05-08 13:55:35,975 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:55:36,093 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] done
+2026-05-08 13:55:36,094 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:55:36,416 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:55:36,417 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:55:36,525 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:55:36,633 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:55:36,634 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:55:36,742 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:55:43,467 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:55:43,575 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:55:43,898 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:55:43,899 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:55:44,005 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:55:44,112 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:55:44,113 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:55:44,220 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:55:59,633 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:55:59,742 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:56:00,065 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:56:00,069 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:56:00,174 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:56:00,282 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:56:00,282 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:56:00,390 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 13:56:01,352 [37] [INFO ] [GameServer] £∫CharacterLeave: Map:2 characterId:1
+2026-05-08 13:56:01,353 [37] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 13:56:02,759 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:56:03,084 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:56:03,084 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:56:03,192 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:56:05,681 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 13:56:05,789 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 13:56:06,112 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 13:56:06,113 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:56:06,221 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 13:56:06,328 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 13:56:06,329 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 13:56:06,434 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:06:01,797 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-05-08 14:06:01,846 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-05-08 14:06:01,846 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-05-08 14:06:01,847 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-05-08 14:06:01,877 [2] [INFO ] [GameServer] £∫DBService init...
+2026-05-08 14:06:07,976 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-05-08 14:06:07,986 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-05-08 14:06:08,169 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-05-08 14:06:08,171 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-05-08 14:06:08,172 [2] [INFO ] [GameServer] £∫ChatService Initialized
+2026-05-08 14:06:08,173 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-05-08 14:06:08,174 [2] [INFO ] [GameServer] £∫FriendService Initialized
+2026-05-08 14:06:08,175 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-05-08 14:06:08,176 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-05-08 14:06:08,586 [2] [INFO ] [GameServer] £∫GuildService Initialized
+2026-05-08 14:06:08,587 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-05-08 14:06:08,588 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-05-08 14:06:08,588 [2] [INFO ] [GameServer] £∫TeamService Initialized
+2026-05-08 14:06:08,590 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-05-08 14:06:08,590 [2] [INFO ] [GameServer] £∫QuestService Initialized
+2026-05-08 14:06:08,591 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-05-08 14:06:08,591 [2] [INFO ] [GameServer] £∫BagService Initialized
+2026-05-08 14:06:08,592 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-05-08 14:06:08,592 [2] [INFO ] [GameServer] £∫ItemService Initialized
+2026-05-08 14:06:08,593 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-05-08 14:06:08,593 [2] [INFO ] [GameServer] £∫UserService Initialized
+2026-05-08 14:06:08,594 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-05-08 14:06:08,596 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-05-08 14:06:08,596 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú, Instance:1
+2026-05-08 14:06:08,600 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷, Instance:1
+2026-05-08 14:06:08,601 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷, Instance:1
+2026-05-08 14:06:08,602 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ, Instance:1
+2026-05-08 14:06:08,602 [2] [INFO ] [GameServer] £∫MapService Initialized
+2026-05-08 14:06:08,604 [2] [INFO ] [GameServer] £∫ArenaService Initialized
+2026-05-08 14:06:08,605 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-05-08 14:06:08,605 [2] [INFO ] [GameServer] £∫BattleSerevice Initialized
+2026-05-08 14:06:08,612 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-05-08 14:06:08,615 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-05-08 14:06:08,626 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:06:08,626 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:06:08,626 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:06:08,626 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:06:08,626 [13] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:06:08,626 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:06:08,626 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:06:08,627 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:06:08,730 [2] [WARN ] [GameServer] £∫NetService Started
+2026-05-08 14:06:18,924 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-08 14:06:18,943 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-05-08 14:06:18,944 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-08 14:06:18,944 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-05-08 14:06:18,945 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-08 14:06:18,945 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-05-08 14:06:18,945 [12] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-08 14:06:18,946 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:5
+2026-05-08 14:06:18,946 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-08 14:06:18,947 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-05-08 14:06:18,947 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-08 14:06:18,947 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-05-08 14:06:18,948 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-08 14:06:18,948 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-05-08 14:06:18,948 [12] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-08 14:06:18,948 [12] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:9
+2026-05-08 14:06:21,418 [18] [WARN ] [GameServer] £∫Client[127.0.0.1:54710]] Connected
+2026-05-08 14:06:21,451 [15] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 14:06:24,654 [9] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 14:06:24,664 [9] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 14:06:32,621 [9] [INFO ] [GameServer] £∫OnMapTeleport : CharacterID 1 MapId 1
+2026-05-08 14:06:32,622 [9] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 14:06:32,624 [9] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2026-05-08 14:06:37,359 [10] [INFO ] [GameServer] £∫SendSkillCast: skillId 101, casterId 10, targetId 4, position { }
+2026-05-08 14:06:37,423 [10] [INFO ] [GameServer] £∫SendSkillCast: skillId 101, casterId 10, targetId 4, position (0,0,0)
+2026-05-08 14:06:37,520 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] cast result Ok status Running
+2026-05-08 14:06:37,858 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] hit 0
+2026-05-08 14:06:37,861 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] damage 1 hit target –°∂Òƒß hit caster’Ω ø
+2026-05-08 14:06:37,862 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:06:37,981 [12] [INFO ] [GameServer] £∫Skill [∆’Õ®π•ª˜] done
+2026-05-08 14:06:37,982 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:06:38,308 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:06:38,308 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:06:38,414 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:06:38,524 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:06:38,525 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:06:38,633 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:06:41,341 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:06:41,663 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:06:41,664 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:06:41,772 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:06:45,136 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:06:45,245 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:06:45,569 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:06:45,570 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:06:45,677 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:06:45,785 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:06:45,786 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:06:45,895 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:06:48,274 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:06:48,599 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:06:48,600 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:06:48,707 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:06:51,200 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:06:51,310 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:06:51,634 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:06:51,635 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:06:51,743 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:06:51,852 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:06:51,853 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:06:51,960 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:06:54,333 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:06:54,658 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:06:54,659 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:06:54,766 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:00,520 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:00,629 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:00,953 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:00,954 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:01,061 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:01,169 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:07:01,170 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:01,279 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:07:03,664 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:03,993 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:03,994 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:04,104 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:06,599 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:06,705 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:07,031 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:07,031 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:07,139 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:07,248 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:07:07,249 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:07,358 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:07:09,745 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:10,071 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:10,071 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:10,178 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:12,673 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:12,780 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:13,105 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:13,106 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:13,214 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:13,323 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:07:13,324 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:13,433 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:07:15,823 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:16,147 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:16,148 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:16,256 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:18,749 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:18,857 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:19,184 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:19,185 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:19,293 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:19,400 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:07:19,401 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:19,509 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:07:21,901 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:22,226 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:22,227 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:22,336 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:24,832 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:24,941 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:25,268 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:25,268 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:25,377 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:25,487 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:07:25,487 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:25,595 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:07:27,984 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:28,310 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:28,310 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:28,418 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:30,905 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:31,012 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:31,339 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:31,339 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:31,447 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:31,555 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:07:31,556 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:31,664 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:07:34,049 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:34,375 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:34,376 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:34,484 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:36,978 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:37,087 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:37,413 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:37,414 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:37,522 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:37,630 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:07:37,631 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:37,741 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:07:50,327 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:50,976 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:07:50,977 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:51,083 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:07:58,670 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:58,780 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:07:59,103 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:07:59,104 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:59,212 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:07:59,321 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:07:59,321 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:07:59,429 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:08:14,431 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:08:14,539 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:08:14,864 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:08:14,864 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:08:14,972 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:08:15,082 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:08:15,082 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:08:15,189 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:08:17,579 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:08:17,903 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:08:17,904 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:08:18,013 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:08:20,510 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:08:20,619 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:08:20,940 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:08:20,941 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:08:21,049 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:08:21,157 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:08:21,158 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:08:21,264 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:08:23,651 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:08:23,976 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:08:23,977 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:08:24,084 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:08:26,572 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] cast result Ok status Running
+2026-05-08 14:08:26,680 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] cast result Ok status Running
+2026-05-08 14:08:27,003 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] hit 0
+2026-05-08 14:08:27,008 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:08:27,112 [12] [INFO ] [GameServer] £∫Skill [≤Êª˜] done
+2026-05-08 14:08:27,220 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] hit 0
+2026-05-08 14:08:27,220 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] damage 1 hit target ’Ω ø hit caster–°∂Òƒß
+2026-05-08 14:08:27,328 [12] [INFO ] [GameServer] £∫Skill [–˝◊™≤Êª˜] done
+2026-05-08 14:08:27,606 [20] [INFO ] [GameServer] £∫CharacterLeave: Map:2 characterId:1
+2026-05-08 14:08:27,607 [20] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 14:14:37,032 [2] [INFO ] [GameServer] £∫Config Loading...
+2026-05-08 14:14:37,095 [2] [INFO ] [GameServer] £∫Config Loaded
+2026-05-08 14:14:37,096 [2] [INFO ] [GameServer] £∫Game Server Init
+2026-05-08 14:14:37,097 [2] [INFO ] [GameServer] £∫GameServer Init...
+2026-05-08 14:14:37,124 [2] [INFO ] [GameServer] £∫DBService init...
+2026-05-08 14:14:43,069 [2] [WARN ] [GameServer] £∫DB connection is True
+2026-05-08 14:14:43,075 [2] [INFO ] [GameServer] £∫DataManager Loading...
+2026-05-08 14:14:43,195 [2] [INFO ] [GameServer] £∫ChatService Init...
+2026-05-08 14:14:43,197 [2] [INFO ] [GameServer] £∫ChatManager init...
+2026-05-08 14:14:43,198 [2] [INFO ] [GameServer] £∫ChatService Initialized
+2026-05-08 14:14:43,199 [2] [INFO ] [GameServer] £∫FriendService Init...
+2026-05-08 14:14:43,199 [2] [INFO ] [GameServer] £∫FriendService Initialized
+2026-05-08 14:14:43,200 [2] [INFO ] [GameServer] £∫GuildService Init...
+2026-05-08 14:14:43,201 [2] [INFO ] [GameServer] £∫GuildManager Init...
+2026-05-08 14:14:43,435 [2] [INFO ] [GameServer] £∫GuildService Initialized
+2026-05-08 14:14:43,436 [2] [INFO ] [GameServer] £∫TeamService Init...
+2026-05-08 14:14:43,437 [2] [INFO ] [GameServer] £∫TeamManager Init...
+2026-05-08 14:14:43,437 [2] [INFO ] [GameServer] £∫TeamService Initialized
+2026-05-08 14:14:43,438 [2] [INFO ] [GameServer] £∫QuestService Init...
+2026-05-08 14:14:43,438 [2] [INFO ] [GameServer] £∫QuestService Initialized
+2026-05-08 14:14:43,439 [2] [INFO ] [GameServer] £∫BagService Init...
+2026-05-08 14:14:43,439 [2] [INFO ] [GameServer] £∫BagService Initialized
+2026-05-08 14:14:43,440 [2] [INFO ] [GameServer] £∫ItemService Init...
+2026-05-08 14:14:43,440 [2] [INFO ] [GameServer] £∫ItemService Initialized
+2026-05-08 14:14:43,441 [2] [INFO ] [GameServer] £∫UserService Init...
+2026-05-08 14:14:43,441 [2] [INFO ] [GameServer] £∫UserService Initialized
+2026-05-08 14:14:43,442 [2] [INFO ] [GameServer] £∫MapService Init...
+2026-05-08 14:14:43,442 [2] [INFO ] [GameServer] £∫MapManage Init...
+2026-05-08 14:14:43,443 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤∑¡È’Ú, Instance:1
+2026-05-08 14:14:43,445 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷, Instance:1
+2026-05-08 14:14:43,445 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:3:¬‰»’…≠¡÷, Instance:1
+2026-05-08 14:14:43,446 [2] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’”‡ÍÕ, Instance:1
+2026-05-08 14:14:43,446 [2] [INFO ] [GameServer] £∫MapService Initialized
+2026-05-08 14:14:43,447 [2] [INFO ] [GameServer] £∫ArenaService Initialized
+2026-05-08 14:14:43,448 [2] [INFO ] [GameServer] £∫BattleSerevice Init...
+2026-05-08 14:14:43,448 [2] [INFO ] [GameServer] £∫BattleSerevice Initialized
+2026-05-08 14:14:43,452 [2] [INFO ] [GameServer] £∫NetService Init...
+2026-05-08 14:14:43,454 [2] [WARN ] [GameServer] £∫Starting Listener...
+2026-05-08 14:14:43,461 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:14:43,461 [11] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:14:43,461 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:14:43,461 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:14:43,461 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:14:43,461 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:14:43,461 [16] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:14:43,462 [17] [WARN ] [GameServer] £∫MessageDistribute thread start
+2026-05-08 14:14:43,575 [2] [WARN ] [GameServer] £∫NetService Started
+2026-05-08 14:14:53,779 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-08 14:14:53,792 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:2
+2026-05-08 14:14:53,793 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-08 14:14:53,793 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:3
+2026-05-08 14:14:53,794 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-08 14:14:53,794 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:4
+2026-05-08 14:14:53,794 [13] [INFO ] [GameServer] £∫Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-08 14:14:53,794 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:5
+2026-05-08 14:14:53,795 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-05-08 14:14:53,795 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:6
+2026-05-08 14:14:53,795 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-05-08 14:14:53,795 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:7
+2026-05-08 14:14:53,795 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-05-08 14:14:53,795 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:8
+2026-05-08 14:14:53,796 [13] [INFO ] [GameServer] £∫Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-05-08 14:14:53,796 [13] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:9
+2026-05-08 16:09:24,087 [83] [WARN ] [GameServer] £∫Client[127.0.0.1:61323]] Connected
+2026-05-08 16:10:27,754 [78] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 18:42:16,212 [136] [WARN ] [GameServer] £∫Client[127.0.0.1:62311]] Connected
+2026-05-08 18:43:20,246 [140] [WARN ] [GameServer] £∫Client[127.0.0.1:58795]] Connected
+2026-05-08 18:43:31,767 [7] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 18:43:40,395 [140] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 18:49:00,993 [162] [WARN ] [GameServer] £∫Client[127.0.0.1:59645]] Connected
+2026-05-08 18:49:01,012 [9] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 18:49:03,075 [10] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 18:49:03,093 [10] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 18:50:09,380 [166] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 18:50:09,382 [166] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:07:34,484 [102] [WARN ] [GameServer] £∫Client[127.0.0.1:58344]] Connected
+2026-05-08 19:09:22,209 [95] [WARN ] [GameServer] £∫Client[127.0.0.1:61086]] Connected
+2026-05-08 19:09:22,224 [11] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:132
+2026-05-08 19:09:32,595 [14] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:132
+2026-05-08 19:10:06,406 [92] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:10:52,997 [19] [WARN ] [GameServer] £∫Client[127.0.0.1:51824]] Connected
+2026-05-08 19:10:53,014 [15] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:10:55,775 [16] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:10:55,777 [16] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:11:12,318 [18] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:11:12,319 [18] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:12:15,903 [23] [WARN ] [GameServer] £∫Client[127.0.0.1:53578]] Connected
+2026-05-08 19:12:15,932 [17] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:12:19,221 [7] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:12:19,223 [7] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:14:40,134 [30] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:14:40,135 [30] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:14:55,589 [30] [WARN ] [GameServer] £∫Client[127.0.0.1:65016]] Connected
+2026-05-08 19:14:55,604 [9] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:14:57,628 [10] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:14:57,628 [10] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:15:25,555 [33] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:15:25,556 [33] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:16:36,287 [35] [WARN ] [GameServer] £∫Client[127.0.0.1:60704]] Connected
+2026-05-08 19:16:36,309 [11] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:16:43,386 [14] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:16:43,387 [14] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:20:10,055 [48] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:20:10,056 [48] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:21:25,973 [52] [WARN ] [GameServer] £∫Client[127.0.0.1:65515]] Connected
+2026-05-08 19:21:25,989 [15] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:21:33,144 [16] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:21:33,146 [16] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:21:42,539 [52] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:21:42,540 [52] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:25:15,392 [70] [WARN ] [GameServer] £∫Client[127.0.0.1:64628]] Connected
+2026-05-08 19:25:15,406 [17] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:25:16,900 [7] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:25:16,901 [7] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:25:32,954 [70] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:25:32,954 [70] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:26:58,399 [71] [WARN ] [GameServer] £∫Client[127.0.0.1:52146]] Connected
+2026-05-08 19:26:58,416 [9] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:26:59,985 [10] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:26:59,986 [10] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:28:10,202 [77] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:28:10,203 [77] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:28:33,965 [80] [WARN ] [GameServer] £∫Client[127.0.0.1:53139]] Connected
+2026-05-08 19:28:33,978 [11] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:28:35,741 [14] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:28:35,742 [14] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:31:25,834 [90] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:31:25,834 [90] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:32:25,909 [88] [WARN ] [GameServer] £∫Client[127.0.0.1:55875]] Connected
+2026-05-08 19:32:25,932 [15] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:32:27,265 [16] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:32:27,271 [16] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:32:31,565 [88] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:32:31,565 [88] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:34:06,387 [82] [WARN ] [GameServer] £∫Client[127.0.0.1:59989]] Connected
+2026-05-08 19:34:06,405 [17] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:34:08,539 [7] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:34:08,541 [7] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:34:54,150 [81] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:34:54,151 [81] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 19:44:08,754 [44] [WARN ] [GameServer] £∫Client[127.0.0.1:65205]] Connected
+2026-05-08 19:44:31,031 [45] [WARN ] [GameServer] £∫Client[127.0.0.1:60065]] Connected
+2026-05-08 19:44:31,055 [9] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 19:44:39,516 [10] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 19:44:39,519 [10] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 19:44:48,065 [45] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 19:44:48,104 [45] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 20:06:14,050 [151] [WARN ] [GameServer] £∫Client[127.0.0.1:60177]] Connected
+2026-05-08 20:06:49,011 [153] [WARN ] [GameServer] £∫Client[127.0.0.1:56636]] Connected
+2026-05-08 20:06:49,030 [11] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 20:09:11,671 [160] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 20:27:58,406 [108] [WARN ] [GameServer] £∫Client[127.0.0.1:52936]] Connected
+2026-05-08 20:27:58,419 [14] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 20:28:03,197 [15] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 20:28:03,199 [15] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 20:28:06,414 [108] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 20:28:06,414 [108] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 20:29:01,260 [104] [WARN ] [GameServer] £∫Client[127.0.0.1:60977]] Connected
+2026-05-08 20:29:01,275 [16] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 20:29:02,755 [17] [INFO ] [GameServer] £∫UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-05-08 20:29:02,756 [17] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2026-05-08 20:29:05,538 [104] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2026-05-08 20:29:05,539 [104] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 20:57:40,570 [117] [WARN ] [GameServer] £∫Client[127.0.0.1:55489]] Connected
+2026-05-08 20:57:40,575 [7] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 20:57:59,662 [117] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 21:14:05,794 [68] [WARN ] [GameServer] £∫Client[127.0.0.1:58517]] Connected
+2026-05-08 21:14:52,370 [69] [WARN ] [GameServer] £∫Client[127.0.0.1:58557]] Connected
+2026-05-08 21:14:52,389 [9] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 21:17:56,329 [81] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 21:54:29,111 [36] [WARN ] [GameServer] £∫Client[127.0.0.1:58659]] Connected
+2026-05-08 21:54:53,260 [36] [WARN ] [GameServer] £∫Client[127.0.0.1:56530]] Connected
+2026-05-08 21:54:53,275 [10] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 21:56:22,998 [42] [WARN ] [GameServer] £∫Client[] Disconnected
+2026-05-08 21:58:31,562 [48] [WARN ] [GameServer] £∫Client[127.0.0.1:50870]] Connected
+2026-05-08 21:58:31,588 [11] [INFO ] [GameServer] £∫UserLoginRequest: User:1001  Pass:123
+2026-05-08 21:58:35,171 [49] [WARN ] [GameServer] £∫Client[] Disconnected

@@ -33,34 +33,35 @@ namespace GameServer.Services.Social
                 var target = SessionManager.Instance.GetSession(message.Message.ToId);
                 if (target == null)
                 {
-                    if(sender.Session.Response.Chat == null)
-                        sender.Session.Response.Chat = new ChatResponse();
-                    sender.Session.Response.Chat.Result = Result.Success;
-                    sender.Session.Response.Chat.Errormsg = "对方不在线";
+                    var chatRes = new ChatResponse();
+                    chatRes.Result = Result.Success;
+                    chatRes.Errormsg = "对方不在线";
+                    sender.Session.AddResponse(new NetMessageResponse { Chat = chatRes });
                     sender.SendResponse();
                     return;
                 }
                 else
                 {
-                    if(target.Session.Response.Chat == null)
-                        target.Session.Response.Chat = new ChatResponse();
                     message.Message.FromId = character.Id;
                     message.Message.FromName = character.Name;
-                    target.Session.Response.Chat.Result = Result.Success;
-                    target.Session.Response.Chat.PrivateMessages.Add(message.Message);
+                    var targetChatRes = new ChatResponse();
+                    targetChatRes.Result = Result.Success;
+                    targetChatRes.PrivateMessages.Add(message.Message);
+                    target.Session.AddResponse(new NetMessageResponse { Chat = targetChatRes });
                     target.SendResponse();
-                    if (sender.Session.Response.Chat == null)
-                        sender.Session.Response.Chat = new ChatResponse();
-                    sender.Session.Response.Chat.Result = Result.Success;
-                    sender.Session.Response.Chat.PrivateMessages.Add(message.Message);
+                    var senderChatRes = new ChatResponse();
+                    senderChatRes.Result = Result.Success;
+                    senderChatRes.PrivateMessages.Add(message.Message);
+                    sender.Session.AddResponse(new NetMessageResponse { Chat = senderChatRes });
                     sender.SendResponse();
                 }
             }
             else
             {
-                sender.Session.Response.Chat = new ChatResponse();
-                sender.Session.Response.Chat.Result = Result.Success;
+                var chatRes = new ChatResponse();
+                chatRes.Result = Result.Success;
                 ChatManager.Instance.AddMessage(character, message.Message);
+                sender.Session.AddResponse(new NetMessageResponse { Chat = chatRes });
                 sender.SendResponse();
             }
         }

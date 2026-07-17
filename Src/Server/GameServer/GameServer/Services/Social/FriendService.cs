@@ -29,11 +29,11 @@ namespace GameServer.Services.Social
         {
             Character cha = sender.Session.Character;
             Log.InfoFormat("OnFriendRemove: character {0} remove Friend {1}", cha.Id, message.FriendId);
-            sender.Session.Response.FriendRemove = new FriendRemoveResponse() { Result = Result.Success };
+            var friendRemoveRes = new FriendRemoveResponse();
 
             if (cha.FriendManager.RemoveFriendById(message.FriendId))
             {
-                sender.Session.Response.FriendRemove.Result = Result.Success;
+                friendRemoveRes.Result = Result.Success;
                 var Friend = SessionManager.Instance.GetSession(message.FriendId);
                 if (Friend != null)
                 {//在线，既要删除数据库中的好友关系，也要删除内存中的好友关系
@@ -46,9 +46,10 @@ namespace GameServer.Services.Social
             }
             else
             {
-                sender.Session.Response.FriendRemove.Result = Result.Failed;
-                sender.Session.Response.FriendRemove.Errormsg = "好友不存在";
+                friendRemoveRes.Result = Result.Failed;
+                friendRemoveRes.Errormsg = "好友不存在";
             }
+            sender.Session.AddResponse(new NetMessageResponse { FriendRemove = friendRemoveRes });
             sender.SendResponse();
         }
 
@@ -73,36 +74,33 @@ namespace GameServer.Services.Social
         {
             Character cha = sender.Session.Character;
             Log.InfoFormat("OnFriendAddResponse：character {0} Result{1} FromId{2} ToId{3}", cha.Id, message.Result, message.Request.FromId, message.Request.ToId);
-            sender.Session.Response.FriendAddRes = message;
             if (message.Result == Result.Success)
             {
                 NetConnection<NetSession> Friend = SessionManager.Instance.GetSession(message.Request.FromId);
                 if (Friend == null)
                 {
-                    sender.Session.Response.FriendAddRes.Errormsg = "请求者已下线";
-                    sender.Session.Response.FriendAddRes.Result = Result.Failed;
+                    message.Errormsg = "请求者已下线";
+                    message.Result = Result.Failed;
                 }
                 else
                 {
                     Friend.Session.Character.FriendManager.AddFriend(sender.Session.Character);
                     cha.FriendManager.AddFriend(Friend.Session.Character);
-                    Friend.Session.Response.FriendAddRes = message;
-                    Friend.Session.Response.FriendAddRes.Result = Result.Success;
-                    Friend.Session.Response.FriendAddRes.Errormsg = "添加好友成功";
+                    message.Result = Result.Success;
+                    message.Errormsg = "添加好友成功";
+                    Friend.Session.AddResponse(new NetMessageResponse { FriendAddRes = message });
                     Friend.SendResponse();
                 }
             }
 
+            sender.Session.AddResponse(new NetMessageResponse { FriendAddRes = message });
             sender.SendResponse();
         }
-        /// <summary>
-        /// 处理好友添加请求，本质是转发A客户端的请求到B客户端
-        /// </summary>
         private void OnFriendAddRequest(NetConnection<NetSession> sender, FriendAddRequest message)
         {
             Character cha = sender.Session.Character;
             Log.InfoFormat("OnFriendAddRequest：{0} {1} -> {2} {3}", message.FromId, message.FromName, message.ToId, message.ToName);
-            sender.Session.Response.FriendAddRes = new FriendAddResponse();
+            var friendAddRes = new FriendAddResponse();
             if (message.ToId == 0)
             {
                 foreach (var ch in CharacterManager.Instance.Characters)
@@ -121,9 +119,10 @@ namespace GameServer.Services.Social
             {
                 if (cha.FriendManager.GetFriendInfo(message.ToId) != null)
                 {
-                    sender.Session.Response.FriendAddRes.Result = Result.Failed;
-                    sender.Session.Response.FriendAddRes.Errormsg = "已经是好友了";
-                    sender.Session.Response.FriendAddRes.Request = message;
+                    friendAddRes.Result = Result.Failed;
+                    friendAddRes.Errormsg = "已经是好友了";
+                    friendAddRes.Request = message;
+                    sender.Session.AddResponse(new NetMessageResponse { FriendAddRes = friendAddRes });
                     sender.SendResponse();
                     return;
                 }
@@ -131,15 +130,16 @@ namespace GameServer.Services.Social
             Friend = SessionManager.Instance.GetSession(message.ToId);
             if (Friend == null)
             {
-                sender.Session.Response.FriendAddRes.Result = Result.Failed;
-                sender.Session.Response.FriendAddRes.Errormsg = "好友不存在或已离线";
-                sender.Session.Response.FriendAddRes.Request = message;
+                friendAddRes.Result = Result.Failed;
+                friendAddRes.Errormsg = "好友不存在或已离线";
+                friendAddRes.Request = message;
+                sender.Session.AddResponse(new NetMessageResponse { FriendAddRes = friendAddRes });
                 sender.SendResponse();
                 return;
             }
 
             Log.InfoFormat("FriendAddRequest：{0} {1} -> {2} {3}", message.FromId, message.FromName, message.ToId, message.ToName);
-            Friend.Session.Response.FriendAddReq = message;
+            Friend.Session.AddResponse(new NetMessageResponse { FriendAddReq = message });
             Friend.SendResponse();
         }
     }

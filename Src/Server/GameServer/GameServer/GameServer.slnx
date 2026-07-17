@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../../../Lib/Common/Common.csproj" />
+  <Project Path="../../../Lib/Protocol/Protocol.csproj" />
+  <Project Path="GameServer.csproj" />
+</Solution>

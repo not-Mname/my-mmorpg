@@ -161,16 +161,17 @@ namespace GameServer.Managers.Social
             }
         }
 
-        public void PostProcess(NetMessageResponse message)
+        public void PostProcess(NetMessage message)
         {
             if (_friendChanged)
             {
                 Log.InfoFormat("{0}:{1} PostProcess > FriendManager", this._owner.Id, this._owner.Info.Name);
                 this.InitFriends();
-                if (message.FriendList == null)
+                if (!message.HasResponse(NetMessageResponse.PayloadOneofCase.FriendList))
                 {
-                    message.FriendList = new FriendListResponse();
-                    message.FriendList.Friends.AddRange(this.Friends);
+                    var friendList = new FriendListResponse();
+                    friendList.Friends.AddRange(this.Friends);
+                    message.Responses.Add(new NetMessageResponse { FriendList = friendList });
                 }
                 _friendChanged = false;
             }

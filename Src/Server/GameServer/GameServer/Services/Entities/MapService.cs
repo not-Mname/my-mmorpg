@@ -33,8 +33,9 @@ namespace GameServer.Services.Entity
 
         internal void SendEntityUpdate(NetConnection<NetSession> connection, NEntitySync EntitySync)
         {
-            connection.Session.Response.MapEntitySync = new MapEntitySyncResponse();
-            connection.Session.Response.MapEntitySync.EntitySyncs.Add(EntitySync);
+            var syncRes = new MapEntitySyncResponse();
+            syncRes.EntitySyncs.Add(EntitySync);
+            connection.Session.AddResponse(new NetMessageResponse { MapEntitySync = syncRes });
             connection.SendResponse();
         }
 

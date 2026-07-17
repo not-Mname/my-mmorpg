@@ -1,0 +1,362 @@
+
+2026-06-16 11:33:59,472 [2] [INFO ] [GameServer] ：Config Loading...
+2026-06-16 11:33:59,522 [2] [INFO ] [GameServer] ：Config Loaded
+2026-06-16 11:33:59,522 [2] [INFO ] [GameServer] ：Game Server Init
+2026-06-16 11:33:59,523 [2] [INFO ] [GameServer] ：GameServer Init...
+2026-06-16 11:33:59,536 [2] [INFO ] [GameServer] ：DBService init...
+2026-06-16 11:34:06,013 [2] [WARN ] [GameServer] ：DB connection is True
+2026-06-16 11:34:06,022 [2] [INFO ] [GameServer] ：DataManager Loading...
+2026-06-16 11:34:06,175 [2] [INFO ] [GameServer] ：ChatService Init...
+2026-06-16 11:34:06,176 [2] [INFO ] [GameServer] ：ChatManager init...
+2026-06-16 11:34:06,177 [2] [INFO ] [GameServer] ：ChatService Initialized
+2026-06-16 11:34:06,178 [2] [INFO ] [GameServer] ：FriendService Init...
+2026-06-16 11:34:06,179 [2] [INFO ] [GameServer] ：FriendService Initialized
+2026-06-16 11:34:06,180 [2] [INFO ] [GameServer] ：GuildService Init...
+2026-06-16 11:34:06,181 [2] [INFO ] [GameServer] ：GuildManager Init...
+2026-06-16 11:34:06,963 [2] [INFO ] [GameServer] ：GuildService Initialized
+2026-06-16 11:34:06,964 [2] [INFO ] [GameServer] ：TeamService Init...
+2026-06-16 11:34:06,965 [2] [INFO ] [GameServer] ：TeamManager Init...
+2026-06-16 11:34:06,966 [2] [INFO ] [GameServer] ：TeamService Initialized
+2026-06-16 11:34:06,967 [2] [INFO ] [GameServer] ：QuestService Init...
+2026-06-16 11:34:06,967 [2] [INFO ] [GameServer] ：QuestService Initialized
+2026-06-16 11:34:06,968 [2] [INFO ] [GameServer] ：BagService Init...
+2026-06-16 11:34:06,968 [2] [INFO ] [GameServer] ：BagService Initialized
+2026-06-16 11:34:06,969 [2] [INFO ] [GameServer] ：ItemService Init...
+2026-06-16 11:34:06,969 [2] [INFO ] [GameServer] ：ItemService Initialized
+2026-06-16 11:34:06,970 [2] [INFO ] [GameServer] ：UserService Init...
+2026-06-16 11:34:06,970 [2] [INFO ] [GameServer] ：UserService Initialized
+2026-06-16 11:34:06,971 [2] [INFO ] [GameServer] ：MapService Init...
+2026-06-16 11:34:06,972 [2] [INFO ] [GameServer] ：MapManage Init...
+2026-06-16 11:34:06,973 [2] [INFO ] [GameServer] ：MapManager.Init > Map:1:卜灵镇, Instance:1
+2026-06-16 11:34:06,975 [2] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林, Instance:1
+2026-06-16 11:34:06,975 [2] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林, Instance:1
+2026-06-16 11:34:06,976 [2] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖, Instance:1
+2026-06-16 11:34:06,977 [2] [INFO ] [GameServer] ：MapManager.Init > Map:5:竞技场, Instance:100
+2026-06-16 11:34:06,977 [2] [INFO ] [GameServer] ：MapService Initialized
+2026-06-16 11:34:06,979 [2] [INFO ] [GameServer] ：ArenaService Initialized
+2026-06-16 11:34:06,979 [2] [INFO ] [GameServer] ：BattleSerevice Init...
+2026-06-16 11:34:06,979 [2] [INFO ] [GameServer] ：BattleSerevice Initialized
+2026-06-16 11:34:06,986 [2] [INFO ] [GameServer] ：NetService Init...
+2026-06-16 11:34:06,989 [2] [WARN ] [GameServer] ：Starting Listener...
+2026-06-16 11:34:06,998 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-06-16 11:34:06,998 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-06-16 11:34:06,998 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-06-16 11:34:06,998 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-06-16 11:34:06,998 [14] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-06-16 11:34:06,998 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-06-16 11:34:06,999 [16] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-06-16 11:34:06,999 [17] [WARN ] [GameServer] ：MessageDistribute thread start
+2026-06-16 11:34:07,100 [2] [WARN ] [GameServer] ：NetService Started
+2026-06-16 11:34:17,301 [13] [INFO ] [GameServer] ：Map[2] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-06-16 11:34:17,317 [13] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:2
+2026-06-16 11:34:17,318 [13] [INFO ] [GameServer] ：Map[2] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-06-16 11:34:17,318 [13] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:3
+2026-06-16 11:34:17,318 [13] [INFO ] [GameServer] ：Map[2] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-06-16 11:34:17,319 [13] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:4
+2026-06-16 11:34:17,319 [13] [INFO ] [GameServer] ：Map[2] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-06-16 11:34:17,319 [13] [INFO ] [GameServer] ：MonsterEnter: Map:2 monsterId:5
+2026-06-16 11:34:17,320 [13] [INFO ] [GameServer] ：Map[3] Spawn [Monster 1 Level 1] at Point (5887,1573,7)
+2026-06-16 11:34:17,320 [13] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:6
+2026-06-16 11:34:17,320 [13] [INFO ] [GameServer] ：Map[3] Spawn [Monster 2 Level 1] at Point (5540,1682,4)
+2026-06-16 11:34:17,320 [13] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:7
+2026-06-16 11:34:17,321 [13] [INFO ] [GameServer] ：Map[3] Spawn [Monster 3 Level 1] at Point (4775,2865,14)
+2026-06-16 11:34:17,321 [13] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:8
+2026-06-16 11:34:17,321 [13] [INFO ] [GameServer] ：Map[3] Spawn [Monster 4 Level 1] at Point (5683,4173,0)
+2026-06-16 11:34:17,322 [13] [INFO ] [GameServer] ：MonsterEnter: Map:3 monsterId:9
+2026-06-16 11:35:07,452 [3] [WARN ] [GameServer] ：Client[127.0.0.1:64560]] Connected
+2026-06-16 11:35:07,477 [11] [INFO ] [GameServer] ：UserLoginRequest: User:1001  Pass:123
+2026-06-16 11:35:09,902 [7] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:1  MapId:1
+2026-06-16 11:35:09,915 [7] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2026-06-16 11:37:37,520 [20] [WARN ] [GameServer] ：Client[127.0.0.1:63421]] Connected
+2026-06-16 11:37:37,558 [10] [INFO ] [GameServer] ：UserLoginRequest: User:1002  Pass:123
+2026-06-16 11:37:41,200 [9] [INFO ] [GameServer] ：UserGameEnterRequest: Name:1  Class:3  MapId:1
+2026-06-16 11:37:41,204 [9] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2026-06-16 11:37:41,206 [9] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:41,210 [9] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:45,529 [14] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:48,554 [17] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:54,759 [10] [INFO ] [GameServer] ：SendSkillCast: skillId 103, casterId 10, targetId 11, position { }
+2026-06-16 11:37:54,902 [10] [INFO ] [GameServer] ：SendSkillCast: skillId 103, casterId 10, targetId 11, position (0,0,0)
+2026-06-16 11:37:55,011 [13] [INFO ] [GameServer] ：Skill [旋风斩] cast result Ok status Running
+2026-06-16 11:37:55,017 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 0
+2026-06-16 11:37:55,027 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:55,037 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:55,045 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:55,159 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 1
+2026-06-16 11:37:55,160 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:55,161 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:55,161 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:55,268 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 2
+2026-06-16 11:37:55,269 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:55,269 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:55,270 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:55,377 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 3
+2026-06-16 11:37:55,378 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 6 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:55,378 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:55,379 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:55,485 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 4
+2026-06-16 11:37:55,486 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 26 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:55,487 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:55,489 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:55,593 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 5
+2026-06-16 11:37:55,593 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 58 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:55,594 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:55,595 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:55,701 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 6
+2026-06-16 11:37:55,702 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 112 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:55,703 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:55,703 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:55,809 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 7
+2026-06-16 11:37:55,809 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 235 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:55,810 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:55,812 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:55,915 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 8
+2026-06-16 11:37:55,916 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 719 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:55,917 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:55,918 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:56,023 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 9
+2026-06-16 11:37:56,024 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:56,025 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:56,026 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:56,131 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 10
+2026-06-16 11:37:56,132 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:56,133 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:56,134 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:56,242 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 11
+2026-06-16 11:37:56,243 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:56,244 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:56,244 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:56,351 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 12
+2026-06-16 11:37:56,352 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:56,353 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:56,353 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:56,459 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 13
+2026-06-16 11:37:56,460 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:56,461 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:56,462 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:56,568 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 14
+2026-06-16 11:37:56,569 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:56,570 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:56,571 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:56,679 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 15
+2026-06-16 11:37:56,680 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:56,681 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:56,682 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:56,789 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 16
+2026-06-16 11:37:56,790 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:56,790 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:56,791 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:56,898 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 17
+2026-06-16 11:37:56,899 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:56,900 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:56,901 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:57,007 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 18
+2026-06-16 11:37:57,008 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:57,008 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:57,009 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:57,114 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 19
+2026-06-16 11:37:57,114 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:57,115 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:57,116 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:57,222 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 20
+2026-06-16 11:37:57,223 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:57,223 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:57,224 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:57,330 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 21
+2026-06-16 11:37:57,331 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:57,331 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:57,332 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:57,436 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 22
+2026-06-16 11:37:57,437 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:57,438 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:57,438 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:57,547 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 23
+2026-06-16 11:37:57,548 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:57,549 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:57,549 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:57,654 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 24
+2026-06-16 11:37:57,654 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:57,655 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:57,656 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:57,761 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 25
+2026-06-16 11:37:57,762 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:57,762 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:57,763 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:57,870 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 26
+2026-06-16 11:37:57,871 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:57,872 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:57,873 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:57,980 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 27
+2026-06-16 11:37:57,981 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:57,982 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:57,984 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:58,089 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 28
+2026-06-16 11:37:58,090 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:58,091 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:58,092 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:58,198 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 29
+2026-06-16 11:37:58,199 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:58,199 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:58,200 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:58,305 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 30
+2026-06-16 11:37:58,306 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:58,306 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:58,307 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:37:58,413 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 31
+2026-06-16 11:37:58,414 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:37:58,415 [13] [INFO ] [GameServer] ：Skill [旋风斩] done
+2026-06-16 11:37:58,416 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:37:58,422 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:03,409 [9] [INFO ] [GameServer] ：SendSkillCast: skillId 303, casterId 11, targetId 10, position { "x": 5314, "y": 4083, "z": 796 }
+2026-06-16 11:38:03,412 [9] [INFO ] [GameServer] ：SendSkillCast: skillId 303, casterId 11, targetId 10, position (5314,4083,796)
+2026-06-16 11:38:03,424 [13] [INFO ] [GameServer] ：Skill [毒箭雨] cast result Ok status Casting
+2026-06-16 11:38:03,425 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:03,426 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:08,542 [14] [INFO ] [GameServer] ：SendSkillCast: skillId 103, casterId 10, targetId 11, position { }
+2026-06-16 11:38:08,543 [14] [INFO ] [GameServer] ：SendSkillCast: skillId 103, casterId 10, targetId 11, position (0,0,0)
+2026-06-16 11:38:08,612 [13] [INFO ] [GameServer] ：Skill [旋风斩] cast result Ok status Running
+2026-06-16 11:38:08,612 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 0
+2026-06-16 11:38:08,613 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:08,613 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:08,614 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:08,721 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 1
+2026-06-16 11:38:08,722 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:08,722 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:08,723 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:08,830 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 2
+2026-06-16 11:38:08,830 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:08,831 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:08,832 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:08,938 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 3
+2026-06-16 11:38:08,939 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:08,940 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:08,940 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:09,045 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 4
+2026-06-16 11:38:09,046 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:09,047 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:09,047 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:09,152 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 5
+2026-06-16 11:38:09,153 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:09,153 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:09,154 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:09,261 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 6
+2026-06-16 11:38:09,262 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:09,263 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:09,263 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:09,370 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 7
+2026-06-16 11:38:09,371 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:09,371 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:09,373 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:09,478 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 8
+2026-06-16 11:38:09,479 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:09,479 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:09,480 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:09,586 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 9
+2026-06-16 11:38:09,587 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:09,588 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:09,589 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:09,695 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 10
+2026-06-16 11:38:09,695 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:09,696 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:09,697 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:09,803 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 11
+2026-06-16 11:38:09,803 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:09,804 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:09,805 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:09,910 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 12
+2026-06-16 11:38:09,911 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:09,912 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:09,914 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:10,017 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 13
+2026-06-16 11:38:10,018 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:10,019 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:10,020 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:10,124 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 14
+2026-06-16 11:38:10,125 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:10,125 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:10,126 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:10,234 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 15
+2026-06-16 11:38:10,234 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:10,235 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:10,236 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:10,343 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 16
+2026-06-16 11:38:10,343 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:10,344 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:10,345 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:10,453 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 17
+2026-06-16 11:38:10,453 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:10,454 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:10,455 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:10,560 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 18
+2026-06-16 11:38:10,561 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:10,562 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:10,562 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:10,667 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 19
+2026-06-16 11:38:10,667 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:10,668 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:10,669 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:10,777 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 20
+2026-06-16 11:38:10,778 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:10,779 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:10,780 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:10,885 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 21
+2026-06-16 11:38:10,886 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:10,887 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:10,887 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:10,993 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 22
+2026-06-16 11:38:10,994 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:10,994 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:10,995 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:11,102 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 23
+2026-06-16 11:38:11,102 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:11,103 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:11,104 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:11,210 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 24
+2026-06-16 11:38:11,211 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:11,211 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:11,212 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:11,319 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 25
+2026-06-16 11:38:11,320 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:11,320 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:11,321 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:11,431 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 26
+2026-06-16 11:38:11,432 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:11,433 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:11,434 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:11,539 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 27
+2026-06-16 11:38:11,539 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:11,540 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:11,541 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:11,649 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 28
+2026-06-16 11:38:11,649 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:11,650 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:11,651 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:11,756 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 29
+2026-06-16 11:38:11,756 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:11,757 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:11,758 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:11,866 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 30
+2026-06-16 11:38:11,867 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:11,867 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:11,868 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:11,974 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 31
+2026-06-16 11:38:11,975 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:11,976 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:11,976 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:12,085 [13] [INFO ] [GameServer] ：Skill [旋风斩] hit 32
+2026-06-16 11:38:12,086 [13] [INFO ] [GameServer] ：Skill [旋风斩] damage 1 hit target 弓箭手 hit caster战士
+2026-06-16 11:38:12,086 [13] [INFO ] [GameServer] ：Skill [旋风斩] done
+2026-06-16 11:38:12,087 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:12,088 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:38:38,334 [10] [INFO ] [GameServer] ：SendSkillCast: skillId 303, casterId 11, targetId 10, position { "x": 5439, "y": 4084, "z": 796 }
+2026-06-16 11:38:38,335 [10] [INFO ] [GameServer] ：SendSkillCast: skillId 303, casterId 11, targetId 10, position (5439,4084,796)
+2026-06-16 11:38:38,352 [13] [INFO ] [GameServer] ：Skill [毒箭雨] cast result SkillCasting status Casting
+2026-06-16 11:38:38,353 [13] [INFO ] [GameServer] ：1:1 PostProcess > FriendManager
+2026-06-16 11:38:38,354 [13] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:41:02,951 [22] [INFO ] [GameServer] ：1:1 OfflineNotify > 2:1
+2026-06-16 11:41:02,952 [22] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2026-06-16 11:41:02,954 [22] [INFO ] [GameServer] ：2:1 PostProcess > FriendManager
+2026-06-16 11:41:02,955 [22] [WARN ] [GameServer] ：Client[] Disconnected
+2026-06-16 11:41:05,474 [22] [INFO ] [GameServer] ：2:1 OfflineNotify > 1:1
+2026-06-16 11:41:05,475 [22] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2026-06-16 11:41:05,475 [22] [WARN ] [GameServer] ：Client[] Disconnected

@@ -36,22 +36,22 @@ namespace GameServer.Services.Social
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("TeamInviteResponse from{0} {1} to {2}  {3} result:{4}", character.Id, character.Info.Name, message.Request.ToId, message.Request.ToName, message.Result);
-            sender.Session.Response.TeamInviteRes = message;
             if (message.Result == Result.Success)
             {
                 var requester = SessionManager.Instance.GetSession(message.Request.FromId);
                 if (requester == null)
                 {
-                    sender.Session.Response.TeamInviteRes.Result = Result.Failed;
-                    sender.Session.Response.TeamInviteRes.Errormsg = "邀请者不在线";
+                    message.Result = Result.Failed;
+                    message.Errormsg = "邀请者不在线";
                 }
                 else
                 {
                     TeamManager.Instance.AddTeamMember(requester.Session.Character, character);
-                    requester.Session.Response.TeamInviteRes = message;
+                    requester.Session.AddResponse(new NetMessageResponse { TeamInviteRes = message });
                     requester.SendResponse();
                 }
             }
+            sender.Session.AddResponse(new NetMessageResponse { TeamInviteRes = message });
             sender.SendResponse();
         }
 
@@ -63,24 +63,25 @@ namespace GameServer.Services.Social
             NetConnection<NetSession> connection = SessionManager.Instance.GetSession(message.ToId);
             if (connection == null)
             {
-                sender.Session.Response.TeamInviteRes = new TeamInviteResponse();
-                sender.Session.Response.TeamInviteRes.Result = Result.Failed;
-                sender.Session.Response.TeamInviteRes.Errormsg = "对方不在线";
+                var teamInviteRes = new TeamInviteResponse();
+                teamInviteRes.Result = Result.Failed;
+                teamInviteRes.Errormsg = "对方不在线";
+                sender.Session.AddResponse(new NetMessageResponse { TeamInviteRes = teamInviteRes });
                 sender.SendResponse();
                 return;
             }
             if (connection.Session.Character.Team != null)
             {
-                sender.Session.Response.TeamInviteRes = new TeamInviteResponse();
-                sender.Session.Response.TeamInviteRes.Result = Result.Failed;
-                sender.Session.Response.TeamInviteRes.Errormsg = "对方已经在别的队伍中";
+                var teamInviteRes = new TeamInviteResponse();
+                teamInviteRes.Result = Result.Failed;
+                teamInviteRes.Errormsg = "对方已经在别的队伍中";
+                sender.Session.AddResponse(new NetMessageResponse { TeamInviteRes = teamInviteRes });
                 sender.SendResponse();
                 return;
             }
 
             Log.InfoFormat("TeamInviteRequest from{0} {1} to {2}  {3}", message.FromId, message.FromName, message.ToId, message.ToName);
-            if (connection.Session.Response.TeamInviteRes == null) connection.Session.Response.TeamInviteReq = new TeamInviteRequest();
-            connection.Session.Response.TeamInviteReq = message;
+            connection.Session.AddResponse(new NetMessageResponse { TeamInviteReq = message });
             connection.SendResponse();
         }
 

@@ -42,14 +42,16 @@ namespace GameServer.Managers.Items
             AddStatus(StatusType.Item, id, conut, action);
         }
 
-        public void PostProcess(NetMessageResponse response)
+        public void PostProcess(NetMessage message)
         {
-            if(response.StatusNotify == null) 
-                response.StatusNotify = new StatusNotify();
-
-            foreach (var status in statuses)
+            if (!message.HasResponse(NetMessageResponse.PayloadOneofCase.StatusNotify))
             {
-                response.StatusNotify.Status.Add(status);
+                var notify = new StatusNotify();
+                foreach (var status in statuses)
+                {
+                    notify.Status.Add(status);
+                }
+                message.Responses.Add(new NetMessageResponse { StatusNotify = notify });
             }
             this.statuses.Clear();
         }

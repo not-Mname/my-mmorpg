@@ -1,0 +1,15 @@
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Debug\net48\Protocol.csproj.AssemblyReference.cache
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Debug\net48\Protocol.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Debug\net48\Protocol.AssemblyInfoInputs.cache
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Debug\net48\Protocol.AssemblyInfo.cs
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Debug\net48\Protocol.csproj.CoreCompileInputs.cache
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Debug\net48\Protocol.dll
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Debug\net48\Protocol.pdb
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Debug\net48\Google.Protobuf.dll
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Debug\net48\System.Buffers.dll
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Debug\net48\System.Memory.dll
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Debug\net48\System.Numerics.Vectors.dll
+D:\Develop\MyMmorpg\Src\Lib\Protocol\bin\Debug\net48\System.Runtime.CompilerServices.Unsafe.dll
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Debug\net48\Protocol.csproj.Up2Date
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Debug\net48\Protocol.dll
+D:\Develop\MyMmorpg\Src\Lib\Protocol\obj\Debug\net48\Protocol.pdb

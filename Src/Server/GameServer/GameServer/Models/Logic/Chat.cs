@@ -21,21 +21,19 @@ namespace GameServer.Models.Logic
             this._owner = character;
         }
 
-        public void PostProcess(NetMessageResponse message)
+        public void PostProcess(NetMessage message)
         {
             Log.InfoFormat("PostProcess: > Chat {0}", _owner.Info.Id);
-            if (message.Chat == null)
-            {
-                message.Chat = new ChatResponse();
-                message.Chat.Result = Result.Success;
-            }
-            this.LocalIdx = ChatManager.Instance.GetLocalMessage(this._owner.Info.MapId, this.LocalIdx, message.Chat.LocalMessages.ToList());
-            this.WorldIdx = ChatManager.Instance.GetWorldMessage(this.WorldIdx, message.Chat.WorldMessages.ToList());
-            this.SystemIdx = ChatManager.Instance.GetSystemMessage(this.SystemIdx, message.Chat.SystemMessages.ToList());
-            if(this._owner.Team != null)
-                this.TeamIdx = ChatManager.Instance.GetTeamMessage(this._owner.Team.Id, this.TeamIdx, message.Chat.TeamMessages.ToList());
-            if(this._owner.Guild != null)
-                this.GuildIdx = ChatManager.Instance.GetGuildMessage(this._owner.Guild.Id, this.GuildIdx, message.Chat.GuildMessages.ToList());
+            var chatRes = new ChatResponse();
+            chatRes.Result = Result.Success;
+            this.LocalIdx = ChatManager.Instance.GetLocalMessage(this._owner.Info.MapId, this.LocalIdx, chatRes.LocalMessages.ToList());
+            this.WorldIdx = ChatManager.Instance.GetWorldMessage(this.WorldIdx, chatRes.WorldMessages.ToList());
+            this.SystemIdx = ChatManager.Instance.GetSystemMessage(this.SystemIdx, chatRes.SystemMessages.ToList());
+            if (this._owner.Team != null)
+                this.TeamIdx = ChatManager.Instance.GetTeamMessage(this._owner.Team.Id, this.TeamIdx, chatRes.TeamMessages.ToList());
+            if (this._owner.Guild != null)
+                this.GuildIdx = ChatManager.Instance.GetGuildMessage(this._owner.Guild.Id, this.GuildIdx, chatRes.GuildMessages.ToList());
+            message.Responses.Add(new NetMessageResponse { Chat = chatRes });
         }
     }
 }

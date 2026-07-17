@@ -17,19 +17,21 @@ namespace GameServer.Services.Quest
         private void OnQuestSubmit(NetConnection<NetSession> sender, QuestAcceptRequest message)
         {
             Log.InfoFormat("QuestSubmitResponse received CharactorID:{0} QuestID:{1} ", sender.Session.Character.Id, message.QuestId);
-            sender.Session.Response.QuestAccept = new QuestAcceptResponse();
+            var questAcceptRes = new QuestAcceptResponse();
 
-            Result result = QuestManager.Instance.AcceptQuest(sender, message.QuestId);
-            sender.Session.Response.QuestAccept.Result = result;
+            Result result = QuestManager.Instance.AcceptQuest(questAcceptRes, sender, message.QuestId);
+            questAcceptRes.Result = result;
+            sender.Session.AddResponse(new NetMessageResponse { QuestAccept = questAcceptRes });
             sender.SendResponse();
         }
 
         private void OnQuestAccept(NetConnection<NetSession> sender, QuestSubmitRequest message)
         {
             Log.InfoFormat("QuestSubmitRequest received CharactorID:{0} QuestID:{1} ", sender.Session.Character.Id, message.QuestId);
-            sender.Session.Response.QuestSubmit = new QuestSubmitResponse();
-            Result result = QuestManager.Instance.SubmitQuest(sender, message.QuestId);
-            sender.Session.Response.QuestSubmit.Result = result;
+            var questSubmitRes = new QuestSubmitResponse();
+            Result result = QuestManager.Instance.SubmitQuest(questSubmitRes, sender, message.QuestId);
+            questSubmitRes.Result = result;
+            sender.Session.AddResponse(new NetMessageResponse { QuestSubmit = questSubmitRes });
             sender.SendResponse();
         }
         public void Init()

@@ -27,121 +27,124 @@ namespace SkillBridge.Message {
             "Cg1tZXNzYWdlLnByb3RvEhNTa2lsbEJyaWRnZS5NZXNzYWdlGgp1c2VyLnBy",
             "b3RvGgltYXAucHJvdG8aCml0ZW0ucHJvdG8aC3F1ZXN0LnByb3RvGgxmcmll",
             "bmQucHJvdG8aCnRlYW0ucHJvdG8aC2d1aWxkLnByb3RvGgpjaGF0LnByb3Rv",
-            "GgxiYXR0bGUucHJvdG8aC2FyZW5hLnByb3RvIoABCgpOZXRNZXNzYWdlEjcK",
-            "B1JlcXVlc3QYASABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLk5ldE1lc3Nh",
-            "Z2VSZXF1ZXN0EjkKCFJlc3BvbnNlGAIgASgLMicuU2tpbGxCcmlkZ2UuTWVz",
-            "c2FnZS5OZXRNZXNzYWdlUmVzcG9uc2UisRAKEU5ldE1lc3NhZ2VSZXF1ZXN0",
-            "Ej4KDHVzZXJSZWdpc3RlchgBIAEoCzIoLlNraWxsQnJpZGdlLk1lc3NhZ2Uu",
-            "VXNlclJlZ2lzdGVyUmVxdWVzdBI4Cgl1c2VyTG9naW4YAiABKAsyJS5Ta2ls",
-            "bEJyaWRnZS5NZXNzYWdlLlVzZXJMb2dpblJlcXVlc3QSQwoKY3JlYXRlQ2hh",
-            "chgDIAEoCzIvLlNraWxsQnJpZGdlLk1lc3NhZ2UuVXNlckNyZWF0ZUNoYXJh",
-            "Y3RlclJlcXVlc3QSPAoJZ2FtZUVudGVyGAQgASgLMikuU2tpbGxCcmlkZ2Uu",
-            "TWVzc2FnZS5Vc2VyR2FtZUVudGVyUmVxdWVzdBI8CglnYW1lTGVhdmUYBSAB",
-            "KAsyKS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlVzZXJHYW1lTGVhdmVSZXF1ZXN0",
-            "EkgKEW1hcENoYXJhY3RlckVudGVyGAYgASgLMi0uU2tpbGxCcmlkZ2UuTWVz",
-            "c2FnZS5NYXBDaGFyYWN0ZXJFbnRlclJlcXVlc3QSQAoNbWFwRW50aXR5U3lu",
-            "YxgIIAEoCzIpLlNraWxsQnJpZGdlLk1lc3NhZ2UuTWFwRW50aXR5U3luY1Jl",
-            "cXVlc3QSPAoLbWFwVGVsZXBvcnQYCSABKAsyJy5Ta2lsbEJyaWRnZS5NZXNz",
-            "YWdlLk1hcFRlbGVwb3J0UmVxdWVzdBI0CgdpdGVtQnV5GAogASgLMiMuU2tp",
-            "bGxCcmlkZ2UuTWVzc2FnZS5JdGVtQnV5UmVxdWVzdBI4CglpdGVtRXF1aXAY",
-            "CyABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkl0ZW1FcXVpcFJlcXVlc3QS",
-            "OAoJcXVlc3RMaXN0GAwgASgLMiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5RdWVz",
-            "dExpc3RSZXF1ZXN0EjwKC3F1ZXN0QWNjZXB0GA0gASgLMicuU2tpbGxCcmlk",
-            "Z2UuTWVzc2FnZS5RdWVzdEFjY2VwdFJlcXVlc3QSNAoHYmFnU2F2ZRgOIAEo",
-            "CzIjLlNraWxsQnJpZGdlLk1lc3NhZ2UuQmFnU2F2ZVJlcXVlc3QSPAoLcXVl",
-            "c3RTdWJtaXQYDyABKAsyJy5Ta2lsbEJyaWRnZS5NZXNzYWdlLlF1ZXN0U3Vi",
-            "bWl0UmVxdWVzdBI7CgxmcmllbmRBZGRSZXEYECABKAsyJS5Ta2lsbEJyaWRn",
-            "ZS5NZXNzYWdlLkZyaWVuZEFkZFJlcXVlc3QSPAoMZnJpZW5kQWRkUmVzGBEg",
-            "ASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5GcmllbmRBZGRSZXNwb25zZRI6",
-            "CgpmcmllbmRMaXN0GBIgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5Gcmll",
-            "bmRMaXN0UmVxdWVzdBI+CgxmcmllbmRSZW1vdmUYEyABKAsyKC5Ta2lsbEJy",
-            "aWRnZS5NZXNzYWdlLkZyaWVuZFJlbW92ZVJlcXVlc3QSPQoNdGVhbUludml0",
-            "ZVJlcRgUIAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2UuVGVhbUludml0ZVJl",
-            "cXVlc3QSPgoNdGVhbUludml0ZVJlcxgVIAEoCzInLlNraWxsQnJpZGdlLk1l",
-            "c3NhZ2UuVGVhbUludml0ZVJlc3BvbnNlEjYKCHRlYW1JbmZvGBYgASgLMiQu",
-            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5UZWFtSW5mb1JlcXVlc3QSOAoJdGVhbUxl",
-            "YXZlGBcgASgLMiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5UZWFtTGVhdmVSZXF1",
-            "ZXN0EjwKC2d1aWxkQ3JlYXRlGBggASgLMicuU2tpbGxCcmlkZ2UuTWVzc2Fn",
-            "ZS5HdWlsZENyZWF0ZVJlcXVlc3QSOwoMZ3VpbGRKb2luUmVxGBkgASgLMiUu",
-            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5HdWlsZEpvaW5SZXF1ZXN0EjwKDGd1aWxk",
-            "Sm9pblJlcxgaIAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2UuR3VpbGRKb2lu",
-            "UmVzcG9uc2USMAoFZ3VpbGQYGyABKAsyIS5Ta2lsbEJyaWRnZS5NZXNzYWdl",
-            "Lkd1aWxkUmVxdWVzdBI6CgpndWlsZExlYXZlGBwgASgLMiYuU2tpbGxCcmlk",
-            "Z2UuTWVzc2FnZS5HdWlsZExlYXZlUmVxdWVzdBI4CglndWlsZExpc3QYHSAB",
-            "KAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1aWxkTGlzdFJlcXVlc3QSOgoK",
-            "Z3VpbGRBZG1pbhgeIAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2UuR3VpbGRB",
-            "ZG1pblJlcXVlc3QSLgoEY2hhdBgfIAEoCzIgLlNraWxsQnJpZGdlLk1lc3Nh",
-            "Z2UuQ2hhdFJlcXVlc3QSOAoJc2tpbGxDYXN0GDIgASgLMiUuU2tpbGxCcmlk",
-            "Z2UuTWVzc2FnZS5Ta2lsbENhc3RSZXF1ZXN0EkUKEWFyZW5hQ2hhbGxlbmdl",
-            "UmVxGDwgASgLMiouU2tpbGxCcmlkZ2UuTWVzc2FnZS5BcmVuYUNoYWxsZW5n",
-            "ZVJlcXVlc3QSRgoRYXJlbmFDaGFsbGVuZ2VSZXMYPSABKAsyKy5Ta2lsbEJy",
-            "aWRnZS5NZXNzYWdlLkFyZW5hQ2hhbGxlbmdlUmVzcG9uc2USPQoNYXJlbmFS",
-            "ZWFkeVJlcRg+IAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2UuQXJlbmFSZWFk",
-            "eVJlcXVlc3QiihQKEk5ldE1lc3NhZ2VSZXNwb25zZRI/Cgx1c2VyUmVnaXN0",
-            "ZXIYASABKAsyKS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlVzZXJSZWdpc3RlclJl",
-            "c3BvbnNlEjkKCXVzZXJMb2dpbhgCIAEoCzImLlNraWxsQnJpZGdlLk1lc3Nh",
-            "Z2UuVXNlckxvZ2luUmVzcG9uc2USRAoKY3JlYXRlQ2hhchgDIAEoCzIwLlNr",
-            "aWxsQnJpZGdlLk1lc3NhZ2UuVXNlckNyZWF0ZUNoYXJhY3RlclJlc3BvbnNl",
-            "Ej0KCWdhbWVFbnRlchgEIAEoCzIqLlNraWxsQnJpZGdlLk1lc3NhZ2UuVXNl",
-            "ckdhbWVFbnRlclJlc3BvbnNlEj0KCWdhbWVMZWF2ZRgFIAEoCzIqLlNraWxs",
-            "QnJpZGdlLk1lc3NhZ2UuVXNlckdhbWVMZWF2ZVJlc3BvbnNlEkkKEW1hcENo",
-            "YXJhY3RlckVudGVyGAYgASgLMi4uU2tpbGxCcmlkZ2UuTWVzc2FnZS5NYXBD",
-            "aGFyYWN0ZXJFbnRlclJlc3BvbnNlEkkKEW1hcENoYXJhY3RlckxlYXZlGAcg",
-            "ASgLMi4uU2tpbGxCcmlkZ2UuTWVzc2FnZS5NYXBDaGFyYWN0ZXJMZWF2ZVJl",
-            "c3BvbnNlEkEKDW1hcEVudGl0eVN5bmMYCCABKAsyKi5Ta2lsbEJyaWRnZS5N",
-            "ZXNzYWdlLk1hcEVudGl0eVN5bmNSZXNwb25zZRI1CgdpdGVtQnV5GAogASgL",
-            "MiQuU2tpbGxCcmlkZ2UuTWVzc2FnZS5JdGVtQnV5UmVzcG9uc2USOQoJaXRl",
-            "bUVxdWlwGAsgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5JdGVtRXF1aXBS",
-            "ZXNwb25zZRI5CglxdWVzdExpc3QYDCABKAsyJi5Ta2lsbEJyaWRnZS5NZXNz",
-            "YWdlLlF1ZXN0TGlzdFJlc3BvbnNlEj0KC3F1ZXN0QWNjZXB0GA0gASgLMigu",
-            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5RdWVzdEFjY2VwdFJlc3BvbnNlEjQKB2Jh",
-            "Z1NhdmUYDiABKAsyIy5Ta2lsbEJyaWRnZS5NZXNzYWdlLkJhZ1NhdmVSZXF1",
-            "ZXN0Ej0KC3F1ZXN0U3VibWl0GA8gASgLMiguU2tpbGxCcmlkZ2UuTWVzc2Fn",
-            "ZS5RdWVzdFN1Ym1pdFJlc3BvbnNlEjsKDGZyaWVuZEFkZFJlcRgQIAEoCzIl",
-            "LlNraWxsQnJpZGdlLk1lc3NhZ2UuRnJpZW5kQWRkUmVxdWVzdBI8Cgxmcmll",
-            "bmRBZGRSZXMYESABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLkZyaWVuZEFk",
-            "ZFJlc3BvbnNlEjsKCmZyaWVuZExpc3QYEiABKAsyJy5Ta2lsbEJyaWRnZS5N",
-            "ZXNzYWdlLkZyaWVuZExpc3RSZXNwb25zZRI/CgxmcmllbmRSZW1vdmUYEyAB",
-            "KAsyKS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkZyaWVuZFJlbW92ZVJlc3BvbnNl",
-            "Ej0KDXRlYW1JbnZpdGVSZXEYFCABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdl",
-            "LlRlYW1JbnZpdGVSZXF1ZXN0Ej4KDXRlYW1JbnZpdGVSZXMYFSABKAsyJy5T",
-            "a2lsbEJyaWRnZS5NZXNzYWdlLlRlYW1JbnZpdGVSZXNwb25zZRI3Cgh0ZWFt",
-            "SW5mbxgWIAEoCzIlLlNraWxsQnJpZGdlLk1lc3NhZ2UuVGVhbUluZm9SZXNw",
-            "b25zZRI5Cgl0ZWFtTGVhdmUYFyABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdl",
-            "LlRlYW1MZWF2ZVJlc3BvbnNlEj0KC2d1aWxkQ3JlYXRlGBggASgLMiguU2tp",
-            "bGxCcmlkZ2UuTWVzc2FnZS5HdWlsZENyZWF0ZVJlc3BvbnNlEjsKDGd1aWxk",
-            "Sm9pblJlcRgZIAEoCzIlLlNraWxsQnJpZGdlLk1lc3NhZ2UuR3VpbGRKb2lu",
-            "UmVxdWVzdBI8CgxndWlsZEpvaW5SZXMYGiABKAsyJi5Ta2lsbEJyaWRnZS5N",
-            "ZXNzYWdlLkd1aWxkSm9pblJlc3BvbnNlEjEKBWd1aWxkGBsgASgLMiIuU2tp",
-            "bGxCcmlkZ2UuTWVzc2FnZS5HdWlsZFJlc3BvbnNlEjsKCmd1aWxkTGVhdmUY",
-            "HCABKAsyJy5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1aWxkTGVhdmVSZXNwb25z",
-            "ZRI5CglndWlsZExpc3QYHSABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1",
-            "aWxkTGlzdFJlc3BvbnNlEjsKCmd1aWxkQWRtaW4YHiABKAsyJy5Ta2lsbEJy",
-            "aWRnZS5NZXNzYWdlLkd1aWxkQWRtaW5SZXNwb25zZRIvCgRjaGF0GB8gASgL",
-            "MiEuU2tpbGxCcmlkZ2UuTWVzc2FnZS5DaGF0UmVzcG9uc2USOQoJc2tpbGxD",
-            "YXN0GDIgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5Ta2lsbENhc3RSZXNw",
-            "b25zZRI4Cglza2lsbEhpdHMYMyABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdl",
-            "LlNraWxsSGl0UmVzcG9uc2USMgoHYnVmZlJlcxg0IAEoCzIhLlNraWxsQnJp",
-            "ZGdlLk1lc3NhZ2UuQnVmZlJlc3BvbnNlEkUKEWFyZW5hQ2hhbGxlbmdlUmVx",
-            "GDwgASgLMiouU2tpbGxCcmlkZ2UuTWVzc2FnZS5BcmVuYUNoYWxsZW5nZVJl",
-            "cXVlc3QSRgoRYXJlbmFDaGFsbGVuZ2VSZXMYPSABKAsyKy5Ta2lsbEJyaWRn",
-            "ZS5NZXNzYWdlLkFyZW5hQ2hhbGxlbmdlUmVzcG9uc2USPgoNYXJlbmFCZWdp",
-            "blJlcxg+IAEoCzInLlNraWxsQnJpZGdlLk1lc3NhZ2UuQXJlbmFCZWdpblJl",
-            "c3BvbnNlEjoKC2FyZW5hRW5kUmVzGD8gASgLMiUuU2tpbGxCcmlkZ2UuTWVz",
-            "c2FnZS5BcmVuYUVuZFJlc3BvbnNlEj4KDWFyZW5hUmVhZHlSZXMYQCABKAsy",
-            "Jy5Ta2lsbEJyaWRnZS5NZXNzYWdlLkFyZW5hUmVhZHlSZXNwb25zZRJIChJh",
-            "cmVuYVJvdW5kU3RhcnRSZXMYQSABKAsyLC5Ta2lsbEJyaWRnZS5NZXNzYWdl",
-            "LkFyZW5hUm91bmRTdGFydFJlc3BvbnNlEkQKEGFyZW5hUm91bmRFbmRSZXMY",
-            "QiABKAsyKi5Ta2lsbEJyaWRnZS5NZXNzYWdlLkFyZW5hUm91bmRFbmRSZXNw",
-            "b25zZRI3CgxzdGF0dXNOb3RpZnkYZCABKAsyIS5Ta2lsbEJyaWRnZS5NZXNz",
-            "YWdlLlN0YXR1c05vdGlmeUIZ+AEBqgITU2tpbGxCcmlkZ2UuTWVzc2FnZWIG",
-            "cHJvdG8z"));
+            "GgxiYXR0bGUucHJvdG8aC2FyZW5hLnByb3RvIoIBCgpOZXRNZXNzYWdlEjgK",
+            "CHJlcXVlc3RzGAEgAygLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5OZXRNZXNz",
+            "YWdlUmVxdWVzdBI6CglyZXNwb25zZXMYAiADKAsyJy5Ta2lsbEJyaWRnZS5N",
+            "ZXNzYWdlLk5ldE1lc3NhZ2VSZXNwb25zZSKAEQoRTmV0TWVzc2FnZVJlcXVl",
+            "c3QSQAoMdXNlclJlZ2lzdGVyGAEgASgLMiguU2tpbGxCcmlkZ2UuTWVzc2Fn",
+            "ZS5Vc2VyUmVnaXN0ZXJSZXF1ZXN0SAASOgoJdXNlckxvZ2luGAIgASgLMiUu",
+            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5Vc2VyTG9naW5SZXF1ZXN0SAASRQoKY3Jl",
+            "YXRlQ2hhchgDIAEoCzIvLlNraWxsQnJpZGdlLk1lc3NhZ2UuVXNlckNyZWF0",
+            "ZUNoYXJhY3RlclJlcXVlc3RIABI+CglnYW1lRW50ZXIYBCABKAsyKS5Ta2ls",
+            "bEJyaWRnZS5NZXNzYWdlLlVzZXJHYW1lRW50ZXJSZXF1ZXN0SAASPgoJZ2Ft",
+            "ZUxlYXZlGAUgASgLMikuU2tpbGxCcmlkZ2UuTWVzc2FnZS5Vc2VyR2FtZUxl",
+            "YXZlUmVxdWVzdEgAEkoKEW1hcENoYXJhY3RlckVudGVyGAYgASgLMi0uU2tp",
+            "bGxCcmlkZ2UuTWVzc2FnZS5NYXBDaGFyYWN0ZXJFbnRlclJlcXVlc3RIABJC",
+            "Cg1tYXBFbnRpdHlTeW5jGAggASgLMikuU2tpbGxCcmlkZ2UuTWVzc2FnZS5N",
+            "YXBFbnRpdHlTeW5jUmVxdWVzdEgAEj4KC21hcFRlbGVwb3J0GAkgASgLMicu",
+            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5NYXBUZWxlcG9ydFJlcXVlc3RIABI2Cgdp",
+            "dGVtQnV5GAogASgLMiMuU2tpbGxCcmlkZ2UuTWVzc2FnZS5JdGVtQnV5UmVx",
+            "dWVzdEgAEjoKCWl0ZW1FcXVpcBgLIAEoCzIlLlNraWxsQnJpZGdlLk1lc3Nh",
+            "Z2UuSXRlbUVxdWlwUmVxdWVzdEgAEjoKCXF1ZXN0TGlzdBgMIAEoCzIlLlNr",
+            "aWxsQnJpZGdlLk1lc3NhZ2UuUXVlc3RMaXN0UmVxdWVzdEgAEj4KC3F1ZXN0",
+            "QWNjZXB0GA0gASgLMicuU2tpbGxCcmlkZ2UuTWVzc2FnZS5RdWVzdEFjY2Vw",
+            "dFJlcXVlc3RIABI2CgdiYWdTYXZlGA4gASgLMiMuU2tpbGxCcmlkZ2UuTWVz",
+            "c2FnZS5CYWdTYXZlUmVxdWVzdEgAEj4KC3F1ZXN0U3VibWl0GA8gASgLMicu",
+            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5RdWVzdFN1Ym1pdFJlcXVlc3RIABI9Cgxm",
+            "cmllbmRBZGRSZXEYECABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkZyaWVu",
+            "ZEFkZFJlcXVlc3RIABI+CgxmcmllbmRBZGRSZXMYESABKAsyJi5Ta2lsbEJy",
+            "aWRnZS5NZXNzYWdlLkZyaWVuZEFkZFJlc3BvbnNlSAASPAoKZnJpZW5kTGlz",
+            "dBgSIAEoCzImLlNraWxsQnJpZGdlLk1lc3NhZ2UuRnJpZW5kTGlzdFJlcXVl",
+            "c3RIABJACgxmcmllbmRSZW1vdmUYEyABKAsyKC5Ta2lsbEJyaWRnZS5NZXNz",
+            "YWdlLkZyaWVuZFJlbW92ZVJlcXVlc3RIABI/Cg10ZWFtSW52aXRlUmVxGBQg",
+            "ASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5UZWFtSW52aXRlUmVxdWVzdEgA",
+            "EkAKDXRlYW1JbnZpdGVSZXMYFSABKAsyJy5Ta2lsbEJyaWRnZS5NZXNzYWdl",
+            "LlRlYW1JbnZpdGVSZXNwb25zZUgAEjgKCHRlYW1JbmZvGBYgASgLMiQuU2tp",
+            "bGxCcmlkZ2UuTWVzc2FnZS5UZWFtSW5mb1JlcXVlc3RIABI6Cgl0ZWFtTGVh",
+            "dmUYFyABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlRlYW1MZWF2ZVJlcXVl",
+            "c3RIABI+CgtndWlsZENyZWF0ZRgYIAEoCzInLlNraWxsQnJpZGdlLk1lc3Nh",
+            "Z2UuR3VpbGRDcmVhdGVSZXF1ZXN0SAASPQoMZ3VpbGRKb2luUmVxGBkgASgL",
+            "MiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5HdWlsZEpvaW5SZXF1ZXN0SAASPgoM",
+            "Z3VpbGRKb2luUmVzGBogASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5HdWls",
+            "ZEpvaW5SZXNwb25zZUgAEjIKBWd1aWxkGBsgASgLMiEuU2tpbGxCcmlkZ2Uu",
+            "TWVzc2FnZS5HdWlsZFJlcXVlc3RIABI8CgpndWlsZExlYXZlGBwgASgLMiYu",
+            "U2tpbGxCcmlkZ2UuTWVzc2FnZS5HdWlsZExlYXZlUmVxdWVzdEgAEjoKCWd1",
+            "aWxkTGlzdBgdIAEoCzIlLlNraWxsQnJpZGdlLk1lc3NhZ2UuR3VpbGRMaXN0",
+            "UmVxdWVzdEgAEjwKCmd1aWxkQWRtaW4YHiABKAsyJi5Ta2lsbEJyaWRnZS5N",
+            "ZXNzYWdlLkd1aWxkQWRtaW5SZXF1ZXN0SAASMAoEY2hhdBgfIAEoCzIgLlNr",
+            "aWxsQnJpZGdlLk1lc3NhZ2UuQ2hhdFJlcXVlc3RIABI6Cglza2lsbENhc3QY",
+            "MiABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlNraWxsQ2FzdFJlcXVlc3RI",
+            "ABJHChFhcmVuYUNoYWxsZW5nZVJlcRg8IAEoCzIqLlNraWxsQnJpZGdlLk1l",
+            "c3NhZ2UuQXJlbmFDaGFsbGVuZ2VSZXF1ZXN0SAASSAoRYXJlbmFDaGFsbGVu",
+            "Z2VSZXMYPSABKAsyKy5Ta2lsbEJyaWRnZS5NZXNzYWdlLkFyZW5hQ2hhbGxl",
+            "bmdlUmVzcG9uc2VIABI/Cg1hcmVuYVJlYWR5UmVxGD4gASgLMiYuU2tpbGxC",
+            "cmlkZ2UuTWVzc2FnZS5BcmVuYVJlYWR5UmVxdWVzdEgAQgkKB3BheWxvYWQi",
+            "5xQKEk5ldE1lc3NhZ2VSZXNwb25zZRJBCgx1c2VyUmVnaXN0ZXIYASABKAsy",
+            "KS5Ta2lsbEJyaWRnZS5NZXNzYWdlLlVzZXJSZWdpc3RlclJlc3BvbnNlSAAS",
+            "OwoJdXNlckxvZ2luGAIgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5Vc2Vy",
+            "TG9naW5SZXNwb25zZUgAEkYKCmNyZWF0ZUNoYXIYAyABKAsyMC5Ta2lsbEJy",
+            "aWRnZS5NZXNzYWdlLlVzZXJDcmVhdGVDaGFyYWN0ZXJSZXNwb25zZUgAEj8K",
+            "CWdhbWVFbnRlchgEIAEoCzIqLlNraWxsQnJpZGdlLk1lc3NhZ2UuVXNlckdh",
+            "bWVFbnRlclJlc3BvbnNlSAASPwoJZ2FtZUxlYXZlGAUgASgLMiouU2tpbGxC",
+            "cmlkZ2UuTWVzc2FnZS5Vc2VyR2FtZUxlYXZlUmVzcG9uc2VIABJLChFtYXBD",
+            "aGFyYWN0ZXJFbnRlchgGIAEoCzIuLlNraWxsQnJpZGdlLk1lc3NhZ2UuTWFw",
+            "Q2hhcmFjdGVyRW50ZXJSZXNwb25zZUgAEksKEW1hcENoYXJhY3RlckxlYXZl",
+            "GAcgASgLMi4uU2tpbGxCcmlkZ2UuTWVzc2FnZS5NYXBDaGFyYWN0ZXJMZWF2",
+            "ZVJlc3BvbnNlSAASQwoNbWFwRW50aXR5U3luYxgIIAEoCzIqLlNraWxsQnJp",
+            "ZGdlLk1lc3NhZ2UuTWFwRW50aXR5U3luY1Jlc3BvbnNlSAASNwoHaXRlbUJ1",
+            "eRgKIAEoCzIkLlNraWxsQnJpZGdlLk1lc3NhZ2UuSXRlbUJ1eVJlc3BvbnNl",
+            "SAASOwoJaXRlbUVxdWlwGAsgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5J",
+            "dGVtRXF1aXBSZXNwb25zZUgAEjsKCXF1ZXN0TGlzdBgMIAEoCzImLlNraWxs",
+            "QnJpZGdlLk1lc3NhZ2UuUXVlc3RMaXN0UmVzcG9uc2VIABI/CgtxdWVzdEFj",
+            "Y2VwdBgNIAEoCzIoLlNraWxsQnJpZGdlLk1lc3NhZ2UuUXVlc3RBY2NlcHRS",
+            "ZXNwb25zZUgAEjYKB2JhZ1NhdmUYDiABKAsyIy5Ta2lsbEJyaWRnZS5NZXNz",
+            "YWdlLkJhZ1NhdmVSZXF1ZXN0SAASPwoLcXVlc3RTdWJtaXQYDyABKAsyKC5T",
+            "a2lsbEJyaWRnZS5NZXNzYWdlLlF1ZXN0U3VibWl0UmVzcG9uc2VIABI9Cgxm",
+            "cmllbmRBZGRSZXEYECABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkZyaWVu",
+            "ZEFkZFJlcXVlc3RIABI+CgxmcmllbmRBZGRSZXMYESABKAsyJi5Ta2lsbEJy",
+            "aWRnZS5NZXNzYWdlLkZyaWVuZEFkZFJlc3BvbnNlSAASPQoKZnJpZW5kTGlz",
+            "dBgSIAEoCzInLlNraWxsQnJpZGdlLk1lc3NhZ2UuRnJpZW5kTGlzdFJlc3Bv",
+            "bnNlSAASQQoMZnJpZW5kUmVtb3ZlGBMgASgLMikuU2tpbGxCcmlkZ2UuTWVz",
+            "c2FnZS5GcmllbmRSZW1vdmVSZXNwb25zZUgAEj8KDXRlYW1JbnZpdGVSZXEY",
+            "FCABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLlRlYW1JbnZpdGVSZXF1ZXN0",
+            "SAASQAoNdGVhbUludml0ZVJlcxgVIAEoCzInLlNraWxsQnJpZGdlLk1lc3Nh",
+            "Z2UuVGVhbUludml0ZVJlc3BvbnNlSAASOQoIdGVhbUluZm8YFiABKAsyJS5T",
+            "a2lsbEJyaWRnZS5NZXNzYWdlLlRlYW1JbmZvUmVzcG9uc2VIABI7Cgl0ZWFt",
+            "TGVhdmUYFyABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLlRlYW1MZWF2ZVJl",
+            "c3BvbnNlSAASPwoLZ3VpbGRDcmVhdGUYGCABKAsyKC5Ta2lsbEJyaWRnZS5N",
+            "ZXNzYWdlLkd1aWxkQ3JlYXRlUmVzcG9uc2VIABI9CgxndWlsZEpvaW5SZXEY",
+            "GSABKAsyJS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1aWxkSm9pblJlcXVlc3RI",
+            "ABI+CgxndWlsZEpvaW5SZXMYGiABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdl",
+            "Lkd1aWxkSm9pblJlc3BvbnNlSAASMwoFZ3VpbGQYGyABKAsyIi5Ta2lsbEJy",
+            "aWRnZS5NZXNzYWdlLkd1aWxkUmVzcG9uc2VIABI9CgpndWlsZExlYXZlGBwg",
+            "ASgLMicuU2tpbGxCcmlkZ2UuTWVzc2FnZS5HdWlsZExlYXZlUmVzcG9uc2VI",
+            "ABI7CglndWlsZExpc3QYHSABKAsyJi5Ta2lsbEJyaWRnZS5NZXNzYWdlLkd1",
+            "aWxkTGlzdFJlc3BvbnNlSAASPQoKZ3VpbGRBZG1pbhgeIAEoCzInLlNraWxs",
+            "QnJpZGdlLk1lc3NhZ2UuR3VpbGRBZG1pblJlc3BvbnNlSAASMQoEY2hhdBgf",
+            "IAEoCzIhLlNraWxsQnJpZGdlLk1lc3NhZ2UuQ2hhdFJlc3BvbnNlSAASOwoJ",
+            "c2tpbGxDYXN0GDIgASgLMiYuU2tpbGxCcmlkZ2UuTWVzc2FnZS5Ta2lsbENh",
+            "c3RSZXNwb25zZUgAEjoKCXNraWxsSGl0cxgzIAEoCzIlLlNraWxsQnJpZGdl",
+            "Lk1lc3NhZ2UuU2tpbGxIaXRSZXNwb25zZUgAEjQKB2J1ZmZSZXMYNCABKAsy",
+            "IS5Ta2lsbEJyaWRnZS5NZXNzYWdlLkJ1ZmZSZXNwb25zZUgAEkcKEWFyZW5h",
+            "Q2hhbGxlbmdlUmVxGDwgASgLMiouU2tpbGxCcmlkZ2UuTWVzc2FnZS5BcmVu",
+            "YUNoYWxsZW5nZVJlcXVlc3RIABJIChFhcmVuYUNoYWxsZW5nZVJlcxg9IAEo",
+            "CzIrLlNraWxsQnJpZGdlLk1lc3NhZ2UuQXJlbmFDaGFsbGVuZ2VSZXNwb25z",
+            "ZUgAEkAKDWFyZW5hQmVnaW5SZXMYPiABKAsyJy5Ta2lsbEJyaWRnZS5NZXNz",
+            "YWdlLkFyZW5hQmVnaW5SZXNwb25zZUgAEjwKC2FyZW5hRW5kUmVzGD8gASgL",
+            "MiUuU2tpbGxCcmlkZ2UuTWVzc2FnZS5BcmVuYUVuZFJlc3BvbnNlSAASQAoN",
+            "YXJlbmFSZWFkeVJlcxhAIAEoCzInLlNraWxsQnJpZGdlLk1lc3NhZ2UuQXJl",
+            "bmFSZWFkeVJlc3BvbnNlSAASSgoSYXJlbmFSb3VuZFN0YXJ0UmVzGEEgASgL",
+            "MiwuU2tpbGxCcmlkZ2UuTWVzc2FnZS5BcmVuYVJvdW5kU3RhcnRSZXNwb25z",
+            "ZUgAEkYKEGFyZW5hUm91bmRFbmRSZXMYQiABKAsyKi5Ta2lsbEJyaWRnZS5N",
+            "ZXNzYWdlLkFyZW5hUm91bmRFbmRSZXNwb25zZUgAEjkKDHN0YXR1c05vdGlm",
+            "eRhkIAEoCzIhLlNraWxsQnJpZGdlLk1lc3NhZ2UuU3RhdHVzTm90aWZ5SABC",
+            "CQoHcGF5bG9hZEIZ+AEBqgITU2tpbGxCcmlkZ2UuTWVzc2FnZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::SkillBridge.Message.UserReflection.Descriptor, global::SkillBridge.Message.MapReflection.Descriptor, global::SkillBridge.Message.ItemReflection.Descriptor, global::SkillBridge.Message.QuestReflection.Descriptor, global::SkillBridge.Message.FriendReflection.Descriptor, global::SkillBridge.Message.TeamReflection.Descriptor, global::SkillBridge.Message.GuildReflection.Descriptor, global::SkillBridge.Message.ChatReflection.Descriptor, global::SkillBridge.Message.BattleReflection.Descriptor, global::SkillBridge.Message.ArenaReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessage), global::SkillBridge.Message.NetMessage.Parser, new[]{ "Request", "Response" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessageRequest), global::SkillBridge.Message.NetMessageRequest.Parser, new[]{ "UserRegister", "UserLogin", "CreateChar", "GameEnter", "GameLeave", "MapCharacterEnter", "MapEntitySync", "MapTeleport", "ItemBuy", "ItemEquip", "QuestList", "QuestAccept", "BagSave", "QuestSubmit", "FriendAddReq", "FriendAddRes", "FriendList", "FriendRemove", "TeamInviteReq", "TeamInviteRes", "TeamInfo", "TeamLeave", "GuildCreate", "GuildJoinReq", "GuildJoinRes", "Guild", "GuildLeave", "GuildList", "GuildAdmin", "Chat", "SkillCast", "ArenaChallengeReq", "ArenaChallengeRes", "ArenaReadyReq" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessageResponse), global::SkillBridge.Message.NetMessageResponse.Parser, new[]{ "UserRegister", "UserLogin", "CreateChar", "GameEnter", "GameLeave", "MapCharacterEnter", "MapCharacterLeave", "MapEntitySync", "ItemBuy", "ItemEquip", "QuestList", "QuestAccept", "BagSave", "QuestSubmit", "FriendAddReq", "FriendAddRes", "FriendList", "FriendRemove", "TeamInviteReq", "TeamInviteRes", "TeamInfo", "TeamLeave", "GuildCreate", "GuildJoinReq", "GuildJoinRes", "Guild", "GuildLeave", "GuildList", "GuildAdmin", "Chat", "SkillCast", "SkillHits", "BuffRes", "ArenaChallengeReq", "ArenaChallengeRes", "ArenaBeginRes", "ArenaEndRes", "ArenaReadyRes", "ArenaRoundStartRes", "ArenaRoundEndRes", "StatusNotify" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessage), global::SkillBridge.Message.NetMessage.Parser, new[]{ "Requests", "Responses" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessageRequest), global::SkillBridge.Message.NetMessageRequest.Parser, new[]{ "UserRegister", "UserLogin", "CreateChar", "GameEnter", "GameLeave", "MapCharacterEnter", "MapEntitySync", "MapTeleport", "ItemBuy", "ItemEquip", "QuestList", "QuestAccept", "BagSave", "QuestSubmit", "FriendAddReq", "FriendAddRes", "FriendList", "FriendRemove", "TeamInviteReq", "TeamInviteRes", "TeamInfo", "TeamLeave", "GuildCreate", "GuildJoinReq", "GuildJoinRes", "Guild", "GuildLeave", "GuildList", "GuildAdmin", "Chat", "SkillCast", "ArenaChallengeReq", "ArenaChallengeRes", "ArenaReadyReq" }, new[]{ "Payload" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::SkillBridge.Message.NetMessageResponse), global::SkillBridge.Message.NetMessageResponse.Parser, new[]{ "UserRegister", "UserLogin", "CreateChar", "GameEnter", "GameLeave", "MapCharacterEnter", "MapCharacterLeave", "MapEntitySync", "ItemBuy", "ItemEquip", "QuestList", "QuestAccept", "BagSave", "QuestSubmit", "FriendAddReq", "FriendAddRes", "FriendList", "FriendRemove", "TeamInviteReq", "TeamInviteRes", "TeamInfo", "TeamLeave", "GuildCreate", "GuildJoinReq", "GuildJoinRes", "Guild", "GuildLeave", "GuildList", "GuildAdmin", "Chat", "SkillCast", "SkillHits", "BuffRes", "ArenaChallengeReq", "ArenaChallengeRes", "ArenaBeginRes", "ArenaEndRes", "ArenaReadyRes", "ArenaRoundStartRes", "ArenaRoundEndRes", "StatusNotify" }, new[]{ "Payload" }, null, null, null)
           }));
     }
     #endregion
@@ -183,8 +186,8 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public NetMessage(NetMessage other) : this() {
-      request_ = other.request_ != null ? other.request_.Clone() : null;
-      response_ = other.response_ != null ? other.response_.Clone() : null;
+      requests_ = other.requests_.Clone();
+      responses_ = other.responses_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -194,28 +197,26 @@ namespace SkillBridge.Message {
       return new NetMessage(this);
     }
 
-    /// <summary>Field number for the "Request" field.</summary>
-    public const int RequestFieldNumber = 1;
-    private global::SkillBridge.Message.NetMessageRequest request_;
+    /// <summary>Field number for the "requests" field.</summary>
+    public const int RequestsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::SkillBridge.Message.NetMessageRequest> _repeated_requests_codec
+        = pb::FieldCodec.ForMessage(10, global::SkillBridge.Message.NetMessageRequest.Parser);
+    private readonly pbc::RepeatedField<global::SkillBridge.Message.NetMessageRequest> requests_ = new pbc::RepeatedField<global::SkillBridge.Message.NetMessageRequest>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::SkillBridge.Message.NetMessageRequest Request {
-      get { return request_; }
-      set {
-        request_ = value;
-      }
+    public pbc::RepeatedField<global::SkillBridge.Message.NetMessageRequest> Requests {
+      get { return requests_; }
     }
 
-    /// <summary>Field number for the "Response" field.</summary>
-    public const int ResponseFieldNumber = 2;
-    private global::SkillBridge.Message.NetMessageResponse response_;
+    /// <summary>Field number for the "responses" field.</summary>
+    public const int ResponsesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::SkillBridge.Message.NetMessageResponse> _repeated_responses_codec
+        = pb::FieldCodec.ForMessage(18, global::SkillBridge.Message.NetMessageResponse.Parser);
+    private readonly pbc::RepeatedField<global::SkillBridge.Message.NetMessageResponse> responses_ = new pbc::RepeatedField<global::SkillBridge.Message.NetMessageResponse>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::SkillBridge.Message.NetMessageResponse Response {
-      get { return response_; }
-      set {
-        response_ = value;
-      }
+    public pbc::RepeatedField<global::SkillBridge.Message.NetMessageResponse> Responses {
+      get { return responses_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -233,8 +234,8 @@ namespace SkillBridge.Message {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Request, other.Request)) return false;
-      if (!object.Equals(Response, other.Response)) return false;
+      if(!requests_.Equals(other.requests_)) return false;
+      if(!responses_.Equals(other.responses_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -242,8 +243,8 @@ namespace SkillBridge.Message {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (request_ != null) hash ^= Request.GetHashCode();
-      if (response_ != null) hash ^= Response.GetHashCode();
+      hash ^= requests_.GetHashCode();
+      hash ^= responses_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -262,14 +263,8 @@ namespace SkillBridge.Message {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (request_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Request);
-      }
-      if (response_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Response);
-      }
+      requests_.WriteTo(output, _repeated_requests_codec);
+      responses_.WriteTo(output, _repeated_responses_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -280,14 +275,8 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (request_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Request);
-      }
-      if (response_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Response);
-      }
+      requests_.WriteTo(ref output, _repeated_requests_codec);
+      responses_.WriteTo(ref output, _repeated_responses_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -298,12 +287,8 @@ namespace SkillBridge.Message {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (request_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Request);
-      }
-      if (response_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Response);
-      }
+      size += requests_.CalculateSize(_repeated_requests_codec);
+      size += responses_.CalculateSize(_repeated_responses_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -316,18 +301,8 @@ namespace SkillBridge.Message {
       if (other == null) {
         return;
       }
-      if (other.request_ != null) {
-        if (request_ == null) {
-          Request = new global::SkillBridge.Message.NetMessageRequest();
-        }
-        Request.MergeFrom(other.Request);
-      }
-      if (other.response_ != null) {
-        if (response_ == null) {
-          Response = new global::SkillBridge.Message.NetMessageResponse();
-        }
-        Response.MergeFrom(other.Response);
-      }
+      requests_.Add(other.requests_);
+      responses_.Add(other.responses_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -348,17 +323,11 @@ namespace SkillBridge.Message {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (request_ == null) {
-              Request = new global::SkillBridge.Message.NetMessageRequest();
-            }
-            input.ReadMessage(Request);
+            requests_.AddEntriesFrom(input, _repeated_requests_codec);
             break;
           }
           case 18: {
-            if (response_ == null) {
-              Response = new global::SkillBridge.Message.NetMessageResponse();
-            }
-            input.ReadMessage(Response);
+            responses_.AddEntriesFrom(input, _repeated_responses_codec);
             break;
           }
         }
@@ -381,17 +350,11 @@ namespace SkillBridge.Message {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (request_ == null) {
-              Request = new global::SkillBridge.Message.NetMessageRequest();
-            }
-            input.ReadMessage(Request);
+            requests_.AddEntriesFrom(ref input, _repeated_requests_codec);
             break;
           }
           case 18: {
-            if (response_ == null) {
-              Response = new global::SkillBridge.Message.NetMessageResponse();
-            }
-            input.ReadMessage(Response);
+            responses_.AddEntriesFrom(ref input, _repeated_responses_codec);
             break;
           }
         }
@@ -436,40 +399,111 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public NetMessageRequest(NetMessageRequest other) : this() {
-      userRegister_ = other.userRegister_ != null ? other.userRegister_.Clone() : null;
-      userLogin_ = other.userLogin_ != null ? other.userLogin_.Clone() : null;
-      createChar_ = other.createChar_ != null ? other.createChar_.Clone() : null;
-      gameEnter_ = other.gameEnter_ != null ? other.gameEnter_.Clone() : null;
-      gameLeave_ = other.gameLeave_ != null ? other.gameLeave_.Clone() : null;
-      mapCharacterEnter_ = other.mapCharacterEnter_ != null ? other.mapCharacterEnter_.Clone() : null;
-      mapEntitySync_ = other.mapEntitySync_ != null ? other.mapEntitySync_.Clone() : null;
-      mapTeleport_ = other.mapTeleport_ != null ? other.mapTeleport_.Clone() : null;
-      itemBuy_ = other.itemBuy_ != null ? other.itemBuy_.Clone() : null;
-      itemEquip_ = other.itemEquip_ != null ? other.itemEquip_.Clone() : null;
-      questList_ = other.questList_ != null ? other.questList_.Clone() : null;
-      questAccept_ = other.questAccept_ != null ? other.questAccept_.Clone() : null;
-      bagSave_ = other.bagSave_ != null ? other.bagSave_.Clone() : null;
-      questSubmit_ = other.questSubmit_ != null ? other.questSubmit_.Clone() : null;
-      friendAddReq_ = other.friendAddReq_ != null ? other.friendAddReq_.Clone() : null;
-      friendAddRes_ = other.friendAddRes_ != null ? other.friendAddRes_.Clone() : null;
-      friendList_ = other.friendList_ != null ? other.friendList_.Clone() : null;
-      friendRemove_ = other.friendRemove_ != null ? other.friendRemove_.Clone() : null;
-      teamInviteReq_ = other.teamInviteReq_ != null ? other.teamInviteReq_.Clone() : null;
-      teamInviteRes_ = other.teamInviteRes_ != null ? other.teamInviteRes_.Clone() : null;
-      teamInfo_ = other.teamInfo_ != null ? other.teamInfo_.Clone() : null;
-      teamLeave_ = other.teamLeave_ != null ? other.teamLeave_.Clone() : null;
-      guildCreate_ = other.guildCreate_ != null ? other.guildCreate_.Clone() : null;
-      guildJoinReq_ = other.guildJoinReq_ != null ? other.guildJoinReq_.Clone() : null;
-      guildJoinRes_ = other.guildJoinRes_ != null ? other.guildJoinRes_.Clone() : null;
-      guild_ = other.guild_ != null ? other.guild_.Clone() : null;
-      guildLeave_ = other.guildLeave_ != null ? other.guildLeave_.Clone() : null;
-      guildList_ = other.guildList_ != null ? other.guildList_.Clone() : null;
-      guildAdmin_ = other.guildAdmin_ != null ? other.guildAdmin_.Clone() : null;
-      chat_ = other.chat_ != null ? other.chat_.Clone() : null;
-      skillCast_ = other.skillCast_ != null ? other.skillCast_.Clone() : null;
-      arenaChallengeReq_ = other.arenaChallengeReq_ != null ? other.arenaChallengeReq_.Clone() : null;
-      arenaChallengeRes_ = other.arenaChallengeRes_ != null ? other.arenaChallengeRes_.Clone() : null;
-      arenaReadyReq_ = other.arenaReadyReq_ != null ? other.arenaReadyReq_.Clone() : null;
+      switch (other.PayloadCase) {
+        case PayloadOneofCase.UserRegister:
+          UserRegister = other.UserRegister.Clone();
+          break;
+        case PayloadOneofCase.UserLogin:
+          UserLogin = other.UserLogin.Clone();
+          break;
+        case PayloadOneofCase.CreateChar:
+          CreateChar = other.CreateChar.Clone();
+          break;
+        case PayloadOneofCase.GameEnter:
+          GameEnter = other.GameEnter.Clone();
+          break;
+        case PayloadOneofCase.GameLeave:
+          GameLeave = other.GameLeave.Clone();
+          break;
+        case PayloadOneofCase.MapCharacterEnter:
+          MapCharacterEnter = other.MapCharacterEnter.Clone();
+          break;
+        case PayloadOneofCase.MapEntitySync:
+          MapEntitySync = other.MapEntitySync.Clone();
+          break;
+        case PayloadOneofCase.MapTeleport:
+          MapTeleport = other.MapTeleport.Clone();
+          break;
+        case PayloadOneofCase.ItemBuy:
+          ItemBuy = other.ItemBuy.Clone();
+          break;
+        case PayloadOneofCase.ItemEquip:
+          ItemEquip = other.ItemEquip.Clone();
+          break;
+        case PayloadOneofCase.QuestList:
+          QuestList = other.QuestList.Clone();
+          break;
+        case PayloadOneofCase.QuestAccept:
+          QuestAccept = other.QuestAccept.Clone();
+          break;
+        case PayloadOneofCase.BagSave:
+          BagSave = other.BagSave.Clone();
+          break;
+        case PayloadOneofCase.QuestSubmit:
+          QuestSubmit = other.QuestSubmit.Clone();
+          break;
+        case PayloadOneofCase.FriendAddReq:
+          FriendAddReq = other.FriendAddReq.Clone();
+          break;
+        case PayloadOneofCase.FriendAddRes:
+          FriendAddRes = other.FriendAddRes.Clone();
+          break;
+        case PayloadOneofCase.FriendList:
+          FriendList = other.FriendList.Clone();
+          break;
+        case PayloadOneofCase.FriendRemove:
+          FriendRemove = other.FriendRemove.Clone();
+          break;
+        case PayloadOneofCase.TeamInviteReq:
+          TeamInviteReq = other.TeamInviteReq.Clone();
+          break;
+        case PayloadOneofCase.TeamInviteRes:
+          TeamInviteRes = other.TeamInviteRes.Clone();
+          break;
+        case PayloadOneofCase.TeamInfo:
+          TeamInfo = other.TeamInfo.Clone();
+          break;
+        case PayloadOneofCase.TeamLeave:
+          TeamLeave = other.TeamLeave.Clone();
+          break;
+        case PayloadOneofCase.GuildCreate:
+          GuildCreate = other.GuildCreate.Clone();
+          break;
+        case PayloadOneofCase.GuildJoinReq:
+          GuildJoinReq = other.GuildJoinReq.Clone();
+          break;
+        case PayloadOneofCase.GuildJoinRes:
+          GuildJoinRes = other.GuildJoinRes.Clone();
+          break;
+        case PayloadOneofCase.Guild:
+          Guild = other.Guild.Clone();
+          break;
+        case PayloadOneofCase.GuildLeave:
+          GuildLeave = other.GuildLeave.Clone();
+          break;
+        case PayloadOneofCase.GuildList:
+          GuildList = other.GuildList.Clone();
+          break;
+        case PayloadOneofCase.GuildAdmin:
+          GuildAdmin = other.GuildAdmin.Clone();
+          break;
+        case PayloadOneofCase.Chat:
+          Chat = other.Chat.Clone();
+          break;
+        case PayloadOneofCase.SkillCast:
+          SkillCast = other.SkillCast.Clone();
+          break;
+        case PayloadOneofCase.ArenaChallengeReq:
+          ArenaChallengeReq = other.ArenaChallengeReq.Clone();
+          break;
+        case PayloadOneofCase.ArenaChallengeRes:
+          ArenaChallengeRes = other.ArenaChallengeRes.Clone();
+          break;
+        case PayloadOneofCase.ArenaReadyReq:
+          ArenaReadyReq = other.ArenaReadyReq.Clone();
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -481,413 +515,463 @@ namespace SkillBridge.Message {
 
     /// <summary>Field number for the "userRegister" field.</summary>
     public const int UserRegisterFieldNumber = 1;
-    private global::SkillBridge.Message.UserRegisterRequest userRegister_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.UserRegisterRequest UserRegister {
-      get { return userRegister_; }
+      get { return payloadCase_ == PayloadOneofCase.UserRegister ? (global::SkillBridge.Message.UserRegisterRequest) payload_ : null; }
       set {
-        userRegister_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.UserRegister;
       }
     }
 
     /// <summary>Field number for the "userLogin" field.</summary>
     public const int UserLoginFieldNumber = 2;
-    private global::SkillBridge.Message.UserLoginRequest userLogin_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.UserLoginRequest UserLogin {
-      get { return userLogin_; }
+      get { return payloadCase_ == PayloadOneofCase.UserLogin ? (global::SkillBridge.Message.UserLoginRequest) payload_ : null; }
       set {
-        userLogin_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.UserLogin;
       }
     }
 
     /// <summary>Field number for the "createChar" field.</summary>
     public const int CreateCharFieldNumber = 3;
-    private global::SkillBridge.Message.UserCreateCharacterRequest createChar_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.UserCreateCharacterRequest CreateChar {
-      get { return createChar_; }
+      get { return payloadCase_ == PayloadOneofCase.CreateChar ? (global::SkillBridge.Message.UserCreateCharacterRequest) payload_ : null; }
       set {
-        createChar_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.CreateChar;
       }
     }
 
     /// <summary>Field number for the "gameEnter" field.</summary>
     public const int GameEnterFieldNumber = 4;
-    private global::SkillBridge.Message.UserGameEnterRequest gameEnter_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.UserGameEnterRequest GameEnter {
-      get { return gameEnter_; }
+      get { return payloadCase_ == PayloadOneofCase.GameEnter ? (global::SkillBridge.Message.UserGameEnterRequest) payload_ : null; }
       set {
-        gameEnter_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GameEnter;
       }
     }
 
     /// <summary>Field number for the "gameLeave" field.</summary>
     public const int GameLeaveFieldNumber = 5;
-    private global::SkillBridge.Message.UserGameLeaveRequest gameLeave_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.UserGameLeaveRequest GameLeave {
-      get { return gameLeave_; }
+      get { return payloadCase_ == PayloadOneofCase.GameLeave ? (global::SkillBridge.Message.UserGameLeaveRequest) payload_ : null; }
       set {
-        gameLeave_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GameLeave;
       }
     }
 
     /// <summary>Field number for the "mapCharacterEnter" field.</summary>
     public const int MapCharacterEnterFieldNumber = 6;
-    private global::SkillBridge.Message.MapCharacterEnterRequest mapCharacterEnter_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.MapCharacterEnterRequest MapCharacterEnter {
-      get { return mapCharacterEnter_; }
+      get { return payloadCase_ == PayloadOneofCase.MapCharacterEnter ? (global::SkillBridge.Message.MapCharacterEnterRequest) payload_ : null; }
       set {
-        mapCharacterEnter_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.MapCharacterEnter;
       }
     }
 
     /// <summary>Field number for the "mapEntitySync" field.</summary>
     public const int MapEntitySyncFieldNumber = 8;
-    private global::SkillBridge.Message.MapEntitySyncRequest mapEntitySync_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.MapEntitySyncRequest MapEntitySync {
-      get { return mapEntitySync_; }
+      get { return payloadCase_ == PayloadOneofCase.MapEntitySync ? (global::SkillBridge.Message.MapEntitySyncRequest) payload_ : null; }
       set {
-        mapEntitySync_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.MapEntitySync;
       }
     }
 
     /// <summary>Field number for the "mapTeleport" field.</summary>
     public const int MapTeleportFieldNumber = 9;
-    private global::SkillBridge.Message.MapTeleportRequest mapTeleport_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.MapTeleportRequest MapTeleport {
-      get { return mapTeleport_; }
+      get { return payloadCase_ == PayloadOneofCase.MapTeleport ? (global::SkillBridge.Message.MapTeleportRequest) payload_ : null; }
       set {
-        mapTeleport_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.MapTeleport;
       }
     }
 
     /// <summary>Field number for the "itemBuy" field.</summary>
     public const int ItemBuyFieldNumber = 10;
-    private global::SkillBridge.Message.ItemBuyRequest itemBuy_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ItemBuyRequest ItemBuy {
-      get { return itemBuy_; }
+      get { return payloadCase_ == PayloadOneofCase.ItemBuy ? (global::SkillBridge.Message.ItemBuyRequest) payload_ : null; }
       set {
-        itemBuy_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ItemBuy;
       }
     }
 
     /// <summary>Field number for the "itemEquip" field.</summary>
     public const int ItemEquipFieldNumber = 11;
-    private global::SkillBridge.Message.ItemEquipRequest itemEquip_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ItemEquipRequest ItemEquip {
-      get { return itemEquip_; }
+      get { return payloadCase_ == PayloadOneofCase.ItemEquip ? (global::SkillBridge.Message.ItemEquipRequest) payload_ : null; }
       set {
-        itemEquip_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ItemEquip;
       }
     }
 
     /// <summary>Field number for the "questList" field.</summary>
     public const int QuestListFieldNumber = 12;
-    private global::SkillBridge.Message.QuestListRequest questList_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.QuestListRequest QuestList {
-      get { return questList_; }
+      get { return payloadCase_ == PayloadOneofCase.QuestList ? (global::SkillBridge.Message.QuestListRequest) payload_ : null; }
       set {
-        questList_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QuestList;
       }
     }
 
     /// <summary>Field number for the "questAccept" field.</summary>
     public const int QuestAcceptFieldNumber = 13;
-    private global::SkillBridge.Message.QuestAcceptRequest questAccept_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.QuestAcceptRequest QuestAccept {
-      get { return questAccept_; }
+      get { return payloadCase_ == PayloadOneofCase.QuestAccept ? (global::SkillBridge.Message.QuestAcceptRequest) payload_ : null; }
       set {
-        questAccept_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QuestAccept;
       }
     }
 
     /// <summary>Field number for the "bagSave" field.</summary>
     public const int BagSaveFieldNumber = 14;
-    private global::SkillBridge.Message.BagSaveRequest bagSave_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.BagSaveRequest BagSave {
-      get { return bagSave_; }
+      get { return payloadCase_ == PayloadOneofCase.BagSave ? (global::SkillBridge.Message.BagSaveRequest) payload_ : null; }
       set {
-        bagSave_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.BagSave;
       }
     }
 
     /// <summary>Field number for the "questSubmit" field.</summary>
     public const int QuestSubmitFieldNumber = 15;
-    private global::SkillBridge.Message.QuestSubmitRequest questSubmit_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.QuestSubmitRequest QuestSubmit {
-      get { return questSubmit_; }
+      get { return payloadCase_ == PayloadOneofCase.QuestSubmit ? (global::SkillBridge.Message.QuestSubmitRequest) payload_ : null; }
       set {
-        questSubmit_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QuestSubmit;
       }
     }
 
     /// <summary>Field number for the "friendAddReq" field.</summary>
     public const int FriendAddReqFieldNumber = 16;
-    private global::SkillBridge.Message.FriendAddRequest friendAddReq_;
-    /// <summary>
-    ///即有响应，又有请求是为了做双向交互，意味着客户端和服务端都要处理请求和相应
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.FriendAddRequest FriendAddReq {
-      get { return friendAddReq_; }
+      get { return payloadCase_ == PayloadOneofCase.FriendAddReq ? (global::SkillBridge.Message.FriendAddRequest) payload_ : null; }
       set {
-        friendAddReq_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.FriendAddReq;
       }
     }
 
     /// <summary>Field number for the "friendAddRes" field.</summary>
     public const int FriendAddResFieldNumber = 17;
-    private global::SkillBridge.Message.FriendAddResponse friendAddRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.FriendAddResponse FriendAddRes {
-      get { return friendAddRes_; }
+      get { return payloadCase_ == PayloadOneofCase.FriendAddRes ? (global::SkillBridge.Message.FriendAddResponse) payload_ : null; }
       set {
-        friendAddRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.FriendAddRes;
       }
     }
 
     /// <summary>Field number for the "friendList" field.</summary>
     public const int FriendListFieldNumber = 18;
-    private global::SkillBridge.Message.FriendListRequest friendList_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.FriendListRequest FriendList {
-      get { return friendList_; }
+      get { return payloadCase_ == PayloadOneofCase.FriendList ? (global::SkillBridge.Message.FriendListRequest) payload_ : null; }
       set {
-        friendList_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.FriendList;
       }
     }
 
     /// <summary>Field number for the "friendRemove" field.</summary>
     public const int FriendRemoveFieldNumber = 19;
-    private global::SkillBridge.Message.FriendRemoveRequest friendRemove_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.FriendRemoveRequest FriendRemove {
-      get { return friendRemove_; }
+      get { return payloadCase_ == PayloadOneofCase.FriendRemove ? (global::SkillBridge.Message.FriendRemoveRequest) payload_ : null; }
       set {
-        friendRemove_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.FriendRemove;
       }
     }
 
     /// <summary>Field number for the "teamInviteReq" field.</summary>
     public const int TeamInviteReqFieldNumber = 20;
-    private global::SkillBridge.Message.TeamInviteRequest teamInviteReq_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.TeamInviteRequest TeamInviteReq {
-      get { return teamInviteReq_; }
+      get { return payloadCase_ == PayloadOneofCase.TeamInviteReq ? (global::SkillBridge.Message.TeamInviteRequest) payload_ : null; }
       set {
-        teamInviteReq_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.TeamInviteReq;
       }
     }
 
     /// <summary>Field number for the "teamInviteRes" field.</summary>
     public const int TeamInviteResFieldNumber = 21;
-    private global::SkillBridge.Message.TeamInviteResponse teamInviteRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.TeamInviteResponse TeamInviteRes {
-      get { return teamInviteRes_; }
+      get { return payloadCase_ == PayloadOneofCase.TeamInviteRes ? (global::SkillBridge.Message.TeamInviteResponse) payload_ : null; }
       set {
-        teamInviteRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.TeamInviteRes;
       }
     }
 
     /// <summary>Field number for the "teamInfo" field.</summary>
     public const int TeamInfoFieldNumber = 22;
-    private global::SkillBridge.Message.TeamInfoRequest teamInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.TeamInfoRequest TeamInfo {
-      get { return teamInfo_; }
+      get { return payloadCase_ == PayloadOneofCase.TeamInfo ? (global::SkillBridge.Message.TeamInfoRequest) payload_ : null; }
       set {
-        teamInfo_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.TeamInfo;
       }
     }
 
     /// <summary>Field number for the "teamLeave" field.</summary>
     public const int TeamLeaveFieldNumber = 23;
-    private global::SkillBridge.Message.TeamLeaveRequest teamLeave_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.TeamLeaveRequest TeamLeave {
-      get { return teamLeave_; }
+      get { return payloadCase_ == PayloadOneofCase.TeamLeave ? (global::SkillBridge.Message.TeamLeaveRequest) payload_ : null; }
       set {
-        teamLeave_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.TeamLeave;
       }
     }
 
     /// <summary>Field number for the "guildCreate" field.</summary>
     public const int GuildCreateFieldNumber = 24;
-    private global::SkillBridge.Message.GuildCreateRequest guildCreate_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildCreateRequest GuildCreate {
-      get { return guildCreate_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildCreate ? (global::SkillBridge.Message.GuildCreateRequest) payload_ : null; }
       set {
-        guildCreate_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildCreate;
       }
     }
 
     /// <summary>Field number for the "guildJoinReq" field.</summary>
     public const int GuildJoinReqFieldNumber = 25;
-    private global::SkillBridge.Message.GuildJoinRequest guildJoinReq_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildJoinRequest GuildJoinReq {
-      get { return guildJoinReq_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildJoinReq ? (global::SkillBridge.Message.GuildJoinRequest) payload_ : null; }
       set {
-        guildJoinReq_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildJoinReq;
       }
     }
 
     /// <summary>Field number for the "guildJoinRes" field.</summary>
     public const int GuildJoinResFieldNumber = 26;
-    private global::SkillBridge.Message.GuildJoinResponse guildJoinRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildJoinResponse GuildJoinRes {
-      get { return guildJoinRes_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildJoinRes ? (global::SkillBridge.Message.GuildJoinResponse) payload_ : null; }
       set {
-        guildJoinRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildJoinRes;
       }
     }
 
     /// <summary>Field number for the "guild" field.</summary>
     public const int GuildFieldNumber = 27;
-    private global::SkillBridge.Message.GuildRequest guild_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildRequest Guild {
-      get { return guild_; }
+      get { return payloadCase_ == PayloadOneofCase.Guild ? (global::SkillBridge.Message.GuildRequest) payload_ : null; }
       set {
-        guild_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.Guild;
       }
     }
 
     /// <summary>Field number for the "guildLeave" field.</summary>
     public const int GuildLeaveFieldNumber = 28;
-    private global::SkillBridge.Message.GuildLeaveRequest guildLeave_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildLeaveRequest GuildLeave {
-      get { return guildLeave_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildLeave ? (global::SkillBridge.Message.GuildLeaveRequest) payload_ : null; }
       set {
-        guildLeave_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildLeave;
       }
     }
 
     /// <summary>Field number for the "guildList" field.</summary>
     public const int GuildListFieldNumber = 29;
-    private global::SkillBridge.Message.GuildListRequest guildList_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildListRequest GuildList {
-      get { return guildList_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildList ? (global::SkillBridge.Message.GuildListRequest) payload_ : null; }
       set {
-        guildList_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildList;
       }
     }
 
     /// <summary>Field number for the "guildAdmin" field.</summary>
     public const int GuildAdminFieldNumber = 30;
-    private global::SkillBridge.Message.GuildAdminRequest guildAdmin_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildAdminRequest GuildAdmin {
-      get { return guildAdmin_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildAdmin ? (global::SkillBridge.Message.GuildAdminRequest) payload_ : null; }
       set {
-        guildAdmin_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildAdmin;
       }
     }
 
     /// <summary>Field number for the "chat" field.</summary>
     public const int ChatFieldNumber = 31;
-    private global::SkillBridge.Message.ChatRequest chat_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ChatRequest Chat {
-      get { return chat_; }
+      get { return payloadCase_ == PayloadOneofCase.Chat ? (global::SkillBridge.Message.ChatRequest) payload_ : null; }
       set {
-        chat_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.Chat;
       }
     }
 
     /// <summary>Field number for the "skillCast" field.</summary>
     public const int SkillCastFieldNumber = 50;
-    private global::SkillBridge.Message.SkillCastRequest skillCast_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.SkillCastRequest SkillCast {
-      get { return skillCast_; }
+      get { return payloadCase_ == PayloadOneofCase.SkillCast ? (global::SkillBridge.Message.SkillCastRequest) payload_ : null; }
       set {
-        skillCast_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.SkillCast;
       }
     }
 
     /// <summary>Field number for the "arenaChallengeReq" field.</summary>
     public const int ArenaChallengeReqFieldNumber = 60;
-    private global::SkillBridge.Message.ArenaChallengeRequest arenaChallengeReq_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ArenaChallengeRequest ArenaChallengeReq {
-      get { return arenaChallengeReq_; }
+      get { return payloadCase_ == PayloadOneofCase.ArenaChallengeReq ? (global::SkillBridge.Message.ArenaChallengeRequest) payload_ : null; }
       set {
-        arenaChallengeReq_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ArenaChallengeReq;
       }
     }
 
     /// <summary>Field number for the "arenaChallengeRes" field.</summary>
     public const int ArenaChallengeResFieldNumber = 61;
-    private global::SkillBridge.Message.ArenaChallengeResponse arenaChallengeRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ArenaChallengeResponse ArenaChallengeRes {
-      get { return arenaChallengeRes_; }
+      get { return payloadCase_ == PayloadOneofCase.ArenaChallengeRes ? (global::SkillBridge.Message.ArenaChallengeResponse) payload_ : null; }
       set {
-        arenaChallengeRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ArenaChallengeRes;
       }
     }
 
     /// <summary>Field number for the "arenaReadyReq" field.</summary>
     public const int ArenaReadyReqFieldNumber = 62;
-    private global::SkillBridge.Message.ArenaReadyRequest arenaReadyReq_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ArenaReadyRequest ArenaReadyReq {
-      get { return arenaReadyReq_; }
+      get { return payloadCase_ == PayloadOneofCase.ArenaReadyReq ? (global::SkillBridge.Message.ArenaReadyRequest) payload_ : null; }
       set {
-        arenaReadyReq_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ArenaReadyReq;
       }
+    }
+
+    private object payload_;
+    /// <summary>Enum of possible cases for the "payload" oneof.</summary>
+    public enum PayloadOneofCase {
+      None = 0,
+      UserRegister = 1,
+      UserLogin = 2,
+      CreateChar = 3,
+      GameEnter = 4,
+      GameLeave = 5,
+      MapCharacterEnter = 6,
+      MapEntitySync = 8,
+      MapTeleport = 9,
+      ItemBuy = 10,
+      ItemEquip = 11,
+      QuestList = 12,
+      QuestAccept = 13,
+      BagSave = 14,
+      QuestSubmit = 15,
+      FriendAddReq = 16,
+      FriendAddRes = 17,
+      FriendList = 18,
+      FriendRemove = 19,
+      TeamInviteReq = 20,
+      TeamInviteRes = 21,
+      TeamInfo = 22,
+      TeamLeave = 23,
+      GuildCreate = 24,
+      GuildJoinReq = 25,
+      GuildJoinRes = 26,
+      Guild = 27,
+      GuildLeave = 28,
+      GuildList = 29,
+      GuildAdmin = 30,
+      Chat = 31,
+      SkillCast = 50,
+      ArenaChallengeReq = 60,
+      ArenaChallengeRes = 61,
+      ArenaReadyReq = 62,
+    }
+    private PayloadOneofCase payloadCase_ = PayloadOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadOneofCase PayloadCase {
+      get { return payloadCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPayload() {
+      payloadCase_ = PayloadOneofCase.None;
+      payload_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -939,6 +1023,7 @@ namespace SkillBridge.Message {
       if (!object.Equals(ArenaChallengeReq, other.ArenaChallengeReq)) return false;
       if (!object.Equals(ArenaChallengeRes, other.ArenaChallengeRes)) return false;
       if (!object.Equals(ArenaReadyReq, other.ArenaReadyReq)) return false;
+      if (PayloadCase != other.PayloadCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -946,40 +1031,41 @@ namespace SkillBridge.Message {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (userRegister_ != null) hash ^= UserRegister.GetHashCode();
-      if (userLogin_ != null) hash ^= UserLogin.GetHashCode();
-      if (createChar_ != null) hash ^= CreateChar.GetHashCode();
-      if (gameEnter_ != null) hash ^= GameEnter.GetHashCode();
-      if (gameLeave_ != null) hash ^= GameLeave.GetHashCode();
-      if (mapCharacterEnter_ != null) hash ^= MapCharacterEnter.GetHashCode();
-      if (mapEntitySync_ != null) hash ^= MapEntitySync.GetHashCode();
-      if (mapTeleport_ != null) hash ^= MapTeleport.GetHashCode();
-      if (itemBuy_ != null) hash ^= ItemBuy.GetHashCode();
-      if (itemEquip_ != null) hash ^= ItemEquip.GetHashCode();
-      if (questList_ != null) hash ^= QuestList.GetHashCode();
-      if (questAccept_ != null) hash ^= QuestAccept.GetHashCode();
-      if (bagSave_ != null) hash ^= BagSave.GetHashCode();
-      if (questSubmit_ != null) hash ^= QuestSubmit.GetHashCode();
-      if (friendAddReq_ != null) hash ^= FriendAddReq.GetHashCode();
-      if (friendAddRes_ != null) hash ^= FriendAddRes.GetHashCode();
-      if (friendList_ != null) hash ^= FriendList.GetHashCode();
-      if (friendRemove_ != null) hash ^= FriendRemove.GetHashCode();
-      if (teamInviteReq_ != null) hash ^= TeamInviteReq.GetHashCode();
-      if (teamInviteRes_ != null) hash ^= TeamInviteRes.GetHashCode();
-      if (teamInfo_ != null) hash ^= TeamInfo.GetHashCode();
-      if (teamLeave_ != null) hash ^= TeamLeave.GetHashCode();
-      if (guildCreate_ != null) hash ^= GuildCreate.GetHashCode();
-      if (guildJoinReq_ != null) hash ^= GuildJoinReq.GetHashCode();
-      if (guildJoinRes_ != null) hash ^= GuildJoinRes.GetHashCode();
-      if (guild_ != null) hash ^= Guild.GetHashCode();
-      if (guildLeave_ != null) hash ^= GuildLeave.GetHashCode();
-      if (guildList_ != null) hash ^= GuildList.GetHashCode();
-      if (guildAdmin_ != null) hash ^= GuildAdmin.GetHashCode();
-      if (chat_ != null) hash ^= Chat.GetHashCode();
-      if (skillCast_ != null) hash ^= SkillCast.GetHashCode();
-      if (arenaChallengeReq_ != null) hash ^= ArenaChallengeReq.GetHashCode();
-      if (arenaChallengeRes_ != null) hash ^= ArenaChallengeRes.GetHashCode();
-      if (arenaReadyReq_ != null) hash ^= ArenaReadyReq.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.UserRegister) hash ^= UserRegister.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.UserLogin) hash ^= UserLogin.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.CreateChar) hash ^= CreateChar.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GameEnter) hash ^= GameEnter.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GameLeave) hash ^= GameLeave.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) hash ^= MapCharacterEnter.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.MapEntitySync) hash ^= MapEntitySync.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.MapTeleport) hash ^= MapTeleport.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ItemBuy) hash ^= ItemBuy.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ItemEquip) hash ^= ItemEquip.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QuestList) hash ^= QuestList.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QuestAccept) hash ^= QuestAccept.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.BagSave) hash ^= BagSave.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QuestSubmit) hash ^= QuestSubmit.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.FriendAddReq) hash ^= FriendAddReq.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.FriendAddRes) hash ^= FriendAddRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.FriendList) hash ^= FriendList.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.FriendRemove) hash ^= FriendRemove.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.TeamInviteReq) hash ^= TeamInviteReq.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.TeamInviteRes) hash ^= TeamInviteRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.TeamInfo) hash ^= TeamInfo.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.TeamLeave) hash ^= TeamLeave.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildCreate) hash ^= GuildCreate.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildJoinReq) hash ^= GuildJoinReq.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildJoinRes) hash ^= GuildJoinRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.Guild) hash ^= Guild.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildLeave) hash ^= GuildLeave.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildList) hash ^= GuildList.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildAdmin) hash ^= GuildAdmin.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.Chat) hash ^= Chat.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.SkillCast) hash ^= SkillCast.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) hash ^= ArenaChallengeReq.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) hash ^= ArenaChallengeRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ArenaReadyReq) hash ^= ArenaReadyReq.GetHashCode();
+      hash ^= (int) payloadCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -998,139 +1084,139 @@ namespace SkillBridge.Message {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (userRegister_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserRegister) {
         output.WriteRawTag(10);
         output.WriteMessage(UserRegister);
       }
-      if (userLogin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserLogin) {
         output.WriteRawTag(18);
         output.WriteMessage(UserLogin);
       }
-      if (createChar_ != null) {
+      if (payloadCase_ == PayloadOneofCase.CreateChar) {
         output.WriteRawTag(26);
         output.WriteMessage(CreateChar);
       }
-      if (gameEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameEnter) {
         output.WriteRawTag(34);
         output.WriteMessage(GameEnter);
       }
-      if (gameLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameLeave) {
         output.WriteRawTag(42);
         output.WriteMessage(GameLeave);
       }
-      if (mapCharacterEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) {
         output.WriteRawTag(50);
         output.WriteMessage(MapCharacterEnter);
       }
-      if (mapEntitySync_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapEntitySync) {
         output.WriteRawTag(66);
         output.WriteMessage(MapEntitySync);
       }
-      if (mapTeleport_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapTeleport) {
         output.WriteRawTag(74);
         output.WriteMessage(MapTeleport);
       }
-      if (itemBuy_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemBuy) {
         output.WriteRawTag(82);
         output.WriteMessage(ItemBuy);
       }
-      if (itemEquip_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemEquip) {
         output.WriteRawTag(90);
         output.WriteMessage(ItemEquip);
       }
-      if (questList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestList) {
         output.WriteRawTag(98);
         output.WriteMessage(QuestList);
       }
-      if (questAccept_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestAccept) {
         output.WriteRawTag(106);
         output.WriteMessage(QuestAccept);
       }
-      if (bagSave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.BagSave) {
         output.WriteRawTag(114);
         output.WriteMessage(BagSave);
       }
-      if (questSubmit_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestSubmit) {
         output.WriteRawTag(122);
         output.WriteMessage(QuestSubmit);
       }
-      if (friendAddReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddReq) {
         output.WriteRawTag(130, 1);
         output.WriteMessage(FriendAddReq);
       }
-      if (friendAddRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddRes) {
         output.WriteRawTag(138, 1);
         output.WriteMessage(FriendAddRes);
       }
-      if (friendList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendList) {
         output.WriteRawTag(146, 1);
         output.WriteMessage(FriendList);
       }
-      if (friendRemove_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendRemove) {
         output.WriteRawTag(154, 1);
         output.WriteMessage(FriendRemove);
       }
-      if (teamInviteReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteReq) {
         output.WriteRawTag(162, 1);
         output.WriteMessage(TeamInviteReq);
       }
-      if (teamInviteRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteRes) {
         output.WriteRawTag(170, 1);
         output.WriteMessage(TeamInviteRes);
       }
-      if (teamInfo_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInfo) {
         output.WriteRawTag(178, 1);
         output.WriteMessage(TeamInfo);
       }
-      if (teamLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamLeave) {
         output.WriteRawTag(186, 1);
         output.WriteMessage(TeamLeave);
       }
-      if (guildCreate_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildCreate) {
         output.WriteRawTag(194, 1);
         output.WriteMessage(GuildCreate);
       }
-      if (guildJoinReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinReq) {
         output.WriteRawTag(202, 1);
         output.WriteMessage(GuildJoinReq);
       }
-      if (guildJoinRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinRes) {
         output.WriteRawTag(210, 1);
         output.WriteMessage(GuildJoinRes);
       }
-      if (guild_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Guild) {
         output.WriteRawTag(218, 1);
         output.WriteMessage(Guild);
       }
-      if (guildLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildLeave) {
         output.WriteRawTag(226, 1);
         output.WriteMessage(GuildLeave);
       }
-      if (guildList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildList) {
         output.WriteRawTag(234, 1);
         output.WriteMessage(GuildList);
       }
-      if (guildAdmin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildAdmin) {
         output.WriteRawTag(242, 1);
         output.WriteMessage(GuildAdmin);
       }
-      if (chat_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Chat) {
         output.WriteRawTag(250, 1);
         output.WriteMessage(Chat);
       }
-      if (skillCast_ != null) {
+      if (payloadCase_ == PayloadOneofCase.SkillCast) {
         output.WriteRawTag(146, 3);
         output.WriteMessage(SkillCast);
       }
-      if (arenaChallengeReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) {
         output.WriteRawTag(226, 3);
         output.WriteMessage(ArenaChallengeReq);
       }
-      if (arenaChallengeRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) {
         output.WriteRawTag(234, 3);
         output.WriteMessage(ArenaChallengeRes);
       }
-      if (arenaReadyReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaReadyReq) {
         output.WriteRawTag(242, 3);
         output.WriteMessage(ArenaReadyReq);
       }
@@ -1144,139 +1230,139 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (userRegister_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserRegister) {
         output.WriteRawTag(10);
         output.WriteMessage(UserRegister);
       }
-      if (userLogin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserLogin) {
         output.WriteRawTag(18);
         output.WriteMessage(UserLogin);
       }
-      if (createChar_ != null) {
+      if (payloadCase_ == PayloadOneofCase.CreateChar) {
         output.WriteRawTag(26);
         output.WriteMessage(CreateChar);
       }
-      if (gameEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameEnter) {
         output.WriteRawTag(34);
         output.WriteMessage(GameEnter);
       }
-      if (gameLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameLeave) {
         output.WriteRawTag(42);
         output.WriteMessage(GameLeave);
       }
-      if (mapCharacterEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) {
         output.WriteRawTag(50);
         output.WriteMessage(MapCharacterEnter);
       }
-      if (mapEntitySync_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapEntitySync) {
         output.WriteRawTag(66);
         output.WriteMessage(MapEntitySync);
       }
-      if (mapTeleport_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapTeleport) {
         output.WriteRawTag(74);
         output.WriteMessage(MapTeleport);
       }
-      if (itemBuy_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemBuy) {
         output.WriteRawTag(82);
         output.WriteMessage(ItemBuy);
       }
-      if (itemEquip_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemEquip) {
         output.WriteRawTag(90);
         output.WriteMessage(ItemEquip);
       }
-      if (questList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestList) {
         output.WriteRawTag(98);
         output.WriteMessage(QuestList);
       }
-      if (questAccept_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestAccept) {
         output.WriteRawTag(106);
         output.WriteMessage(QuestAccept);
       }
-      if (bagSave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.BagSave) {
         output.WriteRawTag(114);
         output.WriteMessage(BagSave);
       }
-      if (questSubmit_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestSubmit) {
         output.WriteRawTag(122);
         output.WriteMessage(QuestSubmit);
       }
-      if (friendAddReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddReq) {
         output.WriteRawTag(130, 1);
         output.WriteMessage(FriendAddReq);
       }
-      if (friendAddRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddRes) {
         output.WriteRawTag(138, 1);
         output.WriteMessage(FriendAddRes);
       }
-      if (friendList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendList) {
         output.WriteRawTag(146, 1);
         output.WriteMessage(FriendList);
       }
-      if (friendRemove_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendRemove) {
         output.WriteRawTag(154, 1);
         output.WriteMessage(FriendRemove);
       }
-      if (teamInviteReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteReq) {
         output.WriteRawTag(162, 1);
         output.WriteMessage(TeamInviteReq);
       }
-      if (teamInviteRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteRes) {
         output.WriteRawTag(170, 1);
         output.WriteMessage(TeamInviteRes);
       }
-      if (teamInfo_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInfo) {
         output.WriteRawTag(178, 1);
         output.WriteMessage(TeamInfo);
       }
-      if (teamLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamLeave) {
         output.WriteRawTag(186, 1);
         output.WriteMessage(TeamLeave);
       }
-      if (guildCreate_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildCreate) {
         output.WriteRawTag(194, 1);
         output.WriteMessage(GuildCreate);
       }
-      if (guildJoinReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinReq) {
         output.WriteRawTag(202, 1);
         output.WriteMessage(GuildJoinReq);
       }
-      if (guildJoinRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinRes) {
         output.WriteRawTag(210, 1);
         output.WriteMessage(GuildJoinRes);
       }
-      if (guild_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Guild) {
         output.WriteRawTag(218, 1);
         output.WriteMessage(Guild);
       }
-      if (guildLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildLeave) {
         output.WriteRawTag(226, 1);
         output.WriteMessage(GuildLeave);
       }
-      if (guildList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildList) {
         output.WriteRawTag(234, 1);
         output.WriteMessage(GuildList);
       }
-      if (guildAdmin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildAdmin) {
         output.WriteRawTag(242, 1);
         output.WriteMessage(GuildAdmin);
       }
-      if (chat_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Chat) {
         output.WriteRawTag(250, 1);
         output.WriteMessage(Chat);
       }
-      if (skillCast_ != null) {
+      if (payloadCase_ == PayloadOneofCase.SkillCast) {
         output.WriteRawTag(146, 3);
         output.WriteMessage(SkillCast);
       }
-      if (arenaChallengeReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) {
         output.WriteRawTag(226, 3);
         output.WriteMessage(ArenaChallengeReq);
       }
-      if (arenaChallengeRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) {
         output.WriteRawTag(234, 3);
         output.WriteMessage(ArenaChallengeRes);
       }
-      if (arenaReadyReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaReadyReq) {
         output.WriteRawTag(242, 3);
         output.WriteMessage(ArenaReadyReq);
       }
@@ -1290,106 +1376,106 @@ namespace SkillBridge.Message {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (userRegister_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserRegister) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserRegister);
       }
-      if (userLogin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserLogin) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserLogin);
       }
-      if (createChar_ != null) {
+      if (payloadCase_ == PayloadOneofCase.CreateChar) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreateChar);
       }
-      if (gameEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameEnter) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GameEnter);
       }
-      if (gameLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameLeave) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GameLeave);
       }
-      if (mapCharacterEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MapCharacterEnter);
       }
-      if (mapEntitySync_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapEntitySync) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MapEntitySync);
       }
-      if (mapTeleport_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapTeleport) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MapTeleport);
       }
-      if (itemBuy_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemBuy) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemBuy);
       }
-      if (itemEquip_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemEquip) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemEquip);
       }
-      if (questList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestList) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(QuestList);
       }
-      if (questAccept_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestAccept) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(QuestAccept);
       }
-      if (bagSave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.BagSave) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(BagSave);
       }
-      if (questSubmit_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestSubmit) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(QuestSubmit);
       }
-      if (friendAddReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddReq) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(FriendAddReq);
       }
-      if (friendAddRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(FriendAddRes);
       }
-      if (friendList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendList) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(FriendList);
       }
-      if (friendRemove_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendRemove) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(FriendRemove);
       }
-      if (teamInviteReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteReq) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TeamInviteReq);
       }
-      if (teamInviteRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TeamInviteRes);
       }
-      if (teamInfo_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInfo) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TeamInfo);
       }
-      if (teamLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamLeave) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TeamLeave);
       }
-      if (guildCreate_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildCreate) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildCreate);
       }
-      if (guildJoinReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinReq) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildJoinReq);
       }
-      if (guildJoinRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildJoinRes);
       }
-      if (guild_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Guild) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Guild);
       }
-      if (guildLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildLeave) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildLeave);
       }
-      if (guildList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildList) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildList);
       }
-      if (guildAdmin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildAdmin) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildAdmin);
       }
-      if (chat_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Chat) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Chat);
       }
-      if (skillCast_ != null) {
+      if (payloadCase_ == PayloadOneofCase.SkillCast) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(SkillCast);
       }
-      if (arenaChallengeReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaChallengeReq);
       }
-      if (arenaChallengeRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaChallengeRes);
       }
-      if (arenaReadyReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaReadyReq) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaReadyReq);
       }
       if (_unknownFields != null) {
@@ -1404,210 +1490,213 @@ namespace SkillBridge.Message {
       if (other == null) {
         return;
       }
-      if (other.userRegister_ != null) {
-        if (userRegister_ == null) {
-          UserRegister = new global::SkillBridge.Message.UserRegisterRequest();
-        }
-        UserRegister.MergeFrom(other.UserRegister);
+      switch (other.PayloadCase) {
+        case PayloadOneofCase.UserRegister:
+          if (UserRegister == null) {
+            UserRegister = new global::SkillBridge.Message.UserRegisterRequest();
+          }
+          UserRegister.MergeFrom(other.UserRegister);
+          break;
+        case PayloadOneofCase.UserLogin:
+          if (UserLogin == null) {
+            UserLogin = new global::SkillBridge.Message.UserLoginRequest();
+          }
+          UserLogin.MergeFrom(other.UserLogin);
+          break;
+        case PayloadOneofCase.CreateChar:
+          if (CreateChar == null) {
+            CreateChar = new global::SkillBridge.Message.UserCreateCharacterRequest();
+          }
+          CreateChar.MergeFrom(other.CreateChar);
+          break;
+        case PayloadOneofCase.GameEnter:
+          if (GameEnter == null) {
+            GameEnter = new global::SkillBridge.Message.UserGameEnterRequest();
+          }
+          GameEnter.MergeFrom(other.GameEnter);
+          break;
+        case PayloadOneofCase.GameLeave:
+          if (GameLeave == null) {
+            GameLeave = new global::SkillBridge.Message.UserGameLeaveRequest();
+          }
+          GameLeave.MergeFrom(other.GameLeave);
+          break;
+        case PayloadOneofCase.MapCharacterEnter:
+          if (MapCharacterEnter == null) {
+            MapCharacterEnter = new global::SkillBridge.Message.MapCharacterEnterRequest();
+          }
+          MapCharacterEnter.MergeFrom(other.MapCharacterEnter);
+          break;
+        case PayloadOneofCase.MapEntitySync:
+          if (MapEntitySync == null) {
+            MapEntitySync = new global::SkillBridge.Message.MapEntitySyncRequest();
+          }
+          MapEntitySync.MergeFrom(other.MapEntitySync);
+          break;
+        case PayloadOneofCase.MapTeleport:
+          if (MapTeleport == null) {
+            MapTeleport = new global::SkillBridge.Message.MapTeleportRequest();
+          }
+          MapTeleport.MergeFrom(other.MapTeleport);
+          break;
+        case PayloadOneofCase.ItemBuy:
+          if (ItemBuy == null) {
+            ItemBuy = new global::SkillBridge.Message.ItemBuyRequest();
+          }
+          ItemBuy.MergeFrom(other.ItemBuy);
+          break;
+        case PayloadOneofCase.ItemEquip:
+          if (ItemEquip == null) {
+            ItemEquip = new global::SkillBridge.Message.ItemEquipRequest();
+          }
+          ItemEquip.MergeFrom(other.ItemEquip);
+          break;
+        case PayloadOneofCase.QuestList:
+          if (QuestList == null) {
+            QuestList = new global::SkillBridge.Message.QuestListRequest();
+          }
+          QuestList.MergeFrom(other.QuestList);
+          break;
+        case PayloadOneofCase.QuestAccept:
+          if (QuestAccept == null) {
+            QuestAccept = new global::SkillBridge.Message.QuestAcceptRequest();
+          }
+          QuestAccept.MergeFrom(other.QuestAccept);
+          break;
+        case PayloadOneofCase.BagSave:
+          if (BagSave == null) {
+            BagSave = new global::SkillBridge.Message.BagSaveRequest();
+          }
+          BagSave.MergeFrom(other.BagSave);
+          break;
+        case PayloadOneofCase.QuestSubmit:
+          if (QuestSubmit == null) {
+            QuestSubmit = new global::SkillBridge.Message.QuestSubmitRequest();
+          }
+          QuestSubmit.MergeFrom(other.QuestSubmit);
+          break;
+        case PayloadOneofCase.FriendAddReq:
+          if (FriendAddReq == null) {
+            FriendAddReq = new global::SkillBridge.Message.FriendAddRequest();
+          }
+          FriendAddReq.MergeFrom(other.FriendAddReq);
+          break;
+        case PayloadOneofCase.FriendAddRes:
+          if (FriendAddRes == null) {
+            FriendAddRes = new global::SkillBridge.Message.FriendAddResponse();
+          }
+          FriendAddRes.MergeFrom(other.FriendAddRes);
+          break;
+        case PayloadOneofCase.FriendList:
+          if (FriendList == null) {
+            FriendList = new global::SkillBridge.Message.FriendListRequest();
+          }
+          FriendList.MergeFrom(other.FriendList);
+          break;
+        case PayloadOneofCase.FriendRemove:
+          if (FriendRemove == null) {
+            FriendRemove = new global::SkillBridge.Message.FriendRemoveRequest();
+          }
+          FriendRemove.MergeFrom(other.FriendRemove);
+          break;
+        case PayloadOneofCase.TeamInviteReq:
+          if (TeamInviteReq == null) {
+            TeamInviteReq = new global::SkillBridge.Message.TeamInviteRequest();
+          }
+          TeamInviteReq.MergeFrom(other.TeamInviteReq);
+          break;
+        case PayloadOneofCase.TeamInviteRes:
+          if (TeamInviteRes == null) {
+            TeamInviteRes = new global::SkillBridge.Message.TeamInviteResponse();
+          }
+          TeamInviteRes.MergeFrom(other.TeamInviteRes);
+          break;
+        case PayloadOneofCase.TeamInfo:
+          if (TeamInfo == null) {
+            TeamInfo = new global::SkillBridge.Message.TeamInfoRequest();
+          }
+          TeamInfo.MergeFrom(other.TeamInfo);
+          break;
+        case PayloadOneofCase.TeamLeave:
+          if (TeamLeave == null) {
+            TeamLeave = new global::SkillBridge.Message.TeamLeaveRequest();
+          }
+          TeamLeave.MergeFrom(other.TeamLeave);
+          break;
+        case PayloadOneofCase.GuildCreate:
+          if (GuildCreate == null) {
+            GuildCreate = new global::SkillBridge.Message.GuildCreateRequest();
+          }
+          GuildCreate.MergeFrom(other.GuildCreate);
+          break;
+        case PayloadOneofCase.GuildJoinReq:
+          if (GuildJoinReq == null) {
+            GuildJoinReq = new global::SkillBridge.Message.GuildJoinRequest();
+          }
+          GuildJoinReq.MergeFrom(other.GuildJoinReq);
+          break;
+        case PayloadOneofCase.GuildJoinRes:
+          if (GuildJoinRes == null) {
+            GuildJoinRes = new global::SkillBridge.Message.GuildJoinResponse();
+          }
+          GuildJoinRes.MergeFrom(other.GuildJoinRes);
+          break;
+        case PayloadOneofCase.Guild:
+          if (Guild == null) {
+            Guild = new global::SkillBridge.Message.GuildRequest();
+          }
+          Guild.MergeFrom(other.Guild);
+          break;
+        case PayloadOneofCase.GuildLeave:
+          if (GuildLeave == null) {
+            GuildLeave = new global::SkillBridge.Message.GuildLeaveRequest();
+          }
+          GuildLeave.MergeFrom(other.GuildLeave);
+          break;
+        case PayloadOneofCase.GuildList:
+          if (GuildList == null) {
+            GuildList = new global::SkillBridge.Message.GuildListRequest();
+          }
+          GuildList.MergeFrom(other.GuildList);
+          break;
+        case PayloadOneofCase.GuildAdmin:
+          if (GuildAdmin == null) {
+            GuildAdmin = new global::SkillBridge.Message.GuildAdminRequest();
+          }
+          GuildAdmin.MergeFrom(other.GuildAdmin);
+          break;
+        case PayloadOneofCase.Chat:
+          if (Chat == null) {
+            Chat = new global::SkillBridge.Message.ChatRequest();
+          }
+          Chat.MergeFrom(other.Chat);
+          break;
+        case PayloadOneofCase.SkillCast:
+          if (SkillCast == null) {
+            SkillCast = new global::SkillBridge.Message.SkillCastRequest();
+          }
+          SkillCast.MergeFrom(other.SkillCast);
+          break;
+        case PayloadOneofCase.ArenaChallengeReq:
+          if (ArenaChallengeReq == null) {
+            ArenaChallengeReq = new global::SkillBridge.Message.ArenaChallengeRequest();
+          }
+          ArenaChallengeReq.MergeFrom(other.ArenaChallengeReq);
+          break;
+        case PayloadOneofCase.ArenaChallengeRes:
+          if (ArenaChallengeRes == null) {
+            ArenaChallengeRes = new global::SkillBridge.Message.ArenaChallengeResponse();
+          }
+          ArenaChallengeRes.MergeFrom(other.ArenaChallengeRes);
+          break;
+        case PayloadOneofCase.ArenaReadyReq:
+          if (ArenaReadyReq == null) {
+            ArenaReadyReq = new global::SkillBridge.Message.ArenaReadyRequest();
+          }
+          ArenaReadyReq.MergeFrom(other.ArenaReadyReq);
+          break;
       }
-      if (other.userLogin_ != null) {
-        if (userLogin_ == null) {
-          UserLogin = new global::SkillBridge.Message.UserLoginRequest();
-        }
-        UserLogin.MergeFrom(other.UserLogin);
-      }
-      if (other.createChar_ != null) {
-        if (createChar_ == null) {
-          CreateChar = new global::SkillBridge.Message.UserCreateCharacterRequest();
-        }
-        CreateChar.MergeFrom(other.CreateChar);
-      }
-      if (other.gameEnter_ != null) {
-        if (gameEnter_ == null) {
-          GameEnter = new global::SkillBridge.Message.UserGameEnterRequest();
-        }
-        GameEnter.MergeFrom(other.GameEnter);
-      }
-      if (other.gameLeave_ != null) {
-        if (gameLeave_ == null) {
-          GameLeave = new global::SkillBridge.Message.UserGameLeaveRequest();
-        }
-        GameLeave.MergeFrom(other.GameLeave);
-      }
-      if (other.mapCharacterEnter_ != null) {
-        if (mapCharacterEnter_ == null) {
-          MapCharacterEnter = new global::SkillBridge.Message.MapCharacterEnterRequest();
-        }
-        MapCharacterEnter.MergeFrom(other.MapCharacterEnter);
-      }
-      if (other.mapEntitySync_ != null) {
-        if (mapEntitySync_ == null) {
-          MapEntitySync = new global::SkillBridge.Message.MapEntitySyncRequest();
-        }
-        MapEntitySync.MergeFrom(other.MapEntitySync);
-      }
-      if (other.mapTeleport_ != null) {
-        if (mapTeleport_ == null) {
-          MapTeleport = new global::SkillBridge.Message.MapTeleportRequest();
-        }
-        MapTeleport.MergeFrom(other.MapTeleport);
-      }
-      if (other.itemBuy_ != null) {
-        if (itemBuy_ == null) {
-          ItemBuy = new global::SkillBridge.Message.ItemBuyRequest();
-        }
-        ItemBuy.MergeFrom(other.ItemBuy);
-      }
-      if (other.itemEquip_ != null) {
-        if (itemEquip_ == null) {
-          ItemEquip = new global::SkillBridge.Message.ItemEquipRequest();
-        }
-        ItemEquip.MergeFrom(other.ItemEquip);
-      }
-      if (other.questList_ != null) {
-        if (questList_ == null) {
-          QuestList = new global::SkillBridge.Message.QuestListRequest();
-        }
-        QuestList.MergeFrom(other.QuestList);
-      }
-      if (other.questAccept_ != null) {
-        if (questAccept_ == null) {
-          QuestAccept = new global::SkillBridge.Message.QuestAcceptRequest();
-        }
-        QuestAccept.MergeFrom(other.QuestAccept);
-      }
-      if (other.bagSave_ != null) {
-        if (bagSave_ == null) {
-          BagSave = new global::SkillBridge.Message.BagSaveRequest();
-        }
-        BagSave.MergeFrom(other.BagSave);
-      }
-      if (other.questSubmit_ != null) {
-        if (questSubmit_ == null) {
-          QuestSubmit = new global::SkillBridge.Message.QuestSubmitRequest();
-        }
-        QuestSubmit.MergeFrom(other.QuestSubmit);
-      }
-      if (other.friendAddReq_ != null) {
-        if (friendAddReq_ == null) {
-          FriendAddReq = new global::SkillBridge.Message.FriendAddRequest();
-        }
-        FriendAddReq.MergeFrom(other.FriendAddReq);
-      }
-      if (other.friendAddRes_ != null) {
-        if (friendAddRes_ == null) {
-          FriendAddRes = new global::SkillBridge.Message.FriendAddResponse();
-        }
-        FriendAddRes.MergeFrom(other.FriendAddRes);
-      }
-      if (other.friendList_ != null) {
-        if (friendList_ == null) {
-          FriendList = new global::SkillBridge.Message.FriendListRequest();
-        }
-        FriendList.MergeFrom(other.FriendList);
-      }
-      if (other.friendRemove_ != null) {
-        if (friendRemove_ == null) {
-          FriendRemove = new global::SkillBridge.Message.FriendRemoveRequest();
-        }
-        FriendRemove.MergeFrom(other.FriendRemove);
-      }
-      if (other.teamInviteReq_ != null) {
-        if (teamInviteReq_ == null) {
-          TeamInviteReq = new global::SkillBridge.Message.TeamInviteRequest();
-        }
-        TeamInviteReq.MergeFrom(other.TeamInviteReq);
-      }
-      if (other.teamInviteRes_ != null) {
-        if (teamInviteRes_ == null) {
-          TeamInviteRes = new global::SkillBridge.Message.TeamInviteResponse();
-        }
-        TeamInviteRes.MergeFrom(other.TeamInviteRes);
-      }
-      if (other.teamInfo_ != null) {
-        if (teamInfo_ == null) {
-          TeamInfo = new global::SkillBridge.Message.TeamInfoRequest();
-        }
-        TeamInfo.MergeFrom(other.TeamInfo);
-      }
-      if (other.teamLeave_ != null) {
-        if (teamLeave_ == null) {
-          TeamLeave = new global::SkillBridge.Message.TeamLeaveRequest();
-        }
-        TeamLeave.MergeFrom(other.TeamLeave);
-      }
-      if (other.guildCreate_ != null) {
-        if (guildCreate_ == null) {
-          GuildCreate = new global::SkillBridge.Message.GuildCreateRequest();
-        }
-        GuildCreate.MergeFrom(other.GuildCreate);
-      }
-      if (other.guildJoinReq_ != null) {
-        if (guildJoinReq_ == null) {
-          GuildJoinReq = new global::SkillBridge.Message.GuildJoinRequest();
-        }
-        GuildJoinReq.MergeFrom(other.GuildJoinReq);
-      }
-      if (other.guildJoinRes_ != null) {
-        if (guildJoinRes_ == null) {
-          GuildJoinRes = new global::SkillBridge.Message.GuildJoinResponse();
-        }
-        GuildJoinRes.MergeFrom(other.GuildJoinRes);
-      }
-      if (other.guild_ != null) {
-        if (guild_ == null) {
-          Guild = new global::SkillBridge.Message.GuildRequest();
-        }
-        Guild.MergeFrom(other.Guild);
-      }
-      if (other.guildLeave_ != null) {
-        if (guildLeave_ == null) {
-          GuildLeave = new global::SkillBridge.Message.GuildLeaveRequest();
-        }
-        GuildLeave.MergeFrom(other.GuildLeave);
-      }
-      if (other.guildList_ != null) {
-        if (guildList_ == null) {
-          GuildList = new global::SkillBridge.Message.GuildListRequest();
-        }
-        GuildList.MergeFrom(other.GuildList);
-      }
-      if (other.guildAdmin_ != null) {
-        if (guildAdmin_ == null) {
-          GuildAdmin = new global::SkillBridge.Message.GuildAdminRequest();
-        }
-        GuildAdmin.MergeFrom(other.GuildAdmin);
-      }
-      if (other.chat_ != null) {
-        if (chat_ == null) {
-          Chat = new global::SkillBridge.Message.ChatRequest();
-        }
-        Chat.MergeFrom(other.Chat);
-      }
-      if (other.skillCast_ != null) {
-        if (skillCast_ == null) {
-          SkillCast = new global::SkillBridge.Message.SkillCastRequest();
-        }
-        SkillCast.MergeFrom(other.SkillCast);
-      }
-      if (other.arenaChallengeReq_ != null) {
-        if (arenaChallengeReq_ == null) {
-          ArenaChallengeReq = new global::SkillBridge.Message.ArenaChallengeRequest();
-        }
-        ArenaChallengeReq.MergeFrom(other.ArenaChallengeReq);
-      }
-      if (other.arenaChallengeRes_ != null) {
-        if (arenaChallengeRes_ == null) {
-          ArenaChallengeRes = new global::SkillBridge.Message.ArenaChallengeResponse();
-        }
-        ArenaChallengeRes.MergeFrom(other.ArenaChallengeRes);
-      }
-      if (other.arenaReadyReq_ != null) {
-        if (arenaReadyReq_ == null) {
-          ArenaReadyReq = new global::SkillBridge.Message.ArenaReadyRequest();
-        }
-        ArenaReadyReq.MergeFrom(other.ArenaReadyReq);
-      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1628,241 +1717,309 @@ namespace SkillBridge.Message {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (userRegister_ == null) {
-              UserRegister = new global::SkillBridge.Message.UserRegisterRequest();
+            global::SkillBridge.Message.UserRegisterRequest subBuilder = new global::SkillBridge.Message.UserRegisterRequest();
+            if (payloadCase_ == PayloadOneofCase.UserRegister) {
+              subBuilder.MergeFrom(UserRegister);
             }
-            input.ReadMessage(UserRegister);
+            input.ReadMessage(subBuilder);
+            UserRegister = subBuilder;
             break;
           }
           case 18: {
-            if (userLogin_ == null) {
-              UserLogin = new global::SkillBridge.Message.UserLoginRequest();
+            global::SkillBridge.Message.UserLoginRequest subBuilder = new global::SkillBridge.Message.UserLoginRequest();
+            if (payloadCase_ == PayloadOneofCase.UserLogin) {
+              subBuilder.MergeFrom(UserLogin);
             }
-            input.ReadMessage(UserLogin);
+            input.ReadMessage(subBuilder);
+            UserLogin = subBuilder;
             break;
           }
           case 26: {
-            if (createChar_ == null) {
-              CreateChar = new global::SkillBridge.Message.UserCreateCharacterRequest();
+            global::SkillBridge.Message.UserCreateCharacterRequest subBuilder = new global::SkillBridge.Message.UserCreateCharacterRequest();
+            if (payloadCase_ == PayloadOneofCase.CreateChar) {
+              subBuilder.MergeFrom(CreateChar);
             }
-            input.ReadMessage(CreateChar);
+            input.ReadMessage(subBuilder);
+            CreateChar = subBuilder;
             break;
           }
           case 34: {
-            if (gameEnter_ == null) {
-              GameEnter = new global::SkillBridge.Message.UserGameEnterRequest();
+            global::SkillBridge.Message.UserGameEnterRequest subBuilder = new global::SkillBridge.Message.UserGameEnterRequest();
+            if (payloadCase_ == PayloadOneofCase.GameEnter) {
+              subBuilder.MergeFrom(GameEnter);
             }
-            input.ReadMessage(GameEnter);
+            input.ReadMessage(subBuilder);
+            GameEnter = subBuilder;
             break;
           }
           case 42: {
-            if (gameLeave_ == null) {
-              GameLeave = new global::SkillBridge.Message.UserGameLeaveRequest();
+            global::SkillBridge.Message.UserGameLeaveRequest subBuilder = new global::SkillBridge.Message.UserGameLeaveRequest();
+            if (payloadCase_ == PayloadOneofCase.GameLeave) {
+              subBuilder.MergeFrom(GameLeave);
             }
-            input.ReadMessage(GameLeave);
+            input.ReadMessage(subBuilder);
+            GameLeave = subBuilder;
             break;
           }
           case 50: {
-            if (mapCharacterEnter_ == null) {
-              MapCharacterEnter = new global::SkillBridge.Message.MapCharacterEnterRequest();
+            global::SkillBridge.Message.MapCharacterEnterRequest subBuilder = new global::SkillBridge.Message.MapCharacterEnterRequest();
+            if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) {
+              subBuilder.MergeFrom(MapCharacterEnter);
             }
-            input.ReadMessage(MapCharacterEnter);
+            input.ReadMessage(subBuilder);
+            MapCharacterEnter = subBuilder;
             break;
           }
           case 66: {
-            if (mapEntitySync_ == null) {
-              MapEntitySync = new global::SkillBridge.Message.MapEntitySyncRequest();
+            global::SkillBridge.Message.MapEntitySyncRequest subBuilder = new global::SkillBridge.Message.MapEntitySyncRequest();
+            if (payloadCase_ == PayloadOneofCase.MapEntitySync) {
+              subBuilder.MergeFrom(MapEntitySync);
             }
-            input.ReadMessage(MapEntitySync);
+            input.ReadMessage(subBuilder);
+            MapEntitySync = subBuilder;
             break;
           }
           case 74: {
-            if (mapTeleport_ == null) {
-              MapTeleport = new global::SkillBridge.Message.MapTeleportRequest();
+            global::SkillBridge.Message.MapTeleportRequest subBuilder = new global::SkillBridge.Message.MapTeleportRequest();
+            if (payloadCase_ == PayloadOneofCase.MapTeleport) {
+              subBuilder.MergeFrom(MapTeleport);
             }
-            input.ReadMessage(MapTeleport);
+            input.ReadMessage(subBuilder);
+            MapTeleport = subBuilder;
             break;
           }
           case 82: {
-            if (itemBuy_ == null) {
-              ItemBuy = new global::SkillBridge.Message.ItemBuyRequest();
+            global::SkillBridge.Message.ItemBuyRequest subBuilder = new global::SkillBridge.Message.ItemBuyRequest();
+            if (payloadCase_ == PayloadOneofCase.ItemBuy) {
+              subBuilder.MergeFrom(ItemBuy);
             }
-            input.ReadMessage(ItemBuy);
+            input.ReadMessage(subBuilder);
+            ItemBuy = subBuilder;
             break;
           }
           case 90: {
-            if (itemEquip_ == null) {
-              ItemEquip = new global::SkillBridge.Message.ItemEquipRequest();
+            global::SkillBridge.Message.ItemEquipRequest subBuilder = new global::SkillBridge.Message.ItemEquipRequest();
+            if (payloadCase_ == PayloadOneofCase.ItemEquip) {
+              subBuilder.MergeFrom(ItemEquip);
             }
-            input.ReadMessage(ItemEquip);
+            input.ReadMessage(subBuilder);
+            ItemEquip = subBuilder;
             break;
           }
           case 98: {
-            if (questList_ == null) {
-              QuestList = new global::SkillBridge.Message.QuestListRequest();
+            global::SkillBridge.Message.QuestListRequest subBuilder = new global::SkillBridge.Message.QuestListRequest();
+            if (payloadCase_ == PayloadOneofCase.QuestList) {
+              subBuilder.MergeFrom(QuestList);
             }
-            input.ReadMessage(QuestList);
+            input.ReadMessage(subBuilder);
+            QuestList = subBuilder;
             break;
           }
           case 106: {
-            if (questAccept_ == null) {
-              QuestAccept = new global::SkillBridge.Message.QuestAcceptRequest();
+            global::SkillBridge.Message.QuestAcceptRequest subBuilder = new global::SkillBridge.Message.QuestAcceptRequest();
+            if (payloadCase_ == PayloadOneofCase.QuestAccept) {
+              subBuilder.MergeFrom(QuestAccept);
             }
-            input.ReadMessage(QuestAccept);
+            input.ReadMessage(subBuilder);
+            QuestAccept = subBuilder;
             break;
           }
           case 114: {
-            if (bagSave_ == null) {
-              BagSave = new global::SkillBridge.Message.BagSaveRequest();
+            global::SkillBridge.Message.BagSaveRequest subBuilder = new global::SkillBridge.Message.BagSaveRequest();
+            if (payloadCase_ == PayloadOneofCase.BagSave) {
+              subBuilder.MergeFrom(BagSave);
             }
-            input.ReadMessage(BagSave);
+            input.ReadMessage(subBuilder);
+            BagSave = subBuilder;
             break;
           }
           case 122: {
-            if (questSubmit_ == null) {
-              QuestSubmit = new global::SkillBridge.Message.QuestSubmitRequest();
+            global::SkillBridge.Message.QuestSubmitRequest subBuilder = new global::SkillBridge.Message.QuestSubmitRequest();
+            if (payloadCase_ == PayloadOneofCase.QuestSubmit) {
+              subBuilder.MergeFrom(QuestSubmit);
             }
-            input.ReadMessage(QuestSubmit);
+            input.ReadMessage(subBuilder);
+            QuestSubmit = subBuilder;
             break;
           }
           case 130: {
-            if (friendAddReq_ == null) {
-              FriendAddReq = new global::SkillBridge.Message.FriendAddRequest();
+            global::SkillBridge.Message.FriendAddRequest subBuilder = new global::SkillBridge.Message.FriendAddRequest();
+            if (payloadCase_ == PayloadOneofCase.FriendAddReq) {
+              subBuilder.MergeFrom(FriendAddReq);
             }
-            input.ReadMessage(FriendAddReq);
+            input.ReadMessage(subBuilder);
+            FriendAddReq = subBuilder;
             break;
           }
           case 138: {
-            if (friendAddRes_ == null) {
-              FriendAddRes = new global::SkillBridge.Message.FriendAddResponse();
+            global::SkillBridge.Message.FriendAddResponse subBuilder = new global::SkillBridge.Message.FriendAddResponse();
+            if (payloadCase_ == PayloadOneofCase.FriendAddRes) {
+              subBuilder.MergeFrom(FriendAddRes);
             }
-            input.ReadMessage(FriendAddRes);
+            input.ReadMessage(subBuilder);
+            FriendAddRes = subBuilder;
             break;
           }
           case 146: {
-            if (friendList_ == null) {
-              FriendList = new global::SkillBridge.Message.FriendListRequest();
+            global::SkillBridge.Message.FriendListRequest subBuilder = new global::SkillBridge.Message.FriendListRequest();
+            if (payloadCase_ == PayloadOneofCase.FriendList) {
+              subBuilder.MergeFrom(FriendList);
             }
-            input.ReadMessage(FriendList);
+            input.ReadMessage(subBuilder);
+            FriendList = subBuilder;
             break;
           }
           case 154: {
-            if (friendRemove_ == null) {
-              FriendRemove = new global::SkillBridge.Message.FriendRemoveRequest();
+            global::SkillBridge.Message.FriendRemoveRequest subBuilder = new global::SkillBridge.Message.FriendRemoveRequest();
+            if (payloadCase_ == PayloadOneofCase.FriendRemove) {
+              subBuilder.MergeFrom(FriendRemove);
             }
-            input.ReadMessage(FriendRemove);
+            input.ReadMessage(subBuilder);
+            FriendRemove = subBuilder;
             break;
           }
           case 162: {
-            if (teamInviteReq_ == null) {
-              TeamInviteReq = new global::SkillBridge.Message.TeamInviteRequest();
+            global::SkillBridge.Message.TeamInviteRequest subBuilder = new global::SkillBridge.Message.TeamInviteRequest();
+            if (payloadCase_ == PayloadOneofCase.TeamInviteReq) {
+              subBuilder.MergeFrom(TeamInviteReq);
             }
-            input.ReadMessage(TeamInviteReq);
+            input.ReadMessage(subBuilder);
+            TeamInviteReq = subBuilder;
             break;
           }
           case 170: {
-            if (teamInviteRes_ == null) {
-              TeamInviteRes = new global::SkillBridge.Message.TeamInviteResponse();
+            global::SkillBridge.Message.TeamInviteResponse subBuilder = new global::SkillBridge.Message.TeamInviteResponse();
+            if (payloadCase_ == PayloadOneofCase.TeamInviteRes) {
+              subBuilder.MergeFrom(TeamInviteRes);
             }
-            input.ReadMessage(TeamInviteRes);
+            input.ReadMessage(subBuilder);
+            TeamInviteRes = subBuilder;
             break;
           }
           case 178: {
-            if (teamInfo_ == null) {
-              TeamInfo = new global::SkillBridge.Message.TeamInfoRequest();
+            global::SkillBridge.Message.TeamInfoRequest subBuilder = new global::SkillBridge.Message.TeamInfoRequest();
+            if (payloadCase_ == PayloadOneofCase.TeamInfo) {
+              subBuilder.MergeFrom(TeamInfo);
             }
-            input.ReadMessage(TeamInfo);
+            input.ReadMessage(subBuilder);
+            TeamInfo = subBuilder;
             break;
           }
           case 186: {
-            if (teamLeave_ == null) {
-              TeamLeave = new global::SkillBridge.Message.TeamLeaveRequest();
+            global::SkillBridge.Message.TeamLeaveRequest subBuilder = new global::SkillBridge.Message.TeamLeaveRequest();
+            if (payloadCase_ == PayloadOneofCase.TeamLeave) {
+              subBuilder.MergeFrom(TeamLeave);
             }
-            input.ReadMessage(TeamLeave);
+            input.ReadMessage(subBuilder);
+            TeamLeave = subBuilder;
             break;
           }
           case 194: {
-            if (guildCreate_ == null) {
-              GuildCreate = new global::SkillBridge.Message.GuildCreateRequest();
+            global::SkillBridge.Message.GuildCreateRequest subBuilder = new global::SkillBridge.Message.GuildCreateRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildCreate) {
+              subBuilder.MergeFrom(GuildCreate);
             }
-            input.ReadMessage(GuildCreate);
+            input.ReadMessage(subBuilder);
+            GuildCreate = subBuilder;
             break;
           }
           case 202: {
-            if (guildJoinReq_ == null) {
-              GuildJoinReq = new global::SkillBridge.Message.GuildJoinRequest();
+            global::SkillBridge.Message.GuildJoinRequest subBuilder = new global::SkillBridge.Message.GuildJoinRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildJoinReq) {
+              subBuilder.MergeFrom(GuildJoinReq);
             }
-            input.ReadMessage(GuildJoinReq);
+            input.ReadMessage(subBuilder);
+            GuildJoinReq = subBuilder;
             break;
           }
           case 210: {
-            if (guildJoinRes_ == null) {
-              GuildJoinRes = new global::SkillBridge.Message.GuildJoinResponse();
+            global::SkillBridge.Message.GuildJoinResponse subBuilder = new global::SkillBridge.Message.GuildJoinResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildJoinRes) {
+              subBuilder.MergeFrom(GuildJoinRes);
             }
-            input.ReadMessage(GuildJoinRes);
+            input.ReadMessage(subBuilder);
+            GuildJoinRes = subBuilder;
             break;
           }
           case 218: {
-            if (guild_ == null) {
-              Guild = new global::SkillBridge.Message.GuildRequest();
+            global::SkillBridge.Message.GuildRequest subBuilder = new global::SkillBridge.Message.GuildRequest();
+            if (payloadCase_ == PayloadOneofCase.Guild) {
+              subBuilder.MergeFrom(Guild);
             }
-            input.ReadMessage(Guild);
+            input.ReadMessage(subBuilder);
+            Guild = subBuilder;
             break;
           }
           case 226: {
-            if (guildLeave_ == null) {
-              GuildLeave = new global::SkillBridge.Message.GuildLeaveRequest();
+            global::SkillBridge.Message.GuildLeaveRequest subBuilder = new global::SkillBridge.Message.GuildLeaveRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildLeave) {
+              subBuilder.MergeFrom(GuildLeave);
             }
-            input.ReadMessage(GuildLeave);
+            input.ReadMessage(subBuilder);
+            GuildLeave = subBuilder;
             break;
           }
           case 234: {
-            if (guildList_ == null) {
-              GuildList = new global::SkillBridge.Message.GuildListRequest();
+            global::SkillBridge.Message.GuildListRequest subBuilder = new global::SkillBridge.Message.GuildListRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildList) {
+              subBuilder.MergeFrom(GuildList);
             }
-            input.ReadMessage(GuildList);
+            input.ReadMessage(subBuilder);
+            GuildList = subBuilder;
             break;
           }
           case 242: {
-            if (guildAdmin_ == null) {
-              GuildAdmin = new global::SkillBridge.Message.GuildAdminRequest();
+            global::SkillBridge.Message.GuildAdminRequest subBuilder = new global::SkillBridge.Message.GuildAdminRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildAdmin) {
+              subBuilder.MergeFrom(GuildAdmin);
             }
-            input.ReadMessage(GuildAdmin);
+            input.ReadMessage(subBuilder);
+            GuildAdmin = subBuilder;
             break;
           }
           case 250: {
-            if (chat_ == null) {
-              Chat = new global::SkillBridge.Message.ChatRequest();
+            global::SkillBridge.Message.ChatRequest subBuilder = new global::SkillBridge.Message.ChatRequest();
+            if (payloadCase_ == PayloadOneofCase.Chat) {
+              subBuilder.MergeFrom(Chat);
             }
-            input.ReadMessage(Chat);
+            input.ReadMessage(subBuilder);
+            Chat = subBuilder;
             break;
           }
           case 402: {
-            if (skillCast_ == null) {
-              SkillCast = new global::SkillBridge.Message.SkillCastRequest();
+            global::SkillBridge.Message.SkillCastRequest subBuilder = new global::SkillBridge.Message.SkillCastRequest();
+            if (payloadCase_ == PayloadOneofCase.SkillCast) {
+              subBuilder.MergeFrom(SkillCast);
             }
-            input.ReadMessage(SkillCast);
+            input.ReadMessage(subBuilder);
+            SkillCast = subBuilder;
             break;
           }
           case 482: {
-            if (arenaChallengeReq_ == null) {
-              ArenaChallengeReq = new global::SkillBridge.Message.ArenaChallengeRequest();
+            global::SkillBridge.Message.ArenaChallengeRequest subBuilder = new global::SkillBridge.Message.ArenaChallengeRequest();
+            if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) {
+              subBuilder.MergeFrom(ArenaChallengeReq);
             }
-            input.ReadMessage(ArenaChallengeReq);
+            input.ReadMessage(subBuilder);
+            ArenaChallengeReq = subBuilder;
             break;
           }
           case 490: {
-            if (arenaChallengeRes_ == null) {
-              ArenaChallengeRes = new global::SkillBridge.Message.ArenaChallengeResponse();
+            global::SkillBridge.Message.ArenaChallengeResponse subBuilder = new global::SkillBridge.Message.ArenaChallengeResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) {
+              subBuilder.MergeFrom(ArenaChallengeRes);
             }
-            input.ReadMessage(ArenaChallengeRes);
+            input.ReadMessage(subBuilder);
+            ArenaChallengeRes = subBuilder;
             break;
           }
           case 498: {
-            if (arenaReadyReq_ == null) {
-              ArenaReadyReq = new global::SkillBridge.Message.ArenaReadyRequest();
+            global::SkillBridge.Message.ArenaReadyRequest subBuilder = new global::SkillBridge.Message.ArenaReadyRequest();
+            if (payloadCase_ == PayloadOneofCase.ArenaReadyReq) {
+              subBuilder.MergeFrom(ArenaReadyReq);
             }
-            input.ReadMessage(ArenaReadyReq);
+            input.ReadMessage(subBuilder);
+            ArenaReadyReq = subBuilder;
             break;
           }
         }
@@ -1885,241 +2042,309 @@ namespace SkillBridge.Message {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (userRegister_ == null) {
-              UserRegister = new global::SkillBridge.Message.UserRegisterRequest();
+            global::SkillBridge.Message.UserRegisterRequest subBuilder = new global::SkillBridge.Message.UserRegisterRequest();
+            if (payloadCase_ == PayloadOneofCase.UserRegister) {
+              subBuilder.MergeFrom(UserRegister);
             }
-            input.ReadMessage(UserRegister);
+            input.ReadMessage(subBuilder);
+            UserRegister = subBuilder;
             break;
           }
           case 18: {
-            if (userLogin_ == null) {
-              UserLogin = new global::SkillBridge.Message.UserLoginRequest();
+            global::SkillBridge.Message.UserLoginRequest subBuilder = new global::SkillBridge.Message.UserLoginRequest();
+            if (payloadCase_ == PayloadOneofCase.UserLogin) {
+              subBuilder.MergeFrom(UserLogin);
             }
-            input.ReadMessage(UserLogin);
+            input.ReadMessage(subBuilder);
+            UserLogin = subBuilder;
             break;
           }
           case 26: {
-            if (createChar_ == null) {
-              CreateChar = new global::SkillBridge.Message.UserCreateCharacterRequest();
+            global::SkillBridge.Message.UserCreateCharacterRequest subBuilder = new global::SkillBridge.Message.UserCreateCharacterRequest();
+            if (payloadCase_ == PayloadOneofCase.CreateChar) {
+              subBuilder.MergeFrom(CreateChar);
             }
-            input.ReadMessage(CreateChar);
+            input.ReadMessage(subBuilder);
+            CreateChar = subBuilder;
             break;
           }
           case 34: {
-            if (gameEnter_ == null) {
-              GameEnter = new global::SkillBridge.Message.UserGameEnterRequest();
+            global::SkillBridge.Message.UserGameEnterRequest subBuilder = new global::SkillBridge.Message.UserGameEnterRequest();
+            if (payloadCase_ == PayloadOneofCase.GameEnter) {
+              subBuilder.MergeFrom(GameEnter);
             }
-            input.ReadMessage(GameEnter);
+            input.ReadMessage(subBuilder);
+            GameEnter = subBuilder;
             break;
           }
           case 42: {
-            if (gameLeave_ == null) {
-              GameLeave = new global::SkillBridge.Message.UserGameLeaveRequest();
+            global::SkillBridge.Message.UserGameLeaveRequest subBuilder = new global::SkillBridge.Message.UserGameLeaveRequest();
+            if (payloadCase_ == PayloadOneofCase.GameLeave) {
+              subBuilder.MergeFrom(GameLeave);
             }
-            input.ReadMessage(GameLeave);
+            input.ReadMessage(subBuilder);
+            GameLeave = subBuilder;
             break;
           }
           case 50: {
-            if (mapCharacterEnter_ == null) {
-              MapCharacterEnter = new global::SkillBridge.Message.MapCharacterEnterRequest();
+            global::SkillBridge.Message.MapCharacterEnterRequest subBuilder = new global::SkillBridge.Message.MapCharacterEnterRequest();
+            if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) {
+              subBuilder.MergeFrom(MapCharacterEnter);
             }
-            input.ReadMessage(MapCharacterEnter);
+            input.ReadMessage(subBuilder);
+            MapCharacterEnter = subBuilder;
             break;
           }
           case 66: {
-            if (mapEntitySync_ == null) {
-              MapEntitySync = new global::SkillBridge.Message.MapEntitySyncRequest();
+            global::SkillBridge.Message.MapEntitySyncRequest subBuilder = new global::SkillBridge.Message.MapEntitySyncRequest();
+            if (payloadCase_ == PayloadOneofCase.MapEntitySync) {
+              subBuilder.MergeFrom(MapEntitySync);
             }
-            input.ReadMessage(MapEntitySync);
+            input.ReadMessage(subBuilder);
+            MapEntitySync = subBuilder;
             break;
           }
           case 74: {
-            if (mapTeleport_ == null) {
-              MapTeleport = new global::SkillBridge.Message.MapTeleportRequest();
+            global::SkillBridge.Message.MapTeleportRequest subBuilder = new global::SkillBridge.Message.MapTeleportRequest();
+            if (payloadCase_ == PayloadOneofCase.MapTeleport) {
+              subBuilder.MergeFrom(MapTeleport);
             }
-            input.ReadMessage(MapTeleport);
+            input.ReadMessage(subBuilder);
+            MapTeleport = subBuilder;
             break;
           }
           case 82: {
-            if (itemBuy_ == null) {
-              ItemBuy = new global::SkillBridge.Message.ItemBuyRequest();
+            global::SkillBridge.Message.ItemBuyRequest subBuilder = new global::SkillBridge.Message.ItemBuyRequest();
+            if (payloadCase_ == PayloadOneofCase.ItemBuy) {
+              subBuilder.MergeFrom(ItemBuy);
             }
-            input.ReadMessage(ItemBuy);
+            input.ReadMessage(subBuilder);
+            ItemBuy = subBuilder;
             break;
           }
           case 90: {
-            if (itemEquip_ == null) {
-              ItemEquip = new global::SkillBridge.Message.ItemEquipRequest();
+            global::SkillBridge.Message.ItemEquipRequest subBuilder = new global::SkillBridge.Message.ItemEquipRequest();
+            if (payloadCase_ == PayloadOneofCase.ItemEquip) {
+              subBuilder.MergeFrom(ItemEquip);
             }
-            input.ReadMessage(ItemEquip);
+            input.ReadMessage(subBuilder);
+            ItemEquip = subBuilder;
             break;
           }
           case 98: {
-            if (questList_ == null) {
-              QuestList = new global::SkillBridge.Message.QuestListRequest();
+            global::SkillBridge.Message.QuestListRequest subBuilder = new global::SkillBridge.Message.QuestListRequest();
+            if (payloadCase_ == PayloadOneofCase.QuestList) {
+              subBuilder.MergeFrom(QuestList);
             }
-            input.ReadMessage(QuestList);
+            input.ReadMessage(subBuilder);
+            QuestList = subBuilder;
             break;
           }
           case 106: {
-            if (questAccept_ == null) {
-              QuestAccept = new global::SkillBridge.Message.QuestAcceptRequest();
+            global::SkillBridge.Message.QuestAcceptRequest subBuilder = new global::SkillBridge.Message.QuestAcceptRequest();
+            if (payloadCase_ == PayloadOneofCase.QuestAccept) {
+              subBuilder.MergeFrom(QuestAccept);
             }
-            input.ReadMessage(QuestAccept);
+            input.ReadMessage(subBuilder);
+            QuestAccept = subBuilder;
             break;
           }
           case 114: {
-            if (bagSave_ == null) {
-              BagSave = new global::SkillBridge.Message.BagSaveRequest();
+            global::SkillBridge.Message.BagSaveRequest subBuilder = new global::SkillBridge.Message.BagSaveRequest();
+            if (payloadCase_ == PayloadOneofCase.BagSave) {
+              subBuilder.MergeFrom(BagSave);
             }
-            input.ReadMessage(BagSave);
+            input.ReadMessage(subBuilder);
+            BagSave = subBuilder;
             break;
           }
           case 122: {
-            if (questSubmit_ == null) {
-              QuestSubmit = new global::SkillBridge.Message.QuestSubmitRequest();
+            global::SkillBridge.Message.QuestSubmitRequest subBuilder = new global::SkillBridge.Message.QuestSubmitRequest();
+            if (payloadCase_ == PayloadOneofCase.QuestSubmit) {
+              subBuilder.MergeFrom(QuestSubmit);
             }
-            input.ReadMessage(QuestSubmit);
+            input.ReadMessage(subBuilder);
+            QuestSubmit = subBuilder;
             break;
           }
           case 130: {
-            if (friendAddReq_ == null) {
-              FriendAddReq = new global::SkillBridge.Message.FriendAddRequest();
+            global::SkillBridge.Message.FriendAddRequest subBuilder = new global::SkillBridge.Message.FriendAddRequest();
+            if (payloadCase_ == PayloadOneofCase.FriendAddReq) {
+              subBuilder.MergeFrom(FriendAddReq);
             }
-            input.ReadMessage(FriendAddReq);
+            input.ReadMessage(subBuilder);
+            FriendAddReq = subBuilder;
             break;
           }
           case 138: {
-            if (friendAddRes_ == null) {
-              FriendAddRes = new global::SkillBridge.Message.FriendAddResponse();
+            global::SkillBridge.Message.FriendAddResponse subBuilder = new global::SkillBridge.Message.FriendAddResponse();
+            if (payloadCase_ == PayloadOneofCase.FriendAddRes) {
+              subBuilder.MergeFrom(FriendAddRes);
             }
-            input.ReadMessage(FriendAddRes);
+            input.ReadMessage(subBuilder);
+            FriendAddRes = subBuilder;
             break;
           }
           case 146: {
-            if (friendList_ == null) {
-              FriendList = new global::SkillBridge.Message.FriendListRequest();
+            global::SkillBridge.Message.FriendListRequest subBuilder = new global::SkillBridge.Message.FriendListRequest();
+            if (payloadCase_ == PayloadOneofCase.FriendList) {
+              subBuilder.MergeFrom(FriendList);
             }
-            input.ReadMessage(FriendList);
+            input.ReadMessage(subBuilder);
+            FriendList = subBuilder;
             break;
           }
           case 154: {
-            if (friendRemove_ == null) {
-              FriendRemove = new global::SkillBridge.Message.FriendRemoveRequest();
+            global::SkillBridge.Message.FriendRemoveRequest subBuilder = new global::SkillBridge.Message.FriendRemoveRequest();
+            if (payloadCase_ == PayloadOneofCase.FriendRemove) {
+              subBuilder.MergeFrom(FriendRemove);
             }
-            input.ReadMessage(FriendRemove);
+            input.ReadMessage(subBuilder);
+            FriendRemove = subBuilder;
             break;
           }
           case 162: {
-            if (teamInviteReq_ == null) {
-              TeamInviteReq = new global::SkillBridge.Message.TeamInviteRequest();
+            global::SkillBridge.Message.TeamInviteRequest subBuilder = new global::SkillBridge.Message.TeamInviteRequest();
+            if (payloadCase_ == PayloadOneofCase.TeamInviteReq) {
+              subBuilder.MergeFrom(TeamInviteReq);
             }
-            input.ReadMessage(TeamInviteReq);
+            input.ReadMessage(subBuilder);
+            TeamInviteReq = subBuilder;
             break;
           }
           case 170: {
-            if (teamInviteRes_ == null) {
-              TeamInviteRes = new global::SkillBridge.Message.TeamInviteResponse();
+            global::SkillBridge.Message.TeamInviteResponse subBuilder = new global::SkillBridge.Message.TeamInviteResponse();
+            if (payloadCase_ == PayloadOneofCase.TeamInviteRes) {
+              subBuilder.MergeFrom(TeamInviteRes);
             }
-            input.ReadMessage(TeamInviteRes);
+            input.ReadMessage(subBuilder);
+            TeamInviteRes = subBuilder;
             break;
           }
           case 178: {
-            if (teamInfo_ == null) {
-              TeamInfo = new global::SkillBridge.Message.TeamInfoRequest();
+            global::SkillBridge.Message.TeamInfoRequest subBuilder = new global::SkillBridge.Message.TeamInfoRequest();
+            if (payloadCase_ == PayloadOneofCase.TeamInfo) {
+              subBuilder.MergeFrom(TeamInfo);
             }
-            input.ReadMessage(TeamInfo);
+            input.ReadMessage(subBuilder);
+            TeamInfo = subBuilder;
             break;
           }
           case 186: {
-            if (teamLeave_ == null) {
-              TeamLeave = new global::SkillBridge.Message.TeamLeaveRequest();
+            global::SkillBridge.Message.TeamLeaveRequest subBuilder = new global::SkillBridge.Message.TeamLeaveRequest();
+            if (payloadCase_ == PayloadOneofCase.TeamLeave) {
+              subBuilder.MergeFrom(TeamLeave);
             }
-            input.ReadMessage(TeamLeave);
+            input.ReadMessage(subBuilder);
+            TeamLeave = subBuilder;
             break;
           }
           case 194: {
-            if (guildCreate_ == null) {
-              GuildCreate = new global::SkillBridge.Message.GuildCreateRequest();
+            global::SkillBridge.Message.GuildCreateRequest subBuilder = new global::SkillBridge.Message.GuildCreateRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildCreate) {
+              subBuilder.MergeFrom(GuildCreate);
             }
-            input.ReadMessage(GuildCreate);
+            input.ReadMessage(subBuilder);
+            GuildCreate = subBuilder;
             break;
           }
           case 202: {
-            if (guildJoinReq_ == null) {
-              GuildJoinReq = new global::SkillBridge.Message.GuildJoinRequest();
+            global::SkillBridge.Message.GuildJoinRequest subBuilder = new global::SkillBridge.Message.GuildJoinRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildJoinReq) {
+              subBuilder.MergeFrom(GuildJoinReq);
             }
-            input.ReadMessage(GuildJoinReq);
+            input.ReadMessage(subBuilder);
+            GuildJoinReq = subBuilder;
             break;
           }
           case 210: {
-            if (guildJoinRes_ == null) {
-              GuildJoinRes = new global::SkillBridge.Message.GuildJoinResponse();
+            global::SkillBridge.Message.GuildJoinResponse subBuilder = new global::SkillBridge.Message.GuildJoinResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildJoinRes) {
+              subBuilder.MergeFrom(GuildJoinRes);
             }
-            input.ReadMessage(GuildJoinRes);
+            input.ReadMessage(subBuilder);
+            GuildJoinRes = subBuilder;
             break;
           }
           case 218: {
-            if (guild_ == null) {
-              Guild = new global::SkillBridge.Message.GuildRequest();
+            global::SkillBridge.Message.GuildRequest subBuilder = new global::SkillBridge.Message.GuildRequest();
+            if (payloadCase_ == PayloadOneofCase.Guild) {
+              subBuilder.MergeFrom(Guild);
             }
-            input.ReadMessage(Guild);
+            input.ReadMessage(subBuilder);
+            Guild = subBuilder;
             break;
           }
           case 226: {
-            if (guildLeave_ == null) {
-              GuildLeave = new global::SkillBridge.Message.GuildLeaveRequest();
+            global::SkillBridge.Message.GuildLeaveRequest subBuilder = new global::SkillBridge.Message.GuildLeaveRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildLeave) {
+              subBuilder.MergeFrom(GuildLeave);
             }
-            input.ReadMessage(GuildLeave);
+            input.ReadMessage(subBuilder);
+            GuildLeave = subBuilder;
             break;
           }
           case 234: {
-            if (guildList_ == null) {
-              GuildList = new global::SkillBridge.Message.GuildListRequest();
+            global::SkillBridge.Message.GuildListRequest subBuilder = new global::SkillBridge.Message.GuildListRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildList) {
+              subBuilder.MergeFrom(GuildList);
             }
-            input.ReadMessage(GuildList);
+            input.ReadMessage(subBuilder);
+            GuildList = subBuilder;
             break;
           }
           case 242: {
-            if (guildAdmin_ == null) {
-              GuildAdmin = new global::SkillBridge.Message.GuildAdminRequest();
+            global::SkillBridge.Message.GuildAdminRequest subBuilder = new global::SkillBridge.Message.GuildAdminRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildAdmin) {
+              subBuilder.MergeFrom(GuildAdmin);
             }
-            input.ReadMessage(GuildAdmin);
+            input.ReadMessage(subBuilder);
+            GuildAdmin = subBuilder;
             break;
           }
           case 250: {
-            if (chat_ == null) {
-              Chat = new global::SkillBridge.Message.ChatRequest();
+            global::SkillBridge.Message.ChatRequest subBuilder = new global::SkillBridge.Message.ChatRequest();
+            if (payloadCase_ == PayloadOneofCase.Chat) {
+              subBuilder.MergeFrom(Chat);
             }
-            input.ReadMessage(Chat);
+            input.ReadMessage(subBuilder);
+            Chat = subBuilder;
             break;
           }
           case 402: {
-            if (skillCast_ == null) {
-              SkillCast = new global::SkillBridge.Message.SkillCastRequest();
+            global::SkillBridge.Message.SkillCastRequest subBuilder = new global::SkillBridge.Message.SkillCastRequest();
+            if (payloadCase_ == PayloadOneofCase.SkillCast) {
+              subBuilder.MergeFrom(SkillCast);
             }
-            input.ReadMessage(SkillCast);
+            input.ReadMessage(subBuilder);
+            SkillCast = subBuilder;
             break;
           }
           case 482: {
-            if (arenaChallengeReq_ == null) {
-              ArenaChallengeReq = new global::SkillBridge.Message.ArenaChallengeRequest();
+            global::SkillBridge.Message.ArenaChallengeRequest subBuilder = new global::SkillBridge.Message.ArenaChallengeRequest();
+            if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) {
+              subBuilder.MergeFrom(ArenaChallengeReq);
             }
-            input.ReadMessage(ArenaChallengeReq);
+            input.ReadMessage(subBuilder);
+            ArenaChallengeReq = subBuilder;
             break;
           }
           case 490: {
-            if (arenaChallengeRes_ == null) {
-              ArenaChallengeRes = new global::SkillBridge.Message.ArenaChallengeResponse();
+            global::SkillBridge.Message.ArenaChallengeResponse subBuilder = new global::SkillBridge.Message.ArenaChallengeResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) {
+              subBuilder.MergeFrom(ArenaChallengeRes);
             }
-            input.ReadMessage(ArenaChallengeRes);
+            input.ReadMessage(subBuilder);
+            ArenaChallengeRes = subBuilder;
             break;
           }
           case 498: {
-            if (arenaReadyReq_ == null) {
-              ArenaReadyReq = new global::SkillBridge.Message.ArenaReadyRequest();
+            global::SkillBridge.Message.ArenaReadyRequest subBuilder = new global::SkillBridge.Message.ArenaReadyRequest();
+            if (payloadCase_ == PayloadOneofCase.ArenaReadyReq) {
+              subBuilder.MergeFrom(ArenaReadyReq);
             }
-            input.ReadMessage(ArenaReadyReq);
+            input.ReadMessage(subBuilder);
+            ArenaReadyReq = subBuilder;
             break;
           }
         }
@@ -2164,47 +2389,132 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public NetMessageResponse(NetMessageResponse other) : this() {
-      userRegister_ = other.userRegister_ != null ? other.userRegister_.Clone() : null;
-      userLogin_ = other.userLogin_ != null ? other.userLogin_.Clone() : null;
-      createChar_ = other.createChar_ != null ? other.createChar_.Clone() : null;
-      gameEnter_ = other.gameEnter_ != null ? other.gameEnter_.Clone() : null;
-      gameLeave_ = other.gameLeave_ != null ? other.gameLeave_.Clone() : null;
-      mapCharacterEnter_ = other.mapCharacterEnter_ != null ? other.mapCharacterEnter_.Clone() : null;
-      mapCharacterLeave_ = other.mapCharacterLeave_ != null ? other.mapCharacterLeave_.Clone() : null;
-      mapEntitySync_ = other.mapEntitySync_ != null ? other.mapEntitySync_.Clone() : null;
-      itemBuy_ = other.itemBuy_ != null ? other.itemBuy_.Clone() : null;
-      itemEquip_ = other.itemEquip_ != null ? other.itemEquip_.Clone() : null;
-      questList_ = other.questList_ != null ? other.questList_.Clone() : null;
-      questAccept_ = other.questAccept_ != null ? other.questAccept_.Clone() : null;
-      bagSave_ = other.bagSave_ != null ? other.bagSave_.Clone() : null;
-      questSubmit_ = other.questSubmit_ != null ? other.questSubmit_.Clone() : null;
-      friendAddReq_ = other.friendAddReq_ != null ? other.friendAddReq_.Clone() : null;
-      friendAddRes_ = other.friendAddRes_ != null ? other.friendAddRes_.Clone() : null;
-      friendList_ = other.friendList_ != null ? other.friendList_.Clone() : null;
-      friendRemove_ = other.friendRemove_ != null ? other.friendRemove_.Clone() : null;
-      teamInviteReq_ = other.teamInviteReq_ != null ? other.teamInviteReq_.Clone() : null;
-      teamInviteRes_ = other.teamInviteRes_ != null ? other.teamInviteRes_.Clone() : null;
-      teamInfo_ = other.teamInfo_ != null ? other.teamInfo_.Clone() : null;
-      teamLeave_ = other.teamLeave_ != null ? other.teamLeave_.Clone() : null;
-      guildCreate_ = other.guildCreate_ != null ? other.guildCreate_.Clone() : null;
-      guildJoinReq_ = other.guildJoinReq_ != null ? other.guildJoinReq_.Clone() : null;
-      guildJoinRes_ = other.guildJoinRes_ != null ? other.guildJoinRes_.Clone() : null;
-      guild_ = other.guild_ != null ? other.guild_.Clone() : null;
-      guildLeave_ = other.guildLeave_ != null ? other.guildLeave_.Clone() : null;
-      guildList_ = other.guildList_ != null ? other.guildList_.Clone() : null;
-      guildAdmin_ = other.guildAdmin_ != null ? other.guildAdmin_.Clone() : null;
-      chat_ = other.chat_ != null ? other.chat_.Clone() : null;
-      skillCast_ = other.skillCast_ != null ? other.skillCast_.Clone() : null;
-      skillHits_ = other.skillHits_ != null ? other.skillHits_.Clone() : null;
-      buffRes_ = other.buffRes_ != null ? other.buffRes_.Clone() : null;
-      arenaChallengeReq_ = other.arenaChallengeReq_ != null ? other.arenaChallengeReq_.Clone() : null;
-      arenaChallengeRes_ = other.arenaChallengeRes_ != null ? other.arenaChallengeRes_.Clone() : null;
-      arenaBeginRes_ = other.arenaBeginRes_ != null ? other.arenaBeginRes_.Clone() : null;
-      arenaEndRes_ = other.arenaEndRes_ != null ? other.arenaEndRes_.Clone() : null;
-      arenaReadyRes_ = other.arenaReadyRes_ != null ? other.arenaReadyRes_.Clone() : null;
-      arenaRoundStartRes_ = other.arenaRoundStartRes_ != null ? other.arenaRoundStartRes_.Clone() : null;
-      arenaRoundEndRes_ = other.arenaRoundEndRes_ != null ? other.arenaRoundEndRes_.Clone() : null;
-      statusNotify_ = other.statusNotify_ != null ? other.statusNotify_.Clone() : null;
+      switch (other.PayloadCase) {
+        case PayloadOneofCase.UserRegister:
+          UserRegister = other.UserRegister.Clone();
+          break;
+        case PayloadOneofCase.UserLogin:
+          UserLogin = other.UserLogin.Clone();
+          break;
+        case PayloadOneofCase.CreateChar:
+          CreateChar = other.CreateChar.Clone();
+          break;
+        case PayloadOneofCase.GameEnter:
+          GameEnter = other.GameEnter.Clone();
+          break;
+        case PayloadOneofCase.GameLeave:
+          GameLeave = other.GameLeave.Clone();
+          break;
+        case PayloadOneofCase.MapCharacterEnter:
+          MapCharacterEnter = other.MapCharacterEnter.Clone();
+          break;
+        case PayloadOneofCase.MapCharacterLeave:
+          MapCharacterLeave = other.MapCharacterLeave.Clone();
+          break;
+        case PayloadOneofCase.MapEntitySync:
+          MapEntitySync = other.MapEntitySync.Clone();
+          break;
+        case PayloadOneofCase.ItemBuy:
+          ItemBuy = other.ItemBuy.Clone();
+          break;
+        case PayloadOneofCase.ItemEquip:
+          ItemEquip = other.ItemEquip.Clone();
+          break;
+        case PayloadOneofCase.QuestList:
+          QuestList = other.QuestList.Clone();
+          break;
+        case PayloadOneofCase.QuestAccept:
+          QuestAccept = other.QuestAccept.Clone();
+          break;
+        case PayloadOneofCase.BagSave:
+          BagSave = other.BagSave.Clone();
+          break;
+        case PayloadOneofCase.QuestSubmit:
+          QuestSubmit = other.QuestSubmit.Clone();
+          break;
+        case PayloadOneofCase.FriendAddReq:
+          FriendAddReq = other.FriendAddReq.Clone();
+          break;
+        case PayloadOneofCase.FriendAddRes:
+          FriendAddRes = other.FriendAddRes.Clone();
+          break;
+        case PayloadOneofCase.FriendList:
+          FriendList = other.FriendList.Clone();
+          break;
+        case PayloadOneofCase.FriendRemove:
+          FriendRemove = other.FriendRemove.Clone();
+          break;
+        case PayloadOneofCase.TeamInviteReq:
+          TeamInviteReq = other.TeamInviteReq.Clone();
+          break;
+        case PayloadOneofCase.TeamInviteRes:
+          TeamInviteRes = other.TeamInviteRes.Clone();
+          break;
+        case PayloadOneofCase.TeamInfo:
+          TeamInfo = other.TeamInfo.Clone();
+          break;
+        case PayloadOneofCase.TeamLeave:
+          TeamLeave = other.TeamLeave.Clone();
+          break;
+        case PayloadOneofCase.GuildCreate:
+          GuildCreate = other.GuildCreate.Clone();
+          break;
+        case PayloadOneofCase.GuildJoinReq:
+          GuildJoinReq = other.GuildJoinReq.Clone();
+          break;
+        case PayloadOneofCase.GuildJoinRes:
+          GuildJoinRes = other.GuildJoinRes.Clone();
+          break;
+        case PayloadOneofCase.Guild:
+          Guild = other.Guild.Clone();
+          break;
+        case PayloadOneofCase.GuildLeave:
+          GuildLeave = other.GuildLeave.Clone();
+          break;
+        case PayloadOneofCase.GuildList:
+          GuildList = other.GuildList.Clone();
+          break;
+        case PayloadOneofCase.GuildAdmin:
+          GuildAdmin = other.GuildAdmin.Clone();
+          break;
+        case PayloadOneofCase.Chat:
+          Chat = other.Chat.Clone();
+          break;
+        case PayloadOneofCase.SkillCast:
+          SkillCast = other.SkillCast.Clone();
+          break;
+        case PayloadOneofCase.SkillHits:
+          SkillHits = other.SkillHits.Clone();
+          break;
+        case PayloadOneofCase.BuffRes:
+          BuffRes = other.BuffRes.Clone();
+          break;
+        case PayloadOneofCase.ArenaChallengeReq:
+          ArenaChallengeReq = other.ArenaChallengeReq.Clone();
+          break;
+        case PayloadOneofCase.ArenaChallengeRes:
+          ArenaChallengeRes = other.ArenaChallengeRes.Clone();
+          break;
+        case PayloadOneofCase.ArenaBeginRes:
+          ArenaBeginRes = other.ArenaBeginRes.Clone();
+          break;
+        case PayloadOneofCase.ArenaEndRes:
+          ArenaEndRes = other.ArenaEndRes.Clone();
+          break;
+        case PayloadOneofCase.ArenaReadyRes:
+          ArenaReadyRes = other.ArenaReadyRes.Clone();
+          break;
+        case PayloadOneofCase.ArenaRoundStartRes:
+          ArenaRoundStartRes = other.ArenaRoundStartRes.Clone();
+          break;
+        case PayloadOneofCase.ArenaRoundEndRes:
+          ArenaRoundEndRes = other.ArenaRoundEndRes.Clone();
+          break;
+        case PayloadOneofCase.StatusNotify:
+          StatusNotify = other.StatusNotify.Clone();
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2216,494 +2526,554 @@ namespace SkillBridge.Message {
 
     /// <summary>Field number for the "userRegister" field.</summary>
     public const int UserRegisterFieldNumber = 1;
-    private global::SkillBridge.Message.UserRegisterResponse userRegister_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.UserRegisterResponse UserRegister {
-      get { return userRegister_; }
+      get { return payloadCase_ == PayloadOneofCase.UserRegister ? (global::SkillBridge.Message.UserRegisterResponse) payload_ : null; }
       set {
-        userRegister_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.UserRegister;
       }
     }
 
     /// <summary>Field number for the "userLogin" field.</summary>
     public const int UserLoginFieldNumber = 2;
-    private global::SkillBridge.Message.UserLoginResponse userLogin_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.UserLoginResponse UserLogin {
-      get { return userLogin_; }
+      get { return payloadCase_ == PayloadOneofCase.UserLogin ? (global::SkillBridge.Message.UserLoginResponse) payload_ : null; }
       set {
-        userLogin_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.UserLogin;
       }
     }
 
     /// <summary>Field number for the "createChar" field.</summary>
     public const int CreateCharFieldNumber = 3;
-    private global::SkillBridge.Message.UserCreateCharacterResponse createChar_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.UserCreateCharacterResponse CreateChar {
-      get { return createChar_; }
+      get { return payloadCase_ == PayloadOneofCase.CreateChar ? (global::SkillBridge.Message.UserCreateCharacterResponse) payload_ : null; }
       set {
-        createChar_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.CreateChar;
       }
     }
 
     /// <summary>Field number for the "gameEnter" field.</summary>
     public const int GameEnterFieldNumber = 4;
-    private global::SkillBridge.Message.UserGameEnterResponse gameEnter_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.UserGameEnterResponse GameEnter {
-      get { return gameEnter_; }
+      get { return payloadCase_ == PayloadOneofCase.GameEnter ? (global::SkillBridge.Message.UserGameEnterResponse) payload_ : null; }
       set {
-        gameEnter_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GameEnter;
       }
     }
 
     /// <summary>Field number for the "gameLeave" field.</summary>
     public const int GameLeaveFieldNumber = 5;
-    private global::SkillBridge.Message.UserGameLeaveResponse gameLeave_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.UserGameLeaveResponse GameLeave {
-      get { return gameLeave_; }
+      get { return payloadCase_ == PayloadOneofCase.GameLeave ? (global::SkillBridge.Message.UserGameLeaveResponse) payload_ : null; }
       set {
-        gameLeave_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GameLeave;
       }
     }
 
     /// <summary>Field number for the "mapCharacterEnter" field.</summary>
     public const int MapCharacterEnterFieldNumber = 6;
-    private global::SkillBridge.Message.MapCharacterEnterResponse mapCharacterEnter_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.MapCharacterEnterResponse MapCharacterEnter {
-      get { return mapCharacterEnter_; }
+      get { return payloadCase_ == PayloadOneofCase.MapCharacterEnter ? (global::SkillBridge.Message.MapCharacterEnterResponse) payload_ : null; }
       set {
-        mapCharacterEnter_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.MapCharacterEnter;
       }
     }
 
     /// <summary>Field number for the "mapCharacterLeave" field.</summary>
     public const int MapCharacterLeaveFieldNumber = 7;
-    private global::SkillBridge.Message.MapCharacterLeaveResponse mapCharacterLeave_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.MapCharacterLeaveResponse MapCharacterLeave {
-      get { return mapCharacterLeave_; }
+      get { return payloadCase_ == PayloadOneofCase.MapCharacterLeave ? (global::SkillBridge.Message.MapCharacterLeaveResponse) payload_ : null; }
       set {
-        mapCharacterLeave_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.MapCharacterLeave;
       }
     }
 
     /// <summary>Field number for the "mapEntitySync" field.</summary>
     public const int MapEntitySyncFieldNumber = 8;
-    private global::SkillBridge.Message.MapEntitySyncResponse mapEntitySync_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.MapEntitySyncResponse MapEntitySync {
-      get { return mapEntitySync_; }
+      get { return payloadCase_ == PayloadOneofCase.MapEntitySync ? (global::SkillBridge.Message.MapEntitySyncResponse) payload_ : null; }
       set {
-        mapEntitySync_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.MapEntitySync;
       }
     }
 
     /// <summary>Field number for the "itemBuy" field.</summary>
     public const int ItemBuyFieldNumber = 10;
-    private global::SkillBridge.Message.ItemBuyResponse itemBuy_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ItemBuyResponse ItemBuy {
-      get { return itemBuy_; }
+      get { return payloadCase_ == PayloadOneofCase.ItemBuy ? (global::SkillBridge.Message.ItemBuyResponse) payload_ : null; }
       set {
-        itemBuy_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ItemBuy;
       }
     }
 
     /// <summary>Field number for the "itemEquip" field.</summary>
     public const int ItemEquipFieldNumber = 11;
-    private global::SkillBridge.Message.ItemEquipResponse itemEquip_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ItemEquipResponse ItemEquip {
-      get { return itemEquip_; }
+      get { return payloadCase_ == PayloadOneofCase.ItemEquip ? (global::SkillBridge.Message.ItemEquipResponse) payload_ : null; }
       set {
-        itemEquip_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ItemEquip;
       }
     }
 
     /// <summary>Field number for the "questList" field.</summary>
     public const int QuestListFieldNumber = 12;
-    private global::SkillBridge.Message.QuestListResponse questList_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.QuestListResponse QuestList {
-      get { return questList_; }
+      get { return payloadCase_ == PayloadOneofCase.QuestList ? (global::SkillBridge.Message.QuestListResponse) payload_ : null; }
       set {
-        questList_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QuestList;
       }
     }
 
     /// <summary>Field number for the "questAccept" field.</summary>
     public const int QuestAcceptFieldNumber = 13;
-    private global::SkillBridge.Message.QuestAcceptResponse questAccept_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.QuestAcceptResponse QuestAccept {
-      get { return questAccept_; }
+      get { return payloadCase_ == PayloadOneofCase.QuestAccept ? (global::SkillBridge.Message.QuestAcceptResponse) payload_ : null; }
       set {
-        questAccept_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QuestAccept;
       }
     }
 
     /// <summary>Field number for the "bagSave" field.</summary>
     public const int BagSaveFieldNumber = 14;
-    private global::SkillBridge.Message.BagSaveRequest bagSave_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.BagSaveRequest BagSave {
-      get { return bagSave_; }
+      get { return payloadCase_ == PayloadOneofCase.BagSave ? (global::SkillBridge.Message.BagSaveRequest) payload_ : null; }
       set {
-        bagSave_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.BagSave;
       }
     }
 
     /// <summary>Field number for the "questSubmit" field.</summary>
     public const int QuestSubmitFieldNumber = 15;
-    private global::SkillBridge.Message.QuestSubmitResponse questSubmit_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.QuestSubmitResponse QuestSubmit {
-      get { return questSubmit_; }
+      get { return payloadCase_ == PayloadOneofCase.QuestSubmit ? (global::SkillBridge.Message.QuestSubmitResponse) payload_ : null; }
       set {
-        questSubmit_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.QuestSubmit;
       }
     }
 
     /// <summary>Field number for the "friendAddReq" field.</summary>
     public const int FriendAddReqFieldNumber = 16;
-    private global::SkillBridge.Message.FriendAddRequest friendAddReq_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.FriendAddRequest FriendAddReq {
-      get { return friendAddReq_; }
+      get { return payloadCase_ == PayloadOneofCase.FriendAddReq ? (global::SkillBridge.Message.FriendAddRequest) payload_ : null; }
       set {
-        friendAddReq_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.FriendAddReq;
       }
     }
 
     /// <summary>Field number for the "friendAddRes" field.</summary>
     public const int FriendAddResFieldNumber = 17;
-    private global::SkillBridge.Message.FriendAddResponse friendAddRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.FriendAddResponse FriendAddRes {
-      get { return friendAddRes_; }
+      get { return payloadCase_ == PayloadOneofCase.FriendAddRes ? (global::SkillBridge.Message.FriendAddResponse) payload_ : null; }
       set {
-        friendAddRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.FriendAddRes;
       }
     }
 
     /// <summary>Field number for the "friendList" field.</summary>
     public const int FriendListFieldNumber = 18;
-    private global::SkillBridge.Message.FriendListResponse friendList_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.FriendListResponse FriendList {
-      get { return friendList_; }
+      get { return payloadCase_ == PayloadOneofCase.FriendList ? (global::SkillBridge.Message.FriendListResponse) payload_ : null; }
       set {
-        friendList_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.FriendList;
       }
     }
 
     /// <summary>Field number for the "friendRemove" field.</summary>
     public const int FriendRemoveFieldNumber = 19;
-    private global::SkillBridge.Message.FriendRemoveResponse friendRemove_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.FriendRemoveResponse FriendRemove {
-      get { return friendRemove_; }
+      get { return payloadCase_ == PayloadOneofCase.FriendRemove ? (global::SkillBridge.Message.FriendRemoveResponse) payload_ : null; }
       set {
-        friendRemove_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.FriendRemove;
       }
     }
 
     /// <summary>Field number for the "teamInviteReq" field.</summary>
     public const int TeamInviteReqFieldNumber = 20;
-    private global::SkillBridge.Message.TeamInviteRequest teamInviteReq_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.TeamInviteRequest TeamInviteReq {
-      get { return teamInviteReq_; }
+      get { return payloadCase_ == PayloadOneofCase.TeamInviteReq ? (global::SkillBridge.Message.TeamInviteRequest) payload_ : null; }
       set {
-        teamInviteReq_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.TeamInviteReq;
       }
     }
 
     /// <summary>Field number for the "teamInviteRes" field.</summary>
     public const int TeamInviteResFieldNumber = 21;
-    private global::SkillBridge.Message.TeamInviteResponse teamInviteRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.TeamInviteResponse TeamInviteRes {
-      get { return teamInviteRes_; }
+      get { return payloadCase_ == PayloadOneofCase.TeamInviteRes ? (global::SkillBridge.Message.TeamInviteResponse) payload_ : null; }
       set {
-        teamInviteRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.TeamInviteRes;
       }
     }
 
     /// <summary>Field number for the "teamInfo" field.</summary>
     public const int TeamInfoFieldNumber = 22;
-    private global::SkillBridge.Message.TeamInfoResponse teamInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.TeamInfoResponse TeamInfo {
-      get { return teamInfo_; }
+      get { return payloadCase_ == PayloadOneofCase.TeamInfo ? (global::SkillBridge.Message.TeamInfoResponse) payload_ : null; }
       set {
-        teamInfo_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.TeamInfo;
       }
     }
 
     /// <summary>Field number for the "teamLeave" field.</summary>
     public const int TeamLeaveFieldNumber = 23;
-    private global::SkillBridge.Message.TeamLeaveResponse teamLeave_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.TeamLeaveResponse TeamLeave {
-      get { return teamLeave_; }
+      get { return payloadCase_ == PayloadOneofCase.TeamLeave ? (global::SkillBridge.Message.TeamLeaveResponse) payload_ : null; }
       set {
-        teamLeave_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.TeamLeave;
       }
     }
 
     /// <summary>Field number for the "guildCreate" field.</summary>
     public const int GuildCreateFieldNumber = 24;
-    private global::SkillBridge.Message.GuildCreateResponse guildCreate_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildCreateResponse GuildCreate {
-      get { return guildCreate_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildCreate ? (global::SkillBridge.Message.GuildCreateResponse) payload_ : null; }
       set {
-        guildCreate_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildCreate;
       }
     }
 
     /// <summary>Field number for the "guildJoinReq" field.</summary>
     public const int GuildJoinReqFieldNumber = 25;
-    private global::SkillBridge.Message.GuildJoinRequest guildJoinReq_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildJoinRequest GuildJoinReq {
-      get { return guildJoinReq_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildJoinReq ? (global::SkillBridge.Message.GuildJoinRequest) payload_ : null; }
       set {
-        guildJoinReq_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildJoinReq;
       }
     }
 
     /// <summary>Field number for the "guildJoinRes" field.</summary>
     public const int GuildJoinResFieldNumber = 26;
-    private global::SkillBridge.Message.GuildJoinResponse guildJoinRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildJoinResponse GuildJoinRes {
-      get { return guildJoinRes_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildJoinRes ? (global::SkillBridge.Message.GuildJoinResponse) payload_ : null; }
       set {
-        guildJoinRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildJoinRes;
       }
     }
 
     /// <summary>Field number for the "guild" field.</summary>
     public const int GuildFieldNumber = 27;
-    private global::SkillBridge.Message.GuildResponse guild_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildResponse Guild {
-      get { return guild_; }
+      get { return payloadCase_ == PayloadOneofCase.Guild ? (global::SkillBridge.Message.GuildResponse) payload_ : null; }
       set {
-        guild_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.Guild;
       }
     }
 
     /// <summary>Field number for the "guildLeave" field.</summary>
     public const int GuildLeaveFieldNumber = 28;
-    private global::SkillBridge.Message.GuildLeaveResponse guildLeave_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildLeaveResponse GuildLeave {
-      get { return guildLeave_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildLeave ? (global::SkillBridge.Message.GuildLeaveResponse) payload_ : null; }
       set {
-        guildLeave_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildLeave;
       }
     }
 
     /// <summary>Field number for the "guildList" field.</summary>
     public const int GuildListFieldNumber = 29;
-    private global::SkillBridge.Message.GuildListResponse guildList_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildListResponse GuildList {
-      get { return guildList_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildList ? (global::SkillBridge.Message.GuildListResponse) payload_ : null; }
       set {
-        guildList_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildList;
       }
     }
 
     /// <summary>Field number for the "guildAdmin" field.</summary>
     public const int GuildAdminFieldNumber = 30;
-    private global::SkillBridge.Message.GuildAdminResponse guildAdmin_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.GuildAdminResponse GuildAdmin {
-      get { return guildAdmin_; }
+      get { return payloadCase_ == PayloadOneofCase.GuildAdmin ? (global::SkillBridge.Message.GuildAdminResponse) payload_ : null; }
       set {
-        guildAdmin_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.GuildAdmin;
       }
     }
 
     /// <summary>Field number for the "chat" field.</summary>
     public const int ChatFieldNumber = 31;
-    private global::SkillBridge.Message.ChatResponse chat_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ChatResponse Chat {
-      get { return chat_; }
+      get { return payloadCase_ == PayloadOneofCase.Chat ? (global::SkillBridge.Message.ChatResponse) payload_ : null; }
       set {
-        chat_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.Chat;
       }
     }
 
     /// <summary>Field number for the "skillCast" field.</summary>
     public const int SkillCastFieldNumber = 50;
-    private global::SkillBridge.Message.SkillCastResponse skillCast_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.SkillCastResponse SkillCast {
-      get { return skillCast_; }
+      get { return payloadCase_ == PayloadOneofCase.SkillCast ? (global::SkillBridge.Message.SkillCastResponse) payload_ : null; }
       set {
-        skillCast_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.SkillCast;
       }
     }
 
     /// <summary>Field number for the "skillHits" field.</summary>
     public const int SkillHitsFieldNumber = 51;
-    private global::SkillBridge.Message.SkillHitResponse skillHits_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.SkillHitResponse SkillHits {
-      get { return skillHits_; }
+      get { return payloadCase_ == PayloadOneofCase.SkillHits ? (global::SkillBridge.Message.SkillHitResponse) payload_ : null; }
       set {
-        skillHits_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.SkillHits;
       }
     }
 
     /// <summary>Field number for the "buffRes" field.</summary>
     public const int BuffResFieldNumber = 52;
-    private global::SkillBridge.Message.BuffResponse buffRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.BuffResponse BuffRes {
-      get { return buffRes_; }
+      get { return payloadCase_ == PayloadOneofCase.BuffRes ? (global::SkillBridge.Message.BuffResponse) payload_ : null; }
       set {
-        buffRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.BuffRes;
       }
     }
 
     /// <summary>Field number for the "arenaChallengeReq" field.</summary>
     public const int ArenaChallengeReqFieldNumber = 60;
-    private global::SkillBridge.Message.ArenaChallengeRequest arenaChallengeReq_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ArenaChallengeRequest ArenaChallengeReq {
-      get { return arenaChallengeReq_; }
+      get { return payloadCase_ == PayloadOneofCase.ArenaChallengeReq ? (global::SkillBridge.Message.ArenaChallengeRequest) payload_ : null; }
       set {
-        arenaChallengeReq_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ArenaChallengeReq;
       }
     }
 
     /// <summary>Field number for the "arenaChallengeRes" field.</summary>
     public const int ArenaChallengeResFieldNumber = 61;
-    private global::SkillBridge.Message.ArenaChallengeResponse arenaChallengeRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ArenaChallengeResponse ArenaChallengeRes {
-      get { return arenaChallengeRes_; }
+      get { return payloadCase_ == PayloadOneofCase.ArenaChallengeRes ? (global::SkillBridge.Message.ArenaChallengeResponse) payload_ : null; }
       set {
-        arenaChallengeRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ArenaChallengeRes;
       }
     }
 
     /// <summary>Field number for the "arenaBeginRes" field.</summary>
     public const int ArenaBeginResFieldNumber = 62;
-    private global::SkillBridge.Message.ArenaBeginResponse arenaBeginRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ArenaBeginResponse ArenaBeginRes {
-      get { return arenaBeginRes_; }
+      get { return payloadCase_ == PayloadOneofCase.ArenaBeginRes ? (global::SkillBridge.Message.ArenaBeginResponse) payload_ : null; }
       set {
-        arenaBeginRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ArenaBeginRes;
       }
     }
 
     /// <summary>Field number for the "arenaEndRes" field.</summary>
     public const int ArenaEndResFieldNumber = 63;
-    private global::SkillBridge.Message.ArenaEndResponse arenaEndRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ArenaEndResponse ArenaEndRes {
-      get { return arenaEndRes_; }
+      get { return payloadCase_ == PayloadOneofCase.ArenaEndRes ? (global::SkillBridge.Message.ArenaEndResponse) payload_ : null; }
       set {
-        arenaEndRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ArenaEndRes;
       }
     }
 
     /// <summary>Field number for the "arenaReadyRes" field.</summary>
     public const int ArenaReadyResFieldNumber = 64;
-    private global::SkillBridge.Message.ArenaReadyResponse arenaReadyRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ArenaReadyResponse ArenaReadyRes {
-      get { return arenaReadyRes_; }
+      get { return payloadCase_ == PayloadOneofCase.ArenaReadyRes ? (global::SkillBridge.Message.ArenaReadyResponse) payload_ : null; }
       set {
-        arenaReadyRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ArenaReadyRes;
       }
     }
 
     /// <summary>Field number for the "arenaRoundStartRes" field.</summary>
     public const int ArenaRoundStartResFieldNumber = 65;
-    private global::SkillBridge.Message.ArenaRoundStartResponse arenaRoundStartRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ArenaRoundStartResponse ArenaRoundStartRes {
-      get { return arenaRoundStartRes_; }
+      get { return payloadCase_ == PayloadOneofCase.ArenaRoundStartRes ? (global::SkillBridge.Message.ArenaRoundStartResponse) payload_ : null; }
       set {
-        arenaRoundStartRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ArenaRoundStartRes;
       }
     }
 
     /// <summary>Field number for the "arenaRoundEndRes" field.</summary>
     public const int ArenaRoundEndResFieldNumber = 66;
-    private global::SkillBridge.Message.ArenaRoundEndResponse arenaRoundEndRes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.ArenaRoundEndResponse ArenaRoundEndRes {
-      get { return arenaRoundEndRes_; }
+      get { return payloadCase_ == PayloadOneofCase.ArenaRoundEndRes ? (global::SkillBridge.Message.ArenaRoundEndResponse) payload_ : null; }
       set {
-        arenaRoundEndRes_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.ArenaRoundEndRes;
       }
     }
 
     /// <summary>Field number for the "statusNotify" field.</summary>
     public const int StatusNotifyFieldNumber = 100;
-    private global::SkillBridge.Message.StatusNotify statusNotify_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::SkillBridge.Message.StatusNotify StatusNotify {
-      get { return statusNotify_; }
+      get { return payloadCase_ == PayloadOneofCase.StatusNotify ? (global::SkillBridge.Message.StatusNotify) payload_ : null; }
       set {
-        statusNotify_ = value;
+        payload_ = value;
+        payloadCase_ = value == null ? PayloadOneofCase.None : PayloadOneofCase.StatusNotify;
       }
+    }
+
+    private object payload_;
+    /// <summary>Enum of possible cases for the "payload" oneof.</summary>
+    public enum PayloadOneofCase {
+      None = 0,
+      UserRegister = 1,
+      UserLogin = 2,
+      CreateChar = 3,
+      GameEnter = 4,
+      GameLeave = 5,
+      MapCharacterEnter = 6,
+      MapCharacterLeave = 7,
+      MapEntitySync = 8,
+      ItemBuy = 10,
+      ItemEquip = 11,
+      QuestList = 12,
+      QuestAccept = 13,
+      BagSave = 14,
+      QuestSubmit = 15,
+      FriendAddReq = 16,
+      FriendAddRes = 17,
+      FriendList = 18,
+      FriendRemove = 19,
+      TeamInviteReq = 20,
+      TeamInviteRes = 21,
+      TeamInfo = 22,
+      TeamLeave = 23,
+      GuildCreate = 24,
+      GuildJoinReq = 25,
+      GuildJoinRes = 26,
+      Guild = 27,
+      GuildLeave = 28,
+      GuildList = 29,
+      GuildAdmin = 30,
+      Chat = 31,
+      SkillCast = 50,
+      SkillHits = 51,
+      BuffRes = 52,
+      ArenaChallengeReq = 60,
+      ArenaChallengeRes = 61,
+      ArenaBeginRes = 62,
+      ArenaEndRes = 63,
+      ArenaReadyRes = 64,
+      ArenaRoundStartRes = 65,
+      ArenaRoundEndRes = 66,
+      StatusNotify = 100,
+    }
+    private PayloadOneofCase payloadCase_ = PayloadOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadOneofCase PayloadCase {
+      get { return payloadCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPayload() {
+      payloadCase_ = PayloadOneofCase.None;
+      payload_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2762,6 +3132,7 @@ namespace SkillBridge.Message {
       if (!object.Equals(ArenaRoundStartRes, other.ArenaRoundStartRes)) return false;
       if (!object.Equals(ArenaRoundEndRes, other.ArenaRoundEndRes)) return false;
       if (!object.Equals(StatusNotify, other.StatusNotify)) return false;
+      if (PayloadCase != other.PayloadCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2769,47 +3140,48 @@ namespace SkillBridge.Message {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (userRegister_ != null) hash ^= UserRegister.GetHashCode();
-      if (userLogin_ != null) hash ^= UserLogin.GetHashCode();
-      if (createChar_ != null) hash ^= CreateChar.GetHashCode();
-      if (gameEnter_ != null) hash ^= GameEnter.GetHashCode();
-      if (gameLeave_ != null) hash ^= GameLeave.GetHashCode();
-      if (mapCharacterEnter_ != null) hash ^= MapCharacterEnter.GetHashCode();
-      if (mapCharacterLeave_ != null) hash ^= MapCharacterLeave.GetHashCode();
-      if (mapEntitySync_ != null) hash ^= MapEntitySync.GetHashCode();
-      if (itemBuy_ != null) hash ^= ItemBuy.GetHashCode();
-      if (itemEquip_ != null) hash ^= ItemEquip.GetHashCode();
-      if (questList_ != null) hash ^= QuestList.GetHashCode();
-      if (questAccept_ != null) hash ^= QuestAccept.GetHashCode();
-      if (bagSave_ != null) hash ^= BagSave.GetHashCode();
-      if (questSubmit_ != null) hash ^= QuestSubmit.GetHashCode();
-      if (friendAddReq_ != null) hash ^= FriendAddReq.GetHashCode();
-      if (friendAddRes_ != null) hash ^= FriendAddRes.GetHashCode();
-      if (friendList_ != null) hash ^= FriendList.GetHashCode();
-      if (friendRemove_ != null) hash ^= FriendRemove.GetHashCode();
-      if (teamInviteReq_ != null) hash ^= TeamInviteReq.GetHashCode();
-      if (teamInviteRes_ != null) hash ^= TeamInviteRes.GetHashCode();
-      if (teamInfo_ != null) hash ^= TeamInfo.GetHashCode();
-      if (teamLeave_ != null) hash ^= TeamLeave.GetHashCode();
-      if (guildCreate_ != null) hash ^= GuildCreate.GetHashCode();
-      if (guildJoinReq_ != null) hash ^= GuildJoinReq.GetHashCode();
-      if (guildJoinRes_ != null) hash ^= GuildJoinRes.GetHashCode();
-      if (guild_ != null) hash ^= Guild.GetHashCode();
-      if (guildLeave_ != null) hash ^= GuildLeave.GetHashCode();
-      if (guildList_ != null) hash ^= GuildList.GetHashCode();
-      if (guildAdmin_ != null) hash ^= GuildAdmin.GetHashCode();
-      if (chat_ != null) hash ^= Chat.GetHashCode();
-      if (skillCast_ != null) hash ^= SkillCast.GetHashCode();
-      if (skillHits_ != null) hash ^= SkillHits.GetHashCode();
-      if (buffRes_ != null) hash ^= BuffRes.GetHashCode();
-      if (arenaChallengeReq_ != null) hash ^= ArenaChallengeReq.GetHashCode();
-      if (arenaChallengeRes_ != null) hash ^= ArenaChallengeRes.GetHashCode();
-      if (arenaBeginRes_ != null) hash ^= ArenaBeginRes.GetHashCode();
-      if (arenaEndRes_ != null) hash ^= ArenaEndRes.GetHashCode();
-      if (arenaReadyRes_ != null) hash ^= ArenaReadyRes.GetHashCode();
-      if (arenaRoundStartRes_ != null) hash ^= ArenaRoundStartRes.GetHashCode();
-      if (arenaRoundEndRes_ != null) hash ^= ArenaRoundEndRes.GetHashCode();
-      if (statusNotify_ != null) hash ^= StatusNotify.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.UserRegister) hash ^= UserRegister.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.UserLogin) hash ^= UserLogin.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.CreateChar) hash ^= CreateChar.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GameEnter) hash ^= GameEnter.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GameLeave) hash ^= GameLeave.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) hash ^= MapCharacterEnter.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.MapCharacterLeave) hash ^= MapCharacterLeave.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.MapEntitySync) hash ^= MapEntitySync.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ItemBuy) hash ^= ItemBuy.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ItemEquip) hash ^= ItemEquip.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QuestList) hash ^= QuestList.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QuestAccept) hash ^= QuestAccept.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.BagSave) hash ^= BagSave.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.QuestSubmit) hash ^= QuestSubmit.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.FriendAddReq) hash ^= FriendAddReq.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.FriendAddRes) hash ^= FriendAddRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.FriendList) hash ^= FriendList.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.FriendRemove) hash ^= FriendRemove.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.TeamInviteReq) hash ^= TeamInviteReq.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.TeamInviteRes) hash ^= TeamInviteRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.TeamInfo) hash ^= TeamInfo.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.TeamLeave) hash ^= TeamLeave.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildCreate) hash ^= GuildCreate.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildJoinReq) hash ^= GuildJoinReq.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildJoinRes) hash ^= GuildJoinRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.Guild) hash ^= Guild.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildLeave) hash ^= GuildLeave.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildList) hash ^= GuildList.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.GuildAdmin) hash ^= GuildAdmin.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.Chat) hash ^= Chat.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.SkillCast) hash ^= SkillCast.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.SkillHits) hash ^= SkillHits.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.BuffRes) hash ^= BuffRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) hash ^= ArenaChallengeReq.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) hash ^= ArenaChallengeRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ArenaBeginRes) hash ^= ArenaBeginRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ArenaEndRes) hash ^= ArenaEndRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ArenaReadyRes) hash ^= ArenaReadyRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ArenaRoundStartRes) hash ^= ArenaRoundStartRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.ArenaRoundEndRes) hash ^= ArenaRoundEndRes.GetHashCode();
+      if (payloadCase_ == PayloadOneofCase.StatusNotify) hash ^= StatusNotify.GetHashCode();
+      hash ^= (int) payloadCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2828,167 +3200,167 @@ namespace SkillBridge.Message {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (userRegister_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserRegister) {
         output.WriteRawTag(10);
         output.WriteMessage(UserRegister);
       }
-      if (userLogin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserLogin) {
         output.WriteRawTag(18);
         output.WriteMessage(UserLogin);
       }
-      if (createChar_ != null) {
+      if (payloadCase_ == PayloadOneofCase.CreateChar) {
         output.WriteRawTag(26);
         output.WriteMessage(CreateChar);
       }
-      if (gameEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameEnter) {
         output.WriteRawTag(34);
         output.WriteMessage(GameEnter);
       }
-      if (gameLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameLeave) {
         output.WriteRawTag(42);
         output.WriteMessage(GameLeave);
       }
-      if (mapCharacterEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) {
         output.WriteRawTag(50);
         output.WriteMessage(MapCharacterEnter);
       }
-      if (mapCharacterLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapCharacterLeave) {
         output.WriteRawTag(58);
         output.WriteMessage(MapCharacterLeave);
       }
-      if (mapEntitySync_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapEntitySync) {
         output.WriteRawTag(66);
         output.WriteMessage(MapEntitySync);
       }
-      if (itemBuy_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemBuy) {
         output.WriteRawTag(82);
         output.WriteMessage(ItemBuy);
       }
-      if (itemEquip_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemEquip) {
         output.WriteRawTag(90);
         output.WriteMessage(ItemEquip);
       }
-      if (questList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestList) {
         output.WriteRawTag(98);
         output.WriteMessage(QuestList);
       }
-      if (questAccept_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestAccept) {
         output.WriteRawTag(106);
         output.WriteMessage(QuestAccept);
       }
-      if (bagSave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.BagSave) {
         output.WriteRawTag(114);
         output.WriteMessage(BagSave);
       }
-      if (questSubmit_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestSubmit) {
         output.WriteRawTag(122);
         output.WriteMessage(QuestSubmit);
       }
-      if (friendAddReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddReq) {
         output.WriteRawTag(130, 1);
         output.WriteMessage(FriendAddReq);
       }
-      if (friendAddRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddRes) {
         output.WriteRawTag(138, 1);
         output.WriteMessage(FriendAddRes);
       }
-      if (friendList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendList) {
         output.WriteRawTag(146, 1);
         output.WriteMessage(FriendList);
       }
-      if (friendRemove_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendRemove) {
         output.WriteRawTag(154, 1);
         output.WriteMessage(FriendRemove);
       }
-      if (teamInviteReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteReq) {
         output.WriteRawTag(162, 1);
         output.WriteMessage(TeamInviteReq);
       }
-      if (teamInviteRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteRes) {
         output.WriteRawTag(170, 1);
         output.WriteMessage(TeamInviteRes);
       }
-      if (teamInfo_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInfo) {
         output.WriteRawTag(178, 1);
         output.WriteMessage(TeamInfo);
       }
-      if (teamLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamLeave) {
         output.WriteRawTag(186, 1);
         output.WriteMessage(TeamLeave);
       }
-      if (guildCreate_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildCreate) {
         output.WriteRawTag(194, 1);
         output.WriteMessage(GuildCreate);
       }
-      if (guildJoinReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinReq) {
         output.WriteRawTag(202, 1);
         output.WriteMessage(GuildJoinReq);
       }
-      if (guildJoinRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinRes) {
         output.WriteRawTag(210, 1);
         output.WriteMessage(GuildJoinRes);
       }
-      if (guild_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Guild) {
         output.WriteRawTag(218, 1);
         output.WriteMessage(Guild);
       }
-      if (guildLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildLeave) {
         output.WriteRawTag(226, 1);
         output.WriteMessage(GuildLeave);
       }
-      if (guildList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildList) {
         output.WriteRawTag(234, 1);
         output.WriteMessage(GuildList);
       }
-      if (guildAdmin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildAdmin) {
         output.WriteRawTag(242, 1);
         output.WriteMessage(GuildAdmin);
       }
-      if (chat_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Chat) {
         output.WriteRawTag(250, 1);
         output.WriteMessage(Chat);
       }
-      if (skillCast_ != null) {
+      if (payloadCase_ == PayloadOneofCase.SkillCast) {
         output.WriteRawTag(146, 3);
         output.WriteMessage(SkillCast);
       }
-      if (skillHits_ != null) {
+      if (payloadCase_ == PayloadOneofCase.SkillHits) {
         output.WriteRawTag(154, 3);
         output.WriteMessage(SkillHits);
       }
-      if (buffRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.BuffRes) {
         output.WriteRawTag(162, 3);
         output.WriteMessage(BuffRes);
       }
-      if (arenaChallengeReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) {
         output.WriteRawTag(226, 3);
         output.WriteMessage(ArenaChallengeReq);
       }
-      if (arenaChallengeRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) {
         output.WriteRawTag(234, 3);
         output.WriteMessage(ArenaChallengeRes);
       }
-      if (arenaBeginRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaBeginRes) {
         output.WriteRawTag(242, 3);
         output.WriteMessage(ArenaBeginRes);
       }
-      if (arenaEndRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaEndRes) {
         output.WriteRawTag(250, 3);
         output.WriteMessage(ArenaEndRes);
       }
-      if (arenaReadyRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaReadyRes) {
         output.WriteRawTag(130, 4);
         output.WriteMessage(ArenaReadyRes);
       }
-      if (arenaRoundStartRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaRoundStartRes) {
         output.WriteRawTag(138, 4);
         output.WriteMessage(ArenaRoundStartRes);
       }
-      if (arenaRoundEndRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaRoundEndRes) {
         output.WriteRawTag(146, 4);
         output.WriteMessage(ArenaRoundEndRes);
       }
-      if (statusNotify_ != null) {
+      if (payloadCase_ == PayloadOneofCase.StatusNotify) {
         output.WriteRawTag(162, 6);
         output.WriteMessage(StatusNotify);
       }
@@ -3002,167 +3374,167 @@ namespace SkillBridge.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (userRegister_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserRegister) {
         output.WriteRawTag(10);
         output.WriteMessage(UserRegister);
       }
-      if (userLogin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserLogin) {
         output.WriteRawTag(18);
         output.WriteMessage(UserLogin);
       }
-      if (createChar_ != null) {
+      if (payloadCase_ == PayloadOneofCase.CreateChar) {
         output.WriteRawTag(26);
         output.WriteMessage(CreateChar);
       }
-      if (gameEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameEnter) {
         output.WriteRawTag(34);
         output.WriteMessage(GameEnter);
       }
-      if (gameLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameLeave) {
         output.WriteRawTag(42);
         output.WriteMessage(GameLeave);
       }
-      if (mapCharacterEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) {
         output.WriteRawTag(50);
         output.WriteMessage(MapCharacterEnter);
       }
-      if (mapCharacterLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapCharacterLeave) {
         output.WriteRawTag(58);
         output.WriteMessage(MapCharacterLeave);
       }
-      if (mapEntitySync_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapEntitySync) {
         output.WriteRawTag(66);
         output.WriteMessage(MapEntitySync);
       }
-      if (itemBuy_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemBuy) {
         output.WriteRawTag(82);
         output.WriteMessage(ItemBuy);
       }
-      if (itemEquip_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemEquip) {
         output.WriteRawTag(90);
         output.WriteMessage(ItemEquip);
       }
-      if (questList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestList) {
         output.WriteRawTag(98);
         output.WriteMessage(QuestList);
       }
-      if (questAccept_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestAccept) {
         output.WriteRawTag(106);
         output.WriteMessage(QuestAccept);
       }
-      if (bagSave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.BagSave) {
         output.WriteRawTag(114);
         output.WriteMessage(BagSave);
       }
-      if (questSubmit_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestSubmit) {
         output.WriteRawTag(122);
         output.WriteMessage(QuestSubmit);
       }
-      if (friendAddReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddReq) {
         output.WriteRawTag(130, 1);
         output.WriteMessage(FriendAddReq);
       }
-      if (friendAddRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddRes) {
         output.WriteRawTag(138, 1);
         output.WriteMessage(FriendAddRes);
       }
-      if (friendList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendList) {
         output.WriteRawTag(146, 1);
         output.WriteMessage(FriendList);
       }
-      if (friendRemove_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendRemove) {
         output.WriteRawTag(154, 1);
         output.WriteMessage(FriendRemove);
       }
-      if (teamInviteReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteReq) {
         output.WriteRawTag(162, 1);
         output.WriteMessage(TeamInviteReq);
       }
-      if (teamInviteRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteRes) {
         output.WriteRawTag(170, 1);
         output.WriteMessage(TeamInviteRes);
       }
-      if (teamInfo_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInfo) {
         output.WriteRawTag(178, 1);
         output.WriteMessage(TeamInfo);
       }
-      if (teamLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamLeave) {
         output.WriteRawTag(186, 1);
         output.WriteMessage(TeamLeave);
       }
-      if (guildCreate_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildCreate) {
         output.WriteRawTag(194, 1);
         output.WriteMessage(GuildCreate);
       }
-      if (guildJoinReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinReq) {
         output.WriteRawTag(202, 1);
         output.WriteMessage(GuildJoinReq);
       }
-      if (guildJoinRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinRes) {
         output.WriteRawTag(210, 1);
         output.WriteMessage(GuildJoinRes);
       }
-      if (guild_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Guild) {
         output.WriteRawTag(218, 1);
         output.WriteMessage(Guild);
       }
-      if (guildLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildLeave) {
         output.WriteRawTag(226, 1);
         output.WriteMessage(GuildLeave);
       }
-      if (guildList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildList) {
         output.WriteRawTag(234, 1);
         output.WriteMessage(GuildList);
       }
-      if (guildAdmin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildAdmin) {
         output.WriteRawTag(242, 1);
         output.WriteMessage(GuildAdmin);
       }
-      if (chat_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Chat) {
         output.WriteRawTag(250, 1);
         output.WriteMessage(Chat);
       }
-      if (skillCast_ != null) {
+      if (payloadCase_ == PayloadOneofCase.SkillCast) {
         output.WriteRawTag(146, 3);
         output.WriteMessage(SkillCast);
       }
-      if (skillHits_ != null) {
+      if (payloadCase_ == PayloadOneofCase.SkillHits) {
         output.WriteRawTag(154, 3);
         output.WriteMessage(SkillHits);
       }
-      if (buffRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.BuffRes) {
         output.WriteRawTag(162, 3);
         output.WriteMessage(BuffRes);
       }
-      if (arenaChallengeReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) {
         output.WriteRawTag(226, 3);
         output.WriteMessage(ArenaChallengeReq);
       }
-      if (arenaChallengeRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) {
         output.WriteRawTag(234, 3);
         output.WriteMessage(ArenaChallengeRes);
       }
-      if (arenaBeginRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaBeginRes) {
         output.WriteRawTag(242, 3);
         output.WriteMessage(ArenaBeginRes);
       }
-      if (arenaEndRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaEndRes) {
         output.WriteRawTag(250, 3);
         output.WriteMessage(ArenaEndRes);
       }
-      if (arenaReadyRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaReadyRes) {
         output.WriteRawTag(130, 4);
         output.WriteMessage(ArenaReadyRes);
       }
-      if (arenaRoundStartRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaRoundStartRes) {
         output.WriteRawTag(138, 4);
         output.WriteMessage(ArenaRoundStartRes);
       }
-      if (arenaRoundEndRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaRoundEndRes) {
         output.WriteRawTag(146, 4);
         output.WriteMessage(ArenaRoundEndRes);
       }
-      if (statusNotify_ != null) {
+      if (payloadCase_ == PayloadOneofCase.StatusNotify) {
         output.WriteRawTag(162, 6);
         output.WriteMessage(StatusNotify);
       }
@@ -3176,127 +3548,127 @@ namespace SkillBridge.Message {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (userRegister_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserRegister) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserRegister);
       }
-      if (userLogin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.UserLogin) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserLogin);
       }
-      if (createChar_ != null) {
+      if (payloadCase_ == PayloadOneofCase.CreateChar) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreateChar);
       }
-      if (gameEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameEnter) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GameEnter);
       }
-      if (gameLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GameLeave) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GameLeave);
       }
-      if (mapCharacterEnter_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MapCharacterEnter);
       }
-      if (mapCharacterLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapCharacterLeave) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MapCharacterLeave);
       }
-      if (mapEntitySync_ != null) {
+      if (payloadCase_ == PayloadOneofCase.MapEntitySync) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MapEntitySync);
       }
-      if (itemBuy_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemBuy) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemBuy);
       }
-      if (itemEquip_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ItemEquip) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemEquip);
       }
-      if (questList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestList) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(QuestList);
       }
-      if (questAccept_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestAccept) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(QuestAccept);
       }
-      if (bagSave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.BagSave) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(BagSave);
       }
-      if (questSubmit_ != null) {
+      if (payloadCase_ == PayloadOneofCase.QuestSubmit) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(QuestSubmit);
       }
-      if (friendAddReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddReq) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(FriendAddReq);
       }
-      if (friendAddRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendAddRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(FriendAddRes);
       }
-      if (friendList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendList) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(FriendList);
       }
-      if (friendRemove_ != null) {
+      if (payloadCase_ == PayloadOneofCase.FriendRemove) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(FriendRemove);
       }
-      if (teamInviteReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteReq) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TeamInviteReq);
       }
-      if (teamInviteRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInviteRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TeamInviteRes);
       }
-      if (teamInfo_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamInfo) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TeamInfo);
       }
-      if (teamLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.TeamLeave) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TeamLeave);
       }
-      if (guildCreate_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildCreate) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildCreate);
       }
-      if (guildJoinReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinReq) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildJoinReq);
       }
-      if (guildJoinRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildJoinRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildJoinRes);
       }
-      if (guild_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Guild) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Guild);
       }
-      if (guildLeave_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildLeave) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildLeave);
       }
-      if (guildList_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildList) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildList);
       }
-      if (guildAdmin_ != null) {
+      if (payloadCase_ == PayloadOneofCase.GuildAdmin) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GuildAdmin);
       }
-      if (chat_ != null) {
+      if (payloadCase_ == PayloadOneofCase.Chat) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Chat);
       }
-      if (skillCast_ != null) {
+      if (payloadCase_ == PayloadOneofCase.SkillCast) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(SkillCast);
       }
-      if (skillHits_ != null) {
+      if (payloadCase_ == PayloadOneofCase.SkillHits) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(SkillHits);
       }
-      if (buffRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.BuffRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(BuffRes);
       }
-      if (arenaChallengeReq_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaChallengeReq);
       }
-      if (arenaChallengeRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaChallengeRes);
       }
-      if (arenaBeginRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaBeginRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaBeginRes);
       }
-      if (arenaEndRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaEndRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaEndRes);
       }
-      if (arenaReadyRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaReadyRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaReadyRes);
       }
-      if (arenaRoundStartRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaRoundStartRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaRoundStartRes);
       }
-      if (arenaRoundEndRes_ != null) {
+      if (payloadCase_ == PayloadOneofCase.ArenaRoundEndRes) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ArenaRoundEndRes);
       }
-      if (statusNotify_ != null) {
+      if (payloadCase_ == PayloadOneofCase.StatusNotify) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(StatusNotify);
       }
       if (_unknownFields != null) {
@@ -3311,252 +3683,255 @@ namespace SkillBridge.Message {
       if (other == null) {
         return;
       }
-      if (other.userRegister_ != null) {
-        if (userRegister_ == null) {
-          UserRegister = new global::SkillBridge.Message.UserRegisterResponse();
-        }
-        UserRegister.MergeFrom(other.UserRegister);
+      switch (other.PayloadCase) {
+        case PayloadOneofCase.UserRegister:
+          if (UserRegister == null) {
+            UserRegister = new global::SkillBridge.Message.UserRegisterResponse();
+          }
+          UserRegister.MergeFrom(other.UserRegister);
+          break;
+        case PayloadOneofCase.UserLogin:
+          if (UserLogin == null) {
+            UserLogin = new global::SkillBridge.Message.UserLoginResponse();
+          }
+          UserLogin.MergeFrom(other.UserLogin);
+          break;
+        case PayloadOneofCase.CreateChar:
+          if (CreateChar == null) {
+            CreateChar = new global::SkillBridge.Message.UserCreateCharacterResponse();
+          }
+          CreateChar.MergeFrom(other.CreateChar);
+          break;
+        case PayloadOneofCase.GameEnter:
+          if (GameEnter == null) {
+            GameEnter = new global::SkillBridge.Message.UserGameEnterResponse();
+          }
+          GameEnter.MergeFrom(other.GameEnter);
+          break;
+        case PayloadOneofCase.GameLeave:
+          if (GameLeave == null) {
+            GameLeave = new global::SkillBridge.Message.UserGameLeaveResponse();
+          }
+          GameLeave.MergeFrom(other.GameLeave);
+          break;
+        case PayloadOneofCase.MapCharacterEnter:
+          if (MapCharacterEnter == null) {
+            MapCharacterEnter = new global::SkillBridge.Message.MapCharacterEnterResponse();
+          }
+          MapCharacterEnter.MergeFrom(other.MapCharacterEnter);
+          break;
+        case PayloadOneofCase.MapCharacterLeave:
+          if (MapCharacterLeave == null) {
+            MapCharacterLeave = new global::SkillBridge.Message.MapCharacterLeaveResponse();
+          }
+          MapCharacterLeave.MergeFrom(other.MapCharacterLeave);
+          break;
+        case PayloadOneofCase.MapEntitySync:
+          if (MapEntitySync == null) {
+            MapEntitySync = new global::SkillBridge.Message.MapEntitySyncResponse();
+          }
+          MapEntitySync.MergeFrom(other.MapEntitySync);
+          break;
+        case PayloadOneofCase.ItemBuy:
+          if (ItemBuy == null) {
+            ItemBuy = new global::SkillBridge.Message.ItemBuyResponse();
+          }
+          ItemBuy.MergeFrom(other.ItemBuy);
+          break;
+        case PayloadOneofCase.ItemEquip:
+          if (ItemEquip == null) {
+            ItemEquip = new global::SkillBridge.Message.ItemEquipResponse();
+          }
+          ItemEquip.MergeFrom(other.ItemEquip);
+          break;
+        case PayloadOneofCase.QuestList:
+          if (QuestList == null) {
+            QuestList = new global::SkillBridge.Message.QuestListResponse();
+          }
+          QuestList.MergeFrom(other.QuestList);
+          break;
+        case PayloadOneofCase.QuestAccept:
+          if (QuestAccept == null) {
+            QuestAccept = new global::SkillBridge.Message.QuestAcceptResponse();
+          }
+          QuestAccept.MergeFrom(other.QuestAccept);
+          break;
+        case PayloadOneofCase.BagSave:
+          if (BagSave == null) {
+            BagSave = new global::SkillBridge.Message.BagSaveRequest();
+          }
+          BagSave.MergeFrom(other.BagSave);
+          break;
+        case PayloadOneofCase.QuestSubmit:
+          if (QuestSubmit == null) {
+            QuestSubmit = new global::SkillBridge.Message.QuestSubmitResponse();
+          }
+          QuestSubmit.MergeFrom(other.QuestSubmit);
+          break;
+        case PayloadOneofCase.FriendAddReq:
+          if (FriendAddReq == null) {
+            FriendAddReq = new global::SkillBridge.Message.FriendAddRequest();
+          }
+          FriendAddReq.MergeFrom(other.FriendAddReq);
+          break;
+        case PayloadOneofCase.FriendAddRes:
+          if (FriendAddRes == null) {
+            FriendAddRes = new global::SkillBridge.Message.FriendAddResponse();
+          }
+          FriendAddRes.MergeFrom(other.FriendAddRes);
+          break;
+        case PayloadOneofCase.FriendList:
+          if (FriendList == null) {
+            FriendList = new global::SkillBridge.Message.FriendListResponse();
+          }
+          FriendList.MergeFrom(other.FriendList);
+          break;
+        case PayloadOneofCase.FriendRemove:
+          if (FriendRemove == null) {
+            FriendRemove = new global::SkillBridge.Message.FriendRemoveResponse();
+          }
+          FriendRemove.MergeFrom(other.FriendRemove);
+          break;
+        case PayloadOneofCase.TeamInviteReq:
+          if (TeamInviteReq == null) {
+            TeamInviteReq = new global::SkillBridge.Message.TeamInviteRequest();
+          }
+          TeamInviteReq.MergeFrom(other.TeamInviteReq);
+          break;
+        case PayloadOneofCase.TeamInviteRes:
+          if (TeamInviteRes == null) {
+            TeamInviteRes = new global::SkillBridge.Message.TeamInviteResponse();
+          }
+          TeamInviteRes.MergeFrom(other.TeamInviteRes);
+          break;
+        case PayloadOneofCase.TeamInfo:
+          if (TeamInfo == null) {
+            TeamInfo = new global::SkillBridge.Message.TeamInfoResponse();
+          }
+          TeamInfo.MergeFrom(other.TeamInfo);
+          break;
+        case PayloadOneofCase.TeamLeave:
+          if (TeamLeave == null) {
+            TeamLeave = new global::SkillBridge.Message.TeamLeaveResponse();
+          }
+          TeamLeave.MergeFrom(other.TeamLeave);
+          break;
+        case PayloadOneofCase.GuildCreate:
+          if (GuildCreate == null) {
+            GuildCreate = new global::SkillBridge.Message.GuildCreateResponse();
+          }
+          GuildCreate.MergeFrom(other.GuildCreate);
+          break;
+        case PayloadOneofCase.GuildJoinReq:
+          if (GuildJoinReq == null) {
+            GuildJoinReq = new global::SkillBridge.Message.GuildJoinRequest();
+          }
+          GuildJoinReq.MergeFrom(other.GuildJoinReq);
+          break;
+        case PayloadOneofCase.GuildJoinRes:
+          if (GuildJoinRes == null) {
+            GuildJoinRes = new global::SkillBridge.Message.GuildJoinResponse();
+          }
+          GuildJoinRes.MergeFrom(other.GuildJoinRes);
+          break;
+        case PayloadOneofCase.Guild:
+          if (Guild == null) {
+            Guild = new global::SkillBridge.Message.GuildResponse();
+          }
+          Guild.MergeFrom(other.Guild);
+          break;
+        case PayloadOneofCase.GuildLeave:
+          if (GuildLeave == null) {
+            GuildLeave = new global::SkillBridge.Message.GuildLeaveResponse();
+          }
+          GuildLeave.MergeFrom(other.GuildLeave);
+          break;
+        case PayloadOneofCase.GuildList:
+          if (GuildList == null) {
+            GuildList = new global::SkillBridge.Message.GuildListResponse();
+          }
+          GuildList.MergeFrom(other.GuildList);
+          break;
+        case PayloadOneofCase.GuildAdmin:
+          if (GuildAdmin == null) {
+            GuildAdmin = new global::SkillBridge.Message.GuildAdminResponse();
+          }
+          GuildAdmin.MergeFrom(other.GuildAdmin);
+          break;
+        case PayloadOneofCase.Chat:
+          if (Chat == null) {
+            Chat = new global::SkillBridge.Message.ChatResponse();
+          }
+          Chat.MergeFrom(other.Chat);
+          break;
+        case PayloadOneofCase.SkillCast:
+          if (SkillCast == null) {
+            SkillCast = new global::SkillBridge.Message.SkillCastResponse();
+          }
+          SkillCast.MergeFrom(other.SkillCast);
+          break;
+        case PayloadOneofCase.SkillHits:
+          if (SkillHits == null) {
+            SkillHits = new global::SkillBridge.Message.SkillHitResponse();
+          }
+          SkillHits.MergeFrom(other.SkillHits);
+          break;
+        case PayloadOneofCase.BuffRes:
+          if (BuffRes == null) {
+            BuffRes = new global::SkillBridge.Message.BuffResponse();
+          }
+          BuffRes.MergeFrom(other.BuffRes);
+          break;
+        case PayloadOneofCase.ArenaChallengeReq:
+          if (ArenaChallengeReq == null) {
+            ArenaChallengeReq = new global::SkillBridge.Message.ArenaChallengeRequest();
+          }
+          ArenaChallengeReq.MergeFrom(other.ArenaChallengeReq);
+          break;
+        case PayloadOneofCase.ArenaChallengeRes:
+          if (ArenaChallengeRes == null) {
+            ArenaChallengeRes = new global::SkillBridge.Message.ArenaChallengeResponse();
+          }
+          ArenaChallengeRes.MergeFrom(other.ArenaChallengeRes);
+          break;
+        case PayloadOneofCase.ArenaBeginRes:
+          if (ArenaBeginRes == null) {
+            ArenaBeginRes = new global::SkillBridge.Message.ArenaBeginResponse();
+          }
+          ArenaBeginRes.MergeFrom(other.ArenaBeginRes);
+          break;
+        case PayloadOneofCase.ArenaEndRes:
+          if (ArenaEndRes == null) {
+            ArenaEndRes = new global::SkillBridge.Message.ArenaEndResponse();
+          }
+          ArenaEndRes.MergeFrom(other.ArenaEndRes);
+          break;
+        case PayloadOneofCase.ArenaReadyRes:
+          if (ArenaReadyRes == null) {
+            ArenaReadyRes = new global::SkillBridge.Message.ArenaReadyResponse();
+          }
+          ArenaReadyRes.MergeFrom(other.ArenaReadyRes);
+          break;
+        case PayloadOneofCase.ArenaRoundStartRes:
+          if (ArenaRoundStartRes == null) {
+            ArenaRoundStartRes = new global::SkillBridge.Message.ArenaRoundStartResponse();
+          }
+          ArenaRoundStartRes.MergeFrom(other.ArenaRoundStartRes);
+          break;
+        case PayloadOneofCase.ArenaRoundEndRes:
+          if (ArenaRoundEndRes == null) {
+            ArenaRoundEndRes = new global::SkillBridge.Message.ArenaRoundEndResponse();
+          }
+          ArenaRoundEndRes.MergeFrom(other.ArenaRoundEndRes);
+          break;
+        case PayloadOneofCase.StatusNotify:
+          if (StatusNotify == null) {
+            StatusNotify = new global::SkillBridge.Message.StatusNotify();
+          }
+          StatusNotify.MergeFrom(other.StatusNotify);
+          break;
       }
-      if (other.userLogin_ != null) {
-        if (userLogin_ == null) {
-          UserLogin = new global::SkillBridge.Message.UserLoginResponse();
-        }
-        UserLogin.MergeFrom(other.UserLogin);
-      }
-      if (other.createChar_ != null) {
-        if (createChar_ == null) {
-          CreateChar = new global::SkillBridge.Message.UserCreateCharacterResponse();
-        }
-        CreateChar.MergeFrom(other.CreateChar);
-      }
-      if (other.gameEnter_ != null) {
-        if (gameEnter_ == null) {
-          GameEnter = new global::SkillBridge.Message.UserGameEnterResponse();
-        }
-        GameEnter.MergeFrom(other.GameEnter);
-      }
-      if (other.gameLeave_ != null) {
-        if (gameLeave_ == null) {
-          GameLeave = new global::SkillBridge.Message.UserGameLeaveResponse();
-        }
-        GameLeave.MergeFrom(other.GameLeave);
-      }
-      if (other.mapCharacterEnter_ != null) {
-        if (mapCharacterEnter_ == null) {
-          MapCharacterEnter = new global::SkillBridge.Message.MapCharacterEnterResponse();
-        }
-        MapCharacterEnter.MergeFrom(other.MapCharacterEnter);
-      }
-      if (other.mapCharacterLeave_ != null) {
-        if (mapCharacterLeave_ == null) {
-          MapCharacterLeave = new global::SkillBridge.Message.MapCharacterLeaveResponse();
-        }
-        MapCharacterLeave.MergeFrom(other.MapCharacterLeave);
-      }
-      if (other.mapEntitySync_ != null) {
-        if (mapEntitySync_ == null) {
-          MapEntitySync = new global::SkillBridge.Message.MapEntitySyncResponse();
-        }
-        MapEntitySync.MergeFrom(other.MapEntitySync);
-      }
-      if (other.itemBuy_ != null) {
-        if (itemBuy_ == null) {
-          ItemBuy = new global::SkillBridge.Message.ItemBuyResponse();
-        }
-        ItemBuy.MergeFrom(other.ItemBuy);
-      }
-      if (other.itemEquip_ != null) {
-        if (itemEquip_ == null) {
-          ItemEquip = new global::SkillBridge.Message.ItemEquipResponse();
-        }
-        ItemEquip.MergeFrom(other.ItemEquip);
-      }
-      if (other.questList_ != null) {
-        if (questList_ == null) {
-          QuestList = new global::SkillBridge.Message.QuestListResponse();
-        }
-        QuestList.MergeFrom(other.QuestList);
-      }
-      if (other.questAccept_ != null) {
-        if (questAccept_ == null) {
-          QuestAccept = new global::SkillBridge.Message.QuestAcceptResponse();
-        }
-        QuestAccept.MergeFrom(other.QuestAccept);
-      }
-      if (other.bagSave_ != null) {
-        if (bagSave_ == null) {
-          BagSave = new global::SkillBridge.Message.BagSaveRequest();
-        }
-        BagSave.MergeFrom(other.BagSave);
-      }
-      if (other.questSubmit_ != null) {
-        if (questSubmit_ == null) {
-          QuestSubmit = new global::SkillBridge.Message.QuestSubmitResponse();
-        }
-        QuestSubmit.MergeFrom(other.QuestSubmit);
-      }
-      if (other.friendAddReq_ != null) {
-        if (friendAddReq_ == null) {
-          FriendAddReq = new global::SkillBridge.Message.FriendAddRequest();
-        }
-        FriendAddReq.MergeFrom(other.FriendAddReq);
-      }
-      if (other.friendAddRes_ != null) {
-        if (friendAddRes_ == null) {
-          FriendAddRes = new global::SkillBridge.Message.FriendAddResponse();
-        }
-        FriendAddRes.MergeFrom(other.FriendAddRes);
-      }
-      if (other.friendList_ != null) {
-        if (friendList_ == null) {
-          FriendList = new global::SkillBridge.Message.FriendListResponse();
-        }
-        FriendList.MergeFrom(other.FriendList);
-      }
-      if (other.friendRemove_ != null) {
-        if (friendRemove_ == null) {
-          FriendRemove = new global::SkillBridge.Message.FriendRemoveResponse();
-        }
-        FriendRemove.MergeFrom(other.FriendRemove);
-      }
-      if (other.teamInviteReq_ != null) {
-        if (teamInviteReq_ == null) {
-          TeamInviteReq = new global::SkillBridge.Message.TeamInviteRequest();
-        }
-        TeamInviteReq.MergeFrom(other.TeamInviteReq);
-      }
-      if (other.teamInviteRes_ != null) {
-        if (teamInviteRes_ == null) {
-          TeamInviteRes = new global::SkillBridge.Message.TeamInviteResponse();
-        }
-        TeamInviteRes.MergeFrom(other.TeamInviteRes);
-      }
-      if (other.teamInfo_ != null) {
-        if (teamInfo_ == null) {
-          TeamInfo = new global::SkillBridge.Message.TeamInfoResponse();
-        }
-        TeamInfo.MergeFrom(other.TeamInfo);
-      }
-      if (other.teamLeave_ != null) {
-        if (teamLeave_ == null) {
-          TeamLeave = new global::SkillBridge.Message.TeamLeaveResponse();
-        }
-        TeamLeave.MergeFrom(other.TeamLeave);
-      }
-      if (other.guildCreate_ != null) {
-        if (guildCreate_ == null) {
-          GuildCreate = new global::SkillBridge.Message.GuildCreateResponse();
-        }
-        GuildCreate.MergeFrom(other.GuildCreate);
-      }
-      if (other.guildJoinReq_ != null) {
-        if (guildJoinReq_ == null) {
-          GuildJoinReq = new global::SkillBridge.Message.GuildJoinRequest();
-        }
-        GuildJoinReq.MergeFrom(other.GuildJoinReq);
-      }
-      if (other.guildJoinRes_ != null) {
-        if (guildJoinRes_ == null) {
-          GuildJoinRes = new global::SkillBridge.Message.GuildJoinResponse();
-        }
-        GuildJoinRes.MergeFrom(other.GuildJoinRes);
-      }
-      if (other.guild_ != null) {
-        if (guild_ == null) {
-          Guild = new global::SkillBridge.Message.GuildResponse();
-        }
-        Guild.MergeFrom(other.Guild);
-      }
-      if (other.guildLeave_ != null) {
-        if (guildLeave_ == null) {
-          GuildLeave = new global::SkillBridge.Message.GuildLeaveResponse();
-        }
-        GuildLeave.MergeFrom(other.GuildLeave);
-      }
-      if (other.guildList_ != null) {
-        if (guildList_ == null) {
-          GuildList = new global::SkillBridge.Message.GuildListResponse();
-        }
-        GuildList.MergeFrom(other.GuildList);
-      }
-      if (other.guildAdmin_ != null) {
-        if (guildAdmin_ == null) {
-          GuildAdmin = new global::SkillBridge.Message.GuildAdminResponse();
-        }
-        GuildAdmin.MergeFrom(other.GuildAdmin);
-      }
-      if (other.chat_ != null) {
-        if (chat_ == null) {
-          Chat = new global::SkillBridge.Message.ChatResponse();
-        }
-        Chat.MergeFrom(other.Chat);
-      }
-      if (other.skillCast_ != null) {
-        if (skillCast_ == null) {
-          SkillCast = new global::SkillBridge.Message.SkillCastResponse();
-        }
-        SkillCast.MergeFrom(other.SkillCast);
-      }
-      if (other.skillHits_ != null) {
-        if (skillHits_ == null) {
-          SkillHits = new global::SkillBridge.Message.SkillHitResponse();
-        }
-        SkillHits.MergeFrom(other.SkillHits);
-      }
-      if (other.buffRes_ != null) {
-        if (buffRes_ == null) {
-          BuffRes = new global::SkillBridge.Message.BuffResponse();
-        }
-        BuffRes.MergeFrom(other.BuffRes);
-      }
-      if (other.arenaChallengeReq_ != null) {
-        if (arenaChallengeReq_ == null) {
-          ArenaChallengeReq = new global::SkillBridge.Message.ArenaChallengeRequest();
-        }
-        ArenaChallengeReq.MergeFrom(other.ArenaChallengeReq);
-      }
-      if (other.arenaChallengeRes_ != null) {
-        if (arenaChallengeRes_ == null) {
-          ArenaChallengeRes = new global::SkillBridge.Message.ArenaChallengeResponse();
-        }
-        ArenaChallengeRes.MergeFrom(other.ArenaChallengeRes);
-      }
-      if (other.arenaBeginRes_ != null) {
-        if (arenaBeginRes_ == null) {
-          ArenaBeginRes = new global::SkillBridge.Message.ArenaBeginResponse();
-        }
-        ArenaBeginRes.MergeFrom(other.ArenaBeginRes);
-      }
-      if (other.arenaEndRes_ != null) {
-        if (arenaEndRes_ == null) {
-          ArenaEndRes = new global::SkillBridge.Message.ArenaEndResponse();
-        }
-        ArenaEndRes.MergeFrom(other.ArenaEndRes);
-      }
-      if (other.arenaReadyRes_ != null) {
-        if (arenaReadyRes_ == null) {
-          ArenaReadyRes = new global::SkillBridge.Message.ArenaReadyResponse();
-        }
-        ArenaReadyRes.MergeFrom(other.ArenaReadyRes);
-      }
-      if (other.arenaRoundStartRes_ != null) {
-        if (arenaRoundStartRes_ == null) {
-          ArenaRoundStartRes = new global::SkillBridge.Message.ArenaRoundStartResponse();
-        }
-        ArenaRoundStartRes.MergeFrom(other.ArenaRoundStartRes);
-      }
-      if (other.arenaRoundEndRes_ != null) {
-        if (arenaRoundEndRes_ == null) {
-          ArenaRoundEndRes = new global::SkillBridge.Message.ArenaRoundEndResponse();
-        }
-        ArenaRoundEndRes.MergeFrom(other.ArenaRoundEndRes);
-      }
-      if (other.statusNotify_ != null) {
-        if (statusNotify_ == null) {
-          StatusNotify = new global::SkillBridge.Message.StatusNotify();
-        }
-        StatusNotify.MergeFrom(other.StatusNotify);
-      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3577,290 +3952,372 @@ namespace SkillBridge.Message {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (userRegister_ == null) {
-              UserRegister = new global::SkillBridge.Message.UserRegisterResponse();
+            global::SkillBridge.Message.UserRegisterResponse subBuilder = new global::SkillBridge.Message.UserRegisterResponse();
+            if (payloadCase_ == PayloadOneofCase.UserRegister) {
+              subBuilder.MergeFrom(UserRegister);
             }
-            input.ReadMessage(UserRegister);
+            input.ReadMessage(subBuilder);
+            UserRegister = subBuilder;
             break;
           }
           case 18: {
-            if (userLogin_ == null) {
-              UserLogin = new global::SkillBridge.Message.UserLoginResponse();
+            global::SkillBridge.Message.UserLoginResponse subBuilder = new global::SkillBridge.Message.UserLoginResponse();
+            if (payloadCase_ == PayloadOneofCase.UserLogin) {
+              subBuilder.MergeFrom(UserLogin);
             }
-            input.ReadMessage(UserLogin);
+            input.ReadMessage(subBuilder);
+            UserLogin = subBuilder;
             break;
           }
           case 26: {
-            if (createChar_ == null) {
-              CreateChar = new global::SkillBridge.Message.UserCreateCharacterResponse();
+            global::SkillBridge.Message.UserCreateCharacterResponse subBuilder = new global::SkillBridge.Message.UserCreateCharacterResponse();
+            if (payloadCase_ == PayloadOneofCase.CreateChar) {
+              subBuilder.MergeFrom(CreateChar);
             }
-            input.ReadMessage(CreateChar);
+            input.ReadMessage(subBuilder);
+            CreateChar = subBuilder;
             break;
           }
           case 34: {
-            if (gameEnter_ == null) {
-              GameEnter = new global::SkillBridge.Message.UserGameEnterResponse();
+            global::SkillBridge.Message.UserGameEnterResponse subBuilder = new global::SkillBridge.Message.UserGameEnterResponse();
+            if (payloadCase_ == PayloadOneofCase.GameEnter) {
+              subBuilder.MergeFrom(GameEnter);
             }
-            input.ReadMessage(GameEnter);
+            input.ReadMessage(subBuilder);
+            GameEnter = subBuilder;
             break;
           }
           case 42: {
-            if (gameLeave_ == null) {
-              GameLeave = new global::SkillBridge.Message.UserGameLeaveResponse();
+            global::SkillBridge.Message.UserGameLeaveResponse subBuilder = new global::SkillBridge.Message.UserGameLeaveResponse();
+            if (payloadCase_ == PayloadOneofCase.GameLeave) {
+              subBuilder.MergeFrom(GameLeave);
             }
-            input.ReadMessage(GameLeave);
+            input.ReadMessage(subBuilder);
+            GameLeave = subBuilder;
             break;
           }
           case 50: {
-            if (mapCharacterEnter_ == null) {
-              MapCharacterEnter = new global::SkillBridge.Message.MapCharacterEnterResponse();
+            global::SkillBridge.Message.MapCharacterEnterResponse subBuilder = new global::SkillBridge.Message.MapCharacterEnterResponse();
+            if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) {
+              subBuilder.MergeFrom(MapCharacterEnter);
             }
-            input.ReadMessage(MapCharacterEnter);
+            input.ReadMessage(subBuilder);
+            MapCharacterEnter = subBuilder;
             break;
           }
           case 58: {
-            if (mapCharacterLeave_ == null) {
-              MapCharacterLeave = new global::SkillBridge.Message.MapCharacterLeaveResponse();
+            global::SkillBridge.Message.MapCharacterLeaveResponse subBuilder = new global::SkillBridge.Message.MapCharacterLeaveResponse();
+            if (payloadCase_ == PayloadOneofCase.MapCharacterLeave) {
+              subBuilder.MergeFrom(MapCharacterLeave);
             }
-            input.ReadMessage(MapCharacterLeave);
+            input.ReadMessage(subBuilder);
+            MapCharacterLeave = subBuilder;
             break;
           }
           case 66: {
-            if (mapEntitySync_ == null) {
-              MapEntitySync = new global::SkillBridge.Message.MapEntitySyncResponse();
+            global::SkillBridge.Message.MapEntitySyncResponse subBuilder = new global::SkillBridge.Message.MapEntitySyncResponse();
+            if (payloadCase_ == PayloadOneofCase.MapEntitySync) {
+              subBuilder.MergeFrom(MapEntitySync);
             }
-            input.ReadMessage(MapEntitySync);
+            input.ReadMessage(subBuilder);
+            MapEntitySync = subBuilder;
             break;
           }
           case 82: {
-            if (itemBuy_ == null) {
-              ItemBuy = new global::SkillBridge.Message.ItemBuyResponse();
+            global::SkillBridge.Message.ItemBuyResponse subBuilder = new global::SkillBridge.Message.ItemBuyResponse();
+            if (payloadCase_ == PayloadOneofCase.ItemBuy) {
+              subBuilder.MergeFrom(ItemBuy);
             }
-            input.ReadMessage(ItemBuy);
+            input.ReadMessage(subBuilder);
+            ItemBuy = subBuilder;
             break;
           }
           case 90: {
-            if (itemEquip_ == null) {
-              ItemEquip = new global::SkillBridge.Message.ItemEquipResponse();
+            global::SkillBridge.Message.ItemEquipResponse subBuilder = new global::SkillBridge.Message.ItemEquipResponse();
+            if (payloadCase_ == PayloadOneofCase.ItemEquip) {
+              subBuilder.MergeFrom(ItemEquip);
             }
-            input.ReadMessage(ItemEquip);
+            input.ReadMessage(subBuilder);
+            ItemEquip = subBuilder;
             break;
           }
           case 98: {
-            if (questList_ == null) {
-              QuestList = new global::SkillBridge.Message.QuestListResponse();
+            global::SkillBridge.Message.QuestListResponse subBuilder = new global::SkillBridge.Message.QuestListResponse();
+            if (payloadCase_ == PayloadOneofCase.QuestList) {
+              subBuilder.MergeFrom(QuestList);
             }
-            input.ReadMessage(QuestList);
+            input.ReadMessage(subBuilder);
+            QuestList = subBuilder;
             break;
           }
           case 106: {
-            if (questAccept_ == null) {
-              QuestAccept = new global::SkillBridge.Message.QuestAcceptResponse();
+            global::SkillBridge.Message.QuestAcceptResponse subBuilder = new global::SkillBridge.Message.QuestAcceptResponse();
+            if (payloadCase_ == PayloadOneofCase.QuestAccept) {
+              subBuilder.MergeFrom(QuestAccept);
             }
-            input.ReadMessage(QuestAccept);
+            input.ReadMessage(subBuilder);
+            QuestAccept = subBuilder;
             break;
           }
           case 114: {
-            if (bagSave_ == null) {
-              BagSave = new global::SkillBridge.Message.BagSaveRequest();
+            global::SkillBridge.Message.BagSaveRequest subBuilder = new global::SkillBridge.Message.BagSaveRequest();
+            if (payloadCase_ == PayloadOneofCase.BagSave) {
+              subBuilder.MergeFrom(BagSave);
             }
-            input.ReadMessage(BagSave);
+            input.ReadMessage(subBuilder);
+            BagSave = subBuilder;
             break;
           }
           case 122: {
-            if (questSubmit_ == null) {
-              QuestSubmit = new global::SkillBridge.Message.QuestSubmitResponse();
+            global::SkillBridge.Message.QuestSubmitResponse subBuilder = new global::SkillBridge.Message.QuestSubmitResponse();
+            if (payloadCase_ == PayloadOneofCase.QuestSubmit) {
+              subBuilder.MergeFrom(QuestSubmit);
             }
-            input.ReadMessage(QuestSubmit);
+            input.ReadMessage(subBuilder);
+            QuestSubmit = subBuilder;
             break;
           }
           case 130: {
-            if (friendAddReq_ == null) {
-              FriendAddReq = new global::SkillBridge.Message.FriendAddRequest();
+            global::SkillBridge.Message.FriendAddRequest subBuilder = new global::SkillBridge.Message.FriendAddRequest();
+            if (payloadCase_ == PayloadOneofCase.FriendAddReq) {
+              subBuilder.MergeFrom(FriendAddReq);
             }
-            input.ReadMessage(FriendAddReq);
+            input.ReadMessage(subBuilder);
+            FriendAddReq = subBuilder;
             break;
           }
           case 138: {
-            if (friendAddRes_ == null) {
-              FriendAddRes = new global::SkillBridge.Message.FriendAddResponse();
+            global::SkillBridge.Message.FriendAddResponse subBuilder = new global::SkillBridge.Message.FriendAddResponse();
+            if (payloadCase_ == PayloadOneofCase.FriendAddRes) {
+              subBuilder.MergeFrom(FriendAddRes);
             }
-            input.ReadMessage(FriendAddRes);
+            input.ReadMessage(subBuilder);
+            FriendAddRes = subBuilder;
             break;
           }
           case 146: {
-            if (friendList_ == null) {
-              FriendList = new global::SkillBridge.Message.FriendListResponse();
+            global::SkillBridge.Message.FriendListResponse subBuilder = new global::SkillBridge.Message.FriendListResponse();
+            if (payloadCase_ == PayloadOneofCase.FriendList) {
+              subBuilder.MergeFrom(FriendList);
             }
-            input.ReadMessage(FriendList);
+            input.ReadMessage(subBuilder);
+            FriendList = subBuilder;
             break;
           }
           case 154: {
-            if (friendRemove_ == null) {
-              FriendRemove = new global::SkillBridge.Message.FriendRemoveResponse();
+            global::SkillBridge.Message.FriendRemoveResponse subBuilder = new global::SkillBridge.Message.FriendRemoveResponse();
+            if (payloadCase_ == PayloadOneofCase.FriendRemove) {
+              subBuilder.MergeFrom(FriendRemove);
             }
-            input.ReadMessage(FriendRemove);
+            input.ReadMessage(subBuilder);
+            FriendRemove = subBuilder;
             break;
           }
           case 162: {
-            if (teamInviteReq_ == null) {
-              TeamInviteReq = new global::SkillBridge.Message.TeamInviteRequest();
+            global::SkillBridge.Message.TeamInviteRequest subBuilder = new global::SkillBridge.Message.TeamInviteRequest();
+            if (payloadCase_ == PayloadOneofCase.TeamInviteReq) {
+              subBuilder.MergeFrom(TeamInviteReq);
             }
-            input.ReadMessage(TeamInviteReq);
+            input.ReadMessage(subBuilder);
+            TeamInviteReq = subBuilder;
             break;
           }
           case 170: {
-            if (teamInviteRes_ == null) {
-              TeamInviteRes = new global::SkillBridge.Message.TeamInviteResponse();
+            global::SkillBridge.Message.TeamInviteResponse subBuilder = new global::SkillBridge.Message.TeamInviteResponse();
+            if (payloadCase_ == PayloadOneofCase.TeamInviteRes) {
+              subBuilder.MergeFrom(TeamInviteRes);
             }
-            input.ReadMessage(TeamInviteRes);
+            input.ReadMessage(subBuilder);
+            TeamInviteRes = subBuilder;
             break;
           }
           case 178: {
-            if (teamInfo_ == null) {
-              TeamInfo = new global::SkillBridge.Message.TeamInfoResponse();
+            global::SkillBridge.Message.TeamInfoResponse subBuilder = new global::SkillBridge.Message.TeamInfoResponse();
+            if (payloadCase_ == PayloadOneofCase.TeamInfo) {
+              subBuilder.MergeFrom(TeamInfo);
             }
-            input.ReadMessage(TeamInfo);
+            input.ReadMessage(subBuilder);
+            TeamInfo = subBuilder;
             break;
           }
           case 186: {
-            if (teamLeave_ == null) {
-              TeamLeave = new global::SkillBridge.Message.TeamLeaveResponse();
+            global::SkillBridge.Message.TeamLeaveResponse subBuilder = new global::SkillBridge.Message.TeamLeaveResponse();
+            if (payloadCase_ == PayloadOneofCase.TeamLeave) {
+              subBuilder.MergeFrom(TeamLeave);
             }
-            input.ReadMessage(TeamLeave);
+            input.ReadMessage(subBuilder);
+            TeamLeave = subBuilder;
             break;
           }
           case 194: {
-            if (guildCreate_ == null) {
-              GuildCreate = new global::SkillBridge.Message.GuildCreateResponse();
+            global::SkillBridge.Message.GuildCreateResponse subBuilder = new global::SkillBridge.Message.GuildCreateResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildCreate) {
+              subBuilder.MergeFrom(GuildCreate);
             }
-            input.ReadMessage(GuildCreate);
+            input.ReadMessage(subBuilder);
+            GuildCreate = subBuilder;
             break;
           }
           case 202: {
-            if (guildJoinReq_ == null) {
-              GuildJoinReq = new global::SkillBridge.Message.GuildJoinRequest();
+            global::SkillBridge.Message.GuildJoinRequest subBuilder = new global::SkillBridge.Message.GuildJoinRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildJoinReq) {
+              subBuilder.MergeFrom(GuildJoinReq);
             }
-            input.ReadMessage(GuildJoinReq);
+            input.ReadMessage(subBuilder);
+            GuildJoinReq = subBuilder;
             break;
           }
           case 210: {
-            if (guildJoinRes_ == null) {
-              GuildJoinRes = new global::SkillBridge.Message.GuildJoinResponse();
+            global::SkillBridge.Message.GuildJoinResponse subBuilder = new global::SkillBridge.Message.GuildJoinResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildJoinRes) {
+              subBuilder.MergeFrom(GuildJoinRes);
             }
-            input.ReadMessage(GuildJoinRes);
+            input.ReadMessage(subBuilder);
+            GuildJoinRes = subBuilder;
             break;
           }
           case 218: {
-            if (guild_ == null) {
-              Guild = new global::SkillBridge.Message.GuildResponse();
+            global::SkillBridge.Message.GuildResponse subBuilder = new global::SkillBridge.Message.GuildResponse();
+            if (payloadCase_ == PayloadOneofCase.Guild) {
+              subBuilder.MergeFrom(Guild);
             }
-            input.ReadMessage(Guild);
+            input.ReadMessage(subBuilder);
+            Guild = subBuilder;
             break;
           }
           case 226: {
-            if (guildLeave_ == null) {
-              GuildLeave = new global::SkillBridge.Message.GuildLeaveResponse();
+            global::SkillBridge.Message.GuildLeaveResponse subBuilder = new global::SkillBridge.Message.GuildLeaveResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildLeave) {
+              subBuilder.MergeFrom(GuildLeave);
             }
-            input.ReadMessage(GuildLeave);
+            input.ReadMessage(subBuilder);
+            GuildLeave = subBuilder;
             break;
           }
           case 234: {
-            if (guildList_ == null) {
-              GuildList = new global::SkillBridge.Message.GuildListResponse();
+            global::SkillBridge.Message.GuildListResponse subBuilder = new global::SkillBridge.Message.GuildListResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildList) {
+              subBuilder.MergeFrom(GuildList);
             }
-            input.ReadMessage(GuildList);
+            input.ReadMessage(subBuilder);
+            GuildList = subBuilder;
             break;
           }
           case 242: {
-            if (guildAdmin_ == null) {
-              GuildAdmin = new global::SkillBridge.Message.GuildAdminResponse();
+            global::SkillBridge.Message.GuildAdminResponse subBuilder = new global::SkillBridge.Message.GuildAdminResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildAdmin) {
+              subBuilder.MergeFrom(GuildAdmin);
             }
-            input.ReadMessage(GuildAdmin);
+            input.ReadMessage(subBuilder);
+            GuildAdmin = subBuilder;
             break;
           }
           case 250: {
-            if (chat_ == null) {
-              Chat = new global::SkillBridge.Message.ChatResponse();
+            global::SkillBridge.Message.ChatResponse subBuilder = new global::SkillBridge.Message.ChatResponse();
+            if (payloadCase_ == PayloadOneofCase.Chat) {
+              subBuilder.MergeFrom(Chat);
             }
-            input.ReadMessage(Chat);
+            input.ReadMessage(subBuilder);
+            Chat = subBuilder;
             break;
           }
           case 402: {
-            if (skillCast_ == null) {
-              SkillCast = new global::SkillBridge.Message.SkillCastResponse();
+            global::SkillBridge.Message.SkillCastResponse subBuilder = new global::SkillBridge.Message.SkillCastResponse();
+            if (payloadCase_ == PayloadOneofCase.SkillCast) {
+              subBuilder.MergeFrom(SkillCast);
             }
-            input.ReadMessage(SkillCast);
+            input.ReadMessage(subBuilder);
+            SkillCast = subBuilder;
             break;
           }
           case 410: {
-            if (skillHits_ == null) {
-              SkillHits = new global::SkillBridge.Message.SkillHitResponse();
+            global::SkillBridge.Message.SkillHitResponse subBuilder = new global::SkillBridge.Message.SkillHitResponse();
+            if (payloadCase_ == PayloadOneofCase.SkillHits) {
+              subBuilder.MergeFrom(SkillHits);
             }
-            input.ReadMessage(SkillHits);
+            input.ReadMessage(subBuilder);
+            SkillHits = subBuilder;
             break;
           }
           case 418: {
-            if (buffRes_ == null) {
-              BuffRes = new global::SkillBridge.Message.BuffResponse();
+            global::SkillBridge.Message.BuffResponse subBuilder = new global::SkillBridge.Message.BuffResponse();
+            if (payloadCase_ == PayloadOneofCase.BuffRes) {
+              subBuilder.MergeFrom(BuffRes);
             }
-            input.ReadMessage(BuffRes);
+            input.ReadMessage(subBuilder);
+            BuffRes = subBuilder;
             break;
           }
           case 482: {
-            if (arenaChallengeReq_ == null) {
-              ArenaChallengeReq = new global::SkillBridge.Message.ArenaChallengeRequest();
+            global::SkillBridge.Message.ArenaChallengeRequest subBuilder = new global::SkillBridge.Message.ArenaChallengeRequest();
+            if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) {
+              subBuilder.MergeFrom(ArenaChallengeReq);
             }
-            input.ReadMessage(ArenaChallengeReq);
+            input.ReadMessage(subBuilder);
+            ArenaChallengeReq = subBuilder;
             break;
           }
           case 490: {
-            if (arenaChallengeRes_ == null) {
-              ArenaChallengeRes = new global::SkillBridge.Message.ArenaChallengeResponse();
+            global::SkillBridge.Message.ArenaChallengeResponse subBuilder = new global::SkillBridge.Message.ArenaChallengeResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) {
+              subBuilder.MergeFrom(ArenaChallengeRes);
             }
-            input.ReadMessage(ArenaChallengeRes);
+            input.ReadMessage(subBuilder);
+            ArenaChallengeRes = subBuilder;
             break;
           }
           case 498: {
-            if (arenaBeginRes_ == null) {
-              ArenaBeginRes = new global::SkillBridge.Message.ArenaBeginResponse();
+            global::SkillBridge.Message.ArenaBeginResponse subBuilder = new global::SkillBridge.Message.ArenaBeginResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaBeginRes) {
+              subBuilder.MergeFrom(ArenaBeginRes);
             }
-            input.ReadMessage(ArenaBeginRes);
+            input.ReadMessage(subBuilder);
+            ArenaBeginRes = subBuilder;
             break;
           }
           case 506: {
-            if (arenaEndRes_ == null) {
-              ArenaEndRes = new global::SkillBridge.Message.ArenaEndResponse();
+            global::SkillBridge.Message.ArenaEndResponse subBuilder = new global::SkillBridge.Message.ArenaEndResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaEndRes) {
+              subBuilder.MergeFrom(ArenaEndRes);
             }
-            input.ReadMessage(ArenaEndRes);
+            input.ReadMessage(subBuilder);
+            ArenaEndRes = subBuilder;
             break;
           }
           case 514: {
-            if (arenaReadyRes_ == null) {
-              ArenaReadyRes = new global::SkillBridge.Message.ArenaReadyResponse();
+            global::SkillBridge.Message.ArenaReadyResponse subBuilder = new global::SkillBridge.Message.ArenaReadyResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaReadyRes) {
+              subBuilder.MergeFrom(ArenaReadyRes);
             }
-            input.ReadMessage(ArenaReadyRes);
+            input.ReadMessage(subBuilder);
+            ArenaReadyRes = subBuilder;
             break;
           }
           case 522: {
-            if (arenaRoundStartRes_ == null) {
-              ArenaRoundStartRes = new global::SkillBridge.Message.ArenaRoundStartResponse();
+            global::SkillBridge.Message.ArenaRoundStartResponse subBuilder = new global::SkillBridge.Message.ArenaRoundStartResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaRoundStartRes) {
+              subBuilder.MergeFrom(ArenaRoundStartRes);
             }
-            input.ReadMessage(ArenaRoundStartRes);
+            input.ReadMessage(subBuilder);
+            ArenaRoundStartRes = subBuilder;
             break;
           }
           case 530: {
-            if (arenaRoundEndRes_ == null) {
-              ArenaRoundEndRes = new global::SkillBridge.Message.ArenaRoundEndResponse();
+            global::SkillBridge.Message.ArenaRoundEndResponse subBuilder = new global::SkillBridge.Message.ArenaRoundEndResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaRoundEndRes) {
+              subBuilder.MergeFrom(ArenaRoundEndRes);
             }
-            input.ReadMessage(ArenaRoundEndRes);
+            input.ReadMessage(subBuilder);
+            ArenaRoundEndRes = subBuilder;
             break;
           }
           case 802: {
-            if (statusNotify_ == null) {
-              StatusNotify = new global::SkillBridge.Message.StatusNotify();
+            global::SkillBridge.Message.StatusNotify subBuilder = new global::SkillBridge.Message.StatusNotify();
+            if (payloadCase_ == PayloadOneofCase.StatusNotify) {
+              subBuilder.MergeFrom(StatusNotify);
             }
-            input.ReadMessage(StatusNotify);
+            input.ReadMessage(subBuilder);
+            StatusNotify = subBuilder;
             break;
           }
         }
@@ -3883,290 +4340,372 @@ namespace SkillBridge.Message {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (userRegister_ == null) {
-              UserRegister = new global::SkillBridge.Message.UserRegisterResponse();
+            global::SkillBridge.Message.UserRegisterResponse subBuilder = new global::SkillBridge.Message.UserRegisterResponse();
+            if (payloadCase_ == PayloadOneofCase.UserRegister) {
+              subBuilder.MergeFrom(UserRegister);
             }
-            input.ReadMessage(UserRegister);
+            input.ReadMessage(subBuilder);
+            UserRegister = subBuilder;
             break;
           }
           case 18: {
-            if (userLogin_ == null) {
-              UserLogin = new global::SkillBridge.Message.UserLoginResponse();
+            global::SkillBridge.Message.UserLoginResponse subBuilder = new global::SkillBridge.Message.UserLoginResponse();
+            if (payloadCase_ == PayloadOneofCase.UserLogin) {
+              subBuilder.MergeFrom(UserLogin);
             }
-            input.ReadMessage(UserLogin);
+            input.ReadMessage(subBuilder);
+            UserLogin = subBuilder;
             break;
           }
           case 26: {
-            if (createChar_ == null) {
-              CreateChar = new global::SkillBridge.Message.UserCreateCharacterResponse();
+            global::SkillBridge.Message.UserCreateCharacterResponse subBuilder = new global::SkillBridge.Message.UserCreateCharacterResponse();
+            if (payloadCase_ == PayloadOneofCase.CreateChar) {
+              subBuilder.MergeFrom(CreateChar);
             }
-            input.ReadMessage(CreateChar);
+            input.ReadMessage(subBuilder);
+            CreateChar = subBuilder;
             break;
           }
           case 34: {
-            if (gameEnter_ == null) {
-              GameEnter = new global::SkillBridge.Message.UserGameEnterResponse();
+            global::SkillBridge.Message.UserGameEnterResponse subBuilder = new global::SkillBridge.Message.UserGameEnterResponse();
+            if (payloadCase_ == PayloadOneofCase.GameEnter) {
+              subBuilder.MergeFrom(GameEnter);
             }
-            input.ReadMessage(GameEnter);
+            input.ReadMessage(subBuilder);
+            GameEnter = subBuilder;
             break;
           }
           case 42: {
-            if (gameLeave_ == null) {
-              GameLeave = new global::SkillBridge.Message.UserGameLeaveResponse();
+            global::SkillBridge.Message.UserGameLeaveResponse subBuilder = new global::SkillBridge.Message.UserGameLeaveResponse();
+            if (payloadCase_ == PayloadOneofCase.GameLeave) {
+              subBuilder.MergeFrom(GameLeave);
             }
-            input.ReadMessage(GameLeave);
+            input.ReadMessage(subBuilder);
+            GameLeave = subBuilder;
             break;
           }
           case 50: {
-            if (mapCharacterEnter_ == null) {
-              MapCharacterEnter = new global::SkillBridge.Message.MapCharacterEnterResponse();
+            global::SkillBridge.Message.MapCharacterEnterResponse subBuilder = new global::SkillBridge.Message.MapCharacterEnterResponse();
+            if (payloadCase_ == PayloadOneofCase.MapCharacterEnter) {
+              subBuilder.MergeFrom(MapCharacterEnter);
             }
-            input.ReadMessage(MapCharacterEnter);
+            input.ReadMessage(subBuilder);
+            MapCharacterEnter = subBuilder;
             break;
           }
           case 58: {
-            if (mapCharacterLeave_ == null) {
-              MapCharacterLeave = new global::SkillBridge.Message.MapCharacterLeaveResponse();
+            global::SkillBridge.Message.MapCharacterLeaveResponse subBuilder = new global::SkillBridge.Message.MapCharacterLeaveResponse();
+            if (payloadCase_ == PayloadOneofCase.MapCharacterLeave) {
+              subBuilder.MergeFrom(MapCharacterLeave);
             }
-            input.ReadMessage(MapCharacterLeave);
+            input.ReadMessage(subBuilder);
+            MapCharacterLeave = subBuilder;
             break;
           }
           case 66: {
-            if (mapEntitySync_ == null) {
-              MapEntitySync = new global::SkillBridge.Message.MapEntitySyncResponse();
+            global::SkillBridge.Message.MapEntitySyncResponse subBuilder = new global::SkillBridge.Message.MapEntitySyncResponse();
+            if (payloadCase_ == PayloadOneofCase.MapEntitySync) {
+              subBuilder.MergeFrom(MapEntitySync);
             }
-            input.ReadMessage(MapEntitySync);
+            input.ReadMessage(subBuilder);
+            MapEntitySync = subBuilder;
             break;
           }
           case 82: {
-            if (itemBuy_ == null) {
-              ItemBuy = new global::SkillBridge.Message.ItemBuyResponse();
+            global::SkillBridge.Message.ItemBuyResponse subBuilder = new global::SkillBridge.Message.ItemBuyResponse();
+            if (payloadCase_ == PayloadOneofCase.ItemBuy) {
+              subBuilder.MergeFrom(ItemBuy);
             }
-            input.ReadMessage(ItemBuy);
+            input.ReadMessage(subBuilder);
+            ItemBuy = subBuilder;
             break;
           }
           case 90: {
-            if (itemEquip_ == null) {
-              ItemEquip = new global::SkillBridge.Message.ItemEquipResponse();
+            global::SkillBridge.Message.ItemEquipResponse subBuilder = new global::SkillBridge.Message.ItemEquipResponse();
+            if (payloadCase_ == PayloadOneofCase.ItemEquip) {
+              subBuilder.MergeFrom(ItemEquip);
             }
-            input.ReadMessage(ItemEquip);
+            input.ReadMessage(subBuilder);
+            ItemEquip = subBuilder;
             break;
           }
           case 98: {
-            if (questList_ == null) {
-              QuestList = new global::SkillBridge.Message.QuestListResponse();
+            global::SkillBridge.Message.QuestListResponse subBuilder = new global::SkillBridge.Message.QuestListResponse();
+            if (payloadCase_ == PayloadOneofCase.QuestList) {
+              subBuilder.MergeFrom(QuestList);
             }
-            input.ReadMessage(QuestList);
+            input.ReadMessage(subBuilder);
+            QuestList = subBuilder;
             break;
           }
           case 106: {
-            if (questAccept_ == null) {
-              QuestAccept = new global::SkillBridge.Message.QuestAcceptResponse();
+            global::SkillBridge.Message.QuestAcceptResponse subBuilder = new global::SkillBridge.Message.QuestAcceptResponse();
+            if (payloadCase_ == PayloadOneofCase.QuestAccept) {
+              subBuilder.MergeFrom(QuestAccept);
             }
-            input.ReadMessage(QuestAccept);
+            input.ReadMessage(subBuilder);
+            QuestAccept = subBuilder;
             break;
           }
           case 114: {
-            if (bagSave_ == null) {
-              BagSave = new global::SkillBridge.Message.BagSaveRequest();
+            global::SkillBridge.Message.BagSaveRequest subBuilder = new global::SkillBridge.Message.BagSaveRequest();
+            if (payloadCase_ == PayloadOneofCase.BagSave) {
+              subBuilder.MergeFrom(BagSave);
             }
-            input.ReadMessage(BagSave);
+            input.ReadMessage(subBuilder);
+            BagSave = subBuilder;
             break;
           }
           case 122: {
-            if (questSubmit_ == null) {
-              QuestSubmit = new global::SkillBridge.Message.QuestSubmitResponse();
+            global::SkillBridge.Message.QuestSubmitResponse subBuilder = new global::SkillBridge.Message.QuestSubmitResponse();
+            if (payloadCase_ == PayloadOneofCase.QuestSubmit) {
+              subBuilder.MergeFrom(QuestSubmit);
             }
-            input.ReadMessage(QuestSubmit);
+            input.ReadMessage(subBuilder);
+            QuestSubmit = subBuilder;
             break;
           }
           case 130: {
-            if (friendAddReq_ == null) {
-              FriendAddReq = new global::SkillBridge.Message.FriendAddRequest();
+            global::SkillBridge.Message.FriendAddRequest subBuilder = new global::SkillBridge.Message.FriendAddRequest();
+            if (payloadCase_ == PayloadOneofCase.FriendAddReq) {
+              subBuilder.MergeFrom(FriendAddReq);
             }
-            input.ReadMessage(FriendAddReq);
+            input.ReadMessage(subBuilder);
+            FriendAddReq = subBuilder;
             break;
           }
           case 138: {
-            if (friendAddRes_ == null) {
-              FriendAddRes = new global::SkillBridge.Message.FriendAddResponse();
+            global::SkillBridge.Message.FriendAddResponse subBuilder = new global::SkillBridge.Message.FriendAddResponse();
+            if (payloadCase_ == PayloadOneofCase.FriendAddRes) {
+              subBuilder.MergeFrom(FriendAddRes);
             }
-            input.ReadMessage(FriendAddRes);
+            input.ReadMessage(subBuilder);
+            FriendAddRes = subBuilder;
             break;
           }
           case 146: {
-            if (friendList_ == null) {
-              FriendList = new global::SkillBridge.Message.FriendListResponse();
+            global::SkillBridge.Message.FriendListResponse subBuilder = new global::SkillBridge.Message.FriendListResponse();
+            if (payloadCase_ == PayloadOneofCase.FriendList) {
+              subBuilder.MergeFrom(FriendList);
             }
-            input.ReadMessage(FriendList);
+            input.ReadMessage(subBuilder);
+            FriendList = subBuilder;
             break;
           }
           case 154: {
-            if (friendRemove_ == null) {
-              FriendRemove = new global::SkillBridge.Message.FriendRemoveResponse();
+            global::SkillBridge.Message.FriendRemoveResponse subBuilder = new global::SkillBridge.Message.FriendRemoveResponse();
+            if (payloadCase_ == PayloadOneofCase.FriendRemove) {
+              subBuilder.MergeFrom(FriendRemove);
             }
-            input.ReadMessage(FriendRemove);
+            input.ReadMessage(subBuilder);
+            FriendRemove = subBuilder;
             break;
           }
           case 162: {
-            if (teamInviteReq_ == null) {
-              TeamInviteReq = new global::SkillBridge.Message.TeamInviteRequest();
+            global::SkillBridge.Message.TeamInviteRequest subBuilder = new global::SkillBridge.Message.TeamInviteRequest();
+            if (payloadCase_ == PayloadOneofCase.TeamInviteReq) {
+              subBuilder.MergeFrom(TeamInviteReq);
             }
-            input.ReadMessage(TeamInviteReq);
+            input.ReadMessage(subBuilder);
+            TeamInviteReq = subBuilder;
             break;
           }
           case 170: {
-            if (teamInviteRes_ == null) {
-              TeamInviteRes = new global::SkillBridge.Message.TeamInviteResponse();
+            global::SkillBridge.Message.TeamInviteResponse subBuilder = new global::SkillBridge.Message.TeamInviteResponse();
+            if (payloadCase_ == PayloadOneofCase.TeamInviteRes) {
+              subBuilder.MergeFrom(TeamInviteRes);
             }
-            input.ReadMessage(TeamInviteRes);
+            input.ReadMessage(subBuilder);
+            TeamInviteRes = subBuilder;
             break;
           }
           case 178: {
-            if (teamInfo_ == null) {
-              TeamInfo = new global::SkillBridge.Message.TeamInfoResponse();
+            global::SkillBridge.Message.TeamInfoResponse subBuilder = new global::SkillBridge.Message.TeamInfoResponse();
+            if (payloadCase_ == PayloadOneofCase.TeamInfo) {
+              subBuilder.MergeFrom(TeamInfo);
             }
-            input.ReadMessage(TeamInfo);
+            input.ReadMessage(subBuilder);
+            TeamInfo = subBuilder;
             break;
           }
           case 186: {
-            if (teamLeave_ == null) {
-              TeamLeave = new global::SkillBridge.Message.TeamLeaveResponse();
+            global::SkillBridge.Message.TeamLeaveResponse subBuilder = new global::SkillBridge.Message.TeamLeaveResponse();
+            if (payloadCase_ == PayloadOneofCase.TeamLeave) {
+              subBuilder.MergeFrom(TeamLeave);
             }
-            input.ReadMessage(TeamLeave);
+            input.ReadMessage(subBuilder);
+            TeamLeave = subBuilder;
             break;
           }
           case 194: {
-            if (guildCreate_ == null) {
-              GuildCreate = new global::SkillBridge.Message.GuildCreateResponse();
+            global::SkillBridge.Message.GuildCreateResponse subBuilder = new global::SkillBridge.Message.GuildCreateResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildCreate) {
+              subBuilder.MergeFrom(GuildCreate);
             }
-            input.ReadMessage(GuildCreate);
+            input.ReadMessage(subBuilder);
+            GuildCreate = subBuilder;
             break;
           }
           case 202: {
-            if (guildJoinReq_ == null) {
-              GuildJoinReq = new global::SkillBridge.Message.GuildJoinRequest();
+            global::SkillBridge.Message.GuildJoinRequest subBuilder = new global::SkillBridge.Message.GuildJoinRequest();
+            if (payloadCase_ == PayloadOneofCase.GuildJoinReq) {
+              subBuilder.MergeFrom(GuildJoinReq);
             }
-            input.ReadMessage(GuildJoinReq);
+            input.ReadMessage(subBuilder);
+            GuildJoinReq = subBuilder;
             break;
           }
           case 210: {
-            if (guildJoinRes_ == null) {
-              GuildJoinRes = new global::SkillBridge.Message.GuildJoinResponse();
+            global::SkillBridge.Message.GuildJoinResponse subBuilder = new global::SkillBridge.Message.GuildJoinResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildJoinRes) {
+              subBuilder.MergeFrom(GuildJoinRes);
             }
-            input.ReadMessage(GuildJoinRes);
+            input.ReadMessage(subBuilder);
+            GuildJoinRes = subBuilder;
             break;
           }
           case 218: {
-            if (guild_ == null) {
-              Guild = new global::SkillBridge.Message.GuildResponse();
+            global::SkillBridge.Message.GuildResponse subBuilder = new global::SkillBridge.Message.GuildResponse();
+            if (payloadCase_ == PayloadOneofCase.Guild) {
+              subBuilder.MergeFrom(Guild);
             }
-            input.ReadMessage(Guild);
+            input.ReadMessage(subBuilder);
+            Guild = subBuilder;
             break;
           }
           case 226: {
-            if (guildLeave_ == null) {
-              GuildLeave = new global::SkillBridge.Message.GuildLeaveResponse();
+            global::SkillBridge.Message.GuildLeaveResponse subBuilder = new global::SkillBridge.Message.GuildLeaveResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildLeave) {
+              subBuilder.MergeFrom(GuildLeave);
             }
-            input.ReadMessage(GuildLeave);
+            input.ReadMessage(subBuilder);
+            GuildLeave = subBuilder;
             break;
           }
           case 234: {
-            if (guildList_ == null) {
-              GuildList = new global::SkillBridge.Message.GuildListResponse();
+            global::SkillBridge.Message.GuildListResponse subBuilder = new global::SkillBridge.Message.GuildListResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildList) {
+              subBuilder.MergeFrom(GuildList);
             }
-            input.ReadMessage(GuildList);
+            input.ReadMessage(subBuilder);
+            GuildList = subBuilder;
             break;
           }
           case 242: {
-            if (guildAdmin_ == null) {
-              GuildAdmin = new global::SkillBridge.Message.GuildAdminResponse();
+            global::SkillBridge.Message.GuildAdminResponse subBuilder = new global::SkillBridge.Message.GuildAdminResponse();
+            if (payloadCase_ == PayloadOneofCase.GuildAdmin) {
+              subBuilder.MergeFrom(GuildAdmin);
             }
-            input.ReadMessage(GuildAdmin);
+            input.ReadMessage(subBuilder);
+            GuildAdmin = subBuilder;
             break;
           }
           case 250: {
-            if (chat_ == null) {
-              Chat = new global::SkillBridge.Message.ChatResponse();
+            global::SkillBridge.Message.ChatResponse subBuilder = new global::SkillBridge.Message.ChatResponse();
+            if (payloadCase_ == PayloadOneofCase.Chat) {
+              subBuilder.MergeFrom(Chat);
             }
-            input.ReadMessage(Chat);
+            input.ReadMessage(subBuilder);
+            Chat = subBuilder;
             break;
           }
           case 402: {
-            if (skillCast_ == null) {
-              SkillCast = new global::SkillBridge.Message.SkillCastResponse();
+            global::SkillBridge.Message.SkillCastResponse subBuilder = new global::SkillBridge.Message.SkillCastResponse();
+            if (payloadCase_ == PayloadOneofCase.SkillCast) {
+              subBuilder.MergeFrom(SkillCast);
             }
-            input.ReadMessage(SkillCast);
+            input.ReadMessage(subBuilder);
+            SkillCast = subBuilder;
             break;
           }
           case 410: {
-            if (skillHits_ == null) {
-              SkillHits = new global::SkillBridge.Message.SkillHitResponse();
+            global::SkillBridge.Message.SkillHitResponse subBuilder = new global::SkillBridge.Message.SkillHitResponse();
+            if (payloadCase_ == PayloadOneofCase.SkillHits) {
+              subBuilder.MergeFrom(SkillHits);
             }
-            input.ReadMessage(SkillHits);
+            input.ReadMessage(subBuilder);
+            SkillHits = subBuilder;
             break;
           }
           case 418: {
-            if (buffRes_ == null) {
-              BuffRes = new global::SkillBridge.Message.BuffResponse();
+            global::SkillBridge.Message.BuffResponse subBuilder = new global::SkillBridge.Message.BuffResponse();
+            if (payloadCase_ == PayloadOneofCase.BuffRes) {
+              subBuilder.MergeFrom(BuffRes);
             }
-            input.ReadMessage(BuffRes);
+            input.ReadMessage(subBuilder);
+            BuffRes = subBuilder;
             break;
           }
           case 482: {
-            if (arenaChallengeReq_ == null) {
-              ArenaChallengeReq = new global::SkillBridge.Message.ArenaChallengeRequest();
+            global::SkillBridge.Message.ArenaChallengeRequest subBuilder = new global::SkillBridge.Message.ArenaChallengeRequest();
+            if (payloadCase_ == PayloadOneofCase.ArenaChallengeReq) {
+              subBuilder.MergeFrom(ArenaChallengeReq);
             }
-            input.ReadMessage(ArenaChallengeReq);
+            input.ReadMessage(subBuilder);
+            ArenaChallengeReq = subBuilder;
             break;
           }
           case 490: {
-            if (arenaChallengeRes_ == null) {
-              ArenaChallengeRes = new global::SkillBridge.Message.ArenaChallengeResponse();
+            global::SkillBridge.Message.ArenaChallengeResponse subBuilder = new global::SkillBridge.Message.ArenaChallengeResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaChallengeRes) {
+              subBuilder.MergeFrom(ArenaChallengeRes);
             }
-            input.ReadMessage(ArenaChallengeRes);
+            input.ReadMessage(subBuilder);
+            ArenaChallengeRes = subBuilder;
             break;
           }
           case 498: {
-            if (arenaBeginRes_ == null) {
-              ArenaBeginRes = new global::SkillBridge.Message.ArenaBeginResponse();
+            global::SkillBridge.Message.ArenaBeginResponse subBuilder = new global::SkillBridge.Message.ArenaBeginResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaBeginRes) {
+              subBuilder.MergeFrom(ArenaBeginRes);
             }
-            input.ReadMessage(ArenaBeginRes);
+            input.ReadMessage(subBuilder);
+            ArenaBeginRes = subBuilder;
             break;
           }
           case 506: {
-            if (arenaEndRes_ == null) {
-              ArenaEndRes = new global::SkillBridge.Message.ArenaEndResponse();
+            global::SkillBridge.Message.ArenaEndResponse subBuilder = new global::SkillBridge.Message.ArenaEndResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaEndRes) {
+              subBuilder.MergeFrom(ArenaEndRes);
             }
-            input.ReadMessage(ArenaEndRes);
+            input.ReadMessage(subBuilder);
+            ArenaEndRes = subBuilder;
             break;
           }
           case 514: {
-            if (arenaReadyRes_ == null) {
-              ArenaReadyRes = new global::SkillBridge.Message.ArenaReadyResponse();
+            global::SkillBridge.Message.ArenaReadyResponse subBuilder = new global::SkillBridge.Message.ArenaReadyResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaReadyRes) {
+              subBuilder.MergeFrom(ArenaReadyRes);
             }
-            input.ReadMessage(ArenaReadyRes);
+            input.ReadMessage(subBuilder);
+            ArenaReadyRes = subBuilder;
             break;
           }
           case 522: {
-            if (arenaRoundStartRes_ == null) {
-              ArenaRoundStartRes = new global::SkillBridge.Message.ArenaRoundStartResponse();
+            global::SkillBridge.Message.ArenaRoundStartResponse subBuilder = new global::SkillBridge.Message.ArenaRoundStartResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaRoundStartRes) {
+              subBuilder.MergeFrom(ArenaRoundStartRes);
             }
-            input.ReadMessage(ArenaRoundStartRes);
+            input.ReadMessage(subBuilder);
+            ArenaRoundStartRes = subBuilder;
             break;
           }
           case 530: {
-            if (arenaRoundEndRes_ == null) {
-              ArenaRoundEndRes = new global::SkillBridge.Message.ArenaRoundEndResponse();
+            global::SkillBridge.Message.ArenaRoundEndResponse subBuilder = new global::SkillBridge.Message.ArenaRoundEndResponse();
+            if (payloadCase_ == PayloadOneofCase.ArenaRoundEndRes) {
+              subBuilder.MergeFrom(ArenaRoundEndRes);
             }
-            input.ReadMessage(ArenaRoundEndRes);
+            input.ReadMessage(subBuilder);
+            ArenaRoundEndRes = subBuilder;
             break;
           }
           case 802: {
-            if (statusNotify_ == null) {
-              StatusNotify = new global::SkillBridge.Message.StatusNotify();
+            global::SkillBridge.Message.StatusNotify subBuilder = new global::SkillBridge.Message.StatusNotify();
+            if (payloadCase_ == PayloadOneofCase.StatusNotify) {
+              subBuilder.MergeFrom(StatusNotify);
             }
-            input.ReadMessage(StatusNotify);
+            input.ReadMessage(subBuilder);
+            StatusNotify = subBuilder;
             break;
           }
         }

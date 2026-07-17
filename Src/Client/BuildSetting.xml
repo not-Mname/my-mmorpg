@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BuildSetting ProjectName="haru" BuildRoot="../AssetBundle"
+              ExcludeExtensions=".lighting|.exr"
+              ExcludeAssetTypes="LightingDataAsset|NavMeshData"
+              ExcludeDirNames="">
+  <BuildItem AssetPath="Assets/AssetBundle/Data/" ResourceType="Direct" BundleType="File" Suffix=".txt" />
+  <BuildItem AssetPath="Assets/AssetBundle/RendererTextures/" ResourceType="Direct" BundleType="File" Suffix=".renderTexture" />
+  <BuildItem AssetPath="Assets/AssetBundle/FBX/" ResourceType="Direct" BundleType="File" Suffix=".FBX|.mat" />
+  <BuildItem AssetPath="Assets/AssetBundle/Music/" ResourceType="Direct" BundleType="File" Suffix=".mp3|.wav" />
+  <BuildItem AssetPath="Assets/AssetBundle/Sound/" ResourceType="Direct" BundleType="File" Suffix=".mp3|.mixer|.wav" />
+  <BuildItem AssetPath="Assets/AssetBundle/Prefab/" ResourceType="Direct" BundleType="File" Suffix=".prefab" />
+  <BuildItem AssetPath="Assets/AssetBundle/Shader/" ResourceType="Direct" BundleType="File" Suffix=".shader" />
+  <BuildItem AssetPath="Assets/AssetBundle/UI/" ResourceType="Direct" BundleType="File" Suffix=".png|.jpg" />
+  <BuildItem AssetPath="Assets/AssetBundle/Fonts/" ResourceType="Direct" BundleType="File" Suffix=".asset|.shader|.ttf" />
+  <BuildItem AssetPath="Assets/TextMesh Pro/" ResourceType="Direct" BundleType="File" Suffix=".asset|.shader|.ttf" />
+  <BuildItem AssetPath="Assets/AssetBundle/Material/" ResourceType="Direct" BundleType="File" Suffix=".mat" />
+  <BuildItem AssetPath="Assets/AssetBundle/Animations/" ResourceType="Direct" BundleType="File" Suffix=".controller|.anim" />
+  <BuildItem AssetPath="Assets/AssetBundle/Textures/" ResourceType="Direct" BundleType="File" Suffix=".png|.tga" />
+  <BuildItem AssetPath="Assets/AssetBundle/JS/" ResourceType="Direct" BundleType="File" Suffix=".js" />
+  <BuildItem AssetPath="Assets/AssetBundle/Levels/" ResourceType="Direct" BundleType="File" Suffix=".unity" />
+  <BuildItem AssetPath="Assets/AssetBundle/Terrain/" ResourceType="Direct" BundleType="File" Suffix=".asset" />
+</BuildSetting>

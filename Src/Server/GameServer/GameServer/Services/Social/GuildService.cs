@@ -41,8 +41,7 @@ namespace GameServer.Services.Social
 
             character.Guild.Leave(character);
 
-            sender.Session.Response.GuildLeave = new GuildLeaveResponse();
-            sender.Session.Response.GuildLeave.Result = Result.Success;
+            sender.Session.AddResponse(new NetMessageResponse { GuildLeave = new GuildLeaveResponse() { Result = Result.Success } });
 
             sender.SendResponse();
         }
@@ -63,9 +62,8 @@ namespace GameServer.Services.Social
             {
                 requester.Session.Character.Guild = guild;
 
-                requester.Session.Response.GuildJoinRes = message;
-                requester.Session.Response.GuildJoinRes.Result = message.Result;
-                requester.Session.Response.GuildJoinRes.Errormsg = "加入公会成功";
+                message.Errormsg = "加入公会成功";
+                requester.Session.AddResponse(new NetMessageResponse { GuildJoinRes = message });
                 requester.SendResponse();
             }
         }
@@ -74,8 +72,9 @@ namespace GameServer.Services.Social
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("GuildList: Character {0} {1} ", character.Name, character.Id);
-            sender.Session.Response.GuildList = new GuildListResponse();
-            sender.Session.Response.GuildList.Guilds.AddRange(GuildManager.Instance.GetGuildsInfo());
+            var guildListRes = new GuildListResponse();
+            guildListRes.Guilds.AddRange(GuildManager.Instance.GetGuildsInfo());
+            sender.Session.AddResponse(new NetMessageResponse { GuildList = guildListRes });
             sender.SendResponse();
         }
 
@@ -86,9 +85,7 @@ namespace GameServer.Services.Social
             var guild = GuildManager.Instance.GetGuild(message.Apply.GuildId);
             if (guild == null)
             {
-                sender.Session.Response.GuildJoinRes = new GuildJoinResponse();
-                sender.Session.Response.GuildJoinRes.Result = Result.Failed;
-                sender.Session.Response.GuildJoinRes.Errormsg = "公会不存在";
+                sender.Session.AddResponse(new NetMessageResponse { GuildJoinRes = new GuildJoinResponse() { Result = Result.Failed, Errormsg = "公会不存在" } });
                 sender.SendResponse();
                 return;
             }
@@ -104,16 +101,15 @@ namespace GameServer.Services.Social
                 var leader = SessionManager.Instance.GetSession(guild.Data.LeaderID);
                 if(leader != null)
                 {
-                    leader.Session.Response.GuildJoinReq = new GuildJoinRequest();
-                    leader.Session.Response.GuildJoinReq.Apply = message.Apply;
+                    var guildJoinReq = new GuildJoinRequest();
+                    guildJoinReq.Apply = message.Apply;
+                    leader.Session.AddResponse(new NetMessageResponse { GuildJoinReq = guildJoinReq });
                     leader.SendResponse();
                 }
             }
             else
             {
-                sender.Session.Response.GuildJoinRes = new GuildJoinResponse();
-                sender.Session.Response.GuildJoinRes.Result = Result.Failed;
-                sender.Session.Response.GuildJoinRes.Errormsg = "已经在公会中";
+                sender.Session.AddResponse(new NetMessageResponse { GuildJoinRes = new GuildJoinResponse() { Result = Result.Failed, Errormsg = "已经在公会中" } });
                 sender.SendResponse();
             }
         }
@@ -122,38 +118,42 @@ namespace GameServer.Services.Social
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("GuildCreate: GuildName:{0}  Character {1} {2} " , message.GuildName, character.Name, character.Id);
-            sender.Session.Response.GuildCreate = new GuildCreateResponse();
+            var guildCreateRes = new GuildCreateResponse();
 
             if(character.Guild != null)
             {
-                sender.Session.Response.GuildCreate.Result = Result.Failed;
-                sender.Session.Response.GuildCreate.Errormsg = "已经有公会了";
+                guildCreateRes.Result = Result.Failed;
+                guildCreateRes.Errormsg = "已经有公会了";
+                sender.Session.AddResponse(new NetMessageResponse { GuildCreate = guildCreateRes });
                 sender.SendResponse();
                 return;
             }
             if(GuildManager.Instance.CheckNameExisted(message.GuildName))
             {
-                sender.Session.Response.GuildCreate.Result = Result.Failed;
-                sender.Session.Response.GuildCreate.Errormsg = "公会名已经存在";
+                guildCreateRes.Result = Result.Failed;
+                guildCreateRes.Errormsg = "公会名已经存在";
+                sender.Session.AddResponse(new NetMessageResponse { GuildCreate = guildCreateRes });
                 sender.SendResponse();
                 return;
             }
 
             GuildManager.Instance.CreateGuild(message.GuildName, message.GuildNotice, character);
-            sender.Session.Response.GuildCreate.Result = Result.Success;
-            sender.Session.Response.GuildCreate.GuildInfo = character.Guild.GuildInfo(character);
+            guildCreateRes.Result = Result.Success;
+            guildCreateRes.GuildInfo = character.Guild.GuildInfo(character);
+            sender.Session.AddResponse(new NetMessageResponse { GuildCreate = guildCreateRes });
             sender.SendResponse();
         }
         void OnGuildAdmin(NetConnection<NetSession> sender, GuildAdminRequest message)
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("GuildAdmin: {0} GCharacter {1}", message.Command,  character.Id);
-            sender.Session.Response.GuildAdmin = new GuildAdminResponse();
+            var guildAdminRes = new GuildAdminResponse();
 
             if(character.Guild == null)
             {
-                sender.Session.Response.GuildAdmin.Result = Result.Failed;
-                sender.Session.Response.GuildAdmin.Errormsg = "没有公会，你别乱来";
+                guildAdminRes.Result = Result.Failed;
+                guildAdminRes.Errormsg = "没有公会，你别乱来";
+                sender.Session.AddResponse(new NetMessageResponse { GuildAdmin = guildAdminRes });
                 sender.SendResponse();
                 return;
             }
@@ -163,14 +163,16 @@ namespace GameServer.Services.Social
             var target = SessionManager.Instance.GetSession(message.Tatget);
             if (target != null)
             {
-                target.Session.Response.GuildAdmin = new GuildAdminResponse();
-                target.Session.Response.GuildAdmin.Result = Result.Success;
-                target.Session.Response.GuildAdmin.Command = message;
+                var targetAdminRes = new GuildAdminResponse();
+                targetAdminRes.Result = Result.Success;
+                targetAdminRes.Command = message;
+                target.Session.AddResponse(new NetMessageResponse { GuildAdmin = targetAdminRes });
                 target.SendResponse();
             }
 
-            sender.Session.Response.GuildAdmin.Result = Result.Success;
-            sender.Session.Response.GuildAdmin.Command = message;
+            guildAdminRes.Result = Result.Success;
+            guildAdminRes.Command = message;
+            sender.Session.AddResponse(new NetMessageResponse { GuildAdmin = guildAdminRes });
             sender.SendResponse();
         }
     }

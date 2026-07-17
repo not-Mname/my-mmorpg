@@ -79,12 +79,12 @@ namespace GameServer.Models.Logic
         {
             Log.InfoFormat("CharacterEnter: Map:{0} characterId:{1}", this.Define.ID, character.Id);
             AddCharacter(sender, character);
-            sender.Session.Response.MapCharacterEnter = new MapCharacterEnterResponse() { MapId = this.Define.ID };
+            var enterRes = new MapCharacterEnterResponse() { MapId = this.Define.ID };
 
             // 将地图上已有的所有角色和怪物信息填充到响应中
             foreach (var kv in this.MapCharacters)
             {
-                sender.Session.Response.MapCharacterEnter.Characters.Add(kv.Value.character.Info);
+                enterRes.Characters.Add(kv.Value.character.Info);
                 if (kv.Value.character.Id != character.Id)
                 {
                     this.AddCharacterEnterMap(kv.Value.connection, character.Info);
@@ -92,8 +92,9 @@ namespace GameServer.Models.Logic
             }
             foreach (var kv in this.monsterManager.monsters)
             {
-                sender.Session.Response.MapCharacterEnter.Characters.Add(kv.Value.Info);
+                enterRes.Characters.Add(kv.Value.Info);
             }
+            sender.Session.AddResponse(new NetMessageResponse { MapCharacterEnter = enterRes });
             sender.SendResponse();
         }
 
@@ -132,14 +133,10 @@ namespace GameServer.Models.Logic
         /// </summary>
         void AddCharacterEnterMap(NetConnection<NetSession> conn, NCharacterInfo character)
         {
-            if (conn.Session.Response.MapCharacterEnter == null)
-            {
-                conn.Session.Response.MapCharacterEnter = new MapCharacterEnterResponse();
-                conn.Session.Response.MapCharacterEnter.MapId = this.Define.ID;
-            }
-
-            conn.Session.Response.MapCharacterEnter.Characters.Add(character);
-
+            var enterRes = new MapCharacterEnterResponse();
+            enterRes.MapId = this.Define.ID;
+            enterRes.Characters.Add(character);
+            conn.Session.AddResponse(new NetMessageResponse { MapCharacterEnter = enterRes });
             conn.SendResponse();
         }
 
@@ -148,8 +145,7 @@ namespace GameServer.Models.Logic
         /// </summary>
         public void SendCharacterLeaveMap(NetConnection<NetSession> conn, NCharacterInfo character)
         {
-            conn.Session.Response.MapCharacterLeave = new MapCharacterLeaveResponse();
-            conn.Session.Response.MapCharacterLeave.EntityId = character.EntityId;
+            conn.Session.AddResponse(new NetMessageResponse { MapCharacterLeave = new MapCharacterLeaveResponse() { EntityId = character.EntityId } });
             if (conn.Session.Character.Guild != null)
                 GuildManager.Instance.Guilds[conn.Session.Character.Guild.Id].timestamp = TimeUtil.timestamp;
             conn.SendResponse();
@@ -202,15 +198,15 @@ namespace GameServer.Models.Logic
             {
                 if (response.SkillCast != null)
                 {
-                    kv.Value.connection.Session.Response.SkillCast = response.SkillCast;
+                    kv.Value.connection.Session.AddResponse(new NetMessageResponse { SkillCast = response.SkillCast });
                 }
                 if (response.SkillHits != null)
                 {
-                    kv.Value.connection.Session.Response.SkillHits = response.SkillHits;
+                    kv.Value.connection.Session.AddResponse(new NetMessageResponse { SkillHits = response.SkillHits });
                 }
                 if (response.BuffRes != null)
                 {
-                    kv.Value.connection.Session.Response.BuffRes = response.BuffRes;
+                    kv.Value.connection.Session.AddResponse(new NetMessageResponse { BuffRes = response.BuffRes });
                 }
 
                 kv.Value.connection.SendResponse();

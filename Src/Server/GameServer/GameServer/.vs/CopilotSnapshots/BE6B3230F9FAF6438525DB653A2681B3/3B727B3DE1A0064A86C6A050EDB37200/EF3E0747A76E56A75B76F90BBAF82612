@@ -1,0 +1,33 @@
+﻿using Common;
+using GameServer.Managers;
+using Network;
+using SkillBridge.Message;
+using System;
+
+
+
+namespace GameServer.Services
+{
+    class BattleSerevice : Singleton<BattleSerevice>, IDisposable
+    {
+       
+        public void Init()
+        {
+            Log.Info("BattleSerevice Init...");
+
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<SkillCastRequest>(this.OnSkillCast);
+        }
+
+        private void OnSkillCast(NetConnection<NetSession> sender, SkillCastRequest message)
+        {
+            Log.InfoFormat("SendSkillCast: skillId {0}, casterId {1}, targetId {2}, position {3}", message.castInfo.skillId, message.castInfo.casterId, message.castInfo.targetId, message.castInfo.Position);
+            BattleManager.Instance.ProcessBattleMessage(sender, message);
+        }
+
+        public void Dispose()
+        {
+
+        }
+
+    }
+}

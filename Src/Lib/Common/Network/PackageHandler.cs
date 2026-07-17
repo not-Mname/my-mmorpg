@@ -65,7 +65,7 @@ namespace Network
             using MemoryStream ms = new MemoryStream(body.Length + 4);
             using BinaryWriter writer = new BinaryWriter(ms);
             writer.Write(body.Length);
-            writer.Write(message.ToByteArray());
+            writer.Write(body);
             writer.Flush();
             package = ms.ToArray();
 

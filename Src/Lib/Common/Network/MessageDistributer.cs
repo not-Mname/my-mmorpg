@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using Common;
+using SkillBridge.Message;
 
 namespace Network
 {
@@ -30,7 +31,7 @@ namespace Network
 
 
         public delegate void MessageHandler<Tm>(T sender, Tm message);
-        private Dictionary<string, System.Delegate> messageHandlers = new Dictionary<string, System.Delegate>();
+        private Dictionary<Type, System.Delegate> messageHandlers = new Dictionary<Type, System.Delegate>();
 
         private bool Running = false;
         private AutoResetEvent threadEvent = new AutoResetEvent(true);
@@ -46,7 +47,7 @@ namespace Network
 
         public void Subscribe<Tm>(MessageHandler<Tm> messageHandler)
         {
-            string type = typeof(Tm).Name;
+            Type type = typeof(Tm);
             if (!messageHandlers.ContainsKey(type))
             {
                 messageHandlers[type] = null;
@@ -55,7 +56,7 @@ namespace Network
         }
         public void Unsubscribe<Tm>(MessageHandler<Tm> messageHandler)
         {
-            string type = typeof(Tm).Name;
+            Type type = typeof(Tm);
             if (!messageHandlers.ContainsKey(type))
             {
                 messageHandlers[type] = null;
@@ -63,12 +64,12 @@ namespace Network
             messageHandlers[type] = (MessageHandler<Tm>)messageHandlers[type] - messageHandler;
         }
 
-        public void RaiseEvent<Tm>(T sender,Tm msg)
+        public void RaiseEvent<Tm>(T sender, Tm msg)
         {
-            string key = msg.GetType().Name;
-            if (messageHandlers.ContainsKey(key))
+            Type key = msg.GetType();
+            if (messageHandlers.TryGetValue(key, out System.Delegate del))
             {
-                MessageHandler<Tm> handler = (MessageHandler<Tm>)messageHandlers[key];
+                MessageHandler<Tm> handler = (MessageHandler<Tm>)del;
                 if (handler != null)
                 {
                     try
@@ -85,7 +86,7 @@ namespace Network
                 }
                 else
                 {
-                    Log.Warning("No handler subscribed for {0}" + msg.ToString());
+                    Log.Warning($"No handler subscribed for {msg}");
                 }
             }
         }
@@ -114,10 +115,7 @@ namespace Network
             while (this.messageQueue.Count > 0)
             {
                 MessageArgs package = this.messageQueue.Dequeue();
-                if (package.message.Request != null)
-                    MessageDispatch<T>.Instance.Dispatch(package.sender, package.message.Request);
-                if (package.message.Response != null)
-                    MessageDispatch<T>.Instance.Dispatch(package.sender, package.message.Response);
+                DispatchPackage(package);
             }
         }
 
@@ -179,10 +177,7 @@ namespace Network
                         continue;
                     }
                     MessageArgs package = this.messageQueue.Dequeue();
-                    if (package.message.Request != null)
-                        MessageDispatch<T>.Instance.Dispatch(package.sender, package.message.Request);
-                    if (package.message.Response != null)
-                        MessageDispatch<T>.Instance.Dispatch(package.sender, package.message.Response);
+                    DispatchPackage(package);
                 }
             }
             catch (Exception e)
@@ -193,6 +188,19 @@ namespace Network
             {
                 ActiveThreadCount = Interlocked.Decrement(ref ActiveThreadCount);
                 Log.Warning("MessageDistribute thread end");
+            }
+        }
+
+        private void DispatchPackage(MessageArgs package)
+        {
+            foreach (NetMessageRequest request in package.message.Requests)
+            {
+                MessageDispatch<T>.Instance.Dispatch(package.sender, request);
+            }
+
+            foreach (NetMessageResponse response in package.message.Responses)
+            {
+                MessageDispatch<T>.Instance.Dispatch(package.sender, response);
             }
         }
     }

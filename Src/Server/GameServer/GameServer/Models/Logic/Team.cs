@@ -43,19 +43,20 @@ namespace GameServer.Models.Logic
             Timestamp = TimeUtil.timestamp;
         }
 
-        public void PostProcess(NetMessageResponse message)
+        public void PostProcess(NetMessage message)
         {
-            if(message.TeamInfo == null)
+            if (!message.HasResponse(NetMessageResponse.PayloadOneofCase.TeamInfo))
             {
-                message.TeamInfo = new TeamInfoResponse();
-                message.TeamInfo.Team = new NTeamInfo();
-                message.TeamInfo.Team.Id = this.Id;
-                message.TeamInfo.Team.Leader = this.Leader.Id;
-                message.TeamInfo.Result = Result.Success;
+                var teamInfo = new TeamInfoResponse();
+                teamInfo.Team = new NTeamInfo();
+                teamInfo.Team.Id = this.Id;
+                teamInfo.Team.Leader = this.Leader.Id;
+                teamInfo.Result = Result.Success;
                 foreach (var member in this.Members)
                 {
-                    message.TeamInfo.Team.Members.Add(member.GetBasicInfo());
+                    teamInfo.Team.Members.Add(member.GetBasicInfo());
                 }
+                message.Responses.Add(new NetMessageResponse { TeamInfo = teamInfo });
             }
         }
     }

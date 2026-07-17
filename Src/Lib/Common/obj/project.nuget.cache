@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "7eS7i8LXm1A=",
+  "success": true,
+  "projectFilePath": "D:\\Develop\\MyMmorpg\\Src\\Lib\\Common\\Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wjf\\.nuget\\packages\\google.protobuf\\3.21.12\\google.protobuf.3.21.12.nupkg.sha512",
+    "C:\\Users\\wjf\\.nuget\\packages\\log4net\\3.3.1\\log4net.3.3.1.nupkg.sha512",
+    "C:\\Users\\wjf\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\wjf\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\wjf\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\wjf\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

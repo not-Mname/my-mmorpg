@@ -38,13 +38,13 @@ namespace GameServer.Services.Entities
         {
             Log.InfoFormat("UserRegisterRequest: User:{0}  Pass:{1}", request.User, request.Passward);
 
-            sender.Session.Response.UserRegister = new UserRegisterResponse();
+            var registerRes = new UserRegisterResponse();
 
             TUser? existingUser = DBService.Instance.Entities.Users.Where(u => u.Username == request.User).FirstOrDefault();
             if (existingUser != null)
             {
-                sender.Session.Response.UserRegister.Result = Result.Failed;
-                sender.Session.Response.UserRegister.Errormsg = "用户已存在.";
+                registerRes.Result = Result.Failed;
+                registerRes.Errormsg = "用户已存在.";
             }
             else
             {
@@ -53,10 +53,11 @@ namespace GameServer.Services.Entities
                 var newUser = new TUser() { Username = request.User, Password = request.Passward, Player = player };
                 DBService.Instance.Entities.Users.Add(newUser);
                 DBService.Instance.Entities.SaveChanges();
-                sender.Session.Response.UserRegister.Result = Result.Success;
-                sender.Session.Response.UserRegister.Errormsg = "None";
+                registerRes.Result = Result.Success;
+                registerRes.Errormsg = "None";
             }
 
+            sender.Session.AddResponse(new NetMessageResponse { UserRegister = registerRes });
             sender.SendResponse();
         }
 
@@ -64,20 +65,20 @@ namespace GameServer.Services.Entities
         {
             Log.InfoFormat("UserLoginRequest: User:{0}  Pass:{1}", request.User, request.Passward);
 
-            sender.Session.Response.UserLogin = new UserLoginResponse();
+            var loginRes = new UserLoginResponse();
 
             TUser? user = DBService.Instance.Entities.Users.Include(u => u.Player).ThenInclude(p => p.Characters).Where(u => u.Username == request.User && u.Password == request.Passward).FirstOrDefault();
 
             if (user == null)
             {
-                sender.Session.Response.UserLogin.Result = Result.Failed;
-                sender.Session.Response.UserLogin.Errormsg = "用户名或密码错误.";
+                loginRes.Result = Result.Failed;
+                loginRes.Errormsg = "用户名或密码错误.";
             }
             else
             {
-                sender.Session.Response.UserLogin.Result = Result.Success;
-                sender.Session.Response.UserLogin.Errormsg = "None";
-                sender.Session.Response.UserLogin.Userinfo = new NUserInfo()
+                loginRes.Result = Result.Success;
+                loginRes.Errormsg = "None";
+                loginRes.Userinfo = new NUserInfo()
                 {
                     Id = (int)user.ID,
                     Player = new NPlayerInfo()
@@ -93,10 +94,11 @@ namespace GameServer.Services.Entities
                     info.Class = (CharacterClass)@char.Class;
                     info.Type = CharacterType.Player;
                     info.ConfigId = @char.ID;
-                    sender.Session.Response.UserLogin.Userinfo.Player.Characters.Add(info);
+                    loginRes.Userinfo.Player.Characters.Add(info);
                 }
                 sender.Session.User = user;
             }
+            sender.Session.AddResponse(new NetMessageResponse { UserLogin = loginRes });
             sender.SendResponse();
         }
 
@@ -131,7 +133,7 @@ namespace GameServer.Services.Entities
             sender.Session.User.Player.Characters.Add(character);
             DBService.Instance.Entities.SaveChanges();
 
-            sender.Session.Response.CreateChar = new UserCreateCharacterResponse();
+            var createCharRes = new UserCreateCharacterResponse();
 
             foreach (var c in sender.Session.User.Player.Characters)
             {
@@ -141,18 +143,19 @@ namespace GameServer.Services.Entities
                 info.Class = (CharacterClass)c.Class;
                 info.Type = CharacterType.Player;
                 info.ConfigId = c.Class;
-                sender.Session.Response.CreateChar.Characters.Add(info);
+                createCharRes.Characters.Add(info);
             }
 
-            sender.Session.Response.CreateChar.Errormsg = "None";
-            sender.Session.Response.CreateChar.Result = Result.Success;
+            createCharRes.Errormsg = "None";
+            createCharRes.Result = Result.Success;
 
+            sender.Session.AddResponse(new NetMessageResponse { CreateChar = createCharRes });
             sender.SendResponse();
         }
 
         void OnGameEnter(NetConnection<NetSession> sender, UserGameEnterRequest request)
         {
-            sender.Session.Response.GameEnter = new UserGameEnterResponse();
+            var gameEnterRes = new UserGameEnterResponse();
 
             TCharacter? dbChar = DBService.Instance.Entities.Characters
             .Include(c => c.Player)
@@ -164,8 +167,9 @@ namespace GameServer.Services.Entities
             .FirstOrDefault(c => c.ID == request.CharacterIdx);
             if (dbChar == null)
             {
-                sender.Session.Response.GameEnter.Result = Result.Failed;
-                sender.Session.Response.GameEnter.Errormsg = "角色不存在.";
+                gameEnterRes.Result = Result.Failed;
+                gameEnterRes.Errormsg = "角色不存在.";
+                sender.Session.AddResponse(new NetMessageResponse { GameEnter = gameEnterRes });
                 sender.SendResponse();
                 return;
             }
@@ -173,13 +177,14 @@ namespace GameServer.Services.Entities
             Log.InfoFormat("UserGameEnterRequest: Name:{0}  Class:{1}  MapId:{2}", dbChar.Name, dbChar.Class, dbChar.MapID);
             Character character = CharacterManager.Instance.AddCharacter(dbChar);
             SessionManager.Instance.AddSession(character.EntityId, sender);
-            sender.Session.Response.GameEnter.Errormsg = "None";
-            sender.Session.Response.GameEnter.Result = Result.Success;
+            gameEnterRes.Errormsg = "None";
+            gameEnterRes.Result = Result.Success;
 
             sender.Session.Character = character;
             sender.Session.PostResponser = character;
 
-            sender.Session.Response.GameEnter.Character = character.Info;
+            gameEnterRes.Character = character.Info;
+            sender.Session.AddResponse(new NetMessageResponse { GameEnter = gameEnterRes });
             sender.SendResponse();
 
             MapManager.Instance[dbChar.MapID].CharacterEnter(sender, character);
@@ -189,13 +194,14 @@ namespace GameServer.Services.Entities
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequest: {0}", sender.Session.Character.Info.Name);
-            sender.Session.Response.GameLeave = new UserGameLeaveResponse();
+            var gameLeaveRes = new UserGameLeaveResponse();
             CharacterManager.Instance.RemoveCharacter(character.Id);
 
 
-            sender.Session.Response.GameLeave.Errormsg = "None";
-            sender.Session.Response.GameLeave.Result = Result.Success;
+            gameLeaveRes.Errormsg = "None";
+            gameLeaveRes.Result = Result.Success;
             CharacterLeave(character);
+            sender.Session.AddResponse(new NetMessageResponse { GameLeave = gameLeaveRes });
             sender.SendResponse();
 
             MapManager.Instance[sender.Session.Character.Info.MapId].CharacterLeave(sender.Session.Character);
