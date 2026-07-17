@@ -1,0 +1,29 @@
+# Unity cache & generated
+[Ll]ibrary/
+[Tt]emp/
+[Ll]ogs/
+[Oo]bj/
+[Bb]uild/
+[Nn]ative/
+Src/Client/TempBuild/
+
+# IDE
+.vs/
+.idea/
+*.csproj
+*.csproj.user
+*.userprefs
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime
+Src/Client/bin/
+
+# Codegraph
+.opencode/state/
+
+# Logs
+*.log
