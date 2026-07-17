@@ -1068,7 +1068,7 @@ namespace AssetBundleFramework
                     //过滤掉无效或不需要打包的文件类型
                     string extension = Path.GetExtension(tempAssetUrl).ToLower();
                     if (string.IsNullOrEmpty(extension) || extension == ".cs" || extension == ".dll")
-                        continue; //跳过无扩展名、脚本和程序集文件
+                        continue;
 
                     //检查是否在全局排除列表中（如光照数据、导航网格等编辑器资源）
                     if (buildSetting.IsExcluded(tempAssetUrl))

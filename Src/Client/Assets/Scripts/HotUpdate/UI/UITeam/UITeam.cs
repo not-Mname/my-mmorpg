@@ -3,10 +3,11 @@ using Services;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UIFramework;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UITeam : UIWindow
+public class UITeam : PanelController
 {
     public UITeamItem[] Members;
     public ListView ListMain;

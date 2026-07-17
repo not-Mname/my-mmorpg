@@ -1,12 +1,11 @@
 ﻿using Managers;
 using Models;
-using System.Collections;
-using System.Collections.Generic;
+using UIFramework;
 using UnityEngine;
 using UnityEngine.UI;
 
 
-public class UIMiniMap : MonoBehaviour
+public class UIMiniMap : PanelController
 {
     public Collider miniMapBoudingBox;
     public Text mapName;

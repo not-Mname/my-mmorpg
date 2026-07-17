@@ -1,5 +1,6 @@
 using Entities;
 using Managers;
+using UIFramework;
 using Utilities;
 
 namespace UI.MainUI
@@ -10,16 +11,24 @@ namespace UI.MainUI
         public UIAvatar Avatar;
         public UITeam TeamWindow;
         public UIBattleUnitInfo BattleUnitInfo;
+        public UIFrame uiFrame;
         /////////////////////////////// 公有函数 ///////////////////////
         protected override void OnAwake()
         {
-            Avatar.Init();
-            // 订阅战斗目标变化事件，当目标改变时调用OnTargetChange方法
-            EVENT.Subscribe<BattleUnit>(Const.EventId.on_battle_target_change, OnTargetChange);
+            uiFrame.ShowPanel("Buttons");
+            uiFrame.ShowPanel("MiniMap");
+            uiFrame.ShowPanel("SkillSlots");
+            uiFrame.ShowPanel("UIAvatar");
+            uiFrame.ShowPanel("UIChat");
+            uiFrame.ShowPanel("UITargetInfo"); 
+            uiFrame.ShowPanel("UITeam");
         }
 
         private void Start()
         {
+            Avatar.Init();
+            // 订阅战斗目标变化事件，当目标改变时调用OnTargetChange方法
+            EVENT.Subscribe<BattleUnit>(Const.EventId.on_battle_target_change, OnTargetChange);
             MainPlayerCamera.Instance?.ApplyCursorVisibility(false);
         }
 

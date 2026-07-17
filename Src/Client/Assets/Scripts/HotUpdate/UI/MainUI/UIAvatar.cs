@@ -4,13 +4,14 @@ using SkillBridge.Message;
 using System;
 using TMPro;
 using UI.Common;
+using UIFramework;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace UI.MainUI
 {
 
-    public class UIAvatar : MonoBehaviour
+    public class UIAvatar : PanelController
     {
         /////////////////////////////// UI组件 /////////////////////////
 

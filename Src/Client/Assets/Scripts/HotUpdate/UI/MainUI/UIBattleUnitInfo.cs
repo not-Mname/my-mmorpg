@@ -1,15 +1,14 @@
 ﻿using Entities;
 using TMPro;
 using UI.Common;
-using UnityEngine;
+using UIFramework;
 using UnityEngine.UI;
 using Utilities;
-using static UnityEngine.GraphicsBuffer;
 
 namespace UI.MainUI
 {
 
-    public class UIBattleUnitInfo : MonoBehaviour
+    public class UIBattleUnitInfo : PanelController
     {
         /////////////////////////////// UI组件 /////////////////////////
 

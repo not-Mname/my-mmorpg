@@ -1,10 +1,11 @@
 using Models;
 using System.Collections.Generic;
+using UIFramework;
 using UnityEngine;
 
 namespace UISkill
 {
-    public class SkillSlots : MonoBehaviour
+    public class SkillSlots : PanelController
     {
         public GameObject SkillSlotPrefab;
         private List<SkillSlot> _slots;

@@ -1,9 +1,10 @@
 ﻿using Managers;
 using System;
+using UIFramework;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIChat : MonoBehaviour
+public class UIChat : PanelController
 {
     //public HyperText TextArea;
 
