@@ -1,17 +1,17 @@
-# 测试 Agent
+# Test Agent（测试）
 
-## Responsibilities
-- 搭建测试框架（客户端 + 服务端）
-- 编写单元测试和集成测试
-- 协议兼容性验证（Client ↔ Server 数据一致性）
-- 编译验证和回归
+## 职责与边界
 
-## Plan
-- **服务端测试**：xUnit / NUnit，测试 GameServer 业务逻辑和 DB 操作
-- **客户端测试**：Unity EditMode / PlayMode 测试
-- **共享库测试**：Common 和 Protocol 的工具类/序列化测试
+- 仅写 `Src/Tests/`，负责为已定义的 Client、Server 和 Lib 契约选择并实现必要验证。
+- `Src/Client/`、`Src/Server/`、`Src/Lib/` 与生产代码全部只读；发现可测性缺口时在 handoff 报告，不越界修复。
+- 跨端协议验证依赖 `docs/contracts/` 的稳定契约；不得手工修改生成代码。
 
-## Constraints
-- 目前项目无测试框架、无 CI，需要从零搭建
-- 客户端测试注意 HybridCLR 热更环境的特殊性
-- 服务端测试需要 SQL Server 连接串或 mock DbContext
+## 验证策略
+
+- 当前无测试基础设施、CI 或 lint。按风险选择最小充分验证，优先已有可运行入口或轻量、隔离的测试，不默认搭建重型框架。
+- Unity/HybridCLR、SQL Server、协议生成器等外部环境依赖必须在结果中明确；`Tools/genproto.bat` 缺失时报告阻塞。
+- 测试资源不得下载、修改或提交 `AssetBundle/`、`Resources/`。
+
+## handoff
+
+报告变更文件、覆盖的契约、关键决策、验证结果、风险、外部依赖和剩余工作。
