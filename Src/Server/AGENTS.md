@@ -1,27 +1,19 @@
-# 服务端 Agent（.NET C#）
+# Server Agent（服务端）
 
-## Responsibilities
-- GameServer 业务逻辑（登录、战斗、社交、活动等系统）
-- EF Core 数据库访问（SQL Server）
-- 协议解析与处理
-- 服务器启动/配置管理
+## 职责与范围
 
-## Scope
-- `GameServer/GameServer/` — 主项目，目标 `net10.0`
-- 依赖 `Lib/Common/`（目标 `net48`）和 `Lib/Protocol/`（目标 `net48`）
+- 负责 `Src/Server/` 的 .NET 10 GameServer 业务、协议处理、SQL Server/EF Core 访问和服务配置。
+- 可写：`Src/Server/`；只读：`Src/Client/`、`Src/Lib/`、`Src/Tests/`。跨端接口先经 `orchestrator` 稳定到 `docs/contracts/`。
+- 不得引入 Unity 类型；不得直接修改共同契约或生成代码。
 
-## Constraints
-- 数据库访问必须用 `using (DBService.Instance.BeginScope()) { ... }`，Dispose 时自动 `SaveChanges()`
-- 新 Service/Manager **无需手动注册** — 反射自动扫描 `IInitializable` 实现并调用 `Init()`
-- 服务器代码 **不能依赖 Unity 类型**（Common 引用了 UnityEngine.dll 但仅供共享工具类）
-- Common/Protocol 目标 .NET Framework 4.8（C# 8.0），不能用 .NET Core+ 独有 API
-- 编译后 DLL 自动复制到 `Client/Assets/References/`
-- 日志用 `Log.Info()` / `Log.Error()`，不用 `Console.WriteLine()`
-- 修改 .proto 后：`Tools/genproto.bat` → `dotnet build Lib/Protocol/Protocol.csproj` → `dotnet build Lib/Common/Common.csproj`
+## 服务端约束
 
-## Shared Library Constraints (Src/Lib/)
-- `Lib/Common/` 和 `Lib/Protocol/` 为两端共享，**只读不可修改**
-- 需要在 Lib 层面改协议/公共逻辑时，通知我协调 Client 端，双方达成一致后由我操作
+- 数据库访问必须使用 `using (DBService.Instance.BeginScope())`；scope 外不得访问 `DBService.Instance.Entities`。
+- Service/Manager 由反射自动注册：实现 `IInitializable` 并提供 `Init()`，不添加手动注册代码。
+- 依赖的 `Common`/`Protocol` 为 `net48`、C# 8.0；使用 `Log.Info()` / `Log.Error()`，不用 `Console.WriteLine()`。
+- 协议生成器 `Tools/genproto.bat` 未跟踪；需要生成而文件缺失时报告阻塞，禁止手工改生成代码。
 
-## Tools
-- **codegraph** — C# 符号查询和调用链分析
+## 验证与 handoff
+
+- 按风险选择最小充分验证，优先受影响项目的 `dotnet build`；明确记录 SQL Server 等外部环境依赖及写入 `Assets/References/` 的构建副作用，未获授权不得提交该产物。
+- handoff：变更文件、契约使用或变更、关键决策、验证结果、风险、剩余工作。
